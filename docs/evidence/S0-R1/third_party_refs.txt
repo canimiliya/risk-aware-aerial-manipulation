@@ -1,0 +1,6 @@
+﻿2026-07-31 git ls-remote
+AM-Planner HEAD/main 7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d
+IsaacLab HEAD af1bab4dc173ba69b08fab779c14ead61d13fd33
+IsaacLab main b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8
+IsaacLab v2.3.2 37ddf626871758333d6ed89cf64ad702aef127d0
+Polynomial_DiT HEAD/main f31c8f04e5fa045bc08c7bbaaadfe60bb54816f1

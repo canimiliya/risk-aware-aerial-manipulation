@@ -1,0 +1,3 @@
+﻿C: NTFS free=89239658496 size=214754652160
+D: NTFS free=491433791488 size=785133858816
+LongPaths: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem LongPathsEnabled REG_DWORD 0x0

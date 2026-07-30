@@ -1,0 +1,4 @@
+﻿OS: Microsoft Windows 11 专业中文版 10.0.26100 build 26100
+CPU: Intel(R) Core(TM) Ultra 7 270K Plus; cores 24; logical 24
+RAM bytes: 50873458688
+GPU: NVIDIA GeForce RTX 5060 Ti, 16311 MiB, 581.29, 12.0

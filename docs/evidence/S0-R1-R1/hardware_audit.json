@@ -1,0 +1,110 @@
+{
+    "audit_date":  "2026-07-31",
+    "project_root":  "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation",
+    "os":  {
+               "Caption":  "Microsoft Windows 11 专业中文版",
+               "Version":  "10.0.26100",
+               "BuildNumber":  "26100",
+               "OSArchitecture":  "64 位"
+           },
+    "cpu":  {
+                "Name":  "Intel(R) Core(TM) Ultra 7 270K Plus",
+                "NumberOfCores":  24,
+                "NumberOfLogicalProcessors":  24,
+                "MaxClockSpeed":  3700
+            },
+    "memory_bytes":  50873458688,
+    "gpu":  {
+                "query":  "NVIDIA GeForce RTX 5060 Ti, 16311 MiB, 581.29, 12.0",
+                "compute_capability":  "12.0",
+                "driver_cuda_compatibility":  "| NVIDIA-SMI 581.29                 Driver Version: 581.29         CUDA Version: 13.0     |",
+                "nvidia_smi_exit_code":  0
+            },
+    "disks":  [
+                  {
+                      "DeviceID":  "C:",
+                      "FileSystem":  "NTFS",
+                      "Size":  214754652160,
+                      "FreeSpace":  94066905088
+                  },
+                  {
+                      "DeviceID":  "D:",
+                      "FileSystem":  "NTFS",
+                      "Size":  785133858816,
+                      "FreeSpace":  490519371776
+                  }
+              ],
+    "wsl":  {
+                "status":  {
+                               "status":  "CAPTURED_BY_TIMEOUT_GUARD",
+                               "path":  "C:\\windows\\system32\\wsl.exe",
+                               "version_output":  "See wsl_status_utf8.txt",
+                               "exit_code":  null
+                           },
+                "version":  {
+                                "status":  "CAPTURED_BY_TIMEOUT_GUARD",
+                                "path":  "C:\\windows\\system32\\wsl.exe",
+                                "version_output":  "See wsl_version_utf8.txt",
+                                "exit_code":  null
+                            },
+                "list_verbose":  {
+                                     "status":  "CAPTURED_BY_TIMEOUT_GUARD",
+                                     "path":  "C:\\windows\\system32\\wsl.exe",
+                                     "version_output":  "See wsl_list_verbose_utf8.txt",
+                                     "exit_code":  null
+                                 }
+            },
+    "python":  {
+                   "status":  "OK",
+                   "path":  "D:\\anaconda\\python.exe",
+                   "version_output":  "Python 3.13.9",
+                   "exit_code":  0
+               },
+    "conda":  {
+                  "status":  "OK",
+                  "path":  "D:\\anaconda\\Scripts\\conda.exe",
+                  "version_output":  "conda 26.1.1",
+                  "exit_code":  0
+              },
+    "git":  {
+                "status":  "OK",
+                "path":  "C:\\Program Files\\Git\\cmd\\git.exe",
+                "version_output":  "git version 2.55.0.windows.2",
+                "exit_code":  0
+            },
+    "gh":  {
+               "status":  "OK",
+               "path":  "C:\\Program Files\\GitHub CLI\\gh.exe",
+               "version_output":  "gh version 2.96.0 (2026-07-02)\nhttps://github.com/cli/cli/releases/tag/v2.96.0",
+               "exit_code":  0
+           },
+    "cmake":  {
+                  "status":  "NOT_INSTALLED",
+                  "path":  null,
+                  "version_output":  "NOT_INSTALLED",
+                  "exit_code":  null
+              },
+    "ninja":  {
+                  "status":  "NOT_INSTALLED",
+                  "path":  null,
+                  "version_output":  "NOT_INSTALLED",
+                  "exit_code":  null
+              },
+    "docker":  {
+                   "status":  "NOT_INSTALLED",
+                   "path":  null,
+                   "version_output":  "NOT_INSTALLED",
+                   "exit_code":  null
+               },
+    "cuda_toolkit":  {
+                         "status":  "NOT_INSTALLED",
+                         "path":  null,
+                         "version_output":  "NOT_INSTALLED",
+                         "exit_code":  null
+                     },
+    "long_paths":  " HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FileSystem     LongPathsEnabled    REG_DWORD    0x0 ",
+    "unknowns":  [
+                     "ROS Noetic readiness not verified",
+                     "Isaac Lab not installed"
+                 ]
+}

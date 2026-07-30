@@ -1,0 +1,8 @@
+# AM-Planner 许可证状态
+
+- 仓库：SYSU-HILAB/am-planner
+- 冻结 commit：`7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d`
+- README 声明：MIT License
+- 独立 LICENSE 文件：本轮未成功取得
+- 状态：`README_DECLARES_MIT_LICENSE_BUT_LICENSE_FILE_UNAVAILABLE_AT_FROZEN_COMMIT`
+- 使用限制：S1 可进行本地科研复现；公开再分发前必须再次核验并保存独立许可证文件。

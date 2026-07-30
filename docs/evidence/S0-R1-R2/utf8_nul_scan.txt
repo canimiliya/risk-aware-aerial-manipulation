@@ -1,0 +1,2 @@
+﻿UTF8_NUL_FAILURES=0
+exit_code=0
