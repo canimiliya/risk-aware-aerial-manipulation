@@ -33,12 +33,12 @@ def git(*args):
 check("project root", ROOT.resolve() == EXPECTED_ROOT.resolve(), str(ROOT))
 check("single project .git", (ROOT / ".git").exists() and not any((p / ".git").exists() for p in ROOT.parents))
 check("remote", git("remote", "get-url", "origin").rstrip("/") == "https://github.com/canimiliya/risk-aware-aerial-manipulation.git")
-check("branch", git("branch", "--show-current") == "agent/s0-r1-workspace-hardware-audit")
+check("branch", git("branch", "--show-current") in {"agent/s0-r1-workspace-hardware-audit", "main", "agent/s1-r0-environment-source-preflight"}, git("branch", "--show-current"))
 
 required = [
     "00_空中机械臂驱鸟器仿真研究项目_权威总纲_v1.0.md", "01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.2.md",
     "docs/tasks/S0-R1_项目初始化硬件与依赖审计_任务卡.md", "docs/tasks/S0-R1-R2_治理状态收口与权威任务卡替换_任务卡.md",
-    "docs/reviews/S0-R1-R1_review_2026-07-31.md", "docs/reports/S0-R1-R2_closeout_report.md",
+    "docs/reviews/S0-R1-R1_review_2026-07-31.md", "docs/reviews/S0_final_review_2026-07-31.md", "docs/reports/S0-R1-R2_closeout_report.md",
     "docs/milestones/S0_status.md", "docs/evidence/S0-R1-R2/recovery_interrupted_files_manifest.md",
     "third_party/licenses/AM-Planner_LICENSE_STATUS_7ea9a0a.md", "docs/evidence/S0-R1-R1/hardware_audit.json",
 ]
@@ -59,9 +59,14 @@ for section in ["文件权威性与使用规则", "标准任务闭环", "统一�
     check(f"progress section {section}", section in progress)
 for marker in FORBIDDEN_STALE_PROGRESS_MARKERS:
     check(f"stale marker absent: {marker}", marker not in progress)
-for fact in ["S0_SUBMITTED_FOR_REVIEW", "S0-R1-R2", "https://github.com/canimiliya/risk-aware-aerial-manipulation.git", r"D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation", "HARDWARE_PASS_WITH_LIMITATIONS"]:
+for fact in ["S0_PASS_WITH_LIMITATIONS", "S0-R1-R2", "https://github.com/canimiliya/risk-aware-aerial-manipulation.git", r"D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation", "HARDWARE_PASS_WITH_LIMITATIONS"]:
     check(f"current progress fact: {fact}", fact in progress)
-check("no approved S0", not re.search(r"(?:总体状态|^S0\s*[:：]|\|\s*S0\s*\|)[^\n]{0,80}(?:PASS_WITH_LIMITATIONS|(?<!SUBMITTED_)PASS)(?![A-Z_])", progress, re.M))
+check("S0 approved with limitations", "S0：PASS_WITH_LIMITATIONS" in progress and "| S0 | 项目初始化与硬件/依赖审计 | `PASS_WITH_LIMITATIONS`" in progress)
+
+final_review = text(ROOT / "docs/reviews/S0_final_review_2026-07-31.md")
+for fact in ["S0-R1-R2", "2f441c4d4ebace01c3ef76cec00d546813dee267", "PASS_WITH_LIMITATIONS", "Isaac Sim/Lab 未安装", "WSL、Ubuntu 20.04、ROS Noetic"]:
+    check(f"final review fact: {fact}", fact in final_review)
+check("S1 not falsely reproduced", not re.search(r"S1[^\n]{0,100}(?:已复现|已安装|可运行)", progress))
 
 audit_path = ROOT / "docs/evidence/S0-R1-R1/hardware_audit.json"
 try:

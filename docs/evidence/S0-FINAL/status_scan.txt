@@ -1,0 +1,8 @@
+﻿git_status=
+ M "01_\347\251\272\344\270\255\346\234\272\346\242\260\350\207\202\351\251\261\351\270\237\345\231\250\344\273\277\347\234\237\347\240\224\347\251\266\351\241\271\347\233\256_\350\277\233\345\272\246\346\200\273\346\216\247_v1.2.md"
+ M docs/decision_log.md
+ M docs/milestones/S0_status.md
+ M scripts/audit/check_s0_structure.py
+?? docs/evidence/S0-FINAL/
+?? docs/reviews/S0_final_review_2026-07-31.md
+large_files=
