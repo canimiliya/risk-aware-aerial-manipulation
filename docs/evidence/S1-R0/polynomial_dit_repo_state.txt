@@ -1,0 +1,3 @@
+﻿temporary_git_dir=C:\Users\ADMINI~1\AppData\Local\Temp\s1-polydit-audit-20260731
+commit=f31c8f04e5fa045bc08c7bbaaadfe60bb54816f1
+license_paths=

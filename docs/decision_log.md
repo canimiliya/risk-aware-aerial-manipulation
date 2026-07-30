@@ -30,3 +30,7 @@
 | D0026 | 2026-07-31 | ACTIVE | 高级总控最终审查 S0-R1-R2，结论 PASS_WITH_LIMITATIONS | S0 可正式收口 | PR #1 合并失败或负责人撤销 |
 | D0027 | 2026-07-31 | ACTIVE | 项目负责人批准 S0 有限通过并完成 PR #1 合并 | 允许使用普通 merge commit 合并 | 合并完成 |
 | D0028 | 2026-07-31 | ACTIVE | S1 首轮只执行 WSL/ROS/AM-Planner 源码预检，不安装依赖 | 禁止安装、运行规划和训练 | S1-R0 审查 |
+| D0029 | 2026-07-31 | ACTIVE | S1-R0 高级总控审查为 PASS | 允许正式收口并合并 PR #2 | 负责人撤销或合并失败 |
+| D0030 | 2026-07-31 | ACTIVE | 正式环境不得复用 AirFAR-Ubuntu20 | 必须建立隔离 Ubuntu 20.04 发行版 | 新环境创建失败 |
+| D0031 | 2026-07-31 | ACTIVE | 授权创建 AMPlanner-Ubuntu20 并安装 ROS Noetic/基础依赖 | 可进行受控环境搭建 | 任务边界变更 |
+| D0032 | 2026-07-31 | ACTIVE | S1-R1 只复现 Basic，IL/Polynomial_DiT checkpoint 继续冻结 | 禁止 IL、checkpoint 与训练 | 后续明确批准 |
