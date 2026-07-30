@@ -1,0 +1,43 @@
+﻿{
+    "audit_date":  "2026-07-31",
+    "os":  {
+               "Caption":  "Microsoft Windows 11 专业中文版",
+               "Version":  "10.0.26100",
+               "BuildNumber":  "26100",
+               "OSArchitecture":  "64 位"
+           },
+    "cpu":  {
+                "Name":  "Intel(R) Core(TM) Ultra 7 270K Plus",
+                "NumberOfCores":  24,
+                "NumberOfLogicalProcessors":  24,
+                "MaxClockSpeed":  3700
+            },
+    "memory_bytes":  50873458688,
+    "gpu":  "NVIDIA GeForce RTX 5060 Ti, 16311 MiB, 581.29, 12.0",
+    "disks":  [
+                  {
+                      "DeviceID":  "C:",
+                      "FileSystem":  "NTFS",
+                      "Size":  214754652160,
+                      "FreeSpace":  89239658496
+                  },
+                  {
+                      "DeviceID":  "D:",
+                      "FileSystem":  "NTFS",
+                      "Size":  785133858816,
+                      "FreeSpace":  491433791488
+                  }
+              ],
+    "wsl":  {
+                "status":  "WSL_AVAILABLE"
+            },
+    "python":  "NOT_VERIFIED",
+    "conda":  "usage: conda-script.py [-h] [-v] [--no-plugins] [-V] COMMAND ...",
+    "git":  "usage: git [-v | --version] [-h | --help] [-C \u003cpath\u003e] [-c \u003cname\u003e=\u003cvalue\u003e]",
+    "gh":  "Work seamlessly with GitHub from the command line.",
+    "long_paths":  " HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FileSystem     LongPathsEnabled    REG_DWORD    0x0 ",
+    "unknowns":  [
+                     "CUDA Toolkit exact status requires nvcc lookup",
+                     "WSL distribution suitability for ROS Noetic is not verified in S0"
+                 ]
+}

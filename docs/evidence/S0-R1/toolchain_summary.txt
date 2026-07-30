@@ -1,0 +1,7 @@
+﻿Python: NOT_VERIFIED
+Conda: usage: conda-script.py [-h] [-v] [--no-plugins] [-V] COMMAND ...
+Git: usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+gh: Work seamlessly with GitHub from the command line.
+CMake: NOT_INSTALLED
+Ninja: NOT_INSTALLED
+Docker: NOT_INSTALLED
