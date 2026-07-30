@@ -12,7 +12,7 @@
 | GPU compute capability | 12.0 | hardware_audit.json（独立字段） |
 | 驱动 CUDA 兼容值 | CUDA Version: 13.0（驱动报告的最高兼容 runtime 值） | nvidia_smi.txt |
 | CUDA Toolkit | `NOT_INSTALLED`；nvcc 查询记录 | toolchain_raw.txt |
-| 磁盘 | C: 214,754,652,160 总 / 89,245,347,840 剩余；D: 785,133,858,816 总 / 491,524,497,408 剩余 | path_and_disk_summary.txt |
+| 磁盘 | C: 214,754,652,160 总 / 85,162,917,888 剩余；D: 785,133,858,816 总 / 491,348,361,216 剩余 | path_and_disk_summary.txt |
 | LongPathsEnabled | 0 | path_and_disk_summary.txt |
 | WSL/发行版 | WSL2 可用；Ubuntu-24.04、Ubuntu、NMPC-Ubuntu22、dbLaCAM-Ubuntu、AirFAR-Ubuntu20；AirFAR `/etc/os-release` 探针超时 | wsl_*_utf8.txt |
 | 工具链 | Python 3.13.9；Conda 26.1.1；Git 2.55.0；gh 2.96.0；CMake/Ninja/Docker 未安装 | toolchain_summary.txt |

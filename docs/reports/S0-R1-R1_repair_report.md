@@ -15,7 +15,7 @@
 
 ## 新证据结论
 
-Windows 11 build 26100；Intel Core Ultra 7 270K Plus，24/24；RAM 50,873,458,688 bytes；RTX 5060 Ti 16,311 MiB，driver 581.29，compute capability 12.0；nvidia-smi 顶部驱动 CUDA Version 为 13.0；本地 CUDA Toolkit 为 `NOT_INSTALLED`。Python 3.13.9、Conda 26.1.1、Git 2.55.0、gh 2.96.0 均由真实版本命令记录；CMake/Ninja/Docker 为 `NOT_INSTALLED`。
+Windows 11 build 26100；Intel Core Ultra 7 270K Plus，24/24；RAM 50,873,458,688 bytes；RTX 5060 Ti 16,311 MiB，driver 581.29，compute capability 12.0；nvidia-smi 顶部驱动 CUDA Version 为 13.0；本地 CUDA Toolkit 为 `NOT_INSTALLED`。Python 3.13.9、Conda 26.1.1、Git 2.55.0、gh 2.96.0 均由真实版本命令记录；CMake/Ninja/Docker 为 `NOT_INSTALLED`。最新一次采集的 C/D 可用空间分别为 85,162,917,888 / 491,348,361,216 bytes。
 
 候选硬件判断为 `HARDWARE_PASS_WITH_LIMITATIONS`，不是 S0 正式状态。环境仍是两套隔离的 `NOT_INSTALLED` 候选环境。
 
