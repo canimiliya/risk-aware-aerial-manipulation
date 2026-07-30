@@ -1,0 +1,19 @@
+﻿.gitignore
+README.md
+checkpoints/download.py
+datasets/grasp_processed.txt
+datasets/grasp_saw.txt
+datasets/strike_processed.txt
+datasets/strike_saw.txt
+demo_points.py
+demo_polynomial.py
+trajectory_predictor.py
+utils/Times New Roman.ttf
+utils/add_index_to_data.py
+utils/dataset.py
+utils/diffusion_utils.py
+utils/dit_model.py
+utils/points_evaluation.py
+utils/polynomial_evaluation.py
+utils/process.py
+utils/train.py

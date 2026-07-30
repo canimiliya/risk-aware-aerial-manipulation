@@ -1,0 +1,10 @@
+﻿{
+    "name":  "wsl_status",
+    "command":  "wsl.exe --status",
+    "started_utc":  "2026-07-30T19:58:52.3640600Z",
+    "ended_utc":  "2026-07-30T19:58:59.9610658Z",
+    "exit_code":  0,
+    "timed_out":  false,
+    "stdout":  "؞��\u0006R�S:\u0000 \u0000U\u0000b\u0000u\u0000n\u0000t\u0000u\u0000-\u00002\u00004\u0000.\u00000\u00004\u0000\r\u0000\n\u0000؞��Hr,g:\u0000 \u00002\u0000\r\u0000\n\u0000",
+    "stderr":  ""
+}

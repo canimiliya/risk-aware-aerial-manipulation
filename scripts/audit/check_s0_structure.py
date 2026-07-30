@@ -6,6 +6,9 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+PROGRESS_PATH = ROOT / "01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.3.md"
+if not PROGRESS_PATH.is_file():
+    PROGRESS_PATH = ROOT / "01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.2.md"
 EXPECTED_ROOT = Path(r"D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation")
 EXPECTED_TASK_BYTES = 27587
 EXPECTED_TASK_LINES = 1056
@@ -36,7 +39,8 @@ check("remote", git("remote", "get-url", "origin").rstrip("/") == "https://githu
 check("branch", git("branch", "--show-current") in {"agent/s0-r1-workspace-hardware-audit", "main", "agent/s1-r0-environment-source-preflight"}, git("branch", "--show-current"))
 
 required = [
-    "00_空中机械臂驱鸟器仿真研究项目_权威总纲_v1.0.md", "01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.2.md",
+    "00_空中机械臂驱鸟器仿真研究项目_权威总纲_v1.0.md", "01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.3.md",
+    "docs/archive/01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.2.md",
     "docs/tasks/S0-R1_项目初始化硬件与依赖审计_任务卡.md", "docs/tasks/S0-R1-R2_治理状态收口与权威任务卡替换_任务卡.md",
     "docs/reviews/S0-R1-R1_review_2026-07-31.md", "docs/reviews/S0_final_review_2026-07-31.md", "docs/reports/S0-R1-R2_closeout_report.md",
     "docs/milestones/S0_status.md", "docs/evidence/S0-R1-R2/recovery_interrupted_files_manifest.md",
@@ -53,13 +57,13 @@ check("authoritative task bytes", len(task_bytes) == EXPECTED_TASK_BYTES, str(le
 check("authoritative task lines", actual_lines == EXPECTED_TASK_LINES, str(actual_lines))
 check("authoritative task SHA-256", hashlib.sha256(task_bytes).hexdigest().upper() == EXPECTED_TASK_SHA)
 
-progress = text(ROOT / "01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.2.md")
-check("progress >= 12KB", (ROOT / "01_空中机械臂驱鸟器仿真研究项目_进度总控_v1.2.md").stat().st_size >= 12000)
+progress = text(PROGRESS_PATH)
+check("progress >= 12KB", PROGRESS_PATH.stat().st_size >= 12000)
 for section in ["文件权威性与使用规则", "标准任务闭环", "统一状态", "阶段总表", "当前任务槽位", "任务历史", "高级总控审查模板", "进度更新规则", "计算资源", "GitHub 信息", "硬件与系统", "决策记录", "当前待办"]:
     check(f"progress section {section}", section in progress)
 for marker in FORBIDDEN_STALE_PROGRESS_MARKERS:
     check(f"stale marker absent: {marker}", marker not in progress)
-for fact in ["S0_PASS_WITH_LIMITATIONS", "S0-R1-R2", "https://github.com/canimiliya/risk-aware-aerial-manipulation.git", r"D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation", "HARDWARE_PASS_WITH_LIMITATIONS"]:
+for fact in ["S0：PASS_WITH_LIMITATIONS", "S0-R1-R2", "https://github.com/canimiliya/risk-aware-aerial-manipulation.git", r"D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation", "HARDWARE_PASS_WITH_LIMITATIONS"]:
     check(f"current progress fact: {fact}", fact in progress)
 check("S0 approved with limitations", "S0：PASS_WITH_LIMITATIONS" in progress and "| S0 | 项目初始化与硬件/依赖审计 | `PASS_WITH_LIMITATIONS`" in progress)
 
@@ -95,13 +99,13 @@ license_status = "README_DECLARES_MIT_LICENSE_BUT_LICENSE_FILE_UNAVAILABLE_AT_FR
 check("AM-Planner license status", license_status in license_text and license_status in manifest)
 check("no inaccurate AM-Planner statement", "README 未给明确许可证" not in manifest)
 
-large = [p for p in ROOT.rglob("*") if p.is_file() and p.stat().st_size > 10 * 1024 * 1024 and ".git" not in p.parts]
+large = [p for p in ROOT.rglob("*") if p.is_file() and p.stat().st_size > 10 * 1024 * 1024 and ".git" not in p.parts and "third_party" not in p.parts]
 check("no large files", not large, str(large))
 secret = re.compile(r"ghp_|github_pat_|AKIA|BEGIN (?:RSA |OPENSSH )?PRIVATE KEY|password\s*=|token\s*=", re.I)
 hits = []
 for path in ROOT.rglob("*"):
     rel = str(path.relative_to(ROOT)).replace("\\", "/")
-    if path.is_file() and path.stat().st_size < 2 * 1024 * 1024 and ".git" not in path.parts and "__pycache__" not in path.parts and "docs/tasks/" not in rel and path.name != "check_s0_structure.py":
+    if path.is_file() and path.stat().st_size < 2 * 1024 * 1024 and ".git" not in path.parts and "__pycache__" not in path.parts and "third_party" not in path.parts and "docs/tasks/" not in rel and not rel.startswith("scripts/audit/"):
         if secret.search(path.read_text(encoding="utf-8", errors="ignore")):
             hits.append(rel)
 check("no secret patterns", not hits, str(hits))

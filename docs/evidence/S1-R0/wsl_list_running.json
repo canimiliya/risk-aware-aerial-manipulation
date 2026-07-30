@@ -1,0 +1,10 @@
+﻿{
+    "name":  "wsl_list_running",
+    "command":  "wsl.exe --list --running",
+    "started_utc":  "2026-07-30T19:59:00.0075462Z",
+    "ended_utc":  "2026-07-30T19:59:00.0412949Z",
+    "exit_code":  -1,
+    "timed_out":  false,
+    "stdout":  "�l\tgck(WЏL��v\u0006R�S\u00020\r\u0000\n\u0000",
+    "stderr":  ""
+}
