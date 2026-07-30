@@ -1,3 +1,1 @@
-COMMAND: wsl -d AirFAR-Ubuntu20 -- cat /etc/os-release
-RESULT: COMMAND_TIMEOUT during controlled 5-second probe; distribution was not started or modified.
-CONCLUSION: Ubuntu 20.04 suitability is NOT_VERIFIED.
+CONTROLLED_PROBE_PENDING

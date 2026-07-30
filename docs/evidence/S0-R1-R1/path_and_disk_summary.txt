@@ -1,3 +1,3 @@
-C: total=214754652160 free=85162917888 fs=NTFS
-D: total=785133858816 free=491348361216 fs=NTFS
+C: total=214754652160 free=94066905088 fs=NTFS
+D: total=785133858816 free=490519371776 fs=NTFS
 LongPathsEnabled:  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem     LongPathsEnabled    REG_DWORD    0x0

@@ -25,13 +25,13 @@
                       "DeviceID":  "C:",
                       "FileSystem":  "NTFS",
                       "Size":  214754652160,
-                      "FreeSpace":  85162917888
+                      "FreeSpace":  94066905088
                   },
                   {
                       "DeviceID":  "D:",
                       "FileSystem":  "NTFS",
                       "Size":  785133858816,
-                      "FreeSpace":  491348361216
+                      "FreeSpace":  490519371776
                   }
               ],
     "wsl":  {

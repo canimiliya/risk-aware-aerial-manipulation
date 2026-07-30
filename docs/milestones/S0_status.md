@@ -1,8 +1,9 @@
 # S0 status
 
-- S0-R1 第一次提交：`a7b4ff803322f4e8b8f5b91723250aa7b3603257`
-- 第一次高级总控审查：`REVISION_REQUIRED`
-- 当前返修：S0-R1-R1，在原分支和 PR #1 内执行。
-- 返修提交后状态：`SUBMITTED_FOR_REVIEW`；不是 PASS。
-- S1：未授权；S1–S8：`FROZEN`；长训练：禁止。
-- 未满足/限制：完整任务卡基准哈希与附件实际可读取副本不一致；AirFAR-Ubuntu20 `/etc/os-release` 探针受控超时；平台、ROS、CUDA Toolkit 均未安装；许可证风险仍需后续治理。
+- S0-R1：`REVISION_REQUIRED`。
+- S0-R1-R1：`REVISION_REQUIRED`。
+- S0-R1-R2：`SUBMITTED_FOR_REVIEW`。
+- S0 正式阶段状态：`SUBMITTED_FOR_REVIEW`。
+- 候选最终结论：`PASS_WITH_LIMITATIONS`；正式批准权：高级总控审查 + 项目负责人决策。
+- S1：`FROZEN`；S1–S8：`FROZEN`；长训练：禁止。
+- 已知限制：Isaac Sim/Lab、AM-Planner、ROS、CUDA Toolkit 未安装；AirFAR-Ubuntu20 系统版本 `NOT_VERIFIED`；LongPathsEnabled=0；16 GB 显存需后续 headless/小并行实测；Polynomial_DiT 无明确许可证，禁止公开再分发。

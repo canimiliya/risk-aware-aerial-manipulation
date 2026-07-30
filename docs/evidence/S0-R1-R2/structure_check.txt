@@ -1,0 +1,64 @@
+﻿[PASS] project root: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation
+[PASS] single project .git
+[PASS] remote
+[PASS] branch
+[PASS] required 00_���л�е�������������о���Ŀ_Ȩ���ܸ�_v1.0.md
+[PASS] required 01_���л�е�������������о���Ŀ_�����ܿ�_v1.2.md
+[PASS] required docs/tasks/S0-R1_��Ŀ��ʼ��Ӳ�����������_����.md
+[PASS] required docs/tasks/S0-R1-R2_����״̬�տ���Ȩ�������滻_����.md
+[PASS] required docs/reviews/S0-R1-R1_review_2026-07-31.md
+[PASS] required docs/reports/S0-R1-R2_closeout_report.md
+[PASS] required docs/milestones/S0_status.md
+[PASS] required docs/evidence/S0-R1-R2/recovery_interrupted_files_manifest.md
+[PASS] required third_party/licenses/AM-Planner_LICENSE_STATUS_7ea9a0a.md
+[PASS] required docs/evidence/S0-R1-R1/hardware_audit.json
+[PASS] authoritative task bytes: 27587
+[PASS] authoritative task lines: 1056
+[PASS] authoritative task SHA-256
+[PASS] progress >= 12KB
+[PASS] progress section �ļ�Ȩ������ʹ�ù���
+[PASS] progress section ��׼����ջ�
+[PASS] progress section ͳһ״̬
+[PASS] progress section �׶��ܱ�
+[PASS] progress section ��ǰ�����λ
+[PASS] progress section ������ʷ
+[PASS] progress section �߼��ܿ����ģ��
+[PASS] progress section ���ȸ��¹���
+[PASS] progress section ������Դ
+[PASS] progress section GitHub ��Ϣ
+[PASS] progress section Ӳ����ϵͳ
+[PASS] progress section ���߼�¼
+[PASS] progress section ��ǰ����
+[PASS] stale marker absent: PRESTART_WAITING_REPOSITORY_AND_HARDWARE_INFO
+[PASS] stale marker absent: GitHub �ֿ⣺�ȴ���Ŀ�����˴���
+[PASS] stale marker absent: ���ظ�Ŀ¼���ȴ���Ŀ�������ṩ
+[PASS] stale marker absent: ��ǰִ��������
+[PASS] stale marker absent: �ֿ� URL��WAITING_INPUT
+[PASS] stale marker absent: �ֿ������ߣ�WAITING_INPUT
+[PASS] stale marker absent: �ɼ��ԣ�WAITING_INPUT
+[PASS] stale marker absent: ������Ŀ��Ŀ¼��WAITING_INPUT
+[PASS] stale marker absent: CPU��WAITING_INPUT
+[PASS] stale marker absent: GPU��WAITING_INPUT
+[PASS] stale marker absent: ����ϵͳ��WAITING_INPUT
+[PASS] stale marker absent: ����ִ�� S0����δ��Ȩ
+[PASS] current progress fact: S0_SUBMITTED_FOR_REVIEW
+[PASS] current progress fact: S0-R1-R2
+[PASS] current progress fact: https://github.com/canimiliya/risk-aware-aerial-manipulation.git
+[PASS] current progress fact: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation
+[PASS] current progress fact: HARDWARE_PASS_WITH_LIMITATIONS
+[PASS] no approved S0
+[PASS] hardware JSON top-level object: dict
+[PASS] python real version
+[PASS] conda real version
+[PASS] git real version
+[PASS] gh real version
+[PASS] UTF-8/NUL wsl_status_utf8.txt
+[PASS] UTF-8/NUL wsl_version_utf8.txt
+[PASS] UTF-8/NUL wsl_list_verbose_utf8.txt
+[PASS] UTF-8/NUL AirFAR-Ubuntu20_os_release.txt
+[PASS] AM-Planner license status
+[PASS] no inaccurate AM-Planner statement
+[PASS] no large files: []
+[PASS] no secret patterns: []
+SUMMARY errors=0 warnings=0
+exit_code=0
