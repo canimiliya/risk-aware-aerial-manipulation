@@ -1,5 +1,20 @@
 # 硬件与系统审计
 
-截图型号仅作线索；以下结论均来自 S0 命令采集的脱敏证据。Windows 11 build 26100，Intel Core Ultra 7 270K Plus（24 核/24 逻辑线程），RAM 50,873,458,688 bytes，RTX 5060 Ti（16,311 MiB，driver 581.29，compute capability 12.0）。C: 可用 89,245,347,840 bytes；D: 可用 491,524,497,408 bytes。
+截图只作为线索；本页结论来自 `docs/evidence/S0-R1-R1/` 的命令证据。
 
-Isaac Lab 候选条件：GPU 与 16 GB VRAM 接近候选平台的容量门槛，可能需要 headless 和较小并行环境；RTX 50 系与驱动组合必须在获批安装后实测。当前无 CUDA Toolkit；这不等同于 GPU 或 Isaac Lab 不可用。WSL2 已启用，但未见 Ubuntu 20.04；ROS Noetic 环境未验证。完整字段见 `docs/evidence/S0-R1/hardware_audit.json`。
+| 项目 | 实测值 | 证据 |
+|---|---|---|
+| OS | Windows 11 build 26100, x64 | hardware_audit.json |
+| CPU | Intel Core Ultra 7 270K Plus；24 核/24 逻辑线程 | hardware_audit.json |
+| RAM | 50,873,458,688 bytes | hardware_audit.json |
+| GPU/VRAM | RTX 5060 Ti / 16,311 MiB | nvidia_smi.txt |
+| 驱动 | 581.29 | nvidia_smi.txt |
+| GPU compute capability | 12.0 | hardware_audit.json（独立字段） |
+| 驱动 CUDA 兼容值 | CUDA Version: 13.0（驱动报告的最高兼容 runtime 值） | nvidia_smi.txt |
+| CUDA Toolkit | `NOT_INSTALLED`；nvcc 查询记录 | toolchain_raw.txt |
+| 磁盘 | C: 214,754,652,160 总 / 89,245,347,840 剩余；D: 785,133,858,816 总 / 491,524,497,408 剩余 | path_and_disk_summary.txt |
+| LongPathsEnabled | 0 | path_and_disk_summary.txt |
+| WSL/发行版 | WSL2 可用；Ubuntu-24.04、Ubuntu、NMPC-Ubuntu22、dbLaCAM-Ubuntu、AirFAR-Ubuntu20；AirFAR `/etc/os-release` 探针超时 | wsl_*_utf8.txt |
+| 工具链 | Python 3.13.9；Conda 26.1.1；Git 2.55.0；gh 2.96.0；CMake/Ninja/Docker 未安装 | toolchain_summary.txt |
+
+候选判断：`HARDWARE_PASS_WITH_LIMITATIONS`，仅是执行 Agent 的候选判断。限制：Isaac Lab 未真实安装启动；16 GB 显存需要 headless/小并行；RTX 50 组合仍需实测；Long Paths 未启用；AM-Planner/ROS 未安装；C 盘不适合大型缓存，优先 D 盘规划，但本轮未改环境。

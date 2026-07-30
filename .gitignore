@@ -32,6 +32,10 @@ third_party/Polynomial_DiT/
 *.key
 *token*
 *credentials*
+docs/evidence/S0-R1-R1/structure_check_output.txt
+docs/evidence/S0-R1-R1/*.tmp
+docs/evidence/S0-R1-R1/probe_*
+docs/evidence/S0-R1-R1/test.*
 !outputs/checkpoints/.gitkeep
 !outputs/logs/.gitkeep
 !outputs/videos/.gitkeep

@@ -1,0 +1,10 @@
+python --version | exit=0 | status=OK
+conda --version | exit=0 | status=OK
+git --version | exit=0 | status=OK
+gh --version | exit=0 | status=OK
+cmake --version | exit=NOT_INSTALLED
+ninja --version | exit=NOT_INSTALLED
+docker --version | exit=NOT_INSTALLED
+nvcc --version | exit=NOT_INSTALLED
+nvidia-smi query exit=0
+wsl status/version/list/air os-release exits=DEFERRED_TO_CONTROLLED_WSL_PROBE/DEFERRED_TO_CONTROLLED_WSL_PROBE/DEFERRED_TO_CONTROLLED_WSL_PROBE/DEFERRED_TO_CONTROLLED_WSL_PROBE

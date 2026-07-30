@@ -1,0 +1,2 @@
+COMMAND: wsl --status
+RESULT: COMMAND_TIMEOUT during controlled 5-second probe; no success value inferred.

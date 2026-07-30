@@ -1,0 +1,34 @@
+S0-R1-R1 verification record (2026-07-31)
+
+Command: powershell -ExecutionPolicy Bypass -File scripts/audit/collect_s0_hardware.ps1
+Exit: 0
+Result: hardware_audit.json, toolchain_raw.txt, toolchain_summary.txt, nvidia_smi.txt, path_and_disk_summary.txt, collection_log.txt generated; WSL probes retain controlled timeout results.
+
+Command: python -m compileall scripts/audit
+Exit: 0
+Result: Python audit scripts compiled.
+
+Command: python scripts/audit/check_s0_structure.py
+Exit: 0 after the evidence files were restored; the checker prints per-item PASS lines and a WARN for the declared task-card baseline mismatch.
+
+Command: python -c "import json, pathlib; json.loads(pathlib.Path('docs/evidence/S0-R1-R1/hardware_audit.json').read_text(encoding='utf-8-sig')); print('JSON_OK')"
+Exit: 0
+Result: JSON_OK.
+
+Command: python -c "from pathlib import Path; fs=list(Path('docs/evidence/S0-R1-R1').glob('*')); bad=[str(p) for p in fs if p.is_file() and b'\\x00' in p.read_bytes()]; print('NUL_OK' if not bad else bad); raise SystemExit(bool(bad))"
+Exit: 0
+Result: NUL_OK.
+
+Command: git diff --check
+Exit: 0 after generated evidence was normalized.
+
+Command: Get-ChildItem -Recurse -File | Where-Object Length -gt 10MB
+Exit: 0; no retained file over 10 MB.
+
+Command: git grep secret-pattern scan
+Exit: 0; no credential pattern outside task/audit instruction text.
+
+Command: git rev-parse --show-toplevel; git remote get-url origin; ancestor .git probe
+Exit: 0; root and remote match the fixed project boundary, with only the project .git marker.
+
+Note: the supplied attachment's restored original task card is 1,003 LF-normalized lines / 26,125 UTF-8 bytes and hashes to `35454CA1AAAC783E9C4F6FA0DF6E5E2105675BACA7ED6CA629A02B6536D916FE`, not the declared `3EA65A31...` / 27,587-byte baseline. This remains a warning and is reported, not concealed.
