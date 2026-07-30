@@ -1,0 +1,11 @@
+# S0-R1 执行报告
+
+状态：`SUBMITTED_S0_WITH_LIMITATIONS`。main 基线 `eba99e552877cb97e969734955ade7111f598032`；执行分支 `agent/s0-r1-workspace-hardware-audit`；证据提交 `16ab02ddc60a0cb393437d082a55fc717d5ef25e`。本报告所在提交为最终审查提交。
+
+工作区未嵌套于父 Git 仓库；初始文件仅两份，权威总纲 SHA256 前后均为 `AD787F3B348875F934BD14228D650BB4C3485B117DD20284471927DD4762692F`。
+
+实测：Windows 11 build 26100；Intel Core Ultra 7 270K Plus（24/24）；RAM 50,873,458,688 bytes；RTX 5060 Ti 16,311 MiB，driver 581.29，compute capability 12.0；C/D 可用空间分别约 89.2/491.5 GB。WSL2 可用，列出 Ubuntu-24.04、Ubuntu、NMPC-Ubuntu22、dbLaCAM-Ubuntu、AirFAR-Ubuntu20；未验证 AM-Planner 所需 Ubuntu 20.04。Python 3.13.9、Conda 26.1.1、Git 2.55.0、gh 2.96.0；CMake/Ninja/Docker/nvcc 未发现；LongPathsEnabled=0。
+
+第三方引用见 manifest 和 `third_party_refs.txt`。Isaac Lab v2.3.2 已固定；AM-Planner 与 Polynomial_DiT 许可证为未验证。环境策略 `FEASIBLE_WITH_LIMITATIONS`，两套环境均未安装且严格隔离。
+
+检查：`python scripts/audit/check_s0_structure.py` 退出 0；`python -m compileall scripts/audit` 退出 0；最终 `git diff --check` 退出 0。未安装平台/驱动、未训练、未做正式实验、未合并执行分支至 main。
