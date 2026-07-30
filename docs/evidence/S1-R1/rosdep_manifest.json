@@ -1,0 +1,5 @@
+﻿{
+    "ros_verify_exit":  0,
+    "rosdep_init_exit":  0,
+    "rosdep_update_exit":  1
+}

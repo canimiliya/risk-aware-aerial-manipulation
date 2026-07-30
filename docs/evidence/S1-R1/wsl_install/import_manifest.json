@@ -1,0 +1,8 @@
+﻿{
+    "method":  "official_appx_import",
+    "rootfs_path":  "D:\\WSL\\downloads\\ubuntu-20.04-x64\\install.tar.gz",
+    "rootfs_sha256":  "841DBA1A5191BEC50347E765121C7160D4D7BFE8108731C316CD26D23AD6A391",
+    "started_utc":  "2026-07-30T20:24:59.0754477Z",
+    "finished_utc":  "2026-07-30T20:25:04.2540192Z",
+    "exit_code":  0
+}

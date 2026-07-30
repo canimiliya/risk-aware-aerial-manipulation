@@ -1,0 +1,9 @@
+﻿{
+    "source":  "https://aka.ms/wslubuntu2004",
+    "download_path":  "D:\\WSL\\downloads\\ubuntu-20.04.appx",
+    "downloaded_utc":  "2026-07-30T20:24:19.0053828Z",
+    "exit_code":  0,
+    "bytes":  937972031,
+    "sha256":  "BE91806D4C9250EB275CAFB3559AA44257F320564A17A824D29D5F937BE42025",
+    "headers_path":  "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S1-R1\\official_ubuntu2004_headers.txt"
+}
