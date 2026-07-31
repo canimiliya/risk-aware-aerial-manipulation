@@ -7,7 +7,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[2]
 RUNTIME = ROOT / "docs/evidence/S1-R1/runtime"
 errors = []
-for task, run in {"grasp": "grasp_torch_run_01_retry_03", "write": "write_torch_run_01", "lift": "lift_torch_run_01"}.items():
+for task, run in {"grasp": "grasp_cpu_checkpoint_run_02", "write": "write_cpu_checkpoint_run_01", "lift": "lift_cpu_checkpoint_run_01"}.items():
     path = RUNTIME / run / "numeric_validation.json"
     if not path.is_file():
         errors.append(f"{task}_evidence_missing")

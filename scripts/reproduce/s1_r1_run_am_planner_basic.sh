@@ -24,6 +24,7 @@ export MPLBACKEND=Agg
 mkdir -p "$ROS_HOME"
 
 printf '%s\n' "task=$task" "run_id=$run_id" "started_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$run_dir/command.txt"
+printf '%s\n' "${S1_R1_WORKAROUND_MODE:-NONE}" > "$run_dir/workaround_mode.txt"
 env | sort > "$run_dir/environment.txt"
 
 roscore > "$run_dir/roscore.log" 2>&1 &
@@ -53,7 +54,7 @@ for attempt in $(seq 1 30); do
 done
 rosparam list >/dev/null
 
-python "$capture_script" --output-dir "$run_dir" --timeout-s 150 > "$run_dir/capture.log" 2>&1 &
+python "$capture_script" --output-dir "$run_dir" --timeout-s "${S1_R1_CAPTURE_TIMEOUT:-300}" > "$run_dir/capture.log" 2>&1 &
 capture_pid=$!
 sleep 2
 
@@ -79,4 +80,6 @@ capture_status=$?
 set -e
 printf '{"task":"%s","run_id":"%s","capture_exit":%s,"finished_utc":"%s"}\n' \
   "$task" "$run_id" "$capture_status" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$run_dir/result_summary.json"
+cd /home/amplanner/am-planner-ws/src/am-planner
+git status --short > "$run_dir/source_git_state_after.txt"
 exit "$capture_status"

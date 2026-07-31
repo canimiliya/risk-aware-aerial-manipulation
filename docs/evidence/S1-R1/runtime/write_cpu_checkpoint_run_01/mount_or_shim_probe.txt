@@ -1,0 +1,9 @@
+BIND_MOUNT_CPU_WEIGHT
+original_before=506f59645e3e076c3910774054d0538a7664362e39cecb9b06e2d5e01aecca49  /home/amplanner/am-planner-ws/src/am-planner/src/plan/traj_opt/weights/workspace_probability_weight.pth
+converted=c36009d971300a04b8e0975d59b9adbe5e7e051a82f9dd91722c199b14cbc925  /home/amplanner/am-planner-ws/runtime_assets/workspace_probability_weight_cpu.pth
+TARGET SOURCE   FSTYPE OPTIONS
+/      /dev/sde ext4   rw,relatime,discard,errors=remount-ro,data=ordered
+mounted_utc=2026-07-31T09:16:50Z
+TARGET                                                                                                  SOURCE                                                                                      FSTYPE OPTIONS
+/home/amplanner/am-planner-ws/src/am-planner/src/plan/traj_opt/weights/workspace_probability_weight.pth /dev/sde[/home/amplanner/am-planner-ws/runtime_assets/workspace_probability_weight_cpu.pth] ext4   rw,relatime,discard,errors=remount-ro,data=ordered
+c36009d971300a04b8e0975d59b9adbe5e7e051a82f9dd91722c199b14cbc925  /home/amplanner/am-planner-ws/src/am-planner/src/plan/traj_opt/weights/workspace_probability_weight.pth

@@ -1,0 +1,18 @@
+{
+  "original": {
+    "path": "/home/amplanner/am-planner-ws/src/am-planner/src/plan/traj_opt/weights/workspace_probability_weight.pth",
+    "bytes": 236450,
+    "sha256": "506f59645e3e076c3910774054d0538a7664362e39cecb9b06e2d5e01aecca49"
+  },
+  "converted": {
+    "path": "/home/amplanner/am-planner-ws/runtime_assets/workspace_probability_weight_cpu.pth",
+    "bytes": 235768,
+    "sha256": "c36009d971300a04b8e0975d59b9adbe5e7e051a82f9dd91722c199b14cbc925"
+  },
+  "key_order_equal": true,
+  "tensor_count": 10,
+  "tensor_values_equal": true,
+  "all_cpu": true,
+  "all_finite": true,
+  "has_nonzero_tensor": true
+}

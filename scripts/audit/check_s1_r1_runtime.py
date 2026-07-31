@@ -14,7 +14,10 @@ def load(relative):
 
 torch = load("torch_runtime/torch_probe.json")
 weight = load("torch_runtime/workspace_weight_load_probe.json")
-grasp = load("runtime/grasp_torch_run_01_retry_03/numeric_validation.json")
+root_cause = load("cpu_checkpoint_fix/root_cause_reproduction.json")
+conversion = load("cpu_checkpoint_fix/cpu_weight_conversion.json")
+model = load("cpu_checkpoint_fix/model_cpu_validation.json")
+grasp = load("runtime/grasp_cpu_checkpoint_run_02/numeric_validation.json")
 errors = []
 if not torch or not str(torch.get("torch_version", "")).startswith("2.4.1"):
     errors.append("torch_version")
@@ -29,12 +32,18 @@ for name in ("torchvision", "torchaudio", "triton"):
         errors.append(f"forbidden_probe_{name}")
 if not (EVIDENCE / "build_after_torch/build_after_torch.log").read_text(encoding="utf-8", errors="replace").count("All 19 packages succeeded"):
     errors.append("build_19_of_19")
-if not grasp or grasp.get("success") is not False or grasp.get("received_topics") != []:
-    errors.append("grasp_blocker_evidence")
+if not root_cause or root_cause.get("positional_dict", {}).get("success") is not False or root_cause.get("keyword_map_location", {}).get("success") is not True:
+    errors.append("root_cause")
+if not conversion or conversion.get("tensor_values_equal") is not True:
+    errors.append("cpu_conversion")
+if not model or not model.get("strict_load") or not model.get("output_finite") or not model.get("gradient_finite"):
+    errors.append("model_validation")
+if not grasp or grasp.get("success") is not True:
+    errors.append("grasp_evidence")
 if "SUBMITTED_FOR_REVIEW" not in STATUS.read_text(encoding="utf-8", errors="replace"):
     errors.append("truthful_status")
 
 print(f"errors={len(errors)}")
 print("warnings=1" if not errors else "warnings=0")
-print("runtime_status=TORCH_AND_BUILD_OK_GRASP_ABORT_NO_TRAJECTORY" if not errors else "missing=" + ",".join(errors))
+print("runtime_status=CPU_CHECKPOINT_FIXED_GRASP_LIFT_OK_WRITE_TIMEOUT" if not errors else "missing=" + ",".join(errors))
 sys.exit(1 if errors else 0)
