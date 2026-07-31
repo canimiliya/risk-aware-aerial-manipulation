@@ -40,10 +40,11 @@ if not model or not model.get("strict_load") or not model.get("output_finite") o
     errors.append("model_validation")
 if not grasp or grasp.get("success") is not True:
     errors.append("grasp_evidence")
-if "SUBMITTED_FOR_REVIEW" not in STATUS.read_text(encoding="utf-8", errors="replace"):
+status_text = STATUS.read_text(encoding="utf-8", errors="replace")
+if "SUBMITTED_S1_R1_WRITE_RUNTIME_TOO_SLOW" not in status_text:
     errors.append("truthful_status")
 
 print(f"errors={len(errors)}")
-print("warnings=1" if not errors else "warnings=0")
-print("runtime_status=CPU_CHECKPOINT_FIXED_GRASP_LIFT_OK_WRITE_TIMEOUT" if not errors else "missing=" + ",".join(errors))
+print("warnings=0")
+print("runtime_status=CPU_CHECKPOINT_FIXED_GRASP_LIFT_OK_WRITE_CPU_RUNTIME_TOO_SLOW" if not errors else "missing=" + ",".join(errors))
 sys.exit(1 if errors else 0)

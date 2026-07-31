@@ -13,15 +13,15 @@
 
 ## 还没有做到的
 
-- write 在规定的 300 秒内没有发布两条轨迹；它已完成 JPS、MINCO 初始化和 CPU 模型初始化，但捕获器收到空结果。
+- write 在规定的 300 秒内没有发布两条轨迹；随后唯一一次最长 1200 秒诊断显示它一直高负载运行、cost 持续变化但仍未完成，分类为 `WRITE_CPU_RUNTIME_TOO_SLOW`（人话：CPU 太慢）。
 - 三项未全过，因此未运行 grasp 重复性验收。
 
 ## 是否通过
 
-不通过三项运行验收：grasp 与 lift 通过，write 未在规定时限内发布轨迹。CPU 权重反序列化问题已无源码修改地修复；后续如要继续，应只诊断 write 的规划/发布耗时。
+不通过三项运行验收：grasp 与 lift 通过，write 未在 1200 秒内发布轨迹。CPU 权重反序列化问题已无源码修改地修复；R5 的 write 诊断已完成，后续如要继续需要新的授权。
 
 ## 原始标签
 
-`SUBMITTED_FOR_REVIEW`：意思是“本轮证据已提交等待审查”，不表示三项轨迹已经通过。此次提交的实际结果仍是“构建成功、grasp 因官方节点 abort 未出轨迹”。
+`SUBMITTED_S1_R1_WRITE_RUNTIME_TOO_SLOW`：意思是“write 在 1200 秒内没跑完，但程序一直活跃计算，判断为 CPU 太慢”；不表示 write 已通过。
 
 S1 保持 `IN_PROGRESS`，S2--S8 保持 `FROZEN`；PR #3 保持 Draft，未合并。

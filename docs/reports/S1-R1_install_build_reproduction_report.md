@@ -2,7 +2,7 @@
 
 ## 结论
 
-官方 CPU Torch 已安装、仓库自带权重已验证可加载、19/19 构建仍成功。CPU 反序列化问题已在不改官方源码的条件下修复；grasp 与 lift 已产生真实双轨迹，但 write 在 300 秒内未发布轨迹，因此三项验收未通过。
+官方 CPU Torch 已安装、仓库自带权重已验证可加载、19/19 构建仍成功。CPU 反序列化问题已在不改官方源码的条件下修复；grasp 与 lift 已产生真实双轨迹。R5 对 write 做了唯一一次最长 1200 秒诊断：它一直高负载计算、cost 持续变化但仍未发布轨迹，分类为 CPU 太慢；三项验收仍未通过。
 
 ## 当前做到的
 
@@ -16,19 +16,20 @@
 
 ## 还缺什么
 
-- write 的两条非空轨迹消息与 grasp 重复性未完成。
+- write 的两条非空轨迹消息与 grasp 重复性未完成；write 1200 秒诊断证据已完成，但 write 仍未通过。
 
 ## 是否需要我处理
 
-需要你决定是否授权下一轮仅诊断 write 未在 300 秒内发布轨迹的原因；本轮没有修改 AM-Planner 源码，也不应把它写成三项基础复现通过。
+需要你决定是否授权新的 write 性能定位或方案尝试；本轮没有修改 AM-Planner 源码，也不应把它写成三项基础复现通过。
 
 ## 证据
 
 - Torch 与权重：`docs/evidence/S1-R1/torch_runtime/`
 - 构建：`docs/evidence/S1-R1/build_after_torch/build_after_torch.log`
 - CPU 权重修复：`docs/evidence/S1-R1/cpu_checkpoint_fix/`
-- 本轮运行与消息检查：`docs/evidence/S1-R1/runtime/grasp_cpu_checkpoint_run_02/`、`write_cpu_checkpoint_run_01/`、`lift_cpu_checkpoint_run_01/`
+- 基础运行与消息检查：`docs/evidence/S1-R1/runtime/grasp_cpu_checkpoint_run_02/`、`write_cpu_checkpoint_run_01/`、`lift_cpu_checkpoint_run_01/`
+- write 1200 秒诊断：`docs/evidence/S1-R1/write_diagnosis/` 与 `docs/evidence/S1-R1/write_diagnosis_run_01/`
 
 ## 原始标签
 
-`SUBMITTED_S1_R1_BUILD_WITH_RUNTIME_BLOCKER`：CPU 权重问题已解决、部分任务已运行成功，但 write 仍被运行时限内无轨迹这一问题拦住。
+`SUBMITTED_S1_R1_WRITE_RUNTIME_TOO_SLOW`：意思是“write 诊断证据完整，但 CPU 在 1200 秒内仍算不完；grasp/lift 已通过，write 未通过”。

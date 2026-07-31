@@ -1,0 +1,47 @@
+{
+  "utc": "2026-07-31T13:42:27Z",
+  "elapsed_s": 603.991,
+  "se3_node": [
+    {
+      "pid": 246,
+      "ppid": 205,
+      "state": "Rsl",
+      "cpu_percent": 1913.0,
+      "rss_kb": 689736,
+      "vsz_kb": 6494504,
+      "threads": 52,
+      "elapsed_s": 600,
+      "args": "/home/amplanner/am-planner-ws/devel/.private/plan_manage/lib/plan_manage/se3_node ~object_odom:=/odom_converter/converted_odom1 ~trajectory:=/trajectory ~trajectory_arm:=/trajectory_arm __name:=se3_node __log:=/home/amplanner/am-planner-ws/logs/s1-r1-runtime/write_diagnosis_run_01/ros_home/log/43bd8c18-8ce4-11f1-b46a-00155d6b0466/se3_node-1.log",
+      "io": {
+        "rchar": 28240316,
+        "wchar": 137909,
+        "syscr": 4435,
+        "syscw": 3857,
+        "read_bytes": 332656640,
+        "write_bytes": 172032,
+        "cancelled_write_bytes": 0,
+        "voluntary_ctxt_switches": 20644,
+        "nonvoluntary_ctxt_switches": 7769
+      }
+    }
+  ],
+  "log": {
+    "size": 71303,
+    "mtime": 1785505347.4739003
+  },
+  "cost_count": 3560,
+  "latest_cost": 15304300.0,
+  "minimum_cost": 15304300.0,
+  "recent_20_relative_drop": 0.0003918930393264665,
+  "topics": {
+    "/trajectory": {
+      "raw": "command_error:[Errno 2] No such file or directory: 'rostopic'",
+      "has_publishers": false
+    },
+    "/trajectory_arm": {
+      "raw": "command_error:[Errno 2] No such file or directory: 'rostopic'",
+      "has_publishers": false
+    }
+  },
+  "snapshot_s": 600
+}
