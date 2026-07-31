@@ -11,7 +11,7 @@ case "$task" in grasp|write|lift) ;; *) echo "unsupported task: $task" >&2; exit
 
 run_dir="$output_root/$run_id"
 mkdir -p "$run_dir"
-exec > >(tee "$run_dir/runner.log") 2>&1
+exec > "$run_dir/runner.log" 2>&1
 
 source /home/amplanner/miniforge3/etc/profile.d/conda.sh
 conda activate am-planner-py38
@@ -53,17 +53,17 @@ for attempt in $(seq 1 30); do
 done
 rosparam list >/dev/null
 
-python3 "$capture_script" --output-dir "$run_dir" --timeout-s 150 > "$run_dir/capture.log" 2>&1 &
+python "$capture_script" --output-dir "$run_dir" --timeout-s 150 > "$run_dir/capture.log" 2>&1 &
 capture_pid=$!
 sleep 2
 
 cd /home/amplanner/am-planner-ws/src/am-planner
-python3 map/desk.py > "$run_dir/map.log" 2>&1 &
+python map/desk.py > "$run_dir/map.log" 2>&1 &
 map_pid=$!
 if [[ "$task" == grasp ]]; then
-  roslaunch plan_manage run_in_sim_grasp.launch > "$run_dir/roslaunch.log" 2>&1 &
+  roslaunch --screen plan_manage run_in_sim_grasp.launch > "$run_dir/roslaunch.log" 2>&1 &
 else
-  roslaunch plan_manage run_in_sim_other.launch "task:=$task" > "$run_dir/roslaunch.log" 2>&1 &
+  roslaunch --screen plan_manage run_in_sim_other.launch "task:=$task" > "$run_dir/roslaunch.log" 2>&1 &
 fi
 launch_pid=$!
 

@@ -1,0 +1,3 @@
+logging to /home/amplanner/am-planner-ws/logs/s1-r1-runtime/grasp_torch_run_01_retry_02/ros_home/log/8994a2fa-8cba-11f1-a068-00155d6b0dfb/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout

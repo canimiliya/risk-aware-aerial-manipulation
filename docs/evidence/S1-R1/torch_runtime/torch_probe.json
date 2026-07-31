@@ -1,0 +1,8 @@
+{
+  "torch_version": "2.4.1+cpu",
+  "cuda_available": false,
+  "cuda_version": null,
+  "device_count": 0,
+  "nn_forward_ok": true,
+  "autograd_ok": true
+}

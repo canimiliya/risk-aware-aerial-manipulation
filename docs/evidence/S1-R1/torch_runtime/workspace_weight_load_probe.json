@@ -1,0 +1,19 @@
+{
+  "object_type": "OrderedDict",
+  "key_count": 10,
+  "tensor_count": 10,
+  "all_finite": true,
+  "nonzero_tensor_count": 10,
+  "sample_keys": [
+    "network.0.weight",
+    "network.0.bias",
+    "network.2.weight",
+    "network.2.bias",
+    "network.4.weight",
+    "network.4.bias",
+    "network.6.weight",
+    "network.6.bias",
+    "network.8.weight",
+    "network.8.bias"
+  ]
+}

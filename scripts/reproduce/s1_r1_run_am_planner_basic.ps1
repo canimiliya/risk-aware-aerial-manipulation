@@ -5,7 +5,10 @@ param(
 )
 
 $taskRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-$wslRoot = (wsl -d AMPlanner-Ubuntu20 -- wslpath -a "$taskRoot").Trim()
+$wslRoot = (wsl -d AMPlanner-Ubuntu20 --exec wslpath -a (Convert-Path $taskRoot)).Trim()
+if ([string]::IsNullOrWhiteSpace($wslRoot)) {
+  throw "Unable to translate the project path for AMPlanner-Ubuntu20."
+}
 $runner = "$wslRoot/scripts/reproduce/s1_r1_run_am_planner_basic.sh"
 $capture = "$wslRoot/scripts/reproduce/s1_r1_capture_ros_message.py"
 $outputRoot = '/home/amplanner/am-planner-ws/logs/s1-r1-runtime'

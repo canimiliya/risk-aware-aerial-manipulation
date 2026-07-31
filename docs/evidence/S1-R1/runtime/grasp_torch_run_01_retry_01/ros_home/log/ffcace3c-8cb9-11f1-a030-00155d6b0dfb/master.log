@@ -1,0 +1,262 @@
+[rosmaster.main][INFO] 2026-07-31 16:29:51,634: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2026-07-31 16:29:51,634: Starting ROS Master Node
+[xmlrpc][INFO] 2026-07-31 16:29:51,635: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2026-07-31 16:29:51,635: Started XML-RPC server [http://SC-202607101733:11311/]
+[xmlrpc][INFO] 2026-07-31 16:29:51,635: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2026-07-31 16:29:51,635: Master initialized: port[11311], uri[http://SC-202607101733:11311/]
+[rosmaster.master][INFO] 2026-07-31 16:29:51,729: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:51,729: +PARAM [/roslaunch/uris/host_sc_202607101733__36777] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:51,751: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:51,751: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:51,768: +SERVICE [/rosout/get_loggers] /rosout http://SC-202607101733:44267/
+[rosmaster.master][INFO] 2026-07-31 16:29:51,768: +SERVICE [/rosout/set_logger_level] /rosout http://SC-202607101733:44267/
+[rosmaster.master][INFO] 2026-07-31 16:29:51,769: +PUB [/rosout_agg] /rosout http://SC-202607101733:44267/
+[rosmaster.master][INFO] 2026-07-31 16:29:51,770: +SUB [/rosout] /rosout http://SC-202607101733:44267/
+[rosmaster.master][INFO] 2026-07-31 16:29:52,719: +PUB [/rosout] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:29:52,720: +SERVICE [/s1_r1_trajectory_capture_120_1785486592602/get_loggers] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:29:52,721: +SERVICE [/s1_r1_trajectory_capture_120_1785486592602/set_logger_level] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:29:52,737: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:36423/']
+[rosmaster.master][INFO] 2026-07-31 16:29:52,739: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:36423/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-07-31 16:29:54,556: +PARAM [/roslaunch/uris/host_sc_202607101733__36817] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/mode] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/start_x] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/start_y] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/start_z] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/end_x] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/end_y] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/end_z] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/object_qx] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/object_qy] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/object_qz] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/object_qw] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/object_px] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/object_py] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/object_pz] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/num_pre_point] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/num_post_point] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/scale] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,559: +PARAM [/staticR] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/dynar] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/upper_arm] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/lower_arm] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/rate] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/mass] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/debug] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/debug_endEffector] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/object_height] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/MapTopic] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/TargetTopic] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/OdomFrame] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/UpperArm] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/LowerArm] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/StaticRadius] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/EndEffectorRadius] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/MapHeight] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/PolyhedronBox] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/MaxLengthLine] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/Rho] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/TotalT] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/QdIntervals] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/HorizHalfLen] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/VertHalfLen] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/SafeMargin] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/BiasArmToBody] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/VelMax] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/ThrustAccMin] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/ThrustAccMax] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/BodyRateMax] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/InitVel] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/ArmVelMax] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/BoundArmZ] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/TaskArmZ] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/EEDownVel] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/ObjectHeight] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/GravAcc] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/PenaltyPVTB] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/PenaltyArm] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/PrintCost] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/UseC2Diffeo] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/MultiLayerOpt] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/OptRelTol1] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/OptRelTol2] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/S_CurvCoeff] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/Restart] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/TrajVizWidth] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/TrajVizRGB] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/EllipsoidPath] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/QuadEllipsoidVizRGBA] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/EEEllipsoidVizRGBA] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/QuadrotorPath] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/PenaltyGraspWeight] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/OrientationR] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/GraspR] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/PlatformR] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/SmoothR] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/CollectData] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/CoordinateNum] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/use_quadrotor_odom] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/use_object_odom] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/se3_node/overlap] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/map/x_size] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/map/y_size] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,560: +PARAM [/map/z_size] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/map/origin_x] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/map/origin_y] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/map/origin_z] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/map/resolution] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/map/world_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/world_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/jps/resolution] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/jps/lambda_heu] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,561: +PARAM [/jps/allocate_num] by /roslaunch
+[rosmaster.master][INFO] 2026-07-31 16:29:54,618: +PUB [/rosout] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,619: +SERVICE [/platform_publisher_152_1785486594505/get_loggers] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,620: +SERVICE [/platform_publisher_152_1785486594505/set_logger_level] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,620: +PUB [/global_map] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,622: +SUB [/odom_converter/converted_odom1] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,627: +PUB [/rosout] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,627: +SERVICE [/se3_node/get_loggers] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,627: +SERVICE [/se3_node/set_logger_level] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,630: +CACHEDPARAM [/rosout_disable_topics_generation] by /se3_node
+[rosmaster.master][INFO] 2026-07-31 16:29:54,631: +SUB [/odom_converter/converted_odom1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,632: +PUB [/trajectory] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,632: +PUB [/trajectory_arm] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,633: +SUB [/start_trigger] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,634: +SUB [/publish_trigger] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,634: +PUB [/visualization/target] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,634: +PUB [/finish_simulation] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,634: +PUB [/logger] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,642: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:36423/', 'http://SC-202607101733:39721/']
+[rosmaster.master][INFO] 2026-07-31 16:29:54,642: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:36423/', 'http://SC-202607101733:39721/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-07-31 16:29:54,643: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:36423/', 'http://SC-202607101733:39721/', 'http://SC-202607101733:41691/']
+[rosmaster.master][INFO] 2026-07-31 16:29:54,643: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:36423/', 'http://SC-202607101733:39721/', 'http://SC-202607101733:41691/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-07-31 16:29:54,650: +PUB [/visualization/trajectory1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,650: +PUB [/visualization/ellipsoid_dilate1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,650: +PUB [/visualization/ellipsoid1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,650: +PUB [/visualization/quadrotor] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,650: +PUB [/visualization/polyhedra1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,651: +PUB [/visualization/tilt_rate] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,651: +PUB [/visualization/thrust_magnitute] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,651: +PUB [/visualization/path1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,651: +PUB [/visualization/keypoints1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,651: +PUB [/visualization/guidepoints1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,651: +PUB [/visualization/ellipsoid_end1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,651: +PUB [/visualization/active_polyhedron1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,652: +PUB [/visualization/sphere1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,652: +PUB [/visualization/sphere_end1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,652: +PUB [/visualization/sphere_connect1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,652: +PUB [/visualization/ellipsoid_path11] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,652: +PUB [/visualization/ellipsoid_path21] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,653: +PUB [/visualization/coord_axes1] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,653: +PUB [/visualization/trajectory2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,653: +PUB [/visualization/ellipsoid_dilate2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,653: +PUB [/visualization/ellipsoid2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,653: +PUB [/visualization/polyhedra2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,653: +PUB [/visualization/path2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/keypoints2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/guidepoints2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/ellipsoid_end2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/active_polyhedron2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/sphere2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/sphere_end2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/sphere_connect2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,654: +PUB [/visualization/ellipsoid_path12] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,655: +PUB [/visualization/ellipsoid_path22] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,655: +PUB [/visualization/coord_axes2] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,655: +SUB [/global_map] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,656: +PUB [/path] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,671: +PUB [/rawpath_jps_vis] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,671: +PUB [/optipath_jps_vis] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,671: +PUB [/keygrid_jps_vis] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,671: +PUB [/sample_path_jps_vis] /se3_node http://SC-202607101733:41691/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,753: +SUB [/trajectory] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:29:54,755: +SUB [/trajectory_arm] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:29:55,405: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2026-07-31 16:32:22,762: -SUB [/trajectory] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:32:22,762: -SUB [/trajectory_arm] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:32:22,762: -PUB [/rosout] /s1_r1_trajectory_capture_120_1785486592602 http://SC-202607101733:36423/
+[rosmaster.master][INFO] 2026-07-31 16:32:22,762: -SERVICE [/s1_r1_trajectory_capture_120_1785486592602/get_loggers] /s1_r1_trajectory_capture_120_1785486592602 rosrpc://SC-202607101733:39381
+[rosmaster.master][INFO] 2026-07-31 16:32:22,762: -SERVICE [/s1_r1_trajectory_capture_120_1785486592602/set_logger_level] /s1_r1_trajectory_capture_120_1785486592602 rosrpc://SC-202607101733:39381
+[rosmaster.master][INFO] 2026-07-31 16:32:22,795: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:39721/', 'http://SC-202607101733:41691/']
+[rosmaster.master][INFO] 2026-07-31 16:32:22,796: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:39721/', 'http://SC-202607101733:41691/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-07-31 16:32:23,624: -SUB [/odom_converter/converted_odom1] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:32:23,624: -PUB [/rosout] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:32:23,624: -PUB [/global_map] /platform_publisher_152_1785486594505 http://SC-202607101733:39721/
+[rosmaster.master][INFO] 2026-07-31 16:32:23,624: -SERVICE [/platform_publisher_152_1785486594505/get_loggers] /platform_publisher_152_1785486594505 rosrpc://SC-202607101733:36727
+[rosmaster.master][INFO] 2026-07-31 16:32:23,624: -SERVICE [/platform_publisher_152_1785486594505/set_logger_level] /platform_publisher_152_1785486594505 rosrpc://SC-202607101733:36727
+[rosmaster.master][INFO] 2026-07-31 16:32:23,697: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:41691/']
+[rosmaster.master][INFO] 2026-07-31 16:32:23,697: publisherUpdate[/global_map] -> http://SC-202607101733:41691/ []
+[rosmaster.master][INFO] 2026-07-31 16:32:23,698: publisherUpdate[/global_map] -> http://SC-202607101733:41691/ []: sec=0.00, exception=[Errno 111] Connection refused
+[rosmaster.master][INFO] 2026-07-31 16:32:23,698: -PUB [/rosout_agg] /rosout http://SC-202607101733:44267/
+[rosmaster.master][INFO] 2026-07-31 16:32:23,699: -SUB [/rosout] /rosout http://SC-202607101733:44267/
+[rosmaster.master][INFO] 2026-07-31 16:32:23,699: -SERVICE [/rosout/get_loggers] /rosout rosrpc://SC-202607101733:34513
+[rosmaster.master][INFO] 2026-07-31 16:32:23,699: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://SC-202607101733:34513
+[rosmaster.master][INFO] 2026-07-31 16:32:23,699: -CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.threadpool][ERROR] 2026-07-31 16:32:23,701: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1165, in single_request
+    http_conn = self.send_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1278, in send_request
+    self.send_content(connection, request_body)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1308, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/usr/lib/python3.8/http/client.py", line 922, in connect
+    self.sock = self._create_connection(
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+[rosmaster.master][INFO] 2026-07-31 16:32:23,708: publisherUpdate[/rosout] -> http://SC-202607101733:44267/ ['http://SC-202607101733:41691/']: sec=0.01, exception=[Errno 111] Connection refused
+[rosmaster.threadpool][ERROR] 2026-07-31 16:32:23,708: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1165, in single_request
+    http_conn = self.send_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1278, in send_request
+    self.send_content(connection, request_body)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1308, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/usr/lib/python3.8/http/client.py", line 922, in connect
+    self.sock = self._create_connection(
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+[rosmaster.main][INFO] 2026-07-31 16:32:23,769: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2026-07-31 16:32:23,769: stopping master...
+[rospy.core][INFO] 2026-07-31 16:32:23,770: signal_shutdown [atexit]

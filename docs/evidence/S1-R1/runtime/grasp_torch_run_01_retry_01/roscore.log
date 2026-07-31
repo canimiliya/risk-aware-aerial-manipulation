@@ -1,0 +1,30 @@
+... logging to /home/amplanner/am-planner-ws/logs/s1-r1-runtime/grasp_torch_run_01_retry_01/ros_home/log/ffcace3c-8cb9-11f1-a030-00155d6b0dfb/roslaunch-SC-202607101733-85.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://SC-202607101733:36777/[0m
+ros_comm version 1.17.4
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [97][0m
+[1mROS_MASTER_URI=http://SC-202607101733:11311/[0m
+]2;roscore http://SC-202607101733:11311/
+[1msetting /run_id to ffcace3c-8cb9-11f1-a030-00155d6b0dfb[0m
+[1mprocess[rosout-1]: started with pid [107][0m
+started core service [/rosout]
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
