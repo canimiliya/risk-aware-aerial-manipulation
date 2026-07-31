@@ -1,7 +1,2 @@
-*.md text eol=lf
-*.py text eol=lf
-*.ps1 text eol=crlf
-*.json text eol=lf
-*.txt text eol=lf
-docs/evidence/S0-R1/wsl_summary.txt -text
-docs/tasks/S0-R1_项目初始化硬件与依赖审计_任务卡.md whitespace=-trailing-space,-blank-at-eof
+# Raw runtime evidence keeps terminal padding exactly as emitted by the tools.
+docs/evidence/** -whitespace

@@ -1,31 +1,33 @@
-# S1-R1 安装、构建与基础复现报告
+# S1-R1 安装、构建和基础运行报告
 
 ## 结论
 
-本轮恢复了官方下载路径并完成了 Python 3.8、`autodiff` 和固定源码准备，但尚未能成功编译，因此三项规划示例没有启动，更没有轨迹成功证据。
+环境和 19 个包的构建已经复核成功，但基础轨迹运行没有通过。原因不是猜测：官方规划节点完成路径搜索后要求 Python `torch`，而本任务禁止安装它，也禁止修改官方源码绕开它。
 
-## 已完成
+## 当前做到的
 
-- 官方 Miniforge `26.3.2-2` 由 Windows GitHub CLI 下载，文件为 106,038,245 字节；官方校验值、任务卡固定值和实测 SHA-256 均为 `42260ffe3830fb953d5eee1bbb32229ff06aa7c3833c1ed7a9a0420a95685d94`。
-- 已在 `AMPlanner-Ubuntu20` 安装 Miniforge；已创建 `am-planner-py38`，验证 Python `3.8.20` 与 `autodiff 1.1.2`。
-- WSL GitHub TLS 中断后，使用 Windows 官方 GitHub CLI 获取源码并以 Git bundle 传入 WSL ext4；Linux 工作区远端仍指向官方仓库，HEAD 为 `7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d`，工作树干净。
-- 已将 requirements 分为 Basic 与 IL 冻结清单；没有安装 `torch`、`torchvision`、`triton`。
+- Miniforge 26.3.2-2、Python 3.8.20、autodiff 1.1.2 已保留在隔离发行版中。
+- AM-Planner 固定在 `7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d`，工作树干净。
+- `/usr/bin/catkin` 的增量构建为 19/19 成功、退出码 0。此前 Conda 自带 catkin 的 `KeyError: _Context__extend_path` 没有再用；系统 catkin 负责构建，Conda 仅提供 Python/autodiff 的 CMake 前缀。
+- 运行器为每次运行建立独立 ROS master、ROS_HOME、PID 和日志目录；捕获器在 launch 前启动，订阅 `/trajectory` 与 `/trajectory_arm`。
+- grasp 三次尝试均已保留：首次为运行器 source 顺序问题；第二次发现缺少地图 Python 依赖；第三次在地图、规划器和两条话题都已启动后，因缺少 `torch` 被官方节点 abort。
 
-## 构建阻断
+## 还缺什么
 
-- 第一次 `catkin build` 未成功。详细复现显示 Conda 中的 `catkin-tools 0.9.4` 在加载工作区时出现 `KeyError: _Context__extend_path`，尚未进入 AM-Planner 编译。
-- 尝试使用系统 `catkin` 时，发现该发行版未安装 `/usr/bin/catkin`。因此不能把工具启动失败说成源码构建通过，也不能开始 grasp、write、lift。
+- grasp/write/lift 的两条非空轨迹消息、数值检查和 grasp 重复性都未完成。
+- 未安装 torch/torchvision/triton，故不能解除当前阻塞。
 
-## 未执行
+## 是否需要我处理
 
-未运行 grasp、write、lift 或重复性测试；未捕获 `/trajectory` 或 `/trajectory_arm`；未修改 AM-Planner 核心源码；未修改 AirFAR 或其他 WSL；未下载 checkpoint；未运行 IL；未进入 S2；未合并 Draft PR #3。
+需要你只决定一件事：是否允许为这个官方运行入口安装它明确要求的 torch 运行依赖。若不允许，本轮应按运行时受限结案，不应宣称基础复现通过。
 
-## 关键证据
+## 证据
 
-- `docs/evidence/S1-R1/miniforge_download_manifest.json`
-- `docs/evidence/S1-R1/miniforge_windows_sha256.txt`
-- `docs/evidence/S1-R1/miniforge_install_log.txt`
-- `docs/evidence/S1-R1/conda_environment_setup_log.txt`
-- `docs/evidence/S1-R1/am_planner_source_manifest.txt`
-- `docs/evidence/S1-R1/build_attempt_01.log`
-- `docs/evidence/S1-R1/build_attempt_01_octomap_server_verbose.log`
+- 构建：`docs/evidence/S1-R1/build_final/build_runtime_gate.log`
+- grasp 运行与失败：`docs/evidence/S1-R1/runtime/s1-r1-runtime/grasp_run_01_retry_03/roslaunch.log`
+- 消息未收到的机器可读结果：`docs/evidence/S1-R1/runtime/s1-r1-runtime/grasp_run_01_retry_03/numeric_validation.json`
+- 运行时阻塞摘要：`docs/evidence/S1-R1/runtime_blocker_summary.md`
+
+## 原始标签
+
+`SUBMITTED_S1_R1_BUILD_WITH_RUNTIME_BLOCKER`：构建成功，但运行被禁止安装的依赖拦住。

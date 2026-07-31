@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------
+Profile:                     default
+Extending:        [explicit] /opt/ros/noetic
+Workspace:                   /home/amplanner/am-planner-ws
+--------------------------------------------------------------------------------
+Build Space:        [exists] /home/amplanner/am-planner-ws/build
+Devel Space:        [exists] /home/amplanner/am-planner-ws/devel
+Install Space:      [unused] /home/amplanner/am-planner-ws/install
+Log Space:          [exists] /home/amplanner/am-planner-ws/logs
+Source Space:       [exists] /home/amplanner/am-planner-ws/src
+DESTDIR:            [unused] None
+--------------------------------------------------------------------------------
+Devel Space Layout:          linked
+Install Space Layout:        None
+--------------------------------------------------------------------------------
+Additional CMake Args:       -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-py38/bin/python
+Additional Make Args:        None
+Additional catkin Make Args: None
+Internal Make Job Server:    True
+Cache Job Environments:      False
+--------------------------------------------------------------------------------
+Buildlisted Packages:        None
+Skiplisted Packages:         None
+--------------------------------------------------------------------------------
+Workspace configuration appears valid.
+--------------------------------------------------------------------------------
+[build] Found 19 packages in 0.0 seconds.                                      
+[build] Package table is up to date.                                           
+Starting >>> catkin_simple                         
+Starting >>> map_pcl                               
+Starting >>> octomap_server                        
+Starting >>> pose_utils                            
+Starting >>> quadrotor_msgs                        
+Starting >>> rviz_plugins                          
+Starting >>> uav_utils                             
+Finished <<< catkin_simple                          [ 0.1 seconds ]
+Starting >>> decomp_ros_msgs                       
+Finished <<< map_pcl                                [ 0.1 seconds ]
+Finished <<< pose_utils                             [ 0.1 seconds ]
+Finished <<< octomap_server                         [ 0.2 seconds ]
+Starting >>> jps3d                                 
+Finished <<< quadrotor_msgs                         [ 0.2 seconds ]
+Starting >>> delta_display                         
+Starting >>> manual_take_over                      
+Starting >>> odom_visualization                    
+Starting >>> so3_control                           
+Starting >>> so3_quadrotor_simulator               
+Starting >>> traj_server                           
+Finished <<< rviz_plugins                           [ 0.1 seconds ]
+Finished <<< uav_utils                              [ 0.1 seconds ]
+Finished <<< decomp_ros_msgs                        [ 0.2 seconds ]
+Starting >>> decomp_ros_utils                      
+Finished <<< jps3d                                  [ 0.1 seconds ]
+Finished <<< delta_display                          [ 0.1 seconds ]
+Finished <<< manual_take_over                       [ 0.1 seconds ]
+Finished <<< odom_visualization                     [ 0.1 seconds ]
+Finished <<< so3_control                            [ 0.1 seconds ]
+Finished <<< so3_quadrotor_simulator                [ 0.1 seconds ]
+Finished <<< traj_server                            [ 0.1 seconds ]
+Finished <<< decomp_ros_utils                       [ 0.2 seconds ]
+Starting >>> vis_utils                             
+Finished <<< vis_utils                              [ 0.1 seconds ]
+Starting >>> traj_opt                              
+Finished <<< traj_opt                               [ 0.2 seconds ]
+Starting >>> plan_manage                           
+Finished <<< plan_manage                            [ 0.1 seconds ]
+
+[build] Successful packages:
+
+ [Successful] catkin_simple           [Successful] decomp_ros_msgs        
+ [Successful] decomp_ros_utils        [Successful] delta_display          
+ [Successful] jps3d                   [Successful] manual_take_over       
+ [Successful] map_pcl                 [Successful] octomap_server         
+ [Successful] odom_visualization      [Successful] plan_manage            
+ [Successful] pose_utils              [Successful] quadrotor_msgs         
+ [Successful] rviz_plugins            [Successful] so3_control            
+ [Successful] so3_quadrotor_simulator [Successful] traj_opt               
+ [Successful] traj_server             [Successful] uav_utils              
+ [Successful] vis_utils              
+
+[build] Summary: All 19 packages succeeded!
+[build] Ignored: None.
+[build] Warnings: None.
+[build] Abandoned: No packages were abandoned.
+[build] Failed: No packages failed.
+[build] Runtime: 1.4 seconds total.
