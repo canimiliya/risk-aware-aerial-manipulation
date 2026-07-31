@@ -1,0 +1,13 @@
+﻿{
+    "release":  "26.3.2-2",
+    "official_repository":  "conda-forge/miniforge",
+    "asset_name":  "Miniforge3-26.3.2-2-Linux-x86_64.sh",
+    "asset_url":  "https://github.com/conda-forge/miniforge/releases/download/26.3.2-2/Miniforge3-26.3.2-2-Linux-x86_64.sh",
+    "bytes":  106038245,
+    "official_checksum":  "42260ffe3830fb953d5eee1bbb32229ff06aa7c3833c1ed7a9a0420a95685d94",
+    "actual_checksum":  "42260ffe3830fb953d5eee1bbb32229ff06aa7c3833c1ed7a9a0420a95685d94",
+    "download_method":  "Windows GitHub CLI gh release download",
+    "download_started":  "2026-07-31T13:25:33.2769787+08:00",
+    "download_finished":  "2026-07-31T13:26:00.5958323+08:00",
+    "exit_code":  0
+}
