@@ -1,4 +1,12 @@
 # S1-R1 状态
+## R6-R1 GPU 依赖恢复与完整预检（2026-07-31）
+
+- 21/21 个官方 CUDA/PyTorch 运行库 wheel 已解析、下载、SHA/ZIP 校验并离线安装，`pip check=0`。
+- RTX 5060 Ti / capability 12.0 / `sm_120` 的真实 CUDA tensor、matmul、Linear、autograd 通过；原始权重和 WorkspaceMLP strict forward/autograd 通过。
+- WorkspaceMLP batch 576 / 960 的 forward+autograd 中位数分别达到 178.90x / 5.87x 加速。
+- CPU 环境 SHA、CPU Torch、固定 AM-Planner 源码均未变化；没有重建 AM-Planner，也没有运行 grasp/write/lift。
+- 当前 GPU 路线判断：`GPU_REBUILD_RECOMMENDED`（人话：值得授权下一轮并行重建，不是本轮已经重建完成）。
+- 详细报告：`docs/reports/S1-R1_gpu_dependency_recovery_report.md`。
 
 ## 这次做到的
 

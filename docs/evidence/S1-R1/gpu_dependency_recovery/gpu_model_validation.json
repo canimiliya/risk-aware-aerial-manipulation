@@ -1,0 +1,10 @@
+{
+  "strict_load": true,
+  "forward": true,
+  "autograd": true,
+  "forward_device": "cuda:0",
+  "forward_finite": true,
+  "autograd_finite": true,
+  "parameter_count": 58113,
+  "peak_memory_bytes": 21736448
+}

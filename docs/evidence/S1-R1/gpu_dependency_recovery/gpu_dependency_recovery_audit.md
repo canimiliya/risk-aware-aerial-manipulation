@@ -1,0 +1,13 @@
+# GPU dependency recovery audit
+
+```json
+{
+  "errors": [],
+  "warnings": [],
+  "required_count": 23,
+  "decision": "GPU_REBUILD_RECOMMENDED",
+  "torch_hard_gate": true,
+  "checkpoint_hard_gate": true,
+  "benchmark_rows": 5
+}
+```

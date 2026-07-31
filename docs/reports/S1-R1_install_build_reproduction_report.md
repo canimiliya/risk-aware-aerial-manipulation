@@ -1,4 +1,11 @@
 # S1-R1 安装、构建和基础运行报告
+## R6-R1 GPU 路线补充（2026-07-31）
+
+官方 CUDA 依赖恢复和完整 GPU 预检已完成，结论为 `GPU_REBUILD_RECOMMENDED`：GPU 硬件、Torch cu128、真实 `sm_120` kernel、原始权重、WorkspaceMLP strict forward/autograd 和关键 batch 微基准均通过。
+
+这个结论只授权“是否值得下一轮并行重建”的判断，不改变当前 CPU write 未通过的历史事实，也不表示本轮执行了 AM-Planner 重建或 grasp/write/lift。
+
+证据目录：`docs/evidence/S1-R1/gpu_dependency_recovery/`；详细报告：`docs/reports/S1-R1_gpu_dependency_recovery_report.md`。
 
 ## 结论
 

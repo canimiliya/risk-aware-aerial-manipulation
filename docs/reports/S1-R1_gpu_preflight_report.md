@@ -1,4 +1,13 @@
 # S1-R1 R6 RTX 5060 Ti GPU 路线独立预检报告（2026-07-31）
+## R6-R1 补充结论（2026-07-31）
+
+上一节保留的是 R6 首轮历史状态；R6-R1 已完成官方 CUDA 依赖恢复和完整 GPU 预检。21/21 个 wheel 通过 URL、大小、SHA-256、ZIP 校验并离线安装，`pip check=0`。
+
+RTX 5060 Ti / capability `(12,0)` / `sm_120` 的真实 CUDA tensor、1024×1024 matmul、Linear、autograd、原始权重和 WorkspaceMLP strict forward/autograd 均通过。WorkspaceMLP batch 576 / 960 的 forward+autograd 中位数加速为 `178.90x` / `5.87x`。
+
+路线判断更新为 `GPU_REBUILD_RECOMMENDED`：人话是“值得授权下一轮 GPU 并行重建”，不是“AM-Planner 已重建”或“write 已通过”。CPU 环境 SHA 仍为 `3BA72ABD182A6BACB66153C76C3402C139A8E5B1D118F5EEC2801EAA59A7E65E`，源码仍固定且干净；本轮没有运行 grasp/write/lift。
+
+详细报告：`docs/reports/S1-R1_gpu_dependency_recovery_report.md`。
 
 ## 结论
 

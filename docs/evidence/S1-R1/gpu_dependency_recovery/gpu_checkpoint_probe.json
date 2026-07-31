@@ -1,0 +1,54 @@
+{
+  "torch_version": "2.7.1+cu128",
+  "cuda_available": true,
+  "weight": "/home/amplanner/am-planner-ws/src/am-planner/src/plan/traj_opt/weights/workspace_probability_weight.pth",
+  "load_attempts": [
+    {
+      "label": "official_error_positional_dict",
+      "success": true,
+      "type": "OrderedDict",
+      "key_count": 10,
+      "tensor_count": 10,
+      "devices": [
+        "cuda:0"
+      ],
+      "all_finite": true,
+      "nonzero_count": 58113
+    },
+    {
+      "label": "default_load",
+      "success": true,
+      "type": "OrderedDict",
+      "key_count": 10,
+      "tensor_count": 10,
+      "devices": [
+        "cuda:0"
+      ],
+      "all_finite": true,
+      "nonzero_count": 58113
+    },
+    {
+      "label": "correct_map_location_cuda",
+      "success": true,
+      "type": "OrderedDict",
+      "key_count": 10,
+      "tensor_count": 10,
+      "devices": [
+        "cuda:0"
+      ],
+      "all_finite": true,
+      "nonzero_count": 58113
+    }
+  ],
+  "hard_gate_pass": true,
+  "model": {
+    "strict_load": true,
+    "forward": true,
+    "autograd": true,
+    "forward_device": "cuda:0",
+    "forward_finite": true,
+    "autograd_finite": true,
+    "parameter_count": 58113,
+    "peak_memory_bytes": 21736448
+  }
+}

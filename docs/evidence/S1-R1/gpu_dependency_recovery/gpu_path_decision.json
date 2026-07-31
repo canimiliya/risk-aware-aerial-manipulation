@@ -1,0 +1,25 @@
+{
+  "decision": "GPU_REBUILD_RECOMMENDED",
+  "plain_language": "RTX 5060 Ti 的 CUDA 路线已经通过独立 GPU 预检，值得授权下一轮 AM-Planner 并行重建；本轮不执行重建，也不运行 grasp/write/lift。",
+  "hard_gates": {
+    "torch_import": true,
+    "cuda_kernel": true,
+    "blackwell_sm120": true,
+    "checkpoint_load": true,
+    "workspace_mlp_strict_forward_autograd": true,
+    "cpu_baseline_unchanged": true
+  },
+  "benchmark": {
+    "criterion": "batch 576 or 960 forward+autograd median speedup >= 3x",
+    "batch_576_forward_autograd_speedup_x": 178.8982493241497,
+    "batch_960_forward_autograd_speedup_x": 5.870842502537367,
+    "note": "This is the WorkspaceMLP microbenchmark, not a claim that full AM-Planner write runtime has passed."
+  },
+  "scope_boundary": [
+    "AM-Planner source and parameters were not modified",
+    "CPU environment was not modified",
+    "grasp/write/lift were not run",
+    "system CUDA Toolkit and driver were not modified",
+    "PR #3 remains Draft and unmerged"
+  ]
+}

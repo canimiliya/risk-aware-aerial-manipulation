@@ -1,0 +1,252 @@
+{
+  "expected_dependency_drift": [],
+  "included_count": 21,
+  "lock": [
+    "filelock==3.19.1",
+    "fsspec==2025.10.0",
+    "jinja2==3.1.6",
+    "networkx==3.2.1",
+    "nvidia-cublas-cu12==12.8.3.14",
+    "nvidia-cuda-cupti-cu12==12.8.57",
+    "nvidia-cuda-nvrtc-cu12==12.8.61",
+    "nvidia-cuda-runtime-cu12==12.8.57",
+    "nvidia-cudnn-cu12==9.7.1.26",
+    "nvidia-cufft-cu12==11.3.3.41",
+    "nvidia-cufile-cu12==1.13.0.11",
+    "nvidia-curand-cu12==10.3.9.55",
+    "nvidia-cusolver-cu12==11.7.2.55",
+    "nvidia-cusparse-cu12==12.5.7.53",
+    "nvidia-cusparselt-cu12==0.6.3",
+    "nvidia-nccl-cu12==2.26.2",
+    "nvidia-nvjitlink-cu12==12.8.61",
+    "nvidia-nvtx-cu12==12.8.55",
+    "sympy==1.14.0",
+    "triton==3.3.1",
+    "typing-extensions==4.16.0"
+  ],
+  "platform": {
+    "machine": "x86_64",
+    "system": "Linux"
+  },
+  "python": "3.9.23",
+  "requirements": [
+    {
+      "included": true,
+      "marker": "",
+      "name": "filelock",
+      "raw": "filelock",
+      "specifier": "",
+      "version": "3.19.1"
+    },
+    {
+      "included": true,
+      "marker": "",
+      "name": "typing-extensions",
+      "raw": "typing-extensions>=4.10.0",
+      "specifier": ">=4.10.0",
+      "version": "4.16.0"
+    },
+    {
+      "included": false,
+      "marker": "python_version >= \"3.12\"",
+      "name": "setuptools",
+      "raw": "setuptools; python_version >= \"3.12\"",
+      "specifier": ""
+    },
+    {
+      "included": true,
+      "marker": "",
+      "name": "sympy",
+      "raw": "sympy>=1.13.3",
+      "specifier": ">=1.13.3",
+      "version": "1.14.0"
+    },
+    {
+      "included": true,
+      "marker": "",
+      "name": "networkx",
+      "raw": "networkx",
+      "specifier": "",
+      "version": "3.2.1"
+    },
+    {
+      "included": true,
+      "marker": "",
+      "name": "jinja2",
+      "raw": "jinja2",
+      "specifier": "",
+      "version": "3.1.6"
+    },
+    {
+      "included": true,
+      "marker": "",
+      "name": "fsspec",
+      "raw": "fsspec",
+      "specifier": "",
+      "version": "2025.10.0"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "raw": "nvidia-cuda-nvrtc-cu12==12.8.61; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==12.8.61",
+      "version": "12.8.61"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cuda-runtime-cu12",
+      "raw": "nvidia-cuda-runtime-cu12==12.8.57; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==12.8.57",
+      "version": "12.8.57"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cuda-cupti-cu12",
+      "raw": "nvidia-cuda-cupti-cu12==12.8.57; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==12.8.57",
+      "version": "12.8.57"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cudnn-cu12",
+      "raw": "nvidia-cudnn-cu12==9.7.1.26; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==9.7.1.26",
+      "version": "9.7.1.26"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cublas-cu12",
+      "raw": "nvidia-cublas-cu12==12.8.3.14; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==12.8.3.14",
+      "version": "12.8.3.14"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cufft-cu12",
+      "raw": "nvidia-cufft-cu12==11.3.3.41; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==11.3.3.41",
+      "version": "11.3.3.41"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-curand-cu12",
+      "raw": "nvidia-curand-cu12==10.3.9.55; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==10.3.9.55",
+      "version": "10.3.9.55"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cusolver-cu12",
+      "raw": "nvidia-cusolver-cu12==11.7.2.55; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==11.7.2.55",
+      "version": "11.7.2.55"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cusparse-cu12",
+      "raw": "nvidia-cusparse-cu12==12.5.7.53; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==12.5.7.53",
+      "version": "12.5.7.53"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cusparselt-cu12",
+      "raw": "nvidia-cusparselt-cu12==0.6.3; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==0.6.3",
+      "version": "0.6.3"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-nccl-cu12",
+      "raw": "nvidia-nccl-cu12==2.26.2; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==2.26.2",
+      "version": "2.26.2"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-nvtx-cu12",
+      "raw": "nvidia-nvtx-cu12==12.8.55; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==12.8.55",
+      "version": "12.8.55"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-nvjitlink-cu12",
+      "raw": "nvidia-nvjitlink-cu12==12.8.61; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==12.8.61",
+      "version": "12.8.61"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "name": "nvidia-cufile-cu12",
+      "raw": "nvidia-cufile-cu12==1.13.0.11; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "specifier": "==1.13.0.11",
+      "version": "1.13.0.11"
+    },
+    {
+      "included": true,
+      "marker": "platform_system == \"Linux\"",
+      "name": "triton",
+      "raw": "triton==3.3.1; platform_system == \"Linux\"",
+      "specifier": "==3.3.1",
+      "version": "3.3.1"
+    },
+    {
+      "included": true,
+      "marker": "extra == \"optree\"",
+      "name": "optree",
+      "raw": "optree>=0.13.0; extra == \"optree\"",
+      "specifier": ">=0.13.0",
+      "version": null
+    },
+    {
+      "included": true,
+      "marker": "extra == \"opt-einsum\"",
+      "name": "opt-einsum",
+      "raw": "opt-einsum>=3.3; extra == \"opt-einsum\"",
+      "specifier": ">=3.3",
+      "version": null
+    }
+  ],
+  "requirements_raw": [
+    "filelock",
+    "typing-extensions>=4.10.0",
+    "setuptools; python_version >= \"3.12\"",
+    "sympy>=1.13.3",
+    "networkx",
+    "jinja2",
+    "fsspec",
+    "nvidia-cuda-nvrtc-cu12==12.8.61; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cuda-runtime-cu12==12.8.57; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cuda-cupti-cu12==12.8.57; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cudnn-cu12==9.7.1.26; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cublas-cu12==12.8.3.14; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cufft-cu12==11.3.3.41; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-curand-cu12==10.3.9.55; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cusolver-cu12==11.7.2.55; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cusparse-cu12==12.5.7.53; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cusparselt-cu12==0.6.3; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-nccl-cu12==2.26.2; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-nvtx-cu12==12.8.55; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-nvjitlink-cu12==12.8.61; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "nvidia-cufile-cu12==1.13.0.11; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+    "triton==3.3.1; platform_system == \"Linux\"",
+    "optree>=0.13.0; extra == \"optree\"",
+    "opt-einsum>=3.3; extra == \"opt-einsum\""
+  ],
+  "torch_version": "2.7.1+cu128"
+}
