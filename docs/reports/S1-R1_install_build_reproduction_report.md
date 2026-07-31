@@ -33,3 +33,7 @@
 ## 原始标签
 
 `SUBMITTED_S1_R1_WRITE_RUNTIME_TOO_SLOW`：意思是“write 诊断证据完整，但 CPU 在 1200 秒内仍算不完；grasp/lift 已通过，write 未通过”。
+
+## R6 GPU 独立预检补充
+
+WSL GPU 直通和 RTX 5060 Ti 已确认，官方 PyTorch 2.7.1 cu128 wheel 已取得并校验；但 CUDA 运行库依赖未完成安装，所以没有 kernel、权重、模型或 CPU/GPU speedup 证据。状态保持 `REVISION_REQUIRED`，不能写成 GPU 路线通过，也没有重建或运行任何轨迹。详见 `docs/reports/S1-R1_gpu_preflight_report.md`。

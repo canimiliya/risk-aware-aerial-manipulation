@@ -25,3 +25,10 @@
 `SUBMITTED_S1_R1_WRITE_RUNTIME_TOO_SLOW`：意思是“write 在 1200 秒内没跑完，但程序一直活跃计算，判断为 CPU 太慢”；不表示 write 已通过。
 
 S1 保持 `IN_PROGRESS`，S2--S8 保持 `FROZEN`；PR #3 保持 Draft，未合并。
+
+## R6 GPU 独立预检（2026-07-31）
+
+- WSL 已看到 RTX 5060 Ti / 驱动 581.29 / capability 12.0；官方 `torch-2.7.1+cu128` Python 3.9 wheel 已下载并完成 SHA 校验。
+- 独立环境已建立，但 CUDA 运行库依赖没有在本轮网络窗口内完成安装，因此 kernel、原始权重、模型和 speedup 均未验证。
+- CPU 环境前后清单 SHA 相同，Torch 仍为 `2.4.1+cpu`；官方源码仍固定且干净。
+- GPU 预检标签：`REVISION_REQUIRED`（人话：硬件和 wheel 已确认，但关键运行证据还缺，不授权 GPU 重建）。详见 `docs/reports/S1-R1_gpu_preflight_report.md`。

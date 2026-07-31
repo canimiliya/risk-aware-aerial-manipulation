@@ -1,0 +1,7 @@
+R6 下载记录
+
+- 官方索引：https://download.pytorch.org/whl/cu128
+- Torch：2.7.1+cu128，Python 3.9 cp39 manylinux_2_28_x86_64
+- Torch wheel SHA-256：738ac9b3ad79e62a21256e3d250cee858de955f93f89fab114da8d1919347d06
+- 官方元数据要求的 CUDA 运行库：nvidia-cuda-nvrtc-cu12、nvidia-cuda-runtime-cu12、nvidia-cuda-cupti-cu12、nvidia-cudnn-cu12、nvidia-cublas-cu12、nvidia-cufft-cu12、nvidia-curand-cu12、nvidia-cusolver-cu12、nvidia-cusparse-cu12、nvidia-cusparselt-cu12、nvidia-nccl-cu12、nvidia-nvtx-cu12、nvidia-nvjitlink-cu12、nvidia-cufile-cu12、triton 3.3.1。
+- 结果：基础 Python 依赖已安装；CUDA 运行库在本轮网络窗口内未完成，GPU 探针未越过 import/kernel 前置条件。

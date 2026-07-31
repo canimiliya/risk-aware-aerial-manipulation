@@ -1,0 +1,12 @@
+{
+  "decision": "REVISION_REQUIRED",
+  "human_summary": "硬件和官方 Torch wheel 已确认，但 CUDA 运行库依赖安装未完成；本轮不能判断 GPU kernel、权重、模型或 speedup，也不能授权 GPU 重建。",
+  "wsl_gpu_passthrough": true,
+  "gpu": {"name": "NVIDIA GeForce RTX 5060 Ti", "driver": "581.29", "memory_total_mib": 16311, "capability": [12, 0]},
+  "torch_wheel": {"version": "2.7.1+cu128", "python": "3.9.23", "sha256": "738ac9b3ad79e62a21256e3d250cee858de955f93f89fab114da8d1919347d06", "available": true},
+  "kernel_tested": false,
+  "checkpoint_tested": false,
+  "model_tested": false,
+  "speedup_tested": false,
+  "next_action": "由用户决定是否授权重新打开依赖下载窗口；在此之前不重建 AM-Planner、不运行 grasp/write/lift。"
+}
