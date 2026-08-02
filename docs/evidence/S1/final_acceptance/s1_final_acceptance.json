@@ -1,0 +1,96 @@
+{
+  "decision": "PASS_WITH_LIMITATIONS",
+  "errors": [],
+  "unresolved_warnings": [],
+  "accepted_limitations": [
+    {
+      "id": "catkin_warning_bearing_packages",
+      "classification": "NON_BLOCKING_UPSTREAM",
+      "evidence": "docs/evidence/S1-R1/final_warning_triage/catkin_warning_inventory.json"
+    },
+    {
+      "id": "nvidia_smi_process_name_not_found",
+      "classification": "NON_BLOCKING_ENVIRONMENT",
+      "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/snapshot_60s.json"
+    },
+    {
+      "id": "no_logs_to_publish",
+      "classification": "NON_BLOCKING_POST_SUCCESS",
+      "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/roslaunch.log"
+    }
+  ],
+  "checks": {
+    "fixed_main_merge": true,
+    "fixed_am_planner_commit": true,
+    "report_distinguishes_commits": true,
+    "state_documents": true,
+    "license_boundary": true,
+    "s1_r1_acceptance": true,
+    "s1_r1_accepted_limitations": [
+      {
+        "id": "catkin_warning_bearing_packages",
+        "classification": "NON_BLOCKING_UPSTREAM",
+        "evidence": "docs/evidence/S1-R1/final_warning_triage/catkin_warning_inventory.json"
+      },
+      {
+        "id": "nvidia_smi_process_name_not_found",
+        "classification": "NON_BLOCKING_ENVIRONMENT",
+        "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/snapshot_60s.json"
+      },
+      {
+        "id": "no_logs_to_publish",
+        "classification": "NON_BLOCKING_POST_SUCCESS",
+        "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/roslaunch.log"
+      }
+    ],
+    "s1_r1_four_runtime_runs": [
+      "grasp",
+      "grasp_repeat",
+      "lift",
+      "write"
+    ],
+    "s1_r1_runtime_topics": true,
+    "s1_r1_abi": {
+      "python38_occurrences": 0,
+      "runtime_not_found_occurrences": 0
+    },
+    "catkin_warning_inventory": true,
+    "raw_warning_review": true,
+    "export_write": {
+      "missing": [],
+      "validation": "PASS",
+      "segment_count": 19
+    },
+    "export_grasp": {
+      "missing": [],
+      "validation": "PASS",
+      "segment_count": 4
+    },
+    "export_lift": {
+      "missing": [],
+      "validation": "PASS",
+      "segment_count": 3
+    },
+    "export_grasp_repeat": {
+      "missing": [],
+      "validation": "PASS",
+      "segment_count": 4
+    },
+    "waypoint_variant": true,
+    "waypoint_values": true,
+    "waypoint_failures_preserved": true,
+    "video_manifest": true,
+    "visualization_pngs": [
+      "grasp.png",
+      "lift.png",
+      "waypoint_variant.png",
+      "write.png"
+    ],
+    "repeatability": true,
+    "s1_r2_audit": true,
+    "s1_r2_contract": true,
+    "algorithm_boundary": "",
+    "global_s0_audit": "er absent: PRESTART_WAITING_REPOSITORY_AND_HARDWARE_INFO\n[PASS] stale marker absent: WAITING_INPUT\n[PASS] stale marker absent: 当前执行任务：无\n[PASS] stale marker absent: 允许执行 S0：尚未授权\n[PASS] S1 not falsely reproduced\n[PASS] final review fact: S0-R1-R2\n[PASS] final review fact: 2f441c4d4ebace01c3ef76cec00d546813dee267\n[PASS] final review fact: PASS_WITH_LIMITATIONS\n[PASS] final review fact: Isaac Sim/Lab\n[PASS] final review fact: WSL\n[PASS] final review fact: ROS Noetic\n[PASS] hardware JSON top-level object: dict\n[PASS] python real version\n[PASS] conda real version\n[PASS] git real version\n[PASS] gh real version\n[PASS] UTF-8/NUL wsl_status_utf8.txt\n[PASS] UTF-8/NUL wsl_version_utf8.txt\n[PASS] UTF-8/NUL wsl_list_verbose_utf8.txt\n[PASS] UTF-8/NUL AirFAR-Ubuntu20_os_release.txt\n[PASS] AM-Planner license status\n[PASS] no inaccurate AM-Planner statement\n[PASS] no large files: []\n[PASS] no secret patterns: []\nSKIPPED_PATHS count=8\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01/ros_home/log/latest\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01/runtime-bin/rosversion\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_rosversion_fail/ros_home/log/413ba0ec-8eb5-11f1-aa47-00155dca07d1/roslaunch-SC-202607101733-89600.log\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_rosversion_fail/ros_home/log/413ba0ec-8eb5-11f1-aa47-00155dca07d1/roslaunch-SC-202607101733-89722.log\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_rosversion_fail/ros_home/log/latest\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_wrapper_crlf_fail/ros_home/log/15633f38-8eb6-11f1-bebf-00155dca07d1/roslaunch-SC-202607101733-90321.log\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_wrapper_crlf_fail/ros_home/log/latest\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_wrapper_crlf_fail/runtime-bin/rosversion\nSUMMARY errors=0 warnings=0 skipped_paths=8\n",
+    "state_s2_frozen": true
+  }
+}

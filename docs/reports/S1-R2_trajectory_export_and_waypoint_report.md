@@ -3,12 +3,12 @@
 ## 项目进度
 
 - 开始时总体百分比：仓库没有可审计的统一百分比字段，本轮不虚构百分比；开始状态为 S1-R1 `PASS_WITH_LIMITATIONS`、S1 `IN_PROGRESS`。
-- 结束时总体百分比：同上；结束状态为 S1-R2 `SUBMITTED_FOR_REVIEW`、S1 `IN_PROGRESS`。
-- S1 完成度：S1-R1 与 S1-R2 已提交审阅；S1 未完成，S2–S8 冻结。
+- 结束时总体百分比：同上；结束状态为 S1-R2 `PASS`、S1 `PASS_WITH_LIMITATIONS`。
+- S1 完成度：S1-R1 与 S1-R2 已完成审查；S1 正式收口为 `PASS_WITH_LIMITATIONS`，S2 尚未开始。
 
 ## 结论
 
-S1-R2 已完成并提交审阅。真实消息合同、四组官方轨迹、waypoint 变体、采样/连续性、CSV/NPZ 一致性和四组可视化均有证据；S1 不宣布 PASS。
+S1-R2 已完成最终审查并通过。真实消息合同、四组官方轨迹、waypoint 变体、采样/连续性、CSV/NPZ 一致性、四组可视化和全局 S0 审计均有证据；S1 正式收口为 `PASS_WITH_LIMITATIONS`。
 
 ## A：S1-R1 最终收口
 
@@ -35,19 +35,19 @@ S1-R2 已完成并提交审阅。真实消息合同、四组官方轨迹、waypo
 
 ## 还缺什么
 
-还缺项目负责人审阅 S1-R2；S1 总体仍缺后续任务卡要求的正式收口，不得据此进入 S2。
+S1 已完成正式收口；S2-R0 仅在本轮后续 Draft PR 中做静态/几何预检，不代表完整 S2 通过。
 
 ## 是否算通过
 
-S1-R2 按允许标签算“提交审阅”，不是整个 S1 PASS：`SUBMITTED_S1_R2_TRAJECTORY_EXPORT`。
+S1-R2：`PASS`；S1：`PASS_WITH_LIMITATIONS`。S2：`IN_PROGRESS`，仅提交 S2-R0 预检审阅。
 
 ## 是否需要项目负责人处理
 
-需要负责人审阅消息合同、导出字段边界、waypoint 变体和可视化；确认后再决定是否授权下一项，当前不自动进入 S2。
+需要负责人审阅 S2-R0 的官方模型边界、暂定场景尺寸和 G-ARM 预检结论；不得把该预检当作完整 S2 轨迹规划通过。
 
 ## 原始标签
 
-`SUBMITTED_S1_R2_TRAJECTORY_EXPORT`：人话是“轨迹已按真实 ROS 消息结构导出并验证，waypoint 确实改动且重新跑通，证据提交审阅；S1 还没有整体通过”。
+`S1=PASS_WITH_LIMITATIONS`：人话是“S1 的 AM-Planner 复现、真实轨迹导出和 waypoint 证据已收口；保留环境/上游告警限制，S2-R0 只做预检审阅”。
 
 ## Git
 
@@ -55,7 +55,7 @@ S1-R2 按允许标签算“提交审阅”，不是整个 S1 PASS：`SUBMITTED_S
 - S1-R1 最终提交：`78aa715e0825f4495666d447c98d7d75f46790fe`；PR #3 merge：`a028f265c616be922e5ab0ccff907fcbeda06273`。
 - main Head：`a028f265c616be922e5ab0ccff907fcbeda06273`。
 - S1-R2 分支：`agent/s1-r2-trajectory-export-contract`。
-- S1-R2 Head：`8d9d1da`（导出合同、验证、waypoint 和可视化实现提交）；此前 manifest 提交为 `0fbbbe4`。
+- S1-R2 实现提交：`8d9d1da`（导出合同、验证、waypoint 和可视化实现）；视频 manifest 提交：`0fbbbe4`；最终审阅提交/PR #4 Head：`f12f61ab1925e30dfa31dbb4c8a2f63c023cfb0a`。
 - 新 PR：Draft，创建后不合并。
 - 工作树：提交后保持干净；本地忽略的原始轨迹与 GIF 继续保留。
 - stash：`stash@{0}`、`stash@{1}` 保留，未操作。
@@ -104,7 +104,7 @@ S1-R2 按允许标签算“提交审阅”，不是整个 S1 PASS：`SUBMITTED_S
 - audit errors：0。
 - audit warnings：0。
 - git diff --check：通过。
-- `check_s0_structure.py`：按任务卡运行；因 S1-R2 分支不满足旧的 `main` 分支断言，并在失败变体目录的 WSL symlink 上触发 Windows `WinError 1920`，退出 1；不作为 S1-R2 通过条件。
+- `check_s0_structure.py`：已修复为阶段安全分支检查、优先读取 v1.4 进度文件，并跳过 symlink/junction、记录 `skipped_paths`；当前分支运行 exit=0。
 - 大文件：S1-R2 轨迹目录无 >10 MB 文件；GIF/PNG 均小于 2 MB。
 - 凭据：扫描范围无命中。
 
