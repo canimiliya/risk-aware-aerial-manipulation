@@ -1,0 +1,22 @@
+# Source: /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/quadrotor_msgs/msg/PolynomialTrajectory.msg
+# Fixed AM-Planner source commit: 7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d
+
+Header header
+uint32 trajectory_id
+uint32 ACTION_ADD = 1
+uint32 ACTION_ABORT = 2
+uint32 ACTION_WARN_START = 3
+uint32 ACTION_WARN_FINAL = 4
+uint32 ACTION_WARN_IMPOSSIBLE = 5
+uint32 action
+uint32 num_order
+uint32 num_segment
+float64 start_yaw
+float64 final_yaw
+float64[] coef_x
+float64[] coef_y
+float64[] coef_z
+float64[] time
+float64 mag_coeff
+uint32[] order
+string debug_info

@@ -1,0 +1,20 @@
+{
+  "baseline": "data/trajectories/S1-R2/grasp_official",
+  "variant": "data/trajectories/S1-R2/grasp_waypoint_variant_01",
+  "baseline_segment_count": 4,
+  "variant_segment_count": 4,
+  "baseline_total_duration": 5.880454665537023,
+  "variant_total_duration": 5.134898502146667,
+  "endpoint_delta": [
+    -4.440892098500626e-16,
+    1.734723475976807e-18,
+    -2.220446049250313e-16
+  ],
+  "min_position_difference": 0.0,
+  "max_position_difference": 0.706748399750364,
+  "planning_time": {
+    "baseline_ms": 3572.68,
+    "variant_ms": 5288.42,
+    "note": "derived from preserved roslaunch.log, not from PolynomialTrajectory fields"
+  }
+}
