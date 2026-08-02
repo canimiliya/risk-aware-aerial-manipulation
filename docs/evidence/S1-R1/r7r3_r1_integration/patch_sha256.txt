@@ -1,0 +1,1 @@
+8bd9fa32c508495bd1f98f77b529205323ecbdf59c9031be2ec75790c33f7db6  /home/amplanner/am-planner-r7r3-r1-ws/logs/am_planner.patch

@@ -1,0 +1,15 @@
+{
+  "base": "Catkin exported library list as observed in the fixed AM-Planner build lineage",
+  "local_copy_variables": ["_traj_opt_catkin_libraries", "_plan_manage_catkin_libraries"],
+  "filtered_patterns": ["python3.8"],
+  "removed_library_entries": ["-lpython3.8 and equivalent libpython3.8 paths, when present in the Catkin export"],
+  "preserved_ros_libraries": true,
+  "explicit_python3_entries": ["Python3::Python", "pybind11::embed"],
+  "current_link_txt_python38_occurrences": 0,
+  "current_link_txt_python39_occurrences": 2,
+  "current_ros_overlay_libraries": [
+    "/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib/libroslib.so",
+    "/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so"
+  ],
+  "algorithm_or_parameter_changes": false
+}

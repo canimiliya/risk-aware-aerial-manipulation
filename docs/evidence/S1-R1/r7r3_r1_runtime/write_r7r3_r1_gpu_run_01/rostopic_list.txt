@@ -1,0 +1,4 @@
+/global_map
+/odom_converter/converted_odom1
+/rosout
+/rosout_agg

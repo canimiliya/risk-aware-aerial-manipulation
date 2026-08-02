@@ -1,0 +1,355 @@
+_______________________________________________________________________________
+Warnings << octomap_server:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/octomap_server/build.cmake.000.log
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:73 (add_library):
+  Cannot generate a safe runtime search path for target
+  octomap_server_nodelet because files in some directories may conflict with
+  libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:66 (add_executable):
+  Cannot generate a safe runtime search path for target octomap_saver because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:60 (add_executable):
+  Cannot generate a safe runtime search path for target octomap_server_static
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:57 (add_executable):
+  Cannot generate a safe runtime search path for target
+  octomap_color_server_node because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:54 (add_executable):
+  Cannot generate a safe runtime search path for target octomap_server_node
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:76 (add_library):
+  Cannot generate a safe runtime search path for target
+  octomap_color_server_nodelet because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:45 (add_library):
+  Cannot generate a safe runtime search path for target octomap_server
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:69 (add_executable):
+  Cannot generate a safe runtime search path for target
+  octomap_tracking_server_node because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:63 (add_executable):
+  Cannot generate a safe runtime search path for target
+  octomap_server_multilayer because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:49 (add_library):
+  Cannot generate a safe runtime search path for target octomap_server_color
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/octomap_server; catkin build --get-env octomap_server | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << map_pcl:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/map_pcl/build.cmake.000.log
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/map_pcl/CMakeLists.txt:24 (add_executable):
+  Cannot generate a safe runtime search path for target visual_pcl because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/map_pcl; catkin build --get-env map_pcl | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/map_pcl --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/map_pcl -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Errors << delta_display:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/delta_display/build.cmake.000.log
+CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "quadrotor_msgs"
+  with any of the following names:
+
+    quadrotor_msgsConfig.cmake
+    quadrotor_msgs-config.cmake
+
+  Add the installation prefix of "quadrotor_msgs" to CMAKE_PREFIX_PATH or set
+  "quadrotor_msgs_DIR" to a directory containing one of the above files.  If
+  "quadrotor_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:13 (find_package)
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/delta_display; catkin build --get-env delta_display | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/uam_sim/delta-display/delta_display --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/delta_display -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+Failed << delta_display:cmake                     [ Exited with code 1 ]
+_______________________________________________________________________________
+Errors << manual_take_over:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/manual_take_over/build.cmake.000.log
+CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "quadrotor_msgs"
+  with any of the following names:
+
+    quadrotor_msgsConfig.cmake
+    quadrotor_msgs-config.cmake
+
+  Add the installation prefix of "quadrotor_msgs" to CMAKE_PREFIX_PATH or set
+  "quadrotor_msgs_DIR" to a directory containing one of the above files.  If
+  "quadrotor_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:11 (find_package)
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/manual_take_over; catkin build --get-env manual_take_over | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/manual_take_over --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/manual_take_over -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+Failed << manual_take_over:cmake                  [ Exited with code 1 ]
+_______________________________________________________________________________
+Errors << so3_control:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/so3_control/build.cmake.000.log
+CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "quadrotor_msgs"
+  with any of the following names:
+
+    quadrotor_msgsConfig.cmake
+    quadrotor_msgs-config.cmake
+
+  Add the installation prefix of "quadrotor_msgs" to CMAKE_PREFIX_PATH or set
+  "quadrotor_msgs_DIR" to a directory containing one of the above files.  If
+  "quadrotor_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:8 (find_package)
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/so3_control; catkin build --get-env so3_control | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/uam_sim/so3_control --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/so3_control -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+Failed << so3_control:cmake                       [ Exited with code 1 ]
+_______________________________________________________________________________
+Errors << so3_quadrotor_simulator:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/so3_quadrotor_simulator/build.cmake.000.log
+CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "quadrotor_msgs"
+  with any of the following names:
+
+    quadrotor_msgsConfig.cmake
+    quadrotor_msgs-config.cmake
+
+  Add the installation prefix of "quadrotor_msgs" to CMAKE_PREFIX_PATH or set
+  "quadrotor_msgs_DIR" to a directory containing one of the above files.  If
+  "quadrotor_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:10 (find_package)
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/so3_quadrotor_simulator; catkin build --get-env so3_quadrotor_simulator | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/uam_sim/so3_quadrotor_simulator --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/so3_quadrotor_simulator -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+Failed << so3_quadrotor_simulator:cmake           [ Exited with code 1 ]
+_______________________________________________________________________________
+Errors << traj_server:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/traj_server/build.cmake.000.log
+CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "quadrotor_msgs"
+  with any of the following names:
+
+    quadrotor_msgsConfig.cmake
+    quadrotor_msgs-config.cmake
+
+  Add the installation prefix of "quadrotor_msgs" to CMAKE_PREFIX_PATH or set
+  "quadrotor_msgs_DIR" to a directory containing one of the above files.  If
+  "quadrotor_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:8 (find_package)
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/traj_server; catkin build --get-env traj_server | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_server -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+Failed << traj_server:cmake                       [ Exited with code 1 ]
+--------------------------------------------------------------------------------
+Profile:                     default
+Extending:        [explicit] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel
+Workspace:                   /home/amplanner/am-planner-r7r3-r1-ws
+--------------------------------------------------------------------------------
+Build Space:        [exists] /home/amplanner/am-planner-r7r3-r1-ws/build
+Devel Space:        [exists] /home/amplanner/am-planner-r7r3-r1-ws/devel
+Install Space:      [unused] /home/amplanner/am-planner-r7r3-r1-ws/install
+Log Space:          [exists] /home/amplanner/am-planner-r7r3-r1-ws/logs
+Source Space:       [exists] /home/amplanner/am-planner-r7r3-r1-ws/src
+DESTDIR:            [unused] None
+--------------------------------------------------------------------------------
+Devel Space Layout:          linked
+Install Space Layout:        None
+--------------------------------------------------------------------------------
+Additional CMake Args:       -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff -DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic
+Additional Make Args:        None
+Additional catkin Make Args: None
+Internal Make Job Server:    True
+Cache Job Environments:      False
+--------------------------------------------------------------------------------
+Buildlisted Packages:        None
+Skiplisted Packages:         None
+--------------------------------------------------------------------------------
+Workspace configuration appears valid.
+
+NOTE: Forcing CMake to run for each package.
+--------------------------------------------------------------------------------
+[build] Found 19 packages in 0.0 seconds.                                      
+[build] Updating package table.                                                
+Starting >>> catkin_tools_prebuild                 
+Finished <<< catkin_tools_prebuild                  [ 0.9 seconds ]
+Starting >>> catkin_simple                         
+Starting >>> map_pcl                               
+Starting >>> octomap_server                        
+Starting >>> pose_utils                            
+Starting >>> quadrotor_msgs                        
+Starting >>> rviz_plugins                          
+Starting >>> uav_utils                             
+Finished <<< catkin_simple                          [ 0.9 seconds ]
+Starting >>> decomp_ros_msgs                       
+Finished <<< uav_utils                              [ 1.0 seconds ]
+Finished <<< decomp_ros_msgs                        [ 2.6 seconds ]
+Starting >>> decomp_ros_utils                      
+Finished <<< quadrotor_msgs                         [ 3.5 seconds ]
+Starting >>> delta_display                         
+Starting >>> manual_take_over                      
+Starting >>> so3_control                           
+Starting >>> so3_quadrotor_simulator               
+Starting >>> traj_server                           
+Failed <<< delta_display                          [ 0.9 seconds ]
+Abandoned <<< jps3d                                  [ Unrelated job failed ]
+Abandoned <<< odom_visualization                     [ Unrelated job failed ]
+Abandoned <<< vis_utils                              [ Unrelated job failed ]
+Abandoned <<< traj_opt                               [ Unrelated job failed ]
+Abandoned <<< plan_manage                            [ Unrelated job failed ]
+Failed <<< manual_take_over                       [ 0.9 seconds ]
+Failed <<< so3_control                            [ 0.9 seconds ]
+Failed <<< so3_quadrotor_simulator                [ 0.9 seconds ]
+Failed <<< traj_server                            [ 0.9 seconds ]
+Finished <<< pose_utils                             [ 6.0 seconds ]
+Finished <<< rviz_plugins                           [ 6.3 seconds ]
+Finished <<< map_pcl                                [ 8.1 seconds ]
+Finished <<< decomp_ros_utils                       [ 18.6 seconds ]
+Finished <<< octomap_server                         [ 25.5 seconds ]
+[build] Summary: 10 of 20 packages succeeded.
+[build] Ignored: None.
+[build] Warnings: 2 packages succeeded with warnings.
+[build] Abandoned: 5 packages were abandoned.
+[build] Failed: 5 packages failed.
+[build] Runtime: 26.4 seconds total.
+[build] Note: Workspace packages have changed, please re-source setup files to use them.

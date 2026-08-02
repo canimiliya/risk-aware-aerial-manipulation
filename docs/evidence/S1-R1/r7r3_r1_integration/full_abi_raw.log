@@ -1,0 +1,347 @@
+=== libse3_planner.so ===
+/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/libse3_planner.so: symbolic link to /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_opt/lib/libse3_planner.so
+e6210edcc376bf3044c95fee16c30da7b86acfe0ba717a35d17457d7eb1ad4bf  /home/amplanner/am-planner-r7r3-r1-ws/devel/lib/libse3_planner.so
+
+Dynamic section at offset 0x10a670 contains 38 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libpcl_common.so.1.10]
+ 0x0000000000000001 (NEEDED)             Shared library: [libjps3d.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libroslib.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpython3.9.so.1.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libroscpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librosconsole.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libroscpp_serialization.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librostime.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]
+ 0x000000000000000e (SONAME)             Library soname: [libse3_planner.so]
+ 0x000000000000001d (RUNPATH)            Library runpath: [/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib:/opt/ros/noetic/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/vis_utils/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/decomp_ros_utils/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib]
+ 0x000000000000000c (INIT)               0x29000
+ 0x000000000000000d (FINI)               0xcb064
+ 0x0000000000000019 (INIT_ARRAY)         0x10a688
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x10a698
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x328
+ 0x0000000000000005 (STRTAB)             0x8920
+ 0x0000000000000006 (SYMTAB)             0x1c60
+ 0x000000000000000a (STRSZ)              95361 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x10c000
+ 0x0000000000000002 (PLTRELSZ)           15072 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0x24540
+ 0x0000000000000007 (RELA)               0x20868
+ 0x0000000000000008 (RELASZ)             15576 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffffe (VERNEED)            0x206b8
+ 0x000000006fffffff (VERNEEDNUM)         5
+ 0x000000006ffffff0 (VERSYM)             0x1fda2
+ 0x000000006ffffff9 (RELACOUNT)          43
+ 0x0000000000000000 (NULL)               0x0
+  NEEDED               libpcl_common.so.1.10
+  NEEDED               libjps3d.so
+  NEEDED               libroslib.so
+  NEEDED               libpython3.9.so.1.0
+  NEEDED               libroscpp.so
+  NEEDED               librosconsole.so
+  NEEDED               libroscpp_serialization.so
+  NEEDED               librostime.so
+  NEEDED               libstdc++.so.6
+  NEEDED               libm.so.6
+  NEEDED               libgcc_s.so.1
+  NEEDED               libc.so.6
+  NEEDED               ld-linux-x86-64.so.2
+	linux-vdso.so.1 (0x00007907aba35000)
+	libpcl_common.so.1.10 => /lib/x86_64-linux-gnu/libpcl_common.so.1.10 (0x00007907ab830000)
+	libjps3d.so => /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib/libjps3d.so (0x00007907ab7f3000)
+	libroslib.so => /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib/libroslib.so (0x00007907ab7d8000)
+	libpython3.9.so.1.0 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so.1.0 (0x00007907ab400000)
+	libroscpp.so => /opt/ros/noetic/lib/libroscpp.so (0x00007907ab24f000)
+	librosconsole.so => /opt/ros/noetic/lib/librosconsole.so (0x00007907ab1ec000)
+	libroscpp_serialization.so => /opt/ros/noetic/lib/libroscpp_serialization.so (0x00007907ab7d1000)
+	librostime.so => /opt/ros/noetic/lib/librostime.so (0x00007907ab7a4000)
+	libstdc++.so.6 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libstdc++.so.6 (0x00007907aae00000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007907aacb1000)
+	libgcc_s.so.1 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libgcc_s.so.1 (0x00007907ab1be000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007907aaabf000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007907aba37000)
+	libgomp.so.1 => /lib/x86_64-linux-gnu/libgomp.so.1 (0x00007907ab17c000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007907ab159000)
+	librospack.so => /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so (0x00007907ab109000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007907ab79a000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x00007907ab795000)
+	libxmlrpcpp.so => not found
+	libcpp_common.so => not found
+	libboost_thread.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 (0x00007907ab0dd000)
+	libboost_chrono.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 (0x00007907ab787000)
+	libboost_filesystem.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 (0x00007907ab0bf000)
+	librosconsole_log4cxx.so => not found
+	librosconsole_backend_interface.so => not found
+	liblog4cxx.so.10 => /lib/x86_64-linux-gnu/liblog4cxx.so.10 (0x00007907aa8e1000)
+	libboost_regex.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 (0x00007907aa7e1000)
+	libtinyxml2.so.6 => /lib/x86_64-linux-gnu/libtinyxml2.so.6 (0x00007907aa7ca000)
+	libboost_program_options.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 (0x00007907aa73b000)
+	libapr-1.so.0 => /lib/x86_64-linux-gnu/libapr-1.so.0 (0x00007907aa702000)
+	libaprutil-1.so.0 => /lib/x86_64-linux-gnu/libaprutil-1.so.0 (0x00007907aa6d4000)
+	libicui18n.so.66 => /lib/x86_64-linux-gnu/libicui18n.so.66 (0x00007907aa200000)
+	libicuuc.so.66 => /lib/x86_64-linux-gnu/libicuuc.so.66 (0x00007907aa01a000)
+	libuuid.so.1 => /lib/x86_64-linux-gnu/libuuid.so.1 (0x00007907aa6cb000)
+	libcrypt.so.1 => /lib/x86_64-linux-gnu/libcrypt.so.1 (0x00007907aa690000)
+	libexpat.so.1 => /lib/x86_64-linux-gnu/libexpat.so.1 (0x00007907aa662000)
+	libicudata.so.66 => /lib/x86_64-linux-gnu/libicudata.so.66 (0x00007907a8400000)
+=== se3_node ===
+/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/plan_manage/se3_node: symbolic link to /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/plan_manage/lib/plan_manage/se3_node
+bb4bdc17112efa565b9825f0efa9b76e86525687fb20b7b2961acae21e881a4c  /home/amplanner/am-planner-r7r3-r1-ws/devel/lib/plan_manage/se3_node
+
+Dynamic section at offset 0x56608 contains 38 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libse3_planner.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libroslib.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpython3.9.so.1.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libroscpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librosconsole.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libxmlrpcpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libroscpp_serialization.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librostime.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000001d (RUNPATH)            Library runpath: [/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_opt/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib:/opt/ros/noetic/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/vis_utils/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/decomp_ros_utils/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib]
+ 0x000000000000000c (INIT)               0x12000
+ 0x000000000000000d (FINI)               0x43048
+ 0x0000000000000019 (INIT_ARRAY)         0x56108
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x56118
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x3d8
+ 0x0000000000000005 (STRTAB)             0x4540
+ 0x0000000000000006 (SYMTAB)             0xe68
+ 0x000000000000000a (STRSZ)              33334 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000003 (PLTGOT)             0x578a8
+ 0x0000000000000002 (PLTRELSZ)           5280 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0x10098
+ 0x0000000000000007 (RELA)               0xcd38
+ 0x0000000000000008 (RELASZ)             13152 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x000000006ffffffe (VERNEED)            0xcc08
+ 0x000000006fffffff (VERNEEDNUM)         3
+ 0x000000006ffffff0 (VERSYM)             0xc776
+ 0x000000006ffffff9 (RELACOUNT)          397
+ 0x0000000000000000 (NULL)               0x0
+  NEEDED               libse3_planner.so
+  NEEDED               libroslib.so
+  NEEDED               libpython3.9.so.1.0
+  NEEDED               libroscpp.so
+  NEEDED               librosconsole.so
+  NEEDED               libxmlrpcpp.so
+  NEEDED               libroscpp_serialization.so
+  NEEDED               librostime.so
+  NEEDED               libstdc++.so.6
+  NEEDED               libgcc_s.so.1
+  NEEDED               libc.so.6
+	linux-vdso.so.1 (0x0000719a60ba4000)
+	libse3_planner.so => /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_opt/lib/libse3_planner.so (0x0000719a60a33000)
+	libroslib.so => /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib/libroslib.so (0x0000719a60a18000)
+	libpython3.9.so.1.0 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so.1.0 (0x0000719a60600000)
+	libroscpp.so => /opt/ros/noetic/lib/libroscpp.so (0x0000719a6044f000)
+	librosconsole.so => /opt/ros/noetic/lib/librosconsole.so (0x0000719a609b3000)
+	libxmlrpcpp.so => /opt/ros/noetic/lib/libxmlrpcpp.so (0x0000719a6098f000)
+	libroscpp_serialization.so => /opt/ros/noetic/lib/libroscpp_serialization.so (0x0000719a6098a000)
+	librostime.so => /opt/ros/noetic/lib/librostime.so (0x0000719a60422000)
+	libstdc++.so.6 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libstdc++.so.6 (0x0000719a60000000)
+	libgcc_s.so.1 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libgcc_s.so.1 (0x0000719a603f4000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x0000719a5fe0e000)
+	libpcl_common.so.1.10 => /lib/x86_64-linux-gnu/libpcl_common.so.1.10 (0x0000719a60306000)
+	libjps3d.so => /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib/libjps3d.so (0x0000719a602c9000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x0000719a5fcbf000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000719a60ba6000)
+	librospack.so => /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so (0x0000719a5fc6f000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x0000719a5fc4c000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x0000719a60980000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x0000719a602c4000)
+	libcpp_common.so => not found
+	libboost_thread.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 (0x0000719a5fc20000)
+	libboost_chrono.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 (0x0000719a5fc12000)
+	libboost_filesystem.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 (0x0000719a5fbf4000)
+	librosconsole_log4cxx.so => not found
+	librosconsole_backend_interface.so => not found
+	liblog4cxx.so.10 => /lib/x86_64-linux-gnu/liblog4cxx.so.10 (0x0000719a5fa16000)
+	libboost_regex.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 (0x0000719a5f916000)
+	libgomp.so.1 => /lib/x86_64-linux-gnu/libgomp.so.1 (0x0000719a5f8d4000)
+	libtinyxml2.so.6 => /lib/x86_64-linux-gnu/libtinyxml2.so.6 (0x0000719a5f8bd000)
+	libboost_program_options.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 (0x0000719a5f82e000)
+	libapr-1.so.0 => /lib/x86_64-linux-gnu/libapr-1.so.0 (0x0000719a5f7f5000)
+	libaprutil-1.so.0 => /lib/x86_64-linux-gnu/libaprutil-1.so.0 (0x0000719a5f7c7000)
+	libicui18n.so.66 => /lib/x86_64-linux-gnu/libicui18n.so.66 (0x0000719a5f400000)
+	libicuuc.so.66 => /lib/x86_64-linux-gnu/libicuuc.so.66 (0x0000719a5f21a000)
+	libuuid.so.1 => /lib/x86_64-linux-gnu/libuuid.so.1 (0x0000719a5f7be000)
+	libcrypt.so.1 => /lib/x86_64-linux-gnu/libcrypt.so.1 (0x0000719a5f783000)
+	libexpat.so.1 => /lib/x86_64-linux-gnu/libexpat.so.1 (0x0000719a5f755000)
+	libicudata.so.66 => /lib/x86_64-linux-gnu/libicudata.so.66 (0x0000719a5d600000)
+=== overlay librospack ===
+/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/librospack.so: symbolic link to /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so
+bc23660095892f5f05ed759bcbcca6dfe31ef3a6301333e70d6027e10579af34  /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/librospack.so
+  NEEDED               libtinyxml2.so.6
+  NEEDED               libboost_filesystem.so.1.71.0
+  NEEDED               libboost_program_options.so.1.71.0
+  NEEDED               libpython3.9.so.1.0
+  NEEDED               libstdc++.so.6
+  NEEDED               libgcc_s.so.1
+  NEEDED               libc.so.6
+	linux-vdso.so.1 (0x00007ace88903000)
+	libtinyxml2.so.6 => /lib/x86_64-linux-gnu/libtinyxml2.so.6 (0x00007ace8885a000)
+	libboost_filesystem.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 (0x00007ace8883c000)
+	libboost_program_options.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 (0x00007ace887ad000)
+	libpython3.9.so.1.0 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so.1.0 (0x00007ace88400000)
+	libstdc++.so.6 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libstdc++.so.6 (0x00007ace88000000)
+	libgcc_s.so.1 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libgcc_s.so.1 (0x00007ace883d2000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ace87e0e000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ace88788000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ace88782000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x00007ace883cd000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ace87cbf000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ace88905000)
+=== overlay libroslib ===
+/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/libroslib.so: symbolic link to /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib/libroslib.so
+e644a3f8183709a44d4718e499f29356442b187be8a03690b4b350c5fe4a73ca  /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/libroslib.so
+  NEEDED               librospack.so
+  NEEDED               libpthread.so.0
+  NEEDED               libstdc++.so.6
+  NEEDED               libgcc_s.so.1
+  NEEDED               libc.so.6
+	linux-vdso.so.1 (0x00007bac2686b000)
+	librospack.so => /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so (0x00007bac267f8000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007bac2679b000)
+	libstdc++.so.6 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libstdc++.so.6 (0x00007bac26400000)
+	libgcc_s.so.1 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libgcc_s.so.1 (0x00007bac2676d000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007bac2620e000)
+	libtinyxml2.so.6 => /lib/x86_64-linux-gnu/libtinyxml2.so.6 (0x00007bac26754000)
+	libboost_filesystem.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 (0x00007bac26736000)
+	libboost_program_options.so.1.71.0 => /lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 (0x00007bac2617f000)
+	libpython3.9.so.1.0 => /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so.1.0 (0x00007bac25c00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007bac2686d000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007bac26030000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007bac2672e000)
+	libutil.so.1 => /lib/x86_64-linux-gnu/libutil.so.1 (0x00007bac26729000)
+=== link.txt ===
+/usr/bin/c++ -fPIC -O3 -Wall -g  -shared -Wl,-soname,libse3_planner.so -o /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_opt/lib/libse3_planner.so CMakeFiles/se3_planner.dir/src/se3_planner.cc.o  -Wl,-rpath,/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib:/opt/ros/noetic/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/vis_utils/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/decomp_ros_utils/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server/lib/liboctomap_server.so /opt/ros/noetic/lib/libpcl_ros_filter.so /opt/ros/noetic/lib/libpcl_ros_tf.so -lboost_thread -lpthread -lboost_chrono -lboost_atomic -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_sample_consensus -lpcl_filters -lpcl_ml -lpcl_segmentation -lpcl_surface -lqhull -lflann_cpp /opt/ros/noetic/lib/librosbag.so /opt/ros/noetic/lib/librosbag_storage.so /opt/ros/noetic/lib/libroslz4.so -llz4 /opt/ros/noetic/lib/libtopic_tools.so -lpcl_common -lpcl_octree -lpcl_io -lboost_system -lboost_filesystem -lboost_date_time -lboost_iostreams -lboost_regex /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1 -lfreetype -lz /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1 -ljpeg -lpng -ltiff /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1 -lexpat /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1 /opt/ros/noetic/lib/liboctomap_ros.so /opt/ros/noetic/lib/liboctomap.so /opt/ros/noetic/lib/liboctomath.so /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so /opt/ros/noetic/lib/libnodeletlib.so /opt/ros/noetic/lib/libbondcpp.so -luuid /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib/libjps3d.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/vis_utils/lib/libvis_utils.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/decomp_ros_utils/lib/libdecomp_rviz_plugins.so /opt/ros/noetic/lib/librviz.so -lOgreOverlay -lOgreMain -lOpenGL -lGLX -lGLU /opt/ros/noetic/lib/libimage_transport.so /opt/ros/noetic/lib/libinteractive_markers.so /opt/ros/noetic/lib/liblaser_geometry.so /opt/ros/noetic/lib/libtf.so /opt/ros/noetic/lib/libresource_retriever.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/liburdf.so -lurdfdom_sensor -lurdfdom_model_state -lurdfdom_model -lurdfdom_world -ltinyxml /opt/ros/noetic/lib/libclass_loader.so -lPocoFoundation -ldl /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib/libroslib.so /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 -ltinyxml2 /opt/ros/noetic/lib/librosconsole_bridge.so /opt/ros/noetic/lib/libroscpp.so -lpthread /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so -llog4cxx /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so 
+/usr/bin/c++  -O3 -Wall -g   CMakeFiles/se3_node.dir/src/plan_manage.cpp.o  -o /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/plan_manage/lib/plan_manage/se3_node  -Wl,-rpath,/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_opt/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib:/opt/ros/noetic/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/vis_utils/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/decomp_ros_utils/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib:/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_opt/lib/libse3_planner.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server/lib/liboctomap_server.so /opt/ros/noetic/lib/libpcl_ros_filter.so /opt/ros/noetic/lib/libpcl_ros_tf.so /usr/lib/x86_64-linux-gnu/libboost_thread.so -lpthread /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so /usr/lib/x86_64-linux-gnu/libpcl_search.so /usr/lib/x86_64-linux-gnu/libpcl_features.so /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so /usr/lib/x86_64-linux-gnu/libpcl_filters.so /usr/lib/x86_64-linux-gnu/libpcl_ml.so /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so /usr/lib/x86_64-linux-gnu/libpcl_surface.so /usr/lib/x86_64-linux-gnu/libqhull.so /usr/lib/x86_64-linux-gnu/libflann_cpp.so /opt/ros/noetic/lib/librosbag.so /opt/ros/noetic/lib/librosbag_storage.so /opt/ros/noetic/lib/libroslz4.so /usr/lib/x86_64-linux-gnu/liblz4.so /opt/ros/noetic/lib/libtopic_tools.so /usr/lib/x86_64-linux-gnu/libpcl_common.so /usr/lib/x86_64-linux-gnu/libpcl_octree.so /usr/lib/x86_64-linux-gnu/libpcl_io.so /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so /usr/lib/x86_64-linux-gnu/libboost_iostreams.so /usr/lib/x86_64-linux-gnu/libboost_regex.so /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libtiff.so /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libexpat.so /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1 /opt/ros/noetic/lib/liboctomap_ros.so /opt/ros/noetic/lib/liboctomap.so /opt/ros/noetic/lib/liboctomath.so /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so /opt/ros/noetic/lib/libnodeletlib.so /opt/ros/noetic/lib/libbondcpp.so /usr/lib/x86_64-linux-gnu/libuuid.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/vis_utils/lib/libvis_utils.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/decomp_ros_utils/lib/libdecomp_rviz_plugins.so /opt/ros/noetic/lib/librviz.so /usr/lib/x86_64-linux-gnu/libOgreOverlay.so /usr/lib/x86_64-linux-gnu/libOgreMain.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so /opt/ros/noetic/lib/libimage_transport.so /opt/ros/noetic/lib/libinteractive_markers.so /opt/ros/noetic/lib/liblaser_geometry.so /opt/ros/noetic/lib/libtf.so /opt/ros/noetic/lib/libresource_retriever.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/liburdf.so /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so /usr/lib/x86_64-linux-gnu/liburdfdom_model.so /usr/lib/x86_64-linux-gnu/liburdfdom_world.so /usr/lib/x86_64-linux-gnu/libtinyxml.so /opt/ros/noetic/lib/libclass_loader.so /usr/lib/x86_64-linux-gnu/libPocoFoundation.so /usr/lib/x86_64-linux-gnu/libdl.so /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib/libroslib.so /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 /usr/lib/x86_64-linux-gnu/libtinyxml2.so /opt/ros/noetic/lib/librosconsole_bridge.so /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib/libjps3d.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so 
+=== CMakeCache python ===
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:359:PYBIND11_FINDPYTHON:UNINITIALIZED=ON
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:362:PYTHON_EXECUTABLE:FILEPATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:365:PYTHON_INCLUDE_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:368:PYTHON_LIBRARY:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:370://Specify specific Python version to use ('major.minor' or 'major')
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:371:PYTHON_VERSION:STRING=3
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:373://Location of Python module em
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:377:Python3_EXECUTABLE:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:380:Python3_INCLUDE_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:383:Python3_LIBRARY:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:386:Python3_LIBRARY_DEBUG:FILEPATH=
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:389:Python3_LIBRARY_RELEASE:FILEPATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:392:Python3_ROOT_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:395:Python_EXECUTABLE:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:398:Python_FIND_STRATEGY:UNINITIALIZED=LOCATION
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:401:Python_FIND_VIRTUALENV:UNINITIALIZED=ONLY
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:404:Python_INCLUDE_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:407:Python_LIBRARY:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:410:Python_ROOT_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:654:se3_planner_LIB_DEPENDS:STATIC=general;/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server/lib/liboctomap_server.so;general;/opt/ros/noetic/lib/libpcl_ros_filter.so;general;/opt/ros/noetic/lib/libpcl_ros_tf.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;general;/usr/lib/x86_64-linux-gnu/libpcl_search.so;general;/usr/lib/x86_64-linux-gnu/libpcl_features.so;general;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;general;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;general;/usr/lib/x86_64-linux-gnu/libpcl_ml.so;general;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;general;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/x86_64-linux-gnu/libflann_cpp.so;general;/opt/ros/noetic/lib/librosbag.so;general;/opt/ros/noetic/lib/librosbag_storage.so;general;/opt/ros/noetic/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/noetic/lib/libtopic_tools.so;general;/usr/lib/x86_64-linux-gnu/libpcl_common.so;general;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;general;/usr/lib/x86_64-linux-gnu/libpcl_io.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libjpeg.so;general;/usr/lib/x86_64-linux-gnu/libpng.so;general;/usr/lib/x86_64-linux-gnu/libtiff.so;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libexpat.so;general;/usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1;general;/usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1;general;/opt/ros/noetic/lib/liboctomap_ros.so;general;/opt/ros/noetic/lib/liboctomap.so;general;/opt/ros/noetic/lib/liboctomath.so;general;/opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/noetic/lib/libnodeletlib.so;general;/opt/ros/noetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d/lib/libjps3d.so;general;/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/vis_utils/lib/libvis_utils.so;general;/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/decomp_ros_utils/lib/libdecomp_rviz_plugins.so;general;/opt/ros/noetic/lib/librviz.so;general;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;general;/usr/lib/x86_64-linux-gnu/libOgreMain.so;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/opt/ros/noetic/lib/libimage_transport.so;general;/opt/ros/noetic/lib/libinteractive_markers.so;general;/opt/ros/noetic/lib/liblaser_geometry.so;general;/opt/ros/noetic/lib/libtf.so;general;/opt/ros/noetic/lib/libresource_retriever.so;general;/opt/ros/noetic/lib/libtf2_ros.so;general;/opt/ros/noetic/lib/libactionlib.so;general;/opt/ros/noetic/lib/libmessage_filters.so;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/liburdf.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_model.so;general;/usr/lib/x86_64-linux-gnu/liburdfdom_world.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/x86_64-linux-gnu/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/roslib/lib/libroslib.so;general;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/.private/rospack/lib/librospack.so;general;/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/noetic/lib/librosconsole_bridge.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so;general;/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;Python3::Python;
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:900://Details about finding Python3
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:901:FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python][/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so][/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9][cfound components: Interpreter Development ][v3.9.23(3.9)]
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:902://Details about finding PythonInterp
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:903:FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python][v3.9.23()]
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:936://Python executable during the last CMake run
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:937:PYBIND11_PYTHON_EXECUTABLE_LAST:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:938://ADVANCED property for variable: PYTHON_EXECUTABLE
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:939:PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:940://This needs to be in PYTHONPATH when 'setup.py install' is called.
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:943:PYTHON_INSTALL_DIR:INTERNAL=lib/python3/dist-packages
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:944://Python debug status
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:945:PYTHON_IS_DEBUG:INTERNAL=0
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:946:PYTHON_MODULE_DEBUG_POSTFIX:INTERNAL=
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:947:PYTHON_MODULE_EXTENSION:INTERNAL=.cpython-39-x86_64-linux-gnu.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:948://ADVANCED property for variable: Python3_LIBRARY_DEBUG
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:949:Python3_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:950://ADVANCED property for variable: Python3_LIBRARY_RELEASE
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:951:Python3_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:955:_Python:INTERNAL=Python3
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:956://ADVANCED property for variable: _Python3_DEVELOPMENT_SIGNATURE
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:957:_Python3_DEVELOPMENT_SIGNATURE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:958:_Python3_DEVELOPMENT_SIGNATURE:INTERNAL=097197473e8a08845c8146536020d06d
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:959://ADVANCED property for variable: _Python3_EXECUTABLE
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:960:_Python3_EXECUTABLE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:961:_Python3_EXECUTABLE:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:962://ADVANCED property for variable: _Python3_INCLUDE_DIR
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:963:_Python3_INCLUDE_DIR-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:964:_Python3_INCLUDE_DIR:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:965://ADVANCED property for variable: _Python3_INTERPRETER_SIGNATURE
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:966:_Python3_INTERPRETER_SIGNATURE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:967:_Python3_INTERPRETER_SIGNATURE:INTERNAL=f29cbdbd3a2532aa8bd3d5a31ccd1aa2
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:968://ADVANCED property for variable: _Python3_LIBRARY_RELEASE
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:969:_Python3_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:970:_Python3_LIBRARY_RELEASE:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt/CMakeCache.txt:983://Directories where pybind11 and possibly Python headers are located
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:369:PYBIND11_FINDPYTHON:UNINITIALIZED=ON
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:372:PYTHON_EXECUTABLE:FILEPATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:375:PYTHON_INCLUDE_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:378:PYTHON_LIBRARY:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:380://Specify specific Python version to use ('major.minor' or 'major')
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:381:PYTHON_VERSION:STRING=3
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:383://Location of Python module em
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:387:Python3_EXECUTABLE:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:390:Python3_INCLUDE_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:393:Python3_LIBRARY:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:396:Python3_LIBRARY_DEBUG:FILEPATH=
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:399:Python3_LIBRARY_RELEASE:FILEPATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:402:Python3_ROOT_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:405:Python_EXECUTABLE:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:408:Python_FIND_STRATEGY:UNINITIALIZED=LOCATION
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:411:Python_FIND_VIRTUALENV:UNINITIALIZED=ONLY
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:414:Python_INCLUDE_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:417:Python_LIBRARY:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:420:Python_ROOT_DIR:UNINITIALIZED=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:920://Details about finding Python3
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:921:FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python][/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so][/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9][cfound components: Interpreter Development ][v3.9.23(3.9)]
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:922://Details about finding PythonInterp
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:923:FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python][v3.9.23()]
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:956://Python executable during the last CMake run
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:957:PYBIND11_PYTHON_EXECUTABLE_LAST:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:958://ADVANCED property for variable: PYTHON_EXECUTABLE
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:959:PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:960://This needs to be in PYTHONPATH when 'setup.py install' is called.
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:963:PYTHON_INSTALL_DIR:INTERNAL=lib/python3/dist-packages
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:964://Python debug status
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:965:PYTHON_IS_DEBUG:INTERNAL=0
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:966:PYTHON_MODULE_DEBUG_POSTFIX:INTERNAL=
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:967:PYTHON_MODULE_EXTENSION:INTERNAL=.cpython-39-x86_64-linux-gnu.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:968://ADVANCED property for variable: Python3_LIBRARY_DEBUG
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:969:Python3_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:970://ADVANCED property for variable: Python3_LIBRARY_RELEASE
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:971:Python3_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:975:_Python:INTERNAL=Python3
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:976://ADVANCED property for variable: _Python3_DEVELOPMENT_SIGNATURE
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:977:_Python3_DEVELOPMENT_SIGNATURE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:978:_Python3_DEVELOPMENT_SIGNATURE:INTERNAL=097197473e8a08845c8146536020d06d
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:979://ADVANCED property for variable: _Python3_EXECUTABLE
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:980:_Python3_EXECUTABLE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:981:_Python3_EXECUTABLE:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:982://ADVANCED property for variable: _Python3_INCLUDE_DIR
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:983:_Python3_INCLUDE_DIR-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:984:_Python3_INCLUDE_DIR:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:985://ADVANCED property for variable: _Python3_INTERPRETER_SIGNATURE
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:986:_Python3_INTERPRETER_SIGNATURE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:987:_Python3_INTERPRETER_SIGNATURE:INTERNAL=f29cbdbd3a2532aa8bd3d5a31ccd1aa2
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:988://ADVANCED property for variable: _Python3_LIBRARY_RELEASE
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:989:_Python3_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:990:_Python3_LIBRARY_RELEASE:INTERNAL=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage/CMakeCache.txt:1009://Directories where pybind11 and possibly Python headers are located

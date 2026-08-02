@@ -1,0 +1,13 @@
+{
+  "first_successful_grasp": "grasp_r7r3_r1_gpu_run_02",
+  "repeat_successful_grasp": "grasp_r7r3_r1_gpu_run_03",
+  "message_type": "quadrotor_msgs/PolynomialTrajectory",
+  "trajectory_segments": {"first": 4, "repeat": 4},
+  "trajectory_arm_segments": {"first": 4, "repeat": 4},
+  "total_duration_s": {"first": 5.88045466553702, "repeat": 5.88045466553702},
+  "planning_time_ms": {"first": 3572.68, "repeat": 3374.95},
+  "gpu_peak_memory_mb_from_monitor_samples": {"first": 1921.0, "repeat": 1860.0},
+  "both_capture_exit": 0,
+  "both_numeric_validation_success": true,
+  "note": "The two successful grasp runs are structurally and numerically valid; optimization logs also show CUDA initialization. The first run_id requested by the card is preserved separately as an argument-order capture failure; successful runs are explicitly mapped here."
+}

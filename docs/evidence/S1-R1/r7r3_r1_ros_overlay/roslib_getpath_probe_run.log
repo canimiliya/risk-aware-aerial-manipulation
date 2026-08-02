@@ -1,0 +1,3 @@
+[rospack] Error: package 'roslib' not found
+[librospack]: error while executing command
+ros::package::getPath(roslib)=

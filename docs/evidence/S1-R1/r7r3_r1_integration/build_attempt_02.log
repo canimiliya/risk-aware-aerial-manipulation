@@ -1,0 +1,505 @@
+_______________________________________________________________________________
+Warnings << octomap_server:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/octomap_server/build.cmake.001.log
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:73 (add_library):
+  Cannot generate a safe runtime search path for target
+  octomap_server_nodelet because files in some directories may conflict with
+  libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:66 (add_executable):
+  Cannot generate a safe runtime search path for target octomap_saver because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:60 (add_executable):
+  Cannot generate a safe runtime search path for target octomap_server_static
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:57 (add_executable):
+  Cannot generate a safe runtime search path for target
+  octomap_color_server_node because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:54 (add_executable):
+  Cannot generate a safe runtime search path for target octomap_server_node
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:76 (add_library):
+  Cannot generate a safe runtime search path for target
+  octomap_color_server_nodelet because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:45 (add_library):
+  Cannot generate a safe runtime search path for target octomap_server
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:69 (add_executable):
+  Cannot generate a safe runtime search path for target
+  octomap_tracking_server_node because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:63 (add_executable):
+  Cannot generate a safe runtime search path for target
+  octomap_server_multilayer because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server/CMakeLists.txt:49 (add_library):
+  Cannot generate a safe runtime search path for target octomap_server_color
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/octomap_server; catkin build --get-env octomap_server | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/uitls/octomap_server --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/octomap_server -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << map_pcl:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/map_pcl/build.cmake.001.log
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/map_pcl/CMakeLists.txt:24 (add_executable):
+  Cannot generate a safe runtime search path for target visual_pcl because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/map_pcl; catkin build --get-env map_pcl | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/map_pcl --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/map_pcl -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << so3_control:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/so3_control/build.cmake.001.log
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/uam_sim/so3_control/CMakeLists.txt:38 (add_executable):
+  Cannot generate a safe runtime search path for target control_example
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/uam_sim/so3_control/CMakeLists.txt:31 (add_library):
+  Cannot generate a safe runtime search path for target so3_control_nodelet
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/so3_control; catkin build --get-env so3_control | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/uam_sim/so3_control --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/so3_control -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << so3_quadrotor_simulator:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/so3_quadrotor_simulator/build.cmake.001.log
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'Eigen3' but neither 'Eigen3_INCLUDE_DIRS' nor
+  'Eigen3_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  CMakeLists.txt:30 (catkin_package)
+
+
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  CMakeLists.txt:30 (catkin_package)
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/so3_quadrotor_simulator; catkin build --get-env so3_quadrotor_simulator | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/uam_sim/so3_quadrotor_simulator --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/so3_quadrotor_simulator -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << traj_server:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/traj_server/build.cmake.001.log
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/traj_server; catkin build --get-env traj_server | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_server -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << traj_server:make /home/amplanner/am-planner-r7r3-r1-ws/logs/traj_server/build.make.000.log
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server/src/traj_server.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryServer::pubArmPositionCommand()[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server/src/traj_server.cpp:447:22:[m[K [01;35m[Kwarning: [m[Kcomparison between ‘[01m[Kenum TrajectoryServer::ArmState[m[K’ and ‘[01m[Kenum TrajectoryServer::ServerState[m[K’ [[01;35m[K-Wenum-compare[m[K]
+  447 |     if (arm_state == [01;35m[KTRAJ[m[K)
+      |                      [01;35m[K^~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server/src/traj_server.cpp:476:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_poly_num[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  476 |       int [01;35m[Kcur_poly_num[m[K = cur_order + 1;
+      |           [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server/src/traj_server.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryServer::pubPositionCommand()[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server/src/traj_server.cpp:581:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_poly_num[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  581 |       int [01;35m[Kcur_poly_num[m[K = cur_order + 1;
+      |           [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server/src/traj_server.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryServer::rcvArmTrajectoryCallabck(const PolynomialTrajectory&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/utils/traj_server/src/traj_server.cpp:808:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _num_segment_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  808 |       for (int idx = 0; [01;35m[Kidx < traj.num_segment[m[K; idx++)
+      |                         [01;35m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/traj_server; catkin build --get-env traj_server | catkin env -si  /usr/bin/make --jobserver-auth=3,4; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << jps3d:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/jps3d/build.cmake.000.log
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/CMakeLists.txt:40 (add_library):
+  Cannot generate a safe runtime search path for target jps3d because files
+  in some directories may conflict with libraries in implicit directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/jps3d; catkin build --get-env jps3d | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/jps3d -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << jps3d:make /home/amplanner/am-planner-r7r3-r1-ws/logs/jps3d/build.make.000.log
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvec_Vecf<Dim> JPSPlanner<Dim>::samplePath(vec_Vecf<Dim>&) [with int Dim = 2; vec_Vecf<Dim> = std::vector<Eigen::Matrix<double, 2, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 2, 1> > >][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:493:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:140:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  140 |   for (int i = 0; [01;35m[Ki < path.size() - 1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_rawpath() [with int Dim = 2][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:493:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:201:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  201 |   for (int i = 0; i < raw_path_.size(); i++)
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_optipath() [with int Dim = 2][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:493:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:217:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  217 |   for (int i = 0; i < path_.size(); i++)
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_keygrid() [with int Dim = 2][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:493:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:254:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  254 |   for (int i = 0; i < raw_path_.size(); i++)
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_samplepath() [with int Dim = 2][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:493:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:288:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  288 |   for (int i = 0; i < sample_path_.size(); i++)
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvec_Vecf<Dim> JPSPlanner<Dim>::samplePath(vec_Vecf<Dim>&) [with int Dim = 3; vec_Vecf<Dim> = std::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:495:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:140:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  140 |   for (int i = 0; [01;35m[Ki < path.size() - 1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_rawpath() [with int Dim = 3][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:495:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:201:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  201 |   for (int i = 0; i < raw_path_.size(); i++)
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_optipath() [with int Dim = 3][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:495:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:217:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  217 |   for (int i = 0; i < path_.size(); i++)
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_keygrid() [with int Dim = 3][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:495:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:254:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  254 |   for (int i = 0; i < raw_path_.size(); i++)
+/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp: In instantiation of ‘[01m[Kvoid JPSPlanner<Dim>::publish_samplepath() [with int Dim = 3][m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:495:16:[m[K   required from here
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/src/jps_planner.cpp:288:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1>, Eigen::aligned_allocator<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  288 |   for (int i = 0; i < sample_path_.size(); i++)
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/jps3d; catkin build --get-env jps3d | catkin env -si  /usr/bin/make --jobserver-auth=3,4; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << traj_opt:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/traj_opt/build.cmake.000.log
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/CMakeLists.txt:50 (add_library):
+  Cannot generate a safe runtime search path for target se3_planner because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt; catkin build --get-env traj_opt | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/traj_opt -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << traj_opt:make /home/amplanner/am-planner-r7r3-r1-ws/logs/traj_opt/build.make.000.log
+In file included from [01m[K/opt/ros/noetic/include/tf/transform_datatypes.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/octomap_ros/conversions.h:45[m[K,
+                 from [01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/include/map_util/map_util.h:17[m[K,
+                 from [01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/jps3d/include/jps_planner/jps_planner.h:11[m[K,
+                 from [01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/include/traj_opt/se3_planner.h:7[m[K,
+                 from [01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:1[m[K:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:[m[K In member function ‘[01m[Kbool GlobalPlanner::Plan(double&, std::vector<double>&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:41:12:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   41 |   ROS_INFO([01;35m[K"[SE3_PLANNER]: inter_ids size: %d"[m[K, [32m[Kinter_ids.size()[m[K);
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                                               [32m[K|[m[K
+      |                                                               [32m[Kstd::vector<int>::size_type {aka long unsigned int}[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:41:45:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   41 |   ROS_INFO("[SE3_PLANNER]: inter_ids size: [01;36m[K%d[m[K", inter_ids.size());
+      |                                            [01;36m[K~^[m[K
+      |                                             [01;36m[K|[m[K
+      |                                             [01;36m[Kint[m[K
+      |                                            [32m[K%ld[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:[m[K In member function ‘[01m[Kvoid GlobalPlanner::PathSearching(const Vec3f&, const std::vector<Eigen::Matrix<double, -1, 1> >&, const Vec3f&, vec_Vec3f&, std::vector<int>&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:74:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, -1, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   74 |     for (int i = 0; [01;35m[Ki < inter_info.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:63:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   63 |   bool [01;35m[Ksuccess[m[K;
+      |        [01;35m[K^~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:[m[K In member function ‘[01m[Kvoid GlobalPlanner::SfcGenerate(Mode, const vec_Vec3f&, const std::vector<int>&, const std::vector<Eigen::Matrix<double, -1, 1> >&, std::vector<Eigen::Matrix<double, -1, -1> >&, std::vector<int>&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:153:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  153 |   for (int i = 0; [01;35m[Ki < inter_ids.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:293:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  293 |       if ([01;35m[Kreach_i_th_inter_pt == inter_ids.size()[m[K)
+      |           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:142:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Konce[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  142 |   bool reach, [01;35m[Konce[m[K;
+      |               [01;35m[K^~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:[m[K In member function ‘[01m[Kdouble GlobalPlanner::MincoOptimizer(const Mode&, const MatDf&, const std::vector<Eigen::Matrix<double, -1, 1> >&, const MatDf&, const std::vector<int>&, const std::vector<Eigen::Matrix<double, -1, -1> >&, SE3GCOPTER&, Trajectory<5>&, Trajectory<5>&, Trajectory<5>&, Trajectory<5>&, std::vector<double>&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:387:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgrasp_T[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  387 |     double [01;35m[Kgrasp_T[m[K = 0;
+      |            [01;35m[K^~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:[m[K In member function ‘[01m[Kvoid GlobalPlanner::Setup(const MatDf&, const MatDf&, const Mode&, const std::vector<Eigen::Matrix<double, -1, 1> >&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:423:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, -1, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  423 |     for (int i = 0; [01;35m[Ki < inter_info_.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:431:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  431 |     for (int i = 0; [01;35m[Ki < guide_pts.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:[m[K In member function ‘[01m[Kbool GlobalPlanner::JpsSearchPath(const Vec3f&, const Vec3f&, const bool&, const Vec3f&, bool, const Vec3f&, bool, const Vec3f&, vec_Vec3f&, int&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/traj_opt/src/se3_planner.cc:463:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  463 |   int [01;35m[Kstatus[m[K;
+      |       [01;35m[K^~~~~~[m[K
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/traj_opt; catkin build --get-env traj_opt | catkin env -si  /usr/bin/make --jobserver-auth=3,4; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << plan_manage:cmake /home/amplanner/am-planner-r7r3-r1-ws/logs/plan_manage/build.cmake.000.log
+CMake Warning at /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/plan_manage/CMakeLists.txt:42 (add_executable):
+  Cannot generate a safe runtime search path for target se3_node because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libexpat.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+    runtime library [libuuid.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib
+
+  Some of these libraries may not be found correctly.
+
+
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage; catkin build --get-env plan_manage | catkin env -si  /usr/bin/cmake /home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/plan_manage --no-warn-unused-cli -DCATKIN_DEVEL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/plan_manage -DCMAKE_INSTALL_PREFIX=/home/amplanner/am-planner-r7r3-r1-ws/install -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff '-DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic'; cd -
+
+...............................................................................
+_______________________________________________________________________________
+Warnings << plan_manage:make /home/amplanner/am-planner-r7r3-r1-ws/logs/plan_manage/build.make.000.log
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/plan_manage/src/plan_manage.cpp:[m[K In member function ‘[01m[Kvoid PlannerManage::timer(const ros::TimerEvent&)[m[K’:
+[01m[K/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/plan_manage/src/plan_manage.cpp:104:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  104 |           for (int i = 0; [01;35m[Ki < logs.size()[m[K; i++)
+      |                           [01;35m[K~~^~~~~~~~~~~~~[m[K
+cd /home/amplanner/am-planner-r7r3-r1-ws/build/plan_manage; catkin build --get-env plan_manage | catkin env -si  /usr/bin/make --jobserver-auth=3,4; cd -
+
+...............................................................................
+--------------------------------------------------------------------------------
+Profile:                     default
+Extending:        [explicit] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel
+Workspace:                   /home/amplanner/am-planner-r7r3-r1-ws
+--------------------------------------------------------------------------------
+Build Space:        [exists] /home/amplanner/am-planner-r7r3-r1-ws/build
+Devel Space:        [exists] /home/amplanner/am-planner-r7r3-r1-ws/devel
+Install Space:      [unused] /home/amplanner/am-planner-r7r3-r1-ws/install
+Log Space:          [exists] /home/amplanner/am-planner-r7r3-r1-ws/logs
+Source Space:       [exists] /home/amplanner/am-planner-r7r3-r1-ws/src
+DESTDIR:            [unused] None
+--------------------------------------------------------------------------------
+Devel Space Layout:          linked
+Install Space Layout:        None
+--------------------------------------------------------------------------------
+Additional CMake Args:       -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff -DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic
+Additional Make Args:        None
+Additional catkin Make Args: None
+Internal Make Job Server:    True
+Cache Job Environments:      False
+--------------------------------------------------------------------------------
+Buildlisted Packages:        None
+Skiplisted Packages:         None
+--------------------------------------------------------------------------------
+Workspace configuration appears valid.
+
+NOTE: Forcing CMake to run for each package.
+--------------------------------------------------------------------------------
+[build] Found 19 packages in 0.0 seconds.                                      
+[build] Updating package table.                                                
+Warning: generated devel space setup files have been deleted.
+Starting >>> catkin_tools_prebuild                 
+Finished <<< catkin_tools_prebuild                  [ 0.8 seconds ]
+Starting >>> catkin_simple                         
+Starting >>> map_pcl                               
+Starting >>> octomap_server                        
+Starting >>> pose_utils                            
+Starting >>> quadrotor_msgs                        
+Starting >>> rviz_plugins                          
+Starting >>> uav_utils                             
+Finished <<< catkin_simple                          [ 1.0 seconds ]
+Starting >>> decomp_ros_msgs                       
+Finished <<< uav_utils                              [ 1.3 seconds ]
+Finished <<< decomp_ros_msgs                        [ 3.0 seconds ]
+Starting >>> decomp_ros_utils                      
+Finished <<< quadrotor_msgs                         [ 3.9 seconds ]
+Starting >>> delta_display                         
+Starting >>> manual_take_over                      
+Starting >>> so3_control                           
+Starting >>> so3_quadrotor_simulator               
+Starting >>> traj_server                           
+Finished <<< pose_utils                             [ 6.8 seconds ]
+Starting >>> odom_visualization                    
+Finished <<< rviz_plugins                           [ 7.8 seconds ]
+Finished <<< map_pcl                                [ 10.7 seconds ]
+Finished <<< manual_take_over                       [ 7.6 seconds ]
+Finished <<< so3_control                            [ 10.9 seconds ]
+Finished <<< odom_visualization                     [ 9.6 seconds ]
+Finished <<< traj_server                            [ 12.6 seconds ]
+Finished <<< delta_display                          [ 13.2 seconds ]
+Finished <<< so3_quadrotor_simulator                [ 14.3 seconds ]
+Finished <<< decomp_ros_utils                       [ 21.8 seconds ]
+Starting >>> vis_utils                             
+Finished <<< vis_utils                              [ 1.2 seconds ]
+Finished <<< octomap_server                         [ 28.4 seconds ]
+Starting >>> jps3d                                 
+Finished <<< jps3d                                  [ 13.7 seconds ]
+Starting >>> traj_opt                              
+Finished <<< traj_opt                               [ 1 minute and 27.4 seconds ]
+Starting >>> plan_manage                           
+Finished <<< plan_manage                            [ 42.2 seconds ]
+[build] Summary: All 20 packages succeeded!
+[build] Ignored: None.
+[build] Warnings: 8 packages succeeded with warnings.
+[build] Abandoned: No packages were abandoned.
+[build] Failed: No packages failed.
+[build] Runtime: 2 minutes and 52.6 seconds total.
+[build] Note: Workspace packages have changed, please re-source setup files to use them.

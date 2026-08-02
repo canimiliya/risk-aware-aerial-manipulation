@@ -1,0 +1,76 @@
+[roslaunch][INFO] 2026-08-03 03:52:06,862: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-08-03 03:52:06,865: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-08-03 03:52:06,865: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2026-08-03 03:52:06,865: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CE_M': '', 'WSL_DISTRO_NAME': 'AMPlanner-Ubuntu20', 'PKG_CONFIG_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/pkgconfig:/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/pkgconfig:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'ROS_PACKAGE_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/src:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/amplanner/am-planner-r7r3-r1-ws/devel/share/common-lisp:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/share/common-lisp', 'NAME': 'SC-202607101733', 'PWD': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation', 'LOGNAME': 'amplanner', 'CONDA_PREFIX': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39', 'HOME': '/home/amplanner', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/84319_interop', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'WAYLAND_DISPLAY': 'wayland-0', 'CONDA_PROMPT_MODIFIER': '(am-planner-gpu-probe-py39) ', 'CMAKE_PREFIX_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/home/amplanner/am-planner-r7r3-r1-ws/devel:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel:/opt/ros/noetic', '_CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CONDA_ROOT': '/home/amplanner/miniforge3', 'PYTHONPATH': '/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/python3/dist-packages:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'USER': 'amplanner', 'CONDA_SHLVL': '1', 'ROS_HOME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home', 'DISPLAY': ':0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'MPLBACKEND': 'Agg', 'CONDA_PYTHON_EXE': '/home/amplanner/miniforge3/bin/python', 'LD_LIBRARY_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/devel/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/torch/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'CONDA_DEFAULT_ENV': 'am-planner-gpu-probe-py39', 'WSLENV': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/wsl/lib', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/usr/bin/env', 'ROS_LOG_FILENAME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home/log/a41164fe-8eab-11f1-be5e-00155dca07d1/roslaunch-SC-202607101733-84418.log'})
+[roslaunch][INFO] 2026-08-03 03:52:06,865: starting in server mode
+[roslaunch.parent][INFO] 2026-08-03 03:52:06,866: starting roslaunch parent run
+[roslaunch][INFO] 2026-08-03 03:52:06,866: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-08-03 03:52:06,938: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2026-08-03 03:52:06,938: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-08-03 03:52:06,938: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-08-03 03:52:06,938: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-08-03 03:52:06,939: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-08-03 03:52:06,939: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-08-03 03:52:06,939: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-08-03 03:52:06,939: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-08-03 03:52:06,939: Started XML-RPC server [http://SC-202607101733:33303/]
+[xmlrpc][INFO] 2026-08-03 03:52:06,939: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-08-03 03:52:06,950: started roslaunch server http://SC-202607101733:33303/
+[roslaunch.parent][INFO] 2026-08-03 03:52:06,951: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-08-03 03:52:06,951: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 03:52:06,953: auto-starting new master
+[roslaunch][INFO] 2026-08-03 03:52:06,953: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2026-08-03 03:52:06,953: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2026-08-03 03:52:06,953: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2026-08-03 03:52:06,953: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2026-08-03 03:52:06,953: process[master]: starting os process
+[roslaunch][INFO] 2026-08-03 03:52:06,953: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home/log/a41164fe-8eab-11f1-be5e-00155dca07d1/master.log']]
+[roslaunch][INFO] 2026-08-03 03:52:06,953: process[master]: cwd will be [/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home]
+[roslaunch][ERROR] 2026-08-03 03:52:06,955: OSError(2, No such file or directory)
+[roslaunch][ERROR] 2026-08-03 03:52:06,955: RLException: Roslaunch got a 'No such file or directory' error while attempting to run:
+
+rosmaster --core -p 11311 -w 3 __log:=/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home/log/a41164fe-8eab-11f1-be5e-00155dca07d1/master.log
+
+Please make sure that all the executables in this command exist and have
+executable permission. This is often caused by a bad launch-prefix.
+[roslaunch][ERROR] 2026-08-03 03:52:06,955: The traceback for the exception was written to the log file
+[roslaunch][ERROR] 2026-08-03 03:52:06,957: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/nodeprocess.py", line 340, in start
+    self.popen = subprocess.Popen(self.args, cwd=cwd, stdout=logfileout, stderr=logfileerr, env=full_env, close_fds=close_file_descriptor, preexec_fn=preexec_function)
+  File "/usr/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'rosmaster'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+    p.start()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 316, in start
+    self.runner.launch()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 676, in launch
+    self._setup()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 651, in _setup
+    launched = self._launch_master()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 421, in _launch_master
+    success = p.start()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/nodeprocess.py", line 347, in start
+    raise FatalProcessLaunch("""Roslaunch got a '%s' error while attempting to run:
+roslaunch.pmon.FatalProcessLaunch: Roslaunch got a 'No such file or directory' error while attempting to run:
+
+rosmaster --core -p 11311 -w 3 __log:=/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home/log/a41164fe-8eab-11f1-be5e-00155dca07d1/master.log
+
+Please make sure that all the executables in this command exist and have
+executable permission. This is often caused by a bad launch-prefix.
+
+[roslaunch.pmon][INFO] 2026-08-03 03:52:06,957: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 124264130713344)>
+[roslaunch.pmon][INFO] 2026-08-03 03:52:07,039: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 124264130713344)>
+[roslaunch.pmon][INFO] 2026-08-03 03:52:07,039: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 124264130713344)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x71047e613af0>]
+[roslaunch.pmon][INFO] 2026-08-03 03:52:07,040: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2026-08-03 03:52:07,040: [master] killing on exit
+[roslaunch.pmon][INFO] 2026-08-03 03:52:07,040: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2026-08-03 03:52:07,041: ProcessMonitor exit: pmon has shutdown
+[rospy.core][INFO] 2026-08-03 03:52:07,041: signal_shutdown [atexit]

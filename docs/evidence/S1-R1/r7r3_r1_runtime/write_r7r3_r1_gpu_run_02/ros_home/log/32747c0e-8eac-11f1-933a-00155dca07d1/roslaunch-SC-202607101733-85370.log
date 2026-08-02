@@ -1,0 +1,83 @@
+[roslaunch][INFO] 2026-08-03 03:56:05,829: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-08-03 03:56:05,832: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-08-03 03:56:05,832: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2026-08-03 03:56:05,832: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CE_M': '', 'WSL_DISTRO_NAME': 'AMPlanner-Ubuntu20', 'PKG_CONFIG_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/pkgconfig:/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/pkgconfig:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'ROS_PACKAGE_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/src:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/amplanner/am-planner-r7r3-r1-ws/devel/share/common-lisp:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/share/common-lisp', 'NAME': 'SC-202607101733', 'PWD': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation', 'LOGNAME': 'amplanner', 'CONDA_PREFIX': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39', 'HOME': '/home/amplanner', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/85269_interop', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'WAYLAND_DISPLAY': 'wayland-0', 'CONDA_PROMPT_MODIFIER': '(am-planner-gpu-probe-py39) ', 'CMAKE_PREFIX_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/home/amplanner/am-planner-r7r3-r1-ws/devel:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel:/opt/ros/noetic', '_CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CONDA_ROOT': '/home/amplanner/miniforge3', 'PYTHONPATH': '/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/python3/dist-packages:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'USER': 'amplanner', 'CONDA_SHLVL': '1', 'ROS_HOME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home', 'DISPLAY': ':0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'MPLBACKEND': 'Agg', 'CONDA_PYTHON_EXE': '/home/amplanner/miniforge3/bin/python', 'LD_LIBRARY_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/devel/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/torch/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'CONDA_DEFAULT_ENV': 'am-planner-gpu-probe-py39', 'WSLENV': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PATH': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/runtime-bin:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/wsl/lib', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/usr/bin/env', 'ROS_LOG_FILENAME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home/log/32747c0e-8eac-11f1-933a-00155dca07d1/roslaunch-SC-202607101733-85370.log'})
+[roslaunch][INFO] 2026-08-03 03:56:05,832: starting in server mode
+[roslaunch.parent][INFO] 2026-08-03 03:56:05,832: starting roslaunch parent run
+[roslaunch][INFO] 2026-08-03 03:56:05,832: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-08-03 03:56:05,922: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2026-08-03 03:56:05,922: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-08-03 03:56:05,922: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-08-03 03:56:05,923: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-08-03 03:56:05,923: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-08-03 03:56:05,923: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-08-03 03:56:05,923: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-08-03 03:56:05,923: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-08-03 03:56:05,923: Started XML-RPC server [http://SC-202607101733:36841/]
+[xmlrpc][INFO] 2026-08-03 03:56:05,923: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-08-03 03:56:05,934: started roslaunch server http://SC-202607101733:36841/
+[roslaunch.parent][INFO] 2026-08-03 03:56:05,934: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-08-03 03:56:05,935: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 03:56:05,936: auto-starting new master
+[roslaunch][INFO] 2026-08-03 03:56:05,936: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2026-08-03 03:56:05,936: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2026-08-03 03:56:05,936: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2026-08-03 03:56:05,936: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2026-08-03 03:56:05,936: process[master]: starting os process
+[roslaunch][INFO] 2026-08-03 03:56:05,936: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home/log/32747c0e-8eac-11f1-933a-00155dca07d1/master.log']]
+[roslaunch][INFO] 2026-08-03 03:56:05,936: process[master]: cwd will be [/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home]
+[roslaunch][INFO] 2026-08-03 03:56:05,939: process[master]: started with pid [85405]
+[roslaunch][INFO] 2026-08-03 03:56:05,939: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 03:56:06,042: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 03:56:06,143: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 03:56:06,145: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 03:56:06,145: ROS_MASTER_URI=http://SC-202607101733:11311/
+[roslaunch][INFO] 2026-08-03 03:56:06,146: setting /run_id to 32747c0e-8eac-11f1-933a-00155dca07d1
+[roslaunch][INFO] 2026-08-03 03:56:06,147: setting /roslaunch/uris/host_sc_202607101733__36841' to http://SC-202607101733:36841/
+[roslaunch][INFO] 2026-08-03 03:56:06,148: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2026-08-03 03:56:06,148: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 03:56:06,148: process[rosout-1]: env[{'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CE_M': '', 'WSL_DISTRO_NAME': 'AMPlanner-Ubuntu20', 'PKG_CONFIG_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/pkgconfig:/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/pkgconfig:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'ROS_PACKAGE_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/src:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/amplanner/am-planner-r7r3-r1-ws/devel/share/common-lisp:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/share/common-lisp', 'NAME': 'SC-202607101733', 'PWD': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation', 'LOGNAME': 'amplanner', 'CONDA_PREFIX': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39', 'HOME': '/home/amplanner', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/85269_interop', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'WAYLAND_DISPLAY': 'wayland-0', 'CONDA_PROMPT_MODIFIER': '(am-planner-gpu-probe-py39) ', 'CMAKE_PREFIX_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/home/amplanner/am-planner-r7r3-r1-ws/devel:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel:/opt/ros/noetic', '_CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CONDA_ROOT': '/home/amplanner/miniforge3', 'PYTHONPATH': '/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/python3/dist-packages:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'USER': 'amplanner', 'CONDA_SHLVL': '1', 'ROS_HOME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home', 'DISPLAY': ':0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://SC-202607101733:11311/', 'MPLBACKEND': 'Agg', 'CONDA_PYTHON_EXE': '/home/amplanner/miniforge3/bin/python', 'LD_LIBRARY_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/devel/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/torch/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'CONDA_DEFAULT_ENV': 'am-planner-gpu-probe-py39', 'WSLENV': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PATH': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/runtime-bin:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/wsl/lib', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/usr/bin/env', 'ROS_LOG_FILENAME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home/log/32747c0e-8eac-11f1-933a-00155dca07d1/roslaunch-SC-202607101733-85370.log'}]
+[roslaunch][INFO] 2026-08-03 03:56:06,173: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2026-08-03 03:56:06,173: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2026-08-03 03:56:06,173: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2026-08-03 03:56:06,173: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2026-08-03 03:56:06,173: ... registered process [rosout-1]
+[roslaunch][INFO] 2026-08-03 03:56:06,173: process[rosout-1]: starting os process
+[roslaunch][INFO] 2026-08-03 03:56:06,173: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home/log/32747c0e-8eac-11f1-933a-00155dca07d1/rosout-1.log']]
+[roslaunch][INFO] 2026-08-03 03:56:06,173: process[rosout-1]: cwd will be [/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home]
+[roslaunch][INFO] 2026-08-03 03:56:06,175: process[rosout-1]: started with pid [85438]
+[roslaunch][INFO] 2026-08-03 03:56:06,175: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2026-08-03 03:56:06,176: load_parameters starting ...
+[roslaunch][INFO] 2026-08-03 03:56:06,177: ... load_parameters complete
+[roslaunch][INFO] 2026-08-03 03:56:06,177: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2026-08-03 03:56:06,177: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2026-08-03 03:56:06,178: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 123287361197824)>
+[roslaunch.parent][INFO] 2026-08-03 03:56:06,178: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2026-08-03 03:56:06,178: spin
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,217: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 123287361197824)>
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,302: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 123287361197824)>
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,302: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 123287361197824)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7021125a7af0>, <roslaunch.nodeprocess.LocalProcess object at 0x7021125a7a00>]
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,303: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2026-08-03 04:03:27,304: [rosout-1] killing on exit
+[roslaunch][INFO] 2026-08-03 04:03:27,304: process[rosout-1]: killing os process with pid[85438] pgid[85438]
+[roslaunch][INFO] 2026-08-03 04:03:27,304: [rosout-1] sending SIGINT to pgid [85438]
+[roslaunch][INFO] 2026-08-03 04:03:27,304: [rosout-1] sent SIGINT to pgid [85438]
+[roslaunch][INFO] 2026-08-03 04:03:27,504: process[rosout-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,504: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2026-08-03 04:03:27,504: [master] killing on exit
+[roslaunch][INFO] 2026-08-03 04:03:27,504: process[master]: killing os process with pid[85405] pgid[85405]
+[roslaunch][INFO] 2026-08-03 04:03:27,504: [master] sending SIGINT to pgid [85405]
+[roslaunch][INFO] 2026-08-03 04:03:27,504: [master] sent SIGINT to pgid [85405]
+[roslaunch][INFO] 2026-08-03 04:03:27,705: process[master]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,705: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,705: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2026-08-03 04:03:27,705: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2026-08-03 04:03:27,705: runner.stop()
+[roslaunch][INFO] 2026-08-03 04:03:27,705: shutting down processing monitor...
+[roslaunch][INFO] 2026-08-03 04:03:27,705: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 123287361197824)>
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,705: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 123287361197824)>
+[roslaunch][INFO] 2026-08-03 04:03:27,705: ... shutting down processing monitor complete
+[roslaunch][INFO] 2026-08-03 04:03:27,705: done
+[roslaunch.pmon][INFO] 2026-08-03 04:03:27,705: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 123287361197824)>
+[rospy.core][INFO] 2026-08-03 04:03:27,706: signal_shutdown [atexit]

@@ -1,0 +1,3 @@
+/platform_publisher_86866_1785701304889
+/rosout
+/se3_node

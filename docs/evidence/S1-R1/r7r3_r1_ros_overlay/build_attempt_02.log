@@ -1,0 +1,62 @@
+_______________________________________________________________________________
+Errors << roslib:install /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/logs/roslib/build.install.000.log
+usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+   or: setup.py --help [cmd1 cmd2 ...]
+   or: setup.py --help-commands
+   or: setup.py cmd --help
+
+error: option --install-layout not recognized
+CMake Error at catkin_generated/safe_execute_install.cmake:4 (message):
+  
+  execute_process(/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/build/roslib/catkin_generated/python_distutils_install.sh)
+  returned error code
+Call Stack (most recent call first):
+  cmake_install.cmake:166 (include)
+
+
+make: *** [Makefile:86: install] Error 1
+cd /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/build/roslib; catkin build --get-env roslib | catkin env -si  /usr/bin/make install; cd -
+
+...............................................................................
+Failed << roslib:install                        [ Exited with code 2 ]
+--------------------------------------------------------------------------------
+Profile:                     default
+Extending:        [explicit] /opt/ros/noetic
+Workspace:                   /home/amplanner/ros-noetic-py39-overlay-r7r3-r1
+--------------------------------------------------------------------------------
+Build Space:        [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/build
+Devel Space:        [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel
+Install Space:      [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/install
+Log Space:          [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/logs
+Source Space:       [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src
+DESTDIR:            [unused] None
+--------------------------------------------------------------------------------
+Devel Space Layout:          linked
+Install Space Layout:        merged
+--------------------------------------------------------------------------------
+Additional CMake Args:       -DCMAKE_BUILD_TYPE=Release -DCATKIN_ENABLE_TESTING=OFF -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_VERSION_MAJOR=3 -DPYTHON_VERSION_MINOR=9
+Additional Make Args:        None
+Additional catkin Make Args: None
+Internal Make Job Server:    True
+Cache Job Environments:      False
+--------------------------------------------------------------------------------
+Buildlisted Packages:        None
+Skiplisted Packages:         None
+--------------------------------------------------------------------------------
+Workspace configuration appears valid.
+--------------------------------------------------------------------------------
+[build] Found 2 packages in 0.0 seconds.                                       
+[build] Updating package table.                                                
+Starting >>> catkin_tools_prebuild               
+Finished <<< catkin_tools_prebuild                [ 1.2 seconds ]
+Starting >>> rospack                             
+Finished <<< rospack                              [ 4.4 seconds ]
+Starting >>> roslib                              
+Failed <<< roslib                               [ 3.2 seconds ]
+[build] Summary: 2 of 3 packages succeeded.
+[build] Ignored: None.
+[build] Warnings: None.
+[build] Abandoned: No packages were abandoned.
+[build] Failed: 1 packages failed.
+[build] Runtime: 8.8 seconds total.
+[build] Note: Workspace packages have changed, please re-source setup files to use them.

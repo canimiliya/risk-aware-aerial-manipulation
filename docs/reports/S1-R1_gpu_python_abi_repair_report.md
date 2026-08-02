@@ -21,3 +21,7 @@
 是否需要我处理：需要你决定是否授权扩大补丁边界到 `traj_opt/CMakeLists.txt`（这会超出本任务卡原授权）。未授权前我会保持停止，不运行 write。
 
 原始标签：`BLOCKED_S1_R1_GPU_PYTHON_ABI_REPAIR`（人话：允许的单文件补丁只能修掉 se3_node 的直接链接，修不掉下游共享库带来的 Python 3.8，所以不能进入轨迹验收）。
+
+## R7-R3-R1 更新（2026-08-03）
+
+以上是历史 ABI 阻塞记录。R7-R3-R1 在新隔离工作区仅对任务卡授权的两份 CMake 做了补丁；完整 ABI 现为 Python 3.8 occurrence=0、运行时 not-found=0，并已完成 write/grasp/lift/重复 grasp。当前汇总报告见 `docs/reports/S1-R1_r7r3_r1_python39_overlay_gpu_runtime_report.md`；状态仍为 `SUBMITTED_FOR_REVIEW`，不是 PASS。

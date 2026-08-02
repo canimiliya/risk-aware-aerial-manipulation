@@ -48,3 +48,7 @@ GPU 独立工作区已用固定官方源码完成 19/19 构建，GPU Torch/RTX �
 ## R6 GPU 独立预检补充
 
 WSL GPU 直通和 RTX 5060 Ti 已确认，官方 PyTorch 2.7.1 cu128 wheel 已取得并校验；但 CUDA 运行库依赖未完成安装，所以没有 kernel、权重、模型或 CPU/GPU speedup 证据。状态保持 `REVISION_REQUIRED`，不能写成 GPU 路线通过，也没有重建或运行任何轨迹。详见 `docs/reports/S1-R1_gpu_preflight_report.md`。
+
+## R7-R3-R1 更新（2026-08-03）
+
+以上是历史安装/预检记录。R7-R3-R1 已在新的隔离 WSL 路径完成官方 Python 3.9 ROS overlay、AM-Planner 19 包构建、完整 ABI 与 GPU 轨迹验收；原始证据和限制见 `docs/reports/S1-R1_r7r3_r1_python39_overlay_gpu_runtime_report.md`。

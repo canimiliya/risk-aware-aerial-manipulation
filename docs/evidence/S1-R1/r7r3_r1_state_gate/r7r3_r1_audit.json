@@ -1,0 +1,216 @@
+{
+  "decision": "SUBMITTED_R7R3_GPU_OFFICIAL_BASIC_REPRO",
+  "errors": [],
+  "warnings": [
+    "Catkin reports 8 warning-bearing packages; this is not the card's errors=0,warnings=0 target.",
+    "nvidia-smi exposed the se3 PID but returned [Not Found] for its process name; CUDA use is supported by the in-process log and GPU utilization samples.",
+    "AM-Planner emitted the non-fatal '[MANAGE]: No logs to publish!' message after publishing the trajectory."
+  ],
+  "checks": {
+    "coordination_present": true,
+    "coordination_untracked": true,
+    "local_exclude": true,
+    "start_head": true,
+    "coordination_inventory": true,
+    "official_overlay_lock": true,
+    "full_abi_python39": true,
+    "am_commit": true,
+    "only_two_cmake_files": true,
+    "patch_hash": true,
+    "nineteen_packages": true,
+    "interpreter_gpu_probe": true,
+    "write_capture": true,
+    "write_cuda": true,
+    "write_topics": true,
+    "write_/trajectory_finite": true,
+    "write_/trajectory_arm_finite": true,
+    "write_no_codec": true,
+    "write_required_files": true,
+    "grasp_capture": true,
+    "grasp_cuda": true,
+    "grasp_topics": true,
+    "grasp_/trajectory_finite": true,
+    "grasp_/trajectory_arm_finite": true,
+    "grasp_no_codec": true,
+    "grasp_required_files": true,
+    "lift_capture": true,
+    "lift_cuda": true,
+    "lift_topics": true,
+    "lift_/trajectory_finite": true,
+    "lift_/trajectory_arm_finite": true,
+    "lift_no_codec": true,
+    "lift_required_files": true,
+    "grasp_repeat_capture": true,
+    "grasp_repeat_cuda": true,
+    "grasp_repeat_topics": true,
+    "grasp_repeat_/trajectory_finite": true,
+    "grasp_repeat_/trajectory_arm_finite": true,
+    "grasp_repeat_no_codec": true,
+    "grasp_repeat_required_files": true,
+    "write_JPS search path!": true,
+    "write_MINCO setup successfully!": true,
+    "write_Finish optimization!": true,
+    "write_monitor_summary": true,
+    "grasp_repeatability": true,
+    "stash_preserved": true,
+    "no_large_files": true,
+    "git_diff_check": true
+  },
+  "successful_runs": {
+    "write": {
+      "run_id": "write_r7r3_r1_gpu_run_02",
+      "summary": {
+        "task": "write",
+        "run_id": "write_r7r3_r1_gpu_run_02",
+        "capture_exit": 0,
+        "finished_utc": "2026-08-02T20:03:27Z"
+      },
+      "validation": {
+        "received_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "expected_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "timeout_s": 1200.0,
+        "success": true,
+        "/trajectory": {
+          "numeric_fields": 390,
+          "finite_numeric_fields": 390,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 379,
+          "positive_numeric_fields": 232
+        },
+        "/trajectory_arm": {
+          "numeric_fields": 390,
+          "finite_numeric_fields": 390,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 377,
+          "positive_numeric_fields": 192
+        }
+      }
+    },
+    "grasp": {
+      "run_id": "grasp_r7r3_r1_gpu_run_02",
+      "summary": {
+        "task": "grasp",
+        "run_id": "grasp_r7r3_r1_gpu_run_02",
+        "capture_exit": 0,
+        "finished_utc": "2026-08-02T20:09:34Z"
+      },
+      "validation": {
+        "received_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "expected_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "timeout_s": 300.0,
+        "success": true,
+        "/trajectory_arm": {
+          "numeric_fields": 90,
+          "finite_numeric_fields": 90,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 77,
+          "positive_numeric_fields": 44
+        },
+        "/trajectory": {
+          "numeric_fields": 90,
+          "finite_numeric_fields": 90,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 79,
+          "positive_numeric_fields": 50
+        }
+      }
+    },
+    "lift": {
+      "run_id": "lift_r7r3_r1_gpu_run_01",
+      "summary": {
+        "task": "lift",
+        "run_id": "lift_r7r3_r1_gpu_run_01",
+        "capture_exit": 0,
+        "finished_utc": "2026-08-02T20:10:08Z"
+      },
+      "validation": {
+        "received_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "expected_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "timeout_s": 300.0,
+        "success": true,
+        "/trajectory_arm": {
+          "numeric_fields": 70,
+          "finite_numeric_fields": 70,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 57,
+          "positive_numeric_fields": 31
+        },
+        "/trajectory": {
+          "numeric_fields": 70,
+          "finite_numeric_fields": 70,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 59,
+          "positive_numeric_fields": 39
+        }
+      }
+    },
+    "grasp_repeat": {
+      "run_id": "grasp_r7r3_r1_gpu_run_03",
+      "summary": {
+        "task": "grasp",
+        "run_id": "grasp_r7r3_r1_gpu_run_03",
+        "capture_exit": 0,
+        "finished_utc": "2026-08-02T20:10:41Z"
+      },
+      "validation": {
+        "received_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "expected_topics": [
+          "/trajectory",
+          "/trajectory_arm"
+        ],
+        "timeout_s": 300.0,
+        "success": true,
+        "/trajectory_arm": {
+          "numeric_fields": 90,
+          "finite_numeric_fields": 90,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 77,
+          "positive_numeric_fields": 44
+        },
+        "/trajectory": {
+          "numeric_fields": 90,
+          "finite_numeric_fields": 90,
+          "nan_count": 0,
+          "inf_count": 0,
+          "nonzero_numeric_fields": 79,
+          "positive_numeric_fields": 50
+        }
+      }
+    }
+  },
+  "forbidden_large_files": [],
+  "status_policy": {
+    "S1-R1": "SUBMITTED_FOR_REVIEW",
+    "S1": "IN_PROGRESS",
+    "S2-S8": "FROZEN"
+  },
+  "note": "This audit deliberately keeps non-fatal runtime/build warnings visible; it does not convert the review submission into PASS."
+}

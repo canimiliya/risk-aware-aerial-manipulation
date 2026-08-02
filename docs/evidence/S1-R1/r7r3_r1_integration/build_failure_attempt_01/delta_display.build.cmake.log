@@ -1,0 +1,55 @@
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/amplanner/am-planner-r7r3-r1-ws/devel/.private/delta_display
+-- Using CMAKE_PREFIX_PATH: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic
+-- This workspace overlays: /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic
+-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3")
+-- Using PYTHON_EXECUTABLE: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+-- Using Debian Python package layout
+-- Found PY_em: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/em.py
+-- Using empy: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/amplanner/am-planner-r7r3-r1-ws/build/delta_display/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found version "3.9.23")
+-- Found Threads: TRUE
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Could NOT find quadrotor_msgs (missing: quadrotor_msgs_DIR)
+-- Could not find the required component 'quadrotor_msgs'. The following CMake error indicates that you either need to install the package with the same name or change your environment so that it can be found.
+CMake Error at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "quadrotor_msgs"
+  with any of the following names:
+
+    quadrotor_msgsConfig.cmake
+    quadrotor_msgs-config.cmake
+
+  Add the installation prefix of "quadrotor_msgs" to CMAKE_PREFIX_PATH or set
+  "quadrotor_msgs_DIR" to a directory containing one of the above files.  If
+  "quadrotor_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:13 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/amplanner/am-planner-r7r3-r1-ws/build/delta_display/CMakeFiles/CMakeOutput.log".
+See also "/home/amplanner/am-planner-r7r3-r1-ws/build/delta_display/CMakeFiles/CMakeError.log".

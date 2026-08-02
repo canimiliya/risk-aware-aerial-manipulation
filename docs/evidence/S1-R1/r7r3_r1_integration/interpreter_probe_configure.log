@@ -1,0 +1,14 @@
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable exact version "3.9.23") found components: Interpreter Development 
+-- Performing Test HAS_FLTO
+-- Performing Test HAS_FLTO - Success
+-- Found pybind11: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include (found version "2.13.6")
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/amplanner/am-planner-r7r3-r1-ws/probe_build

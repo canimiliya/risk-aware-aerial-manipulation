@@ -1,0 +1,6 @@
+ROS_DISTRO=noetic
+ROS_VERSION=1
+AM_WORKSPACE=/home/amplanner/am-planner-r7r3-r1-ws
+ROS_PY39_OVERLAY=/home/amplanner/ros-noetic-py39-overlay-r7r3-r1
+GPU_ENV=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39
+PYTHON_TARGET=3.9.23

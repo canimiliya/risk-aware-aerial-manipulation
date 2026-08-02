@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------------
+Profile:                     default
+Extending:        [explicit] /opt/ros/noetic
+Workspace:                   /home/amplanner/ros-noetic-py39-overlay-r7r3-r1
+--------------------------------------------------------------------------------
+Build Space:        [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/build
+Devel Space:        [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel
+Install Space:      [unused] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/install
+Log Space:          [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/logs
+Source Space:       [exists] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src
+DESTDIR:            [unused] None
+--------------------------------------------------------------------------------
+Devel Space Layout:          linked
+Install Space Layout:        None
+--------------------------------------------------------------------------------
+Additional CMake Args:       -DCMAKE_BUILD_TYPE=Release -DCATKIN_ENABLE_TESTING=OFF -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_VERSION_MAJOR=3 -DPYTHON_VERSION_MINOR=9
+Additional Make Args:        None
+Additional catkin Make Args: None
+Internal Make Job Server:    True
+Cache Job Environments:      False
+--------------------------------------------------------------------------------
+Buildlisted Packages:        None
+Skiplisted Packages:         None
+--------------------------------------------------------------------------------
+Workspace configuration appears valid.
+--------------------------------------------------------------------------------
+[build] Found 2 packages in 0.0 seconds.                                       
+[build] Updating package table.                                                
+Warning: generated devel space setup files have been deleted.
+Starting >>> catkin_tools_prebuild               
+Finished <<< catkin_tools_prebuild                [ 1.2 seconds ]
+Starting >>> rospack                             
+Finished <<< rospack                              [ 4.2 seconds ]
+Starting >>> roslib                              
+Finished <<< roslib                               [ 3.2 seconds ]
+[build] Summary: All 3 packages succeeded!
+[build] Ignored: None.
+[build] Warnings: None.
+[build] Abandoned: No packages were abandoned.
+[build] Failed: No packages failed.
+[build] Runtime: 8.6 seconds total.

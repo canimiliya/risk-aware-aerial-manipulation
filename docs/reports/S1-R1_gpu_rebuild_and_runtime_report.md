@@ -52,3 +52,7 @@ GPU 独立工作区已经按固定官方源码完成 19/19 Catkin 构建，GPU �
 ## 明确未执行
 
 未修改 CPU 环境；未修改官方 AM-Planner 源码、任务点、launch 或优化参数；未使用 CPU 权重替换；未下载新模型或 checkpoint；未运行 IL/Polynomial_DiT；未安装 Windows/WSL CUDA Toolkit；未执行 `wsl --shutdown`/注销；未 force-push、rebase、reset hard、合并 PR #3，也未进入 S2。
+
+## R7-R3-R1 更新（2026-08-03）
+
+以上保留此前 Python 3.8 混链失败的历史结论。新隔离 overlay 与两文件 CMake 补丁已通过完整 ABI，随后四个成功 GPU 运行均捕获双轨迹。详见 `docs/reports/S1-R1_r7r3_r1_python39_overlay_gpu_runtime_report.md`；当前只提交审阅，不升级为 PASS。
