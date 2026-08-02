@@ -54,6 +54,7 @@ def run(root: Path = ROOT) -> dict:
     require("official_geometry_contract", geometry.get("official_launch_values") == {"static_radius": 0.08, "moving_radius": 0.025, "upper_arm": 0.1, "lower_arm": 0.16, "scale": 1.0})
     config_text = (root / "configs/scene/s2_crossarm_nominal.yaml").read_text(encoding="utf-8-sig")
     require("provisional_scene_marked", "PROVISIONAL_S2_ASSUMPTION" in config_text)
+    require("target_fake_declared", "target_fake:" in config_text and "target placeholder" in config_text)
     require("provisional_tool_marked", "PROVISIONAL_S2_ASSUMPTION" in (root / "configs/robot/s2_delta_arm.yaml").read_text(encoding="utf-8-sig"))
 
     manifest = json.loads((root / "docs/evidence/S2-R0/workspace_sampling_manifest.json").read_text(encoding="utf-8-sig"))

@@ -3,6 +3,7 @@
   "preflight_proxy": {
     "body": {"shape": "sphere", "radius_m": 0.20, "source": "PROVISIONAL_S2_ASSUMPTION"},
     "rotor": {"shape": "disk", "radius_m": 0.25, "z_m": 0.05, "source": "PROVISIONAL_S2_ASSUMPTION"},
+    "target_fake": {"shape": "box", "size_m": [0.06, 0.06, 0.06], "source": "PROVISIONAL_S2_ASSUMPTION; target placeholder only"},
     "upper_links": {"shape": "line segments A-B", "source": "official getJointPoints endpoints"},
     "lower_links": {"shape": "line segments B-C", "source": "official getJointPoints endpoints"},
     "end_effector": {"shape": "point at FK platform center", "radius_m": 0.025, "source": "official grasp.yaml EndEffectorRadius"}

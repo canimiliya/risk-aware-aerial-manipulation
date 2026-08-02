@@ -3,6 +3,10 @@ status: PROVISIONAL_S2_ASSUMPTION
 units: m
 frames: {world: W, vehicle: B, arm_base: A0, end_effector: E, tool: T, collision: C}
 description: Simplified crossarm scene for geometry sensitivity only; not a real grid dimension claim.
+target_fake:
+  center_m: [0.0, 0.0, -0.25025]
+  size_m: [0.06, 0.06, 0.06]
+  source: PROVISIONAL_S2_ASSUMPTION; target placeholder only, not a measured bird-diverter part
 width_variants:
   loose:
     main_beam_center: [0.15, 0.00, -0.34]
