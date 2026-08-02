@@ -55,9 +55,9 @@ S1-R2 按允许标签算“提交审阅”，不是整个 S1 PASS：`SUBMITTED_S
 - S1-R1 最终提交：`78aa715e0825f4495666d447c98d7d75f46790fe`；PR #3 merge：`a028f265c616be922e5ab0ccff907fcbeda06273`。
 - main Head：`a028f265c616be922e5ab0ccff907fcbeda06273`。
 - S1-R2 分支：`agent/s1-r2-trajectory-export-contract`。
-- S1-R2 Head：本轮提交后记录于最终审计与 PR 快照。
+- S1-R2 Head：`8d9d1da`（导出合同、验证、waypoint 和可视化实现提交）；此前 manifest 提交为 `0fbbbe4`。
 - 新 PR：Draft，创建后不合并。
-- 工作树：提交前检查通过。
+- 工作树：提交后保持干净；本地忽略的原始轨迹与 GIF 继续保留。
 - stash：`stash@{0}`、`stash@{1}` 保留，未操作。
 
 ## 警告分类
@@ -104,6 +104,7 @@ S1-R2 按允许标签算“提交审阅”，不是整个 S1 PASS：`SUBMITTED_S
 - audit errors：0。
 - audit warnings：0。
 - git diff --check：通过。
+- `check_s0_structure.py`：按任务卡运行；因 S1-R2 分支不满足旧的 `main` 分支断言，并在失败变体目录的 WSL symlink 上触发 Windows `WinError 1920`，退出 1；不作为 S1-R2 通过条件。
 - 大文件：S1-R2 轨迹目录无 >10 MB 文件；GIF/PNG 均小于 2 MB。
 - 凭据：扫描范围无命中。
 
