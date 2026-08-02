@@ -37,7 +37,7 @@ GPU 独立工作区已经按固定官方源码完成 19/19 Catkin 构建，GPU �
 
 - 当前分支：`agent/s1-r1-am-planner-install-basic-repro`（仍在原工作分支）。
 - 本轮开始时 Head：`6779657f0f0f9a6487204c4d8e362d6d5849bd8e`；PR #3 仍为 Open + Draft，未合并。
-- 本轮最终 Head：`8dded82d6ea1589a5a1df748419014990a556cc8`（已推送到原分支；PR #3 仍保持 Draft）。
+- 本轮结果提交：`8dded82d6ea1589a5a1df748419014990a556cc8`；随后报告补充提交为 `827f003`（均已推送到原分支；PR #3 仍保持 Draft）。
 - GPU 构建、ABI 和 write 证据：`docs/evidence/S1-R1/gpu_rebuild/`。
 - 第 11 次 write 失败运行：`docs/evidence/S1-R1/gpu_rebuild/write_gpu_run_01_retry_11/`。
 - 自动审计：`docs/evidence/S1-R1/gpu_rebuild/gpu_rebuild_audit.json` 和 `gpu_rebuild_audit.md`。
