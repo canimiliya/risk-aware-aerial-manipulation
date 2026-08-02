@@ -2,7 +2,7 @@
 
 ## 结论
 
-本轮已完成任务卡授权范围内的工作，并提交审阅；不将结果写成 PASS。专用审计硬错误为 0，但完整成功目标 `errors=0 / warnings=0` 未达到：Catkin 有 8 个 warning-bearing packages，`nvidia-smi` 进程名返回 `[Not Found]`，程序结束时出现非致命 `No logs to publish!`。
+本轮已完成 S1-R1 任务卡授权范围内的工作。三项告警均已引用原始证据并接受为限制；最终接受审计为 `errors=[]`、`unresolved_warnings=[]`。这不是零告警 PASS，也不代表整个 S1 PASS。
 
 ## 当前做到的
 
@@ -16,29 +16,31 @@
 - grasp：`grasp_r7r3_r1_gpu_run_02` 成功，4 段双轨迹，NaN/Inf=0。
 - lift：`lift_r7r3_r1_gpu_run_01` 成功，3 段双轨迹，NaN/Inf=0。
 - 重复性：`grasp_r7r3_r1_gpu_run_03` 成功；与第一次 grasp 结构、持续时间一致，规划耗时和 GPU 峰值显存已比较。
-- GitHub：提交 `b061673` 已推送；PR #3 保持 Open + Draft + CLEAN，未合并。
+- 告警审查：三项告警分别分类为 `NON_BLOCKING_UPSTREAM`、`NON_BLOCKING_ENVIRONMENT`、`NON_BLOCKING_POST_SUCCESS`；原始文本未删除。
+- 最终接受：`docs/evidence/S1-R1/final_acceptance/s1_r1_final_acceptance.json`，`errors=[]`、`unresolved_warnings=[]`。
+- GitHub：运行证据提交 `b0616730685b250e0804ec4721dde23383b6d87a` 已推送；最终审计与格式报告提交为 `3f09402740ed4b7e62b5ea8779b767ce8f519eac`；PR #3 当前仍为 Open + Draft + CLEAN，未合并。
 
 ## 还缺什么
 
-只剩任务卡严格的零告警目标未满足，且当前环境的 `nvidia-smi` 无法提供可读的 se3 进程名；这些限制已由原始日志和专用审计保留，不能伪造为通过。
+S1-R1 已按授权规则收口为 `PASS_WITH_LIMITATIONS`。仍缺的是 S1-R2 的结构化轨迹合同、waypoint 变体、可视化和其独立 Draft PR；三项告警限制仍需负责人知悉。
 
 ## 是否算通过
 
-不算零告警 PASS；按允许标签提交为 `SUBMITTED_R7R3_GPU_OFFICIAL_BASIC_REPRO`，等待项目负责人审阅。
+S1-R1 算通过，但只算 `PASS_WITH_LIMITATIONS`；整个 S1 不算通过，仍为 `IN_PROGRESS`。
 
 ## 是否需要项目负责人处理
 
-需要负责人决定是否接受上述三项限制。未接受前不进入 S2，也不扩大算法或系统修改范围。
+需要负责人知悉并接受上述三项限制；S1-R2 仍是独立审阅门槛，S2–S8 继续冻结。
 
 ## 原始标签
 
-`SUBMITTED_R7R3_GPU_OFFICIAL_BASIC_REPRO`：人话是“官方 Python 3.9 ABI 和 GPU 基础轨迹链已经真实跑通，但仍有明确环境/应用告警，因此提交审阅而不是宣称完全通过”。
+`PASS_WITH_LIMITATIONS`：人话是“官方 Python 3.9 ABI 和 GPU 基础轨迹链已经真实跑通，三项告警有原始证据且暂不阻断本轮，但不是零告警通过，也不是整个 S1 通过”。
 
 ## Git
 
 - 开始 Head：`5b12ec829b826392675ab732c53cda96b7550ad7`
-- 新增提交：`b061673`
-- 最终 Head：`b0616730685b250e0804ec4721dde23383b6d87a`
+- 运行证据提交：`b0616730685b250e0804ec4721dde23383b6d87a`
+- 最终审计与格式报告提交：`3f09402740ed4b7e62b5ea8779b767ce8f519eac`
 - PR #3：Open + Draft + CLEAN
 - 工作树：干净
 - stash：`stash@{0}`、`stash@{1}` 均保留

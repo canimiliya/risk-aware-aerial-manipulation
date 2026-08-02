@@ -1,0 +1,110 @@
+{
+  "decision": "PASS_WITH_LIMITATIONS",
+  "errors": [],
+  "unresolved_warnings": [],
+  "accepted_limitations": [
+    {
+      "id": "catkin_warning_bearing_packages",
+      "classification": "NON_BLOCKING_UPSTREAM",
+      "evidence": "docs/evidence/S1-R1/final_warning_triage/catkin_warning_inventory.json"
+    },
+    {
+      "id": "nvidia_smi_process_name_not_found",
+      "classification": "NON_BLOCKING_ENVIRONMENT",
+      "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/snapshot_60s.json"
+    },
+    {
+      "id": "no_logs_to_publish",
+      "classification": "NON_BLOCKING_POST_SUCCESS",
+      "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/roslaunch.log"
+    }
+  ],
+  "checks": {
+    "catkin_warning_inventory": {
+      "package_count": 8,
+      "packages": [
+        "octomap_server",
+        "map_pcl",
+        "so3_control",
+        "so3_quadrotor_simulator",
+        "traj_server",
+        "jps3d",
+        "traj_opt",
+        "plan_manage"
+      ],
+      "has_blocking_keywords": false
+    },
+    "runtime_runs": {
+      "write": {
+        "run_id": "write_r7r3_r1_gpu_run_02",
+        "capture_exit": 0,
+        "process_capture_exit": 0,
+        "trajectory_topics_present": true,
+        "trajectory_arm_topics_present": true,
+        "no_logs_to_publish_present": true,
+        "trajectory_published_present": true,
+        "using_cuda_present": true
+      },
+      "grasp": {
+        "run_id": "grasp_r7r3_r1_gpu_run_02",
+        "capture_exit": 0,
+        "process_capture_exit": 0,
+        "trajectory_topics_present": true,
+        "trajectory_arm_topics_present": true,
+        "no_logs_to_publish_present": true,
+        "trajectory_published_present": true,
+        "using_cuda_present": true
+      },
+      "lift": {
+        "run_id": "lift_r7r3_r1_gpu_run_01",
+        "capture_exit": 0,
+        "process_capture_exit": 0,
+        "trajectory_topics_present": true,
+        "trajectory_arm_topics_present": true,
+        "no_logs_to_publish_present": true,
+        "trajectory_published_present": true,
+        "using_cuda_present": true
+      },
+      "grasp_repeat": {
+        "run_id": "grasp_r7r3_r1_gpu_run_03",
+        "capture_exit": 0,
+        "process_capture_exit": 0,
+        "trajectory_topics_present": true,
+        "trajectory_arm_topics_present": true,
+        "no_logs_to_publish_present": true,
+        "trajectory_published_present": true,
+        "using_cuda_present": true
+      }
+    },
+    "abi": {
+      "python38_occurrences": 0,
+      "runtime_not_found_occurrences": 0
+    },
+    "algorithm_boundary": {
+      "diff_exit": 0,
+      "algorithm_source_changes": []
+    },
+    "accepted_limitations": [
+      {
+        "id": "catkin_warning_bearing_packages",
+        "classification": "NON_BLOCKING_UPSTREAM",
+        "evidence": "docs/evidence/S1-R1/final_warning_triage/catkin_warning_inventory.json"
+      },
+      {
+        "id": "nvidia_smi_process_name_not_found",
+        "classification": "NON_BLOCKING_ENVIRONMENT",
+        "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/snapshot_60s.json"
+      },
+      {
+        "id": "no_logs_to_publish",
+        "classification": "NON_BLOCKING_POST_SUCCESS",
+        "evidence": "docs/evidence/S1-R1/r7r3_r1_gpu_run_02/roslaunch.log"
+      }
+    ],
+    "state_gate": {
+      "s1_r1": "PASS_WITH_LIMITATIONS",
+      "s1": "IN_PROGRESS",
+      "s2_s8": "FROZEN"
+    }
+  }
+}
