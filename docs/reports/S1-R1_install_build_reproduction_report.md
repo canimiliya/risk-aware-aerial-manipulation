@@ -1,4 +1,8 @@
 # S1-R1 安装、构建和基础运行报告
+## R7 GPU 平行重建补充（2026-08-02）
+
+GPU 独立工作区已用固定官方源码完成 19/19 构建，GPU Torch/RTX 预检和 `pip check` 通过；但 `se3_node` 的 ELF 依赖同时包含 Python 3.8 与 Python 3.9。write 第 11 次运行在 Python codec 初始化阶段失败，没有 `/trajectory`、`/trajectory_arm` 或 GPU 推理证据。因此本轮不通过，grasp/lift 及 grasp 重复性没有运行。详见 `docs/reports/S1-R1_gpu_rebuild_and_runtime_report.md` 和 `docs/evidence/S1-R1/gpu_rebuild/`。
+
 ## R6-R1 GPU 路线补充（2026-07-31）
 
 官方 CUDA 依赖恢复和完整 GPU 预检已完成，结论为 `GPU_REBUILD_RECOMMENDED`：GPU 硬件、Torch cu128、真实 `sm_120` kernel、原始权重、WorkspaceMLP strict forward/autograd 和关键 batch 微基准均通过。

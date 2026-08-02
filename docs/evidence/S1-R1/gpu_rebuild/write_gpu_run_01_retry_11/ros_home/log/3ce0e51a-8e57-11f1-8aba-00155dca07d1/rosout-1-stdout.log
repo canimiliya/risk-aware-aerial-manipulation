@@ -1,0 +1,3 @@
+logging to /home/amplanner/am-planner-gpu-ws/logs/s1-r1-gpu-runtime/write_gpu_run_01_retry_11/ros_home/log/3ce0e51a-8e57-11f1-8aba-00155dca07d1/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout

@@ -1,0 +1,4 @@
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Found pybind11: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include (found version "2.13.6")
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Found pybind11: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include (found version "2.13.6")
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.000.log:-- Found pybind11: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include (found version "2.13.6")
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.log:-- Found pybind11: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include (found version "2.13.6")

@@ -1,4 +1,12 @@
 # S1-R1 状态
+## R7 GPU 平行重建与 write 优先验收（2026-08-02）
+
+- 已在独立 GPU Catkin 工作区用固定官方 commit 完成 19/19 构建，GPU 环境为 Python 3.9.23、Torch 2.7.1+cu128、RTX 5060 Ti，`pip check=0`。
+- 构建出的 `se3_node` 同时链接 `libpython3.8.so.1.0` 和 `libpython3.9.so.1.0`；write 第 11 次隔离运行在 Python codec 初始化阶段退出，未发布轨迹。
+- grasp、lift 和 grasp 重复性按门槛未运行；CPU 基线的 Conda、pip、源码 commit、CPU `se3_node` SHA 保持不变。
+- 当前标签：`BLOCKED_S1_R1_GPU_PYTHON_ABI`（人话：GPU 编译成功，但 Python 版本混链导致 write 启动失败，不能继续三项轨迹验收）。
+- 详细报告：`docs/reports/S1-R1_gpu_rebuild_and_runtime_report.md`。
+
 ## R6-R1 GPU 依赖恢复与完整预检（2026-07-31）
 
 - 21/21 个官方 CUDA/PyTorch 运行库 wheel 已解析、下载、SHA/ZIP 校验并离线安装，`pip check=0`。
