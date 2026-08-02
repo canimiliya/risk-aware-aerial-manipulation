@@ -1,0 +1,1 @@
+b990fded62be388aaab6ffcc9afc96127d6e1acef0ca97b964e79f9991052047  /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S1-R1/gpu_abi_repair/patch/compatibility.patch
