@@ -34,3 +34,5 @@
 | D0030 | 2026-07-31 | ACTIVE | 正式环境不得复用 AirFAR-Ubuntu20 | 必须建立隔离 Ubuntu 20.04 发行版 | 新环境创建失败 |
 | D0031 | 2026-07-31 | ACTIVE | 授权创建 AMPlanner-Ubuntu20 并安装 ROS Noetic/基础依赖 | 可进行受控环境搭建 | 任务边界变更 |
 | D0032 | 2026-07-31 | ACTIVE | S1-R1 只复现 Basic，IL/Polynomial_DiT checkpoint 继续冻结 | 禁止 IL、checkpoint 与训练 | 后续明确批准 |
+| D0033 | 2026-08-03 | ACTIVE | S1-R2 最终审查通过，S1 收口为 PASS_WITH_LIMITATIONS，PR #4 普通合并 | 允许进入受限 S2-R0 预检 | S1 审查撤销或证据失效 |
+| D0034 | 2026-08-03 | ACTIVE | S2-R0 只读复用官方 Delta FK；横担/工具/机体代理参数单独标记 PROVISIONAL_S2_ASSUMPTION | 允许几何敏感性预检，不代表完整 S2 | 真实模型/场景合同核验 |

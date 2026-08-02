@@ -1,0 +1,14 @@
+{
+  "decision_scope": "S2-R0 static workspace preflight only",
+  "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "sample_count": 100000,
+  "random_seed": 20260803,
+  "boundary_samples_included": true,
+  "local_npz": "outputs/workspace/S2-R0/delta_workspace_100k.npz",
+  "local_npz_sha256": "44EEFDA1A5FE37D96BE95216241481183A58508CB568B8E5DBB784CFB1EEC8EF",
+  "local_npz_bytes": 4390136,
+  "local_summary": "outputs/workspace/S2-R0/delta_workspace_100k.json",
+  "static_figure": "outputs/figures/S2-R0/delta_workspace.png",
+  "static_figure_bytes": 468315,
+  "note": "The compressed NPZ is local-only; this manifest and summary are the reviewable Git artifacts."
+}

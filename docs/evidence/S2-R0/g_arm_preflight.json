@@ -1,0 +1,39 @@
+{
+  "decision": "G_ARM_READY_FOR_FULL_PLANNING",
+  "errors": [],
+  "warnings": [
+    "This is a nominal-geometry candidate-sequence preflight, not complete S2 continuous trajectory planning.",
+    "Crossarm, body/rotor proxy, and horizontal tool-axis dimensions are PROVISIONAL_S2_ASSUMPTION."
+  ],
+  "model": {
+    "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+    "active_joints": ["m1_1", "m2_1", "m3_1"],
+    "limits_rad": [-1.57, 1.57],
+    "geometry_m": {"static_radius": 0.08, "moving_radius": 0.025, "upper_arm": 0.1, "lower_arm": 0.16},
+    "fk_source": "delta_display.cpp::FK_kin",
+    "jacobian_source": "finite difference of official FK; consistency-tested"
+  },
+  "workspace": {
+    "sample_count": 100000,
+    "valid_fk_count": 90205,
+    "invalid_fk_count": 9795,
+    "random_seed": 20260803,
+    "boundary_samples_included": true,
+    "position_min_m": [-0.15999996547778708, -0.1745509624578112, -0.2540862400257052],
+    "position_max_m": [0.1599987096972857, 0.18450539610623284, 0.04567494892705378],
+    "global_min_jacobian_singular_value": 0.0000009016323491149443,
+    "global_jacobian_condition_p99": 401.49791458053073
+  },
+  "pose_sequence": {
+    "names": ["P0", "P1", "P2", "P3", "P4", "P5", "P6"],
+    "loose_feasible": 7,
+    "nominal_feasible": 7,
+    "narrow_feasible": 0,
+    "nominal_min_joint_margin": 0.4044585987261146,
+    "nominal_min_clearance_m": 0.016270539113886984,
+    "nominal_min_candidate_jacobian_singular_value": 0.021134315299292026,
+    "tool_axis": [1.0, 0.0, 0.0],
+    "tool_axis_source": "PROVISIONAL_S2_ASSUMPTION"
+  },
+  "state": {"s2_r0": "SUBMITTED_FOR_REVIEW", "s2": "IN_PROGRESS", "s3_s8": "FROZEN"}
+}
