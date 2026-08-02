@@ -1,0 +1,12 @@
+name: official_am_planner_delta_arm
+status: OFFICIAL_GEOMETRY_PLUS_PROVISIONAL_TOOL_PROXY
+am_planner_commit: 7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d
+source_files:
+  urdf: third_party/am-planner/src/uam_sim/delta-display/delta_display/urdf/arm.xacro
+  joint_names: third_party/am-planner/src/uam_sim/delta-display/delta_display/config/joint_names_arm6.yaml
+  fk: third_party/am-planner/src/uam_sim/delta-display/delta_display/src/delta_display.cpp
+active_joints: [m1_1, m2_1, m3_1]
+joint_limits_rad: {lower: -1.57, upper: 1.57}
+geometry_m: {static_radius: 0.08, moving_radius: 0.025, upper_arm: 0.10, lower_arm: 0.16, scale: 1.0}
+installation_from_B_to_A0: {translation_m: [0.0, 0.0, -0.05], rpy_rad: [0.0, 0.0, -1.5708]}
+tool_axis_A0: {value: [1.0, 0.0, 0.0], source: PROVISIONAL_S2_ASSUMPTION, meaning: horizontal candidate only}

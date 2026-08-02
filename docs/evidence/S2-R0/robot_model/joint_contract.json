@@ -1,0 +1,11 @@
+{
+  "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "active_joint_order": ["m1_1", "m2_1", "m3_1"],
+  "active_joints": [
+    {"name": "m1_1", "type": "revolute", "parent": "end_effector", "child": "AA_1", "axis": [0, 0, 1], "lower_rad": -1.57, "upper_rad": 1.57, "source": "arm.xacro"},
+    {"name": "m2_1", "type": "revolute", "parent": "end_effector", "child": "AA_2", "axis": [0, 0, 1], "lower_rad": -1.57, "upper_rad": 1.57, "source": "arm.xacro"},
+    {"name": "m3_1", "type": "revolute", "parent": "end_effector", "child": "AA_3", "axis": [0, 0, 1], "lower_rad": -1.57, "upper_rad": 1.57, "source": "arm.xacro"}
+  ],
+  "passive_or_initialization_joints": ["m1_2", "m1_3", "m2_2", "m2_3", "m3_2", "m3_3"],
+  "passive_joint_limits": {"lower_rad": 0.0, "upper_rad": 0.0, "note": "URDF lock values; not independently sampled"}
+}
