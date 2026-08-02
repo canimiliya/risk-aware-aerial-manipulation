@@ -1,0 +1,174 @@
+[33m[WARN] [1785704888.789436873]: POINT BE BUILD![0m
+[33m[WARN] [1785704889.339701627]: [SE3_PLANNER]: No setting guide points ![0m
+[0m[INFO] [1785704888.335678901]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785704888.343390141]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785704888.384838111]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785704888.384856520]: dim: 466, 333, 133[0m
+[0m[INFO] [1785704888.396444088]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785704888.401423940]: [MANAGE]: Grasp mode init![0m
+[0m[INFO] [1785704888.401976592]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785704888.401988474]: [MANAGE]: PlannerManage init done![0m
+[0m[INFO] [1785704888.785451913]: [SE3_PLANNER]: please wait~[0m
+[0m[INFO] [1785704888.791928805]: [0;33mReceived the point cloud![0m[0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785704889.426506255]: [JPS]: Map has been updated[0m
+[33m[WARN] [1785704890.339466374]: [SE3_PLANNER]: No setting guide points ![0m
+[0m[INFO] [1785704890.340116484]: [SE3_PLANNER]: Begin path searching![0m
+[0m[INFO] [1785704890.340133329]: [SE3_PLANNER]: Searching path from (-3.000, 0.000, 1.200) to (0.050, 0.000, 0.750)[0m
+Start:  -3   0 1.2
+Goal:  0.05    0 0.75
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 117.000000, h: 0.000000!
+Expand [28556] nodes!
+[0m[INFO] [1785704890.566094905]: [SE3_PLANNER]: Searching path from (0.050, 0.000, 0.750) to (3.000, 0.000, 1.200)[0m
+Start: 0.05    0 0.75
+Goal:    3   0 1.2
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 113.000000, h: 0.000000!
+Expand [26816] nodes!
+[0m[INFO] [1785704890.853853311]: [SE3_PLANNER]: JPS search path![0m
+[0m[INFO] [1785704890.853895756]: [32m[SE3_PLANNER]: JPS path searching time: 0.514 s[0m[0m
+[0m[INFO] [1785704890.853914036]: Path published![0m
+[0m[INFO] [1785704890.853919731]: [SE3_PLANNER]: inter_ids size: 1[0m
+overlap = 5
+[0m[INFO] [1785704890.873549154]: [SE3_PLANNER]: The inter point is in the polyhedron 1 and 2 ![0m
+[33mBegin to optimize the trajectory with MINCO...[0m
+[1;32m[SE3_PLANNER]: MINCO setup successfully![0m
+[0m[INFO] [1785704890.883318362]: [SE3GCOPTER]: set initial done[0m
+[0m[INFO] [1785704890.883356228]: [SE3GCOPTER]: backward done[0m
+[Workspace_Model_H]: Using device: cuda
+[Workspace_Model_H]: Workspace probability model successfully initialized on cuda
+[32mFinish optimization![0m
+Optimization time usage: 5288.42 ms
+Final cost: 2717.58
+Total Duration: 5.1349
+Maximum Vel: 2.31426
+Maximum Acc: 3.16595
+Arm Maximum Vel: 0.150159
+Max Z: -0.059, Min Z: -0.239
+Max X: 0.062, Min X: -0.052
+Max Y: 0.024, Min Y: -0.009
+[MANAGE]: Published cost 2717.578 to /finish_simulation topic.
+[31m[ERROR] [1785704896.177225939]: [MANAGE]: No logs to publish![0m
+[0m[INFO] [1785704896.177545256]: [1;32m[MANAGE]: The trajectory is published![0m[0m
+... logging to /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01/ros_home/log/40b7d086-8eb6-11f1-abd2-00155dca07d1/roslaunch-SC-202607101733-90629.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/variants/grasp_waypoint_variant_01.launch
+[1mstarted roslaunch server http://SC-202607101733:40517/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /end_x: 3.0
+ * /end_y: 0.0
+ * /end_z: 1.2
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 0
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /object_px: 0.05
+ * /object_py: 0.0
+ * /object_pz: 0.6
+ * /object_qw: 0.1
+ * /object_qx: 0.0
+ * /object_qy: 0.0
+ * /object_qz: 0.0
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /random_complex/g...
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [100000000000.0, ...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: False
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /start_x: -3.0
+ * /start_y: 0.0
+ * /start_z: 1.2
+ * /staticR: 0.08
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/variants/grasp_waypoint_variant_01.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [90696][0m
+[se3_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

@@ -1,0 +1,6 @@
+task=grasp
+run_id=grasp_waypoint_variant_01
+timeout_s=300
+launch_file=/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/variants/grasp_waypoint_variant_01.launch
+variant_object_px=0.05
+baseline_object_px=0.00

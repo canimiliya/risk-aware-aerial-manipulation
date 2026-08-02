@@ -1,0 +1,46 @@
+{
+  "format": "GIF",
+  "entries": [
+    {
+      "file": "write.gif",
+      "bytes": 189576,
+      "sha256": "d04696e639604774dedf77f05c86af3ca7a524ab237051d4053175155f707c09",
+      "fps": 10,
+      "duration_s": 4.0,
+      "source_trajectory": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/data/trajectories/S1-R2/write_official",
+      "static_png": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/outputs/figures/S1-R2/write.png",
+      "generation_script": "scripts/visualize_s1_r2_trajectories.py"
+    },
+    {
+      "file": "grasp.gif",
+      "bytes": 172548,
+      "sha256": "c28d0e36d9c985d433d86dc4be1b78dda666b49e7d14f4edbec3047e3530671e",
+      "fps": 10,
+      "duration_s": 4.0,
+      "source_trajectory": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/data/trajectories/S1-R2/grasp_official",
+      "static_png": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/outputs/figures/S1-R2/grasp.png",
+      "generation_script": "scripts/visualize_s1_r2_trajectories.py"
+    },
+    {
+      "file": "lift.gif",
+      "bytes": 145705,
+      "sha256": "fc016556790063ceb15502bd673d4e05f4e68ee935c850ec6f49184bc74c015a",
+      "fps": 10,
+      "duration_s": 4.0,
+      "source_trajectory": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/data/trajectories/S1-R2/lift_official",
+      "static_png": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/outputs/figures/S1-R2/lift.png",
+      "generation_script": "scripts/visualize_s1_r2_trajectories.py"
+    },
+    {
+      "file": "waypoint_variant.gif",
+      "bytes": 143651,
+      "sha256": "11fb4d3586dae777d92ef3e56e5f7f15d63b4e60c8643f0d4c01f3431582cc7b",
+      "fps": 10,
+      "duration_s": 4.0,
+      "source_trajectory": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/data/trajectories/S1-R2/grasp_waypoint_variant_01",
+      "static_png": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/outputs/figures/S1-R2/waypoint_variant.png",
+      "generation_script": "scripts/visualize_s1_r2_trajectories.py"
+    }
+  ],
+  "note": "Videos are local evidence artifacts and are intentionally not committed; small static PNGs and this manifest are committed."
+}
