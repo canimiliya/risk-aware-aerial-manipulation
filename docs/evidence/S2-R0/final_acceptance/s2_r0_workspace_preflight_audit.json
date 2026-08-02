@@ -11,6 +11,7 @@
     "official_joint_contract": true,
     "official_geometry_contract": true,
     "provisional_scene_marked": true,
+    "target_fake_declared": true,
     "provisional_tool_marked": true,
     "workspace_manifest": {
       "decision_scope": "S2-R0 static workspace preflight only",
