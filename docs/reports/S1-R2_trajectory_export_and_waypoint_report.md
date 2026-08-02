@@ -55,7 +55,7 @@ S1-R2：`PASS`；S1：`PASS_WITH_LIMITATIONS`。S2：`IN_PROGRESS`，仅提交 S
 - S1-R1 最终提交：`78aa715e0825f4495666d447c98d7d75f46790fe`；PR #3 merge：`a028f265c616be922e5ab0ccff907fcbeda06273`。
 - main Head：`a028f265c616be922e5ab0ccff907fcbeda06273`。
 - S1-R2 分支：`agent/s1-r2-trajectory-export-contract`。
-- S1-R2 实现提交：`8d9d1da`（导出合同、验证、waypoint 和可视化实现）；视频 manifest 提交：`0fbbbe4`；最终审阅提交/PR #4 Head：`f12f61ab1925e30dfa31dbb4c8a2f63c023cfb0a`。
+- S1-R2 实现提交：`8d9d1da`（导出合同、验证、waypoint 和可视化实现）；视频 manifest 提交：`0fbbbe4`；原始 PR #4 Head：`f12f61ab1925e30dfa31dbb4c8a2f63c023cfb0a`；A 阶段最终审阅提交：`e66c4783d5c80492bb0099c35f144d5eeac06df5`；PR #4 merge：`685086a4b0ed11487313d8f8b069616ddcbc155b`。
 - 新 PR：Draft，创建后不合并。
 - 工作树：提交后保持干净；本地忽略的原始轨迹与 GIF 继续保留。
 - stash：`stash@{0}`、`stash@{1}` 保留，未操作。
