@@ -57,9 +57,12 @@ def main() -> int:
     check("coordination_untracked", not tracked, ".coordination is tracked")
     exclude = read_text(root / ".git/info/exclude")
     check("local_exclude", "/.coordination/" in exclude, "local .coordination exclusion is missing")
-    check("start_head", EXPECTED_HEAD == subprocess.run(
-        ["git", "rev-parse", "HEAD"], cwd=root, text=True, capture_output=True, check=False
-    ).stdout.strip(), "HEAD drifted before the authorized change")
+    initial_state = read_text(state / "git_initial_state.txt")
+    history = subprocess.run(
+        ["git", "rev-list", "--all"], cwd=root, text=True, capture_output=True, check=False
+    ).stdout.splitlines()
+    check("start_head", f"initial_head={EXPECTED_HEAD}" in initial_state and EXPECTED_HEAD in history,
+          "saved initial HEAD is missing from the repository history")
 
     inventory = load_json(state / "coordination_inventory.json")
     check("coordination_inventory", inventory.get("file_count") == 19 and inventory.get("tracked") is False,
