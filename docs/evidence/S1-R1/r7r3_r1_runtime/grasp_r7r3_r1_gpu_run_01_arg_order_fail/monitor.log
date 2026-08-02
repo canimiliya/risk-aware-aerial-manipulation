@@ -1,0 +1,3 @@
+usage: s1_r1_monitor_gpu_planner.py [-h] --run-dir RUN_DIR --timeout-s
+                                    TIMEOUT_S
+s1_r1_monitor_gpu_planner.py: error: argument --timeout-s: invalid int value: '/home/amplanner/am-planner-r7r3-r1-ws/runs'

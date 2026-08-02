@@ -1,0 +1,10 @@
+﻿{
+    "source":  "https://github.com/SYSU-HILAB/am-planner.git",
+    "transport":  "Windows GitHub CLI clone then Git bundle",
+    "commit":  "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+    "clone_exit_code":  0,
+    "bundle_exit_code":  0,
+    "bundle_path":  "D:\\WSL\\downloads\\am-planner-7ea9a0a4.bundle",
+    "bundle_bytes":  13472636,
+    "bundle_sha256":  "f48d5a2a17e677be97e384e63a4aa1e37fa1ca6ad753ae555ede07a4a937673b"
+}

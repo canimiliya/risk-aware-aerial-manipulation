@@ -1,0 +1,240 @@
+{
+  "roots": [
+    "\\\\wsl.localhost\\AMPlanner-Ubuntu20\\home\\amplanner\\am-planner-ws\\downloads\\torch-2.7.1+cu128-cp39-cp39-manylinux_2_28_x86_64.whl",
+    "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps"
+  ],
+  "rows": [
+    {
+      "bytes": 609620630,
+      "dist_info": "nvidia_cublas_cu12-12.8.3.14.dist-info",
+      "kind": "file",
+      "name": "nvidia_cublas_cu12-12.8.3.14-py3-none-manylinux_2_27_x86_64.whl",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cublas_cu12-12.8.3.14-py3-none-manylinux_2_27_x86_64.whl",
+      "sha256": "3f0e05e7293598cf61933258b73e66a160c27d59c4422670bf0b79348c04be44",
+      "wheel_tag": [
+        "py3-none-manylinux_2_27_x86_64"
+      ],
+      "zip_complete": true
+    },
+    {
+      "bytes": 10190848,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0000",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0000",
+      "sha256": "65b332b1b57a80c96a501e762879fc159ca30e11d70ceca337c13c61d0dd17d7",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 10190848,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0001",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0001",
+      "sha256": "e6734cdf17ead78c9869099e01126d39349a63d4459f6fa31431e9be44212e77",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 10313728,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0002",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0002",
+      "sha256": "aba2e00384d7fe66e77f49ba781e385fd03e808f86e2d4895b49e8d6880676fe",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 10059776,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0003",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0003",
+      "sha256": "0d3a01ecd85732e62d21335cf662b70a98981f19eedff22be911411aab2e6398",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 10059776,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0004",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0004",
+      "sha256": "f9817c7a8e1b07862657b3eb6fa3edd367524d2fa0182642b746bdb9ec904139",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9994240,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0005",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0005",
+      "sha256": "4f52343e80f7df6236ef9debeef4228d7991a0991a349e88d521a6ebc1683f28",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 10002432,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0006",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0006",
+      "sha256": "401ef62a324597b8cc0bb737d5768b216d32f413caa7c30fc38e8b396857572c",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9994240,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0007",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0007",
+      "sha256": "9bb6fe5c8b0cf052c98367b88f7a900188e7b500db9df1146c3fa63a54569831",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9748480,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0008",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0008",
+      "sha256": "3d84df4ae062bba7cb207a0d80e918d3dfb2cdd745ee00b89aec8bb5eb48b3e8",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9797632,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0009",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0009",
+      "sha256": "b48ea082037801bd7e321dcbbaf8e5f2b31eb0f6f6dae4503c4663e15001c2aa",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9789440,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0010",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0010",
+      "sha256": "b689ca7b99dcc097d862b9239a368f72d8ad8c98093f10042ee0d91dd7a21ae7",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9924608,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0011",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0011",
+      "sha256": "861a04004fce9d71645be49786dd2a0f8affdf9cf7b4ab015ffb7da8fbb1011f",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9867264,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0012",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0012",
+      "sha256": "cd3b871fb718a01e400978480bfcc40846a19c86e896f4cc8ba5f4ae1ec5f05f",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9793536,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0013",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0013",
+      "sha256": "63af2f92a46e084cdd427fc174623aa3318412cff477b0cc5cac809c16acd2e5",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9801728,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0014",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0014",
+      "sha256": "0c9b19a86d962f004e6d0672fdb91f4baef08cc849ae59d4c71304572820b048",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9805824,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0015",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0015",
+      "sha256": "17044c98ee4f8c58de87d6c032b46dc5883280cd78908b23f066a038d0a31e7c",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9793536,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0016",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0016",
+      "sha256": "dd8ccfe50c6a3c06725a1e958cb98dce7479f4b5c4fb7def8e4b3df4000aed32",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9732096,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0017",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0017",
+      "sha256": "369df55d5044b841b22def880c88e8aaf493d2d5ee6e89ab7750ee95072e750b",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9732096,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0018",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0018",
+      "sha256": "be078da53d36c8b43fda0b5c1fd378b900bf5acf11e01c99463098cd69e936f4",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9711616,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0019",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0019",
+      "sha256": "d7370bf261029e3dc710d28ab1000fcdb326dd7d75460ba338a3d36ce6bd0bbf",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9678848,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0020",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0020",
+      "sha256": "95091d6f15d63ef0f71a2f312970bd0a6a678db426f8db6cf46128c24ae00275",
+      "wheel_tag": null,
+      "zip_complete": false
+    },
+    {
+      "bytes": 9596928,
+      "dist_info": null,
+      "kind": "file",
+      "name": "nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0021",
+      "path": "C:\\Users\\Administrator\\Downloads\\s1-r1-gpu-deps\\nvidia_cudnn_cu12-9.7.1.26-py3-none-manylinux_2_27_x86_64.whl.0021",
+      "sha256": "56a398a4ace7932e74ad5c873feb11dcdf32abc7c063643aa23fc5a0b857b5e4",
+      "wheel_tag": null,
+      "zip_complete": false
+    }
+  ]
+}

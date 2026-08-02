@@ -1,0 +1,42 @@
+{
+  "utc": "2026-08-02T19:57:07Z",
+  "elapsed_s": 61.229,
+  "se3_node": [
+    {
+      "pid": 85559,
+      "ppid": 85492,
+      "state": "Rsl",
+      "cpu_percent": 98.3,
+      "rss_kb": 1323908,
+      "vsz_kb": 67803012,
+      "threads": 32,
+      "elapsed_s": 59,
+      "args": "/home/amplanner/am-planner-r7r3-r1-ws/devel/.private/plan_manage/lib/plan_manage/se3_node ~object_odom:=/odom_converter/converted_odom1 ~trajectory:=/trajectory ~trajectory_arm:=/trajectory_arm __name:=se3_node __log:=/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_02/ros_home/log/32747c0e-8eac-11f1-933a-00155dca07d1/se3_node-1.log"
+    }
+  ],
+  "gpu": {
+    "apps": [],
+    "gpu": {
+      "utilization_percent": 11.0,
+      "memory_used_mb": 2301.0,
+      "memory_total_mb": 16311.0
+    },
+    "raw_apps": "85559, [Not Found], [N/A]",
+    "raw_gpu": "11, 2301, 16311",
+    "se3_gpu_pid_seen": false
+  },
+  "cost_count": 1893,
+  "latest_cost": 15794900.0,
+  "minimum_cost": 15794300.0,
+  "topics": {
+    "/trajectory": {
+      "raw": "",
+      "has_publishers": false
+    },
+    "/trajectory_arm": {
+      "raw": "",
+      "has_publishers": false
+    }
+  },
+  "snapshot_s": 60
+}

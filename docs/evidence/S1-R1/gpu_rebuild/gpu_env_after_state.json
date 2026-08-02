@@ -1,0 +1,12 @@
+{
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+  "torch": "2.7.1+cu128",
+  "cuda_available": true,
+  "torch_cuda": "12.8",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "capability": [
+    12,
+    0
+  ]
+}

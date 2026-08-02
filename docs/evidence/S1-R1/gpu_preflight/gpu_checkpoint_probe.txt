@@ -1,0 +1,4 @@
+R6 GPU checkpoint/model 探针状态：NOT_RUN_DEPENDENCY_BLOCKED
+
+原始权重、官方错误位置参数调用、默认加载、正确 map_location CUDA、strict load、forward、autograd 均未执行。
+原因：独立 GPU 环境的 CUDA 运行库依赖未完成安装。

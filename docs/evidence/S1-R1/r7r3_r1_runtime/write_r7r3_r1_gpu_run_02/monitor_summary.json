@@ -1,0 +1,19 @@
+{
+  "run_id": "write_r7r3_r1_gpu_run_02",
+  "source": "monitor_samples.jsonl",
+  "summary_kind": "post_capture_derived",
+  "sample_count": 87,
+  "last_elapsed_s": 438.018,
+  "se3_pid_observed": [85559],
+  "se3_gpu_pid_seen": false,
+  "se3_gpu_pid_seen_note": "nvidia-smi pmon returned '85559, [Not Found], [N/A]'; in-process roslaunch.log reports Using device: cuda and the CUDA workspace model initialized on cuda.",
+  "gpu_utilization_percent_min": 10.0,
+  "gpu_utilization_percent_max": 13.0,
+  "gpu_memory_used_mb_min": 2047.0,
+  "gpu_memory_used_mb_max": 2386.0,
+  "gpu_memory_total_mb": 16311.0,
+  "snapshots_written": [60, 300],
+  "snapshots_not_reached_before_success": [600, 900, 1200],
+  "monitor_process_exit": 143,
+  "monitor_process_exit_note": "The runner stopped the monitor during normal post-capture cleanup; raw samples and the 60 s/300 s snapshots are preserved."
+}

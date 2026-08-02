@@ -1,0 +1,4 @@
+# AM-Planner 固定提交 requirements.txt 中仅服务于 IL 的依赖；本轮明确不安装。
+torch==2.4.1
+torchvision==0.19.1
+triton==3.0.0

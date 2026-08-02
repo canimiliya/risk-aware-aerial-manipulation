@@ -1,0 +1,94 @@
+{
+  "torch_version": "2.7.1+cu128",
+  "torch_cuda_version": "12.8",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "capability": [
+    12,
+    0
+  ],
+  "dtype": "float32",
+  "warmup": 20,
+  "iterations": 100,
+  "rows": [
+    {
+      "batch": 1,
+      "forward": {
+        "median_ms": 0.11270099997773286,
+        "p90_ms": 0.5057000000192602,
+        "p99_ms": 0.7741909999481322,
+        "samples": 100
+      },
+      "forward_autograd": {
+        "median_ms": 0.7915799999977935,
+        "p90_ms": 1.2936650000483496,
+        "p99_ms": 1.5063120000036179,
+        "samples": 100
+      },
+      "peak_memory_bytes": 18561536
+    },
+    {
+      "batch": 96,
+      "forward": {
+        "median_ms": 0.29246350001699284,
+        "p90_ms": 0.34722899999906076,
+        "p99_ms": 0.6718410000416952,
+        "samples": 100
+      },
+      "forward_autograd": {
+        "median_ms": 0.8921299999826715,
+        "p90_ms": 1.423826999996436,
+        "p99_ms": 1.7263699999716664,
+        "samples": 100
+      },
+      "peak_memory_bytes": 18940416
+    },
+    {
+      "batch": 192,
+      "forward": {
+        "median_ms": 0.14986150000595444,
+        "p90_ms": 0.3258689999938724,
+        "p99_ms": 0.5671100000199658,
+        "samples": 100
+      },
+      "forward_autograd": {
+        "median_ms": 0.9069489999831148,
+        "p90_ms": 1.4753579999933208,
+        "p99_ms": 1.8632549999892944,
+        "samples": 100
+      },
+      "peak_memory_bytes": 19298304
+    },
+    {
+      "batch": 576,
+      "forward": {
+        "median_ms": 0.16069949998609445,
+        "p90_ms": 0.23806000001513894,
+        "p99_ms": 0.5646079999905851,
+        "samples": 100
+      },
+      "forward_autograd": {
+        "median_ms": 0.7808990000057747,
+        "p90_ms": 1.4018510000255446,
+        "p99_ms": 1.9672490000175458,
+        "samples": 100
+      },
+      "peak_memory_bytes": 20782080
+    },
+    {
+      "batch": 960,
+      "forward": {
+        "median_ms": 0.17250699997362062,
+        "p90_ms": 0.38140999998859115,
+        "p99_ms": 0.5703719999701207,
+        "samples": 100
+      },
+      "forward_autograd": {
+        "median_ms": 0.8942880000120113,
+        "p90_ms": 1.6454750000320928,
+        "p99_ms": 1.7724510000221017,
+        "samples": 100
+      },
+      "peak_memory_bytes": 22265856
+    }
+  ]
+}

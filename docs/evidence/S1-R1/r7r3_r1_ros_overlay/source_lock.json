@@ -1,0 +1,27 @@
+{
+  "distribution": "ROS Noetic",
+  "retrieval": "official GitHub commit archives",
+  "repositories": [
+    {
+      "name": "rospack",
+      "url": "https://github.com/ros/rospack.git",
+      "branch": "noetic-devel",
+      "commit": "fd4d6fd87895c389c58b52e4009fe0b793769818",
+      "archive_url": "https://github.com/ros/rospack/archive/fd4d6fd87895c389c58b52e4009fe0b793769818.tar.gz",
+      "archive_sha256": "72A2124576BCEBAECB9E17959AC6E9A749EB6740152591EF8BA33BB16B3AE249",
+      "source_path": "/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src/rospack"
+    },
+    {
+      "name": "ros",
+      "url": "https://github.com/ros/ros.git",
+      "branch": "noetic-devel",
+      "commit": "99fd9bb76338f3315cd0a89af700d789ef337ea6",
+      "archive_url": "https://github.com/ros/ros/archive/99fd9bb76338f3315cd0a89af700d789ef337ea6.tar.gz",
+      "archive_sha256": "AC44162954275E6BD1A50D00165F345A4B27DBFBE93D6EF02EB228970D01CC8D",
+      "package_subdirectory": "core/roslib",
+      "source_path": "/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src/roslib"
+    }
+  ],
+  "compatibility_overlay_note": "The overlay uses frozen official Noetic source commits and is not claimed as a byte-for-byte reconstruction of the system Debian packages.",
+  "git_clone_note": "WSL Git transport failed twice with TLS/timeout; the same official GitHub commit archives were used, with hashes recorded above. No mirror was used."
+}

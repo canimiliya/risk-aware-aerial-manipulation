@@ -1,0 +1,78 @@
+﻿Python 3.9.23
+WARNING: Package(s) not found: nvidia-cublas-cu12, nvidia-cudnn-cu12, triton
+Name: torch
+Version: 2.7.1+cu128
+Summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Home-page: https://pytorch.org/
+Author: PyTorch Team
+Author-email: packages@pytorch.org
+License: BSD-3-Clause
+Location: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages
+Requires: filelock, fsspec, jinja2, networkx, nvidia-cublas-cu12, nvidia-cuda-cupti-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-runtime-cu12, nvidia-cudnn-cu12, nvidia-cufft-cu12, nvidia-cufile-cu12, nvidia-curand-cu12, nvidia-cusolver-cu12, nvidia-cusparse-cu12, nvidia-cusparselt-cu12, nvidia-nccl-cu12, nvidia-nvjitlink-cu12, nvidia-nvtx-cu12, sympy, triton, typing-extensions
+Required-by: 
+---
+Name: typing_extensions
+Version: 4.16.0
+Summary: Backported and Experimental Type Hints for Python 3.9+
+Home-page: 
+Author: 
+Author-email: "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" <levkivskyi@gmail.com>
+License-Expression: PSF-2.0
+Location: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages
+Requires: 
+Required-by: torch
+---
+Name: filelock
+Version: 3.19.1
+Summary: A platform independent file lock.
+Home-page: https://github.com/tox-dev/py-filelock
+Author: 
+Author-email: 
+License-Expression: Unlicense
+Location: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages
+Requires: 
+Required-by: torch
+---
+Name: sympy
+Version: 1.14.0
+Summary: Computer algebra system (CAS) in Python
+Home-page: https://sympy.org
+Author: SymPy development team
+Author-email: sympy@googlegroups.com
+License: BSD
+Location: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages
+Requires: mpmath
+Required-by: torch
+---
+Name: networkx
+Version: 3.2.1
+Summary: Python package for creating and manipulating graphs and networks
+Home-page: https://networkx.org/
+Author: 
+Author-email: Aric Hagberg <hagberg@lanl.gov>
+License: 
+Location: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages
+Requires: 
+Required-by: torch
+---
+Name: Jinja2
+Version: 3.1.6
+Summary: A very fast and expressive template engine.
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages
+Requires: MarkupSafe
+Required-by: torch
+---
+Name: fsspec
+Version: 2025.10.0
+Summary: File-system specification
+Home-page: https://github.com/fsspec/filesystem_spec
+Author: 
+Author-email: 
+License-Expression: BSD-3-Clause
+Location: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages
+Requires: 
+Required-by: torch

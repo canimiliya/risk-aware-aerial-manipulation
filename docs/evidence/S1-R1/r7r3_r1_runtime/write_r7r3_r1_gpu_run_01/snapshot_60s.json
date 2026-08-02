@@ -1,0 +1,30 @@
+{
+  "utc": "2026-08-02T19:54:43Z",
+  "elapsed_s": 61.665,
+  "se3_node": [],
+  "gpu": {
+    "apps": [],
+    "gpu": {
+      "utilization_percent": 9.0,
+      "memory_used_mb": 1832.0,
+      "memory_total_mb": 16311.0
+    },
+    "raw_apps": "",
+    "raw_gpu": "9, 1832, 16311",
+    "se3_gpu_pid_seen": false
+  },
+  "cost_count": 0,
+  "latest_cost": null,
+  "minimum_cost": null,
+  "topics": {
+    "/trajectory": {
+      "raw": "",
+      "has_publishers": false
+    },
+    "/trajectory_arm": {
+      "raw": "",
+      "has_publishers": false
+    }
+  },
+  "snapshot_s": 60
+}

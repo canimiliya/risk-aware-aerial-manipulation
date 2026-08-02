@@ -1,0 +1,17 @@
+{
+  "errors": [
+    "GPU se3_node also links libpython3.8; ABI gate is not clean",
+    "write stopped before se3_node initialization: Python codec/ABI error"
+  ],
+  "warnings": [
+    "CPU manifest gained the catkin top-level symlink after the first snapshot; common source hashes still match",
+    "grasp/lift were correctly not run because write did not pass",
+    "unreadable link skipped during artifact scan: docs/evidence/S1-R1/gpu_rebuild/write_gpu_run_01_retry_11/ros_home/log/latest",
+    "unreadable link skipped during artifact scan: docs/evidence/S1-R1/gpu_rebuild/write_gpu_run_01_retry_11/runtime-bin/rosversion"
+  ],
+  "decision": "BLOCKED_S1_R1_GPU_PYTHON_ABI",
+  "build": "19/19",
+  "write": "blocked_before_trajectory",
+  "grasp_lift_run": false,
+  "forbidden_files": []
+}

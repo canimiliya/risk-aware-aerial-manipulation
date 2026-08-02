@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+Profile:                     default
+Extending:        [explicit] /home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel
+Workspace:                   /home/amplanner/am-planner-r7r3-r1-ws
+--------------------------------------------------------------------------------
+Build Space:        [exists] /home/amplanner/am-planner-r7r3-r1-ws/build
+Devel Space:        [exists] /home/amplanner/am-planner-r7r3-r1-ws/devel
+Install Space:      [unused] /home/amplanner/am-planner-r7r3-r1-ws/install
+Log Space:          [exists] /home/amplanner/am-planner-r7r3-r1-ws/logs
+Source Space:       [exists] /home/amplanner/am-planner-r7r3-r1-ws/src
+DESTDIR:            [unused] None
+--------------------------------------------------------------------------------
+Devel Space Layout:          linked
+Install Space Layout:        None
+--------------------------------------------------------------------------------
+Additional CMake Args:       -DCMAKE_BUILD_TYPE=Release -DPython_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython_FIND_VIRTUALENV=ONLY -DPython_FIND_STRATEGY=LOCATION -DPython_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPython3_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPython3_ROOT_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39 -DPython3_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPython3_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYTHON_EXECUTABLE=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python -DPYTHON_INCLUDE_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9 -DPYTHON_LIBRARY=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so -DPYBIND11_FINDPYTHON=ON -Dpybind11_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/share/cmake/pybind11 -Dautodiff_DIR=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/cmake/autodiff -DCMAKE_PREFIX_PATH=/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39;/home/amplanner/am-planner-r7r3-r1-ws/devel;/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel;/opt/ros/noetic
+Additional Make Args:        None
+Additional catkin Make Args: None
+Internal Make Job Server:    True
+Cache Job Environments:      False
+--------------------------------------------------------------------------------
+Buildlisted Packages:        None
+Skiplisted Packages:         None
+--------------------------------------------------------------------------------
+Workspace configuration appears valid.
+--------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+logging to /home/amplanner/am-planner-r7r3-r1-ws/runs/grasp_r7r3_r1_gpu_run_01/ros_home/log/e91f1c38-8ead-11f1-9a01-00155dca07d1/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout

@@ -1,0 +1,40 @@
+# S1-R1 write 诊断自动检查
+
+errors=0 warnings=0
+- PASS branch: agent/s1-r1-am-planner-install-basic-repro
+- PASS official_source_commit: 7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d
+- PASS official_source_clean: ''
+- PASS official_weight_restored: 506f59645e3e076c3910774054d0538a7664362e39cecb9b06e2d5e01aecca49
+- PASS no_residual_bind_mount: /      /dev/sdd ext4   rw,relatime,discard,errors=remount-ro,data=ordered
+- PASS evidence:task_complexity_comparison.json: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\task_complexity_comparison.json
+- PASS evidence:task_complexity_comparison.md: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\task_complexity_comparison.md
+- PASS evidence:optimizer_static_contract.md: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\optimizer_static_contract.md
+- PASS evidence:existing_log_comparison.json: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\existing_log_comparison.json
+- PASS evidence:existing_log_comparison.md: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\existing_log_comparison.md
+- PASS evidence:workspace_model_cpu_benchmark.json: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\workspace_model_cpu_benchmark.json
+- PASS evidence:workspace_model_cpu_benchmark.md: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\workspace_model_cpu_benchmark.md
+- PASS evidence:write_classification.json: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\write_classification.json
+- PASS evidence:write_classification.md: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis\write_classification.md
+- PASS evidence:result_summary.json: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\result_summary.json
+- PASS evidence:numeric_validation.json: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\numeric_validation.json
+- PASS evidence:monitor_samples.jsonl: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\monitor_samples.jsonl
+- PASS evidence:monitor_summary.json: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\monitor_summary.json
+- PASS evidence:cost_series.csv: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\cost_series.csv
+- PASS snapshot:60s: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\snapshot_60s.json
+- PASS snapshot:300s: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\snapshot_300s.json
+- PASS snapshot:600s: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\snapshot_600s.json
+- PASS snapshot:900s: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\snapshot_900s.json
+- PASS snapshot:1200s: D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\docs\evidence\S1-R1\write_diagnosis_run_01\snapshot_1200s.json
+- PASS classification: WRITE_CPU_RUNTIME_TOO_SLOW
+- PASS write_no_false_success: {'received_topics': [], 'expected_topics': ['/trajectory', '/trajectory_arm'], 'timeout_s': 1200.0, 'success': False}
+- PASS monitor_samples: 240
+- PASS monitor_progress: {'monitor_started_utc': '2026-07-31T13:32:23Z', 'sample_count': 240, 'elapsed_s': 1202.816, 'snapshots_written': [60, 300, 600, 900, 1200], 'max_cpu_percent': 1937.0, 'max_rss_kb': 689736, 'final_cost_count': 7289, 'final_latest_cost': 14955600.0, 'final_minimum_cost': 14955600.0, 'result_summary_present': True, 'classification_inputs': {'process_seen': True, 'log_costs_seen': True, 'trajectory_numeric_validation_present': True}}
+- PASS benchmark_batches: [{'batch': 1, 'forward': {'median_ms': 0.02269449998948403, 'p90_ms': 0.023743000156173366, 'p99_ms': 0.036979000014980556, 'samples': 100}, 'forward_autograd': {'median_ms': 0.25876700010485365, 'p90_ms': 0.41933099987545575, 'p99_ms': 0.4771460000938532, 'samples': 100}}, {'batch': 96, 'forward': {'median_ms': 6.641010500061384, 'p90_ms': 11.916430999917793, 'p99_ms': 28.416263000053732, 'samples': 100}, 'forward_autograd': {'median_ms': 28.601527000091664, 'p90_ms': 45.71078699996178, 'p99_ms': 66.36301200001071, 'samples': 100}}, {'batch': 192, 'forward': {'median_ms': 16.86655100002099, 'p90_ms': 25.61097200009499, 'p99_ms': 35.22047299998121, 'samples': 100}, 'forward_autograd': {'median_ms': 6.044215499969141, 'p90_ms': 53.42394399986006, 'p99_ms': 102.3134019999361, 'samples': 100}}, {'batch': 576, 'forward': {'median_ms': 2.2544140000491097, 'p90_ms': 19.556635999833816, 'p99_ms': 27.21344999986286, 'samples': 100}, 'forward_autograd': {'median_ms': 3.4871514998258135, 'p90_ms': 14.8189280000679, 'p99_ms': 70.79376499996215, 'samples': 100}}, {'batch': 960, 'forward': {'median_ms': 0.1903550000861287, 'p90_ms': 0.4719070000192005, 'p99_ms': 2.2244319998208084, 'samples': 100}, 'forward_autograd': {'median_ms': 11.53800399993088, 'p90_ms': 85.84543899996788, 'p99_ms': 119.81635000006463, 'samples': 100}}]
+- PASS benchmark_cpu: False
+- PASS s1_in_progress: 
+- PASS s2_frozen: 
+- PASS write_only_run: 
+- PASS no_official_source_changes: 
+- PASS no_cpu_weight_submitted: 
+- PASS no_large_artifacts: 
+- PASS git_diff_check: 

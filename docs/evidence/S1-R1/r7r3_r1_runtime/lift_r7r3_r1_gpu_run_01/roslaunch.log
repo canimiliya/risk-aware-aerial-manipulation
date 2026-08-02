@@ -1,0 +1,1186 @@
+[33m[WARN] [1785701402.611088248]: POINT BE BUILD![0m
+[0m[INFO] [1785701402.127579137]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785701402.131870555]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785701402.154490394]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785701402.154511988]: dim: 466, 333, 133[0m
+[0m[INFO] [1785701402.162309256]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785701402.164815039]: [MANAGE]: Other mode init! Loaded 1 inter points.[0m
+[0m[INFO] [1785701402.165339299]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785701402.165354344]: [MANAGE]: PlannerManage init done![0m
+[0m[INFO] [1785701402.607955171]: [SE3_PLANNER]: please wait~[0m
+[0m[INFO] [1785701402.613532478]: [0;33mReceived the point cloud![0m[0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785701403.191293372]: [JPS]: Map has been updated[0m
+[0m[INFO] [1785701404.129247536]: [SE3_PLANNER]: Begin path searching![0m
+[0m[INFO] [1785701404.129289988]: [SE3_PLANNER]: Searching path from (-3.000, 0.000, 1.200) to (0.000, 0.000, 0.900)[0m
+Start:  -3   0 1.2
+Goal:    0   0 0.9
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 110.000000, h: 0.000000!
+Expand [13634] nodes!
+[0m[INFO] [1785701404.360068813]: [SE3_PLANNER]: Searching path from (0.000, 0.000, 0.900) to (1.000, 0.000, 1.500)[0m
+Start:   0   0 0.9
+Goal:    1   0 1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 53.000000, h: 0.000000!
+Expand [9657] nodes!
+[0m[INFO] [1785701404.634000710]: [SE3_PLANNER]: JPS search path![0m
+[0m[INFO] [1785701404.634040144]: [32m[SE3_PLANNER]: JPS path searching time: 0.505 s[0m[0m
+[0m[INFO] [1785701404.634062677]: Path published![0m
+[0m[INFO] [1785701404.634068779]: [SE3_PLANNER]: inter_ids size: 1[0m
+overlap = 5
+[0m[INFO] [1785701404.662327505]: [SE3_PLANNER]: The inter point is in the polyhedron 1 and 2 ![0m
+[33mBegin to optimize the trajectory with MINCO...[0m
+[1;32m[SE3_PLANNER]: MINCO setup successfully![0m
+[0m[INFO] [1785701404.662650368]: [SE3GCOPTER]: set initial done[0m
+[0m[INFO] [1785701404.662701630]: [SE3GCOPTER]: backward done[0m
+[Workspace_Model_H]: Using device: cuda
+[Workspace_Model_H]: Workspace probability model successfully initialized on cuda
+cost = 2.70677e+06
+cost = 2.86871e+12
+cost = 3.16637e+11
+cost = 1.10823e+11
+cost = 1.25255e+06
+cost = 1.29084e+06
+cost = 1.17022e+06
+cost = 1.1086e+06
+cost = 1.04522e+06
+cost = 4.28845e+10
+cost = 1.73344e+07
+cost = 1.02823e+06
+cost = 1.02031e+06
+cost = 2.10361e+11
+cost = 1.62246e+11
+cost = 1.08673e+11
+cost = 4.55156e+10
+cost = 5.70655e+09
+cost = 1.32027e+08
+cost = 1.01601e+06
+cost = 9.58733e+06
+cost = 1.55568e+06
+cost = 1.04475e+06
+cost = 1.01648e+06
+cost = 1.01657e+06
+cost = 1.01609e+06
+cost = 1.01297e+06
+cost = 1.581e+11
+cost = 1.0234e+11
+cost = 1.75716e+10
+cost = 5.45251e+08
+cost = 4.55162e+06
+cost = 1.00618e+06
+cost = 1.02252e+06
+cost = 1.0045e+06
+cost = 1.00369e+06
+cost = 1.07561e+07
+cost = 1.83581e+06
+cost = 1.07774e+06
+cost = 1.00879e+06
+cost = 1.00282e+06
+cost = 3.86943e+11
+cost = 2.63243e+11
+cost = 1.6729e+11
+cost = 4.13071e+10
+cost = 1.02785e+06
+cost = 990378
+cost = 964704
+cost = 951239
+cost = 931621
+cost = 903910
+cost = 5.28412e+10
+cost = 5.45541e+08
+cost = 885667
+cost = 877229
+cost = 2.21849e+11
+cost = 1.48632e+11
+cost = 1.00102e+11
+cost = 6.37021e+10
+cost = 3.46178e+10
+cost = 8.676e+09
+cost = 1.35489e+08
+cost = 872812
+cost = 1.76012e+06
+cost = 871714
+cost = 873375
+cost = 8.65008e+10
+cost = 1.07025e+10
+cost = 9.52373e+07
+cost = 836637
+cost = 9.15431e+11
+cost = 2.31687e+11
+cost = 1.03621e+11
+cost = 4.64261e+10
+cost = 6.29179e+09
+cost = 1.37314e+07
+cost = 1.36614e+06
+cost = 887741
+cost = 833394
+cost = 1.19962e+11
+cost = 2.17107e+10
+cost = 740416
+cost = 9.14836e+06
+cost = 923092
+cost = 739050
+cost = 754563
+cost = 739684
+cost = 734527
+cost = 731483
+cost = 4.59099e+09
+cost = 709312
+cost = 8.83094e+10
+cost = 815521
+cost = 677547
+cost = 662281
+cost = 654797
+cost = 660641
+cost = 2.7524e+06
+cost = 670502
+cost = 660335
+cost = 6.17957e+06
+cost = 655707
+cost = 9.91708e+07
+cost = 8.38621e+06
+cost = 1.28292e+06
+cost = 709644
+cost = 657299
+cost = 654584
+cost = 1.335e+11
+cost = 2.10729e+06
+cost = 633623
+cost = 1.32508e+11
+cost = 2.10367e+09
+cost = 645761
+cost = 619301
+cost = 619646
+cost = 612802
+cost = 607584
+cost = 2.42074e+10
+cost = 1.02908e+07
+cost = 592536
+cost = 1.22e+11
+cost = 1.79865e+10
+cost = 1.57399e+08
+cost = 598975
+cost = 589596
+cost = 683664
+cost = 584763
+cost = 3.95012e+08
+cost = 2.28399e+07
+cost = 1.1401e+06
+cost = 582288
+cost = 577731
+cost = 575163
+cost = 3.46994e+07
+cost = 3.3702e+06
+cost = 815386
+cost = 587307
+cost = 573706
+cost = 1.24292e+07
+cost = 938037
+cost = 590611
+cost = 564936
+cost = 545917
+cost = 527286
+cost = 1.31416e+06
+cost = 505332
+cost = 499561
+cost = 494960
+cost = 994239
+cost = 502395
+cost = 482842
+cost = 484282
+cost = 449319
+cost = 429202
+cost = 426076
+cost = 421762
+cost = 400576
+cost = 391181
+cost = 361204
+cost = 325726
+cost = 5.59542e+06
+cost = 232621
+cost = 2.8899e+08
+cost = 9.05307e+06
+cost = 220443
+cost = 196953
+cost = 181832
+cost = 163739
+cost = 133857
+cost = 130461
+cost = 128057
+cost = 120674
+cost = 114628
+cost = 109527
+cost = 104245
+cost = 101759
+cost = 99260.2
+cost = 96761.3
+cost = 92752.1
+cost = 1.37634e+06
+cost = 88144
+cost = 1.24237e+11
+cost = 4.54554e+08
+cost = 5.30452e+06
+cost = 739343
+cost = 99052.4
+cost = 87509.2
+cost = 87759.4
+cost = 84016.1
+cost = 82737.2
+cost = 82134.3
+cost = 81375.5
+cost = 79595.1
+cost = 85625.9
+cost = 78338.4
+cost = 77072.2
+cost = 75544.9
+cost = 75024.3
+cost = 74715.7
+cost = 74367.4
+cost = 74156.3
+cost = 72998.6
+cost = 71530.4
+cost = 67822.1
+cost = 6.84283e+11
+cost = 2.4855e+11
+cost = 1.71547e+10
+cost = 2.16838e+08
+cost = 1.06583e+07
+cost = 526969
+cost = 74891.4
+cost = 67444.3
+cost = 1.55513e+07
+cost = 1.25796e+06
+cost = 156507
+cost = 73422.7
+cost = 67680.8
+cost = 67203.8
+cost = 164229
+cost = 63887.9
+cost = 62731
+cost = 62025.9
+cost = 61235.3
+cost = 61000.7
+cost = 60449.7
+cost = 59525
+cost = 534401
+cost = 83506.9
+cost = 59554.5
+cost = 59237.9
+cost = 59147.3
+cost = 58778
+cost = 59735.9
+cost = 58750.9
+cost = 58304.6
+cost = 57198.1
+cost = 56126.5
+cost = 53939
+cost = 51549.7
+cost = 39755.7
+cost = 36660.8
+cost = 31244
+cost = 115916
+cost = 40617.7
+cost = 31906.9
+cost = 31004.6
+cost = 29538.5
+cost = 24894.7
+cost = 3.30591e+07
+cost = 1.46749e+06
+cost = 57445.7
+cost = 25514.6
+cost = 24565.6
+cost = 23209.3
+cost = 24195.7
+cost = 23107.9
+cost = 22796.6
+cost = 22131
+cost = 22567.1
+cost = 21924.8
+cost = 21628.3
+cost = 20233.5
+cost = 18004
+cost = 20602.3
+cost = 17514.9
+cost = 17202.7
+cost = 16202.7
+cost = 15847.1
+cost = 15447.8
+cost = 15096.3
+cost = 14740.9
+cost = 51539.9
+cost = 20768.8
+cost = 15191.6
+cost = 14677.1
+cost = 14154.4
+cost = 14066
+cost = 13862.9
+cost = 13748.9
+cost = 13594
+cost = 13496.9
+cost = 13462.2
+cost = 13436.5
+cost = 13373.5
+cost = 180440
+cost = 27615.4
+cost = 14183
+cost = 13418.3
+cost = 13377.1
+cost = 13370.8
+cost = 13897.8
+cost = 13357
+cost = 13283.8
+cost = 13227.1
+cost = 4.58981e+10
+cost = 1.89407e+09
+cost = 23106
+cost = 14549
+cost = 13388
+cost = 13239.6
+cost = 13221.3
+cost = 13063.8
+cost = 12967.6
+cost = 12665.9
+cost = 3.72576e+07
+cost = 753915
+cost = 12476.9
+cost = 3.01573e+07
+cost = 2.7321e+06
+cost = 177288
+cost = 18116.9
+cost = 12458.4
+cost = 18779.6
+cost = 13145
+cost = 12391.9
+cost = 12261.3
+cost = 12209.8
+cost = 38533.4
+cost = 12235.3
+cost = 12171.7
+cost = 13019.6
+cost = 12129
+cost = 12102.7
+cost = 12630.9
+cost = 12071.9
+cost = 12060.8
+cost = 12050
+cost = 12043.6
+cost = 12062.9
+cost = 12039.6
+cost = 12038.6
+cost = 12017.9
+cost = 11962
+cost = 14112.5
+cost = 12158.9
+cost = 11961.3
+cost = 11832.3
+cost = 11784.6
+cost = 11755.1
+cost = 11725.6
+cost = 11659.3
+cost = 11803.1
+cost = 11600.3
+cost = 11526
+cost = 11402.5
+cost = 11610.5
+cost = 11365.4
+cost = 11920.4
+cost = 11279.3
+cost = 11121.6
+cost = 11074.5
+cost = 11027.5
+cost = 10944.5
+cost = 10885.9
+cost = 10769.8
+cost = 10632.6
+cost = 30307.5
+cost = 10535.5
+cost = 130870
+cost = 19539.4
+cost = 10741.3
+cost = 10499.3
+cost = 18163.1
+cost = 19464
+cost = 12639.9
+cost = 10753.1
+cost = 10489
+cost = 5.45126e+10
+cost = 1.24378e+10
+cost = 2.99247e+06
+cost = 12480
+cost = 10490.1
+cost = 10373.1
+cost = 12057.9
+cost = 10548.3
+cost = 10352.9
+cost = 10133.1
+cost = 6.94051e+34
+cost = 6.21478e+22
+cost = 2.35508e+12
+cost = 4.59471e+11
+cost = 1.81885e+11
+cost = 7.11146e+10
+cost = 1.56869e+10
+cost = 1.4632e+08
+cost = 11282.9
+cost = 9940.76
+cost = 1.47895e+06
+cost = 11001.3
+cost = 10103.8
+cost = 9932.91
+cost = 20040.8
+cost = 10769.9
+cost = 9755.39
+cost = 9566.95
+cost = 9486.34
+cost = 9411.6
+cost = 9324.02
+cost = 9193.1
+cost = 12129.8
+cost = 9886.79
+cost = 9275.37
+cost = 9144.33
+cost = 9062.16
+cost = 5.71185e+09
+cost = 9386.11
+cost = 9054.31
+cost = 8962.44
+cost = 8877.52
+cost = 1.43896e+11
+cost = 3.59995e+10
+cost = 8680.91
+cost = 2.00819e+11
+cost = 1.21056e+11
+cost = 5.27815e+10
+cost = 6.00909e+09
+cost = 8.09698e+06
+cost = 8651.52
+cost = 8637.17
+cost = 97392.1
+cost = 8633.62
+cost = 8850.12
+cost = 8632.73
+cost = 8632.29
+cost = 8633.66
+cost = 8547.08
+cost = 8485.11
+cost = 10648.4
+cost = 8386.54
+cost = 8294.94
+cost = 8152.4
+cost = 8002.63
+cost = 10800.7
+cost = 8079.61
+cost = 7956.21
+cost = 8423.51
+cost = 7873.79
+cost = 7861.41
+cost = 7849.64
+cost = 7842.15
+cost = 7836.96
+cost = 7826.33
+cost = 7919.3
+cost = 7830.36
+cost = 7822.39
+cost = 7790.97
+cost = 7763.12
+cost = 8.96825e+09
+cost = 7.39607e+08
+cost = 2.51952e+07
+cost = 9979.23
+cost = 7756.76
+cost = 7753.6
+cost = 7752.14
+cost = 7751.34
+cost = 7980.83
+cost = 7769.68
+cost = 7752.09
+cost = 7750.59
+cost = 7744.72
+cost = 7724.54
+cost = 7696.31
+cost = 1.16931e+08
+cost = 1.31988e+06
+cost = 7640.17
+cost = 2.26046e+11
+cost = 1.29086e+11
+cost = 4.9312e+10
+cost = 4.47266e+09
+cost = 2.17186e+08
+cost = 1.21557e+07
+cost = 722728
+cost = 85671.2
+cost = 15344.1
+cost = 8196.18
+cost = 7652.97
+cost = 7638.8
+cost = 7639.22
+cost = 7603.4
+cost = 7566.45
+cost = 31030
+cost = 7552.13
+cost = 418275
+cost = 35100.7
+cost = 8058.93
+cost = 7542.32
+cost = 3.33854e+08
+cost = 4.36966e+06
+cost = 337512
+cost = 43661.3
+cost = 10923.2
+cost = 7749.53
+cost = 7542.07
+cost = 7527.19
+cost = 7521.44
+cost = 7515.07
+cost = 7512.23
+cost = 7510.25
+cost = 7509.07
+cost = 7625.07
+cost = 7515.43
+cost = 7507.9
+cost = 7507.83
+cost = 7507.57
+cost = 7507.37
+cost = 7507.37
+cost = 1.59805e+12
+cost = 1.51442e+12
+cost = 1.37681e+12
+cost = 7.00916e+11
+cost = 3.05286e+11
+cost = 7.18518e+10
+cost = 6.87068e+09
+cost = 5.29224e+08
+cost = 4.03077e+07
+cost = 3.22826e+06
+cost = 277258
+cost = 28322.5
+cost = 8474.55
+cost = 7527.54
+cost = 7509.19
+cost = 7507.42
+cost = 7507.12
+cost = 7507.03
+cost = 7507.03
+cost = 7507.03
+cost = 7507.03
+cost = 7507.03
+cost = 7507.03
+cost = 7507.02
+cost = 7507.01
+cost = 7506.99
+cost = 7512.64
+cost = 7507.49
+cost = 7507.01
+cost = 7507.03
+cost = 7507
+cost = 7507
+cost = 7507
+cost = 7506.99
+cost = 7506.98
+cost = 7507.23
+cost = 7506.99
+cost = 7506.99
+cost = 7506.98
+cost = 7506.97
+cost = 7506.97
+cost = 7506.96
+cost = 7506.96
+cost = 7506.93
+cost = 7506.91
+cost = 7812.68
+cost = 7516.25
+cost = 7506.78
+cost = 7507.69
+cost = 7506.82
+cost = 7506.88
+cost = 7506.82
+cost = 7506.81
+cost = 7506.8
+cost = 7506.78
+cost = 7506.76
+cost = 7506.79
+cost = 7506.77
+cost = 7506.75
+cost = 7506.75
+cost = 7506.75
+cost = 7506.74
+cost = 7506.7
+cost = 7506.6
+cost = 7506.09
+cost = 7504.54
+cost = 17229.4
+cost = 7655.21
+cost = 7503.15
+cost = 1.74676e+06
+cost = 62643
+cost = 12025.4
+cost = 7833.35
+cost = 7519.42
+cost = 7502.76
+cost = 7501.85
+cost = 7501.35
+cost = 7503.37
+cost = 7501.38
+cost = 7501.25
+cost = 7501.21
+cost = 7501.12
+cost = 7500.93
+cost = 7500.72
+cost = 7500.3
+cost = 7499.45
+cost = 7492.47
+cost = 43074.2
+cost = 9606.77
+cost = 7531.04
+cost = 7489.91
+cost = 7490.33
+cost = 7485.72
+cost = 7485.16
+cost = 322381
+cost = 7468.36
+cost = 878685
+cost = 7482.17
+cost = 7464.28
+cost = 2.96784e+06
+cost = 7524.02
+cost = 7461.28
+cost = 2.5116e+08
+cost = 2.27679e+06
+cost = 10440.1
+cost = 7460.9
+cost = 7458.93
+cost = 7458.01
+cost = 7457.06
+cost = 7640.89
+cost = 7456.11
+cost = 1.02116e+09
+cost = 7.17402e+07
+cost = 880118
+cost = 75366
+cost = 11446
+cost = 7552.86
+cost = 7455.55
+cost = 7455.97
+cost = 7454.3
+cost = 7453.43
+cost = 7445.14
+cost = 7437.4
+cost = 7410.53
+cost = 7383.66
+cost = 7349.67
+cost = 7315.76
+cost = 7252.53
+cost = 3.55864e+10
+cost = 3.80175e+06
+cost = 7211.75
+cost = 1.40888e+11
+cost = 5.88564e+10
+cost = 3.21891e+09
+cost = 334566
+cost = 7187.73
+cost = 7176.38
+cost = 1.53073e+11
+cost = 8.10253e+10
+cost = 1.36607e+10
+cost = 8.86143e+08
+cost = 1.87689e+07
+cost = 14899.6
+cost = 7169.48
+cost = 7166.07
+cost = 8079.59
+cost = 7269.68
+cost = 7176.31
+cost = 9.06432e+10
+cost = 2.08241e+10
+cost = 8.4827e+08
+cost = 5.92943e+07
+cost = 2.46546e+06
+cost = 45192.1
+cost = 7159.84
+cost = 1.34784e+11
+cost = 6.34183e+10
+cost = 6.8875e+09
+cost = 4.32894e+08
+cost = 3.65073e+07
+cost = 2.69357e+06
+cost = 233249
+cost = 17717.2
+cost = 7169.74
+cost = 7158.4
+cost = 7157.72
+cost = 7157.35
+cost = 7157.14
+cost = 7161.28
+cost = 7158.76
+cost = 7285.38
+cost = 7092.43
+cost = 7085.06
+cost = 7082.3
+cost = 7081.04
+cost = 7080.53
+cost = 7079.91
+cost = 7079.39
+cost = 7061.28
+cost = 3.92071e+07
+cost = 7299.81
+cost = 7035.25
+cost = 4.31346e+10
+cost = 2.37132e+09
+cost = 156207
+cost = 7059.45
+cost = 7025.4
+cost = 4.27913e+10
+cost = 3.32695e+09
+cost = 5.2127e+06
+cost = 15660.6
+cost = 7011.49
+cost = 7981.05
+cost = 7105.67
+cost = 7017.54
+cost = 7016.81
+cost = 7015.77
+cost = 7012.66
+cost = 7008.77
+cost = 11484.7
+cost = 7226.01
+cost = 7007.19
+cost = 7006
+cost = 7004.72
+cost = 7002.93
+cost = 7003.24
+cost = 7002.35
+cost = 7002.01
+cost = 7021.79
+cost = 7003.08
+cost = 7001.4
+cost = 7001.11
+cost = 7000.83
+cost = 6996.69
+cost = 6993.49
+cost = 6988.46
+cost = 2.28626e+08
+cost = 5.87645e+06
+cost = 6982.68
+cost = 4.29297e+09
+cost = 4.33642e+08
+cost = 4.19526e+07
+cost = 4.31378e+06
+cost = 449850
+cost = 56953.9
+cost = 12312.2
+cost = 7453.32
+cost = 7008.13
+cost = 6982.73
+cost = 6982.64
+cost = 6982.61
+cost = 6982.62
+cost = 6980.31
+cost = 6979.02
+cost = 6976.31
+cost = 6975.23
+cost = 6977.26
+cost = 6974.61
+cost = 7089.3
+cost = 6995
+cost = 6977.55
+cost = 6974.34
+cost = 6973.85
+cost = 6973.8
+cost = 6973.64
+cost = 6973.22
+cost = 6972.56
+cost = 6970.8
+cost = 6966.73
+cost = 6959.06
+cost = 117101
+cost = 7041.57
+cost = 6951.47
+cost = 6947.95
+cost = 1.3297e+08
+cost = 4.4982e+06
+cost = 499547
+cost = 15541
+cost = 7724.81
+cost = 6992.21
+cost = 6946.73
+cost = 6938.64
+cost = 6928.61
+cost = 6924.06
+cost = 6928.33
+cost = 6921.55
+cost = 6918.37
+cost = 6912.47
+cost = 577944
+cost = 35421.6
+cost = 6992.24
+cost = 6908.71
+cost = 6906.91
+cost = 6907.67
+cost = 6908.25
+cost = 6906.45
+cost = 6904.37
+cost = 6902.98
+cost = 6902.18
+cost = 6900.73
+cost = 6900.58
+cost = 6902.93
+cost = 6900.17
+cost = 6900.07
+cost = 6899.89
+cost = 6899.84
+cost = 6899.66
+cost = 6899.54
+cost = 6899.42
+cost = 6897.24
+cost = 6894.73
+cost = 6885.33
+cost = 6867.25
+cost = 1.03801e+11
+cost = 26058.4
+cost = 6847.15
+cost = 7.10243e+11
+cost = 4.38323e+11
+cost = 1.7449e+11
+cost = 483192
+cost = 17221.1
+cost = 6836.66
+cost = 7287.44
+cost = 6834.51
+cost = 6825.47
+cost = 6815.86
+cost = 6835
+cost = 6809
+cost = 55216.5
+cost = 9989.4
+cost = 6861.73
+cost = 6806.22
+cost = 6806.49
+cost = 6807.87
+cost = 6806.37
+cost = 6805.8
+cost = 6805.25
+cost = 6812.78
+cost = 6804.04
+cost = 6804.2
+cost = 6803.8
+cost = 6803.63
+cost = 6803.33
+cost = 6803.02
+cost = 6802.6
+cost = 6796.51
+cost = 6785.55
+cost = 3.06518e+08
+cost = 3.08002e+06
+cost = 287011
+cost = 25068.4
+cost = 7098.49
+cost = 6783.05
+cost = 6789.33
+cost = 6782.47
+cost = 6782.56
+cost = 6779.13
+cost = 6777.12
+cost = 6774.68
+cost = 6780.43
+cost = 6773.61
+cost = 19580.9
+cost = 8101.26
+cost = 6881.84
+cost = 6777.73
+cost = 6773.13
+cost = 6865.16
+cost = 6785.3
+cost = 6774.67
+cost = 6773.27
+cost = 6773.11
+cost = 6772.88
+cost = 6772.46
+cost = 6772.03
+cost = 6770.82
+cost = 6768.24
+cost = 6761.04
+cost = 6744.66
+cost = 3.13962e+11
+cost = 1.73439e+11
+cost = 2.41456e+10
+cost = 6734.28
+cost = 6729.34
+cost = 1.25492e+09
+cost = 32568.6
+cost = 6728.64
+cost = 6728.36
+cost = 6728.22
+cost = 6728.09
+cost = 6796.08
+cost = 6728.14
+cost = 6728.1
+cost = 6729.31
+cost = 6733.31
+cost = 6729.16
+cost = 6728.21
+cost = 6716.94
+cost = 6709.71
+cost = 6708.93
+cost = 6708.82
+cost = 6708.62
+cost = 6708.48
+cost = 6708.11
+cost = 6707.84
+cost = 6706.59
+cost = 6704.87
+cost = 6701.16
+cost = 8353.85
+cost = 6701.92
+cost = 6699.91
+cost = 4.27378e+10
+cost = 7.30472e+08
+cost = 816224
+cost = 52214.9
+cost = 8183.72
+cost = 6715.16
+cost = 6697.24
+cost = 3.08449e+06
+cost = 268500
+cost = 26063.3
+cost = 8346.02
+cost = 6827.54
+cost = 6701.11
+cost = 6696.54
+cost = 6696.9
+cost = 6690.04
+cost = 6680.43
+cost = 5.05742e+10
+cost = 2.88253e+09
+cost = 34587.7
+cost = 9389.57
+cost = 6871.68
+cost = 6681.04
+cost = 6677.54
+cost = 6676.76
+cost = 6644.74
+cost = 6626.22
+cost = 6607.25
+cost = 3.58085e+07
+cost = 6623.44
+cost = 6592.49
+cost = 5.43429e+06
+cost = 6587.68
+cost = 2.40889e+08
+cost = 1.08421e+07
+cost = 143069
+cost = 6583.33
+cost = 9865.4
+cost = 6582.63
+cost = 1.25289e+09
+cost = 1.21586e+08
+cost = 1.09587e+07
+cost = 996534
+cost = 110618
+cost = 16950.2
+cost = 7353.36
+cost = 6605.79
+cost = 6582.73
+cost = 6582.33
+cost = 6582.69
+cost = 6582.32
+cost = 6582.63
+cost = 6582.58
+cost = 6582.4
+cost = 6582.39
+cost = 6582.39
+cost = 6582.39
+cost = 6582.69
+cost = 6582.39
+cost = 6582.69
+cost = 6582.69
+cost = 6582.69
+cost = 6582.69
+cost = 6582.69
+cost = 6582.69
+cost = 6582.39
+cost = 6582.39
+cost = 6582.39
+cost = 6582.39
+cost = 6582.69
+cost = 6582.39
+cost = 6582.39
+cost = 6582.39
+cost = 6582.69
+cost = 6582.69
+cost = 6582.39
+cost = 6582.69
+cost = 6582.69
+cost = 6582.39
+cost = 6582.39
+cost = 6582.39
+cost = 6582.69
+cost = 6582.69
+cost = 6582.69
+cost = 6582.39
+cost = 6582.39
+cost = 6582.69
+cost = 6582.69
+cost = 6582.39
+cost = 6582.69
+cost = 6582.69
+cost = 6582.39
+cost = 6582.39
+cost = 6582.69
+cost = 6582.39
+cost = 6582.39
+cost = 6582.39
+cost = 6582.39
+cost = 6582.69
+[32mFinish optimization![0m
+Optimization time usage: 2722.31 ms
+Final cost: 6582.69
+Total Duration: 13.0081
+Maximum Vel: 1.01087
+Maximum Acc: 0.665799
+Arm Maximum Vel: 0.0624059
+Max Z: -0.060, Min Z: -0.222
+Max X: 0.094, Min X: -0.090
+Max Y: 0.004, Min Y: -0.010
+[MANAGE]: Published cost 6582.693 to /finish_simulation topic.
+[31m[ERROR] [1785701407.387359116]: [MANAGE]: No logs to publish![0m
+[0m[INFO] [1785701407.387553015]: [1;32m[MANAGE]: The trajectory is published![0m[0m
+... logging to /home/amplanner/am-planner-r7r3-r1-ws/runs/lift_r7r3_r1_gpu_run_01/ros_home/log/22ed934a-8eae-11f1-8170-00155dca07d1/roslaunch-SC-202607101733-88011.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/plan_manage/launch/run_in_sim_other.launch
+[1mstarted roslaunch server http://SC-202607101733:39487/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /lift/end_pt: [1.0, 0.0, 1.5]
+ * /lift/inter_points: [[2.0, 0.0, 0.0, ...
+ * /lift/num_points: 1
+ * /lift/object/position: [0.0, 0.0, 0.6]
+ * /lift/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /lift/start_pt: [-3.0, 0.0, 1.2]
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 2
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /press/end_pt: [2.0, 0.0, 1.2]
+ * /press/inter_points: [[2.0, 0.0, 0.0, ...
+ * /press/num_points: 1
+ * /press/object/position: [0.0, 0.0, 0.6]
+ * /press/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /press/start_pt: [-2.0, 0.0, 1.2]
+ * /pull/end_pt: [3.0, 0.0, 1.2]
+ * /pull/inter_points: [[2.0, -0.4, 0.2,...
+ * /pull/num_points: 4
+ * /pull/object/position: [0.0, 0.0, 0.63]
+ * /pull/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /pull/start_pt: [-3.0, 0.0, 1.2]
+ * /push/end_pt: [2.0, 0.0, 1.2]
+ * /push/inter_points: [[2.0, -0.3, 1.0,...
+ * /push/num_points: 2
+ * /push/object/position: [0.0, 1.0, 0.6]
+ * /push/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /push/start_pt: [-2.0, 0.0, 1.2]
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /random_complex/g...
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [5000000000.0, 10...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: True
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 1.0
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /staticR: 0.08
+ * /task: lift
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+ * /write/end_pt: [3.0, 0.0, 1.5]
+ * /write/inter_points: [[2.0, -0.2, 0.18...
+ * /write/num_points: 6
+ * /write/object/position: [0.0, 0.0, 0.62]
+ * /write/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /write/start_pt: [-3.0, 0.0, 1.5]
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/amplanner/am-planner-r7r3-r1-ws/src/src/plan/plan_manage/launch/run_in_sim_other.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [88078][0m
+[se3_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

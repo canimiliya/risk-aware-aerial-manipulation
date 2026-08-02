@@ -1,0 +1,7 @@
+{
+  "status": "NOT_COMPARABLE",
+  "cpu_source": "docs/evidence/S1-R1/write_diagnosis/workspace_model_cpu_benchmark.json",
+  "gpu_rows": [],
+  "speedup": null,
+  "reason": "GPU benchmark 未运行。"
+}

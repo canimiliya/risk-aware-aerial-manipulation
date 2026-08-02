@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RUN_DEPENDENCY_BLOCKED",
+  "torch_version": "2.7.1+cu128 wheel present, import blocked",
+  "rows": [],
+  "reason": "无法在没有 nvidia-cu12 运行库的情况下运行 GPU 模型微基准。"
+}

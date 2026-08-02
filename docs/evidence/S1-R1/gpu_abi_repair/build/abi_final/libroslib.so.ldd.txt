@@ -1,0 +1,8 @@
+	linux-vdso.so.1 (0x0000776cde6ae000)
+	librospack.so => not found
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x0000776cde62e000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x0000776cde44c000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x0000776cde431000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x0000776cde23f000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000776cde6b0000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x0000776cde0f0000)

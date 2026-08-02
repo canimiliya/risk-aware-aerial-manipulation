@@ -1,0 +1,9 @@
+{
+  "received_topics": [],
+  "expected_topics": [
+    "/trajectory",
+    "/trajectory_arm"
+  ],
+  "timeout_s": 150.0,
+  "success": false
+}

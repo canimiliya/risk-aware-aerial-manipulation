@@ -1,0 +1,14 @@
+task=write
+run_id=write_r7r3_r1_gpu_run_02
+timeout_s=1200
+workspace=/home/amplanner/am-planner-r7r3-r1-ws
+overlay=/home/amplanner/ros-noetic-py39-overlay-r7r3-r1
+started_utc=2026-08-02T19:56:03Z
+---python---
+Python 3.9.23
+2.7.1+cu128
+True
+NVIDIA GeForce RTX 5060 Ti
+(12, 0)
+---nvidia-smi---
+NVIDIA GeForce RTX 5060 Ti, 581.29

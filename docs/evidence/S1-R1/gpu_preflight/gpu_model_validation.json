@@ -1,0 +1,7 @@
+{
+  "status": "NOT_RUN_DEPENDENCY_BLOCKED",
+  "strict_load": false,
+  "forward": false,
+  "autograd": false,
+  "reason": "Torch CUDA runtime 未完成安装。"
+}

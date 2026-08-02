@@ -1,0 +1,38 @@
+{
+  "utc": "2026-07-31T13:52:26Z",
+  "elapsed_s": 1202.811,
+  "se3_node": [
+    {
+      "pid": 246,
+      "ppid": 205,
+      "state": "Rsl",
+      "cpu_percent": 1937.0,
+      "rss_kb": 689736,
+      "vsz_kb": 6494504,
+      "threads": 52,
+      "elapsed_s": 1198,
+      "args": "/home/amplanner/am-planner-ws/devel/.private/plan_manage/lib/plan_manage/se3_node ~object_odom:=/odom_converter/converted_odom1 ~trajectory:=/trajectory ~trajectory_arm:=/trajectory_arm __name:=se3_node __log:=/home/amplanner/am-planner-ws/logs/s1-r1-runtime/write_diagnosis_run_01/ros_home/log/43bd8c18-8ce4-11f1-b46a-00155d6b0466/se3_node-1.log",
+      "io": {
+        "rchar": 28240318,
+        "wchar": 208379,
+        "syscr": 4439,
+        "syscw": 7588,
+        "read_bytes": 332656640,
+        "write_bytes": 319488,
+        "cancelled_write_bytes": 0,
+        "voluntary_ctxt_switches": 40251,
+        "nonvoluntary_ctxt_switches": 14550
+      }
+    }
+  ],
+  "log": {
+    "size": 141771,
+    "mtime": 1785505946.3177013
+  },
+  "cost_count": 7289,
+  "latest_cost": 14955600.0,
+  "minimum_cost": 14955600.0,
+  "recent_20_relative_drop": 6.686011526683872e-05,
+  "topics": null,
+  "snapshot_s": 1200
+}

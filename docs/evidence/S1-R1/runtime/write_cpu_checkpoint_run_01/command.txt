@@ -1,0 +1,3 @@
+task=write
+run_id=write_cpu_checkpoint_run_01
+started_utc=2026-07-31T09:16:51Z

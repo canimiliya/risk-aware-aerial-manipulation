@@ -1,0 +1,13 @@
+finished_utc=2026-07-31T08:28:58Z
+Python 3.8.20
+Name: torch
+Version: 2.4.1+cpu
+Summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Home-page: https://pytorch.org/
+Author: PyTorch Team
+Author-email: packages@pytorch.org
+License: BSD-3
+Location: /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages
+Requires: filelock, fsspec, jinja2, networkx, sympy, typing-extensions
+Required-by: 
+WARNING: Package(s) not found: torchaudio, torchvision, triton

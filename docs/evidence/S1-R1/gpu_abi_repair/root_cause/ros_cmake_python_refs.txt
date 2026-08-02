@@ -1,0 +1,184 @@
+/opt/ros/noetic/share/catkin/cmake/interrogate_setup_dot_py.py:61:    See http://docs.python.org/distutils/setupscript.html
+/opt/ros/noetic/share/catkin/cmake/interrogate_setup_dot_py.py:102:    :param pkgs: [list of str] python_packages declared in catkin package
+/opt/ros/noetic/share/catkin/cmake/interrogate_setup_dot_py.py:103:    :param modules: [list of str] python modules
+/opt/ros/noetic/share/catkin/cmake/interrogate_setup_dot_py.py:137:                'catkin_export_python does not support setup.py files that combine across multiple directories: %s in %s, %s in %s' % (pkgname, location, root_name, locations[root_name]))
+/opt/ros/noetic/share/catkin/cmake/test/tests.cmake:110:    COMMAND ${PYTHON_EXECUTABLE} "${catkin_EXTRAS_DIR}/test/remove_test_results.py" "${CATKIN_TEST_RESULTS_DIR}")
+/opt/ros/noetic/share/catkin/cmake/test/tests.cmake:156:    set(cmd_wrapper ${CATKIN_ENV} ${PYTHON_EXECUTABLE}
+/opt/ros/noetic/share/catkin/cmake/test/tests.cmake:186:      COMMAND ${PYTHON_EXECUTABLE} "${catkin_EXTRAS_DIR}/test/remove_test_results.py" "${CATKIN_TEST_RESULTS_DIR}/${PROJECT_NAME}"
+/opt/ros/noetic/share/catkin/cmake/test/nosetests.cmake:87:  "nosetests${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}"
+/opt/ros/noetic/share/catkin/cmake/test/nosetests.cmake:88:  "nosetests-${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}"
+/opt/ros/noetic/share/catkin/cmake/test/nosetests.cmake:89:  "nosetests${PYTHON_VERSION_MAJOR}"
+/opt/ros/noetic/share/catkin/cmake/test/nosetests.cmake:90:  "nosetests-${PYTHON_VERSION_MAJOR}"
+/opt/ros/noetic/share/catkin/cmake/test/nosetests.cmake:95:  if("${PYTHON_VERSION_MAJOR}" STREQUAL "3")
+/opt/ros/noetic/share/catkin/cmake/test/nosetests.cmake:96:    message(STATUS "nosetests not found, Python tests can not be run (try installing package 'python3-nose')")
+/opt/ros/noetic/share/catkin/cmake/test/nosetests.cmake:98:    message(STATUS "nosetests not found, Python tests can not be run (try installing package 'python-nose')")
+/opt/ros/noetic/share/catkin/cmake/order_paths.py:10:    sys.exit('ImportError: "catkin_pkg.workspaces import get_spaces" failed: %s\nMake sure that you have installed "catkin_pkg", it is up to date and on the PYTHONPATH.' % e)
+/opt/ros/noetic/share/catkin/cmake/order_paths.py:14:    sys.exit('ImportError: "from catkin_pkg.workspaces import order_paths" failed: %s\nMake sure that you have installed "catkin_pkg", it is up to date and on the PYTHONPATH.' % e)
+/opt/ros/noetic/share/catkin/cmake/catkin_destinations.cmake:14:# :outvar CATKIN_PACKAGE_PYTHON_DESTINATION:
+/opt/ros/noetic/share/catkin/cmake/catkin_destinations.cmake:15:#   See :cmake:data:`CATKIN_PACKAGE_PYTHON_DESTINATION`.
+/opt/ros/noetic/share/catkin/cmake/catkin_destinations.cmake:29:# :outvar CATKIN_GLOBAL_PYTHON_DESTINATION:
+/opt/ros/noetic/share/catkin/cmake/catkin_destinations.cmake:30:#   See :cmake:data:`CATKIN_GLOBAL_PYTHON_DESTINATION`.
+/opt/ros/noetic/share/catkin/cmake/catkin_destinations.cmake:53:    set(CATKIN_PACKAGE_PYTHON_DESTINATION ${CATKIN_GLOBAL_PYTHON_DESTINATION}/${PROJECT_NAME})
+/opt/ros/noetic/share/catkin/cmake/catkin_generate_environment.cmake:97:    catkin_install_python(PROGRAMS
+/opt/ros/noetic/share/catkin/cmake/all.cmake:123:# python-integration: catkin_python_setup.cmake, interrogate_setup_dot_py.py, templates/__init__.py.in, templates/script.py.in, templates/python_distutils_install.bat.in, templates/python_distutils_install.sh.in, templates/safe_execute_install.cmake.in
+/opt/ros/noetic/share/catkin/cmake/all.cmake:131:    catkin_install_python
+/opt/ros/noetic/share/catkin/cmake/all.cmake:141:    python # defines PYTHON_EXECUTABLE, required by empy
+/opt/ros/noetic/share/catkin/cmake/all.cmake:182:set(CATKIN_GLOBAL_PYTHON_DESTINATION ${PYTHON_INSTALL_DIR})
+/opt/ros/noetic/share/catkin/cmake/all.cmake:204:set(GENERATE_ENVIRONMENT_CACHE_COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_BINARY_DIR}/catkin_generated/generate_cached_setup.py)
+/opt/ros/noetic/share/catkin/cmake/all.cmake:207:# the first call to catkin_python_setup() if the Python install directory didn't exist yet
+/opt/ros/noetic/share/catkin/cmake/all.cmake:226:include(${catkin_EXTRAS_DIR}/catkin_python_setup.cmake)
+/opt/ros/noetic/share/catkin/cmake/list_insert_in_workspace_order.cmake:17:    assert(PYTHON_EXECUTABLE)
+/opt/ros/noetic/share/catkin/cmake/list_insert_in_workspace_order.cmake:19:      ${CATKIN_ENV} ${PYTHON_EXECUTABLE}
+/opt/ros/noetic/share/catkin/cmake/parse_package_xml.py:42:    sys.exit('ImportError: "from catkin_pkg.package import parse_package" failed: %s\nMake sure that you have installed "catkin_pkg", it is up to date and on the PYTHONPATH.' % e)
+/opt/ros/noetic/share/catkin/cmake/parse_package_xml.py:103:    # Force utf8 encoding for python3.
+/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:8:# :outvar catkin_LIBRARIES: contains the libraries of all searched components.
+/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:9:#    For use with CMake ``target_link_libraries(<target> ${catkin_LIBRARIES})``.
+/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:49:    set(catkin_LIBRARIES "")
+/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:98:      catkin_pack_libraries_with_build_configuration(catkin_LIBRARIES ${catkin_LIBRARIES})
+/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:100:      list_append_deduplicate(catkin_LIBRARIES ${_libraries})
+/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:102:      catkin_unpack_libraries_with_build_configuration(catkin_LIBRARIES ${catkin_LIBRARIES})
+/opt/ros/noetic/share/catkin/cmake/platform/windows.cmake:123:function(add_python_executable)
+/opt/ros/noetic/share/catkin/cmake/platform/windows.cmake:129:    message(FATAL_ERROR "add_python_executable() called with unused arguments: ${ARG_UNPARSED_ARGUMENTS}")
+/opt/ros/noetic/share/catkin/cmake/platform/windows.cmake:138:      "${CMAKE_CURRENT_BINARY_DIR}/catkin_generated/add_python_executable/${ARG_TARGET_NAME}/${WRAPPER_NAME}.cpp")
+/opt/ros/noetic/share/catkin/cmake/platform/windows.cmake:140:      "${catkin_EXTRAS_DIR}/templates/python_win32_wrapper.cpp.in"
+/opt/ros/noetic/share/catkin/cmake/templates/cfg-extras.context.py.in:12:CATKIN_GLOBAL_PYTHON_DESTINATION = '@CATKIN_GLOBAL_PYTHON_DESTINATION@'
+/opt/ros/noetic/share/catkin/cmake/templates/cfg-extras.context.py.in:20:CATKIN_PACKAGE_PYTHON_DESTINATION = '@CATKIN_PACKAGE_PYTHON_DESTINATION@'
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.bat.in:10:if NOT EXIST "@SETUPTOOLS_INSTALL_PREFIX@\@PYTHON_INSTALL_DIR@\" (
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.bat.in:11:  mkdir "@SETUPTOOLS_INSTALL_PREFIX@\@PYTHON_INSTALL_DIR@"
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.bat.in:14:set "PYTHONPATH=@SETUPTOOLS_INSTALL_PREFIX@\@PYTHON_INSTALL_DIR@;@CMAKE_BINARY_DIR@\@PYTHON_INSTALL_DIR@"
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.bat.in:21:"@PYTHON_EXECUTABLE@" ^
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:36: * @file python_win32_wrapper.cpp
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:130:        std::string pythonExecutable = "python.exe";
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:134:            pythonExecutable = firstLine;
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:138:        fprintf(stderr, "[DEBUG] Python executable: %s\n", pythonExecutable.c_str());
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:141:        return pythonExecutable;
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:217:    const auto pythonExecutable = GetPythonExecutable(exeFullPath);
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:218:    const auto pythonScript = FindPythonScript(exeFullPath);
+/opt/ros/noetic/share/catkin/cmake/templates/python_win32_wrapper.cpp.in:219:    std::string command = GetDoubleQuotedString(pythonExecutable) + " " + GetDoubleQuotedString(pythonScript);
+/opt/ros/noetic/share/catkin/cmake/templates/setup.fish.in:53:set -x PYTHONPATH $PYTHONPATH
+/opt/ros/noetic/share/catkin/cmake/templates/relay.py.in:3:# creates a relay to a python script source file, acting as that file.
+/opt/ros/noetic/share/catkin/cmake/templates/relay.py.in:5:python_script = '@PYTHON_SCRIPT@'
+/opt/ros/noetic/share/catkin/cmake/templates/relay.py.in:6:with open(python_script, 'r') as fh:
+/opt/ros/noetic/share/catkin/cmake/templates/relay.py.in:10:        '__file__': python_script,
+/opt/ros/noetic/share/catkin/cmake/templates/relay.py.in:14:    exec(compile(fh.read(), python_script, 'exec'), context)
+/opt/ros/noetic/share/catkin/cmake/templates/generate_cached_setup.py.in:8:# find the import for catkin's python package - either from source space or from an installed underlay
+/opt/ros/noetic/share/catkin/cmake/templates/generate_cached_setup.py.in:10:    sys.path.insert(0, os.path.join('@catkin_EXTRAS_DIR@', '..', 'python'))
+/opt/ros/noetic/share/catkin/cmake/templates/generate_cached_setup.py.in:16:        python_path = os.path.join(workspace, '@CATKIN_GLOBAL_PYTHON_DESTINATION@')
+/opt/ros/noetic/share/catkin/cmake/templates/generate_cached_setup.py.in:17:        if os.path.isdir(os.path.join(python_path, 'catkin')):
+/opt/ros/noetic/share/catkin/cmake/templates/generate_cached_setup.py.in:18:            sys.path.insert(0, python_path)
+/opt/ros/noetic/share/catkin/cmake/templates/setup.sh.in:41:export PYTHONPATH
+/opt/ros/noetic/share/catkin/cmake/templates/script.py.in:1:#!@PYTHON_EXECUTABLE@
+/opt/ros/noetic/share/catkin/cmake/templates/script.py.in:4:# creates a relay to a python script source file, acting as that file.
+/opt/ros/noetic/share/catkin/cmake/templates/script.py.in:6:python_script = '@PYTHON_SCRIPT@'
+/opt/ros/noetic/share/catkin/cmake/templates/script.py.in:7:with open(python_script, 'r') as fh:
+/opt/ros/noetic/share/catkin/cmake/templates/script.py.in:11:        '__file__': python_script,
+/opt/ros/noetic/share/catkin/cmake/templates/script.py.in:15:    exec(compile(fh.read(), python_script, 'exec'), context)
+/opt/ros/noetic/share/catkin/cmake/templates/_setup_util.py.in:1:#!@PYTHON_EXECUTABLE@
+/opt/ros/noetic/share/catkin/cmake/templates/_setup_util.py.in:65:    'PYTHONPATH': '@PYTHON_INSTALL_DIR@',
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:18:set _PYTHON="@PYTHON_EXECUTABLE@"
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:21:set PYTHONHOME=
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:22:set _PYTHONEXE=
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:23:for /f "usebackq tokens=*" %%a in ('%_PYTHON%') do (
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:24:  set PYTHONHOME=%%~dpa
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:25:  set _PYTHONEXE=%%~nxa
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:26:  set _PYTHON="%%~dpa%%~nxa"
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:31:set _PYTHON_FOUND=
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:32:for %%i in (%_PYTHONEXE%) do (
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:33:  set _PYTHON_FOUND="%%~$PATH:i"
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:37:if not "!_PYTHON_FOUND!" == "!_PYTHON!" (
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:38:  set PATH=%PYTHONHOME%;%PYTHONHOME%Scripts;!PATH!
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:43:FOR /F "delims=" %%i IN ('^"%_PYTHON% "%_SETUP_UTIL%" %*^"') DO call %%i
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:65:set _PYTHON=
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:66:set _PYTHONEXE=
+/opt/ros/noetic/share/catkin/cmake/templates/setup.bat.in:67:set _PYTHON_FOUND=
+/opt/ros/noetic/share/catkin/cmake/templates/env-hook.context.py.in:12:CATKIN_GLOBAL_PYTHON_DESTINATION = '@CATKIN_GLOBAL_PYTHON_DESTINATION@'
+/opt/ros/noetic/share/catkin/cmake/templates/env-hook.context.py.in:20:CATKIN_PACKAGE_PYTHON_DESTINATION = '@CATKIN_PACKAGE_PYTHON_DESTINATION@'
+/opt/ros/noetic/share/catkin/cmake/templates/env-hook.context.py.in:33:PYTHON_EXECUTABLE = '@PYTHON_EXECUTABLE@'
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.sh.in:9:            /bin/echo "otherwise python's distutils will bork things."
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.sh.in:19:echo_and_run mkdir -p "$DESTDIR@CMAKE_INSTALL_PREFIX@/@PYTHON_INSTALL_DIR@"
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.sh.in:21:# Note that PYTHONPATH is pulled from the environment to support installing
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.sh.in:25:    PYTHONPATH="@CMAKE_INSTALL_PREFIX@/@PYTHON_INSTALL_DIR@:@CMAKE_BINARY_DIR@/@PYTHON_INSTALL_DIR@:$PYTHONPATH" \
+/opt/ros/noetic/share/catkin/cmake/templates/python_distutils_install.sh.in:27:    "@PYTHON_EXECUTABLE@" \
+/opt/ros/noetic/share/catkin/cmake/templates/__init__.py.in:9:__extended_path = '@PACKAGE_PYTHONPATH@'.split(';')
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:7:#   catkin_install_python(PROGRAMS files... DESTINATION <dir> [OPTIONAL])
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:13:function(catkin_install_python signature)
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:16:    message(FATAL_ERROR "catkin_install_python() only supports the PROGRAMS signature (not '${signature}').")
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:20:    message(FATAL_ERROR "catkin_install_python() called without required DESTINATION argument.")
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:30:      set(regex "^#![ \t]*/([^\r\n]+)/env[ \t]+python([ \t]*[\r\n])")
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:36:        get_filename_component(python_name ${PYTHON_EXECUTABLE} NAME)
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:37:        string(REGEX REPLACE "${regex}" "#!/\\1/env ${python_name}\\2" data "${data}")
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:61:      # Hook for a platform specific wrapper around the modified python script
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:63:      add_python_executable(SCRIPT_NAME ${name}
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:65:        TARGET_NAME ${PROJECT_NAME}_${name}_exec_install_python
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:72:        set(PYTHON_SCRIPT ${source_file})
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:77:        # Hook for a platform specific wrapper around the modified python script
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:78:        add_python_executable(SCRIPT_NAME ${name}
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:81:          TARGET_NAME ${PROJECT_NAME}_${name}_exec_cip_devel_python
+/opt/ros/noetic/share/catkin/cmake/catkin_install_python.cmake:86:      message(FATAL_ERROR "catkin_install_python() called with non-existing file '${source_file}'.")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:18:function(catkin_python_setup)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:20:    message(FATAL_ERROR "catkin_python_setup() called with unused arguments: ${ARGN}")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:24:    message(FATAL_ERROR "generate_messages() must be called after catkin_python_setup() in project '${PROJECT_NAME}'")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:27:    message(FATAL_ERROR "generate_dynamic_reconfigure_options() must be called after catkin_python_setup() in project '${PROJECT_NAME}'")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:31:    message(FATAL_ERROR "catkin_python_setup() called without 'setup.py' in project folder ' ${${PROJECT_NAME}_SOURCE_DIR}'")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:37:  assert(PYTHON_EXECUTABLE)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:39:    ${CATKIN_ENV} ${PYTHON_EXECUTABLE}
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:45:  debug_message(10 "catkin_python_setup() in project '{PROJECT_NAME}' executes:  ${cmd}")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:56:    message(FATAL_ERROR "catkin_python_setup() version in setup.py (${${PROJECT_NAME}_SETUP_PY_VERSION}) differs from version in package.xml (${${PROJECT_NAME}_VERSION})")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:60:  # the cached environment won't contain it in the PYTHONPATH
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:61:  if(NOT EXISTS "${CATKIN_DEVEL_PREFIX}/${PYTHON_INSTALL_DIR}")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:62:    file(MAKE_DIRECTORY "${CATKIN_DEVEL_PREFIX}/${PYTHON_INSTALL_DIR}")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:67:  # generate relaying __init__.py for each python package
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:74:        # mark that catkin_python_setup() was called and the setup.py file contains a package with the same name as the current project
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:76:        set(${PROJECT_NAME}_CATKIN_PYTHON_SETUP_HAS_PACKAGE_INIT TRUE PARENT_SCOPE)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:84:      set(PACKAGE_PYTHONPATH ${CMAKE_CURRENT_SOURCE_DIR}/${path})
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:86:        ${CATKIN_DEVEL_PREFIX}/${PYTHON_INSTALL_DIR}/${pkg}/__init__.py
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:91:  # generate relay-script for each python module (and __init__.py files) if available
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:98:      set(PYTHON_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/${module_dir}/${module})
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:99:      if(EXISTS ${PYTHON_SCRIPT})
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:101:        file(MAKE_DIRECTORY "${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_PYTHON_DESTINATION}/${path}")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:103:          ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_PYTHON_DESTINATION}/${module}
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:107:          set(PYTHON_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/${module_dir}/${path}/__init__.py)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:108:          if(EXISTS ${PYTHON_SCRIPT})
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:109:            file(MAKE_DIRECTORY "${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_PYTHON_DESTINATION}/${path}")
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:111:              ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_PYTHON_DESTINATION}/${path}/__init__.py
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:122:   # generate relay-script for each python script
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:128:    set(PYTHON_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/${script})
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:133:    add_python_executable(SCRIPT_NAME ${name}
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:138:    add_python_executable(SCRIPT_NAME ${name}
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:144:  assert(PYTHON_INSTALL_DIR)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:154:      ${CMAKE_CURRENT_BINARY_DIR}/catkin_generated/python_distutils_install.sh)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:155:    configure_file(${catkin_EXTRAS_DIR}/templates/python_distutils_install.sh.in
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:159:    # need to convert install prefix to native path for python setuptools --prefix (its fussy about \'s)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:160:    file(TO_NATIVE_PATH ${CMAKE_INSTALL_PREFIX} PYTHON_INSTALL_PREFIX)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:162:      ${CMAKE_CURRENT_BINARY_DIR}/catkin_generated/python_distutils_install.bat)
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:163:    configure_file(${catkin_EXTRAS_DIR}/templates/python_distutils_install.bat.in
+/opt/ros/noetic/share/catkin/cmake/catkin_python_setup.cmake:168:  # generate python script which gets executed at install time
+/opt/ros/noetic/share/catkin/cmake/catkin_package_xml.cmake:74:  safe_execute_process(COMMAND ${PYTHON_EXECUTABLE}
+/opt/ros/noetic/share/catkin/cmake/python.cmake:1:# the CMake variable PYTHON_INSTALL_DIR has the same value as the Python function catkin.builder.get_python_install_dir()
+/opt/ros/noetic/share/catkin/cmake/python.cmake:3:set(PYTHON_VERSION "$ENV{ROS_PYTHON_VERSION}" CACHE STRING "Specify specific Python version to use ('major.minor' or 'major')")
+/opt/ros/noetic/share/catkin/cmake/python.cmake:4:find_package(PythonInterp ${PYTHON_VERSION} REQUIRED)
+/opt/ros/noetic/share/catkin/cmake/python.cmake:6:message(STATUS "Using PYTHON_EXECUTABLE: ${PYTHON_EXECUTABLE}")
+/opt/ros/noetic/share/catkin/cmake/python.cmake:8:set(_PYTHON_PATH_VERSION_SUFFIX "${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}")
+/opt/ros/noetic/share/catkin/cmake/python.cmake:14:option(SETUPTOOLS_DEB_LAYOUT "Enable debian style python package layout" ${enable_setuptools_deb_layout})
+/opt/ros/noetic/share/catkin/cmake/python.cmake:18:  set(PYTHON_PACKAGES_DIR dist-packages)
+/opt/ros/noetic/share/catkin/cmake/python.cmake:21:  if("${PYTHON_VERSION_MAJOR}" STREQUAL "3")
+/opt/ros/noetic/share/catkin/cmake/python.cmake:22:    set(_PYTHON_PATH_VERSION_SUFFIX "${PYTHON_VERSION_MAJOR}")
+/opt/ros/noetic/share/catkin/cmake/python.cmake:26:  set(PYTHON_PACKAGES_DIR site-packages)
+/opt/ros/noetic/share/catkin/cmake/python.cmake:32:  set(PYTHON_INSTALL_DIR lib/python${_PYTHON_PATH_VERSION_SUFFIX}/${PYTHON_PACKAGES_DIR}
+/opt/ros/noetic/share/catkin/cmake/python.cmake:33:    CACHE INTERNAL "This needs to be in PYTHONPATH when 'setup.py install' is called.  And it needs to match.  But setuptools won't tell us where it will install things.")
+/opt/ros/noetic/share/catkin/cmake/python.cmake:35:  # Windows setuptools installs to lib/site-packages not lib/python2.7/site-packages
+/opt/ros/noetic/share/catkin/cmake/python.cmake:36:  set(PYTHON_INSTALL_DIR lib/${PYTHON_PACKAGES_DIR}
+/opt/ros/noetic/share/catkin/cmake/python.cmake:37:    CACHE INTERNAL "This needs to be in PYTHONPATH when 'setup.py install' is called.  And it needs to match.  But setuptools won't tell us where it will install things.")
+/opt/ros/noetic/share/catkin/cmake/catkin_download.cmake:59:    COMMAND ${PYTHON_EXECUTABLE} ${catkin_EXTRAS_DIR}/test/download_checkmd5.py ${url} ${output} ${ARG_MD5} ${required}
+/opt/ros/noetic/share/catkin/cmake/em_expand.cmake:18:  # since empy contains a specific python version in its shebang line
+/opt/ros/noetic/share/catkin/cmake/em_expand.cmake:19:  # override the used python version by invoking it explicitly
+/opt/ros/noetic/share/catkin/cmake/em_expand.cmake:20:  set(command "${PYTHON_EXECUTABLE};${EMPY_SCRIPT}")
+/opt/ros/noetic/share/catkin/cmake/empy.cmake:1:function(find_python_module module)
+/opt/ros/noetic/share/catkin/cmake/empy.cmake:11:    execute_process(COMMAND "${PYTHON_EXECUTABLE}" "-c" "import re, ${module}; print(re.compile('/__init__.py.*').sub('',${module}.__file__))"
+/opt/ros/noetic/share/catkin/cmake/empy.cmake:22:endfunction(find_python_module)
+/opt/ros/noetic/share/catkin/cmake/empy.cmake:28:    find_python_module(em)
+/opt/ros/noetic/share/catkin/cmake/empy.cmake:30:      message(FATAL_ERROR "Unable to find either executable 'empy' or Python module 'em'... try installing the package 'python3-empy'")
+/opt/ros/noetic/share/catkin/cmake/em/order_packages.cmake.em:7:    raise RuntimeError('ImportError: "from catkin_pkg.cmake import get_metapackage_cmake_template_path" failed: %s\nMake sure that you have installed "catkin_pkg", it is up to date and on the PYTHONPATH.' % e)
+/opt/ros/noetic/share/catkin/cmake/em/order_packages.cmake.em:11:    raise RuntimeError('ImportError: "from catkin_pkg.topological_order import topological_order" failed: %s\nMake sure that you have installed "catkin_pkg", it is up to date and on the PYTHONPATH.' % e)
+/opt/ros/noetic/share/catkin/cmake/em/order_packages.cmake.em:15:    raise RuntimeError('ImportError: "from catkin_pkg.package import InvalidPackage" failed: %s\nMake sure that you have installed "catkin_pkg", it is up to date and on the PYTHONPATH.' % e)
+/opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:17:#   ``catkin_LIBRARIES`` and ``${PROJECT_NAME}_LIBRARIES`` of other

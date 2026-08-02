@@ -1,0 +1,15 @@
+﻿
+
+Used            : 301631733760
+Free            : 483502125056
+CurrentLocation : Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation
+Name            : D
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : D:\
+Description     : Data
+MaximumSize     : 
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     : 
+
+
+

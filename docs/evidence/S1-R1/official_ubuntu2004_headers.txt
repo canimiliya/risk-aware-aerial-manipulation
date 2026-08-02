@@ -1,0 +1,30 @@
+HTTP/1.1 200 Connection established
+
+HTTP/1.1 301 Moved Permanently
+Content-Length: 0
+Server: Kestrel
+Location: https://wslstorestorage.blob.core.windows.net/wslblob/CanonicalGroupLimited.UbuntuonWindows_2004.2021.825.0.AppxBundle
+Request-Context: appId=cid-v1:d94c0f68-64bf-4036-8409-a0e761bb7ee1
+X-Response-Cache-Status: True
+Expires: Thu, 30 Jul 2026 20:20:37 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Thu, 30 Jul 2026 20:20:37 GMT
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+
+HTTP/1.1 200 Connection established
+
+HTTP/1.1 200 OK
+Content-Length: 937972031
+Content-Type: application/zip
+Content-MD5: 4TuZ/WrF2ZhaVw7HfIEuwg==
+Last-Modified: Wed, 26 Jan 2022 22:47:01 GMT
+ETag: 0x8D9E11DC495E3B9
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: b4a1fb8b-101e-0099-1760-208e15000000
+x-ms-version: 2009-09-19
+x-ms-lease-status: unlocked
+x-ms-blob-type: BlockBlob
+Date: Thu, 30 Jul 2026 20:20:38 GMT
+

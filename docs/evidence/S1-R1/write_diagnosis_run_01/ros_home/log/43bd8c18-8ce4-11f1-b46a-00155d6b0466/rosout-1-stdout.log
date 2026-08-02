@@ -1,0 +1,3 @@
+logging to /home/amplanner/am-planner-ws/logs/s1-r1-runtime/write_diagnosis_run_01/ros_home/log/43bd8c18-8ce4-11f1-b46a-00155d6b0466/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout

@@ -1,0 +1,162 @@
+{
+  "source": {
+    "tasks_yaml": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\third_party\\am-planner\\src\\plan\\plan_manage\\launch\\tasks.yaml",
+    "launch_files": {
+      "grasp": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\third_party\\am-planner\\src\\plan\\plan_manage\\launch\\run_in_sim_grasp.launch",
+      "lift": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\third_party\\am-planner\\src\\plan\\plan_manage\\launch\\run_in_sim_other.launch",
+      "write": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\third_party\\am-planner\\src\\plan\\plan_manage\\launch\\run_in_sim_other.launch"
+    },
+    "read_only": true
+  },
+  "tasks": [
+    {
+      "task": "grasp",
+      "yaml": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\third_party\\am-planner\\src\\plan\\plan_manage\\launch\\run_in_sim_grasp.launch",
+      "num_points_declared": 0,
+      "inter_points_count": 0,
+      "inter_point_vector_lengths": [],
+      "inter_point_nonzero_flag_counts": {},
+      "start_pt": [
+        -3.0,
+        0.0,
+        1.2
+      ],
+      "end_pt": [
+        3.0,
+        0,
+        1.2
+      ],
+      "object_position": [
+        0.0,
+        0.0,
+        0.6
+      ],
+      "launch": "run_in_sim_grasp.launch",
+      "jps_segments": 2,
+      "corridor_segments": 1
+    },
+    {
+      "task": "lift",
+      "yaml": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\third_party\\am-planner\\src\\plan\\plan_manage\\launch\\tasks.yaml",
+      "num_points_declared": 1,
+      "inter_points_count": 1,
+      "inter_point_vector_lengths": [
+        17
+      ],
+      "inter_point_nonzero_flag_counts": {
+        "inter_point_flag_6": 1,
+        "inter_point_flag_7": 1,
+        "inter_point_flag_11": 1,
+        "inter_point_flag_12": 1,
+        "inter_point_flag_13": 1
+      },
+      "start_pt": [
+        -3.0,
+        0.0,
+        1.2
+      ],
+      "end_pt": [
+        1.0,
+        0.0,
+        1.5
+      ],
+      "object_position": [
+        0.0,
+        0.0,
+        0.6
+      ],
+      "launch": "run_in_sim_other.launch",
+      "jps_segments": 2,
+      "corridor_segments": 1
+    },
+    {
+      "task": "write",
+      "yaml": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\third_party\\am-planner\\src\\plan\\plan_manage\\launch\\tasks.yaml",
+      "num_points_declared": 6,
+      "inter_points_count": 6,
+      "inter_point_vector_lengths": [
+        17
+      ],
+      "inter_point_nonzero_flag_counts": {
+        "inter_point_flag_15": 2,
+        "inter_point_flag_16": 5,
+        "inter_point_flag_11": 3,
+        "inter_point_flag_12": 3,
+        "inter_point_flag_13": 3,
+        "inter_point_flag_14": 2
+      },
+      "start_pt": [
+        -3.0,
+        0.0,
+        1.5
+      ],
+      "end_pt": [
+        3.0,
+        0.0,
+        1.5
+      ],
+      "object_position": [
+        0.0,
+        0.0,
+        0.62
+      ],
+      "launch": "run_in_sim_other.launch",
+      "jps_segments": 7,
+      "corridor_segments": 6
+    }
+  ],
+  "optimizer_config": {
+    "grasp": {
+      "Rho": 500,
+      "TotalT": 20,
+      "QdIntervals": 96,
+      "VelMax": 5,
+      "OptRelTol1": 0.0001,
+      "OptRelTol2": 1e-06,
+      "MultiLayerOpt": "True",
+      "PrintCost": "False",
+      "SafeMargin": 0.03,
+      "PenaltyPVTB": "[100000000.0, 10000000.0, 10000000.0, 10000000.0]",
+      "PenaltyArm": "[1000000.0, 10000000.0, 1000.0]",
+      "PenaltyGraspWeight": "[100000000000.0,  100000000.0, 0.0, 100000000.0]"
+    },
+    "lift": {
+      "Rho": 500,
+      "TotalT": 20,
+      "QdIntervals": 96,
+      "VelMax": 1.0,
+      "OptRelTol1": 0.0001,
+      "OptRelTol2": 1e-06,
+      "MultiLayerOpt": "True",
+      "PrintCost": "True",
+      "SafeMargin": 0.03,
+      "PenaltyPVTB": "[100000000.0, 10000000.0, 10000000.0, 10000000.0]",
+      "PenaltyArm": "[1000000.0, 10000000.0, 1000.0]",
+      "PenaltyGraspWeight": "[5000000000.0, 100000000.0, 0.0, 100000000.0]"
+    },
+    "write": {
+      "Rho": 0.001,
+      "TotalT": 20,
+      "QdIntervals": 96,
+      "VelMax": 1.5,
+      "OptRelTol1": 1e-08,
+      "OptRelTol2": 1e-10,
+      "MultiLayerOpt": "False",
+      "PrintCost": "True",
+      "SafeMargin": 0.02,
+      "PenaltyPVTB": "[100000000.0, 10000000.0, 10000000.0, 10000000.0]",
+      "PenaltyArm": "[1000000.0, 10000000.0, 1000.0]",
+      "PenaltyGraspWeight": "[5000000000.0, 100000000.0, 10000000.0, 100000.0]"
+    }
+  },
+  "comparison": {
+    "write_vs_grasp_inter_points": 6,
+    "write_vs_lift_inter_points": 5,
+    "write_has_longest_declared_path": true,
+    "write_multilayer_opt": false,
+    "grasp_lift_multilayer_opt": true,
+    "write_rel_tol_is_stricter": true,
+    "write_rho_is_smaller": true,
+    "publish_requires_optimizer_return": true
+  }
+}

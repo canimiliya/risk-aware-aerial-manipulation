@@ -1,0 +1,176 @@
+[33m[WARN] [1785487074.196189089]: POINT BE BUILD![0m
+[33m[WARN] [1785487074.403920301]: [SE3_PLANNER]: No setting guide points ![0m
+[0m[INFO] [1785487073.401342828]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785487073.406566395]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785487073.432124937]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785487073.432141951]: dim: 466, 333, 133[0m
+[0m[INFO] [1785487073.443907045]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785487073.447410742]: [MANAGE]: Grasp mode init![0m
+[0m[INFO] [1785487073.447967756]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785487073.447979172]: [MANAGE]: PlannerManage init done![0m
+[0m[INFO] [1785487074.192676962]: [SE3_PLANNER]: please wait~[0m
+[0m[INFO] [1785487074.198129009]: [0;33mReceived the point cloud![0m[0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785487074.470843936]: [JPS]: Map has been updated[0m
+[33m[WARN] [1785487075.403882836]: [SE3_PLANNER]: No setting guide points ![0m
+[0m[INFO] [1785487075.403937446]: [SE3_PLANNER]: Begin path searching![0m
+[0m[INFO] [1785487075.403951462]: [SE3_PLANNER]: Searching path from (-3.000, 0.000, 1.200) to (0.000, 0.000, 0.750)[0m
+Start:  -3   0 1.2
+Goal:     0    0 0.75
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 115.000000, h: 0.000000!
+Expand [27837] nodes!
+[0m[INFO] [1785487075.624668905]: [SE3_PLANNER]: Searching path from (0.000, 0.000, 0.750) to (3.000, 0.000, 1.200)[0m
+Start:    0    0 0.75
+Goal:    3   0 1.2
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 115.000000, h: 0.000000!
+Expand [27522] nodes!
+[0m[INFO] [1785487075.867142058]: [SE3_PLANNER]: JPS search path![0m
+[0m[INFO] [1785487075.867175087]: [32m[SE3_PLANNER]: JPS path searching time: 0.463 s[0m[0m
+[0m[INFO] [1785487075.867192644]: Path published![0m
+[0m[INFO] [1785487075.867197795]: [SE3_PLANNER]: inter_ids size: 1[0m
+overlap = 5
+[0m[INFO] [1785487075.884159614]: [SE3_PLANNER]: The inter point is in the polyhedron 1 and 2 ![0m
+[33mBegin to optimize the trajectory with MINCO...[0m
+[1;32m[SE3_PLANNER]: MINCO setup successfully![0m
+[0m[INFO] [1785487075.892106003]: [SE3GCOPTER]: set initial done[0m
+[0m[INFO] [1785487075.892135598]: [SE3GCOPTER]: backward done[0m
+[Workspace_Model_H]: Using device: cpu
+[Workspace_Model_H]: Error initializing workspace probability model: RuntimeError: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+
+At:
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(364): _validate_device
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(391): _deserialize
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(414): default_restore_location
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(1386): restore_location
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(1466): load_tensor
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(1492): persistent_load
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(1525): _load
+  /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages/torch/serialization.py(1114): load
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  [Workspace_Model_H]: Failed to initialize workspace probability model
+[31m[se3_node-1] process has died [pid 178, exit code -6, cmd /home/amplanner/am-planner-ws/devel/.private/plan_manage/lib/plan_manage/se3_node ~object_odom:=/odom_converter/converted_odom1 ~trajectory:=/trajectory ~trajectory_arm:=/trajectory_arm __name:=se3_node __log:=/home/amplanner/am-planner-ws/logs/s1-r1-runtime/grasp_torch_run_01_retry_03/ros_home/log/1d2d9c56-8cbb-11f1-814f-00155d6b0dfb/se3_node-1.log].
+log file: /home/amplanner/am-planner-ws/logs/s1-r1-runtime/grasp_torch_run_01_retry_03/ros_home/log/1d2d9c56-8cbb-11f1-814f-00155d6b0dfb/se3_node-1*.log[0m
+... logging to /home/amplanner/am-planner-ws/logs/s1-r1-runtime/grasp_torch_run_01_retry_03/ros_home/log/1d2d9c56-8cbb-11f1-814f-00155d6b0dfb/roslaunch-SC-202607101733-137.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/amplanner/am-planner-ws/src/am-planner/src/plan/plan_manage/launch/run_in_sim_grasp.launch
+[1mstarted roslaunch server http://SC-202607101733:45051/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /end_x: 3.0
+ * /end_y: 0.0
+ * /end_z: 1.2
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 0
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /object_px: 0.0
+ * /object_py: 0.0
+ * /object_pz: 0.6
+ * /object_qw: 0.1
+ * /object_qx: 0.0
+ * /object_qy: 0.0
+ * /object_qz: 0.0
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /random_complex/g...
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [100000000000.0, ...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: False
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /start_x: -3.0
+ * /start_y: 0.0
+ * /start_z: 1.2
+ * /staticR: 0.08
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/amplanner/am-planner-ws/src/am-planner/src/plan/plan_manage/launch/run_in_sim_grasp.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [178][0m
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

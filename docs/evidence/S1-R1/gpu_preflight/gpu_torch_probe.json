@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED_BEFORE_KERNEL_PROBE",
+  "python_version": "3.9.23",
+  "torch_wheel": "torch-2.7.1+cu128-cp39-cp39-manylinux_2_28_x86_64.whl",
+  "torch_wheel_sha256": "738ac9b3ad79e62a21256e3d250cee858de955f93f89fab114da8d1919347d06",
+  "torch_import": false,
+  "cuda_available": null,
+  "device_name": null,
+  "capability": null,
+  "reason": "官方 Torch wheel 已下载并校验，但其 nvidia-cu12 运行库依赖未能在本轮网络窗口内完成安装；因此没有运行 CUDA tensor/matmul/nn/autograd，不能声称 kernel 通过。"
+}

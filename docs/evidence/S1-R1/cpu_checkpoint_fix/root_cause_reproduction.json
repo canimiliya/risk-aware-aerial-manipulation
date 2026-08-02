@@ -1,0 +1,25 @@
+{
+  "torch_version": "2.4.1+cpu",
+  "cuda_available": false,
+  "weight_path": "/home/amplanner/am-planner-ws/src/am-planner/src/plan/traj_opt/weights/workspace_probability_weight.pth",
+  "weight_bytes": 236450,
+  "weight_sha256": "506f59645e3e076c3910774054d0538a7664362e39cecb9b06e2d5e01aecca49",
+  "positional_dict": {
+    "name": "positional_dict",
+    "success": false,
+    "error_type": "RuntimeError",
+    "error": "Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU."
+  },
+  "keyword_map_location": {
+    "name": "keyword_map_location",
+    "success": true,
+    "result": {
+      "object_type": "OrderedDict",
+      "key_count": 10,
+      "tensor_count": 10,
+      "all_finite": true,
+      "has_nonzero_tensor": true
+    }
+  },
+  "root_cause_confirmed": true
+}

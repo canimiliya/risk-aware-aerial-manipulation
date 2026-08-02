@@ -1,0 +1,23 @@
+diff --git a/src/plan/plan_manage/CMakeLists.txt b/src/plan/plan_manage/CMakeLists.txt
+index 8ad8088..b1a783e 100755
+--- a/src/plan/plan_manage/CMakeLists.txt
++++ b/src/plan/plan_manage/CMakeLists.txt
+@@ -49,11 +49,15 @@ add_executable(se3_node
+     src/plan_manage.cpp
+ )
+ 
++# Keep the embedded interpreter on the explicitly discovered Python 3.9
++# runtime.  The ROS/catkin export may contain a legacy Python 3.8 item.
++set(_se3_node_catkin_libs ${catkin_LIBRARIES})
++list(FILTER _se3_node_catkin_libs EXCLUDE REGEX "libpython3\\.8")
+ target_link_libraries(se3_node
+-  ${catkin_LIBRARIES}
+   pybind11::embed
++  ${_se3_node_catkin_libs}
+   autodiff::autodiff
+ )
+ 
+ # 确保编译时能找到Python.h
+-target_include_directories(se3_node PRIVATE ${PYTHON_INCLUDE_DIRS})
+\ No newline at end of file
++target_include_directories(se3_node PRIVATE ${PYTHON_INCLUDE_DIRS})

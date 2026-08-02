@@ -1,0 +1,5 @@
+initial_head=5b12ec829b826392675ab732c53cda96b7550ad7
+initial_branch=agent/s1-r1-am-planner-install-basic-repro
+current_precommit_head=5b12ec829b826392675ab732c53cda96b7550ad7
+stash_before_and_after=stash@{0}, stash@{1} present; no stash operation performed
+coordination_handling=.coordination preserved, locally ignored through .git/info/exclude, not staged

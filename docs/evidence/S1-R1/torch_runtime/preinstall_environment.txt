@@ -1,0 +1,44 @@
+started_utc=2026-07-31T08:28:52Z
+Package           Version
+----------------- -----------
+autodiff          1.1.2
+catkin-pkg        1.0.0
+catkin-tools      0.9.4
+defusedxml        0.7.1
+distro            1.9.0
+docutils          0.20.1
+empy              3.3.4
+filelock          3.16.1
+fsspec            2025.2.0
+Jinja2            3.1.6
+MarkupSafe        2.1.5
+mpmath            1.3.0
+networkx          3.1
+numpy             1.24.4
+osrf-pycommon     2.0.2
+pip               24.3.1
+psutil            7.0.0
+pyparsing         3.1.4
+python-dateutil   2.9.0.post0
+PyYAML            6.0.2
+rospkg            1.6.0
+setuptools        75.3.0
+six               1.17.0
+sympy             1.13.3
+torch             2.4.1+cpu
+transforms3d      0.4.2
+typing_extensions 4.12.2
+wheel             0.45.1
+Name: torch
+Version: 2.4.1+cpu
+Summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Home-page: https://pytorch.org/
+Author: PyTorch Team
+Author-email: packages@pytorch.org
+License: BSD-3
+Location: /home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/site-packages
+Requires: filelock, fsspec, jinja2, networkx, sympy, typing-extensions
+Required-by: 
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sde       1007G   11G  946G   2% /
+/dev/sde       1007G   11G  946G   2% /

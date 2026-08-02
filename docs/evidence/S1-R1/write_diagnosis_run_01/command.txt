@@ -1,0 +1,5 @@
+task=write
+run_id=write_diagnosis_run_01
+started_utc=2026-07-31T13:32:24Z
+runner_exit=2
+finished_utc=2026-07-31T13:52:41Z

@@ -1,0 +1,421 @@
+[33m[WARN] [1785484642.425966263]: [SE3_PLANNER]: No setting guide points ![0m
+[0m[INFO] [1785484641.423669457]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785484641.428067746]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785484641.448073275]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785484641.448094419]: dim: 466, 333, 133[0m
+[0m[INFO] [1785484641.458847289]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785484641.462499578]: [MANAGE]: Grasp mode init![0m
+[0m[INFO] [1785484641.463306480]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785484641.463320347]: [MANAGE]: PlannerManage init done![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484643.425907339]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484644.425896831]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484645.425978087]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484646.425903332]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484647.425969918]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484648.425932647]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484649.425926206]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484650.425914174]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484651.425933298]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484652.425921347]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484653.425927193]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484654.425979261]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484655.425949664]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484656.425926175]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484657.425936543]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484658.425949723]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484659.425916603]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484660.425911686]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484661.425906484]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484662.425906953]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484663.425924445]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484664.425892685]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484665.425924703]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484666.425957103]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484667.426002404]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484668.425957538]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484669.425959239]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484670.425913488]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484671.426022949]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484672.426000944]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484673.426070104]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484674.425974057]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484675.426158883]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484676.426023318]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484677.425922700]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484678.425898031]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484679.425950770]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484680.425878835]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484681.425898249]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484682.425949447]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484683.425897407]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484684.425934357]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484685.425954965]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484686.425928842]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484687.425907797]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484688.425899636]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484689.425930296]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484690.425932321]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484691.425932288]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484692.425922881]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484693.426023342]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484694.425917493]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484695.425908635]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484696.425934439]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484697.425922370]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484698.425915378]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484699.425867774]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484700.425947168]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484701.425964198]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484702.426028768]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484703.425943352]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484704.425888387]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484705.426015991]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484706.425897872]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484707.425882824]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484708.425868532]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484709.425887197]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484710.425881512]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484711.425902193]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484712.425934026]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484713.425874624]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484714.425907395]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484715.425875063]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484716.425866384]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484717.425900578]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484718.425871075]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484719.425882359]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484720.425922893]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484721.425883901]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484722.425878740]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484723.425878287]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484724.425929151]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484725.425927446]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484726.426061160]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484727.425958274]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484728.425954791]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484729.425915877]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484730.425900254]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484731.425973693]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484732.425964479]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484733.426013286]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484734.425958730]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484735.425927518]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484736.426019948]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484737.425959699]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484738.425972200]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484739.425938519]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484740.425928988]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484741.425964879]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484742.425948182]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484743.426109219]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484744.425963969]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484745.425955230]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484746.426041511]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484747.425974773]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484748.425928812]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484749.425927558]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484750.425974154]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484751.425906772]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484752.425910398]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484753.425895861]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484754.425906905]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484755.425916423]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484756.425894705]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484757.425912109]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484758.425920266]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484759.425905281]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484760.426012738]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484761.425994445]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484762.426033426]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484763.425964120]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484764.425894608]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484765.425978324]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484766.425947772]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484767.425981402]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484768.425902852]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484769.425919361]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484770.425926803]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484771.425926202]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484772.425920322]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484773.425925880]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484774.425963139]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484775.425935998]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484776.425891702]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484777.425938107]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484778.425904498]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484779.425960590]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484780.425925159]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484781.425935254]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484782.425937747]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484783.425938328]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484784.425944641]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484785.425913372]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484786.425933335]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484787.425937582]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484788.425916826]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785484789.425931896]: [SE3_PLANNER]: No setting guide points ![0m
+[MANAGE]: Waiting for PCL data!
+... logging to /home/amplanner/am-planner-ws/logs/s1-r1-runtime/grasp_run_01_retry_02/ros_home/log/73946d5a-8cb5-11f1-bda8-00155d6b05fa/roslaunch-SC-202607101733-593.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/amplanner/am-planner-ws/src/am-planner/src/plan/plan_manage/launch/run_in_sim_grasp.launch
+[1mstarted roslaunch server http://SC-202607101733:40719/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /end_x: 3.0
+ * /end_y: 0.0
+ * /end_z: 1.2
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 0
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /object_px: 0.0
+ * /object_py: 0.0
+ * /object_pz: 0.6
+ * /object_qw: 0.1
+ * /object_qx: 0.0
+ * /object_qy: 0.0
+ * /object_qz: 0.0
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /random_complex/g...
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [100000000000.0, ...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: False
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /start_x: -3.0
+ * /start_y: 0.0
+ * /start_z: 1.2
+ * /staticR: 0.08
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/amplanner/am-planner-ws/src/am-planner/src/plan/plan_manage/launch/run_in_sim_grasp.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [632][0m
+[se3_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

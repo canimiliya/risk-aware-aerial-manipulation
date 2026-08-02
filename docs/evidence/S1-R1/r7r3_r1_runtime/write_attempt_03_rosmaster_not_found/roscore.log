@@ -1,0 +1,27 @@
+[31mRLException: Roslaunch got a 'No such file or directory' error while attempting to run:
+
+rosmaster --core -p 11311 -w 3 __log:=/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home/log/a41164fe-8eab-11f1-be5e-00155dca07d1/master.log
+
+Please make sure that all the executables in this command exist and have
+executable permission. This is often caused by a bad launch-prefix.[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home/log/a41164fe-8eab-11f1-be5e-00155dca07d1/roslaunch-SC-202607101733-84418.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://SC-202607101733:33303/[0m
+ros_comm version 1.17.4
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+
+auto-starting new master
+[master] killing on exit

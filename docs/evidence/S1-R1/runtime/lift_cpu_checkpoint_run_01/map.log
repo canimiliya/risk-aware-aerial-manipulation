@@ -1,0 +1,15 @@
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/home/amplanner/miniforge3/envs/am-planner-py38/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/timer.py", line 240, in run
+    self._callback(TimerEvent(last_expected, last_real, current_expected, current_real, last_duration))
+  File "map/desk.py", line 43, in timer_callback
+    self.publish_platform()
+  File "map/desk.py", line 122, in publish_platform
+    self.pub.publish(pc2_msg)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 882, in publish
+    self.impl.publish(data)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 1041, in publish
+    raise ROSException("publish() to a closed topic")
+rospy.exceptions.ROSException: publish() to a closed topic

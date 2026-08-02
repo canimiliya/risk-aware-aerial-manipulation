@@ -1,0 +1,16 @@
+ros-noetic-roslib	1.15.10-1focal.20250426.230521
+ros-noetic-rospack	2.6.4-1focal.20250426.230225
+ros-noetic-rospack:
+  Installed: 2.6.4-1focal.20250426.230225
+  Candidate: 2.6.4-1focal.20250426.230225
+  Version table:
+ *** 2.6.4-1focal.20250426.230225 500
+        500 http://packages.ros.org/ros/ubuntu focal/main amd64 Packages
+        100 /var/lib/dpkg/status
+ros-noetic-roslib:
+  Installed: 1.15.10-1focal.20250426.230521
+  Candidate: 1.15.10-1focal.20250426.230521
+  Version table:
+ *** 1.15.10-1focal.20250426.230521 500
+        500 http://packages.ros.org/ros/ubuntu focal/main amd64 Packages
+        100 /var/lib/dpkg/status

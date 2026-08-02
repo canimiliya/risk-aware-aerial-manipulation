@@ -1,0 +1,8 @@
+{
+  "status": "NOT_RUN_DEPENDENCY_BLOCKED",
+  "weight": "/home/amplanner/am-planner-ws/src/am-planner/src/plan/traj_opt/weights/workspace_probability_weight.pth",
+  "official_error_positional_dict": "not run",
+  "default_load": "not run",
+  "correct_map_location_cuda": "not run",
+  "reason": "Torch CUDA runtime 未完成安装。"
+}

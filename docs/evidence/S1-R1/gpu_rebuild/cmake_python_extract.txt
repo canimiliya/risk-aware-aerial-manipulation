@@ -1,0 +1,32 @@
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Found Python: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3") found components: Interpreter Development
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Found Python executable: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Found Python include dirs: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Found Python libraries: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3")
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Using Debian Python package layout
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found version "3.9.23")
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.000.log:-- Using Python nosetests: /usr/bin/nosetests3
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Found Python: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3") found components: Interpreter Development
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Found Python executable: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Found Python include dirs: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/include/python3.9
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Found Python libraries: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/libpython3.9.so
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3")
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Using Debian Python package layout
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found version "3.9.23")
+/home/amplanner/am-planner-gpu-ws/logs/plan_manage/build.cmake.log:-- Using Python nosetests: /usr/bin/nosetests3
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.make.log:[ 21%] [34m[1mGenerating Python code from SRV traj_opt/forward_srv[0m
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.make.log:[ 64%] [34m[1mGenerating Python code from SRV traj_opt/workspace_probability_srv[0m
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.make.log:[ 92%] [34m[1mGenerating Python srv __init__.py for traj_opt[0m
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.000.log:-- Found Python: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3.7") found components: Interpreter Development
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.000.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3")
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.000.log:-- Using Debian Python package layout
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.000.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found version "3.9.23")
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.000.log:-- Using Python nosetests: /usr/bin/nosetests3
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.log:-- Found Python: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3.7") found components: Interpreter Development
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found suitable version "3.9.23", minimum required is "3")
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.log:-- Using Debian Python package layout
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.log:-- Found PythonInterp: /home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python (found version "3.9.23")
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.cmake.log:-- Using Python nosetests: /usr/bin/nosetests3
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.make.000.log:[ 21%] [34m[1mGenerating Python code from SRV traj_opt/forward_srv[0m
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.make.000.log:[ 64%] [34m[1mGenerating Python code from SRV traj_opt/workspace_probability_srv[0m
+/home/amplanner/am-planner-gpu-ws/logs/traj_opt/build.make.000.log:[ 92%] [34m[1mGenerating Python srv __init__.py for traj_opt[0m

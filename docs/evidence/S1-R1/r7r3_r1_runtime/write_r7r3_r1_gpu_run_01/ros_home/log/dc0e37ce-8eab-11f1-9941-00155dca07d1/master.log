@@ -1,0 +1,26 @@
+[rosmaster.main][INFO] 2026-08-03 03:53:41,090: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2026-08-03 03:53:41,091: Starting ROS Master Node
+[xmlrpc][INFO] 2026-08-03 03:53:41,092: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2026-08-03 03:53:41,092: Started XML-RPC server [http://SC-202607101733:11311/]
+[xmlrpc][INFO] 2026-08-03 03:53:41,093: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2026-08-03 03:53:41,093: Master initialized: port[11311], uri[http://SC-202607101733:11311/]
+[rosmaster.master][INFO] 2026-08-03 03:53:41,166: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2026-08-03 03:53:41,166: +PARAM [/roslaunch/uris/host_sc_202607101733__32949] by /roslaunch
+[rosmaster.master][INFO] 2026-08-03 03:53:41,190: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2026-08-03 03:53:41,190: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2026-08-03 03:53:41,206: +SERVICE [/rosout/get_loggers] /rosout http://SC-202607101733:38505/
+[rosmaster.master][INFO] 2026-08-03 03:53:41,206: +SERVICE [/rosout/set_logger_level] /rosout http://SC-202607101733:38505/
+[rosmaster.master][INFO] 2026-08-03 03:53:41,206: +PUB [/rosout_agg] /rosout http://SC-202607101733:38505/
+[rosmaster.master][INFO] 2026-08-03 03:53:41,207: +SUB [/rosout] /rosout http://SC-202607101733:38505/
+[rosmaster.master][INFO] 2026-08-03 03:53:41,865: +PUB [/rosout] /s1_r1_trajectory_capture_84778_1785700421853 http://SC-202607101733:46199/
+[rosmaster.master][INFO] 2026-08-03 03:53:41,867: +SERVICE [/s1_r1_trajectory_capture_84778_1785700421853/get_loggers] /s1_r1_trajectory_capture_84778_1785700421853 http://SC-202607101733:46199/
+[rosmaster.master][INFO] 2026-08-03 03:53:41,867: +SERVICE [/s1_r1_trajectory_capture_84778_1785700421853/set_logger_level] /s1_r1_trajectory_capture_84778_1785700421853 http://SC-202607101733:46199/
+[rosmaster.master][INFO] 2026-08-03 03:53:41,892: publisherUpdate[/rosout] -> http://SC-202607101733:38505/ ['http://SC-202607101733:46199/']
+[rosmaster.master][INFO] 2026-08-03 03:53:41,894: publisherUpdate[/rosout] -> http://SC-202607101733:38505/ ['http://SC-202607101733:46199/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-08-03 03:53:44,152: +PUB [/rosout] /platform_publisher_84818_1785700424036 http://SC-202607101733:34791/
+[rosmaster.master][INFO] 2026-08-03 03:53:44,153: +SERVICE [/platform_publisher_84818_1785700424036/get_loggers] /platform_publisher_84818_1785700424036 http://SC-202607101733:34791/
+[rosmaster.master][INFO] 2026-08-03 03:53:44,154: +SERVICE [/platform_publisher_84818_1785700424036/set_logger_level] /platform_publisher_84818_1785700424036 http://SC-202607101733:34791/
+[rosmaster.master][INFO] 2026-08-03 03:53:44,154: +PUB [/global_map] /platform_publisher_84818_1785700424036 http://SC-202607101733:34791/
+[rosmaster.master][INFO] 2026-08-03 03:53:44,155: +SUB [/odom_converter/converted_odom1] /platform_publisher_84818_1785700424036 http://SC-202607101733:34791/
+[rosmaster.master][INFO] 2026-08-03 03:53:44,198: publisherUpdate[/rosout] -> http://SC-202607101733:38505/ ['http://SC-202607101733:46199/', 'http://SC-202607101733:34791/']
+[rosmaster.master][INFO] 2026-08-03 03:53:44,199: publisherUpdate[/rosout] -> http://SC-202607101733:38505/ ['http://SC-202607101733:46199/', 'http://SC-202607101733:34791/']: sec=0.00, result=[1, '', 0]

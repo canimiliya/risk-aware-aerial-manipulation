@@ -1,0 +1,51 @@
+[roslaunch][INFO] 2026-08-03 03:53:44,053: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-08-03 03:53:44,055: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-08-03 03:53:44,056: roslaunch starting with args ['/opt/ros/noetic/bin/roslaunch', '--screen', 'plan_manage', 'run_in_sim_other.launch', 'task:=write']
+[roslaunch][INFO] 2026-08-03 03:53:44,056: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CE_M': '', 'WSL_DISTRO_NAME': 'AMPlanner-Ubuntu20', 'PKG_CONFIG_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/pkgconfig:/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/pkgconfig:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'ROS_PACKAGE_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/src:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/amplanner/am-planner-r7r3-r1-ws/devel/share/common-lisp:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/share/common-lisp', 'NAME': 'SC-202607101733', 'PWD': '/home/amplanner/am-planner-r7r3-r1-ws/src', 'LOGNAME': 'amplanner', 'CONDA_PREFIX': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39', 'HOME': '/home/amplanner', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/84598_interop', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'WAYLAND_DISPLAY': 'wayland-0', 'CONDA_PROMPT_MODIFIER': '(am-planner-gpu-probe-py39) ', 'CMAKE_PREFIX_PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/home/amplanner/am-planner-r7r3-r1-ws/devel:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel:/opt/ros/noetic', '_CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CONDA_ROOT': '/home/amplanner/miniforge3', 'PYTHONPATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages:/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/python3/dist-packages:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'USER': 'amplanner', 'CONDA_SHLVL': '1', 'ROS_HOME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home', 'DISPLAY': ':0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'MPLBACKEND': 'Agg', 'CONDA_PYTHON_EXE': '/home/amplanner/miniforge3/bin/python', 'LD_LIBRARY_PATH': '/home/amplanner/am-planner-r7r3-r1-ws/devel/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/torch/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'CONDA_DEFAULT_ENV': 'am-planner-gpu-probe-py39', 'WSLENV': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PATH': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/wsl/lib', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation', '_': '/usr/bin/env', 'PYTHONHOME': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39', 'ROS_LOG_FILENAME': '/home/amplanner/am-planner-r7r3-r1-ws/runs/write_r7r3_r1_gpu_run_01/ros_home/log/dc0e37ce-8eab-11f1-9941-00155dca07d1/roslaunch-SC-202607101733-84819.log'})
+[roslaunch][INFO] 2026-08-03 03:53:44,056: starting in server mode
+[roslaunch.parent][INFO] 2026-08-03 03:53:44,056: starting roslaunch parent run
+[roslaunch][INFO] 2026-08-03 03:53:44,056: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][ERROR] 2026-08-03 03:53:44,060: RLException: Invalid <param> tag: Cannot load command parameter [rosversion]: command [['rosversion', 'roslaunch']] returned with code [1]. 
+
+Param xml is <param name="rosversion" command="rosversion roslaunch"/>
+[roslaunch][ERROR] 2026-08-03 03:53:44,061: The traceback for the exception was written to the log file
+[roslaunch][ERROR] 2026-08-03 03:53:44,061: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 271, in _param_tag
+    value = self.param_value(verbose, name, ptype, *vals)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/loader.py", line 543, in param_value
+    raise ValueError("Cannot load command parameter [%s]: command [%s] returned with code [%s]"%(name, command, p.returncode))
+ValueError: Cannot load command parameter [rosversion]: command [['rosversion', 'roslaunch']] returned with code [1]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+    p.start()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 305, in start
+    self._start_infrastructure()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 254, in _start_infrastructure
+    self._load_config()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 156, in _load_config
+    self.config = roslaunch.config.load_config_default(self.roslaunch_files, self.port,
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/config.py", line 451, in load_config_default
+    load_roscore(loader, config, verbose=verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/config.py", line 94, in load_roscore
+    loader.load(f_roscore, config, core=True, verbose=verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 763, in load
+    self._load_launch(launch, ros_config, is_core=core, filename=filename, argv=argv, verbose=verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 735, in _load_launch
+    self._recurse_load(ros_config, launch.childNodes, self.root_context, None, is_core, verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 670, in _recurse_load
+    self._recurse_load(ros_config, tag.childNodes, child_ns, \
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 681, in _recurse_load
+    self._param_tag(tag, context, ros_config, verbose=verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 96, in call
+    return f(*args, **kwds)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 285, in _param_tag
+    raise XmlParseException(
+roslaunch.xmlloader.XmlParseException: Invalid <param> tag: Cannot load command parameter [rosversion]: command [['rosversion', 'roslaunch']] returned with code [1]. 
+
+Param xml is <param name="rosversion" command="rosversion roslaunch"/>
+
+[rospy.core][INFO] 2026-08-03 03:53:44,062: signal_shutdown [atexit]

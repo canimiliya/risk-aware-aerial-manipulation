@@ -1,0 +1,253 @@
+[33m[WARN] [1785664079.880383471]: POINT BE BUILD![0m
+[0m[INFO] [1785664079.400570484]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785664079.404983407]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785664079.427139560]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785664079.427157097]: dim: 466, 333, 133[0m
+[0m[INFO] [1785664079.435463135]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785664079.438356685]: [MANAGE]: Other mode init! Loaded 6 inter points.[0m
+[0m[INFO] [1785664079.438849083]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785664079.438859360]: [MANAGE]: PlannerManage init done![0m
+[0m[INFO] [1785664079.876570563]: [SE3_PLANNER]: please wait~[0m
+[0m[INFO] [1785664079.882568501]: [0;33mReceived the point cloud![0m[0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785664080.463405563]: [JPS]: Map has been updated[0m
+[0m[INFO] [1785664081.402368509]: [SE3_PLANNER]: Begin path searching![0m
+[0m[INFO] [1785664081.402416941]: [SE3_PLANNER]: Searching path from (-3.000, 0.000, 1.500) to (-0.200, 0.180, 0.810)[0m
+Start:  -3   0 1.5
+Goal:  -0.2 0.18 0.81
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 122.000000, h: 0.000000!
+Expand [89323] nodes!
+[0m[INFO] [1785664081.669506036]: [SE3_PLANNER]: Searching path from (-0.200, 0.180, 0.810) to (0.200, 0.180, 0.810)[0m
+Start: -0.2 0.18 0.81
+Goal:   0.2 0.18 0.81
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 14.000000, h: 0.000000!
+Expand [15] nodes!
+[0m[INFO] [1785664081.910259994]: [SE3_PLANNER]: Searching path from (0.200, 0.180, 0.810) to (0.200, -0.160, 0.810)[0m
+Start:  0.2 0.18 0.81
+Goal:    0.2 -0.16  0.81
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 11.000000, h: 0.000000!
+Expand [12] nodes!
+[0m[INFO] [1785664082.085055485]: [SE3_PLANNER]: Searching path from (0.200, -0.160, 0.810) to (0.020, -0.160, 0.810)[0m
+Start:   0.2 -0.16  0.81
+Goal:   0.02 -0.16  0.81
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 6.000000, h: 0.000000!
+Expand [7] nodes!
+[0m[INFO] [1785664082.265045693]: [SE3_PLANNER]: Searching path from (0.020, -0.160, 0.810) to (0.020, 0.180, 0.810)[0m
+Start:  0.02 -0.16  0.81
+Goal:  0.02 0.18 0.81
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 11.000000, h: 0.000000!
+Expand [12] nodes!
+[0m[INFO] [1785664082.454792239]: [SE3_PLANNER]: Searching path from (0.020, 0.180, 0.810) to (-0.200, -0.200, 0.810)[0m
+Start: 0.02 0.18 0.81
+Goal:  -0.2 -0.2 0.81
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 20.000000, h: 0.000000!
+Expand [527] nodes!
+[0m[INFO] [1785664082.644543053]: [SE3_PLANNER]: Searching path from (-0.200, -0.200, 0.810) to (3.000, 0.000, 1.500)[0m
+Start: -0.2 -0.2 0.81
+Goal:    3   0 1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 136.000000, h: 0.000000!
+Expand [104205] nodes!
+[0m[INFO] [1785664082.886050418]: [SE3_PLANNER]: JPS search path![0m
+[0m[INFO] [1785664082.886082755]: [32m[SE3_PLANNER]: JPS path searching time: 1.484 s[0m[0m
+[0m[INFO] [1785664082.886101731]: Path published![0m
+[0m[INFO] [1785664082.886107279]: [SE3_PLANNER]: inter_ids size: 6[0m
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+[0m[INFO] [1785664082.980582297]: [SE3_PLANNER]: The inter point is in the polyhedron 1 and 2 ![0m
+[0m[INFO] [1785664082.988190846]: [SE3_PLANNER]: The inter point is in the polyhedron 4 and 5 ![0m
+[0m[INFO] [1785664082.995630043]: [SE3_PLANNER]: The inter point is in the polyhedron 7 and 8 ![0m
+[0m[INFO] [1785664083.003098406]: [SE3_PLANNER]: The inter point is in the polyhedron 10 and 11 ![0m
+[0m[INFO] [1785664083.010203970]: [SE3_PLANNER]: The inter point is in the polyhedron 13 and 14 ![0m
+[0m[INFO] [1785664083.017287225]: [SE3_PLANNER]: The inter point is in the polyhedron 16 and 17 ![0m
+[33mBegin to optimize the trajectory with MINCO...[0m
+[1;32m[SE3_PLANNER]: MINCO setup successfully![0m
+Python path configuration:
+  PYTHONHOME = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  PYTHONPATH = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages:/home/amplanner/am-planner-gpu-ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages'
+  program name = 'python3'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python3'
+  sys.base_prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.base_exec_prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.executable = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin/python3'
+  sys.prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.exec_prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.path = [
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages',
+    '/home/amplanner/am-planner-gpu-ws/devel/lib/python3/dist-packages',
+    '/opt/ros/noetic/lib/python3/dist-packages',
+    '/usr/lib/python3/dist-packages',
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python38.zip',
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.8',
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.8/lib-dynload',
+  ]
+[0m[INFO] [1785664083.024919614]: [SE3GCOPTER]: set initial done[0m
+[0m[INFO] [1785664083.024969208]: [SE3GCOPTER]: backward done[0m
+[PythonInterpreter_H]: Error initializing Python interpreter: failed to get the Python codec of the filesystem encoding
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  [Workspace_Model_H]: Failed to initialize workspace probability model
+[31m[se3_node-1] process has died [pid 4153, exit code -6, cmd /home/amplanner/am-planner-gpu-ws/devel/.private/plan_manage/lib/plan_manage/se3_node ~object_odom:=/odom_converter/converted_odom1 ~trajectory:=/trajectory ~trajectory_arm:=/trajectory_arm __name:=se3_node __log:=/home/amplanner/am-planner-gpu-ws/logs/s1-r1-gpu-runtime/write_gpu_run_01_retry_11/ros_home/log/3ce0e51a-8e57-11f1-8aba-00155dca07d1/se3_node-1.log].
+log file: /home/amplanner/am-planner-gpu-ws/logs/s1-r1-gpu-runtime/write_gpu_run_01_retry_11/ros_home/log/3ce0e51a-8e57-11f1-8aba-00155dca07d1/se3_node-1*.log[0m
+... logging to /home/amplanner/am-planner-gpu-ws/logs/s1-r1-gpu-runtime/write_gpu_run_01_retry_11/ros_home/log/3ce0e51a-8e57-11f1-8aba-00155dca07d1/roslaunch-SC-202607101733-4086.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/amplanner/am-planner-gpu-ws/src/am-planner/src/plan/plan_manage/launch/run_in_sim_other.launch
+[1mstarted roslaunch server http://SC-202607101733:38215/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /lift/end_pt: [1.0, 0.0, 1.5]
+ * /lift/inter_points: [[2.0, 0.0, 0.0, ...
+ * /lift/num_points: 1
+ * /lift/object/position: [0.0, 0.0, 0.6]
+ * /lift/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /lift/start_pt: [-3.0, 0.0, 1.2]
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 2
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /press/end_pt: [2.0, 0.0, 1.2]
+ * /press/inter_points: [[2.0, 0.0, 0.0, ...
+ * /press/num_points: 1
+ * /press/object/position: [0.0, 0.0, 0.6]
+ * /press/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /press/start_pt: [-2.0, 0.0, 1.2]
+ * /pull/end_pt: [3.0, 0.0, 1.2]
+ * /pull/inter_points: [[2.0, -0.4, 0.2,...
+ * /pull/num_points: 4
+ * /pull/object/position: [0.0, 0.0, 0.63]
+ * /pull/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /pull/start_pt: [-3.0, 0.0, 1.2]
+ * /push/end_pt: [2.0, 0.0, 1.2]
+ * /push/inter_points: [[2.0, -0.3, 1.0,...
+ * /push/num_points: 2
+ * /push/object/position: [0.0, 1.0, 0.6]
+ * /push/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /push/start_pt: [-2.0, 0.0, 1.2]
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /random_complex/g...
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: False
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 1e-08
+ * /se3_node/OptRelTol2: 1e-10
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [5000000000.0, 10...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: True
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 0.001
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.02
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 1.5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /staticR: 0.08
+ * /task: write
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+ * /write/end_pt: [3.0, 0.0, 1.5]
+ * /write/inter_points: [[2.0, -0.2, 0.18...
+ * /write/num_points: 6
+ * /write/object/position: [0.0, 0.0, 0.62]
+ * /write/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /write/start_pt: [-3.0, 0.0, 1.5]
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/amplanner/am-planner-gpu-ws/src/am-planner/src/plan/plan_manage/launch/run_in_sim_other.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [4153][0m
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

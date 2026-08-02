@@ -1,0 +1,16 @@
+ERROR conda.cli.main_run:execute(148): `conda run python -m pip check` failed. (See above for error)
+torch 2.7.1+cu128 requires nvidia-cublas-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cuda-cupti-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cuda-nvrtc-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cuda-runtime-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cudnn-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cufft-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cufile-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-curand-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cusolver-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cusparse-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-cusparselt-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-nccl-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-nvjitlink-cu12, which is not installed.
+torch 2.7.1+cu128 requires nvidia-nvtx-cu12, which is not installed.
+torch 2.7.1+cu128 requires triton, which is not installed.

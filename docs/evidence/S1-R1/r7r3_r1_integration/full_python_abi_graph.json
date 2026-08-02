@@ -1,0 +1,43 @@
+{
+  "python_target": "3.9.23",
+  "runtime_ld_library_path_checked": true,
+  "not_found_count": 0,
+  "python38_occurrence_count": 0,
+  "link_txt_python38_occurrence_count": 0,
+  "binaries": {
+    "libse3_planner.so": {
+      "path": "/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/libse3_planner.so",
+      "sha256": "e6210edcc376bf3044c95fee16c30da7b86acfe0ba717a35d17457d7eb1ad4bf",
+      "direct_python_needed": ["libpython3.9.so.1.0"],
+      "direct_python38_needed": [],
+      "runtime_ldd_not_found": []
+    },
+    "se3_node": {
+      "path": "/home/amplanner/am-planner-r7r3-r1-ws/devel/lib/plan_manage/se3_node",
+      "sha256": "bb4bdc17112efa565b9825f0efa9b76e86525687fb20b7b2961acae21e881a4c",
+      "direct_python_needed": ["libpython3.9.so.1.0"],
+      "direct_python38_needed": [],
+      "runtime_ldd_not_found": []
+    },
+    "overlay_librospack.so": {
+      "path": "/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/librospack.so",
+      "sha256": "bc23660095892f5f05ed759bcbcca6dfe31ef3a6301333e70d6027e10579af34",
+      "direct_python_needed": ["libpython3.9.so.1.0"],
+      "direct_python38_needed": [],
+      "runtime_ldd_not_found": []
+    },
+    "overlay_libroslib.so": {
+      "path": "/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/libroslib.so",
+      "sha256": "e644a3f8183709a44d4718e499f29356442b187be8a03690b4b350c5fe4a73ca",
+      "direct_python_needed": [],
+      "transitive_python_needed": ["libpython3.9.so.1.0"],
+      "direct_python38_needed": [],
+      "runtime_ldd_not_found": []
+    }
+  },
+  "cmake_cache": {
+    "traj_opt": "Python3.9 executable/include/library and legacy PYTHON variables point to am-planner-gpu-probe-py39",
+    "plan_manage": "Python3.9 executable/include/library and legacy PYTHON variables point to am-planner-gpu-probe-py39"
+  },
+  "evidence": ["full_abi_raw.log", "ldd_runtime.log", "interpreter_probe_normal.log", "interpreter_probe_env_i.log"]
+}

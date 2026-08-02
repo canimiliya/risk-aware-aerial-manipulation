@@ -1,0 +1,79 @@
+{
+  "cpu_torch": "2.4.1+cpu",
+  "gpu_torch": "2.7.1+cu128",
+  "gpu_device": "NVIDIA GeForce RTX 5060 Ti",
+  "rows": [
+    {
+      "batch": 1,
+      "forward": {
+        "cpu_median_ms": 0.02362649999554378,
+        "gpu_median_ms": 0.11270099997773286,
+        "speedup_x": 0.20963877871724151
+      },
+      "forward_autograd": {
+        "cpu_median_ms": 0.3225614999848858,
+        "gpu_median_ms": 0.7915799999977935,
+        "speedup_x": 0.40749071475502785
+      }
+    },
+    {
+      "batch": 96,
+      "forward": {
+        "cpu_median_ms": 15.101945999987265,
+        "gpu_median_ms": 0.29246350001699284,
+        "speedup_x": 51.637028207314096
+      },
+      "forward_autograd": {
+        "cpu_median_ms": 25.939718999978822,
+        "gpu_median_ms": 0.8921299999826715,
+        "speedup_x": 29.076164909242674
+      }
+    },
+    {
+      "batch": 192,
+      "forward": {
+        "cpu_median_ms": 0.7765080000297075,
+        "gpu_median_ms": 0.14986150000595444,
+        "speedup_x": 5.181504255588357
+      },
+      "forward_autograd": {
+        "cpu_median_ms": 39.60894950003535,
+        "gpu_median_ms": 0.9069489999831148,
+        "speedup_x": 43.672741797799844
+      }
+    },
+    {
+      "batch": 576,
+      "forward": {
+        "cpu_median_ms": 66.04900749999842,
+        "gpu_median_ms": 0.16069949998609445,
+        "speedup_x": 411.00941512396577
+      },
+      "forward_autograd": {
+        "cpu_median_ms": 139.70146400001227,
+        "gpu_median_ms": 0.7808990000057747,
+        "speedup_x": 178.8982493241497
+      }
+    },
+    {
+      "batch": 960,
+      "forward": {
+        "cpu_median_ms": 29.37316550000446,
+        "gpu_median_ms": 0.17250699997362062,
+        "speedup_x": 170.27231071490513
+      },
+      "forward_autograd": {
+        "cpu_median_ms": 5.250223999979653,
+        "gpu_median_ms": 0.8942880000120113,
+        "speedup_x": 5.870842502537367
+      }
+    }
+  ],
+  "key_autograd_speedups": {
+    "1": 0.40749071475502785,
+    "96": 29.076164909242674,
+    "192": 43.672741797799844,
+    "576": 178.8982493241497,
+    "960": 5.870842502537367
+  }
+}

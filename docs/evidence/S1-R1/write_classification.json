@@ -1,0 +1,33 @@
+{
+  "classification": "WRITE_CPU_RUNTIME_TOO_SLOW",
+  "label": "SUBMITTED_S1_R1_WRITE_RUNTIME_TOO_SLOW",
+  "human_interpretation": "程序在1200秒内一直占用CPU并持续输出cost，但没有完成并发布两条轨迹；因此是CPU太慢，不是进程空闲或明确运行错误。",
+  "run_id": "write_diagnosis_run_01",
+  "capture_exit": 2,
+  "timeout_s": 1200.0,
+  "actual_monitor_seconds": 1202.816,
+  "trajectory_success": false,
+  "received_topics": [],
+  "jps_segment_search_count": 7,
+  "jps_path_seconds": 1.502,
+  "minco_start_unix_seconds": 1785504751.1745083,
+  "jps_finish_unix_seconds": 1785504750.9973664,
+  "run_first_log_unix_seconds": 1785504747.4933093,
+  "cost_samples": 7563,
+  "first_cost": 6.20901e+17,
+  "minimum_cost": 14938000.0,
+  "last_cost": 14938000.0,
+  "max_cpu_percent": 1937.0,
+  "max_rss_kb": 689736,
+  "snapshots": [
+    60,
+    300,
+    600,
+    900,
+    1200
+  ],
+  "log_has_finish": false,
+  "log_has_abort_or_segfault": false,
+  "log_has_nan_or_inf": false,
+  "monitor_ros_query_note": "正式运行监控器启动时尚未继承ROS PATH，少数topic字段记录为command_error；运行本身的rostopic_list和capture数值证据仍保留。"
+}

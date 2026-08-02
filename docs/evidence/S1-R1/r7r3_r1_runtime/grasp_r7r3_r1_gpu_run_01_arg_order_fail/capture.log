@@ -1,0 +1,3 @@
+usage: s1_r1_capture_ros_message.py [-h] --output-dir OUTPUT_DIR --timeout-s
+                                    TIMEOUT_S
+s1_r1_capture_ros_message.py: error: argument --timeout-s: invalid float value: '/home/amplanner/am-planner-r7r3-r1-ws/runs'

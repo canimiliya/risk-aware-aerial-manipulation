@@ -1,0 +1,3 @@
+﻿D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\third_party\am-planner\src\plan\plan_manage\misc\data\quadcopter.dae
+D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\third_party\am-planner\src\uam_sim\delta-display\delta_display\meshes\drone.dae
+D:\Desktop\my_project\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\third_party\am-planner\src\utils\traj_server\misc\data\quadcopter.dae
