@@ -55,7 +55,7 @@ S2-R5 的三轮有界 task-level 尝试已接受为失败证据并合并 PR #9�
 
 ## S2 readiness
 
-专项审计为 `PASS / errors=0 / warnings=0`。S2 readiness 更新为 `NOT_READY_S2_R6_SUBMITTED_FOR_REVIEW`，因为 S2 仍在 `IN_PROGRESS`，S3-S8 仍冻结；S2-R6 Draft PR 不合并。
+专项审计为 `PASS / errors=0 / warnings=0`。S2 readiness 更新为 `NOT_READY_S2_R6_SUBMITTED_FOR_REVIEW`，因为 S2 仍在 `IN_PROGRESS`，S3-S8 仍冻结；Draft PR #10（`https://github.com/canimiliya/risk-aware-aerial-manipulation/pull/10`）不合并。
 
 ## 明确未执行
 
