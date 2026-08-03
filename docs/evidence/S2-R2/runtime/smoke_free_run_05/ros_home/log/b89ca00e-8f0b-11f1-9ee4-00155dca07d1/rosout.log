@@ -1,0 +1,4 @@
+
+
+1785741593.463618449  Node Startup
+1785741596.687401056 WARN /s2_r2_crossarm_map_publisher_99304_1785741593087 [tcpros_base.py:362(TCPROSServer._tcp_server_callback)] [topics: /rosout, /global_map] Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.

@@ -1,0 +1,39 @@
+Python path configuration:
+  PYTHONHOME = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  PYTHONPATH = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages:/home/amplanner/am-planner-s2-r2-ws/devel/lib/python3/dist-packages:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages'
+  program name = '/usr/bin/python3'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/usr/bin/python3'
+  sys.base_prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.base_exec_prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.executable = '/usr/bin/python3'
+  sys.prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.exec_prefix = '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39'
+  sys.path = [
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages',
+    '/home/amplanner/am-planner-s2-r2-ws/devel/lib/python3/dist-packages',
+    '/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages',
+    '/opt/ros/noetic/lib/python3/dist-packages',
+    '/usr/lib/python3/dist-packages',
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python38.zip',
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.8',
+    '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000754056cb0740 (most recent call first):
+<no Python frame>
+[31mRLException: Invalid <param> tag: Cannot load command parameter [rosversion]: command [['rosversion', 'roslaunch']] returned with code [1]. 
+
+Param xml is <param name="rosversion" command="rosversion roslaunch"/>[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_02/ros_home/log/29ab88ac-8f0a-11f1-9de0-00155dca07d1/roslaunch-SC-202607101733-98515.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r2_official.launch

@@ -1,0 +1,21 @@
+{
+  "task": "narrow",
+  "run_id": "narrow_diagnostic_01",
+  "git_commit": "db0865c2d7fe781b6bcbeadd093c4e1be6c612d8",
+  "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "message_type": "quadrotor_msgs/PolynomialTrajectory",
+  "source_evidence_path": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/narrow_diagnostic_01",
+  "coordinate_frame": "world",
+  "units": {
+    "time": "s (source uses ros::Duration/toSec)",
+    "position": "not encoded in PolynomialTrajectory; source convention is not re-invented here",
+    "yaw": "scalar with no unit annotation in message"
+  },
+  "sample_dt": 0.0025,
+  "sample_frequency_hz": 400.0,
+  "segment_count": 19,
+  "total_duration": 9.248394625645876,
+  "export_time_utc": "2026-08-03T09:29:22.203684+00:00",
+  "exporter_version": "s1-r2-exporter-1.0",
+  "base_vs_arm": "same message type and fields; topic-specific captures are preserved separately"
+}

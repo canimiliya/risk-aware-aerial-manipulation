@@ -1,0 +1,20 @@
+[rospy.client][INFO] 2026-08-03 16:01:15,380: init_node, name[/s2_r2_crossarm_map_publisher_101665_1785744075368], pid[101665]
+[xmlrpc][INFO] 2026-08-03 16:01:15,381: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-08-03 16:01:15,381: Started XML-RPC server [http://SC-202607101733:35193/]
+[rospy.init][INFO] 2026-08-03 16:01:15,382: ROS Slave URI: [http://SC-202607101733:35193/]
+[rospy.impl.masterslave][INFO] 2026-08-03 16:01:15,382: _ready: http://SC-202607101733:35193/
+[rospy.registration][INFO] 2026-08-03 16:01:15,383: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2026-08-03 16:01:15,383: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-08-03 16:01:15,483: registered with master
+[rospy.rosout][INFO] 2026-08-03 16:01:15,483: initializing /rosout core topic
+[rospy.registration][ERROR] 2026-08-03 16:01:15,485: [Errno 111] Connection refused
+Unable to register with master node [http://localhost:11311]: master may not be running yet. Will keep trying.
+[rospy.rosout][INFO] 2026-08-03 16:01:15,690: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-08-03 16:01:15,691: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-08-03 16:01:15,963: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2026-08-03 16:01:18,934: topic[/global_map] adding connection to [/se3_node], count 0
+[rospy.core][INFO] 2026-08-03 16:03:42,934: signal_shutdown [signal-15]
+[rospy.internal][INFO] 2026-08-03 16:03:42,937: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2026-08-03 16:03:42,938: topic[/global_map] removing connection to /se3_node
+[rospy.impl.masterslave][INFO] 2026-08-03 16:03:42,938: signal-15
+[rospy.core][INFO] 2026-08-03 16:03:43,541: signal_shutdown [atexit]

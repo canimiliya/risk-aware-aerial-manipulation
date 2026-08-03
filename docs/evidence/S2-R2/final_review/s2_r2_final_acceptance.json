@@ -1,0 +1,23 @@
+{
+  "decision": "PASS_WITH_LIMITATIONS",
+  "errors": [],
+  "unresolved_warnings": [],
+  "accepted_limitations": [
+    "官方 Delta IK_kin 存在并由 DeltaDisplay::endCallback 逐点使用，但尚未应用到整条 S2-R2 Cartesian 规划轨迹",
+    "尚未验证连续 joint limits、IK 分支连续性和执行器动力学",
+    "尚未使用官方 FlatnessMap 根据 acceleration/jerk 重建完整动态 R_WB",
+    "当前 clearance 仅覆盖 base/EE planner-level proxy，未覆盖四旋翼、连杆和全身硬门槛",
+    "0.08 m 是官方 Delta static/platform geometry，不自动等于无人机机体半径；body/rotor 尺寸仍含 PROVISIONAL_S2_ASSUMPTION",
+    "点云、球体和 proxy 验证不是 mesh 精确碰撞"
+  ],
+  "checks": {
+    "official_source_and_runtime_evidence": "PASS",
+    "official_delta_ik_correction": "PASS_WITH_LIMITATIONS",
+    "dynamic_flatness_attitude": "NOT_APPLIED_IN_S2_R2",
+    "planner_level_proxy_clearance": "PASS",
+    "full_body_collision": "NOT_CLAIMED",
+    "historical_failure_preserved": true,
+    "s2_status": "IN_PROGRESS",
+    "s3_to_s8_status": "FROZEN"
+  }
+}

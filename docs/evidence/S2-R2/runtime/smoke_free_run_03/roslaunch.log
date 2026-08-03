@@ -1,0 +1,1541 @@
+[33m[WARN] [1785741243.079997546]: POINT BE BUILD![0m
+[0m[INFO] [1785741242.874076771]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785741242.882165700]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785741242.929472395]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785741242.929493384]: dim: 700, 500, 200[0m
+[0m[INFO] [1785741242.969933050]: buffer size: 70000000[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785741242.975141536]: [MANAGE]: Other mode init! Loaded 6 inter points.[0m
+[0m[INFO] [1785741242.976152624]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785741242.976175544]: [MANAGE]: PlannerManage init done![0m
+[0m[INFO] [1785741243.079965985]: [SE3_PLANNER]: please wait~[0m
+[0m[INFO] [1785741243.080442248]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741243.080452099]: No point cloud received[0m
+[0m[INFO] [1785741243.214876207]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741243.214903845]: No point cloud received[0m
+[0m[INFO] [1785741243.414920313]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741243.414950343]: No point cloud received[0m
+[0m[INFO] [1785741243.614972164]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741243.615004521]: No point cloud received[0m
+[0m[INFO] [1785741243.814980043]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741243.815016081]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741244.014965916]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741244.015001026]: No point cloud received[0m
+[0m[INFO] [1785741244.214981128]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741244.215013653]: No point cloud received[0m
+[0m[INFO] [1785741244.414931129]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741244.414960535]: No point cloud received[0m
+[0m[INFO] [1785741244.614962135]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741244.614990658]: No point cloud received[0m
+[0m[INFO] [1785741244.815139161]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741244.815182148]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741245.014886742]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741245.014912069]: No point cloud received[0m
+[0m[INFO] [1785741245.214938315]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741245.214965819]: No point cloud received[0m
+[0m[INFO] [1785741245.415015750]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741245.415045543]: No point cloud received[0m
+[0m[INFO] [1785741245.614938500]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741245.614967592]: No point cloud received[0m
+[0m[INFO] [1785741245.814978580]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741245.815004999]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741246.015004412]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741246.015036232]: No point cloud received[0m
+[0m[INFO] [1785741246.215005516]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741246.215037267]: No point cloud received[0m
+[0m[INFO] [1785741246.415018084]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741246.415044535]: No point cloud received[0m
+[0m[INFO] [1785741246.614985969]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741246.615015612]: No point cloud received[0m
+[0m[INFO] [1785741246.814956043]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741246.814997386]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741247.014965534]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741247.014996378]: No point cloud received[0m
+[0m[INFO] [1785741247.214935020]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741247.214959818]: No point cloud received[0m
+[0m[INFO] [1785741247.415135929]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741247.415163469]: No point cloud received[0m
+[0m[INFO] [1785741247.614985610]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741247.615017796]: No point cloud received[0m
+[0m[INFO] [1785741247.815029987]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741247.815060416]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741248.014907739]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741248.014933019]: No point cloud received[0m
+[0m[INFO] [1785741248.214976867]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741248.215003913]: No point cloud received[0m
+[0m[INFO] [1785741248.414929076]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741248.414954731]: No point cloud received[0m
+[0m[INFO] [1785741248.614994308]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741248.615022351]: No point cloud received[0m
+[0m[INFO] [1785741248.815049288]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741248.815075701]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741249.014951239]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741249.014979973]: No point cloud received[0m
+[0m[INFO] [1785741249.215019467]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741249.215047331]: No point cloud received[0m
+[0m[INFO] [1785741249.414975027]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741249.415005041]: No point cloud received[0m
+[0m[INFO] [1785741249.614944174]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741249.614970983]: No point cloud received[0m
+[0m[INFO] [1785741249.815060833]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741249.815088887]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741250.014872012]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741250.014897078]: No point cloud received[0m
+[0m[INFO] [1785741250.214983031]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741250.215011470]: No point cloud received[0m
+[0m[INFO] [1785741250.414900946]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741250.414926924]: No point cloud received[0m
+[0m[INFO] [1785741250.614929706]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741250.614956756]: No point cloud received[0m
+[0m[INFO] [1785741250.815041599]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741250.815069994]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741251.015124281]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741251.015154068]: No point cloud received[0m
+[0m[INFO] [1785741251.214968056]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741251.214998550]: No point cloud received[0m
+[0m[INFO] [1785741251.415018144]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741251.415047734]: No point cloud received[0m
+[0m[INFO] [1785741251.614941143]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741251.614969877]: No point cloud received[0m
+[0m[INFO] [1785741251.814932053]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741251.814958458]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741252.015013783]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741252.015043226]: No point cloud received[0m
+[0m[INFO] [1785741252.215109396]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741252.215140619]: No point cloud received[0m
+[0m[INFO] [1785741252.414935943]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741252.414964204]: No point cloud received[0m
+[0m[INFO] [1785741252.614918565]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741252.614945332]: No point cloud received[0m
+[0m[INFO] [1785741252.815054713]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741252.815083441]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741253.015051235]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741253.015080116]: No point cloud received[0m
+[0m[INFO] [1785741253.214892990]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741253.214919007]: No point cloud received[0m
+[0m[INFO] [1785741253.415010169]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741253.415039070]: No point cloud received[0m
+[0m[INFO] [1785741253.615018774]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741253.615049171]: No point cloud received[0m
+[0m[INFO] [1785741253.814987479]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741253.815035764]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741254.014926534]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741254.014957250]: No point cloud received[0m
+[0m[INFO] [1785741254.214945612]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741254.214971085]: No point cloud received[0m
+[0m[INFO] [1785741254.414961918]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741254.414988436]: No point cloud received[0m
+[0m[INFO] [1785741254.614954934]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741254.614984862]: No point cloud received[0m
+[0m[INFO] [1785741254.814985520]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741254.815022019]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741255.014877777]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741255.014903155]: No point cloud received[0m
+[0m[INFO] [1785741255.214998606]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741255.215027328]: No point cloud received[0m
+[0m[INFO] [1785741255.414973177]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741255.415000408]: No point cloud received[0m
+[0m[INFO] [1785741255.615026192]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741255.615056877]: No point cloud received[0m
+[0m[INFO] [1785741255.814964068]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741255.815001859]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741256.014855645]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741256.014881488]: No point cloud received[0m
+[0m[INFO] [1785741256.215043195]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741256.215073368]: No point cloud received[0m
+[0m[INFO] [1785741256.414940467]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741256.414980869]: No point cloud received[0m
+[0m[INFO] [1785741256.614979127]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741256.615006938]: No point cloud received[0m
+[0m[INFO] [1785741256.814921129]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741256.814948990]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741257.014902585]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741257.014928135]: No point cloud received[0m
+[0m[INFO] [1785741257.214923240]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741257.214947217]: No point cloud received[0m
+[0m[INFO] [1785741257.414923015]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741257.414947428]: No point cloud received[0m
+[0m[INFO] [1785741257.614971322]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741257.615007434]: No point cloud received[0m
+[0m[INFO] [1785741257.814931940]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741257.814961258]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741258.014981979]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741258.015008400]: No point cloud received[0m
+[0m[INFO] [1785741258.214999627]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741258.215025260]: No point cloud received[0m
+[0m[INFO] [1785741258.414901100]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741258.414925516]: No point cloud received[0m
+[0m[INFO] [1785741258.614923727]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741258.614948686]: No point cloud received[0m
+[0m[INFO] [1785741258.814975496]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741258.815009104]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741259.014977770]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741259.015003746]: No point cloud received[0m
+[0m[INFO] [1785741259.214995340]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741259.215023897]: No point cloud received[0m
+[0m[INFO] [1785741259.414885817]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741259.414910849]: No point cloud received[0m
+[0m[INFO] [1785741259.614903788]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741259.614931663]: No point cloud received[0m
+[0m[INFO] [1785741259.815200639]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741259.815236329]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741260.014895880]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741260.014923292]: No point cloud received[0m
+[0m[INFO] [1785741260.215054826]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741260.215082417]: No point cloud received[0m
+[0m[INFO] [1785741260.414942107]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741260.414967178]: No point cloud received[0m
+[0m[INFO] [1785741260.614861625]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741260.614924958]: No point cloud received[0m
+[0m[INFO] [1785741260.814938607]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741260.814968634]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741261.014974680]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741261.015002358]: No point cloud received[0m
+[0m[INFO] [1785741261.214931713]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741261.214956355]: No point cloud received[0m
+[0m[INFO] [1785741261.414915586]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741261.414943485]: No point cloud received[0m
+[0m[INFO] [1785741261.615054444]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741261.615083562]: No point cloud received[0m
+[0m[INFO] [1785741261.814929912]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741261.814959511]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741262.014935638]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741262.014962862]: No point cloud received[0m
+[0m[INFO] [1785741262.214884475]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741262.214910229]: No point cloud received[0m
+[0m[INFO] [1785741262.414906893]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741262.414930870]: No point cloud received[0m
+[0m[INFO] [1785741262.614925975]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741262.614950927]: No point cloud received[0m
+[0m[INFO] [1785741262.814925328]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741262.814952161]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741263.014925236]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741263.014951653]: No point cloud received[0m
+[0m[INFO] [1785741263.214857474]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741263.214883818]: No point cloud received[0m
+[0m[INFO] [1785741263.414872270]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741263.414898201]: No point cloud received[0m
+[0m[INFO] [1785741263.614936325]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741263.614966225]: No point cloud received[0m
+[0m[INFO] [1785741263.814898509]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741263.814927276]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741264.014892576]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741264.014920760]: No point cloud received[0m
+[0m[INFO] [1785741264.215142658]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741264.215167736]: No point cloud received[0m
+[0m[INFO] [1785741264.414896310]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741264.414925718]: No point cloud received[0m
+[0m[INFO] [1785741264.614980646]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741264.615007746]: No point cloud received[0m
+[0m[INFO] [1785741264.814921554]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741264.814949314]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741265.015045929]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741265.015088658]: No point cloud received[0m
+[0m[INFO] [1785741265.215042648]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741265.215071944]: No point cloud received[0m
+[0m[INFO] [1785741265.414923324]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741265.414953381]: No point cloud received[0m
+[0m[INFO] [1785741265.614910940]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741265.614942728]: No point cloud received[0m
+[0m[INFO] [1785741265.814906340]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741265.814933863]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741266.014902479]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741266.014951903]: No point cloud received[0m
+[0m[INFO] [1785741266.215027452]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741266.215057342]: No point cloud received[0m
+[0m[INFO] [1785741266.414919751]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741266.414946908]: No point cloud received[0m
+[0m[INFO] [1785741266.615035679]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741266.615062303]: No point cloud received[0m
+[0m[INFO] [1785741266.814942366]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741266.814969373]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741267.014881936]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741267.014906936]: No point cloud received[0m
+[0m[INFO] [1785741267.215018960]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741267.215050053]: No point cloud received[0m
+[0m[INFO] [1785741267.414926155]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741267.414951867]: No point cloud received[0m
+[0m[INFO] [1785741267.614951188]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741267.614980914]: No point cloud received[0m
+[0m[INFO] [1785741267.814898653]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741267.814921634]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741268.015365700]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741268.015393789]: No point cloud received[0m
+[0m[INFO] [1785741268.214935751]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741268.214964080]: No point cloud received[0m
+[0m[INFO] [1785741268.414908635]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741268.414934867]: No point cloud received[0m
+[0m[INFO] [1785741268.614995354]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741268.615025987]: No point cloud received[0m
+[0m[INFO] [1785741268.814974201]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741268.815002938]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741269.014980847]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741269.015026779]: No point cloud received[0m
+[0m[INFO] [1785741269.214916779]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741269.214943977]: No point cloud received[0m
+[0m[INFO] [1785741269.415020399]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741269.415047088]: No point cloud received[0m
+[0m[INFO] [1785741269.614953058]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741269.614982900]: No point cloud received[0m
+[0m[INFO] [1785741269.815022869]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741269.815047889]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741270.015604975]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741270.015769959]: No point cloud received[0m
+[0m[INFO] [1785741270.215004887]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741270.215035116]: No point cloud received[0m
+[0m[INFO] [1785741270.415027670]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741270.415059524]: No point cloud received[0m
+[0m[INFO] [1785741270.615050089]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741270.615078520]: No point cloud received[0m
+[0m[INFO] [1785741270.814890889]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741270.814918225]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741271.014932119]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741271.014960583]: No point cloud received[0m
+[0m[INFO] [1785741271.214946884]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741271.214974143]: No point cloud received[0m
+[0m[INFO] [1785741271.415346691]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741271.415390333]: No point cloud received[0m
+[0m[INFO] [1785741271.615071448]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741271.615101734]: No point cloud received[0m
+[0m[INFO] [1785741271.815354599]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741271.815395480]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741272.014940228]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741272.014975102]: No point cloud received[0m
+[0m[INFO] [1785741272.214936624]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741272.214965202]: No point cloud received[0m
+[0m[INFO] [1785741272.414915458]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741272.414944886]: No point cloud received[0m
+[0m[INFO] [1785741272.614927692]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741272.614953735]: No point cloud received[0m
+[0m[INFO] [1785741272.815153021]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741272.815184356]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741273.014995158]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741273.015026529]: No point cloud received[0m
+[0m[INFO] [1785741273.214900874]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741273.214929229]: No point cloud received[0m
+[0m[INFO] [1785741273.414945394]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741273.414971593]: No point cloud received[0m
+[0m[INFO] [1785741273.614980644]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741273.615007747]: No point cloud received[0m
+[0m[INFO] [1785741273.815069105]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741273.815106759]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741274.015163133]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741274.015195053]: No point cloud received[0m
+[0m[INFO] [1785741274.214879369]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741274.214905683]: No point cloud received[0m
+[0m[INFO] [1785741274.414973516]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741274.415003895]: No point cloud received[0m
+[0m[INFO] [1785741274.614920658]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741274.614951300]: No point cloud received[0m
+[0m[INFO] [1785741274.815011695]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741274.815036338]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741275.014900087]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741275.014925188]: No point cloud received[0m
+[0m[INFO] [1785741275.215003200]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741275.215026240]: No point cloud received[0m
+[0m[INFO] [1785741275.414882656]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741275.414910400]: No point cloud received[0m
+[0m[INFO] [1785741275.615021414]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741275.615049879]: No point cloud received[0m
+[0m[INFO] [1785741275.814920099]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741275.814947557]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741276.014879881]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741276.014905155]: No point cloud received[0m
+[0m[INFO] [1785741276.214941933]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741276.214968153]: No point cloud received[0m
+[0m[INFO] [1785741276.414933788]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741276.414962473]: No point cloud received[0m
+[0m[INFO] [1785741276.614965479]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741276.614989138]: No point cloud received[0m
+[0m[INFO] [1785741276.814858025]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741276.814883836]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741277.014955676]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741277.014983348]: No point cloud received[0m
+[0m[INFO] [1785741277.214996993]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741277.215027356]: No point cloud received[0m
+[0m[INFO] [1785741277.414934860]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741277.414961149]: No point cloud received[0m
+[0m[INFO] [1785741277.614944659]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741277.614970146]: No point cloud received[0m
+[0m[INFO] [1785741277.814920116]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741277.814944932]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741278.015068957]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741278.015100505]: No point cloud received[0m
+[0m[INFO] [1785741278.214860906]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741278.214885349]: No point cloud received[0m
+[0m[INFO] [1785741278.414866457]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741278.414895010]: No point cloud received[0m
+[0m[INFO] [1785741278.615110013]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741278.615137239]: No point cloud received[0m
+[0m[INFO] [1785741278.814905907]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741278.814935258]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741279.014875391]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741279.014902639]: No point cloud received[0m
+[0m[INFO] [1785741279.214928606]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741279.214954353]: No point cloud received[0m
+[0m[INFO] [1785741279.415314957]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741279.415377064]: No point cloud received[0m
+[0m[INFO] [1785741279.614872014]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741279.614897260]: No point cloud received[0m
+[0m[INFO] [1785741279.815226650]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741279.815261252]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741280.014897574]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741280.014924613]: No point cloud received[0m
+[0m[INFO] [1785741280.216029821]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741280.216100419]: No point cloud received[0m
+[0m[INFO] [1785741280.414988133]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741280.415011948]: No point cloud received[0m
+[0m[INFO] [1785741280.615244423]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741280.615275989]: No point cloud received[0m
+[0m[INFO] [1785741280.814917676]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741280.814947835]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741281.014899717]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741281.014925446]: No point cloud received[0m
+[0m[INFO] [1785741281.215127888]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741281.215156082]: No point cloud received[0m
+[0m[INFO] [1785741281.414996132]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741281.415026246]: No point cloud received[0m
+[0m[INFO] [1785741281.614874408]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741281.614900349]: No point cloud received[0m
+[0m[INFO] [1785741281.815064054]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741281.815094662]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741282.015015689]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741282.015046030]: No point cloud received[0m
+[0m[INFO] [1785741282.214959360]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741282.214985757]: No point cloud received[0m
+[0m[INFO] [1785741282.415019166]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741282.415049611]: No point cloud received[0m
+[0m[INFO] [1785741282.615101058]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741282.615129795]: No point cloud received[0m
+[0m[INFO] [1785741282.815157757]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741282.815195633]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741283.015510018]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741283.015532227]: No point cloud received[0m
+[0m[INFO] [1785741283.215288695]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741283.215318989]: No point cloud received[0m
+[0m[INFO] [1785741283.415821634]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741283.415865191]: No point cloud received[0m
+[0m[INFO] [1785741283.615012934]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741283.615043481]: No point cloud received[0m
+[0m[INFO] [1785741283.814964081]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741283.814994738]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741284.014964943]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741284.014993189]: No point cloud received[0m
+[0m[INFO] [1785741284.215087542]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741284.215115079]: No point cloud received[0m
+[0m[INFO] [1785741284.415042787]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741284.415073527]: No point cloud received[0m
+[0m[INFO] [1785741284.615139020]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741284.615178221]: No point cloud received[0m
+[0m[INFO] [1785741284.815236048]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741284.815264078]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741285.014858449]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741285.014882319]: No point cloud received[0m
+[0m[INFO] [1785741285.214976316]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741285.215018730]: No point cloud received[0m
+[0m[INFO] [1785741285.415071752]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741285.415102973]: No point cloud received[0m
+[0m[INFO] [1785741285.614954066]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741285.614983016]: No point cloud received[0m
+[0m[INFO] [1785741285.814964980]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741285.814995227]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741286.015245209]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741286.015272423]: No point cloud received[0m
+[0m[INFO] [1785741286.214930917]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741286.214957246]: No point cloud received[0m
+[0m[INFO] [1785741286.415022565]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741286.415047206]: No point cloud received[0m
+[0m[INFO] [1785741286.615086770]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741286.615118442]: No point cloud received[0m
+[0m[INFO] [1785741286.815085239]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741286.815123927]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741287.015385770]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741287.015447065]: No point cloud received[0m
+[0m[INFO] [1785741287.215134546]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741287.215164743]: No point cloud received[0m
+[0m[INFO] [1785741287.414985373]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741287.415010427]: No point cloud received[0m
+[0m[INFO] [1785741287.615342013]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741287.615396689]: No point cloud received[0m
+[0m[INFO] [1785741287.815028804]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741287.815053436]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741288.014984273]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741288.015014557]: No point cloud received[0m
+[0m[INFO] [1785741288.215291183]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741288.215318576]: No point cloud received[0m
+[0m[INFO] [1785741288.415073903]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741288.415109363]: No point cloud received[0m
+[0m[INFO] [1785741288.615257005]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741288.615280964]: No point cloud received[0m
+[0m[INFO] [1785741288.815224617]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741288.815255304]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741289.015044830]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741289.015072028]: No point cloud received[0m
+[0m[INFO] [1785741289.215129978]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741289.215159005]: No point cloud received[0m
+[0m[INFO] [1785741289.415518299]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741289.415626046]: No point cloud received[0m
+[0m[INFO] [1785741289.615425348]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741289.615449443]: No point cloud received[0m
+[0m[INFO] [1785741289.815172725]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741289.815214583]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741290.015181105]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741290.015205912]: No point cloud received[0m
+[0m[INFO] [1785741290.215319347]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741290.215346474]: No point cloud received[0m
+[0m[INFO] [1785741290.415292934]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741290.415323294]: No point cloud received[0m
+[0m[INFO] [1785741290.615400519]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741290.615426086]: No point cloud received[0m
+[0m[INFO] [1785741290.815317835]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741290.815357232]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741291.014945657]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741291.014976601]: No point cloud received[0m
+[0m[INFO] [1785741291.215017261]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741291.215051379]: No point cloud received[0m
+[0m[INFO] [1785741291.415833272]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741291.415903400]: No point cloud received[0m
+[0m[INFO] [1785741291.615493923]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741291.615540218]: No point cloud received[0m
+[0m[INFO] [1785741291.815224991]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741291.815256427]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741292.015063560]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741292.015090645]: No point cloud received[0m
+[0m[INFO] [1785741292.214973598]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741292.215003135]: No point cloud received[0m
+[0m[INFO] [1785741292.415028812]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741292.415056434]: No point cloud received[0m
+[0m[INFO] [1785741292.615281649]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741292.615335055]: No point cloud received[0m
+[0m[INFO] [1785741292.815290856]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741292.815341229]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741293.014945271]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741293.014982520]: No point cloud received[0m
+[0m[INFO] [1785741293.215014360]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741293.215044928]: No point cloud received[0m
+[0m[INFO] [1785741293.415872076]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741293.415914798]: No point cloud received[0m
+[0m[INFO] [1785741293.615359771]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741293.615408236]: No point cloud received[0m
+[0m[INFO] [1785741293.815358936]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741293.815393585]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741294.014948865]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741294.014975519]: No point cloud received[0m
+[0m[INFO] [1785741294.215952994]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741294.215982128]: No point cloud received[0m
+[0m[INFO] [1785741294.415523785]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741294.415552963]: No point cloud received[0m
+[0m[INFO] [1785741294.615117575]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741294.615153692]: No point cloud received[0m
+[0m[INFO] [1785741294.815143626]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741294.815172768]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741295.015302888]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741295.015327054]: No point cloud received[0m
+[0m[INFO] [1785741295.214962529]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741295.214988533]: No point cloud received[0m
+[0m[INFO] [1785741295.415007165]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741295.415036263]: No point cloud received[0m
+[0m[INFO] [1785741295.615112035]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741295.615140372]: No point cloud received[0m
+[0m[INFO] [1785741295.815134517]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741295.815164276]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741296.015072248]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741296.015099046]: No point cloud received[0m
+[0m[INFO] [1785741296.215058924]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741296.215085306]: No point cloud received[0m
+[0m[INFO] [1785741296.415019016]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741296.415044046]: No point cloud received[0m
+[0m[INFO] [1785741296.615201810]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741296.615225733]: No point cloud received[0m
+[0m[INFO] [1785741296.815128803]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741296.815158875]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741297.014927389]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741297.014953702]: No point cloud received[0m
+[0m[INFO] [1785741297.215157413]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741297.215182867]: No point cloud received[0m
+[0m[INFO] [1785741297.415166335]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741297.415191329]: No point cloud received[0m
+[0m[INFO] [1785741297.615019358]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741297.615049803]: No point cloud received[0m
+[0m[INFO] [1785741297.815009349]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741297.815039992]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741298.015055143]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741298.015084477]: No point cloud received[0m
+[0m[INFO] [1785741298.215253947]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741298.215278027]: No point cloud received[0m
+[0m[INFO] [1785741298.415107691]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741298.415137822]: No point cloud received[0m
+[0m[INFO] [1785741298.615044351]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741298.615073600]: No point cloud received[0m
+[0m[INFO] [1785741298.815028539]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741298.815058922]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741299.014958520]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741299.014989161]: No point cloud received[0m
+[0m[INFO] [1785741299.215280506]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741299.215304704]: No point cloud received[0m
+[0m[INFO] [1785741299.415264706]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741299.415288108]: No point cloud received[0m
+[0m[INFO] [1785741299.614947564]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741299.614975526]: No point cloud received[0m
+[0m[INFO] [1785741299.814981590]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741299.815013853]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741300.015002270]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741300.015034564]: No point cloud received[0m
+[0m[INFO] [1785741300.215090488]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741300.215116935]: No point cloud received[0m
+[0m[INFO] [1785741300.415015848]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741300.415044024]: No point cloud received[0m
+[0m[INFO] [1785741300.615032404]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741300.615063450]: No point cloud received[0m
+[0m[INFO] [1785741300.814919458]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741300.814957123]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741301.015238841]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741301.015271281]: No point cloud received[0m
+[0m[INFO] [1785741301.215057394]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741301.215086444]: No point cloud received[0m
+[0m[INFO] [1785741301.415031259]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741301.415060825]: No point cloud received[0m
+[0m[INFO] [1785741301.615118005]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741301.615148690]: No point cloud received[0m
+[0m[INFO] [1785741301.815032541]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741301.815061722]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741302.015103805]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741302.015135811]: No point cloud received[0m
+[0m[INFO] [1785741302.215099182]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741302.215130573]: No point cloud received[0m
+[0m[INFO] [1785741302.414979192]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741302.415009649]: No point cloud received[0m
+[0m[INFO] [1785741302.615102734]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741302.615133769]: No point cloud received[0m
+[0m[INFO] [1785741302.814936349]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741302.814963671]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741303.015030891]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741303.015058843]: No point cloud received[0m
+[0m[INFO] [1785741303.214953434]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741303.214986564]: No point cloud received[0m
+[0m[INFO] [1785741303.415044447]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741303.415076083]: No point cloud received[0m
+[0m[INFO] [1785741303.615209903]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741303.615243515]: No point cloud received[0m
+[0m[INFO] [1785741303.814974503]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741303.815004979]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741304.015127104]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741304.015157941]: No point cloud received[0m
+[0m[INFO] [1785741304.215325691]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741304.215349006]: No point cloud received[0m
+[0m[INFO] [1785741304.415021447]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741304.415051272]: No point cloud received[0m
+[0m[INFO] [1785741304.615035071]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741304.615066887]: No point cloud received[0m
+[0m[INFO] [1785741304.815070925]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741304.815098880]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741305.015063763]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741305.015092511]: No point cloud received[0m
+[0m[INFO] [1785741305.215253490]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741305.215282921]: No point cloud received[0m
+[0m[INFO] [1785741305.414956061]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741305.414986805]: No point cloud received[0m
+[0m[INFO] [1785741305.615113405]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741305.615146778]: No point cloud received[0m
+[0m[INFO] [1785741305.815047486]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741305.815077302]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741306.014962575]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741306.014992107]: No point cloud received[0m
+[0m[INFO] [1785741306.214975613]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741306.215000512]: No point cloud received[0m
+[0m[INFO] [1785741306.415223868]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741306.415256261]: No point cloud received[0m
+[0m[INFO] [1785741306.615156747]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741306.615189467]: No point cloud received[0m
+[0m[INFO] [1785741306.814944837]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741306.814985361]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741307.015008810]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741307.015035100]: No point cloud received[0m
+[0m[INFO] [1785741307.214966339]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741307.214994964]: No point cloud received[0m
+[0m[INFO] [1785741307.414919819]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741307.414949861]: No point cloud received[0m
+[0m[INFO] [1785741307.615014624]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741307.615044053]: No point cloud received[0m
+[0m[INFO] [1785741307.815100926]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741307.815131409]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741308.014965513]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741308.014998095]: No point cloud received[0m
+[0m[INFO] [1785741308.214954387]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741308.214980611]: No point cloud received[0m
+[0m[INFO] [1785741308.414963745]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741308.414993595]: No point cloud received[0m
+[0m[INFO] [1785741308.615069155]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741308.615096388]: No point cloud received[0m
+[0m[INFO] [1785741308.814982482]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741308.815010632]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741309.015085113]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741309.015116187]: No point cloud received[0m
+[0m[INFO] [1785741309.215001978]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741309.215031721]: No point cloud received[0m
+[0m[INFO] [1785741309.415192725]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741309.415220016]: No point cloud received[0m
+[0m[INFO] [1785741309.615081767]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741309.615108009]: No point cloud received[0m
+[0m[INFO] [1785741309.814981995]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741309.815011222]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741310.015038575]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741310.015094831]: No point cloud received[0m
+[0m[INFO] [1785741310.215204488]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741310.215230478]: No point cloud received[0m
+[0m[INFO] [1785741310.415018805]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741310.415056163]: No point cloud received[0m
+[0m[INFO] [1785741310.615067636]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741310.615098785]: No point cloud received[0m
+[0m[INFO] [1785741310.814986008]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741310.815013199]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741311.015127955]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741311.015152113]: No point cloud received[0m
+[0m[INFO] [1785741311.215183595]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741311.215207898]: No point cloud received[0m
+[0m[INFO] [1785741311.415050391]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741311.415080406]: No point cloud received[0m
+[0m[INFO] [1785741311.614967701]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741311.614996366]: No point cloud received[0m
+[0m[INFO] [1785741311.815031409]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741311.815062524]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741312.014901307]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741312.014934737]: No point cloud received[0m
+[0m[INFO] [1785741312.215304722]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741312.215338170]: No point cloud received[0m
+[0m[INFO] [1785741312.414972803]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741312.415003309]: No point cloud received[0m
+[0m[INFO] [1785741312.614951697]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741312.614979077]: No point cloud received[0m
+[0m[INFO] [1785741312.815070824]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741312.815099239]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741313.015034514]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741313.015064186]: No point cloud received[0m
+[0m[INFO] [1785741313.214953525]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741313.214985582]: No point cloud received[0m
+[0m[INFO] [1785741313.414935736]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741313.414965523]: No point cloud received[0m
+[0m[INFO] [1785741313.614944034]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741313.614973775]: No point cloud received[0m
+[0m[INFO] [1785741313.814911320]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741313.814940585]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741314.014939061]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741314.014990764]: No point cloud received[0m
+[0m[INFO] [1785741314.214979641]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741314.215007944]: No point cloud received[0m
+[0m[INFO] [1785741314.414901263]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741314.414926826]: No point cloud received[0m
+[0m[INFO] [1785741314.614871162]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741314.614898106]: No point cloud received[0m
+[0m[INFO] [1785741314.814955879]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741314.814986218]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741315.015114580]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741315.015139726]: No point cloud received[0m
+[0m[INFO] [1785741315.214860629]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741315.214887386]: No point cloud received[0m
+[0m[INFO] [1785741315.414978384]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741315.415003333]: No point cloud received[0m
+[0m[INFO] [1785741315.614968723]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741315.614998523]: No point cloud received[0m
+[0m[INFO] [1785741315.814949972]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741315.814980799]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741316.015015975]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741316.015048561]: No point cloud received[0m
+[0m[INFO] [1785741316.214955491]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741316.214980721]: No point cloud received[0m
+[0m[INFO] [1785741316.414955139]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741316.414988317]: No point cloud received[0m
+[0m[INFO] [1785741316.614928972]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741316.614974818]: No point cloud received[0m
+[0m[INFO] [1785741316.814862257]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741316.814885529]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741317.014947037]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741317.014984285]: No point cloud received[0m
+[0m[INFO] [1785741317.215036798]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741317.215065554]: No point cloud received[0m
+[0m[INFO] [1785741317.414988674]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741317.415031526]: No point cloud received[0m
+[0m[INFO] [1785741317.614985935]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741317.615027246]: No point cloud received[0m
+[0m[INFO] [1785741317.814988911]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741317.815018349]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741318.014881611]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741318.014908185]: No point cloud received[0m
+[0m[INFO] [1785741318.215015757]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741318.215039742]: No point cloud received[0m
+[0m[INFO] [1785741318.414943298]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741318.414972549]: No point cloud received[0m
+[0m[INFO] [1785741318.614877883]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741318.614905741]: No point cloud received[0m
+[0m[INFO] [1785741318.814900220]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741318.814930050]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741319.014968299]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741319.014999683]: No point cloud received[0m
+[0m[INFO] [1785741319.214943759]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741319.214973250]: No point cloud received[0m
+[0m[INFO] [1785741319.414929493]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741319.414955594]: No point cloud received[0m
+[0m[INFO] [1785741319.614964809]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741319.614995929]: No point cloud received[0m
+[0m[INFO] [1785741319.814863436]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741319.814889027]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741320.015168483]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741320.015196550]: No point cloud received[0m
+[0m[INFO] [1785741320.215194912]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741320.215235445]: No point cloud received[0m
+[0m[INFO] [1785741320.415056003]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741320.415081793]: No point cloud received[0m
+[0m[INFO] [1785741320.615155458]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741320.615183762]: No point cloud received[0m
+[0m[INFO] [1785741320.814996298]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741320.815021035]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741321.015088149]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741321.015117459]: No point cloud received[0m
+[0m[INFO] [1785741321.215059382]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741321.215090272]: No point cloud received[0m
+[0m[INFO] [1785741321.414982425]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741321.415013224]: No point cloud received[0m
+[0m[INFO] [1785741321.615432947]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741321.615460716]: No point cloud received[0m
+[0m[INFO] [1785741321.815257100]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741321.815283580]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741322.015005954]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741322.015033994]: No point cloud received[0m
+[0m[INFO] [1785741322.214977926]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741322.215010686]: No point cloud received[0m
+[0m[INFO] [1785741322.415229239]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741322.415284180]: No point cloud received[0m
+[0m[INFO] [1785741322.615077377]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741322.615106808]: No point cloud received[0m
+[0m[INFO] [1785741322.814878819]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741322.814908756]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741323.014858093]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741323.014885485]: No point cloud received[0m
+[0m[INFO] [1785741323.214901136]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741323.214927217]: No point cloud received[0m
+[0m[INFO] [1785741323.415085864]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741323.415109798]: No point cloud received[0m
+[0m[INFO] [1785741323.615131338]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741323.615197650]: No point cloud received[0m
+[0m[INFO] [1785741323.815190944]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741323.815218803]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741324.014939861]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741324.014966313]: No point cloud received[0m
+[0m[INFO] [1785741324.214950876]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741324.214974785]: No point cloud received[0m
+[0m[INFO] [1785741324.415338843]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741324.415382700]: No point cloud received[0m
+[0m[INFO] [1785741324.614990479]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741324.615018396]: No point cloud received[0m
+[0m[INFO] [1785741324.815163222]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741324.815188838]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741325.014985250]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741325.015011479]: No point cloud received[0m
+[0m[INFO] [1785741325.214954075]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741325.214982740]: No point cloud received[0m
+[0m[INFO] [1785741325.414937388]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741325.414966739]: No point cloud received[0m
+[0m[INFO] [1785741325.614992487]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741325.615018291]: No point cloud received[0m
+[0m[INFO] [1785741325.815068307]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741325.815098725]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741326.015125049]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741326.015154393]: No point cloud received[0m
+[0m[INFO] [1785741326.215336158]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741326.215362957]: No point cloud received[0m
+[0m[INFO] [1785741326.414959427]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741326.414985804]: No point cloud received[0m
+[0m[INFO] [1785741326.614979281]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741326.615007829]: No point cloud received[0m
+[0m[INFO] [1785741326.815021647]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741326.815053361]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741327.015195245]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741327.015228332]: No point cloud received[0m
+[0m[INFO] [1785741327.215077077]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741327.215108223]: No point cloud received[0m
+[0m[INFO] [1785741327.414993420]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741327.415023398]: No point cloud received[0m
+[0m[INFO] [1785741327.615038988]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741327.615069268]: No point cloud received[0m
+[0m[INFO] [1785741327.814968308]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741327.814996889]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741328.015176434]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741328.015204554]: No point cloud received[0m
+[0m[INFO] [1785741328.215120208]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741328.215151621]: No point cloud received[0m
+[0m[INFO] [1785741328.415015149]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741328.415045002]: No point cloud received[0m
+[0m[INFO] [1785741328.615055329]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741328.615087984]: No point cloud received[0m
+[0m[INFO] [1785741328.815002916]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741328.815040393]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741329.014959724]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741329.014983867]: No point cloud received[0m
+[0m[INFO] [1785741329.214906862]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741329.214933128]: No point cloud received[0m
+[0m[INFO] [1785741329.414936392]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741329.414967164]: No point cloud received[0m
+[0m[INFO] [1785741329.614986763]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741329.615016323]: No point cloud received[0m
+[0m[INFO] [1785741329.815111952]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741329.815139529]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741330.015034712]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741330.015059399]: No point cloud received[0m
+[0m[INFO] [1785741330.214916956]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741330.214945005]: No point cloud received[0m
+[0m[INFO] [1785741330.415180190]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741330.415211787]: No point cloud received[0m
+[0m[INFO] [1785741330.615357341]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741330.615385077]: No point cloud received[0m
+[0m[INFO] [1785741330.815087168]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741330.815120875]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741331.015622993]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741331.015674736]: No point cloud received[0m
+[0m[INFO] [1785741331.215154680]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741331.215182187]: No point cloud received[0m
+[0m[INFO] [1785741331.415209205]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741331.415244431]: No point cloud received[0m
+[0m[INFO] [1785741331.615190164]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741331.615222187]: No point cloud received[0m
+[0m[INFO] [1785741331.815009990]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741331.815039438]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741332.014987972]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741332.015017897]: No point cloud received[0m
+[0m[INFO] [1785741332.215026366]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741332.215053768]: No point cloud received[0m
+[0m[INFO] [1785741332.415085356]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741332.415115685]: No point cloud received[0m
+[0m[INFO] [1785741332.614940986]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741332.614972479]: No point cloud received[0m
+[0m[INFO] [1785741332.815011172]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741332.815035217]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741333.014966018]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741333.014997245]: No point cloud received[0m
+[0m[INFO] [1785741333.215096292]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741333.215128614]: No point cloud received[0m
+[0m[INFO] [1785741333.415180594]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741333.415205361]: No point cloud received[0m
+[0m[INFO] [1785741333.614902853]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741333.614930884]: No point cloud received[0m
+[0m[INFO] [1785741333.814952823]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741333.814983688]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741334.014944183]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741334.014975499]: No point cloud received[0m
+[0m[INFO] [1785741334.214940380]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741334.214968619]: No point cloud received[0m
+[0m[INFO] [1785741334.414946273]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741334.414976842]: No point cloud received[0m
+[0m[INFO] [1785741334.614976177]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741334.615005389]: No point cloud received[0m
+[0m[INFO] [1785741334.814905322]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741334.814933871]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741335.014947515]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741335.014975050]: No point cloud received[0m
+[0m[INFO] [1785741335.214941364]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741335.214969195]: No point cloud received[0m
+[0m[INFO] [1785741335.415270037]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741335.415300505]: No point cloud received[0m
+[0m[INFO] [1785741335.615246610]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741335.615276960]: No point cloud received[0m
+[0m[INFO] [1785741335.815027370]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741335.815057735]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741336.015089684]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741336.015121709]: No point cloud received[0m
+[0m[INFO] [1785741336.215193988]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741336.215221779]: No point cloud received[0m
+[0m[INFO] [1785741336.414976095]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741336.415006219]: No point cloud received[0m
+[0m[INFO] [1785741336.614941028]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741336.614986666]: No point cloud received[0m
+[0m[INFO] [1785741336.815077201]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741336.815109487]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741337.015057458]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741337.015092088]: No point cloud received[0m
+[0m[INFO] [1785741337.215067398]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741337.215105189]: No point cloud received[0m
+[0m[INFO] [1785741337.415153770]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741337.415192728]: No point cloud received[0m
+[0m[INFO] [1785741337.615596166]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741337.615676249]: No point cloud received[0m
+[0m[INFO] [1785741337.814986313]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741337.815011995]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741338.015175350]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741338.015206586]: No point cloud received[0m
+[0m[INFO] [1785741338.215033192]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741338.215057861]: No point cloud received[0m
+[0m[INFO] [1785741338.415000364]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741338.415027543]: No point cloud received[0m
+[0m[INFO] [1785741338.615242339]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741338.615268492]: No point cloud received[0m
+[0m[INFO] [1785741338.815120684]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741338.815149967]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741339.015148681]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741339.015176487]: No point cloud received[0m
+[0m[INFO] [1785741339.215566942]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741339.215624450]: No point cloud received[0m
+[0m[INFO] [1785741339.415407622]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741339.415454401]: No point cloud received[0m
+[0m[INFO] [1785741339.615058770]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741339.615099007]: No point cloud received[0m
+[0m[INFO] [1785741339.815094011]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741339.815123173]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741340.015296417]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741340.015344667]: No point cloud received[0m
+[0m[INFO] [1785741340.215546645]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741340.215599628]: No point cloud received[0m
+[0m[INFO] [1785741340.415195613]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741340.415219985]: No point cloud received[0m
+[0m[INFO] [1785741340.614951453]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741340.614981517]: No point cloud received[0m
+[0m[INFO] [1785741340.814962229]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741340.814992484]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741341.015099380]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741341.015127841]: No point cloud received[0m
+[0m[INFO] [1785741341.214967951]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741341.214999694]: No point cloud received[0m
+[0m[INFO] [1785741341.415012444]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741341.415039815]: No point cloud received[0m
+[0m[INFO] [1785741341.614975168]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741341.615004819]: No point cloud received[0m
+[0m[INFO] [1785741341.814944250]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741341.814971013]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741342.014918319]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741342.014946900]: No point cloud received[0m
+[0m[INFO] [1785741342.215127285]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741342.215162045]: No point cloud received[0m
+[0m[INFO] [1785741342.414975556]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741342.415010718]: No point cloud received[0m
+[0m[INFO] [1785741342.615020130]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741342.615050062]: No point cloud received[0m
+[0m[INFO] [1785741342.815115636]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741342.815146674]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741343.015077698]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741343.015105690]: No point cloud received[0m
+[0m[INFO] [1785741343.215168017]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741343.215199523]: No point cloud received[0m
+[0m[INFO] [1785741343.415013862]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741343.415041739]: No point cloud received[0m
+[0m[INFO] [1785741343.615130218]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741343.615177777]: No point cloud received[0m
+[0m[INFO] [1785741343.815100492]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741343.815126734]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741344.014998116]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741344.015031135]: No point cloud received[0m
+[0m[INFO] [1785741344.215091601]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741344.215119313]: No point cloud received[0m
+[0m[INFO] [1785741344.415054414]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741344.415085004]: No point cloud received[0m
+[0m[INFO] [1785741344.615043952]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741344.615071403]: No point cloud received[0m
+[0m[INFO] [1785741344.814948823]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741344.814977410]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741345.015129338]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741345.015159152]: No point cloud received[0m
+[0m[INFO] [1785741345.215008799]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741345.215039887]: No point cloud received[0m
+[0m[INFO] [1785741345.415141532]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741345.415171524]: No point cloud received[0m
+[0m[INFO] [1785741345.615022823]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741345.615050406]: No point cloud received[0m
+[0m[INFO] [1785741345.814919225]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741345.814946817]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741346.015106566]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741346.015131290]: No point cloud received[0m
+[0m[INFO] [1785741346.215223951]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741346.215258395]: No point cloud received[0m
+[0m[INFO] [1785741346.415113874]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741346.415142046]: No point cloud received[0m
+[0m[INFO] [1785741346.615081528]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741346.615114868]: No point cloud received[0m
+[0m[INFO] [1785741346.814992079]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741346.815017103]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741347.015032551]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741347.015061764]: No point cloud received[0m
+[0m[INFO] [1785741347.214998556]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741347.215027661]: No point cloud received[0m
+[0m[INFO] [1785741347.414958107]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741347.414986761]: No point cloud received[0m
+[0m[INFO] [1785741347.614956777]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741347.614982978]: No point cloud received[0m
+[0m[INFO] [1785741347.815030289]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741347.815061574]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741348.015114769]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741348.015143011]: No point cloud received[0m
+[0m[INFO] [1785741348.214930998]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741348.214958004]: No point cloud received[0m
+[0m[INFO] [1785741348.415192780]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741348.415216501]: No point cloud received[0m
+[0m[INFO] [1785741348.615327900]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741348.615365058]: No point cloud received[0m
+[0m[INFO] [1785741348.815127516]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741348.815158024]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741349.015032703]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741349.015062106]: No point cloud received[0m
+[0m[INFO] [1785741349.214995433]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741349.215020823]: No point cloud received[0m
+[0m[INFO] [1785741349.415074683]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741349.415114540]: No point cloud received[0m
+[0m[INFO] [1785741349.615108534]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741349.615132990]: No point cloud received[0m
+[0m[INFO] [1785741349.814880266]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741349.814907442]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741350.015282605]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741350.015328896]: No point cloud received[0m
+[0m[INFO] [1785741350.215144235]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741350.215173254]: No point cloud received[0m
+[0m[INFO] [1785741350.415387028]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741350.415417094]: No point cloud received[0m
+[0m[INFO] [1785741350.615134049]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741350.615164596]: No point cloud received[0m
+[0m[INFO] [1785741350.815341719]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741350.815396112]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741351.015042331]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741351.015075528]: No point cloud received[0m
+[0m[INFO] [1785741351.215216125]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741351.215247351]: No point cloud received[0m
+[0m[INFO] [1785741351.415121461]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741351.415154670]: No point cloud received[0m
+[0m[INFO] [1785741351.615385729]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741351.615418165]: No point cloud received[0m
+[0m[INFO] [1785741351.815277708]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741351.815302525]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741352.014912280]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741352.014951846]: No point cloud received[0m
+[0m[INFO] [1785741352.214936372]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741352.214965848]: No point cloud received[0m
+[0m[INFO] [1785741352.415057753]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741352.415094154]: No point cloud received[0m
+[0m[INFO] [1785741352.615021899]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741352.615048340]: No point cloud received[0m
+[0m[INFO] [1785741352.814906776]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741352.814936291]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741353.014906822]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741353.014951712]: No point cloud received[0m
+[0m[INFO] [1785741353.215034797]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741353.215059423]: No point cloud received[0m
+[0m[INFO] [1785741353.414893802]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741353.414919323]: No point cloud received[0m
+[0m[INFO] [1785741353.615240298]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741353.615265514]: No point cloud received[0m
+[0m[INFO] [1785741353.815082118]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741353.815108962]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741354.015009504]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741354.015033476]: No point cloud received[0m
+[0m[INFO] [1785741354.215074592]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741354.215105752]: No point cloud received[0m
+[0m[INFO] [1785741354.414902449]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741354.414928395]: No point cloud received[0m
+[0m[INFO] [1785741354.615094405]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741354.615118926]: No point cloud received[0m
+[0m[INFO] [1785741354.814983327]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741354.815014215]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741355.014948453]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741355.014976283]: No point cloud received[0m
+[0m[INFO] [1785741355.215027650]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741355.215057049]: No point cloud received[0m
+[0m[INFO] [1785741355.414939761]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741355.414968994]: No point cloud received[0m
+[0m[INFO] [1785741355.615319399]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741355.615346729]: No point cloud received[0m
+[0m[INFO] [1785741355.815241710]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741355.815268418]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741356.015173148]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741356.015202259]: No point cloud received[0m
+[0m[INFO] [1785741356.215205144]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741356.215232120]: No point cloud received[0m
+[0m[INFO] [1785741356.415695883]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741356.415760009]: No point cloud received[0m
+[0m[INFO] [1785741356.615053016]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741356.615080924]: No point cloud received[0m
+[0m[INFO] [1785741356.814995552]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741356.815023562]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741357.015169389]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741357.015195608]: No point cloud received[0m
+[0m[INFO] [1785741357.215334808]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741357.215387947]: No point cloud received[0m
+[0m[INFO] [1785741357.414972478]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741357.414996929]: No point cloud received[0m
+[0m[INFO] [1785741357.615058169]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741357.615081307]: No point cloud received[0m
+[0m[INFO] [1785741357.815167278]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741357.815194383]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741358.014961624]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741358.014984164]: No point cloud received[0m
+[0m[INFO] [1785741358.214941812]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741358.214970438]: No point cloud received[0m
+[0m[INFO] [1785741358.415040052]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741358.415067258]: No point cloud received[0m
+[0m[INFO] [1785741358.614923785]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741358.614951810]: No point cloud received[0m
+[0m[INFO] [1785741358.815246842]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741358.815270907]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741359.015181525]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741359.015208628]: No point cloud received[0m
+[0m[INFO] [1785741359.214980559]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741359.215010370]: No point cloud received[0m
+[0m[INFO] [1785741359.414966469]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741359.414997679]: No point cloud received[0m
+[0m[INFO] [1785741359.615037652]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741359.615065021]: No point cloud received[0m
+[0m[INFO] [1785741359.815254960]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741359.815276649]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741360.015024292]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741360.015055619]: No point cloud received[0m
+[0m[INFO] [1785741360.215023558]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741360.215052248]: No point cloud received[0m
+[0m[INFO] [1785741360.415000115]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741360.415031147]: No point cloud received[0m
+[0m[INFO] [1785741360.615017669]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741360.615047603]: No point cloud received[0m
+[0m[INFO] [1785741360.815073333]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741360.815100581]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741361.014923354]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741361.014950881]: No point cloud received[0m
+[0m[INFO] [1785741361.215067726]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741361.215093906]: No point cloud received[0m
+[0m[INFO] [1785741361.415016272]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741361.415051759]: No point cloud received[0m
+[0m[INFO] [1785741361.615135451]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741361.615167788]: No point cloud received[0m
+[0m[INFO] [1785741361.815059469]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741361.815092566]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741362.014883582]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741362.014910354]: No point cloud received[0m
+[0m[INFO] [1785741362.215158593]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741362.215228884]: No point cloud received[0m
+[0m[INFO] [1785741362.415402066]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741362.415449413]: No point cloud received[0m
+[0m[INFO] [1785741362.614933874]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741362.614961447]: No point cloud received[0m
+[0m[INFO] [1785741362.814929616]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741362.814954089]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741363.014926983]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741363.014955659]: No point cloud received[0m
+[0m[INFO] [1785741363.214957078]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741363.214987956]: No point cloud received[0m
+[0m[INFO] [1785741363.415062881]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741363.415092942]: No point cloud received[0m
+[0m[INFO] [1785741363.615110806]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741363.615141661]: No point cloud received[0m
+[0m[INFO] [1785741363.815009871]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741363.815038660]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741364.015494001]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741364.015522949]: No point cloud received[0m
+[0m[INFO] [1785741364.215046162]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741364.215077596]: No point cloud received[0m
+[0m[INFO] [1785741364.415337733]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741364.415388817]: No point cloud received[0m
+[0m[INFO] [1785741364.615229688]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741364.615269445]: No point cloud received[0m
+[0m[INFO] [1785741364.815270087]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741364.815303661]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741365.015019423]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741365.015044576]: No point cloud received[0m
+[0m[INFO] [1785741365.214948196]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741365.214976215]: No point cloud received[0m
+[0m[INFO] [1785741365.415009206]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741365.415032148]: No point cloud received[0m
+[0m[INFO] [1785741365.614885767]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741365.614912811]: No point cloud received[0m
+[0m[INFO] [1785741365.815176906]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741365.815205471]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741366.014953877]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741366.014979176]: No point cloud received[0m
+[0m[INFO] [1785741366.214903820]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741366.214933905]: No point cloud received[0m
+[0m[INFO] [1785741366.415122836]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741366.415159763]: No point cloud received[0m
+[0m[INFO] [1785741366.615100763]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741366.615133832]: No point cloud received[0m
+[0m[INFO] [1785741366.815123088]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741366.815148270]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741367.014877840]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741367.014901478]: No point cloud received[0m
+[0m[INFO] [1785741367.214951617]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741367.214981024]: No point cloud received[0m
+[0m[INFO] [1785741367.415011567]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741367.415039047]: No point cloud received[0m
+[0m[INFO] [1785741367.615105031]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741367.615155081]: No point cloud received[0m
+[0m[INFO] [1785741367.815028784]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741367.815053115]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741368.015323473]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741368.015352227]: No point cloud received[0m
+[0m[INFO] [1785741368.214888392]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741368.214915104]: No point cloud received[0m
+[0m[INFO] [1785741368.415045123]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741368.415073733]: No point cloud received[0m
+[0m[INFO] [1785741368.615001396]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741368.615032915]: No point cloud received[0m
+[0m[INFO] [1785741368.815016047]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741368.815050858]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741369.015293841]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741369.015323710]: No point cloud received[0m
+[0m[INFO] [1785741369.214988002]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741369.215013898]: No point cloud received[0m
+[0m[INFO] [1785741369.415248574]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741369.415291232]: No point cloud received[0m
+[0m[INFO] [1785741369.615342685]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741369.615366906]: No point cloud received[0m
+[0m[INFO] [1785741369.815037142]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741369.815071633]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+[0m[INFO] [1785741370.014984452]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741370.015015474]: No point cloud received[0m
+[0m[INFO] [1785741370.215028627]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741370.215058967]: No point cloud received[0m
+[0m[INFO] [1785741370.414929193]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741370.414956003]: No point cloud received[0m
+[0m[INFO] [1785741370.615267491]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741370.615297111]: No point cloud received[0m
+[0m[INFO] [1785741370.815067402]: [0;33mReceived the point cloud![0m[0m
+[0m[INFO] [1785741370.815094514]: No point cloud received[0m
+[MANAGE]: Waiting for PCL data!
+... logging to /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home/log/e5dabe12-8f0a-11f1-aa82-00155dca07d1/roslaunch-SC-202607101733-98801.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r2_official.launch
+[1mstarted roslaunch server http://SC-202607101733:40755/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.02
+ * /loose/end_pt: [1.5, 0.0, 1.5]
+ * /loose/inter_points: [[2.0, -0.2, 0.18...
+ * /loose/num_points: 6
+ * /loose/start_pt: [-1.5, 0.0, 1.5]
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.02
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 2
+ * /narrow/end_pt: [1.5, 0.0, 1.5]
+ * /narrow/inter_points: [[2.0, -0.2, 0.18...
+ * /narrow/num_points: 6
+ * /narrow/start_pt: [-1.5, 0.0, 1.5]
+ * /nominal/end_pt: [1.5, 0.0, 1.5]
+ * /nominal/inter_points: [[2.0, -0.2, 0.18...
+ * /nominal/num_points: 6
+ * /nominal/start_pt: [-1.5, 0.0, 1.5]
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /global_map
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [100000000000.0, ...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: False
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /smoke_free/end_pt: [1.5, 0.0, 1.5]
+ * /smoke_free/inter_points: [[2.0, -0.2, 0.18...
+ * /smoke_free/num_points: 6
+ * /smoke_free/object/position: [0.0, 0.0, 0.62]
+ * /smoke_free/object/quaternion: [1.0, 0.0, 0.0, 0.0]
+ * /smoke_free/start_pt: [-1.5, 0.0, 1.5]
+ * /staticR: 0.08
+ * /task: smoke_free
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r2_official.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [98837][0m
+[se3_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

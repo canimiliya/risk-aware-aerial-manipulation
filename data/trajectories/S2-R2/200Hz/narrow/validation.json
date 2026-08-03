@@ -1,0 +1,348 @@
+{
+  "status": "PASS",
+  "continuity_tolerance": 1e-08,
+  "checks": {
+    "base": {
+      "checks": {
+        "message_type": true,
+        "segment_duration_positive": true,
+        "coefficient_lengths_match": true,
+        "raw_coefficients_finite": true,
+        "raw_time_finite": true,
+        "sampled_values_finite": true,
+        "csv_npz_consistent": true,
+        "npz_keys_complete": true,
+        "sampled_duration_matches": true,
+        "first_sample_at_zero": true,
+        "last_sample_not_duplicated": true,
+        "boundary_continuity_position": true,
+        "boundary_continuity_velocity": true,
+        "boundary_continuity_acceleration": true,
+        "boundary_continuity_tolerance": 1e-08
+      },
+      "segment_count": 19,
+      "total_duration": 9.248394625645876,
+      "sample_count": 1851,
+      "nan_count": 0,
+      "inf_count": 0,
+      "boundary_rows": [
+        {
+          "boundary_time": 1.7818902319331413,
+          "delta": {
+            "position": 1.9095836023552692e-14,
+            "velocity": 9.992007221626409e-15,
+            "acceleration": 2.4591439995447217e-14
+          }
+        },
+        {
+          "boundary_time": 1.9562328958747006,
+          "delta": {
+            "position": 1.1102230246251565e-15,
+            "velocity": 2.453592884421596e-14,
+            "acceleration": 3.9968028886505635e-15
+          }
+        },
+        {
+          "boundary_time": 2.0413056245534786,
+          "delta": {
+            "position": 1.1102230246251565e-16,
+            "velocity": 3.3306690738754696e-16,
+            "acceleration": 3.552713678800501e-15
+          }
+        },
+        {
+          "boundary_time": 2.1683526870401275,
+          "delta": {
+            "position": 5.551115123125783e-17,
+            "velocity": 1.1102230246251565e-16,
+            "acceleration": 1.3322676295501878e-15
+          }
+        },
+        {
+          "boundary_time": 3.487123825449316,
+          "delta": {
+            "position": 7.771561172376096e-15,
+            "velocity": 1.3877787807814457e-14,
+            "acceleration": 2.273181642920008e-14
+          }
+        },
+        {
+          "boundary_time": 3.6038785580121178,
+          "delta": {
+            "position": 2.220446049250313e-16,
+            "velocity": 3.316791286067655e-15,
+            "acceleration": 4.3298697960381105e-15
+          }
+        },
+        {
+          "boundary_time": 3.72781484620302,
+          "delta": {
+            "position": 1.1102230246251565e-16,
+            "velocity": 9.43689570931383e-16,
+            "acceleration": 1.7763568394002505e-15
+          }
+        },
+        {
+          "boundary_time": 3.8580575789990097,
+          "delta": {
+            "position": 5.551115123125783e-17,
+            "velocity": 5.551115123125783e-17,
+            "acceleration": 6.661338147750939e-16
+          }
+        },
+        {
+          "boundary_time": 4.004230453671877,
+          "delta": {
+            "position": 0.0,
+            "velocity": 3.3306690738754696e-16,
+            "acceleration": 7.771561172376096e-16
+          }
+        },
+        {
+          "boundary_time": 4.117032593123044,
+          "delta": {
+            "position": 0.0,
+            "velocity": 3.608224830031759e-16,
+            "acceleration": 8.881784197001252e-16
+          }
+        },
+        {
+          "boundary_time": 4.285684717323727,
+          "delta": {
+            "position": 1.1102230246251565e-16,
+            "velocity": 1.8041124150158794e-15,
+            "acceleration": 1.3766765505351941e-14
+          }
+        },
+        {
+          "boundary_time": 4.39522514306307,
+          "delta": {
+            "position": 1.1102230246251565e-16,
+            "velocity": 4.996003610813204e-16,
+            "acceleration": 8.326672684688674e-15
+          }
+        },
+        {
+          "boundary_time": 4.512956388115217,
+          "delta": {
+            "position": 2.7755575615628914e-17,
+            "velocity": 2.636779683484747e-16,
+            "acceleration": 1.5543122344752192e-15
+          }
+        },
+        {
+          "boundary_time": 4.978734643260155,
+          "delta": {
+            "position": 4.718447854656915e-16,
+            "velocity": 8.881784197001252e-16,
+            "acceleration": 5.495603971894525e-15
+          }
+        },
+        {
+          "boundary_time": 5.097448241907343,
+          "delta": {
+            "position": 0.0,
+            "velocity": 3.3306690738754696e-16,
+            "acceleration": 5.898059818321144e-16
+          }
+        },
+        {
+          "boundary_time": 5.212138899560594,
+          "delta": {
+            "position": 1.1102230246251565e-16,
+            "velocity": 1.1102230246251565e-16,
+            "acceleration": 2.220446049250313e-16
+          }
+        },
+        {
+          "boundary_time": 5.662600658347748,
+          "delta": {
+            "position": 1.942890293094024e-16,
+            "velocity": 8.881784197001252e-16,
+            "acceleration": 2.6645352591003757e-15
+          }
+        },
+        {
+          "boundary_time": 5.946069219306498,
+          "delta": {
+            "position": 2.7755575615628914e-17,
+            "velocity": 2.220446049250313e-16,
+            "acceleration": 1.5543122344752192e-15
+          }
+        }
+      ]
+    },
+    "arm": {
+      "checks": {
+        "message_type": true,
+        "segment_duration_positive": true,
+        "coefficient_lengths_match": true,
+        "raw_coefficients_finite": true,
+        "raw_time_finite": true,
+        "sampled_values_finite": true,
+        "csv_npz_consistent": true,
+        "npz_keys_complete": true,
+        "sampled_duration_matches": true,
+        "first_sample_at_zero": true,
+        "last_sample_not_duplicated": true,
+        "boundary_continuity_position": true,
+        "boundary_continuity_velocity": true,
+        "boundary_continuity_acceleration": true,
+        "boundary_continuity_tolerance": 1e-08
+      },
+      "segment_count": 19,
+      "total_duration": 9.248394625645876,
+      "sample_count": 1851,
+      "nan_count": 0,
+      "inf_count": 0,
+      "boundary_rows": [
+        {
+          "boundary_time": 1.7818902319331413,
+          "delta": {
+            "position": 5.620504062164855e-16,
+            "velocity": 2.706168622523819e-16,
+            "acceleration": 1.0547118733938987e-15
+          }
+        },
+        {
+          "boundary_time": 1.9562328958747006,
+          "delta": {
+            "position": 1.942890293094024e-16,
+            "velocity": 5.051514762044462e-15,
+            "acceleration": 8.881784197001252e-16
+          }
+        },
+        {
+          "boundary_time": 2.0413056245534786,
+          "delta": {
+            "position": 3.469446951953614e-18,
+            "velocity": 8.326672684688674e-17,
+            "acceleration": 1.5543122344752192e-15
+          }
+        },
+        {
+          "boundary_time": 2.1683526870401275,
+          "delta": {
+            "position": 2.7755575615628914e-17,
+            "velocity": 1.1102230246251565e-16,
+            "acceleration": 3.3306690738754696e-16
+          }
+        },
+        {
+          "boundary_time": 3.487123825449316,
+          "delta": {
+            "position": 3.6012859361278515e-15,
+            "velocity": 6.13398221105399e-15,
+            "acceleration": 1.9317880628477724e-14
+          }
+        },
+        {
+          "boundary_time": 3.6038785580121178,
+          "delta": {
+            "position": 2.3592239273284576e-16,
+            "velocity": 2.1094237467877974e-15,
+            "acceleration": 5.6343818499726694e-15
+          }
+        },
+        {
+          "boundary_time": 3.72781484620302,
+          "delta": {
+            "position": 5.551115123125783e-17,
+            "velocity": 6.661338147750939e-16,
+            "acceleration": 1.4432899320127035e-15
+          }
+        },
+        {
+          "boundary_time": 3.8580575789990097,
+          "delta": {
+            "position": 2.7755575615628914e-17,
+            "velocity": 1.5959455978986625e-16,
+            "acceleration": 9.43689570931383e-16
+          }
+        },
+        {
+          "boundary_time": 4.004230453671877,
+          "delta": {
+            "position": 1.5612511283791264e-17,
+            "velocity": 8.326672684688674e-17,
+            "acceleration": 1.3322676295501878e-15
+          }
+        },
+        {
+          "boundary_time": 4.117032593123044,
+          "delta": {
+            "position": 1.734723475976807e-18,
+            "velocity": 7.28583859910259e-17,
+            "acceleration": 3.0531133177191805e-16
+          }
+        },
+        {
+          "boundary_time": 4.285684717323727,
+          "delta": {
+            "position": 1.3877787807814457e-17,
+            "velocity": 2.3592239273284576e-16,
+            "acceleration": 9.992007221626409e-16
+          }
+        },
+        {
+          "boundary_time": 4.39522514306307,
+          "delta": {
+            "position": 5.204170427930421e-18,
+            "velocity": 1.3877787807814457e-16,
+            "acceleration": 6.661338147750939e-16
+          }
+        },
+        {
+          "boundary_time": 4.512956388115217,
+          "delta": {
+            "position": 2.42861286636753e-17,
+            "velocity": 5.412337245047638e-16,
+            "acceleration": 3.9968028886505635e-15
+          }
+        },
+        {
+          "boundary_time": 4.978734643260155,
+          "delta": {
+            "position": 2.3592239273284576e-16,
+            "velocity": 7.632783294297951e-16,
+            "acceleration": 2.6645352591003757e-15
+          }
+        },
+        {
+          "boundary_time": 5.097448241907343,
+          "delta": {
+            "position": 2.7755575615628914e-17,
+            "velocity": 2.3592239273284576e-16,
+            "acceleration": 1.3322676295501878e-15
+          }
+        },
+        {
+          "boundary_time": 5.212138899560594,
+          "delta": {
+            "position": 0.0,
+            "velocity": 1.249000902703301e-16,
+            "acceleration": 6.262351748276274e-16
+          }
+        },
+        {
+          "boundary_time": 5.662600658347748,
+          "delta": {
+            "position": 1.3877787807814457e-16,
+            "velocity": 1.3877787807814457e-16,
+            "acceleration": 9.992007221626409e-16
+          }
+        },
+        {
+          "boundary_time": 5.946069219306498,
+          "delta": {
+            "position": 1.3877787807814457e-17,
+            "velocity": 4.7704895589362195e-17,
+            "acceleration": 6.106226635438361e-16
+          }
+        }
+      ]
+    },
+    "sha_manifest_complete": true,
+    "all_checks_pass": true
+  }
+}

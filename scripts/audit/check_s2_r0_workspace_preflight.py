@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-MAIN_HEAD = "685086a4b0ed11487313d8f8b069616ddcbc155b"
+MAIN_HEAD = "1a2a76cfca742e3ac8c9087d3e6a2a11465a8186"
 AM_PLANNER_COMMIT = "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d"
 
 

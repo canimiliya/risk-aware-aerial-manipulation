@@ -1,0 +1,22 @@
+{
+  "scene": "smoke_free",
+  "frame_id": "world",
+  "topic": "/global_map",
+  "resolution_m": 0.02,
+  "point_count": 24948,
+  "aabb_m": {
+    "min": [
+      -0.3,
+      -0.3,
+      0.02
+    ],
+    "max": [
+      0.28,
+      0.28,
+      0.56
+    ]
+  },
+  "points_sha256": "c31272dfe9c8c9e6f4d4ef286c25b733e6afc4103a9508bfd78bd644887a42f5",
+  "obstacle_contract": "crossarm_main_beam_plus_pole_plus_adjacent_proxy",
+  "nominal_clearance_gate_m": 0.01
+}

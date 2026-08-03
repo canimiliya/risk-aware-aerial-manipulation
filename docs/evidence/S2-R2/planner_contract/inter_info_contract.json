@@ -1,0 +1,23 @@
+{
+  "schema_version": "s2-r2-inter-info-corrected-1.0",
+  "source_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "source_files": [
+    "src/plan/plan_manage/src/plan_manage.cpp:566-579",
+    "src/plan/traj_opt/include/se3gcopter/se3gcopter.h:840-912",
+    "src/plan/traj_opt/src/se3_planner.cc:72-99,176-206",
+    "src/plan/traj_opt/include/se3gcopter/minco_base.h:543-550"
+  ],
+  "vector_convention": {
+    "element_0": "constraint type",
+    "position": "elements 1:4",
+    "indexing": "half_open_ranges",
+    "q3_input": false,
+    "arm_representation": "internal Cartesian variables and MINCO_S3_ARM; mode-3 fixed arm point is elements 4:7"
+  },
+  "modes": [
+    {"mode": 0, "name": "guide", "expected_size": 4, "fields": {"position": "elements 1:4"}, "base_effect": "guide point", "arm_effect": "free internal Cartesian arm variables"},
+    {"mode": 1, "name": "fixed_base_orientation", "expected_size": 7, "fields": {"position": "elements 1:4", "direction_for_orientation_penalty": "elements 4:7"}, "base_effect": "fixed base point and orientation direction penalty", "arm_effect": "free internal Cartesian arm variables"},
+    {"mode": 2, "name": "other_axis_velocity", "expected_size": 17, "fields": {"position": "elements 1:4", "axis_direction": "elements 4:7 when element 7 is nonzero", "axis_constraint_switch": "element 7", "velocity_value": "elements 8:11", "velocity_constraint_switch": "elements 11:14", "fixed_axis_switch": "elements 14:17"}, "base_effect": "Cartesian waypoint plus optional approach/departure axis planes, velocity and fixed-axis constraints", "arm_effect": "free internal Cartesian arm variables"},
+    {"mode": 3, "name": "fixed_base_and_arm", "expected_size": 20, "fields": {"position": "elements 1:4", "base_direction": "elements 4:7", "arm_direction": "elements 7:10", "velocity_value": "elements 10:13", "velocity_constraint_switch": "elements 13:16", "fixed_axis_switch": "elements 16:19"}, "base_effect": "fixed base point with direction/orientation constraint", "arm_effect": "fixed Cartesian arm point from elements 4:7 under setFixedArm; it is not q[3]"}
+  ]
+}

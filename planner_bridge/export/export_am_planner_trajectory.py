@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import json
 import shutil
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -30,6 +31,11 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def project_commit(root: Path) -> str:
+    result = subprocess.run(["git", "-C", str(root), "rev-parse", "HEAD"], capture_output=True, text=True, check=False)
+    return result.stdout.strip() or "UNKNOWN"
+
+
 def export_run(root: Path, output_root: Path, label: str, task: str, run_id: str, sample_dt: float, source_override: Path | None = None) -> Path:
     source = source_override if source_override is not None else root / "docs/evidence/S1-R1/r7r3_r1_runtime" / run_id
     destination = output_root / label
@@ -48,7 +54,7 @@ def export_run(root: Path, output_root: Path, label: str, task: str, run_id: str
     metadata = {
         "task": task,
         "run_id": run_id,
-        "git_commit": "a028f265c616be922e5ab0ccff907fcbeda06273",
+        "git_commit": project_commit(root),
         "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
         "message_type": base_payload["message_type"],
         "source_evidence_path": str(source).replace("\\", "/"),

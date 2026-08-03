@@ -1,0 +1,83 @@
+[roslaunch][INFO] 2026-08-03 15:13:59,499: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-08-03 15:13:59,505: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-08-03 15:13:59,506: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2026-08-03 15:13:59,506: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CE_M': '', 'WSL_DISTRO_NAME': 'AMPlanner-Ubuntu20', 'PKG_CONFIG_PATH': '/home/amplanner/am-planner-s2-r2-ws/devel/lib/pkgconfig:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'ROS_PACKAGE_PATH': '/home/amplanner/am-planner-s2-r2-ws/src:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/amplanner/am-planner-s2-r2-ws/devel/share/common-lisp:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/share/common-lisp', 'NAME': 'SC-202607101733', 'PWD': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation', 'LOGNAME': 'amplanner', 'CONDA_PREFIX': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39', 'HOME': '/home/amplanner', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/98565_interop', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'WAYLAND_DISPLAY': 'wayland-0', 'CONDA_PROMPT_MODIFIER': '(am-planner-gpu-probe-py39) ', 'CMAKE_PREFIX_PATH': '/home/amplanner/am-planner-s2-r2-ws/devel:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel:/opt/ros/noetic', '_CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CONDA_ROOT': '/home/amplanner/miniforge3', 'PYTHONPATH': '/home/amplanner/am-planner-s2-r2-ws/devel/lib/python3/dist-packages:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'USER': 'amplanner', 'CONDA_SHLVL': '1', 'ROS_HOME': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home', 'DISPLAY': ':0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'CONDA_PYTHON_EXE': '/home/amplanner/miniforge3/bin/python', 'LD_LIBRARY_PATH': '/home/amplanner/am-planner-s2-r2-ws/devel/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/torch/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'CONDA_DEFAULT_ENV': 'am-planner-gpu-probe-py39', 'WSLENV': '', 'PATH': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/runtime-bin:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin:/opt/ros/noetic/bin:/usr/bin:/bin:/usr/lib/wsl/lib', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/usr/bin/env', 'ROS_LOG_FILENAME': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home/log/e5dabe12-8f0a-11f1-aa82-00155dca07d1/roslaunch-SC-202607101733-98657.log'})
+[roslaunch][INFO] 2026-08-03 15:13:59,506: starting in server mode
+[roslaunch.parent][INFO] 2026-08-03 15:13:59,507: starting roslaunch parent run
+[roslaunch][INFO] 2026-08-03 15:13:59,507: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-08-03 15:13:59,599: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,600: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,601: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,601: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-08-03 15:13:59,602: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-08-03 15:13:59,602: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-08-03 15:13:59,602: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-08-03 15:13:59,603: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-08-03 15:13:59,603: Started XML-RPC server [http://SC-202607101733:46453/]
+[xmlrpc][INFO] 2026-08-03 15:13:59,604: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-08-03 15:13:59,614: started roslaunch server http://SC-202607101733:46453/
+[roslaunch.parent][INFO] 2026-08-03 15:13:59,615: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-08-03 15:13:59,615: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 15:13:59,617: auto-starting new master
+[roslaunch][INFO] 2026-08-03 15:13:59,617: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2026-08-03 15:13:59,618: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,618: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,618: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2026-08-03 15:13:59,618: process[master]: starting os process
+[roslaunch][INFO] 2026-08-03 15:13:59,619: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home/log/e5dabe12-8f0a-11f1-aa82-00155dca07d1/master.log']]
+[roslaunch][INFO] 2026-08-03 15:13:59,619: process[master]: cwd will be [/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home]
+[roslaunch][INFO] 2026-08-03 15:13:59,622: process[master]: started with pid [98719]
+[roslaunch][INFO] 2026-08-03 15:13:59,623: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 15:13:59,723: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 15:13:59,836: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 15:13:59,839: master.is_running[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 15:13:59,840: ROS_MASTER_URI=http://SC-202607101733:11311/
+[roslaunch][INFO] 2026-08-03 15:13:59,841: setting /run_id to e5dabe12-8f0a-11f1-aa82-00155dca07d1
+[roslaunch][INFO] 2026-08-03 15:13:59,843: setting /roslaunch/uris/host_sc_202607101733__46453' to http://SC-202607101733:46453/
+[roslaunch][INFO] 2026-08-03 15:13:59,845: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2026-08-03 15:13:59,846: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://SC-202607101733:11311/]
+[roslaunch][INFO] 2026-08-03 15:13:59,847: process[rosout-1]: env[{'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CE_M': '', 'WSL_DISTRO_NAME': 'AMPlanner-Ubuntu20', 'PKG_CONFIG_PATH': '/home/amplanner/am-planner-s2-r2-ws/devel/lib/pkgconfig:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'ROS_PACKAGE_PATH': '/home/amplanner/am-planner-s2-r2-ws/src:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/src:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/amplanner/am-planner-s2-r2-ws/devel/share/common-lisp:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/share/common-lisp', 'NAME': 'SC-202607101733', 'PWD': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation', 'LOGNAME': 'amplanner', 'CONDA_PREFIX': '/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39', 'HOME': '/home/amplanner', 'LANG': 'C.UTF-8', 'WSL_INTEROP': '/run/WSL/98565_interop', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'WAYLAND_DISPLAY': 'wayland-0', 'CONDA_PROMPT_MODIFIER': '(am-planner-gpu-probe-py39) ', 'CMAKE_PREFIX_PATH': '/home/amplanner/am-planner-s2-r2-ws/devel:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel:/opt/ros/noetic', '_CONDA_EXE': '/home/amplanner/miniforge3/bin/conda', '_CONDA_ROOT': '/home/amplanner/miniforge3', 'PYTHONPATH': '/home/amplanner/am-planner-s2-r2-ws/devel/lib/python3/dist-packages:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/usr/lib/python3/dist-packages', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'USER': 'amplanner', 'CONDA_SHLVL': '1', 'ROS_HOME': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home', 'DISPLAY': ':0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://SC-202607101733:11311/', 'CONDA_PYTHON_EXE': '/home/amplanner/miniforge3/bin/python', 'LD_LIBRARY_PATH': '/home/amplanner/am-planner-s2-r2-ws/devel/lib:/home/amplanner/ros-noetic-py39-overlay-r7r3-r1/devel/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/lib/python3.9/site-packages/torch/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'CONDA_DEFAULT_ENV': 'am-planner-gpu-probe-py39', 'WSLENV': '', 'PATH': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/runtime-bin:/home/amplanner/miniforge3/envs/am-planner-gpu-probe-py39/bin:/opt/ros/noetic/bin:/usr/bin:/bin:/usr/lib/wsl/lib', 'HOSTTYPE': 'x86_64', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/usr/bin/env', 'ROS_LOG_FILENAME': '/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home/log/e5dabe12-8f0a-11f1-aa82-00155dca07d1/roslaunch-SC-202607101733-98657.log'}]
+[roslaunch][INFO] 2026-08-03 15:13:59,864: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2026-08-03 15:13:59,865: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,865: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,865: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2026-08-03 15:13:59,865: ... registered process [rosout-1]
+[roslaunch][INFO] 2026-08-03 15:13:59,866: process[rosout-1]: starting os process
+[roslaunch][INFO] 2026-08-03 15:13:59,867: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home/log/e5dabe12-8f0a-11f1-aa82-00155dca07d1/rosout-1.log']]
+[roslaunch][INFO] 2026-08-03 15:13:59,867: process[rosout-1]: cwd will be [/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_03/ros_home]
+[roslaunch][INFO] 2026-08-03 15:13:59,870: process[rosout-1]: started with pid [98754]
+[roslaunch][INFO] 2026-08-03 15:13:59,871: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2026-08-03 15:13:59,871: load_parameters starting ...
+[roslaunch][INFO] 2026-08-03 15:13:59,875: ... load_parameters complete
+[roslaunch][INFO] 2026-08-03 15:13:59,875: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2026-08-03 15:13:59,876: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2026-08-03 15:13:59,876: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 130739808933632)>
+[roslaunch.parent][INFO] 2026-08-03 15:13:59,877: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2026-08-03 15:13:59,877: spin
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,611: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 130739808933632)>
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,635: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 130739808933632)>
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,636: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 130739808933632)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x76e83ad5a8b0>, <roslaunch.nodeprocess.LocalProcess object at 0x76e83ad5aac0>]
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,637: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2026-08-03 15:16:11,638: [rosout-1] killing on exit
+[roslaunch][INFO] 2026-08-03 15:16:11,638: process[rosout-1]: killing os process with pid[98754] pgid[98754]
+[roslaunch][INFO] 2026-08-03 15:16:11,638: [rosout-1] sending SIGINT to pgid [98754]
+[roslaunch][INFO] 2026-08-03 15:16:11,638: [rosout-1] sent SIGINT to pgid [98754]
+[roslaunch][INFO] 2026-08-03 15:16:11,739: process[rosout-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,740: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2026-08-03 15:16:11,740: [master] killing on exit
+[roslaunch][INFO] 2026-08-03 15:16:11,741: process[master]: killing os process with pid[98719] pgid[98719]
+[roslaunch][INFO] 2026-08-03 15:16:11,741: [master] sending SIGINT to pgid [98719]
+[roslaunch][INFO] 2026-08-03 15:16:11,742: [master] sent SIGINT to pgid [98719]
+[roslaunch][INFO] 2026-08-03 15:16:11,943: process[master]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,943: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,944: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2026-08-03 15:16:11,944: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2026-08-03 15:16:11,944: runner.stop()
+[roslaunch][INFO] 2026-08-03 15:16:11,945: shutting down processing monitor...
+[roslaunch][INFO] 2026-08-03 15:16:11,945: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 130739808933632)>
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,945: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 130739808933632)>
+[roslaunch][INFO] 2026-08-03 15:16:11,945: ... shutting down processing monitor complete
+[roslaunch][INFO] 2026-08-03 15:16:11,946: done
+[roslaunch.pmon][INFO] 2026-08-03 15:16:11,946: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 130739808933632)>
+[rospy.core][INFO] 2026-08-03 15:16:11,946: signal_shutdown [atexit]
