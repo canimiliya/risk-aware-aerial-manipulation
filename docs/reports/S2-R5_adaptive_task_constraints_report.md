@@ -30,11 +30,12 @@ R4 failure acceptance 已完成并合并 PR #8。当前 R4 只有连续 q2 下�
 
 最终 Round3：IK no-solution `0`；最大 FK residual `2.1516253669354347e-16 m`；q 范围 q1 `[-0.10644131034309923,0.49900160089863954]`、q2 `[-0.003530976075788894,0.4512970374167464]`、q3 `[-0.02516776621502337,0.4553330575531911]`；joint margin `-0.10644131034309923 rad`。100/200/400/800/2000 Hz 的 q2、FK 和 full-body 收敛证据在 `final_validation/frequency_convergence.json`；各档 clearance 分别为 `0.00366058/0.00115409/0.00081490/0.00081490/0.00065952 m`，均未通过 `0.010 m`。方向合同沿用已通过的 R4 P2→P3 水平 +x、P3→P4 水平 -x/+y，z direction error `4.163336342344337e-17 m`。
 
-明确保持：未裁剪或投影输出轨迹；未缩小 body/rotor/link/EE proxy 或障碍；未降低 `0.010 m` clearance gate；未修改 AM-Planner 第三方源码、IK/FK、FlatnessMap、URDF/Xacro、ROS、Conda、GPU 或 checkpoint；未进入 S3/Isaac Lab；S2-R5 PR 不合并。
+明确保持：未裁剪或投影输出轨迹；未缩小 body/rotor/link/EE proxy 或障碍；未降低 `0.010 m` clearance gate；未修改 AM-Planner 第三方源码、IK/FK、FlatnessMap、URDF/Xacro、ROS、Conda、GPU 或 checkpoint；未进入 S3/Isaac Lab；S2-R5 PR 的合并仅表示失败证据收口，不表示执行可行通过。
 
 ## 关键证据
 
-- Draft PR：`https://github.com/canimiliya/risk-aware-aerial-manipulation/pull/9`，保持 Draft、未合并。
+- PR #9：`https://github.com/canimiliya/risk-aware-aerial-manipulation/pull/9`，A 阶段失败证据已接受并按任务卡普通合并。
+- 失败接受记录：`docs/reviews/S2-R5_failure_review_2026-08-04.md`、`docs/evidence/S2-R5/final_review/s2_r5_failure_acceptance.json`
 
 - `docs/evidence/S2-R5/rounds/round_0..3/`
 - `docs/evidence/S2-R5/runtime/round_1_nominal_abi_fixed_2/`

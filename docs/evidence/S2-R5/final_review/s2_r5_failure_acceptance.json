@@ -1,0 +1,49 @@
+{
+  "decision": "FAILURE_EVIDENCE_ACCEPTED",
+  "result_label": "S2_R5_REQUIRES_ALGORITHM_CONSTRAINT",
+  "s2_r5_status": "FAILURE_EVIDENCE_ACCEPTED",
+  "s2_status": "IN_PROGRESS",
+  "s3_to_s8_status": "FROZEN",
+  "accepted_facts": {
+    "bounded_real_rounds": 3,
+    "baseline_mode3_count": 7,
+    "final_mode3_count": 19,
+    "fixed_points_static_feasible": true,
+    "continuous_polynomial_overshoot": true,
+    "round1_joint_gate_pass": false,
+    "round2_joint_gate_pass": false,
+    "round3_joint_gate_pass": false,
+    "round3_full_body_clearance_m": 0.0006595158746380083,
+    "round3_full_body_gate_pass": false,
+    "direction_contract_pass_all_rounds": true,
+    "real_official_runtime_all_rounds": true,
+    "task_level_budget_exhausted": true
+  },
+  "failure": {
+    "round0_q2_min_rad": -0.10561825091356725,
+    "round1_q2_min_rad": -0.027486350196529452,
+    "round2_q_min_rad": [-0.33084106938098223, 0.003636644695472535, -0.19522580793803668],
+    "round3_q_min_rad": [-0.10644131034309923, -0.003530976075788894, -0.02516776621502337],
+    "round3_dangerous_component": "rotor_1",
+    "failure_location": "continuous_arm_polynomial_between_fixed_mode3_points",
+    "evidence_frequency_hz": [100, 200, 400, 800, 2000],
+    "adaptive_dt_s": 0.0005
+  },
+  "integrity": {
+    "algorithm_source_modified": false,
+    "q_clipped": false,
+    "projection_used_as_output": false,
+    "checkpoint_replaced": false,
+    "proxy_shrunk": false,
+    "obstacle_geometry_modified": false,
+    "clearance_gate_m": 0.01,
+    "s3_authorized": false
+  },
+  "next_authorized_scope": "S2-R6 continuous Cartesian execution-envelope barrier",
+  "evidence": [
+    "docs/reports/S2-R5_adaptive_task_constraints_report.md",
+    "docs/evidence/S2-R5/s2_r5_audit.json",
+    "docs/evidence/S2-R5/final_validation/frequency_convergence.json",
+    "docs/evidence/S2-R5/algorithm_constraint_design/"
+  ]
+}
