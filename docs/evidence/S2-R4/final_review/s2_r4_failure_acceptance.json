@@ -1,0 +1,45 @@
+{
+  "decision": "FAILURE_EVIDENCE_ACCEPTED",
+  "result_label": "SUBMITTED_S2_R4_JOINT_LIMIT_FAILED",
+  "s2_r4_status": "FAILURE_EVIDENCE_ACCEPTED",
+  "s2_status": "IN_PROGRESS",
+  "s3_to_s8_status": "FROZEN",
+  "accepted_facts": {
+    "static_candidates_feasible": true,
+    "real_planner_runtime_captured": true,
+    "direction_contract_pass": true,
+    "nominal_repeatability_pass": true,
+    "frequency_convergence_pass": true,
+    "full_body_clearance_pass": true,
+    "only_continuous_q2_joint_gate_failed": true,
+    "failure_frequency_independent": true,
+    "failure_unmodified": true
+  },
+  "failure": {
+    "nominal_q2_min_rad": -0.10561825091356725,
+    "nominal_q_range_rad": {
+      "min": [0.15798985216494277, -0.10561825091356725, 0.15798985216494277],
+      "max": [0.49398934058058774, 0.30085766289705607, 0.32077532006315046]
+    },
+    "ik_no_solution_count": 0,
+    "max_fk_residual_m": 1.5170650228460041e-16,
+    "violating_interval_count": 2,
+    "violation_evidence": "docs/evidence/S2-R4/root_cause/current_r4_q2_violation.json"
+  },
+  "integrity": {
+    "algorithm_source_modified": false,
+    "obstacle_geometry_modified": false,
+    "proxy_shrunk": false,
+    "clearance_gate_m": 0.01,
+    "q_clipped": false,
+    "projection_used_as_output": false
+  },
+  "evidence": [
+    "docs/reports/S2-R4_execution_feasible_replanning_report.md",
+    "docs/evidence/S2-R4/validation/s2_r4_execution_validation.json",
+    "docs/evidence/S2-R4/root_cause/current_r4_q2_violation.json",
+    "docs/evidence/S2-R4/final_acceptance/s2_r4_execution_feasible_audit.json",
+    "docs/evidence/S2-R4/arm_envelope/envelope_summary.json",
+    "docs/evidence/S2-R4/static_feasibility/p0_p6_selected.json"
+  ]
+}

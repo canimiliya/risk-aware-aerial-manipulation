@@ -2,7 +2,7 @@
 
 ## Conclusion
 
-S2-R4 is submitted for review as `SUBMITTED_S2_R4_JOINT_LIMIT_FAILED`. The task-level constrained replan reached the real official AMPlanner execution layer: smoke-free, loose, nominal, and nominal-repeat all returned `capture_exit=0`, used GPU/JPS/MINCO, and emitted finite non-empty base and arm trajectories. The fixed full-body proxy passed in nominal (`0.13274285460118745 m` minimum, rotor_4), but the official execution joint contract did not: nominal and repeat have `q2_min=-0.10561825091356725 rad`. Therefore S2 remains `IN_PROGRESS`; S3-S8 remain `FROZEN`.
+S2-R4 is accepted as failure evidence under `FAILURE_EVIDENCE_ACCEPTED` with result label `SUBMITTED_S2_R4_JOINT_LIMIT_FAILED`. The task-level constrained replan reached the real official AMPlanner execution layer: smoke-free, loose, nominal, and nominal-repeat all returned `capture_exit=0`, used GPU/JPS/MINCO, and emitted finite non-empty base and arm trajectories. The fixed full-body proxy passed in nominal (`0.13274285460118745 m` minimum, rotor_4), but the official execution joint contract did not: nominal and repeat have `q2_min=-0.10561825091356725 rad`. Therefore S2 remains `IN_PROGRESS`; S3-S8 remain `FROZEN`.
 
 ## Root cause and preserved boundaries
 
@@ -20,6 +20,6 @@ Nominal full-body minimum clearance was `0.13274285460118745 m` at `1.1825 s`, m
 
 ## Review result and next boundary
 
-The dedicated S2-R4 audit has `decision=PASS`, `errors=[]`, `warnings=[]`; this means the evidence package is complete and the failed gate is preserved, not that S2-R4 passed. The only next permitted research action is an explicitly authorized task-level constraint/waypoint redesign or algorithm-level constraint work under a new task card. This report does not authorize S3, Isaac Lab, IL, or Polynomial_DiT.
+The dedicated S2-R4 audit has `decision=PASS`, `errors=[]`, `warnings=[]`; this means the evidence package is complete and the failed gate is preserved, not that S2-R4 passed. The failure review is `docs/reviews/S2-R4_failure_review_2026-08-03.md` and the formal acceptance is `docs/evidence/S2-R4/final_review/s2_r4_failure_acceptance.json`. The only next permitted research action is an explicitly authorized task-level constraint/waypoint redesign or algorithm-level constraint work under a new task card. This report does not authorize S3, Isaac Lab, IL, or Polynomial_DiT.
 
 Evidence: `docs/evidence/S2-R4/validation/s2_r4_execution_validation.json`, `docs/evidence/S2-R4/final_acceptance/s2_r4_execution_feasible_audit.json`, `docs/evidence/S2-R4/root_cause/`, `docs/evidence/S2-R4/arm_envelope/`, `docs/evidence/S2-R4/static_feasibility/`, `docs/evidence/S2-R4/runtime/`, and `docs/evidence/S2-R4/visuals/`.

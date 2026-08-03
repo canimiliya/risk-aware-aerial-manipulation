@@ -31,6 +31,8 @@
     "docs/evidence/S2-R3/ros_playback/ros_playback_status.json",
     "docs/reports/S2-R4_execution_feasible_replanning_report.md",
     "docs/evidence/S2-R4/validation/s2_r4_execution_validation.json",
-    "docs/evidence/S2-R4/final_acceptance/s2_r4_execution_feasible_audit.json"
+    "docs/evidence/S2-R4/final_acceptance/s2_r4_execution_feasible_audit.json",
+    "docs/evidence/S2-R4/root_cause/current_r4_q2_violation.json",
+    "docs/evidence/S2-R4/final_review/s2_r4_failure_acceptance.json"
   ]
 }
