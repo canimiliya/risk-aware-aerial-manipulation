@@ -1,0 +1,803 @@
+{
+  "smoke_free": {
+    "source": "data/trajectories/S2-R3/smoke_free/800Hz/joint_trajectory.csv",
+    "sample_count": 4948,
+    "per_joint": {
+      "q1": {
+        "q_below_zero": [],
+        "q_above_pi_over_2": [],
+        "min_q_rad": 0.145822184122,
+        "max_q_rad": 1.38301677496
+      },
+      "q2": {
+        "q_below_zero": [],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 2.50125,
+            "end_time_s": 2.74375,
+            "duration_s": 0.24249999999999972,
+            "labels": [
+              "q2"
+            ],
+            "phase": "insert",
+            "min_value": 1.57177008629,
+            "max_value": 1.66038454078,
+            "sample_count": 195
+          }
+        ],
+        "min_q_rad": 0.150413341208,
+        "max_q_rad": 1.66038454078
+      },
+      "q3": {
+        "q_below_zero": [
+          {
+            "start_time_s": 0.38,
+            "end_time_s": 1.64,
+            "duration_s": 1.2599999999999998,
+            "labels": [
+              "q3"
+            ],
+            "phase": "approach",
+            "min_value": -0.555228345401,
+            "max_value": -2.3173966375e-05,
+            "sample_count": 1009
+          }
+        ],
+        "q_above_pi_over_2": [],
+        "min_q_rad": -0.555228345401,
+        "max_q_rad": 1.36754636451
+      }
+    },
+    "union_intervals": [
+      {
+        "start_time_s": 0.38,
+        "end_time_s": 1.64,
+        "duration_s": 1.2599999999999998,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "approach",
+        "min_value": -0.555228345401,
+        "max_value": -2.3173966375e-05,
+        "sample_count": 1009
+      },
+      {
+        "start_time_s": 2.50125,
+        "end_time_s": 2.74375,
+        "duration_s": 0.24249999999999972,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.08958821398510342,
+        "max_value": -0.0009737594951033657,
+        "sample_count": 195
+      }
+    ],
+    "cartesian_min_m": [
+      -0.023767073127837574,
+      -0.1068209006541984,
+      -0.2186670722974127
+    ],
+    "cartesian_max_m": [
+      0.07760513669230817,
+      0.03860034356940373,
+      -0.060000000000008755
+    ],
+    "cartesian_at_first_violation_m": [
+      -0.005486307304945006,
+      -0.00753771626045327,
+      -0.061762185130577005
+    ]
+  },
+  "loose": {
+    "source": "data/trajectories/S2-R3/loose/800Hz/joint_trajectory.csv",
+    "sample_count": 6101,
+    "per_joint": {
+      "q1": {
+        "q_below_zero": [
+          {
+            "start_time_s": 4.71875,
+            "end_time_s": 5.75625,
+            "duration_s": 1.0374999999999996,
+            "labels": [
+              "q1"
+            ],
+            "phase": "return",
+            "min_value": -0.365019798825,
+            "max_value": -0.000593428606796,
+            "sample_count": 831
+          }
+        ],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 2.53625,
+            "end_time_s": 3.12875,
+            "duration_s": 0.5925000000000002,
+            "labels": [
+              "q1"
+            ],
+            "phase": "insert",
+            "min_value": 1.57084499209,
+            "max_value": 1.63799655846,
+            "sample_count": 475
+          },
+          {
+            "start_time_s": 3.37,
+            "end_time_s": 3.655,
+            "duration_s": 0.2849999999999997,
+            "labels": [
+              "q1"
+            ],
+            "phase": "pull",
+            "min_value": 1.57156810728,
+            "max_value": 1.67745026802,
+            "sample_count": 229
+          }
+        ],
+        "min_q_rad": -0.365019798825,
+        "max_q_rad": 1.67745026802
+      },
+      "q2": {
+        "q_below_zero": [
+          {
+            "start_time_s": 3.56125,
+            "end_time_s": 4.54625,
+            "duration_s": 0.9849999999999999,
+            "labels": [
+              "q2"
+            ],
+            "phase": "buffer",
+            "min_value": -0.317301140758,
+            "max_value": -0.00116174642164,
+            "sample_count": 789
+          },
+          {
+            "start_time_s": 5.78125,
+            "end_time_s": 6.98125,
+            "duration_s": 1.2000000000000002,
+            "labels": [
+              "q2"
+            ],
+            "phase": "return",
+            "min_value": -0.35199095391,
+            "max_value": -0.000176933111293,
+            "sample_count": 961
+          }
+        ],
+        "q_above_pi_over_2": [],
+        "min_q_rad": -0.35199095391,
+        "max_q_rad": 1.15961663467
+      },
+      "q3": {
+        "q_below_zero": [
+          {
+            "start_time_s": 1.98875,
+            "end_time_s": 2.52125,
+            "duration_s": 0.5325000000000002,
+            "labels": [
+              "q3"
+            ],
+            "phase": "insert",
+            "min_value": -0.165359214191,
+            "max_value": -0.000179682300591,
+            "sample_count": 427
+          }
+        ],
+        "q_above_pi_over_2": [],
+        "min_q_rad": -0.165359214191,
+        "max_q_rad": 1.25885543641
+      }
+    },
+    "union_intervals": [
+      {
+        "start_time_s": 1.98875,
+        "end_time_s": 2.52125,
+        "duration_s": 0.5325000000000002,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.165359214191,
+        "max_value": -0.000179682300591,
+        "sample_count": 427
+      },
+      {
+        "start_time_s": 2.53625,
+        "end_time_s": 3.12875,
+        "duration_s": 0.5925000000000002,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.06720023166510347,
+        "max_value": -4.866529510350048e-05,
+        "sample_count": 475
+      },
+      {
+        "start_time_s": 3.37,
+        "end_time_s": 4.54625,
+        "duration_s": 1.1762499999999996,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "pull",
+        "min_value": -0.317301140758,
+        "max_value": -0.0007717804851035126,
+        "sample_count": 942
+      },
+      {
+        "start_time_s": 4.71875,
+        "end_time_s": 5.75625,
+        "duration_s": 1.0374999999999996,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "return",
+        "min_value": -0.365019798825,
+        "max_value": -0.000593428606796,
+        "sample_count": 831
+      },
+      {
+        "start_time_s": 5.78125,
+        "end_time_s": 6.98125,
+        "duration_s": 1.2000000000000002,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "return",
+        "min_value": -0.35199095391,
+        "max_value": -0.000176933111293,
+        "sample_count": 961
+      }
+    ],
+    "cartesian_min_m": [
+      -0.11405171955707279,
+      -0.07765884015310195,
+      -0.1654651232922258
+    ],
+    "cartesian_max_m": [
+      0.03981103346923115,
+      0.02727288582879834,
+      -0.05999999999993805
+    ],
+    "cartesian_at_first_violation_m": [
+      -0.01361760034888478,
+      -0.045334144731382434,
+      -0.11568839072668645
+    ]
+  },
+  "nominal": {
+    "source": "data/trajectories/S2-R3/nominal/800Hz/joint_trajectory.csv",
+    "sample_count": 7677,
+    "per_joint": {
+      "q1": {
+        "q_below_zero": [
+          {
+            "start_time_s": 6.76375,
+            "end_time_s": 7.79875,
+            "duration_s": 1.0350000000000001,
+            "labels": [
+              "q1"
+            ],
+            "phase": "return",
+            "min_value": -0.216050521157,
+            "max_value": -0.000537244008316,
+            "sample_count": 829
+          }
+        ],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 3.7525,
+            "end_time_s": 4.0275,
+            "duration_s": 0.2749999999999999,
+            "labels": [
+              "q1"
+            ],
+            "phase": "insert",
+            "min_value": 1.57083494955,
+            "max_value": 1.62418460661,
+            "sample_count": 221
+          },
+          {
+            "start_time_s": 4.33875,
+            "end_time_s": 4.71375,
+            "duration_s": 0.375,
+            "labels": [
+              "q1"
+            ],
+            "phase": "pull",
+            "min_value": 1.57135735306,
+            "max_value": 1.72267371705,
+            "sample_count": 301
+          }
+        ],
+        "min_q_rad": -0.216050521157,
+        "max_q_rad": 1.72267371705
+      },
+      "q2": {
+        "q_below_zero": [
+          {
+            "start_time_s": 4.6375,
+            "end_time_s": 5.09,
+            "duration_s": 0.4524999999999997,
+            "labels": [
+              "q2"
+            ],
+            "phase": "buffer",
+            "min_value": -0.0225935172332,
+            "max_value": -0.000170738153911,
+            "sample_count": 363
+          }
+        ],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 1.66375,
+            "end_time_s": 1.92375,
+            "duration_s": 0.26,
+            "labels": [
+              "q2"
+            ],
+            "phase": "insert",
+            "min_value": 1.57144878652,
+            "max_value": 1.6390311823,
+            "sample_count": 209
+          }
+        ],
+        "min_q_rad": -0.0225935172332,
+        "max_q_rad": 1.6390311823
+      },
+      "q3": {
+        "q_below_zero": [
+          {
+            "start_time_s": 2.63375,
+            "end_time_s": 3.15375,
+            "duration_s": 0.52,
+            "labels": [
+              "q3"
+            ],
+            "phase": "insert",
+            "min_value": -0.157226200406,
+            "max_value": -0.000390745460716,
+            "sample_count": 417
+          }
+        ],
+        "q_above_pi_over_2": [],
+        "min_q_rad": -0.157226200406,
+        "max_q_rad": 1.24881710144
+      }
+    },
+    "union_intervals": [
+      {
+        "start_time_s": 1.66375,
+        "end_time_s": 1.92375,
+        "duration_s": 0.26,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.06823485550510333,
+        "max_value": -0.0006524597251034159,
+        "sample_count": 209
+      },
+      {
+        "start_time_s": 2.63375,
+        "end_time_s": 3.15375,
+        "duration_s": 0.52,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.157226200406,
+        "max_value": -0.000390745460716,
+        "sample_count": 417
+      },
+      {
+        "start_time_s": 3.7525,
+        "end_time_s": 4.0275,
+        "duration_s": 0.2749999999999999,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.05338827981510352,
+        "max_value": -3.862275510346791e-05,
+        "sample_count": 221
+      },
+      {
+        "start_time_s": 4.33875,
+        "end_time_s": 5.09,
+        "duration_s": 0.7512499999999998,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "pull",
+        "min_value": -0.15187739025510338,
+        "max_value": -0.000170738153911,
+        "sample_count": 602
+      },
+      {
+        "start_time_s": 6.76375,
+        "end_time_s": 7.79875,
+        "duration_s": 1.0350000000000001,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "return",
+        "min_value": -0.216050521157,
+        "max_value": -0.000537244008316,
+        "sample_count": 829
+      }
+    ],
+    "cartesian_min_m": [
+      -0.11707810110525985,
+      -0.09244702596435814,
+      -0.21485132326852246
+    ],
+    "cartesian_max_m": [
+      0.06000843973319103,
+      0.008167748910421617,
+      -0.059999999999934356
+    ],
+    "cartesian_at_first_violation_m": [
+      0.038756842445244924,
+      -0.04948386953263954,
+      -0.21059200063832345
+    ]
+  },
+  "nominal_repeat": {
+    "source": "data/trajectories/S2-R3/nominal/800Hz/joint_trajectory.csv",
+    "sample_count": 7677,
+    "per_joint": {
+      "q1": {
+        "q_below_zero": [
+          {
+            "start_time_s": 6.76375,
+            "end_time_s": 7.79875,
+            "duration_s": 1.0350000000000001,
+            "labels": [
+              "q1"
+            ],
+            "phase": "return",
+            "min_value": -0.216050521157,
+            "max_value": -0.000537244008316,
+            "sample_count": 829
+          }
+        ],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 3.7525,
+            "end_time_s": 4.0275,
+            "duration_s": 0.2749999999999999,
+            "labels": [
+              "q1"
+            ],
+            "phase": "insert",
+            "min_value": 1.57083494955,
+            "max_value": 1.62418460661,
+            "sample_count": 221
+          },
+          {
+            "start_time_s": 4.33875,
+            "end_time_s": 4.71375,
+            "duration_s": 0.375,
+            "labels": [
+              "q1"
+            ],
+            "phase": "pull",
+            "min_value": 1.57135735306,
+            "max_value": 1.72267371705,
+            "sample_count": 301
+          }
+        ],
+        "min_q_rad": -0.216050521157,
+        "max_q_rad": 1.72267371705
+      },
+      "q2": {
+        "q_below_zero": [
+          {
+            "start_time_s": 4.6375,
+            "end_time_s": 5.09,
+            "duration_s": 0.4524999999999997,
+            "labels": [
+              "q2"
+            ],
+            "phase": "buffer",
+            "min_value": -0.0225935172332,
+            "max_value": -0.000170738153911,
+            "sample_count": 363
+          }
+        ],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 1.66375,
+            "end_time_s": 1.92375,
+            "duration_s": 0.26,
+            "labels": [
+              "q2"
+            ],
+            "phase": "insert",
+            "min_value": 1.57144878652,
+            "max_value": 1.6390311823,
+            "sample_count": 209
+          }
+        ],
+        "min_q_rad": -0.0225935172332,
+        "max_q_rad": 1.6390311823
+      },
+      "q3": {
+        "q_below_zero": [
+          {
+            "start_time_s": 2.63375,
+            "end_time_s": 3.15375,
+            "duration_s": 0.52,
+            "labels": [
+              "q3"
+            ],
+            "phase": "insert",
+            "min_value": -0.157226200406,
+            "max_value": -0.000390745460716,
+            "sample_count": 417
+          }
+        ],
+        "q_above_pi_over_2": [],
+        "min_q_rad": -0.157226200406,
+        "max_q_rad": 1.24881710144
+      }
+    },
+    "union_intervals": [
+      {
+        "start_time_s": 1.66375,
+        "end_time_s": 1.92375,
+        "duration_s": 0.26,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.06823485550510333,
+        "max_value": -0.0006524597251034159,
+        "sample_count": 209
+      },
+      {
+        "start_time_s": 2.63375,
+        "end_time_s": 3.15375,
+        "duration_s": 0.52,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.157226200406,
+        "max_value": -0.000390745460716,
+        "sample_count": 417
+      },
+      {
+        "start_time_s": 3.7525,
+        "end_time_s": 4.0275,
+        "duration_s": 0.2749999999999999,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.05338827981510352,
+        "max_value": -3.862275510346791e-05,
+        "sample_count": 221
+      },
+      {
+        "start_time_s": 4.33875,
+        "end_time_s": 5.09,
+        "duration_s": 0.7512499999999998,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "pull",
+        "min_value": -0.15187739025510338,
+        "max_value": -0.000170738153911,
+        "sample_count": 602
+      },
+      {
+        "start_time_s": 6.76375,
+        "end_time_s": 7.79875,
+        "duration_s": 1.0350000000000001,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "return",
+        "min_value": -0.216050521157,
+        "max_value": -0.000537244008316,
+        "sample_count": 829
+      }
+    ],
+    "cartesian_min_m": [
+      -0.11707810110525985,
+      -0.09244702596435814,
+      -0.21485132326852246
+    ],
+    "cartesian_max_m": [
+      0.06000843973319103,
+      0.008167748910421617,
+      -0.059999999999934356
+    ],
+    "cartesian_at_first_violation_m": [
+      0.038756842445244924,
+      -0.04948386953263954,
+      -0.21059200063832345
+    ]
+  },
+  "narrow": {
+    "source": "data/trajectories/S2-R3/narrow/800Hz/joint_trajectory.csv",
+    "sample_count": 7399,
+    "per_joint": {
+      "q1": {
+        "q_below_zero": [],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 3.735,
+            "end_time_s": 4.5725,
+            "duration_s": 0.8374999999999999,
+            "labels": [
+              "q1"
+            ],
+            "phase": "pull",
+            "min_value": 1.57091004142,
+            "max_value": 1.7390139375,
+            "sample_count": 671
+          }
+        ],
+        "min_q_rad": 0.0941820371157,
+        "max_q_rad": 1.7390139375
+      },
+      "q2": {
+        "q_below_zero": [
+          {
+            "start_time_s": 4.44625,
+            "end_time_s": 5.02,
+            "duration_s": 0.5737499999999995,
+            "labels": [
+              "q2"
+            ],
+            "phase": "buffer",
+            "min_value": -0.090807955859,
+            "max_value": -0.000121146730768,
+            "sample_count": 460
+          }
+        ],
+        "q_above_pi_over_2": [
+          {
+            "start_time_s": 2.035,
+            "end_time_s": 2.0775,
+            "duration_s": 0.04249999999999998,
+            "labels": [
+              "q2"
+            ],
+            "phase": "insert",
+            "min_value": 1.57114235659,
+            "max_value": 1.5748504981,
+            "sample_count": 35
+          },
+          {
+            "start_time_s": 6.535,
+            "end_time_s": 6.85,
+            "duration_s": 0.3149999999999995,
+            "labels": [
+              "q2"
+            ],
+            "phase": "return",
+            "min_value": 1.57080822927,
+            "max_value": 1.58926573456,
+            "sample_count": 253
+          }
+        ],
+        "min_q_rad": -0.090807955859,
+        "max_q_rad": 1.58926573456
+      },
+      "q3": {
+        "q_below_zero": [
+          {
+            "start_time_s": 0.675,
+            "end_time_s": 1.42,
+            "duration_s": 0.7449999999999999,
+            "labels": [
+              "q3"
+            ],
+            "phase": "approach",
+            "min_value": -0.123127084551,
+            "max_value": -7.29908853805e-05,
+            "sample_count": 597
+          },
+          {
+            "start_time_s": 5.495,
+            "end_time_s": 5.88375,
+            "duration_s": 0.38874999999999993,
+            "labels": [
+              "q3"
+            ],
+            "phase": "return",
+            "min_value": -0.112192760782,
+            "max_value": -0.000344365585469,
+            "sample_count": 312
+          }
+        ],
+        "q_above_pi_over_2": [],
+        "min_q_rad": -0.123127084551,
+        "max_q_rad": 1.22612481029
+      }
+    },
+    "union_intervals": [
+      {
+        "start_time_s": 0.675,
+        "end_time_s": 1.42,
+        "duration_s": 0.7449999999999999,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "approach",
+        "min_value": -0.123127084551,
+        "max_value": -7.29908853805e-05,
+        "sample_count": 597
+      },
+      {
+        "start_time_s": 2.035,
+        "end_time_s": 2.0775,
+        "duration_s": 0.04249999999999998,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "insert",
+        "min_value": -0.004054171305103438,
+        "max_value": -0.000346029795103453,
+        "sample_count": 35
+      },
+      {
+        "start_time_s": 3.735,
+        "end_time_s": 5.02,
+        "duration_s": 1.2849999999999997,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "pull",
+        "min_value": -0.16821761070510344,
+        "max_value": -0.000121146730768,
+        "sample_count": 1029
+      },
+      {
+        "start_time_s": 5.495,
+        "end_time_s": 5.88375,
+        "duration_s": 0.38874999999999993,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "return",
+        "min_value": -0.112192760782,
+        "max_value": -0.000344365585469,
+        "sample_count": 312
+      },
+      {
+        "start_time_s": 6.535,
+        "end_time_s": 6.85,
+        "duration_s": 0.3149999999999995,
+        "labels": [
+          "any_joint"
+        ],
+        "phase": "return",
+        "min_value": -0.01846940776510353,
+        "max_value": -1.190247510352016e-05,
+        "sample_count": 253
+      }
+    ],
+    "cartesian_min_m": [
+      -0.11653014519269814,
+      -0.08596731757554621,
+      -0.2087214219153487
+    ],
+    "cartesian_max_m": [
+      0.07199557372753955,
+      0.015063768837163271,
+      -0.060000000000008755
+    ],
+    "cartesian_at_first_violation_m": [
+      0.008136057580373616,
+      -0.01023863006647774,
+      -0.06763620502075963
+    ]
+  }
+}

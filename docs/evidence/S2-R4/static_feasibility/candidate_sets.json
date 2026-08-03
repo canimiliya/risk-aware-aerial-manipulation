@@ -1,0 +1,1158 @@
+{
+  "smoke_free": [
+    {
+      "name": "P0",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -5.183589415886236e-18,
+        -0.06343575059031747
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 1.9920341362536937,
+      "component_clearance_m": {
+        "body": 2.0351733713517612,
+        "rotor_1": 2.213549186261737,
+        "rotor_2": 2.2146331524656624,
+        "rotor_3": 1.9932385707686873,
+        "rotor_4": 1.9920341362536937,
+        "upper_arm_1": 2.2758857768184586,
+        "upper_arm_2": 2.103140943502855,
+        "upper_arm_3": 2.212876968599271,
+        "lower_arm_1_left": 2.2004902131958826,
+        "lower_arm_1_right": 2.1912044333116802,
+        "lower_arm_2_left": 2.107657162763241,
+        "lower_arm_2_right": 2.098689150921447,
+        "lower_arm_3_left": 2.1727278706313795,
+        "lower_arm_3_right": 2.1912044333116802,
+        "moving_platform": 2.1669493567678018,
+        "end_effector": 2.1669493567678018
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P1",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -2.8343921452495128e-18,
+        -0.06665328444111497
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 1.9920341362536937,
+      "component_clearance_m": {
+        "body": 2.0351733713517612,
+        "rotor_1": 2.213549186261737,
+        "rotor_2": 2.2146331524656624,
+        "rotor_3": 1.9932385707686873,
+        "rotor_4": 1.9920341362536937,
+        "upper_arm_1": 2.2758857768184586,
+        "upper_arm_2": 2.101951149955409,
+        "upper_arm_3": 2.2115329199807725,
+        "lower_arm_1_left": 2.1983422615727286,
+        "lower_arm_1_right": 2.189047411686335,
+        "lower_arm_2_left": 2.106469908052628,
+        "lower_arm_2_right": 2.0974968441028925,
+        "lower_arm_3_left": 2.1705525719056555,
+        "lower_arm_3_right": 2.189047411686335,
+        "moving_platform": 2.1647832185511318,
+        "end_effector": 2.1647832185511318
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P2",
+      "q_rad": [
+        0.3,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        -0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 1.9920341362536937,
+      "component_clearance_m": {
+        "body": 2.0351733713517612,
+        "rotor_1": 2.213549186261737,
+        "rotor_2": 2.2146331524656624,
+        "rotor_3": 1.9932385707686873,
+        "rotor_4": 1.9920341362536937,
+        "upper_arm_1": 2.2758857768184586,
+        "upper_arm_2": 2.101951149955409,
+        "upper_arm_3": 2.2115329199807725,
+        "lower_arm_1_left": 2.1922728075498275,
+        "lower_arm_1_right": 2.1829690081770083,
+        "lower_arm_2_left": 2.106469908052628,
+        "lower_arm_2_right": 2.0974968441028925,
+        "lower_arm_3_left": 2.164461890999304,
+        "lower_arm_3_right": 2.1829717772377566,
+        "moving_platform": 2.1586986556116994,
+        "end_effector": 2.1586986556116994
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P3",
+      "q_rad": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 1.9920341362536937,
+      "component_clearance_m": {
+        "body": 2.0351733713517612,
+        "rotor_1": 2.213549186261737,
+        "rotor_2": 2.2146331524656624,
+        "rotor_3": 1.9932385707686873,
+        "rotor_4": 1.9920341362536937,
+        "upper_arm_1": 2.2758857768184586,
+        "upper_arm_2": 2.0964660832553785,
+        "upper_arm_3": 2.2115329199807725,
+        "lower_arm_1_left": 2.1970272658966445,
+        "lower_arm_1_right": 2.1877073519273957,
+        "lower_arm_2_left": 2.1009965826120083,
+        "lower_arm_2_right": 2.09200015414151,
+        "lower_arm_3_left": 2.169167375399433,
+        "lower_arm_3_right": 2.187710115017947,
+        "moving_platform": 2.1634206754562233,
+        "end_effector": 2.1634206754562233
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P4",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.3
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.003678867761795006,
+        -0.07219589128034518
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 1.9920341362536937,
+      "component_clearance_m": {
+        "body": 2.0351733713517612,
+        "rotor_1": 2.213549186261737,
+        "rotor_2": 2.2146331524656624,
+        "rotor_3": 1.9932385707686873,
+        "rotor_4": 1.9920341362536937,
+        "upper_arm_1": 2.2758857768184586,
+        "upper_arm_2": 2.101951149955409,
+        "upper_arm_3": 2.20492055084732,
+        "lower_arm_1_left": 2.194651318381732,
+        "lower_arm_1_right": 2.18534360754188,
+        "lower_arm_2_left": 2.106469908052628,
+        "lower_arm_2_right": 2.0974968441028925,
+        "lower_arm_3_left": 2.166811720223422,
+        "lower_arm_3_right": 2.1853380754002454,
+        "moving_platform": 2.16106094051431,
+        "end_effector": 2.16106094051431
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P5",
+      "q_rad": [
+        0.18,
+        0.22,
+        0.22
+      ],
+      "arm_point_A0_m": [
+        0.001166151280071518,
+        0.0006732777554651146,
+        -0.06774774829091383
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 1.9920341362536937,
+      "component_clearance_m": {
+        "body": 2.0351733713517612,
+        "rotor_1": 2.213549186261737,
+        "rotor_2": 2.2146331524656624,
+        "rotor_3": 1.9932385707686873,
+        "rotor_4": 1.9920341362536937,
+        "upper_arm_1": 2.2758857768184586,
+        "upper_arm_2": 2.100791610642377,
+        "upper_arm_3": 2.21019533534878,
+        "lower_arm_1_left": 2.1984814111931423,
+        "lower_arm_1_right": 2.1891810264440834,
+        "lower_arm_2_left": 2.105312845763615,
+        "lower_arm_2_right": 2.096334852691736,
+        "lower_arm_3_left": 2.1706729314970827,
+        "lower_arm_3_right": 2.1891800157622576,
+        "moving_platform": 2.1649102346949407,
+        "end_effector": 2.1649102346949407
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P6",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.0006419300301374905,
+        -0.06450000896144739
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 1.9920341362536937,
+      "component_clearance_m": {
+        "body": 2.0351733713517612,
+        "rotor_1": 2.213549186261737,
+        "rotor_2": 2.2146331524656624,
+        "rotor_3": 1.9932385707686873,
+        "rotor_4": 1.9920341362536937,
+        "upper_arm_1": 2.2758857768184586,
+        "upper_arm_2": 2.103140943502855,
+        "upper_arm_3": 2.2115329199807725,
+        "lower_arm_1_left": 2.1997795445765473,
+        "lower_arm_1_right": 2.1904912472922087,
+        "lower_arm_2_left": 2.107657162763241,
+        "lower_arm_2_right": 2.098689150921447,
+        "lower_arm_3_left": 2.1720076743771264,
+        "lower_arm_3_right": 2.1904902842413727,
+        "moving_platform": 2.1662326749181458,
+        "end_effector": 2.1662326749181458
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    }
+  ],
+  "loose": [
+    {
+      "name": "P0",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -5.183589415886236e-18,
+        -0.06343575059031747
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.9603124491539199,
+      "component_clearance_m": {
+        "body": 0.9881077392223319,
+        "rotor_1": 1.197246841716444,
+        "rotor_2": 1.197246841716444,
+        "rotor_3": 0.9603124491539199,
+        "rotor_4": 0.9603124491539199,
+        "upper_arm_1": 1.2227995965378384,
+        "upper_arm_2": 1.086277173962444,
+        "upper_arm_3": 1.1718193903657814,
+        "lower_arm_1_left": 1.143712465616779,
+        "lower_arm_1_right": 1.136858537103472,
+        "lower_arm_2_left": 1.0907251780325853,
+        "lower_arm_2_right": 1.0819541504785346,
+        "lower_arm_3_left": 1.119964779323665,
+        "lower_arm_3_right": 1.135347284674818,
+        "moving_platform": 1.1131684643845776,
+        "end_effector": 1.1131684643845776
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P1",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -2.8343921452495128e-18,
+        -0.06665328444111497
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.9603124491539199,
+      "component_clearance_m": {
+        "body": 0.9881077392223319,
+        "rotor_1": 1.197246841716444,
+        "rotor_2": 1.197246841716444,
+        "rotor_3": 0.9603124491539199,
+        "rotor_4": 0.9603124491539199,
+        "upper_arm_1": 1.2227995965378384,
+        "upper_arm_2": 1.0847306596998338,
+        "upper_arm_3": 1.1702101597215975,
+        "lower_arm_1_left": 1.1412138611916758,
+        "lower_arm_1_right": 1.13434496765941,
+        "lower_arm_2_left": 1.0891849219720118,
+        "lower_arm_2_right": 1.080401504897645,
+        "lower_arm_3_left": 1.1174135458616232,
+        "lower_arm_3_right": 1.1328303913495994,
+        "moving_platform": 1.1106356608524794,
+        "end_effector": 1.1106356608524794
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P2",
+      "q_rad": [
+        0.3,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        -0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.9603124491539199,
+      "component_clearance_m": {
+        "body": 0.9881077392223319,
+        "rotor_1": 1.197246841716444,
+        "rotor_2": 1.197246841716444,
+        "rotor_3": 0.9603124491539199,
+        "rotor_4": 0.9603124491539199,
+        "upper_arm_1": 1.2227995965378384,
+        "upper_arm_2": 1.0847306596998338,
+        "upper_arm_3": 1.1702101597215975,
+        "lower_arm_1_left": 1.1348440177839356,
+        "lower_arm_1_right": 1.12793667480367,
+        "lower_arm_2_left": 1.0891849219720118,
+        "lower_arm_2_right": 1.080401504897645,
+        "lower_arm_3_left": 1.1110505668978465,
+        "lower_arm_3_right": 1.1264836443587911,
+        "moving_platform": 1.104248477839403,
+        "end_effector": 1.104248477839403
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P3",
+      "q_rad": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.9603124491539199,
+      "component_clearance_m": {
+        "body": 0.9881077392223319,
+        "rotor_1": 1.197246841716444,
+        "rotor_2": 1.197246841716444,
+        "rotor_3": 0.9603124491539199,
+        "rotor_4": 0.9603124491539199,
+        "upper_arm_1": 1.2227995965378384,
+        "upper_arm_2": 1.0773562485475385,
+        "upper_arm_3": 1.1702101597215975,
+        "lower_arm_1_left": 1.1388721445741519,
+        "lower_arm_1_right": 1.1319194173579132,
+        "lower_arm_2_left": 1.0818405958101946,
+        "lower_arm_2_right": 1.0729976158106684,
+        "lower_arm_3_left": 1.1149514896758428,
+        "lower_arm_3_right": 1.1304714611821036,
+        "moving_platform": 1.1081914687869243,
+        "end_effector": 1.1081914687869243
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P4",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.3
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.003678867761795006,
+        -0.07219589128034518
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.9603124491539199,
+      "component_clearance_m": {
+        "body": 0.9881077392223319,
+        "rotor_1": 1.197246841716444,
+        "rotor_2": 1.197246841716444,
+        "rotor_3": 0.9603124491539199,
+        "rotor_4": 0.9603124491539199,
+        "upper_arm_1": 1.2227995965378384,
+        "upper_arm_2": 1.0847306596998338,
+        "upper_arm_3": 1.1622213153811989,
+        "lower_arm_1_left": 1.1370523000057378,
+        "lower_arm_1_right": 1.1302281918120451,
+        "lower_arm_2_left": 1.0891849219720118,
+        "lower_arm_2_right": 1.080401504897645,
+        "lower_arm_3_left": 1.1130928850695923,
+        "lower_arm_3_right": 1.1285682362045502,
+        "moving_platform": 1.1064168016025098,
+        "end_effector": 1.1064168016025098
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P5",
+      "q_rad": [
+        0.18,
+        0.22,
+        0.22
+      ],
+      "arm_point_A0_m": [
+        0.001166151280071518,
+        0.0006732777554651146,
+        -0.06774774829091383
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.9603124491539199,
+      "component_clearance_m": {
+        "body": 0.9881077392223319,
+        "rotor_1": 1.197246841716444,
+        "rotor_2": 1.197246841716444,
+        "rotor_3": 0.9603124491539199,
+        "rotor_4": 0.9603124491539199,
+        "upper_arm_1": 1.2227995965378384,
+        "upper_arm_2": 1.0832070886003278,
+        "upper_arm_3": 1.1686038740658875,
+        "lower_arm_1_left": 1.1411236577658457,
+        "lower_arm_1_right": 1.1342542227476324,
+        "lower_arm_2_left": 1.0876675334406996,
+        "lower_arm_2_right": 1.0788718763758298,
+        "lower_arm_3_left": 1.1172697146347201,
+        "lower_arm_3_right": 1.1327140136957483,
+        "moving_platform": 1.1105185458213425,
+        "end_effector": 1.1105185458213425
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P6",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.0006419300301374905,
+        -0.06450000896144739
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.9603124491539199,
+      "component_clearance_m": {
+        "body": 0.9881077392223319,
+        "rotor_1": 1.197246841716444,
+        "rotor_2": 1.197246841716444,
+        "rotor_3": 0.9603124491539199,
+        "rotor_4": 0.9603124491539199,
+        "upper_arm_1": 1.2227995965378384,
+        "upper_arm_2": 1.086277173962444,
+        "upper_arm_3": 1.1702101597215975,
+        "lower_arm_1_left": 1.1429080624345649,
+        "lower_arm_1_right": 1.136061450193605,
+        "lower_arm_2_left": 1.0907251780325853,
+        "lower_arm_2_right": 1.0819541504785346,
+        "lower_arm_3_left": 1.119131149704664,
+        "lower_arm_3_right": 1.1345248591591954,
+        "moving_platform": 1.1123530676208786,
+        "end_effector": 1.1123530676208786
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    }
+  ],
+  "nominal": [
+    {
+      "name": "P0",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -5.183589415886236e-18,
+        -0.06343575059031747
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.8209799214480173,
+      "component_clearance_m": {
+        "body": 0.8209799214480173,
+        "rotor_1": 0.9920685460188724,
+        "rotor_2": 1.0519505691808904,
+        "rotor_3": 0.8747251477405826,
+        "rotor_4": 0.8317451532771319,
+        "upper_arm_1": 1.074722805112784,
+        "upper_arm_2": 0.935087057190683,
+        "upper_arm_3": 0.9827517311669169,
+        "lower_arm_1_left": 0.9914123793700944,
+        "lower_arm_1_right": 0.9878429049809972,
+        "lower_arm_2_left": 0.9421601416726912,
+        "lower_arm_2_right": 0.9281272066988202,
+        "lower_arm_3_left": 0.9608954135938939,
+        "lower_arm_3_right": 0.9782499198773851,
+        "moving_platform": 0.9591438835756115,
+        "end_effector": 0.9591438835756115
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P1",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -2.8343921452495128e-18,
+        -0.06665328444111497
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.8209799214480173,
+      "component_clearance_m": {
+        "body": 0.8209799214480173,
+        "rotor_1": 0.9920685460188724,
+        "rotor_2": 1.0519505691808904,
+        "rotor_3": 0.8747251477405826,
+        "rotor_4": 0.8317451532771319,
+        "upper_arm_1": 1.074722805112784,
+        "upper_arm_2": 0.9337076866012644,
+        "upper_arm_3": 0.9813400399775932,
+        "lower_arm_1_left": 0.9891769953197946,
+        "lower_arm_1_right": 0.9856641395548835,
+        "lower_arm_2_left": 0.9407910324940622,
+        "lower_arm_2_right": 0.9267375876036448,
+        "lower_arm_3_left": 0.9586560379785535,
+        "lower_arm_3_right": 0.9760499581219547,
+        "moving_platform": 0.9569347225523382,
+        "end_effector": 0.9569347225523382
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P2",
+      "q_rad": [
+        0.3,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        -0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.8209799214480173,
+      "component_clearance_m": {
+        "body": 0.8209799214480173,
+        "rotor_1": 0.9920685460188724,
+        "rotor_2": 1.0519505691808904,
+        "rotor_3": 0.8747251477405826,
+        "rotor_4": 0.8317451532771319,
+        "upper_arm_1": 1.074722805112784,
+        "upper_arm_2": 0.9337076866012644,
+        "upper_arm_3": 0.9813400399775932,
+        "lower_arm_1_left": 0.9827431011121606,
+        "lower_arm_1_right": 0.9792245166024841,
+        "lower_arm_2_left": 0.9407910324940622,
+        "lower_arm_2_right": 0.9267375876036448,
+        "lower_arm_3_left": 0.9522326021247186,
+        "lower_arm_3_right": 0.969628442324489,
+        "moving_platform": 0.9505170733443838,
+        "end_effector": 0.9505170733443838
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P3",
+      "q_rad": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.8209799214480173,
+      "component_clearance_m": {
+        "body": 0.8209799214480173,
+        "rotor_1": 0.9920685460188724,
+        "rotor_2": 1.0519505691808904,
+        "rotor_3": 0.8747251477405826,
+        "rotor_4": 0.8317451532771319,
+        "upper_arm_1": 1.074722805112784,
+        "upper_arm_2": 0.9271356471289662,
+        "upper_arm_3": 0.9813400399775932,
+        "lower_arm_1_left": 0.9871301246368578,
+        "lower_arm_1_right": 0.9835469114505869,
+        "lower_arm_2_left": 0.9342682938871986,
+        "lower_arm_2_right": 0.9201162999319019,
+        "lower_arm_3_left": 0.9566427373846613,
+        "lower_arm_3_right": 0.9739929908371739,
+        "moving_platform": 0.954948703341221,
+        "end_effector": 0.954948703341221
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P4",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.3
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.003678867761795006,
+        -0.07219589128034518
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.8209799214480173,
+      "component_clearance_m": {
+        "body": 0.8209799214480173,
+        "rotor_1": 0.9920685460188724,
+        "rotor_2": 1.0519505691808904,
+        "rotor_3": 0.8747251477405826,
+        "rotor_4": 0.8317451532771319,
+        "upper_arm_1": 1.074722805112784,
+        "upper_arm_2": 0.9337076866012644,
+        "upper_arm_3": 0.9744356696699916,
+        "lower_arm_1_left": 0.9861584853098612,
+        "lower_arm_1_right": 0.9827322433281845,
+        "lower_arm_2_left": 0.9407910324940622,
+        "lower_arm_2_right": 0.9267375876036448,
+        "lower_arm_3_left": 0.9553557642905239,
+        "lower_arm_3_right": 0.972808095026156,
+        "moving_platform": 0.9539762834236848,
+        "end_effector": 0.9539762834236848
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P5",
+      "q_rad": [
+        0.18,
+        0.22,
+        0.22
+      ],
+      "arm_point_A0_m": [
+        0.001166151280071518,
+        0.0006732777554651146,
+        -0.06774774829091383
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.8209799214480173,
+      "component_clearance_m": {
+        "body": 0.8209799214480173,
+        "rotor_1": 0.9920685460188724,
+        "rotor_2": 1.0519505691808904,
+        "rotor_3": 0.8747251477405826,
+        "rotor_4": 0.8317451532771319,
+        "upper_arm_1": 1.074722805112784,
+        "upper_arm_2": 0.9323491313160206,
+        "upper_arm_3": 0.9799378198668715,
+        "lower_arm_1_left": 0.9893667308221474,
+        "lower_arm_1_right": 0.9858715490040748,
+        "lower_arm_2_left": 0.9394426128065209,
+        "lower_arm_2_right": 0.9253689088115151,
+        "lower_arm_3_left": 0.9588382342204242,
+        "lower_arm_3_right": 0.9762298290299853,
+        "moving_platform": 0.9571441396724731,
+        "end_effector": 0.9571441396724731
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    },
+    {
+      "name": "P6",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.0006419300301374905,
+        -0.06450000896144739
+      ],
+      "base_point_WB_m": [
+        -0.2,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.8209799214480173,
+      "component_clearance_m": {
+        "body": 0.8209799214480173,
+        "rotor_1": 0.9920685460188724,
+        "rotor_2": 1.0519505691808904,
+        "rotor_3": 0.8747251477405826,
+        "rotor_4": 0.8317451532771319,
+        "upper_arm_1": 1.074722805112784,
+        "upper_arm_2": 0.935087057190683,
+        "upper_arm_3": 0.9813400399775932,
+        "lower_arm_1_left": 0.9908137183422552,
+        "lower_arm_1_right": 0.9872773811772806,
+        "lower_arm_2_left": 0.9421601416726912,
+        "lower_arm_2_right": 0.9281272066988202,
+        "lower_arm_3_left": 0.9602855370215524,
+        "lower_arm_3_right": 0.9776507598099655,
+        "moving_platform": 0.9585563528240304,
+        "end_effector": 0.9585563528240304
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 0
+    }
+  ],
+  "narrow": [
+    {
+      "name": "P0",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -5.183589415886236e-18,
+        -0.06343575059031747
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.6207313811473276,
+      "component_clearance_m": {
+        "body": 0.6207313811473276,
+        "rotor_1": 0.8130190649671135,
+        "rotor_2": 0.8130190649671135,
+        "rotor_3": 0.629126378401033,
+        "rotor_4": 0.629126378401033,
+        "upper_arm_1": 0.8647219208201574,
+        "upper_arm_2": 0.6969291369571637,
+        "upper_arm_3": 0.8070300159177719,
+        "lower_arm_1_left": 0.7884992509650846,
+        "lower_arm_1_right": 0.7795993155997448,
+        "lower_arm_2_left": 0.7029783077912626,
+        "lower_arm_2_right": 0.6910506700496819,
+        "lower_arm_3_left": 0.7592431529679136,
+        "lower_arm_3_right": 0.7785017618166853,
+        "moving_platform": 0.7540866792544981,
+        "end_effector": 0.7540866792544981
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 45
+    },
+    {
+      "name": "P1",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -2.8343921452495128e-18,
+        -0.06665328444111497
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.6207313811473276,
+      "component_clearance_m": {
+        "body": 0.6207313811473276,
+        "rotor_1": 0.8130190649671135,
+        "rotor_2": 0.8130190649671135,
+        "rotor_3": 0.629126378401033,
+        "rotor_4": 0.629126378401033,
+        "upper_arm_1": 0.8647219208201574,
+        "upper_arm_2": 0.6957315210213962,
+        "upper_arm_3": 0.8058534725087148,
+        "lower_arm_1_left": 0.7865023425908672,
+        "lower_arm_1_right": 0.7775798417662323,
+        "lower_arm_2_left": 0.7017908698944274,
+        "lower_arm_2_right": 0.689842994578985,
+        "lower_arm_3_left": 0.7571700960992644,
+        "lower_arm_3_right": 0.776479469756811,
+        "moving_platform": 0.7520398842741208,
+        "end_effector": 0.7520398842741208
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 45
+    },
+    {
+      "name": "P2",
+      "q_rad": [
+        0.3,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        -0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.6207313811473276,
+      "component_clearance_m": {
+        "body": 0.6207313811473276,
+        "rotor_1": 0.8130190649671135,
+        "rotor_2": 0.8130190649671135,
+        "rotor_3": 0.629126378401033,
+        "rotor_4": 0.629126378401033,
+        "upper_arm_1": 0.8647219208201574,
+        "upper_arm_2": 0.6957315210213962,
+        "upper_arm_3": 0.8058534725087148,
+        "lower_arm_1_left": 0.7805285029794636,
+        "lower_arm_1_right": 0.7715378042210987,
+        "lower_arm_2_left": 0.7017908698944274,
+        "lower_arm_2_right": 0.689842994578985,
+        "lower_arm_3_left": 0.7511753332268822,
+        "lower_arm_3_right": 0.7705309656036148,
+        "moving_platform": 0.7460185559828608,
+        "end_effector": 0.7460185559828608
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 45
+    },
+    {
+      "name": "P3",
+      "q_rad": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.6207313811473276,
+      "component_clearance_m": {
+        "body": 0.6207313811473276,
+        "rotor_1": 0.8130190649671135,
+        "rotor_2": 0.8130190649671135,
+        "rotor_3": 0.629126378401033,
+        "rotor_4": 0.629126378401033,
+        "upper_arm_1": 0.8647219208201574,
+        "upper_arm_2": 0.6902004772667565,
+        "upper_arm_3": 0.8058534725087148,
+        "lower_arm_1_left": 0.7855503103953558,
+        "lower_arm_1_right": 0.7765157481748142,
+        "lower_arm_2_left": 0.6963072780783771,
+        "lower_arm_2_right": 0.6842650399254605,
+        "lower_arm_3_left": 0.75607765358312,
+        "lower_arm_3_right": 0.7755152900907548,
+        "moving_platform": 0.7509613371316918,
+        "end_effector": 0.7509613371316918
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 45
+    },
+    {
+      "name": "P4",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.3
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.003678867761795006,
+        -0.07219589128034518
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.6207313811473276,
+      "component_clearance_m": {
+        "body": 0.6207313811473276,
+        "rotor_1": 0.8130190649671135,
+        "rotor_2": 0.8130190649671135,
+        "rotor_3": 0.629126378401033,
+        "rotor_4": 0.629126378401033,
+        "upper_arm_1": 0.8647219208201574,
+        "upper_arm_2": 0.6957315210213962,
+        "upper_arm_3": 0.7991496047149947,
+        "lower_arm_1_left": 0.7831825371642124,
+        "lower_arm_1_right": 0.7743238249046024,
+        "lower_arm_2_left": 0.7017908698944274,
+        "lower_arm_2_right": 0.689842994578985,
+        "lower_arm_3_left": 0.7536184991286741,
+        "lower_arm_3_right": 0.7730154610296841,
+        "moving_platform": 0.7486365666527515,
+        "end_effector": 0.7486365666527515
+      },
+      "preferred_margin_rad": 0.2,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 45
+    },
+    {
+      "name": "P5",
+      "q_rad": [
+        0.18,
+        0.22,
+        0.22
+      ],
+      "arm_point_A0_m": [
+        0.001166151280071518,
+        0.0006732777554651146,
+        -0.06774774829091383
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.6207313811473276,
+      "component_clearance_m": {
+        "body": 0.6207313811473276,
+        "rotor_1": 0.8130190649671135,
+        "rotor_2": 0.8130190649671135,
+        "rotor_3": 0.629126378401033,
+        "rotor_4": 0.629126378401033,
+        "upper_arm_1": 0.8647219208201574,
+        "upper_arm_2": 0.6945635657384613,
+        "upper_arm_3": 0.8045316887710785,
+        "lower_arm_1_left": 0.7867582523794262,
+        "lower_arm_1_right": 0.7778386498125754,
+        "lower_arm_2_left": 0.7006328734782732,
+        "lower_arm_2_right": 0.6886651955437619,
+        "lower_arm_3_left": 0.7573598062206057,
+        "lower_arm_3_right": 0.7767015824103377,
+        "moving_platform": 0.7522646944064254,
+        "end_effector": 0.7522646944064254
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 45
+    },
+    {
+      "name": "P6",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.0006419300301374905,
+        -0.06450000896144739
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.9,
+        2.1
+      ],
+      "min_full_body_clearance_m": 0.6207313811473276,
+      "component_clearance_m": {
+        "body": 0.6207313811473276,
+        "rotor_1": 0.8130190649671135,
+        "rotor_2": 0.8130190649671135,
+        "rotor_3": 0.629126378401033,
+        "rotor_4": 0.629126378401033,
+        "upper_arm_1": 0.8647219208201574,
+        "upper_arm_2": 0.6969291369571637,
+        "upper_arm_3": 0.8058534725087148,
+        "lower_arm_1_left": 0.7878542037205636,
+        "lower_arm_1_right": 0.778964607687846,
+        "lower_arm_2_left": 0.7029783077912626,
+        "lower_arm_2_right": 0.6910506700496819,
+        "lower_arm_3_left": 0.7585554687887613,
+        "lower_arm_3_right": 0.7778308883289057,
+        "moving_platform": 0.753425545826044,
+        "end_effector": 0.753425545826044
+      },
+      "preferred_margin_rad": 0.18,
+      "hard_gate_pass": true,
+      "preferred_gate_pass": true,
+      "rejected_candidate_count": 45
+    }
+  ]
+}

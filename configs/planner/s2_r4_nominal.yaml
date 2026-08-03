@@ -1,0 +1,12 @@
+stage: S2-R4
+variant: nominal
+official_mode: 3
+task_file: planner_bridge/scenes/s2_r4_tasks.yaml
+base_constraint: MODE_0_GUIDE_AND_MODE_3_FIXED_CARTESIAN
+arm_constraint: MODE_3_FIXED_ARM_CARTESIAN_P0_P6
+joint_execution_contract_rad: [0.0, 1.5707963267948966]
+preferred_joint_margin_rad: 0.02
+full_body_clearance_gate_m: 0.010
+proxy_contract: PROVISIONAL_S2_ASSUMPTION_REVALIDATED_UNCHANGED
+algorithm_source_modified: false
+

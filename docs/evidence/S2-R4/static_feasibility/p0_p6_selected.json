@@ -1,0 +1,267 @@
+{
+  "variant": {},
+  "P0_P6": [
+    {
+      "name": "P0",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -5.183589415886236e-18,
+        -0.06343575059031747
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.5,
+        1.8
+      ],
+      "joint_margin_rad": 0.18,
+      "clearance_sensitivity": {
+        "0.9": {
+          "min_clearance_m": 0.3415361924162118,
+          "gate_pass": true
+        },
+        "1.0": {
+          "min_clearance_m": 0.32153619241621184,
+          "gate_pass": true
+        },
+        "1.1": {
+          "min_clearance_m": 0.3015361924162118,
+          "gate_pass": true
+        }
+      }
+    },
+    {
+      "name": "P1",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        -2.8343921452495128e-18,
+        -0.06665328444111497
+      ],
+      "base_point_WB_m": [
+        0.0,
+        1.6,
+        1.8
+      ],
+      "joint_margin_rad": 0.2,
+      "clearance_sensitivity": {
+        "0.9": {
+          "min_clearance_m": 0.4013776741499453,
+          "gate_pass": true
+        },
+        "1.0": {
+          "min_clearance_m": 0.38137767414994533,
+          "gate_pass": true
+        },
+        "1.1": {
+          "min_clearance_m": 0.3613776741499453,
+          "gate_pass": true
+        }
+      }
+    },
+    {
+      "name": "P2",
+      "q_rad": [
+        0.3,
+        0.2,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        -0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        0.1,
+        1.7,
+        1.8
+      ],
+      "joint_margin_rad": 0.2,
+      "clearance_sensitivity": {
+        "0.9": {
+          "min_clearance_m": 0.4754387843269574,
+          "gate_pass": true
+        },
+        "1.0": {
+          "min_clearance_m": 0.45543878432695745,
+          "gate_pass": true
+        },
+        "1.1": {
+          "min_clearance_m": 0.43543878432695743,
+          "gate_pass": true
+        }
+      }
+    },
+    {
+      "name": "P3",
+      "q_rad": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.003185992938878093,
+        -0.0018394338808975163,
+        -0.07219589128034522
+      ],
+      "base_point_WB_m": [
+        0.2,
+        1.7,
+        1.8
+      ],
+      "joint_margin_rad": 0.2,
+      "clearance_sensitivity": {
+        "0.9": {
+          "min_clearance_m": 0.4949814812274481,
+          "gate_pass": true
+        },
+        "1.0": {
+          "min_clearance_m": 0.47498148122744815,
+          "gate_pass": true
+        },
+        "1.1": {
+          "min_clearance_m": 0.45498148122744814,
+          "gate_pass": true
+        }
+      }
+    },
+    {
+      "name": "P4",
+      "q_rad": [
+        0.2,
+        0.2,
+        0.3
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.003678867761795006,
+        -0.07219589128034518
+      ],
+      "base_point_WB_m": [
+        0.3,
+        1.7,
+        1.8
+      ],
+      "joint_margin_rad": 0.2,
+      "clearance_sensitivity": {
+        "0.9": {
+          "min_clearance_m": 0.5093378053904893,
+          "gate_pass": true
+        },
+        "1.0": {
+          "min_clearance_m": 0.5057667446560716,
+          "gate_pass": true
+        },
+        "1.1": {
+          "min_clearance_m": 0.48823724838503074,
+          "gate_pass": true
+        }
+      }
+    },
+    {
+      "name": "P5",
+      "q_rad": [
+        0.18,
+        0.22,
+        0.22
+      ],
+      "arm_point_A0_m": [
+        0.001166151280071518,
+        0.0006732777554651146,
+        -0.06774774829091383
+      ],
+      "base_point_WB_m": [
+        0.4,
+        1.6,
+        1.8
+      ],
+      "joint_margin_rad": 0.18,
+      "clearance_sensitivity": {
+        "0.9": {
+          "min_clearance_m": 0.49525934454156695,
+          "gate_pass": true
+        },
+        "1.0": {
+          "min_clearance_m": 0.4922474742960343,
+          "gate_pass": true
+        },
+        "1.1": {
+          "min_clearance_m": 0.47455021416741355,
+          "gate_pass": true
+        }
+      }
+    },
+    {
+      "name": "P6",
+      "q_rad": [
+        0.18,
+        0.18,
+        0.2
+      ],
+      "arm_point_A0_m": [
+        0.0,
+        0.0006419300301374905,
+        -0.06450000896144739
+      ],
+      "base_point_WB_m": [
+        0.5,
+        1.6,
+        1.8
+      ],
+      "joint_margin_rad": 0.18,
+      "clearance_sensitivity": {
+        "0.9": {
+          "min_clearance_m": 0.5152300585198304,
+          "gate_pass": true
+        },
+        "1.0": {
+          "min_clearance_m": 0.508873497926054,
+          "gate_pass": true
+        },
+        "1.1": {
+          "min_clearance_m": 0.5036789260835194,
+          "gate_pass": true
+        }
+      }
+    }
+  ],
+  "base_corridor_WB_m": [
+    [
+      -1.5,
+      0.0,
+      1.5
+    ],
+    [
+      -1.5,
+      1.6,
+      1.5
+    ],
+    [
+      0.0,
+      1.6,
+      1.8
+    ],
+    [
+      1.5,
+      1.6,
+      1.5
+    ],
+    [
+      1.5,
+      0.0,
+      1.5
+    ]
+  ],
+  "direction_contract": {
+    "P2_to_P3": "horizontal insertion: |dz| < 1e-12 m and +x direction",
+    "P3_to_P4": "horizontal pull-out: -x,+y direction"
+  }
+}
