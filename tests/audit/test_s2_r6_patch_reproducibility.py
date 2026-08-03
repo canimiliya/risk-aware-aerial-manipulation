@@ -42,6 +42,12 @@ def test_patch_repro_evidence_matches_patch_sha_and_tree() -> None:
     assert evidence["nominal_repeat_normalized_equal"] is True
 
 
+def test_patch_line_endings_are_protected_from_windows_conversion() -> None:
+    attributes = (ROOT / ".gitattributes").read_text(encoding="utf-8")
+    assert "third_party/patches/AM-Planner_S2-R6_execution_envelope.patch -text" in attributes
+    assert b"\r\n" not in PATCH.read_bytes()
+
+
 def test_patch_audit_external_output_passes(tmp_path: Path) -> None:
     output = tmp_path / "s2_r6_audit.json"
     result = subprocess.run([sys.executable, str(SCRIPT), "--output", str(output)], cwd=ROOT, capture_output=True, text=True, check=False)

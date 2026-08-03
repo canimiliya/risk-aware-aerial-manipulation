@@ -1,5 +1,13 @@
 # S2-R6 连续执行包络 barrier 报告
 
+> 状态说明（2026-08-04）：以下主体保留 S2-R6 提交阶段的历史报告文字。PR #10 已完成普通合并，最终状态以 `docs/evidence/S2/final_acceptance/s2_final_acceptance.json` 和 `docs/milestones/S2_status.md` 为准：S2-R6=`PASS_WITH_LIMITATIONS`，S2=`PASS_WITH_LIMITATIONS`，S3=`NOT_STARTED`，S4-S8=`FROZEN`。
+
+## 最终收口补充
+
+- 历史审计、无副作用测试、summary 恢复 provenance、S2-R6 patch-only 复现和最终 readiness 均已完成。
+- PR #10 已以普通 merge 合并，merge commit 为 `8df48d2b4edc0d219ad8eb3a9b211fb291daf2ab`；当前 main 为 S2 最终收口状态。
+- 这不改变下文保留的失败候选、代理几何、local-only NPZ、soft barrier、未执行风/接触/闭环控制等限制。
+
 ## 项目进度
 
 - 正式阶段：2/9≈22%；本轮未进入后续正式阶段。
@@ -55,7 +63,7 @@ S2-R5 的三轮有界 task-level 尝试已接受为失败证据并合并 PR #9�
 
 ## S2 readiness
 
-专项审计为 `PASS / errors=0 / warnings=0`。S2 readiness 更新为 `NOT_READY_S2_R6_SUBMITTED_FOR_REVIEW`，因为 S2 仍在 `IN_PROGRESS`，S3-S8 仍冻结；Draft PR #10（`https://github.com/canimiliya/risk-aware-aerial-manipulation/pull/10`）不合并。
+专项审计为 `PASS / errors=0 / warnings=0`。本段是合并前的历史提交快照；最终 readiness、acceptance 和 PR #10 合并结果见文首的最终收口补充。
 
 ## 明确未执行
 
