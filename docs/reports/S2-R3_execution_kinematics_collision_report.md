@@ -20,7 +20,7 @@ S3–S8：FROZEN
 - `delta_display.cpp:468-564`：官方 IK/FK；`632-713`：官方 joint points。
 - `flatness.h:34-135` 和 `delta_display.cpp:205-252`：官方 FlatnessMap 执行层姿态映射。
 - `traj_server.cpp:450-590`：官方五阶归一化多项式回放；`698-839`：两条 PolynomialTrajectory 输入合同。
-- Python wrapper 与官方解析式逐项对应；1000 随机有效点、8 个边界候选和五组各 100 点的 FK/IK 数值回环通过。raw FK 与 endCallback joint-state FK 的 `π/2-q` 互补约定已显式分离。
+- Python wrapper 与官方解析式逐项对应；1000 随机有效点、8 个边界候选、P0–P6 七个代表性候选点和五组各 100 点的 FK/IK 数值回环通过。raw FK 与 endCallback joint-state FK 的 `π/2-q` 互补约定已显式分离。
 
 ## IK/FK 和姿态结果
 

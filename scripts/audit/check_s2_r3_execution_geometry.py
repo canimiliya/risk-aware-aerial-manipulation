@@ -41,6 +41,7 @@ def main() -> int:
     for name in contract_files:
         require(f"contract_{name}", (ROOT / "docs/evidence/S2-R3/execution_contract" / name).exists())
     require("kinematics_summary", (ROOT / "docs/evidence/S2-R3/kinematics/s2_r3_kinematics_summary.json").exists())
+    require("p0_p6_loopback", (ROOT / "docs/evidence/S2-R3/kinematics/p0_p6_candidate_loopback.json").exists())
     require("geometry_manifest", (ROOT / "docs/evidence/S2-R3/geometry/geometry_manifest.json").exists())
     require("ros_playback_status", (ROOT / "docs/evidence/S2-R3/ros_playback/ros_playback_status.json").exists())
     visual_dir = ROOT / "docs/evidence/S2-R3/visuals"

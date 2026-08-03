@@ -24,6 +24,15 @@ def test_official_ik_fk_random_valid_points_and_boundaries() -> None:
     assert np.max(np.abs(recovered - q_values)) < 1e-9
 
 
+def test_p0_to_p6_representative_candidate_points() -> None:
+    candidates = np.asarray([[0.15, 0.35, 0.55], [0.25, 0.65, 1.05], [0.45, 0.9, 1.25], [0.7, 0.8, 1.1], [0.95, 0.6, 0.85], [1.2, 0.4, 0.65], [1.45, 1.1, 0.35]])
+    for q in candidates:
+        point = official_fk_joint_state(q)
+        recovered = official_ik(point)
+        assert np.isfinite(recovered).all()
+        assert np.linalg.norm(official_fk_joint_state(recovered) - point) < 1e-10
+
+
 def test_s2_r2_five_trajectory_groups_have_100_point_ik_loops() -> None:
     variants = ["smoke_free", "loose", "nominal", "nominal_repeat", "narrow"]
     for variant in variants:
