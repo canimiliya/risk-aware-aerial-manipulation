@@ -35,8 +35,11 @@ nominal 最危险项是 `end_effector_world_proxy`，100 Hz 时刻 `5.41 s`，�
 ## 连续验证边界
 
 - 末端世界轨迹按 `p_WE = p_WB + R_WB p_A0E` 重建；本次消息只有 yaw 边界且为 0，故采用 `R_WB=I` 的可证实特例。
-- 已 gate 的组件：base body sphere proxy `0.08 m`、重建世界系末端 proxy `0.025 m`。
+- 官方 `DeltaDisplay::endCallback` 已提供逐点 `IK_kin(x, y, z, theta_vector)`，并把 Cartesian end-effector 点转换为 joint state 后调用 `getJointPoints`；S2-R2 尚未把该官方 IK 应用于整条规划轨迹，因此本报告不宣称连续 joint limits 或全身执行层碰撞闭环。
+- yaw=0 只固定偏航；动态 roll/pitch 应由官方 `FlatnessMap` 根据 position/velocity/acceleration/jerk 重建。本轮尚未重建动态 `R_WB(t)`，所以现有 `R_WB=I` 结果仅是 planner-level provisional validation。
+- 已 gate 的组件：base body sphere proxy `0.08 m`、重建世界系末端 proxy `0.025 m`。其中 `0.08 m` 来自 Delta static/platform geometry，不自动等于无人机机体半径；S2-R0 的 body/rotor `0.20/0.25 m` 仍标记为 `PROVISIONAL_S2_ASSUMPTION`。
 - rotor disk 仅按 S2-R0 暂定尺寸做 diagnostic，不纳入 S2-R2 gate；连杆连续碰撞和 joint-limit 需要官方时间参数化 IK/完整几何执行层，本轮不宣称完成。
+- 因此 `0.0332307 m` 只能称为 `S2-R2 planner-level gated proxy clearance`，不是全身碰撞结论，也不是 mesh 精确碰撞。
 - clearance threshold sensitivity：nominal 在 `0.02 m` 通过，在 `0.05 m` 和 `0.10 m` 不通过；这是敏感性结果，不是修改 gate。
 
 ## 后续边界

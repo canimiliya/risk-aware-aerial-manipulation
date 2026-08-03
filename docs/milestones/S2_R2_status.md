@@ -14,6 +14,8 @@ S2-R2 已按纠正后的官方 AM-Planner 合同完成工程验收，并提交�
 
 ## 边界与下一步
 
-- `/trajectory_arm` 是 Cartesian polynomial trajectory，不是 Delta joint `q(t)`；本轮不虚构 IK 轨迹或关节限位通过。
+- 官方 `DeltaDisplay::endCallback` 存在逐点 `IK_kin` 和 `getJointPoints`，但 `/trajectory_arm` 仍是 Cartesian polynomial trajectory，不是 Delta joint `q(t)`；S2-R2 尚未将官方 IK 应用于整条轨迹，因此不宣称连续 IK、关节限位或全身碰撞通过。
+- yaw=0 只固定偏航；官方 `FlatnessMap` 尚未根据 acceleration/jerk 重建动态 `R_WB(t)`。现有 `R_WB=I` 结果仅为 planner-level provisional validation。
+- 当前 `0.08 m` 是 Delta static/platform geometry，不自动等于无人机机体半径；S2-R0 的 `0.20/0.25 m` body/rotor 尺寸仍为 `PROVISIONAL_S2_ASSUMPTION`。`0.0332307 m` 只能称为 `S2-R2 planner-level gated proxy clearance`。
 - direction 采用官方 `se3_planner` JPS 日志与 mode-2 轴语义做等价水平约束验证：端点误差和水平段方向误差均为 0；连续 `PolynomialTrajectory` 工具轴误差仍因消息不携带原始 flag/vector 而不宣称可计算。
 - S2 保持 `IN_PROGRESS`；S3-S8 保持 `FROZEN`。等待项目负责人对 S2-R2 提交复核后再决定是否推进。
