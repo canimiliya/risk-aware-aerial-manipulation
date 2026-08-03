@@ -113,7 +113,7 @@ def run(root: Path = ROOT) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--output", type=Path, default=Path("docs/evidence/S1/final_acceptance/s1_final_acceptance.json"))
     args = parser.parse_args()
     result = run()
     args.output.parent.mkdir(parents=True, exist_ok=True)

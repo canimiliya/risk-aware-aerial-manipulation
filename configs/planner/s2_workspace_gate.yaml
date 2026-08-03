@@ -1,0 +1,8 @@
+name: s2_r0_workspace_gate
+status: PROVISIONAL_S2_GATE
+sample_count: 100000
+random_seed: 20260803
+horizontal_tolerance: 0.05
+joint_margin: {loose: 0.05, nominal: 0.10, narrow: 0.15}
+clearance_m: {loose: 0.005, nominal: 0.010, narrow: 0.015}
+note: These are preflight thresholds, not safety-certified or full-planner constraints.

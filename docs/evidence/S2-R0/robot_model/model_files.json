@@ -1,0 +1,12 @@
+{
+  "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "source_root": "third_party/am-planner",
+  "files": [
+    {"path": "src/uam_sim/delta-display/delta_display/urdf/arm.xacro", "role": "URDF links, joints, origins, axes, limits, meshes"},
+    {"path": "src/uam_sim/delta-display/delta_display/config/joint_names_arm6.yaml", "role": "controller active joint order"},
+    {"path": "src/uam_sim/delta-display/delta_display/src/delta_display.cpp", "role": "official FK, IK, joint-point geometry"},
+    {"path": "src/plan/plan_manage/launch/run_in_sim_grasp.launch", "role": "official launch geometry parameters"},
+    {"path": "src/plan/plan_manage/misc/grasp.yaml", "role": "official Delta and arm planning parameters"},
+    {"path": "src/plan/plan_manage/launch/simulator.xml", "role": "body-to-model launch wiring"}
+  ]
+}

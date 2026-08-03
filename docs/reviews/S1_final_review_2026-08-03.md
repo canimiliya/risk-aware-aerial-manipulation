@@ -17,7 +17,7 @@
 
 - S1-R2 实现提交：`8d9d1da`。
 - 视频 manifest 提交：`0fbbbe4`。
-- PR #4 最终审阅提交/Head：`f12f61ab1925e30dfa31dbb4c8a2f63c023cfb0a`。
+- PR #4 原始 S1-R2 Head：`f12f61ab1925e30dfa31dbb4c8a2f63c023cfb0a`；A 阶段最终审阅提交：`e66c4783d5c80492bb0099c35f144d5eeac06df5`。
 - S1-R1 合并后的 main 基线：`a028f265c616be922e5ab0ccff907fcbeda06273`。
 
 ## 证据

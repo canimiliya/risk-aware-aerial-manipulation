@@ -1,0 +1,19 @@
+{
+  "decision": "PASS_WITH_LIMITATIONS",
+  "errors": [],
+  "warnings": [
+    "crossarm/obstacle/body/rotor/tool values remain PROVISIONAL_S2_ASSUMPTION",
+    "S2-R0 is a static workspace preflight and not complete continuous planning"
+  ],
+  "checks": {
+    "s2_branch": "agent/s2-r0-delta-workspace-scene-contract",
+    "r0_preflight": "{\"decision\": \"SUBMITTED_S2_R0_G_ARM_READY\", \"errors\": [], \"warnings\": []}\n",
+    "required_artifacts": [],
+    "final_status": true,
+    "g_arm_evidence": true
+  },
+  "accepted_limitations": [
+    "official Delta FK and joint/launch geometry are fixed; task-scene dimensions are provisional",
+    "vehicle pose, tool pose/length, mesh collision, dynamics and flight-control coupling are unavailable"
+  ]
+}

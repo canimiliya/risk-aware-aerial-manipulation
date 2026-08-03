@@ -1,0 +1,71 @@
+{
+  "decision": "SUBMITTED_S2_R0_G_ARM_READY",
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "required_artifacts": [],
+    "s2_branch": "agent/s2-r0-delta-workspace-scene-contract",
+    "base_main": true,
+    "algorithm_boundary": true,
+    "official_model_commit": true,
+    "official_joint_contract": true,
+    "official_geometry_contract": true,
+    "provisional_scene_marked": true,
+    "target_fake_declared": true,
+    "provisional_tool_marked": true,
+    "workspace_manifest": {
+      "decision_scope": "S2-R0 static workspace preflight only",
+      "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+      "sample_count": 100000,
+      "random_seed": 20260803,
+      "boundary_samples_included": true,
+      "local_npz": "outputs/workspace/S2-R0/delta_workspace_100k.npz",
+      "local_npz_sha256": "44EEFDA1A5FE37D96BE95216241481183A58508CB568B8E5DBB784CFB1EEC8EF",
+      "local_npz_bytes": 4390136,
+      "local_summary": "outputs/workspace/S2-R0/delta_workspace_100k.json",
+      "static_figure": "outputs/figures/S2-R0/delta_workspace.png",
+      "static_figure_bytes": 468315,
+      "note": "The compressed NPZ is local-only; this manifest and summary are the reviewable Git artifacts."
+    },
+    "workspace_summary": {
+      "sample_count": 100000,
+      "valid_fk_count": 90205,
+      "invalid_fk_count": 9795,
+      "random_seed": 20260803,
+      "boundary_samples_included": true,
+      "position_min_m": [
+        -0.15999996547778708,
+        -0.1745509624578112,
+        -0.2540862400257052
+      ],
+      "position_max_m": [
+        0.1599987096972857,
+        0.18450539610623284,
+        0.04567494892705378
+      ],
+      "jacobian_min_singular_value": 9.016323491149443e-07,
+      "jacobian_condition_p99": 401.49791458053073,
+      "official_geometry": {
+        "static_radius_m": 0.08,
+        "moving_radius_m": 0.025,
+        "upper_arm_m": 0.1,
+        "lower_arm_m": 0.16,
+        "joint_lower_rad": -1.57,
+        "joint_upper_rad": 1.57,
+        "scale": 1.0
+      }
+    },
+    "pose_sensitivity": true,
+    "p0_p6": true,
+    "workspace_figure": true,
+    "g_arm_decision": "G_ARM_READY_FOR_FULL_PLANNING",
+    "g_arm_errors": true,
+    "state_gate": true,
+    "status_document": true,
+    "s0_audit": "ros_home/log/latest\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01/runtime-bin/rosversion\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_rosversion_fail/ros_home/log/413ba0ec-8eb5-11f1-aa47-00155dca07d1/roslaunch-SC-202607101733-89600.log\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_rosversion_fail/ros_home/log/413ba0ec-8eb5-11f1-aa47-00155dca07d1/roslaunch-SC-202607101733-89722.log\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_rosversion_fail/ros_home/log/latest\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_wrapper_crlf_fail/ros_home/log/15633f38-8eb6-11f1-bebf-00155dca07d1/roslaunch-SC-202607101733-90321.log\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_wrapper_crlf_fail/ros_home/log/latest\n[SKIP] docs/evidence/S1-R2/waypoint_variant/grasp_waypoint_variant_01_wrapper_crlf_fail/runtime-bin/rosversion\nSUMMARY errors=0 warnings=0 skipped_paths=8\n",
+    "s1_audit": "{\"decision\": \"PASS_WITH_LIMITATIONS\", \"errors\": []}\n",
+    "credential_scan": [],
+    "large_file_scan": []
+  },
+  "g_arm_decision": "G_ARM_READY_FOR_FULL_PLANNING"
+}

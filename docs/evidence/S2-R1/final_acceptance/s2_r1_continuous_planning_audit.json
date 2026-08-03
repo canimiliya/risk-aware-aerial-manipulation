@@ -1,0 +1,36 @@
+{
+  "decision": "PASS_WITH_LIMITATIONS",
+  "errors": [],
+  "warnings": [],
+  "unresolved_warnings": [],
+  "accepted_limitations": [
+    "W->B remains a fixed zero reference, not a dynamic vehicle trajectory",
+    "vehicle dynamics and flight-control constraints are not modeled",
+    "tool length and complete 6D tool pose are not verified",
+    "collision checks use provisional proxy geometry, not exact meshes",
+    "this is not AM-Planner optimization or ROS PolynomialTrajectory evidence",
+    "this is not complete S2 acceptance"
+  ],
+  "checks": {
+    "required_artifacts": [],
+    "s2_branch": "agent/s2-r0-delta-workspace-scene-contract",
+    "r0_base_present": true,
+    "algorithm_boundary": true,
+    "provisional_boundary": true,
+    "planner_contract": true,
+    "waypoint_contract": true,
+    "sample_contract": true,
+    "vehicle_state_contract": true,
+    "continuous_finite": true,
+    "continuous_nominal_gate": true,
+    "jacobian_metrics": true,
+    "trajectory_figure": true,
+    "r0_audit": "{\"decision\": \"SUBMITTED_S2_R0_G_ARM_READY\", \"errors\": [], \"warnings\": []}\n"
+  },
+  "metrics": {
+    "min_clearance_m": 0.016270539113886984,
+    "min_joint_margin": 0.4044585987261146,
+    "min_jacobian_min_singular_value": 0.021134315299292026,
+    "max_jacobian_condition_number": 3.8633689778198717
+  }
+}
