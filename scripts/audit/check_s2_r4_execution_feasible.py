@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import subprocess
@@ -25,6 +26,10 @@ def git(*args: str) -> str:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, default=None)
+    parser.add_argument("--update-record", action="store_true", help="explicitly update the historical tracked acceptance record")
+    args = parser.parse_args()
     errors: list[str] = []
     warnings: list[str] = []
     for rel in REQUIRED:
@@ -64,7 +69,15 @@ def main() -> int:
             small = False
         if small and secret_re.search(p.read_text(encoding="utf-8", errors="replace")): errors.append(f"credential:{p.relative_to(ROOT)}")
     result = {"decision": "PASS" if not errors else "FAIL", "errors": errors, "warnings": warnings, "s2_r4_result": validation.get("decision"), "preserves_gate_failure": validation.get("decision") != "S2_R4_EXECUTION_FEASIBLE_READY", "required_runtime_variants": list(RUNS), "algorithm_source_modified": False, "obstacle_geometry_modified": False, "proxy_shrunk": False, "q_clipped": False}
-    OUT.parent.mkdir(parents=True, exist_ok=True); OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    output = args.output
+    if output is None and args.update_record:
+        output = OUT
+    if output is not None:
+        if output.resolve() == OUT.resolve() and not args.update_record:
+            print(json.dumps({"decision": "OUTPUT_REFUSED", "errors": ["tracked_output_requires_update_record"]}, ensure_ascii=False))
+            return 2
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False))
     return 0 if not errors else 1
 

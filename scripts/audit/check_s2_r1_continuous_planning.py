@@ -8,6 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_OUTPUT = ROOT / "docs/evidence/S2-R1/final_acceptance/s2_r1_continuous_planning_audit.json"
 R0_HEAD = "5564f5d407c75dfd9c776d5e43917c9f96c48702"
 
 
@@ -74,12 +75,20 @@ def run(root: Path = ROOT, expected_branch: str | None = None) -> dict[str, obje
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=Path("docs/evidence/S2-R1/final_acceptance/s2_r1_continuous_planning_audit.json"))
+    parser.add_argument("--output", type=Path, default=None)
     parser.add_argument("--expected-branch", default=None)
+    parser.add_argument("--update-record", action="store_true", help="explicitly update the historical tracked acceptance record")
     args = parser.parse_args()
     result = run(expected_branch=args.expected_branch)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    output = args.output
+    if output is None and args.update_record:
+        output = DEFAULT_OUTPUT
+    if output is not None:
+        if output.resolve() == DEFAULT_OUTPUT.resolve() and not args.update_record:
+            print(json.dumps({"decision": "OUTPUT_REFUSED", "errors": ["tracked_output_requires_update_record"]}, ensure_ascii=False))
+            return 2
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"decision": result["decision"], "errors": result["errors"], "warnings": result["warnings"]}, ensure_ascii=False))
     return 0 if not result["errors"] else 1
 

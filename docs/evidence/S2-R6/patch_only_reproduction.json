@@ -1,0 +1,65 @@
+{
+  "source_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "source_workspace": "/home/amplanner/am-planner-s2-r6-ws/src/am-planner",
+  "repro_workspace": "/home/amplanner/am-planner-s2-r6-repro-ws",
+  "patch": "third_party/patches/AM-Planner_S2-R6_execution_envelope.patch",
+  "patch_sha256": "a0cf215cbf372c39f6d909f6507753bc4b336505d64b3b5a23fc4ea1e7f88ce4",
+  "patch_apply_check": true,
+  "patch_apply_exit": 0,
+  "patch_apply_result_exit": 0,
+  "new_file_mode": "100644",
+  "changed_paths_exact": true,
+  "changed_paths": [
+    "src/plan/plan_manage/CMakeLists.txt",
+    "src/plan/traj_opt/CMakeLists.txt",
+    "src/plan/traj_opt/include/traj_opt/config.h",
+    "src/plan/traj_opt/include/se3gcopter/minco_arm.h",
+    "src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h"
+  ],
+  "header_sha256": "d798e51a4ed32fcdaefca05022ac6d52f6848b183f523931713a06f2e8ec9787",
+  "tree_sha_match": true,
+  "tree_sha256": {
+    "src/plan/plan_manage/CMakeLists.txt": "b6446780352b9962fff8c7089326e8a26ddc565fe06f86ca8e0ed906c0e65b1b",
+    "src/plan/traj_opt/CMakeLists.txt": "14cc4ce6532bd6f80b977d439e7c7e2c4d0b72013b1545bacce56161acc831a3",
+    "src/plan/traj_opt/include/traj_opt/config.h": "8516a70be2d3ed0b78867dbae79f5ab5ba6867e246c43c2840d6a576ad527710",
+    "src/plan/traj_opt/include/se3gcopter/minco_arm.h": "6d1bb9b8b5a9d063653ac7010ca4437cace5a4a78c0fda6a1875c2c7526ed934",
+    "src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h": "d798e51a4ed32fcdaefca05022ac6d52f6848b183f523931713a06f2e8ec9787"
+  },
+  "clean_build_devel": true,
+  "targeted_packages": ["traj_opt", "plan_manage"],
+  "targeted_build_exit": 0,
+  "full_workspace_build_exit": 1,
+  "full_workspace_build_limitation": "official uam_sim/delta-display requires missing generated quadrotor_msgs/PositionCommand.h; targeted traj_opt/plan_manage build completed",
+  "package_count": 229,
+  "python38_occurrences": 0,
+  "runtime_not_found_occurrences": 0,
+  "disabled_configuration_preserved": true,
+  "runtimes": [
+    {
+      "run_id": "nominal2",
+      "capture_exit": 0,
+      "trajectory_topic_present": true,
+      "trajectory_arm_topic_present": true,
+      "jps": true,
+      "minco": true,
+      "cuda": true,
+      "finite": true,
+      "trajectory_numeric_fields": 90,
+      "trajectory_arm_numeric_fields": 90
+    },
+    {
+      "run_id": "nominal_repeat",
+      "capture_exit": 0,
+      "trajectory_topic_present": true,
+      "trajectory_arm_topic_present": true,
+      "jps": true,
+      "minco": true,
+      "cuda": true,
+      "finite": true,
+      "trajectory_numeric_fields": 90,
+      "trajectory_arm_numeric_fields": 90
+    }
+  ],
+  "nominal_repeat_normalized_equal": true,
+  "external_logs_root": "D:/Desktop/my_project/_state_drift_backups/risk-aware-aerial-manipulation/S2-R6-R1_20260804_0204/patch_only_repro_20260804"
+}

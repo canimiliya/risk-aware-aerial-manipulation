@@ -1,0 +1,9 @@
+{
+  "round1_fixed_point_count": 10,
+  "round1_fixed_point_nearest_center_max_m": 5.57246166151566e-17,
+  "round1_fixed_points_within_anchor_balls": true,
+  "interpolated_corridor_count": 64,
+  "interpolated_corridor_g_min": 1.3211542975682412e-06,
+  "interpolated_corridor_g_nonnegative": true,
+  "raw_round1_polynomial_is_not_claimed_covered": true
+}

@@ -1,0 +1,763 @@
+{
+  "run_dir": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R6/runtime/nominal_100w0",
+  "capture_exit": 0,
+  "rates": {
+    "100": {
+      "sample_count": 523,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        0.04966535945643913,
+        0.15798985216494277
+      ],
+      "q_max_rad": [
+        0.3190623979539622,
+        0.30218535823724024,
+        0.3410049459772402
+      ],
+      "joint_margin_min_rad": 0.04966535945643913,
+      "max_fk_residual_m": 1.6713348376973494e-16,
+      "component_min_clearance_m": {
+        "body": 0.22708514779601596,
+        "rotor_1": 0.2267695923344741,
+        "rotor_2": 0.4582099496521617,
+        "rotor_3": 0.2538529471717674,
+        "rotor_4": 0.09668599506362252,
+        "upper_arm_1": 0.42870725227032835,
+        "upper_arm_2": 0.3732386872356151,
+        "upper_arm_3": 0.3492245239624542,
+        "lower_arm_1_left": 0.35779791737188044,
+        "lower_arm_1_right": 0.35495907566958496,
+        "lower_arm_2_left": 0.35003282370847233,
+        "lower_arm_2_right": 0.3493614093333904,
+        "lower_arm_3_left": 0.34054492558004884,
+        "lower_arm_3_right": 0.35671529734518864,
+        "moving_platform": 0.3383290014836467,
+        "end_effector": 0.3383290014836467
+      },
+      "min_full_body_clearance_m": 0.09668599506362252,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.3800000000000001,
+      "joint_gate_pass": true,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "200": {
+      "sample_count": 1045,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        0.04966473751917344,
+        0.15798985216494277
+      ],
+      "q_max_rad": [
+        0.31911995726848486,
+        0.30223553510813406,
+        0.34103305701494335
+      ],
+      "joint_margin_min_rad": 0.04966473751917344,
+      "max_fk_residual_m": 1.6713348376973494e-16,
+      "component_min_clearance_m": {
+        "body": 0.22703665757077002,
+        "rotor_1": 0.2267695923344741,
+        "rotor_2": 0.4582099496521617,
+        "rotor_3": 0.2538472310553733,
+        "rotor_4": 0.09668509260914532,
+        "upper_arm_1": 0.4286973075890073,
+        "upper_arm_2": 0.3732386872356151,
+        "upper_arm_3": 0.3491396704850108,
+        "lower_arm_1_left": 0.3577603136221324,
+        "lower_arm_1_right": 0.35495907566958496,
+        "lower_arm_2_left": 0.35002235332825155,
+        "lower_arm_2_right": 0.3493614093333904,
+        "lower_arm_3_left": 0.34054492558004884,
+        "lower_arm_3_right": 0.35671529734518864,
+        "moving_platform": 0.33831927413929047,
+        "end_effector": 0.33831927413929047
+      },
+      "min_full_body_clearance_m": 0.09668509260914532,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.365,
+      "joint_gate_pass": true,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "400": {
+      "sample_count": 2090,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        0.04966473751917344,
+        0.15798985216494277
+      ],
+      "q_max_rad": [
+        0.31911995726848486,
+        0.30223553510813406,
+        0.34103305701494335
+      ],
+      "joint_margin_min_rad": 0.04966473751917344,
+      "max_fk_residual_m": 1.6713348376973494e-16,
+      "component_min_clearance_m": {
+        "body": 0.22703665757077002,
+        "rotor_1": 0.2267695923344741,
+        "rotor_2": 0.4582099496521617,
+        "rotor_3": 0.25380934595734655,
+        "rotor_4": 0.09210197487032999,
+        "upper_arm_1": 0.42868429794362295,
+        "upper_arm_2": 0.37322922723020485,
+        "upper_arm_3": 0.3491396704850108,
+        "lower_arm_1_left": 0.35775893625141614,
+        "lower_arm_1_right": 0.35495907566958496,
+        "lower_arm_2_left": 0.35000864779504415,
+        "lower_arm_2_right": 0.34935915991979327,
+        "lower_arm_3_left": 0.34052494383605697,
+        "lower_arm_3_right": 0.35671529734518864,
+        "moving_platform": 0.33830510973339084,
+        "end_effector": 0.33830510973339084
+      },
+      "min_full_body_clearance_m": 0.09210197487032999,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.3675,
+      "joint_gate_pass": true,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "800": {
+      "sample_count": 4179,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        0.04966473751917344,
+        0.15798985216494277
+      ],
+      "q_max_rad": [
+        0.31911995726848486,
+        0.3022413547029652,
+        0.34103356346149427
+      ],
+      "joint_margin_min_rad": 0.04966473751917344,
+      "max_fk_residual_m": 1.6713348376973494e-16,
+      "component_min_clearance_m": {
+        "body": 0.22703665757077002,
+        "rotor_1": 0.2267695923344741,
+        "rotor_2": 0.4582060075036186,
+        "rotor_3": 0.25380934595734655,
+        "rotor_4": 0.09210197487032999,
+        "upper_arm_1": 0.42868429794362295,
+        "upper_arm_2": 0.37322922723020485,
+        "upper_arm_3": 0.34913359035655456,
+        "lower_arm_1_left": 0.3577546145723257,
+        "lower_arm_1_right": 0.35495847496909594,
+        "lower_arm_2_left": 0.35000864779504415,
+        "lower_arm_2_right": 0.3493557877872653,
+        "lower_arm_3_left": 0.34052494383605697,
+        "lower_arm_3_right": 0.35671439541594113,
+        "moving_platform": 0.33830510973339084,
+        "end_effector": 0.33830510973339084
+      },
+      "min_full_body_clearance_m": 0.09210197487032999,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.3675,
+      "joint_gate_pass": true,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "2000": {
+      "sample_count": 10447,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        0.049664737476765364,
+        0.15798985216494277
+      ],
+      "q_max_rad": [
+        0.31912040362251615,
+        0.3022411696556315,
+        0.3410338648190958
+      ],
+      "joint_margin_min_rad": 0.049664737476765364,
+      "max_fk_residual_m": 1.8108188759524757e-16,
+      "component_min_clearance_m": {
+        "body": 0.22703595732310494,
+        "rotor_1": 0.2267695923344741,
+        "rotor_2": 0.45820613611067945,
+        "rotor_3": 0.25380934595734655,
+        "rotor_4": 0.09210197487032999,
+        "upper_arm_1": 0.42868403479871625,
+        "upper_arm_2": 0.373228847055652,
+        "upper_arm_3": 0.3491333523743431,
+        "lower_arm_1_left": 0.35775467502813,
+        "lower_arm_1_right": 0.35495764708427935,
+        "lower_arm_2_left": 0.3500083754257295,
+        "lower_arm_2_right": 0.34935574491280347,
+        "lower_arm_3_left": 0.3405230081019405,
+        "lower_arm_3_right": 0.35671377045591945,
+        "moving_platform": 0.3383048803337035,
+        "end_effector": 0.3383048803337035
+      },
+      "min_full_body_clearance_m": 0.09210197487032999,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.3675,
+      "joint_gate_pass": true,
+      "full_body_gate_pass": true,
+      "finite": true
+    }
+  },
+  "direction": {
+    "P2_to_P3_delta_A0_m": [
+      0.006371985877756186,
+      0.0,
+      0.0
+    ],
+    "P3_to_P4_delta_A0_m": [
+      -0.003185992938878093,
+      0.005518301642692522,
+      4.163336342344337e-17
+    ],
+    "direction_error_m": 4.163336342344337e-17,
+    "pass": true,
+    "task_points_unchanged": true
+  },
+  "diagnostics": {
+    "record_count": 75,
+    "min_g": -0.000884905,
+    "max_active_samples": 2481,
+    "max_violation": 0.000884905,
+    "max_barrier_cost": 70780.7,
+    "integration_samples": [
+      3589
+    ],
+    "final_cost": 3061.5,
+    "planning_time_ms": 150450.0,
+    "records": [
+      {
+        "min_g": -5.0398e-05,
+        "active_samples": 2442,
+        "max_violation": 5.0398e-05,
+        "barrier_cost": 2.28959,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -0.00015753,
+        "active_samples": 2349,
+        "max_violation": 0.00015753,
+        "barrier_cost": 214.128,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -0.000884905,
+        "active_samples": 2224,
+        "max_violation": 0.000884905,
+        "barrier_cost": 70780.7,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -0.000547818,
+        "active_samples": 2193,
+        "max_violation": 0.000547818,
+        "barrier_cost": 23654.0,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -0.000203629,
+        "active_samples": 2200,
+        "max_violation": 0.000203629,
+        "barrier_cost": 1023.31,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -0.000139927,
+        "active_samples": 2221,
+        "max_violation": 0.000139927,
+        "barrier_cost": 334.173,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -5.34607e-05,
+        "active_samples": 1671,
+        "max_violation": 5.34607e-05,
+        "barrier_cost": 19.9866,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -4.02795e-05,
+        "active_samples": 1265,
+        "max_violation": 4.02795e-05,
+        "barrier_cost": 7.71064,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -3.50206e-05,
+        "active_samples": 1087,
+        "max_violation": 3.50206e-05,
+        "barrier_cost": 2.3872,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.302e-05,
+        "active_samples": 902,
+        "max_violation": 2.302e-05,
+        "barrier_cost": 0.976547,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.62422e-05,
+        "active_samples": 804,
+        "max_violation": 1.62422e-05,
+        "barrier_cost": 0.83063,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.21113e-05,
+        "active_samples": 857,
+        "max_violation": 1.21113e-05,
+        "barrier_cost": 0.193421,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.01099e-05,
+        "active_samples": 909,
+        "max_violation": 1.01099e-05,
+        "barrier_cost": 0.138607,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.01099e-05,
+        "active_samples": 991,
+        "max_violation": 1.01099e-05,
+        "barrier_cost": 0.101313,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -5.33161e-05,
+        "active_samples": 2015,
+        "max_violation": 5.33161e-05,
+        "barrier_cost": 5.79409,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -3.95352e-05,
+        "active_samples": 2090,
+        "max_violation": 3.95352e-05,
+        "barrier_cost": 4.54066,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -5.91939e-05,
+        "active_samples": 2481,
+        "max_violation": 5.91939e-05,
+        "barrier_cost": 12.8042,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -4.83446e-05,
+        "active_samples": 2230,
+        "max_violation": 4.83446e-05,
+        "barrier_cost": 8.19265,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -3.33749e-05,
+        "active_samples": 1525,
+        "max_violation": 3.33749e-05,
+        "barrier_cost": 1.3565,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -3.05742e-05,
+        "active_samples": 1898,
+        "max_violation": 3.05742e-05,
+        "barrier_cost": 1.24862,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.88512e-05,
+        "active_samples": 1539,
+        "max_violation": 2.88512e-05,
+        "barrier_cost": 0.619034,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -4.52684e-05,
+        "active_samples": 1449,
+        "max_violation": 4.52684e-05,
+        "barrier_cost": 2.88363,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -4.32181e-05,
+        "active_samples": 1297,
+        "max_violation": 4.32181e-05,
+        "barrier_cost": 1.68478,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -3.11809e-05,
+        "active_samples": 1709,
+        "max_violation": 3.11809e-05,
+        "barrier_cost": 0.809645,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.48978e-05,
+        "active_samples": 2329,
+        "max_violation": 2.48978e-05,
+        "barrier_cost": 0.592063,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.47406e-05,
+        "active_samples": 1312,
+        "max_violation": 1.47406e-05,
+        "barrier_cost": 0.206166,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.90532e-05,
+        "active_samples": 1165,
+        "max_violation": 1.90532e-05,
+        "barrier_cost": 0.322391,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.90794e-05,
+        "active_samples": 1077,
+        "max_violation": 1.90794e-05,
+        "barrier_cost": 0.251156,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.91136e-05,
+        "active_samples": 1159,
+        "max_violation": 1.91136e-05,
+        "barrier_cost": 0.441711,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.01629e-05,
+        "active_samples": 1098,
+        "max_violation": 2.01629e-05,
+        "barrier_cost": 0.408074,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.48977e-05,
+        "active_samples": 1054,
+        "max_violation": 2.48977e-05,
+        "barrier_cost": 0.493861,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.64338e-05,
+        "active_samples": 1033,
+        "max_violation": 2.64338e-05,
+        "barrier_cost": 0.509661,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.93122e-05,
+        "active_samples": 1036,
+        "max_violation": 1.93122e-05,
+        "barrier_cost": 0.254434,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.93494e-05,
+        "active_samples": 982,
+        "max_violation": 1.93494e-05,
+        "barrier_cost": 0.260776,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.04874e-05,
+        "active_samples": 1170,
+        "max_violation": 2.04874e-05,
+        "barrier_cost": 0.241101,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -3.97569e-05,
+        "active_samples": 941,
+        "max_violation": 3.97569e-05,
+        "barrier_cost": 1.32735,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.45905e-05,
+        "active_samples": 1083,
+        "max_violation": 1.45905e-05,
+        "barrier_cost": 0.134024,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.92806e-05,
+        "active_samples": 1248,
+        "max_violation": 1.92806e-05,
+        "barrier_cost": 0.241513,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.84473e-05,
+        "active_samples": 1143,
+        "max_violation": 1.84473e-05,
+        "barrier_cost": 0.203721,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.94448e-05,
+        "active_samples": 1184,
+        "max_violation": 2.94448e-05,
+        "barrier_cost": 0.751351,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.28373e-05,
+        "active_samples": 1150,
+        "max_violation": 2.28373e-05,
+        "barrier_cost": 0.244589,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.50212e-05,
+        "active_samples": 1040,
+        "max_violation": 1.50212e-05,
+        "barrier_cost": 0.161407,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.53492e-05,
+        "active_samples": 1300,
+        "max_violation": 1.53492e-05,
+        "barrier_cost": 0.266238,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.53344e-05,
+        "active_samples": 777,
+        "max_violation": 2.53344e-05,
+        "barrier_cost": 0.164179,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.14824e-05,
+        "active_samples": 1185,
+        "max_violation": 2.14824e-05,
+        "barrier_cost": 0.294892,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.01099e-05,
+        "active_samples": 1190,
+        "max_violation": 1.01099e-05,
+        "barrier_cost": 0.0697313,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.01099e-05,
+        "active_samples": 1022,
+        "max_violation": 1.01099e-05,
+        "barrier_cost": 0.0404815,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.44336e-05,
+        "active_samples": 1253,
+        "max_violation": 1.44336e-05,
+        "barrier_cost": 0.139552,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.58474e-05,
+        "active_samples": 1511,
+        "max_violation": 1.58474e-05,
+        "barrier_cost": 0.126218,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.11309e-05,
+        "active_samples": 1307,
+        "max_violation": 2.11309e-05,
+        "barrier_cost": 0.361785,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.31547e-05,
+        "active_samples": 1290,
+        "max_violation": 2.31547e-05,
+        "barrier_cost": 0.366907,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.36182e-05,
+        "active_samples": 1157,
+        "max_violation": 1.36182e-05,
+        "barrier_cost": 0.0815076,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.17579e-05,
+        "active_samples": 1204,
+        "max_violation": 1.17579e-05,
+        "barrier_cost": 0.116722,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.82973e-05,
+        "active_samples": 1266,
+        "max_violation": 1.82973e-05,
+        "barrier_cost": 0.300486,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.11713e-05,
+        "active_samples": 1321,
+        "max_violation": 2.11713e-05,
+        "barrier_cost": 0.181376,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.25439e-05,
+        "active_samples": 1031,
+        "max_violation": 1.25439e-05,
+        "barrier_cost": 0.0739048,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.31395e-05,
+        "active_samples": 1182,
+        "max_violation": 1.31395e-05,
+        "barrier_cost": 0.170511,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.19642e-05,
+        "active_samples": 1201,
+        "max_violation": 2.19642e-05,
+        "barrier_cost": 0.464992,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.93697e-05,
+        "active_samples": 1182,
+        "max_violation": 1.93697e-05,
+        "barrier_cost": 0.363517,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.49433e-05,
+        "active_samples": 1048,
+        "max_violation": 2.49433e-05,
+        "barrier_cost": 0.34638,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.1877e-05,
+        "active_samples": 1083,
+        "max_violation": 1.1877e-05,
+        "barrier_cost": 0.088566,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.1288e-05,
+        "active_samples": 1161,
+        "max_violation": 1.1288e-05,
+        "barrier_cost": 0.125845,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.64678e-05,
+        "active_samples": 1398,
+        "max_violation": 1.64678e-05,
+        "barrier_cost": 0.173094,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.45885e-05,
+        "active_samples": 1422,
+        "max_violation": 2.45885e-05,
+        "barrier_cost": 0.354389,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.77177e-05,
+        "active_samples": 1022,
+        "max_violation": 1.77177e-05,
+        "barrier_cost": 0.188451,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.01099e-05,
+        "active_samples": 1086,
+        "max_violation": 1.01099e-05,
+        "barrier_cost": 0.068979,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.19978e-05,
+        "active_samples": 952,
+        "max_violation": 1.19978e-05,
+        "barrier_cost": 0.115962,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.4349e-05,
+        "active_samples": 1156,
+        "max_violation": 1.4349e-05,
+        "barrier_cost": 0.140503,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.01099e-05,
+        "active_samples": 946,
+        "max_violation": 1.01099e-05,
+        "barrier_cost": 0.0813518,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.01099e-05,
+        "active_samples": 1201,
+        "max_violation": 1.01099e-05,
+        "barrier_cost": 0.101906,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.8149e-05,
+        "active_samples": 1261,
+        "max_violation": 1.8149e-05,
+        "barrier_cost": 0.17028,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -2.29945e-05,
+        "active_samples": 1189,
+        "max_violation": 2.29945e-05,
+        "barrier_cost": 0.324658,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.69847e-05,
+        "active_samples": 1169,
+        "max_violation": 1.69847e-05,
+        "barrier_cost": 0.146038,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.57809e-05,
+        "active_samples": 1092,
+        "max_violation": 1.57809e-05,
+        "barrier_cost": 0.0869095,
+        "integration_samples": 3589
+      },
+      {
+        "min_g": -1.59296e-05,
+        "active_samples": 1099,
+        "max_violation": 1.59296e-05,
+        "barrier_cost": 0.0846904,
+        "integration_samples": 3589
+      }
+    ]
+  },
+  "arm_jerk_cost": 0.17043677212987784,
+  "nominal_hard_gate_pass": true,
+  "algorithm_output_unmodified": true
+}

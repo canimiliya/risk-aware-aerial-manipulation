@@ -1,0 +1,400 @@
+diff --git a/src/plan/plan_manage/CMakeLists.txt b/src/plan/plan_manage/CMakeLists.txt
+index 8ad8088..f2ac3fd 100755
+--- a/src/plan/plan_manage/CMakeLists.txt
++++ b/src/plan/plan_manage/CMakeLists.txt
+@@ -1,29 +1,18 @@
+ cmake_minimum_required(VERSION 3.10.0)
+ project(plan_manage)
++
+ set(CMAKE_BUILD_TYPE "Release")
+-ADD_COMPILE_OPTIONS(-std=c++14 )
++add_compile_options(-std=c++14)
+ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
+ 
+-# 使用现代CMake的方式自动查找Python
+-# 这会利用`conda activate`设置的环境变量，自动找到正确的Python
+-find_package(Python 3 REQUIRED COMPONENTS Interpreter Development)
+-message(STATUS "Found Python executable: ${Python_EXECUTABLE}")
+-message(STATUS "Found Python include dirs: ${Python_INCLUDE_DIRS}")
+-message(STATUS "Found Python libraries: ${Python_LIBRARIES}")
+-
+-# 查找pybind11。它会自动使用上面找到的Python版本
+-find_package(pybind11 REQUIRED)
+-
++find_package(Python3 3.9 EXACT REQUIRED COMPONENTS Interpreter Development)
++message(STATUS "Found Python executable: ${Python3_EXECUTABLE}")
++message(STATUS "Found Python include dirs: ${Python3_INCLUDE_DIRS}")
++message(STATUS "Found Python libraries: ${Python3_LIBRARIES}")
++find_package(pybind11 CONFIG REQUIRED)
+ 
+ find_package(Eigen3 REQUIRED)
+ find_package(Boost REQUIRED COMPONENTS system filesystem)
+-
+-# 设置pybind11查找参数
+-set(PYBIND11_PYTHON_VERSION "3" CACHE STRING "")
+-set(PYTHON_EXECUTABLE ${PYTHON_EXECUTABLE})
+-
+-# 添加pybind11查找
+-find_package(pybind11 REQUIRED)
+ find_package(autodiff REQUIRED)
+ 
+ find_package(catkin REQUIRED COMPONENTS
+@@ -34,12 +23,17 @@ find_package(catkin REQUIRED COMPONENTS
+   traj_opt
+ )
+ 
+-include_directories( 
+-    SYSTEM 
+-    include 
+-    ${catkin_INCLUDE_DIRS} 
++# Filter only Python 3.8 from a local Catkin library copy; preserve ROS libs.
++set(_plan_manage_catkin_libraries ${catkin_LIBRARIES})
++list(FILTER _plan_manage_catkin_libraries EXCLUDE REGEX "python3\\.8")
++list(APPEND _plan_manage_catkin_libraries Python3::Python)
++
++include_directories(
++    SYSTEM
++    include
++    ${catkin_INCLUDE_DIRS}
+     ${EIGEN3_INCLUDE_DIRS}
+-    ${PYTHON_INCLUDE_DIRS}
++    ${Python3_INCLUDE_DIRS}
+     ${pybind11_INCLUDE_DIRS}
+ )
+ 
+@@ -49,11 +43,9 @@ add_executable(se3_node
+     src/plan_manage.cpp
+ )
+ 
++target_include_directories(se3_node PRIVATE ${Python3_INCLUDE_DIRS})
+ target_link_libraries(se3_node
+-  ${catkin_LIBRARIES}
++  ${_plan_manage_catkin_libraries}
+   pybind11::embed
+   autodiff::autodiff
+ )
+-
+-# 确保编译时能找到Python.h
+-target_include_directories(se3_node PRIVATE ${PYTHON_INCLUDE_DIRS})
+\ No newline at end of file
+diff --git a/src/plan/traj_opt/CMakeLists.txt b/src/plan/traj_opt/CMakeLists.txt
+index 1b160cf..9b16fcf 100644
+--- a/src/plan/traj_opt/CMakeLists.txt
++++ b/src/plan/traj_opt/CMakeLists.txt
+@@ -2,12 +2,13 @@ cmake_minimum_required(VERSION 3.0.2)
+ project(traj_opt)
+ 
+ set(CMAKE_BUILD_TYPE "Release")
+-ADD_COMPILE_OPTIONS(-std=c++14 )
++add_compile_options(-std=c++14)
+ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
+ 
++find_package(Python3 3.9 EXACT REQUIRED COMPONENTS Interpreter Development)
++find_package(pybind11 CONFIG REQUIRED)
+ find_package(Eigen3 REQUIRED)
+ find_package(octomap REQUIRED)
+-find_package(pybind11 REQUIRED)
+ find_package(autodiff REQUIRED)
+ find_package(catkin REQUIRED COMPONENTS
+   roscpp
+@@ -22,10 +23,16 @@ find_package(catkin REQUIRED COMPONENTS
+   message_generation
+ )
+ 
+-include_directories( 
+-    SYSTEM 
+-    include 
+-    ${catkin_INCLUDE_DIRS} 
++# Filter only Python 3.8 from a local Catkin library copy; preserve ROS libs.
++set(_traj_opt_catkin_libraries ${catkin_LIBRARIES})
++list(FILTER _traj_opt_catkin_libraries EXCLUDE REGEX "python3\\.8")
++list(APPEND _traj_opt_catkin_libraries Python3::Python)
++
++include_directories(
++    SYSTEM
++    include
++    ${catkin_INCLUDE_DIRS}
++    ${Python3_INCLUDE_DIRS}
+     ${pybind11_INCLUDE_DIRS}
+ )
+ 
+@@ -44,7 +51,9 @@ add_library(se3_planner
+     src/se3_planner.cc
+ )
+ 
++target_include_directories(se3_planner PRIVATE ${Python3_INCLUDE_DIRS})
+ target_link_libraries(se3_planner
+-    ${catkin_LIBRARIES}
++    ${_traj_opt_catkin_libraries}
++    pybind11::embed
+     autodiff::autodiff
+ )
+diff --git a/src/plan/traj_opt/include/se3gcopter/minco_arm.h b/src/plan/traj_opt/include/se3gcopter/minco_arm.h
+index 5d4f7e4..d6eebe4 100644
+--- a/src/plan/traj_opt/include/se3gcopter/minco_arm.h
++++ b/src/plan/traj_opt/include/se3gcopter/minco_arm.h
+@@ -2,6 +2,7 @@
+ #define MINCO_ARM_H
+ #include "neural_network/workspace_model.h"
+ #include "traj_opt/config.h"
++#include "se3gcopter/execution_envelope_barrier.h"
+ #include "trajectory.h"
+ 
+ class MINCO_S3_ARM
+@@ -25,6 +26,11 @@ class MINCO_S3_ARM
+   Eigen::VectorXd T4;
+   Eigen::VectorXd T5;
+   Eigen::MatrixXd gdC;
++  double executionEnvelopeMinG_;
++  int executionEnvelopeActiveSamples_;
++  double executionEnvelopeMaxViolation_;
++  double executionEnvelopeCost_;
++  int executionEnvelopeIntegrationSamples_;
+ 
+   ros::NodeHandle nh_;
+ 
+@@ -130,6 +136,7 @@ class MINCO_S3_ARM
+     A.create(6 * N, 6, 6);
+     b.resize(6 * N, 3);
+     gdC.resize(6 * N, 3);
++    resetExecutionEnvelopeDiagnostics();
+     return;
+   }
+ 
+@@ -253,6 +260,20 @@ class MINCO_S3_ARM
+ 
+   inline const Eigen::MatrixX3d &getCoeffs(void) const { return b; }
+ 
++  inline void resetExecutionEnvelopeDiagnostics()
++  {
++    executionEnvelopeMinG_ = std::numeric_limits<double>::infinity();
++    executionEnvelopeActiveSamples_ = 0;
++    executionEnvelopeMaxViolation_ = 0.0;
++    executionEnvelopeCost_ = 0.0;
++    executionEnvelopeIntegrationSamples_ = 0;
++  }
++  inline double getExecutionEnvelopeMinG() const { return executionEnvelopeMinG_; }
++  inline int getExecutionEnvelopeActiveSamples() const { return executionEnvelopeActiveSamples_; }
++  inline double getExecutionEnvelopeMaxViolation() const { return executionEnvelopeMaxViolation_; }
++  inline double getExecutionEnvelopeCost() const { return executionEnvelopeCost_; }
++  inline int getExecutionEnvelopeIntegrationSamples() const { return executionEnvelopeIntegrationSamples_; }
++
+   template <typename EIGENVEC>
+   inline void addTimeIntPenalty(const Mode &mode, const Eigen::VectorXi &cons,
+                                 WorkspaceProbabilityModel &workspace_model, double &cost,
+@@ -275,6 +296,8 @@ class MINCO_S3_ARM
+     double gradViolaVt;
+     double violaPos, violaPosPenaD, violaPosPena;
+     double grad_nn1, grad_nn2, grad_nn3, prob;
++    const bool useExecutionEnvelope = cfg->UseExecutionEnvelopeBarrier &&
++                                      cfg->ExecutionEnvelopeWeight > 0.0;
+ 
+     double omg;
+     Eigen::Vector3d e3(0, 0, 1);
+@@ -377,6 +400,25 @@ class MINCO_S3_ARM
+         }
+         /* ========== workspace cost end ========== */
+ 
++        /* ========== continuous execution-envelope barrier begin ========== */
++        if (useExecutionEnvelope)
++        {
++          const ExecutionEnvelopeEvaluation envelope = ExecutionEnvelopeBarrier::evaluate(
++              pos, cfg->ExecutionEnvelopeWeight, cfg->ExecutionEnvelopeTau,
++              cfg->ExecutionEnvelopeCenters, cfg->ExecutionEnvelopeRadii);
++          ++executionEnvelopeIntegrationSamples_;
++          executionEnvelopeMinG_ = std::min(executionEnvelopeMinG_, envelope.g);
++          executionEnvelopeMaxViolation_ = std::max(executionEnvelopeMaxViolation_, envelope.violation);
++          executionEnvelopeCost_ += omg * step * envelope.cost;
++          if (envelope.active) ++executionEnvelopeActiveSamples_;
++          gdC.block<6, 3>(i * 6, 0) +=
++              omg * step * beta0 * envelope.gradCost.transpose();
++          gdT(i) += omg * (step * alpha * envelope.gradCost.dot(vel) +
++                           envelope.cost / cons(i));
++          pena += omg * step * envelope.cost;
++        }
++        /* ========== continuous execution-envelope barrier end ========== */
++
+         /* ========== extend cost begin ========== */
+         /* some time we expect the ee can extend as much as possible */
+         if (isGraspPoint(i - 1, mInfo, idPolys) && j == 0)
+@@ -417,6 +459,14 @@ class MINCO_S3_ARM
+       }
+     }
+ 
++    if (cfg->ExecutionEnvelopeDiagnostics && useExecutionEnvelope)
++    {
++      ROS_INFO_STREAM_THROTTLE(2.0, "[S2-R6][execution-envelope] min_g=" << executionEnvelopeMinG_
++          << " active_samples=" << executionEnvelopeActiveSamples_
++          << " max_violation=" << executionEnvelopeMaxViolation_
++          << " barrier_cost=" << executionEnvelopeCost_
++          << " integration_samples=" << executionEnvelopeIntegrationSamples_);
++    }
+     cost += pena;
+     return;
+   }
+@@ -441,6 +491,7 @@ class MINCO_S3_ARM
+     gdC.setZero();
+     gdT.setZero();
+     gdPs.setZero();
++    resetExecutionEnvelopeDiagnostics();
+ 
+     /* get jerk cost */
+     arm_cost += getTrajJerkCost();
+@@ -468,4 +519,4 @@ class MINCO_S3_ARM
+   }
+ };
+ 
+-#endif
+\ No newline at end of file
++#endif
+diff --git a/src/plan/traj_opt/include/traj_opt/config.h b/src/plan/traj_opt/include/traj_opt/config.h
+index d342769..f310295 100644
+--- a/src/plan/traj_opt/include/traj_opt/config.h
++++ b/src/plan/traj_opt/include/traj_opt/config.h
+@@ -6,9 +6,11 @@
+ #include <se3gcopter/trajectory.h>
+ 
+ #include <Eigen/Core>  // Assuming Eigen library is used
++#include <cmath>
+ #include <iostream>
+ #include <string>
+ #include <vector>
++#include <stdexcept>
+ 
+ enum Mode
+ {
+@@ -73,6 +75,49 @@ struct Config
+   bool restart;
+   int coordinateNum;
+   Eigen::Vector3d Fext;
++
++  bool UseExecutionEnvelopeBarrier = false;
++  double ExecutionEnvelopeWeight = 0.0;
++  double ExecutionEnvelopeTau = 0.01;
++  std::vector<double> ExecutionEnvelopeCenters;
++  std::vector<double> ExecutionEnvelopeRadii;
++  bool ExecutionEnvelopeDiagnostics = false;
++
++  void validateExecutionEnvelope() const
++  {
++    if (!std::isfinite(ExecutionEnvelopeWeight) || ExecutionEnvelopeWeight < 0.0)
++      throw std::invalid_argument("ExecutionEnvelopeWeight must be finite and non-negative");
++    if (!std::isfinite(ExecutionEnvelopeTau) || ExecutionEnvelopeTau <= 0.0)
++      throw std::invalid_argument("ExecutionEnvelopeTau must be finite and positive");
++    if (ExecutionEnvelopeCenters.size() % 3 != 0)
++      throw std::invalid_argument("ExecutionEnvelopeCenters length must be a multiple of 3");
++    const std::size_t count = ExecutionEnvelopeCenters.size() / 3;
++    if (ExecutionEnvelopeRadii.size() != count)
++      throw std::invalid_argument("ExecutionEnvelopeRadii length must equal center count");
++    for (const double value : ExecutionEnvelopeCenters)
++    {
++      if (!std::isfinite(value)) throw std::invalid_argument("ExecutionEnvelopeCenters must be finite");
++    }
++    for (const double radius : ExecutionEnvelopeRadii)
++    {
++      if (!std::isfinite(radius) || radius <= 0.0)
++        throw std::invalid_argument("ExecutionEnvelopeRadii must be finite and positive");
++    }
++    if (UseExecutionEnvelopeBarrier && count == 0)
++      throw std::invalid_argument("enabled execution envelope requires at least one anchor ball");
++  }
++
++  void loadExecutionEnvelopeParameters(const ros::NodeHandle &nh_priv)
++  {
++    nh_priv.param("UseExecutionEnvelopeBarrier", UseExecutionEnvelopeBarrier, false);
++    nh_priv.param("ExecutionEnvelopeWeight", ExecutionEnvelopeWeight, 0.0);
++    nh_priv.param("ExecutionEnvelopeTau", ExecutionEnvelopeTau, 0.01);
++    nh_priv.getParam("ExecutionEnvelopeCenters", ExecutionEnvelopeCenters);
++    nh_priv.getParam("ExecutionEnvelopeRadii", ExecutionEnvelopeRadii);
++    nh_priv.param("ExecutionEnvelopeDiagnostics", ExecutionEnvelopeDiagnostics, false);
++    validateExecutionEnvelope();
++  }
++
+   void loadParameters(const ros::NodeHandle &nh_priv)
+   {
+     std::vector<double> vecPolyhedronBox, vecPenaltyPVTB, vecTrajVizRGB,
+@@ -150,6 +195,7 @@ struct Config
+       vecFext = {0.0, 0.0, 0.0};
+     }
+     Fext << vecFext[0], vecFext[1], vecFext[2];
++    loadExecutionEnvelopeParameters(nh_priv);
+   };
+ };
+ 
+diff --git a/src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h b/src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h
+new file mode 100644
+index 0000000..e83ef33
+--- /dev/null
++++ b/src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h
+@@ -0,0 +1,71 @@
++#ifndef EXECUTION_ENVELOPE_BARRIER_H
++#define EXECUTION_ENVELOPE_BARRIER_H
++
++#include <Eigen/Core>
++
++#include <algorithm>
++#include <cmath>
++#include <limits>
++#include <stdexcept>
++#include <vector>
++
++struct ExecutionEnvelopeEvaluation
++{
++  double g = 0.0;
++  double violation = 0.0;
++  double cost = 0.0;
++  Eigen::Vector3d gradG = Eigen::Vector3d::Zero();
++  Eigen::Vector3d gradCost = Eigen::Vector3d::Zero();
++  bool active = false;
++};
++
++class ExecutionEnvelopeBarrier
++{
++ public:
++  static ExecutionEnvelopeEvaluation evaluate(const Eigen::Vector3d &pos, const double weight,
++                                              const double tau,
++                                              const std::vector<double> &centers,
++                                              const std::vector<double> &radii)
++  {
++    if (!std::isfinite(weight) || weight < 0.0 || !std::isfinite(tau) || tau <= 0.0)
++      throw std::invalid_argument("invalid execution envelope barrier parameters");
++    if (centers.empty() || weight == 0.0) return ExecutionEnvelopeEvaluation();
++    if (centers.size() % 3 != 0 || radii.size() != centers.size() / 3)
++      throw std::invalid_argument("invalid execution envelope ball arrays");
++
++    const std::size_t count = radii.size();
++    std::vector<double> logits(count);
++    double maxLogit = -std::numeric_limits<double>::infinity();
++    for (std::size_t i = 0; i < count; ++i)
++    {
++      const Eigen::Vector3d center(centers[3 * i], centers[3 * i + 1], centers[3 * i + 2]);
++      const double z = radii[i] * radii[i] - (pos - center).squaredNorm();
++      logits[i] = z / tau;
++      maxLogit = std::max(maxLogit, logits[i]);
++    }
++
++    double expSum = 0.0;
++    for (const double logit : logits) expSum += std::exp(logit - maxLogit);
++    if (!std::isfinite(expSum) || expSum <= 0.0)
++      throw std::runtime_error("execution envelope log-sum-exp is not finite");
++
++    ExecutionEnvelopeEvaluation result;
++    result.g = tau * (maxLogit + std::log(expSum / static_cast<double>(count)));
++    for (std::size_t i = 0; i < count; ++i)
++    {
++      const double softmax = std::exp(logits[i] - maxLogit) / expSum;
++      const Eigen::Vector3d center(centers[3 * i], centers[3 * i + 1], centers[3 * i + 2]);
++      result.gradG += softmax * (-2.0 * (pos - center));
++    }
++    if (result.g < 0.0)
++    {
++      result.active = true;
++      result.violation = -result.g;
++      result.cost = weight * result.violation * result.violation * result.violation;
++      result.gradCost = -3.0 * weight * result.violation * result.violation * result.gradG;
++    }
++    return result;
++  }
++};
++
++#endif  // EXECUTION_ENVELOPE_BARRIER_H

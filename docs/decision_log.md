@@ -36,3 +36,4 @@
 | D0032 | 2026-07-31 | ACTIVE | S1-R1 只复现 Basic，IL/Polynomial_DiT checkpoint 继续冻结 | 禁止 IL、checkpoint 与训练 | 后续明确批准 |
 | D0033 | 2026-08-03 | ACTIVE | S1-R2 最终审查通过，S1 收口为 PASS_WITH_LIMITATIONS，PR #4 普通合并 | 允许进入受限 S2-R0 预检 | S1 审查撤销或证据失效 |
 | D0034 | 2026-08-03 | ACTIVE | S2-R0 只读复用官方 Delta FK；横担/工具/机体代理参数单独标记 PROVISIONAL_S2_ASSUMPTION | 允许几何敏感性预检，不代表完整 S2 | 真实模型/场景合同核验 |
+| D0035 | 2026-08-04 | ACTIVE | S1/S2-R0 审计改为默认无副作用，S2-R0 缺失 summary 从已提交 acceptance 语义恢复并保留 provenance；S2-R6 patch-only 复现和最终硬门槛全部通过 | S2 形成 PASS_WITH_LIMITATIONS 最终收口候选；S3 保持 NOT_STARTED，S4-S8 保持 FROZEN | PR #10 普通合并及负责人后续授权 |

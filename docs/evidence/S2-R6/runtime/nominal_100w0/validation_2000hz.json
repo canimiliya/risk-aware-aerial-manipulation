@@ -1,0 +1,57 @@
+{
+  "run_dir": "docs/evidence/S2-R6/runtime/nominal_100w0",
+  "sample_hz": 2000,
+  "sample_count": 10447,
+  "fixed_mode3_count": 3,
+  "fixed_point_joint_margin_rad": [
+    0.05,
+    0.05,
+    0.05
+  ],
+  "fixed_point_hard_pass": true,
+  "fixed_point_preferred_pass": true,
+  "fixed_point_robust_pass": true,
+  "q_min_rad": [
+    0.15798985216494277,
+    0.049664737476765364,
+    0.15798985216494277
+  ],
+  "q_max_rad": [
+    0.31912040362251615,
+    0.3022411696556315,
+    0.3410338648190958
+  ],
+  "q2_min_rad": 0.049664737476765364,
+  "joint_margin_min_rad": 0.049664737476765364,
+  "qdot_max_rad_s": 0.7694592031446064,
+  "qddot_max_rad_s2": 7.840316275463415,
+  "ik_no_solution_count": 0,
+  "max_fk_residual_m": 1.8108188759524757e-16,
+  "min_full_body_clearance_m": 0.09210197487032999,
+  "full_body_gate_pass": true,
+  "component_min_clearance_m": {
+    "body": 0.22703595732310494,
+    "rotor_1": 0.2267695923344741,
+    "rotor_2": 0.45820613611067945,
+    "rotor_3": 0.25380934595734655,
+    "rotor_4": 0.09210197487032999,
+    "upper_arm_1": 0.42868403479871625,
+    "upper_arm_2": 0.373228847055652,
+    "upper_arm_3": 0.3491333523743431,
+    "lower_arm_1_left": 0.35775467502813,
+    "lower_arm_1_right": 0.35495764708427935,
+    "lower_arm_2_left": 0.3500083754257295,
+    "lower_arm_2_right": 0.34935574491280347,
+    "lower_arm_3_left": 0.3405230081019405,
+    "lower_arm_3_right": 0.35671377045591945,
+    "moving_platform": 0.3383048803337035,
+    "end_effector": 0.3383048803337035
+  },
+  "dangerous_component": "rotor_4",
+  "arm_polynomial_max_curvature_m_s2": 0.4466868289950732,
+  "new_violation_intervals": [],
+  "nearest_new_fixed_point_time_s": 0.869,
+  "nearest_new_fixed_point_cartesian_distance_m": 1.8657291130852623e-07,
+  "joint_gate_pass": true,
+  "projection_is_not_output_trajectory": true
+}

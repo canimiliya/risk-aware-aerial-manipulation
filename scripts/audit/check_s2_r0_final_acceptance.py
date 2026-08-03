@@ -8,13 +8,14 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_OUTPUT = ROOT / "docs/evidence/S2-R0/final_acceptance/s2_r0_final_acceptance.json"
 
 
 def branch_is_allowed(branch: str, expected_branch: str | None = None) -> bool:
     return bool(branch) and (expected_branch is None or branch == expected_branch)
 
 
-def run(root: Path = ROOT, expected_branch: str | None = None) -> dict[str, object]:
+def run(root: Path = ROOT, expected_branch: str | None = None, audit_mode: str = "archival") -> dict[str, object]:
     errors: list[str] = []
     checks: dict[str, object] = {}
 
@@ -26,7 +27,10 @@ def run(root: Path = ROOT, expected_branch: str | None = None) -> dict[str, obje
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
     require("s2_branch", branch_is_allowed(branch, expected_branch), branch or "DETACHED_HEAD")
     with tempfile.TemporaryDirectory(prefix="s2_r0_preflight_") as tmp:
-        preflight = subprocess.run(["python", "scripts/audit/check_s2_r0_workspace_preflight.py", "--output", str(Path(tmp) / "s2_r0_workspace_preflight_audit.json"), *( ["--expected-branch", expected_branch] if expected_branch else [] )], cwd=root, capture_output=True, text=True, check=False)
+        preflight_args = ["python", "scripts/audit/check_s2_r0_workspace_preflight.py", "--audit-mode", audit_mode, "--output", str(Path(tmp) / "s2_r0_workspace_preflight_audit.json")]
+        if expected_branch:
+            preflight_args.extend(["--expected-branch", expected_branch])
+        preflight = subprocess.run(preflight_args, cwd=root, capture_output=True, text=True, check=False)
     require("r0_preflight", preflight.returncode == 0, preflight.stdout[-1000:])
     required = [
         root / "docs/evidence/S2-R0/final_acceptance/s2_r0_workspace_preflight_audit.json",
@@ -57,12 +61,21 @@ def run(root: Path = ROOT, expected_branch: str | None = None) -> dict[str, obje
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=Path("docs/evidence/S2-R0/final_acceptance/s2_r0_final_acceptance.json"))
+    parser.add_argument("--audit-mode", choices=["original", "archival"], default="archival")
+    parser.add_argument("--output", type=Path, default=None)
     parser.add_argument("--expected-branch", default=None)
+    parser.add_argument("--update-record", action="store_true", help="explicitly update the historical tracked acceptance record")
     args = parser.parse_args()
-    result = run(expected_branch=args.expected_branch)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    result = run(expected_branch=args.expected_branch, audit_mode=args.audit_mode)
+    output = args.output
+    if output is None and args.update_record:
+        output = DEFAULT_OUTPUT
+    if output is not None:
+        if output.resolve() == DEFAULT_OUTPUT.resolve() and not args.update_record:
+            print(json.dumps({"decision": "OUTPUT_REFUSED", "errors": ["tracked_output_requires_update_record"]}, ensure_ascii=False))
+            return 2
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"decision": result["decision"], "errors": result["errors"], "warnings": result["warnings"]}, ensure_ascii=False))
     return 0 if not result["errors"] else 1
 

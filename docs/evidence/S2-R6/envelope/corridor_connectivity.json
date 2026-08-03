@@ -1,0 +1,7 @@
+{
+  "ordered_anchor_count": 64,
+  "adjacent_distance_max_m": 0.0009841202645599642,
+  "adjacent_distance_min_m": 0.0002009263943974225,
+  "minimum_ball_overlap_margin_m": 0.002015879735440036,
+  "all_adjacent_balls_overlap": true
+}

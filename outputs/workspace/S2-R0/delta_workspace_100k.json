@@ -1,0 +1,28 @@
+{
+  "sample_count": 100000,
+  "valid_fk_count": 90205,
+  "invalid_fk_count": 9795,
+  "random_seed": 20260803,
+  "boundary_samples_included": true,
+  "position_min_m": [
+    -0.15999996547778708,
+    -0.1745509624578112,
+    -0.2540862400257052
+  ],
+  "position_max_m": [
+    0.1599987096972857,
+    0.18450539610623284,
+    0.04567494892705378
+  ],
+  "jacobian_min_singular_value": 9.016323491149443e-07,
+  "jacobian_condition_p99": 401.49791458053073,
+  "official_geometry": {
+    "static_radius_m": 0.08,
+    "moving_radius_m": 0.025,
+    "upper_arm_m": 0.1,
+    "lower_arm_m": 0.16,
+    "joint_lower_rad": -1.57,
+    "joint_upper_rad": 1.57,
+    "scale": 1.0
+  }
+}

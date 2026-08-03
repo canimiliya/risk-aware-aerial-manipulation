@@ -1,0 +1,6 @@
+UseExecutionEnvelopeBarrier: false
+ExecutionEnvelopeWeight: 0.0
+ExecutionEnvelopeTau: 0.000000225
+ExecutionEnvelopeCenters: []
+ExecutionEnvelopeRadii: []
+ExecutionEnvelopeDiagnostics: true

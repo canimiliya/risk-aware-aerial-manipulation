@@ -1,0 +1,25 @@
+{
+  "decision": "PASS",
+  "errors": [],
+  "warnings": [],
+  "algorithm_patch": {
+    "algorithm_patch_present": true,
+    "allowed_algorithm_paths_exact": true,
+    "forbidden_source_diff": false,
+    "patch_sha256_match": true,
+    "changed_paths": [
+      "src/plan/plan_manage/CMakeLists.txt",
+      "src/plan/traj_opt/CMakeLists.txt",
+      "src/plan/traj_opt/include/se3gcopter/minco_arm.h",
+      "src/plan/traj_opt/include/traj_opt/config.h",
+      "src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h"
+    ],
+    "new_file_mode_included": true,
+    "patch_apply_check": true,
+    "patch_only_reproduction": true,
+    "patch_only_runtime": true,
+    "patch_self_contained": true
+  },
+  "scope": "S2-R6 continuous Cartesian execution-envelope barrier only",
+  "stage_status": "SUBMITTED_FOR_REVIEW"
+}
