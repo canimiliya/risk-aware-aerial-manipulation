@@ -28,8 +28,8 @@ The S2-R4 result is a valid, reproducible execution-gate failure. The real offic
 
 ## State
 
-`S2-R4: FAILURE_EVIDENCE_ACCEPTED`  
-`S2: IN_PROGRESS`  
+`S2-R4: FAILURE_EVIDENCE_ACCEPTED`
+`S2: IN_PROGRESS`
 `S3–S8: FROZEN`
 
 The acceptance closes the evidence review only. It does not mark S2-R4 execution-feasible-ready and does not authorize S2 or S3 advancement.
