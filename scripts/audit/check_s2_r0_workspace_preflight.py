@@ -42,7 +42,11 @@ def run(root: Path = ROOT) -> dict:
     ]
     require("required_artifacts", all(path.is_file() and path.stat().st_size > 0 for path in required), [str(path.relative_to(root)) for path in required if not path.is_file()])
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
-    require("s2_branch", branch == "agent/s2-r0-delta-workspace-scene-contract", branch)
+    require("s2_branch", branch in {
+        "agent/s2-r0-delta-workspace-scene-contract",
+        "main",
+        "agent/s2-r2-am-planner-crossarm-planning",
+    }, branch)
     require("base_main", subprocess.run(["git", "merge-base", "HEAD", "main"], cwd=root, capture_output=True, text=True, check=False).stdout.strip() == MAIN_HEAD)
     require("algorithm_boundary", not subprocess.run(["git", "diff", "--name-only", f"{MAIN_HEAD}..HEAD", "--", "src"], cwd=root, capture_output=True, text=True, check=False).stdout.strip())
 

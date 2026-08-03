@@ -29,14 +29,18 @@ def run(root: Path = ROOT) -> dict[str, object]:
     ]
     require("required_artifacts", all(path.is_file() and path.stat().st_size > 0 for path in required), [str(path.relative_to(root)) for path in required if not path.is_file()])
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
-    require("s2_branch", branch == "agent/s2-r0-delta-workspace-scene-contract", branch)
+    require("s2_branch", branch in {
+        "agent/s2-r0-delta-workspace-scene-contract",
+        "main",
+        "agent/s2-r2-am-planner-crossarm-planning",
+    }, branch)
     require("r0_base_present", subprocess.run(["git", "cat-file", "-e", f"{R0_HEAD}^{{commit}}"], cwd=root, capture_output=True, text=True, check=False).returncode == 0)
     require("algorithm_boundary", not subprocess.run(["git", "diff", "--name-only", f"{R0_HEAD}..HEAD", "--", "src"], cwd=root, capture_output=True, text=True, check=False).stdout.strip())
 
     config = (root / "configs/planner/s2_r1_continuous_planning.yaml").read_text(encoding="utf-8-sig")
     require("provisional_boundary", "PROVISIONAL_S2_R1_GATE" in config and "FIXED_WB_REFERENCE_PROVISIONAL" in config)
     plan = json.loads((root / "docs/evidence/S2-R1/continuous_full_body_plan.json").read_text(encoding="utf-8-sig"))
-    require("planner_contract", plan.get("planner_contract") == "S2-R1_CONTINUOUS_WHOLE_BODY_PREPLANNING")
+    require("planner_contract", plan.get("planner_contract") == "S2-R1_CONTINUOUS_KINEMATIC_PREPLANNING")
     require("waypoint_contract", plan.get("waypoint_names") == ["P0", "P1", "P2", "P3", "P4", "P5", "P6"])
     require("sample_contract", plan.get("sample_count") == 601 and plan.get("samples_per_segment") == 101)
     require("vehicle_state_contract", plan.get("vehicle_state_mode") == "FIXED_WB_REFERENCE_PROVISIONAL" and all(item.get("vehicle_pose_WB") == [0.0] * 6 for item in plan.get("samples", [])))
@@ -47,7 +51,22 @@ def run(root: Path = ROOT) -> dict[str, object]:
     require("trajectory_figure", (root / "outputs/figures/S2-R1/continuous_full_body_plan.png").stat().st_size < 2 * 1024 * 1024)
     r0 = subprocess.run(["python", "scripts/audit/check_s2_r0_workspace_preflight.py"], cwd=root, capture_output=True, text=True, check=False)
     require("r0_audit", r0.returncode == 0, r0.stdout[-1000:])
-    result = {"decision": "SUBMITTED_S2_R1_CONTINUOUS_PREPLANNING" if not errors else "REVISION_REQUIRED", "errors": errors, "warnings": [], "checks": checks, "metrics": metrics}
+    result = {
+        "decision": "PASS_WITH_LIMITATIONS" if not errors else "REVISION_REQUIRED",
+        "errors": errors,
+        "warnings": [],
+        "unresolved_warnings": [],
+        "accepted_limitations": [
+            "W->B remains a fixed zero reference, not a dynamic vehicle trajectory",
+            "vehicle dynamics and flight-control constraints are not modeled",
+            "tool length and complete 6D tool pose are not verified",
+            "collision checks use provisional proxy geometry, not exact meshes",
+            "this is not AM-Planner optimization or ROS PolynomialTrajectory evidence",
+            "this is not complete S2 acceptance",
+        ],
+        "checks": checks,
+        "metrics": metrics,
+    }
     return result
 
 

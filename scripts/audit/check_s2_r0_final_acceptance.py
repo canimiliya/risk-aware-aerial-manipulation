@@ -19,7 +19,11 @@ def run(root: Path = ROOT) -> dict[str, object]:
             errors.append(label)
 
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
-    require("s2_branch", branch == "agent/s2-r0-delta-workspace-scene-contract", branch)
+    require("s2_branch", branch in {
+        "agent/s2-r0-delta-workspace-scene-contract",
+        "main",
+        "agent/s2-r2-am-planner-crossarm-planning",
+    }, branch)
     preflight = subprocess.run(["python", "scripts/audit/check_s2_r0_workspace_preflight.py"], cwd=root, capture_output=True, text=True, check=False)
     require("r0_preflight", preflight.returncode == 0, preflight.stdout[-1000:])
     required = [

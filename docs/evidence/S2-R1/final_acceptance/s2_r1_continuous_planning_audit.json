@@ -1,7 +1,16 @@
 {
-  "decision": "SUBMITTED_S2_R1_CONTINUOUS_PREPLANNING",
+  "decision": "PASS_WITH_LIMITATIONS",
   "errors": [],
   "warnings": [],
+  "unresolved_warnings": [],
+  "accepted_limitations": [
+    "W->B remains a fixed zero reference, not a dynamic vehicle trajectory",
+    "vehicle dynamics and flight-control constraints are not modeled",
+    "tool length and complete 6D tool pose are not verified",
+    "collision checks use provisional proxy geometry, not exact meshes",
+    "this is not AM-Planner optimization or ROS PolynomialTrajectory evidence",
+    "this is not complete S2 acceptance"
+  ],
   "checks": {
     "required_artifacts": [],
     "s2_branch": "agent/s2-r0-delta-workspace-scene-contract",
