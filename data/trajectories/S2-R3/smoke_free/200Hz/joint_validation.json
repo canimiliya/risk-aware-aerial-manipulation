@@ -1,0 +1,26 @@
+{
+  "samples": 1237,
+  "ik_no_solution_count": 0,
+  "fk_residual_max_m": 1.348952996643034e-16,
+  "fk_residual_p99_m": 1.0469126113260933e-16,
+  "q_min_rad": [
+    0.14582244940892575,
+    0.15041334120815453,
+    -0.5552262669884764
+  ],
+  "q_max_rad": [
+    1.3830121185392814,
+    1.6603755331072456,
+    1.3675453949924288
+  ],
+  "min_joint_margin_rad": -0.5552262669884764,
+  "qdot_max_rad_s": 1.686409410447169,
+  "qddot_max_rad_s2": 16.845269056969027,
+  "finite": true,
+  "joint_limits_pass": false,
+  "q_branch_jump_max_rad": 0.008432123795547586,
+  "official_ik_range_rad": [
+    0.0,
+    1.5707963267948966
+  ]
+}

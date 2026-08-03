@@ -1,0 +1,280 @@
+{
+  "variant": "nominal",
+  "hz": 2000,
+  "samples": 41,
+  "component_minima": {
+    "body": {
+      "min_clearance_m": -0.06848597203451881,
+      "time_s": 5.583249999999995,
+      "obstacle_point_world_m": [
+        -0.04,
+        0.04,
+        0.72
+      ],
+      "closest_proxy_point_world_m": [
+        -0.14335368431796008,
+        0.12132529672366726,
+        0.7196106384504132
+      ],
+      "sample_index": 19
+    },
+    "rotor_1": {
+      "min_clearance_m": 0.012899037373796461,
+      "time_s": 5.593749999999989,
+      "obstacle_point_world_m": [
+        -0.04,
+        0.04,
+        0.76
+      ],
+      "closest_proxy_point_world_m": [
+        -0.050622191044991285,
+        0.04725177787260082,
+        0.7609828225988254
+      ],
+      "sample_index": 40
+    },
+    "rotor_2": {
+      "min_clearance_m": 0.15250846539193505,
+      "time_s": 5.593749999999989,
+      "obstacle_point_world_m": [
+        -0.06,
+        0.0,
+        0.78
+      ],
+      "closest_proxy_point_world_m": [
+        -0.19924829754919168,
+        0.06197609929961265,
+        0.7747362787441412
+      ],
+      "sample_index": 40
+    },
+    "rotor_3": {
+      "min_clearance_m": 0.03700807641984333,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.04,
+        0.04,
+        0.76
+      ],
+      "closest_proxy_point_world_m": [
+        -0.07519864144031968,
+        0.0514194537593943,
+        0.7595005634276214
+      ],
+      "sample_index": 0
+    },
+    "rotor_4": {
+      "min_clearance_m": 0.01009748356709487,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        0.04,
+        -0.04,
+        0.74
+      ],
+      "closest_proxy_point_world_m": [
+        0.03386884801719531,
+        -0.04560264644856735,
+        0.7457426912265815
+      ],
+      "sample_index": 0
+    },
+    "upper_arm_1": {
+      "min_clearance_m": 0.13393465525980902,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.26,
+        0.28,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.26924143450206406,
+        0.27806388995605613,
+        0.7036246230665267
+      ],
+      "sample_index": 0
+    },
+    "upper_arm_2": {
+      "min_clearance_m": 0.11471798299575002,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.26,
+        -0.02,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.2689729741864186,
+        -0.021464110462865088,
+        0.6843861624029401
+      ],
+      "sample_index": 0
+    },
+    "upper_arm_3": {
+      "min_clearance_m": 0.04736221632051148,
+      "time_s": 5.593749999999989,
+      "obstacle_point_world_m": [
+        0.0,
+        0.06,
+        0.7
+      ],
+      "closest_proxy_point_world_m": [
+        -0.008657025576478544,
+        0.11666216361076641,
+        0.7022088423022226
+      ],
+      "sample_index": 40
+    },
+    "lower_arm_1_left": {
+      "min_clearance_m": 0.07400908013621936,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.18,
+        0.16,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.17539912978396544,
+        0.156847790738874,
+        0.6438237503060023
+      ],
+      "sample_index": 0
+    },
+    "lower_arm_1_right": {
+      "min_clearance_m": 0.07551466685911774,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.2,
+        0.14,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.19697912751849525,
+        0.1443191076364881,
+        0.64535208191193
+      ],
+      "sample_index": 0
+    },
+    "lower_arm_2_left": {
+      "min_clearance_m": 0.07447113443310574,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.2,
+        0.12,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.19702239046059955,
+        0.11933667504552586,
+        0.6444160316163433
+      ],
+      "sample_index": 0
+    },
+    "lower_arm_2_right": {
+      "min_clearance_m": 0.07236399006817715,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.18,
+        0.1,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.175485655668174,
+        0.10688292555694952,
+        0.6419516497148288
+      ],
+      "sample_index": 0
+    },
+    "lower_arm_3_left": {
+      "min_clearance_m": 0.035048816288994866,
+      "time_s": 5.593749999999989,
+      "obstacle_point_world_m": [
+        0.0,
+        0.06,
+        0.7
+      ],
+      "closest_proxy_point_world_m": [
+        -0.008673263336577863,
+        0.10416744786178354,
+        0.7018457793775571
+      ],
+      "sample_index": 40
+    },
+    "lower_arm_3_right": {
+      "min_clearance_m": 0.05974203806430304,
+      "time_s": 5.593749999999989,
+      "obstacle_point_world_m": [
+        0.0,
+        0.06,
+        0.7
+      ],
+      "closest_proxy_point_world_m": [
+        -0.008640787816379225,
+        0.12915687935974926,
+        0.702571905226888
+      ],
+      "sample_index": 40
+    },
+    "moving_platform": {
+      "min_clearance_m": 0.058410520890003766,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.18,
+        0.14,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.1754423927260697,
+        0.13186535814791175,
+        0.6428877000104155
+      ],
+      "sample_index": 0
+    },
+    "end_effector": {
+      "min_clearance_m": 0.058410520890003766,
+      "time_s": 5.57375,
+      "obstacle_point_world_m": [
+        -0.18,
+        0.14,
+        0.56
+      ],
+      "closest_proxy_point_world_m": [
+        -0.1754423927260697,
+        0.13186535814791175,
+        0.6428877000104155
+      ],
+      "sample_index": 0
+    }
+  },
+  "component_clearance_m": {
+    "body": -0.06848597203451881,
+    "rotor_1": 0.012899037373796461,
+    "rotor_2": 0.15250846539193505,
+    "rotor_3": 0.03700807641984333,
+    "rotor_4": 0.01009748356709487,
+    "upper_arm_1": 0.13393465525980902,
+    "upper_arm_2": 0.11471798299575002,
+    "upper_arm_3": 0.04736221632051148,
+    "lower_arm_1_left": 0.07400908013621936,
+    "lower_arm_1_right": 0.07551466685911774,
+    "lower_arm_2_left": 0.07447113443310574,
+    "lower_arm_2_right": 0.07236399006817715,
+    "lower_arm_3_left": 0.035048816288994866,
+    "lower_arm_3_right": 0.05974203806430304,
+    "moving_platform": 0.058410520890003766,
+    "end_effector": 0.058410520890003766
+  },
+  "min_clearance_m": -0.06848597203451881,
+  "most_dangerous_component": "body",
+  "threshold_sensitivity": {
+    "0.005": false,
+    "0.01": false,
+    "0.02": false,
+    "0.05": false
+  },
+  "radius_scale": 1.0,
+  "finite": true,
+  "gate_pass": false,
+  "refinement_step_s": 0.0005,
+  "coarse_min_clearance_m": -0.0684855999417475,
+  "converged_delta_m": 3.720927713168898e-07,
+  "converged_lt_0_5mm": true
+}

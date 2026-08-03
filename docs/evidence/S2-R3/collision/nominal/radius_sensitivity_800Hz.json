@@ -1,0 +1,17 @@
+{
+  "0.9": {
+    "min_clearance_m": -0.048485599941747504,
+    "component": "body",
+    "gate_pass": false
+  },
+  "1.0": {
+    "min_clearance_m": -0.0684855999417475,
+    "component": "body",
+    "gate_pass": false
+  },
+  "1.1": {
+    "min_clearance_m": -0.08848559994174751,
+    "component": "body",
+    "gate_pass": false
+  }
+}

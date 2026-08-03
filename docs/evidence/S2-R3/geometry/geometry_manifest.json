@@ -1,0 +1,56 @@
+{
+  "body": {
+    "shape": "sphere",
+    "radius_m": 0.2,
+    "source": "PROVISIONAL_S2_ASSUMPTION"
+  },
+  "rotors": {
+    "count": 4,
+    "shape": "disk",
+    "radius_m": 0.25,
+    "centers_body_m": [
+      [
+        0.17,
+        0.17,
+        0.05
+      ],
+      [
+        -0.17,
+        0.17,
+        0.05
+      ],
+      [
+        -0.17,
+        -0.17,
+        0.05
+      ],
+      [
+        0.17,
+        -0.17,
+        0.05
+      ]
+    ],
+    "source": "PROVISIONAL_S2_ASSUMPTION"
+  },
+  "upper_arms": {
+    "count": 3,
+    "shape": "capsule_centerline_A_B",
+    "radius_m": 0.01,
+    "source": "DERIVED_FROM_OFFICIAL getJointPoints + PROVISIONAL capsule radius"
+  },
+  "lower_rods": {
+    "count": 6,
+    "shape": "capsule_centerline_B_C",
+    "radius_m": 0.01,
+    "source": "DERIVED_FROM_OFFICIAL getJointPoints + PROVISIONAL capsule radius"
+  },
+  "moving_platform": {
+    "radius_m": 0.025,
+    "source": "OFFICIAL task proxy"
+  },
+  "end_effector": {
+    "radius_m": 0.025,
+    "source": "OFFICIAL task proxy"
+  },
+  "frame_chain": "W <- p_WB,R_WB <- B <- T_B_A0 <- A0/E"
+}

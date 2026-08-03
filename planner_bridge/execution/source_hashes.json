@@ -1,0 +1,14 @@
+{
+  "source_clone": "/home/amplanner/am-planner-ws/src/am-planner",
+  "official_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "files": {
+    "src/uam_sim/delta-display/delta_display/src/delta_display.cpp": "ac6dd78965769d02ac915f73fffca86954e538990515dd1745a4ae4e8523f0ae",
+    "src/uam_sim/delta-display/delta_display/include/delta_display/delta_display.h": "5d5a3d3802f68e4674b68563ecb181afc4a9ffa71afc8867301947ea93e2d43e",
+    "src/uam_sim/delta-display/delta_display/include/delta_display/flatness.h": "661765faf9e35ff78b13ab20bd7b86b862d3335f6c282f89affbb2b597589966",
+    "src/utils/traj_server/src/traj_server.cpp": "2090a66cc9f9613fa3a4ed06154bc39fcd33630061a21da993451ee6dd4e5faf",
+    "src/uam_sim/delta-display/delta_display/urdf/arm.xacro": "8489da676645edebde53e0ac352a48bc1a3096f5ee41bb86122afdaca5ca6db1",
+    "src/plan/plan_manage/launch/run_in_sim_grasp.launch": "dce851f5d24b6d153f4ee7df147309b46212aa646dd9c180485b1eb92972dfb7"
+  },
+  "source_modified": false,
+  "third_party_source_committed": false
+}
