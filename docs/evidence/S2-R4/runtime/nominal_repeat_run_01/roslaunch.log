@@ -1,0 +1,304 @@
+[33m[WARN] [1785764197.947967705]: POINT BE BUILD![0m
+[0m[INFO] [1785764197.709450852]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785764197.716386779]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785764197.751812979]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785764197.751829645]: dim: 466, 333, 133[0m
+[0m[INFO] [1785764197.760284956]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785764197.763670262]: [MANAGE]: Other mode init! Loaded 9 inter points.[0m
+[0m[INFO] [1785764197.764155866]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785764197.764171048]: [MANAGE]: PlannerManage init done![0m
+[0m[INFO] [1785764197.947549944]: [SE3_PLANNER]: please wait~[0m
+[0m[INFO] [1785764197.949218092]: [0;33mReceived the point cloud![0m[0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785764198.788909672]: [JPS]: Map has been updated[0m
+[0m[INFO] [1785764199.712665871]: [SE3_PLANNER]: Begin path searching![0m
+[0m[INFO] [1785764199.712714346]: [SE3_PLANNER]: Searching path from (-1.500, 0.000, 1.500) to (-1.500, 1.600, 1.500)[0m
+Start: -1.5    0  1.5
+Goal:  -1.5  1.6  1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 54.000000, h: 0.000000!
+Expand [55] nodes!
+[0m[INFO] [1785764199.958923210]: [SE3_PLANNER]: Searching path from (-1.500, 1.600, 1.500) to (0.000, 1.500, 1.800)[0m
+Start: -1.5  1.6  1.5
+Goal:    0 1.5 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 64.000000, h: 0.000000!
+Expand [11841] nodes!
+[0m[INFO] [1785764200.282344620]: [SE3_PLANNER]: Searching path from (0.000, 1.500, 1.800) to (0.000, 1.600, 1.800)[0m
+Start:   0 1.5 1.8
+Goal:    0 1.6 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 4.000000, h: 0.000000!
+Expand [5] nodes!
+[0m[INFO] [1785764200.506895484]: [SE3_PLANNER]: Searching path from (0.000, 1.600, 1.800) to (0.100, 1.700, 1.800)[0m
+Start:   0 1.6 1.8
+Goal:  0.1 1.7 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 6.000000, h: 0.000000!
+Expand [17] nodes!
+[0m[INFO] [1785764200.716442014]: [SE3_PLANNER]: Searching path from (0.100, 1.700, 1.800) to (0.200, 1.700, 1.800)[0m
+Start: 0.1 1.7 1.8
+Goal:  0.2 1.7 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 4.000000, h: 0.000000!
+Expand [5] nodes!
+[0m[INFO] [1785764200.895826932]: [SE3_PLANNER]: Searching path from (0.200, 1.700, 1.800) to (0.300, 1.700, 1.800)[0m
+Start: 0.2 1.7 1.8
+Goal:  0.3 1.7 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 3.000000, h: 0.000000!
+Expand [4] nodes!
+[0m[INFO] [1785764201.085489546]: [SE3_PLANNER]: Searching path from (0.300, 1.700, 1.800) to (0.400, 1.600, 1.800)[0m
+Start: 0.3 1.7 1.8
+Goal:  0.4 1.6 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 6.000000, h: 0.000000!
+Expand [17] nodes!
+[0m[INFO] [1785764201.280313193]: [SE3_PLANNER]: Searching path from (0.400, 1.600, 1.800) to (0.500, 1.600, 1.800)[0m
+Start: 0.4 1.6 1.8
+Goal:  0.5 1.6 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 4.000000, h: 0.000000!
+Expand [5] nodes!
+[0m[INFO] [1785764201.467176567]: [SE3_PLANNER]: Searching path from (0.500, 1.600, 1.800) to (1.500, 1.600, 1.500)[0m
+Start: 0.5 1.6 1.8
+Goal:  1.5 1.6 1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 43.000000, h: 0.000000!
+Expand [3208] nodes!
+[0m[INFO] [1785764201.653271908]: [SE3_PLANNER]: Searching path from (1.500, 1.600, 1.500) to (1.500, 0.000, 1.500)[0m
+Start: 1.5 1.6 1.5
+Goal:  1.5   0 1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 54.000000, h: 0.000000!
+Expand [55] nodes!
+[0m[INFO] [1785764201.842661535]: [SE3_PLANNER]: JPS search path![0m
+[0m[INFO] [1785764201.842704983]: [32m[SE3_PLANNER]: JPS path searching time: 2.130 s[0m[0m
+[0m[INFO] [1785764201.842727443]: Path published![0m
+[0m[INFO] [1785764201.842734129]: [SE3_PLANNER]: inter_ids size: 9[0m
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+[0m[INFO] [1785764201.848541199]: [SE3_PLANNER]: The inter point is in the polyhedron 1 and 2 ![0m
+[0m[INFO] [1785764201.848695741]: [SE3_PLANNER]: The inter point is in the polyhedron 4 and 5 ![0m
+[0m[INFO] [1785764201.848836641]: [SE3_PLANNER]: The inter point is in the polyhedron 7 and 8 ![0m
+[0m[INFO] [1785764201.848964901]: [SE3_PLANNER]: The inter point is in the polyhedron 10 and 11 ![0m
+[0m[INFO] [1785764201.849048241]: [SE3_PLANNER]: The inter point is in the polyhedron 13 and 14 ![0m
+[0m[INFO] [1785764201.849123428]: [SE3_PLANNER]: The inter point is in the polyhedron 16 and 17 ![0m
+[0m[INFO] [1785764201.849204976]: [SE3_PLANNER]: The inter point is in the polyhedron 19 and 20 ![0m
+[0m[INFO] [1785764201.849285399]: [SE3_PLANNER]: The inter point is in the polyhedron 22 and 23 ![0m
+[0m[INFO] [1785764201.849369197]: [SE3_PLANNER]: The inter point is in the polyhedron 25 and 26 ![0m
+[33mBegin to optimize the trajectory with MINCO...[0m
+[1;32m[SE3_PLANNER]: MINCO setup successfully![0m
+[0m[INFO] [1785764201.850838527]: [SE3GCOPTER]: set initial done[0m
+[0m[INFO] [1785764201.850885026]: [SE3GCOPTER]: backward done[0m
+[Workspace_Model_H]: Using device: cuda
+[Workspace_Model_H]: Workspace probability model successfully initialized on cuda
+[32mFinish optimization![0m
+Optimization time usage: 85980 ms
+Final cost: 2899.5
+Total Duration: 4.98802
+Maximum Vel: 2.2228
+Maximum Acc: 3.76794
+Arm Maximum Vel: 0.0392313
+Max Z: -0.056, Min Z: -0.072
+Max X: 0.004, Min X: -0.018
+Max Y: 0.005, Min Y: -0.002
+[MANAGE]: Published cost 2899.503 to /finish_simulation topic.
+[31m[ERROR] [1785764287.837447407]: [MANAGE]: No logs to publish![0m
+[0m[INFO] [1785764287.837853945]: [1;32m[MANAGE]: The trajectory is published![0m[0m
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+Error in XmlRpcDispatch::work: couldn't find source iterator
+... logging to /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R4/runtime/nominal_repeat_run_01/ros_home/log/5805ec7a-8f40-11f1-af65-00155dca07d1/roslaunch-SC-202607101733-107772.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r4_official.launch
+[1mstarted roslaunch server http://SC-202607101733:33737/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /loose/end_pt: [1.5, 0.0, 1.5]
+ * /loose/inter_points: [[0.0, -1.5, 1.6,...
+ * /loose/num_points: 8
+ * /loose/start_pt: [-1.5, 0.0, 1.5]
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 3
+ * /narrow/end_pt: [1.5, 0.0, 1.5]
+ * /narrow/inter_points: [[0.0, -1.5, 1.6,...
+ * /narrow/num_points: 8
+ * /narrow/start_pt: [-1.5, 0.0, 1.5]
+ * /nominal/end_pt: [1.5, 0.0, 1.5]
+ * /nominal/inter_points: [[0.0, -1.5, 1.6,...
+ * /nominal/num_points: 8
+ * /nominal/start_pt: [-1.5, 0.0, 1.5]
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /global_map
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [100000000000.0, ...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: False
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /smoke_free/end_pt: [1.5, 0.0, 1.5]
+ * /smoke_free/inter_points: [[0.0, -1.5, 1.6,...
+ * /smoke_free/num_points: 8
+ * /smoke_free/start_pt: [-1.5, 0.0, 1.5]
+ * /staticR: 0.08
+ * /task: nominal
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r4_official.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [107808][0m
+[se3_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

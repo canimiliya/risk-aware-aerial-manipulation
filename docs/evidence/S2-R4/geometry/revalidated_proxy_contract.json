@@ -1,0 +1,16 @@
+{
+  "decision": "PROVISIONAL_PROXY_RETAINED",
+  "official_asset_search": "docs/evidence/S2-R4/geometry/official_asset_search.md",
+  "official_amplanner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "body_sphere_radius_m": 0.2,
+  "rotor_disk_radius_m": 0.25,
+  "rotor_centers": "existing_provisional_contract",
+  "upper_lower_arm": "official getJointPoints centerlines plus existing capsule radius",
+  "moving_platform_radius_m": 0.025,
+  "end_effector_radius_m": 0.025,
+  "clearance_gate_m": 0.01,
+  "radius_sensitivity": [0.9, 1.0, 1.1],
+  "obstacle_geometry_modified": false,
+  "proxy_shrunk": false,
+  "mesh_exact_collision_claim": false
+}

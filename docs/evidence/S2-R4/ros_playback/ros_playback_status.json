@@ -1,0 +1,8 @@
+{
+  "status": "REAL_SE3_NODE_CAPTURED_LIVE_DELTADISPLAY_NOT_RUN",
+  "se3_node": true,
+  "trajectory_topics": ["/trajectory", "/trajectory_arm"],
+  "live_delta_display": false,
+  "reason": "The official real planner capture and independent playback validator were run; no new live DeltaDisplay GUI playback was launched.",
+  "capture_contract": "smoke_free, loose, nominal, nominal_repeat returned capture_exit=0; narrow raw capture exists and is diagnostic-only"
+}
