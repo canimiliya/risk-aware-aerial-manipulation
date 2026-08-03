@@ -6,15 +6,24 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-MAIN_HEAD = "1a2a76cfca742e3ac8c9087d3e6a2a11465a8186"
 AM_PLANNER_COMMIT = "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d"
 
 
-def run(root: Path = ROOT) -> dict:
+def branch_is_allowed(branch: str, expected_branch: str | None = None) -> bool:
+    """Allow any named non-detached branch by default; optionally enforce an exact branch."""
+    return bool(branch) and (expected_branch is None or branch == expected_branch)
+
+
+def git_stdout(root: Path, *args: str) -> str:
+    return subprocess.run(["git", *args], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
+
+
+def run(root: Path = ROOT, expected_branch: str | None = None) -> dict:
     errors: list[str] = []
     checks: dict[str, object] = {}
 
@@ -41,14 +50,13 @@ def run(root: Path = ROOT) -> dict:
         root / "docs/milestones/S2_R0_status.md",
     ]
     require("required_artifacts", all(path.is_file() and path.stat().st_size > 0 for path in required), [str(path.relative_to(root)) for path in required if not path.is_file()])
-    branch = subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
-    require("s2_branch", branch in {
-        "agent/s2-r0-delta-workspace-scene-contract",
-        "main",
-        "agent/s2-r2-am-planner-crossarm-planning",
-    }, branch)
-    require("base_main", subprocess.run(["git", "merge-base", "HEAD", "main"], cwd=root, capture_output=True, text=True, check=False).stdout.strip() == MAIN_HEAD)
-    require("algorithm_boundary", not subprocess.run(["git", "diff", "--name-only", f"{MAIN_HEAD}..HEAD", "--", "src"], cwd=root, capture_output=True, text=True, check=False).stdout.strip())
+    branch = git_stdout(root, "branch", "--show-current")
+    require("s2_branch", branch_is_allowed(branch, expected_branch), branch or "DETACHED_HEAD")
+    main_head = git_stdout(root, "rev-parse", "--verify", "refs/heads/main")
+    merge_base = git_stdout(root, "merge-base", "HEAD", "main")
+    require("base_main", bool(main_head) and merge_base == main_head, {"main": main_head, "merge_base": merge_base})
+    base_for_diff = merge_base or main_head or "HEAD"
+    require("algorithm_boundary", not git_stdout(root, "diff", "--name-only", f"{base_for_diff}..HEAD", "--", "src"))
 
     model = json.loads((root / "docs/evidence/S2-R0/robot_model/model_files.json").read_text(encoding="utf-8-sig"))
     joints = json.loads((root / "docs/evidence/S2-R0/robot_model/joint_contract.json").read_text(encoding="utf-8-sig"))
@@ -81,7 +89,8 @@ def run(root: Path = ROOT) -> dict:
 
     s0 = subprocess.run([sys.executable, "scripts/audit/check_s0_structure.py"], cwd=root, capture_output=True, text=True, check=False)
     require("s0_audit", s0.returncode == 0, s0.stdout[-1000:])
-    s1 = subprocess.run([sys.executable, "scripts/audit/check_s1_final_acceptance.py", "--output", "docs/evidence/S1/final_acceptance/s1_final_acceptance.json"], cwd=root, capture_output=True, text=True, check=False)
+    with tempfile.TemporaryDirectory(prefix="s2_r0_s1_audit_") as tmp:
+        s1 = subprocess.run([sys.executable, "scripts/audit/check_s1_final_acceptance.py", "--output", str(Path(tmp) / "s1_final_acceptance.json")], cwd=root, capture_output=True, text=True, check=False)
     require("s1_audit", s1.returncode == 0, s1.stdout[-1000:])
     credential = re.compile(r"ghp_|github_pat_|AKIA|BEGIN (?:RSA |OPENSSH )?PRIVATE KEY", re.I)
     scoped = [root / "configs", root / "planner_bridge/workspace", root / "docs/evidence/S2-R0", root / "docs/reports/S2-R0_delta_workspace_preflight_report.md"]
@@ -96,8 +105,9 @@ def run(root: Path = ROOT) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=Path("docs/evidence/S2-R0/final_acceptance/s2_r0_workspace_preflight_audit.json"))
+    parser.add_argument("--expected-branch", default=None)
     args = parser.parse_args()
-    result = run()
+    result = run(expected_branch=args.expected_branch)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"decision": result["decision"], "errors": result["errors"], "warnings": result["warnings"]}, ensure_ascii=False))

@@ -5,8 +5,8 @@
 本轮完成了官方源码合同审计、项目自有 IK/FK/FlatnessMap wrapper、S2-R2 五组真实轨迹的 100/200/400/800 Hz 回放、全身代理几何、频率收敛、半径敏感性、重复性和 0.5 mm 自适应细分。真实判定为：
 
 ```text
-S2-R3：SUBMITTED_S2_R3_IK_FAILED
-review_state：SUBMITTED_FOR_REVIEW
+S2-R3：FAILURE_EVIDENCE_ACCEPTED
+review_state：FAILURE_EVIDENCE_ACCEPTED
 S2：IN_PROGRESS
 S3–S8：FROZEN
 ```

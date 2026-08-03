@@ -1,0 +1,29 @@
+{
+  "decision": "FAILURE_EVIDENCE_ACCEPTED",
+  "errors": [],
+  "unresolved_warnings": [],
+  "accepted_findings": [
+    "official IK/FK and FlatnessMap numerical implementation pass independent loopback checks",
+    "the real S2-R2 arm trajectory leaves the official DeltaDisplay execution branch q in [0, pi/2]",
+    "the nominal body 0.20 m provisional proxy clearance is below the 0.010 m gate",
+    "the two failures are independent and reproducible across repeat and sampling frequencies",
+    "S2 is not ready and S2-R4 is limited to task-level execution-feasible constrained replanning"
+  ],
+  "checks": {
+    "official_source_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+    "ik_fk_accepted": true,
+    "nominal_joint_margin_rad": -0.2160505211570365,
+    "nominal_body_clearance_m": -0.0684855999417475,
+    "nominal_repeat_q_max_abs_delta_rad": 0.0,
+    "nominal_repeat_clearance_delta_m": 0.0,
+    "frequency_convergence": true,
+    "adaptive_body_step_s": 0.0005,
+    "adaptive_body_convergence_delta_m": 3.720927713168898e-07,
+    "no_q_clipping": true,
+    "no_proxy_reduction": true,
+    "no_obstacle_change": true,
+    "no_gate_reduction": true,
+    "s2_status": "IN_PROGRESS",
+    "s3_to_s8_status": "FROZEN"
+  }
+}
