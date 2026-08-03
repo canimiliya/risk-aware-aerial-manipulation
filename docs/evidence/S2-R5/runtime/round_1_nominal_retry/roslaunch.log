@@ -1,0 +1,132 @@
+[31m[ERROR] [1785767559.812316609]: [MANAGE]: Inter info size error: got 21, expect 20 for mode 3[0m
+[31m[ERROR] [1785767559.812620827]: [MANAGE]: Inter info size error![0m
+[0m[INFO] [1785767559.745535320]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785767559.753401953]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785767559.795806574]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785767559.795831395]: dim: 466, 333, 133[0m
+[0m[INFO] [1785767559.807635195]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785767559.811728650]: [MANAGE]: Other mode init! Loaded 12 inter points.[0m
+[0m[INFO] [1785767559.812301137]: [MANAGE]: Initilized pre and post![0m
+[31m[se3_node-1] process has died [pid 111177, exit code 1, cmd /home/amplanner/am-planner-s2-r2-ws/devel/.private/plan_manage/lib/plan_manage/se3_node ~trajectory:=/trajectory ~trajectory_arm:=/trajectory_arm __name:=se3_node __log:=/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R5/runtime/round_1_nominal_retry/ros_home/log/2bd79f60-8f48-11f1-83e0-00155dca07d1/se3_node-1.log].
+log file: /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R5/runtime/round_1_nominal_retry/ros_home/log/2bd79f60-8f48-11f1-83e0-00155dca07d1/se3_node-1*.log[0m
+... logging to /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R5/runtime/round_1_nominal_retry/ros_home/log/2bd79f60-8f48-11f1-83e0-00155dca07d1/roslaunch-SC-202607101733-111141.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r5_official.launch
+[1mstarted roslaunch server http://SC-202607101733:45247/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /loose/end_pt: [1.5, 0.0, 1.5]
+ * /loose/inter_points: [[0.0, -1.5, 1.6,...
+ * /loose/num_points: 12
+ * /loose/start_pt: [-1.5, 0.0, 1.5]
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 3
+ * /narrow/end_pt: [1.5, 0.0, 1.5]
+ * /narrow/inter_points: [[0.0, -1.5, 1.6,...
+ * /narrow/num_points: 12
+ * /narrow/start_pt: [-1.5, 0.0, 1.5]
+ * /nominal/end_pt: [1.5, 0.0, 1.5]
+ * /nominal/inter_points: [[0.0, -1.5, 1.6,...
+ * /nominal/num_points: 12
+ * /nominal/start_pt: [-1.5, 0.0, 1.5]
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /global_map
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [100000000000.0, ...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: False
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /smoke_free/end_pt: [1.5, 0.0, 1.5]
+ * /smoke_free/inter_points: [[0.0, -1.5, 1.6,...
+ * /smoke_free/num_points: 12
+ * /smoke_free/start_pt: [-1.5, 0.0, 1.5]
+ * /staticR: 0.08
+ * /task: nominal
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r5_official.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [111177][0m
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

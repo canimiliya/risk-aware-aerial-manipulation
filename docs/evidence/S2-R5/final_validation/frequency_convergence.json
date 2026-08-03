@@ -1,0 +1,106 @@
+{
+  "run": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R5/runtime/round_3_nominal",
+  "adaptive_dt_s": 0.0005,
+  "rates": {
+    "100": {
+      "sample_hz": 100,
+      "sample_count": 4543,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10643474144242049,
+        -0.0035308239882061443,
+        -0.025156050490136028
+      ],
+      "q_max_rad": [
+        0.4989912080940113,
+        0.45129457753427316,
+        0.45533260569351963
+      ],
+      "joint_margin_min_rad": -0.10643474144242049,
+      "max_fk_residual_m": 1.6755031801391436e-16,
+      "qdot_max_rad_s": 1.097231805580357,
+      "qddot_max_rad_s2": 8.840668498211002,
+      "finite": true
+    },
+    "200": {
+      "sample_hz": 200,
+      "sample_count": 9085,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644080645956744,
+        -0.003530969711950771,
+        -0.025156050490136028
+      ],
+      "q_max_rad": [
+        0.4989943243972288,
+        0.45129700673120166,
+        0.4553328374915462
+      ],
+      "joint_margin_min_rad": -0.10644080645956744,
+      "max_fk_residual_m": 1.8931949150813484e-16,
+      "qdot_max_rad_s": 1.0978388299131936,
+      "qddot_max_rad_s2": 15.669632588087453,
+      "finite": true
+    },
+    "400": {
+      "sample_hz": 400,
+      "sample_count": 18170,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644080645956744,
+        -0.003530969711950771,
+        -0.02516776621502337
+      ],
+      "q_max_rad": [
+        0.49900160089863954,
+        0.45129700673120166,
+        0.4553330474016728
+      ],
+      "joint_margin_min_rad": -0.10644080645956744,
+      "max_fk_residual_m": 1.8931949150813484e-16,
+      "qdot_max_rad_s": 1.0981003051832658,
+      "qddot_max_rad_s2": 26.361489921129163,
+      "finite": true
+    },
+    "800": {
+      "sample_hz": 800,
+      "sample_count": 36340,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644130183347,
+        -0.0035309748929124307,
+        -0.02516776621502337
+      ],
+      "q_max_rad": [
+        0.49900160089863954,
+        0.45129700673120166,
+        0.4553330474016728
+      ],
+      "joint_margin_min_rad": -0.10644130183347,
+      "max_fk_residual_m": 1.9579301413876266e-16,
+      "qdot_max_rad_s": 1.0981356726307894,
+      "qddot_max_rad_s2": 65.2998897189247,
+      "finite": true
+    },
+    "2000": {
+      "sample_hz": 2000,
+      "sample_count": 90848,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644131034309923,
+        -0.003530976075788894,
+        -0.02516776621502337
+      ],
+      "q_max_rad": [
+        0.49900160089863954,
+        0.4512970374167464,
+        0.4553330575531911
+      ],
+      "joint_margin_min_rad": -0.10644131034309923,
+      "max_fk_residual_m": 2.1516253669354347e-16,
+      "qdot_max_rad_s": 1.0981455760096424,
+      "qddot_max_rad_s2": 133.53382872375482,
+      "finite": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+stage=S2-R5
+variant=nominal
+run_id=round_3_nominal
+timeout_s=1800
+workspace=/home/amplanner/am-planner-s2-r2-ws

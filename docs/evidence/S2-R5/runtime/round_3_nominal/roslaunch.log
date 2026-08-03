@@ -1,0 +1,376 @@
+[33m[WARN] [1785768636.312918536]: POINT BE BUILD![0m
+[0m[INFO] [1785768636.106525323]: [MANAGE]: Initilized start and end![0m
+[0m[INFO] [1785768636.114401916]: [MANAGE]: Initilized ros![0m
+[0m[INFO] [1785768636.150692261]: map size: 14.000000, 10.000000, 4.000000[0m
+[0m[INFO] [1785768636.150711708]: dim: 466, 333, 133[0m
+[0m[INFO] [1785768636.160679408]: buffer size: 20638674[0m
+[1;36mJPS PLANNER VERBOSE ON
+[0m[0m[INFO] [1785768636.164789734]: [MANAGE]: Other mode init! Loaded 21 inter points.[0m
+[0m[INFO] [1785768636.165390770]: [MANAGE]: Initilized pre and post![0m
+[0m[INFO] [1785768636.165401790]: [MANAGE]: PlannerManage init done![0m
+[0m[INFO] [1785768636.312233758]: [SE3_PLANNER]: please wait~[0m
+[0m[INFO] [1785768636.313768749]: [0;33mReceived the point cloud![0m[0m
+[MANAGE]: Waiting for PCL data!
+[33m[WARN] [1785768637.192255094]: [JPS]: Map has been updated[0m
+[0m[INFO] [1785768638.110633588]: [SE3_PLANNER]: Begin path searching![0m
+[0m[INFO] [1785768638.110676761]: [SE3_PLANNER]: Searching path from (-1.500, 0.000, 1.500) to (-1.500, 1.600, 1.500)[0m
+Start: -1.5    0  1.5
+Goal:  -1.5  1.6  1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 54.000000, h: 0.000000!
+Expand [55] nodes!
+[0m[INFO] [1785768638.340985602]: [SE3_PLANNER]: Searching path from (-1.500, 1.600, 1.500) to (-0.824, 0.379, 1.574)[0m
+Start: -1.5  1.6  1.5
+Goal:  -0.823681   0.37877   1.57388
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 65.000000, h: 0.000000!
+Expand [19862] nodes!
+[0m[INFO] [1785768638.622726101]: [SE3_PLANNER]: Searching path from (-0.824, 0.379, 1.574) to (-1.247, 0.766, 1.710)[0m
+Start: -0.823681   0.37877   1.57388
+Goal:  -1.24743 0.766201  1.70989
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 31.000000, h: 0.000000!
+Expand [3301] nodes!
+[0m[INFO] [1785768638.820617331]: [SE3_PLANNER]: Searching path from (-1.247, 0.766, 1.710) to (-1.552, 1.400, 1.518)[0m
+Start: -1.24743 0.766201  1.70989
+Goal:  -1.55224  1.39959  1.51751
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 37.000000, h: 0.000000!
+Expand [5297] nodes!
+[0m[INFO] [1785768638.999212136]: [SE3_PLANNER]: Searching path from (-1.552, 1.400, 1.518) to (-1.132, 1.681, 1.692)[0m
+Start: -1.55224  1.39959  1.51751
+Goal:  -1.13248  1.68082  1.69203
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 29.000000, h: 0.000000!
+Expand [2937] nodes!
+[0m[INFO] [1785768639.185812756]: [SE3_PLANNER]: Searching path from (-1.132, 1.681, 1.692) to (-0.280, 1.466, 2.185)[0m
+Start: -1.13248  1.68082  1.69203
+Goal:  -0.280424   1.46588   2.18522
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 51.000000, h: 0.000000!
+Expand [13927] nodes!
+[0m[INFO] [1785768639.391461159]: [SE3_PLANNER]: Searching path from (-0.280, 1.466, 2.185) to (0.369, 1.355, 2.323)[0m
+Start: -0.280424   1.46588   2.18522
+Goal:  0.368941  1.35527  2.32253
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 31.000000, h: 0.000000!
+Expand [2030] nodes!
+[0m[INFO] [1785768639.592931717]: [SE3_PLANNER]: Searching path from (0.369, 1.355, 2.323) to (0.841, 1.292, 1.691)[0m
+Start: 0.368941  1.35527  2.32253
+Goal:  0.840528  1.29171  1.69128
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 39.000000, h: 0.000000!
+Expand [5181] nodes!
+[0m[INFO] [1785768639.791158990]: [SE3_PLANNER]: Searching path from (0.841, 1.292, 1.691) to (1.016, 0.988, 1.625)[0m
+Start: 0.840528  1.29171  1.69128
+Goal:   1.01629 0.988357  1.62466
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 18.000000, h: 0.000000!
+Expand [573] nodes!
+[0m[INFO] [1785768639.960077643]: [SE3_PLANNER]: Searching path from (1.016, 0.988, 1.625) to (1.199, 0.631, 1.566)[0m
+Start:  1.01629 0.988357  1.62466
+Goal:    1.1992 0.631191  1.56584
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 20.000000, h: 0.000000!
+Expand [719] nodes!
+[0m[INFO] [1785768640.142595909]: [SE3_PLANNER]: Searching path from (1.199, 0.631, 1.566) to (-1.101, 0.299, 1.587)[0m
+Start:   1.1992 0.631191  1.56584
+Goal:  -1.10074 0.299433  1.58737
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 88.000000, h: 0.000000!
+Expand [11151] nodes!
+[0m[INFO] [1785768640.334908898]: [SE3_PLANNER]: Searching path from (-1.101, 0.299, 1.587) to (-0.794, 0.554, 1.647)[0m
+Start: -1.10074 0.299433  1.58737
+Goal:  -0.794392  0.553971   1.64694
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 21.000000, h: 0.000000!
+Expand [940] nodes!
+[0m[INFO] [1785768640.537332405]: [SE3_PLANNER]: Searching path from (-0.794, 0.554, 1.647) to (-0.451, 0.869, 1.713)[0m
+Start: -0.794392  0.553971   1.64694
+Goal:  -0.450763  0.868741    1.7127
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 25.000000, h: 0.000000!
+Expand [1681] nodes!
+[0m[INFO] [1785768640.791422857]: [SE3_PLANNER]: Searching path from (-0.451, 0.869, 1.713) to (0.000, 1.500, 1.800)[0m
+Start: -0.450763  0.868741    1.7127
+Goal:    0 1.5 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 39.000000, h: 0.000000!
+Expand [5584] nodes!
+[0m[INFO] [1785768640.993734931]: [SE3_PLANNER]: Searching path from (0.000, 1.500, 1.800) to (0.000, 1.600, 1.800)[0m
+Start:   0 1.5 1.8
+Goal:    0 1.6 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 4.000000, h: 0.000000!
+Expand [5] nodes!
+[0m[INFO] [1785768641.174834933]: [SE3_PLANNER]: Searching path from (0.000, 1.600, 1.800) to (0.100, 1.700, 1.800)[0m
+Start:   0 1.6 1.8
+Goal:  0.1 1.7 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 6.000000, h: 0.000000!
+Expand [17] nodes!
+[0m[INFO] [1785768641.362486743]: [SE3_PLANNER]: Searching path from (0.100, 1.700, 1.800) to (0.200, 1.700, 1.800)[0m
+Start: 0.1 1.7 1.8
+Goal:  0.2 1.7 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 4.000000, h: 0.000000!
+Expand [5] nodes!
+[0m[INFO] [1785768641.556213902]: [SE3_PLANNER]: Searching path from (0.200, 1.700, 1.800) to (0.300, 1.700, 1.800)[0m
+Start: 0.2 1.7 1.8
+Goal:  0.3 1.7 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 3.000000, h: 0.000000!
+Expand [4] nodes!
+[0m[INFO] [1785768641.750066096]: [SE3_PLANNER]: Searching path from (0.300, 1.700, 1.800) to (0.400, 1.600, 1.800)[0m
+Start: 0.3 1.7 1.8
+Goal:  0.4 1.6 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 6.000000, h: 0.000000!
+Expand [17] nodes!
+[0m[INFO] [1785768641.945003394]: [SE3_PLANNER]: Searching path from (0.400, 1.600, 1.800) to (0.500, 1.600, 1.800)[0m
+Start: 0.4 1.6 1.8
+Goal:  0.5 1.6 1.8
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 4.000000, h: 0.000000!
+Expand [5] nodes!
+[0m[INFO] [1785768642.143088086]: [SE3_PLANNER]: Searching path from (0.500, 1.600, 1.800) to (1.500, 1.600, 1.500)[0m
+Start: 0.5 1.6 1.8
+Goal:  1.5 1.6 1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 43.000000, h: 0.000000!
+Expand [3208] nodes!
+[0m[INFO] [1785768642.332451648]: [SE3_PLANNER]: Searching path from (1.500, 1.600, 1.500) to (1.500, 0.000, 1.500)[0m
+Start: 1.5 1.6 1.5
+Goal:  1.5   0 1.5
+Epsilon:  1
+Goal Reached!!!!!!
+
+goal g: 54.000000, h: 0.000000!
+Expand [55] nodes!
+[0m[INFO] [1785768642.523261765]: [SE3_PLANNER]: JPS search path![0m
+[0m[INFO] [1785768642.523317209]: [32m[SE3_PLANNER]: JPS path searching time: 4.413 s[0m[0m
+[0m[INFO] [1785768642.523342379]: Path published![0m
+[0m[INFO] [1785768642.523348893]: [SE3_PLANNER]: inter_ids size: 21[0m
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+overlap = 5
+[0m[INFO] [1785768642.536318135]: [SE3_PLANNER]: The inter point is in the polyhedron 1 and 2 ![0m
+[0m[INFO] [1785768642.536462857]: [SE3_PLANNER]: The inter point is in the polyhedron 4 and 5 ![0m
+[0m[INFO] [1785768642.536644208]: [SE3_PLANNER]: The inter point is in the polyhedron 7 and 8 ![0m
+[0m[INFO] [1785768642.537143986]: [SE3_PLANNER]: The inter point is in the polyhedron 10 and 11 ![0m
+[0m[INFO] [1785768642.537206889]: [SE3_PLANNER]: The inter point is in the polyhedron 13 and 14 ![0m
+[0m[INFO] [1785768642.537334372]: [SE3_PLANNER]: The inter point is in the polyhedron 16 and 17 ![0m
+[0m[INFO] [1785768642.537529693]: [SE3_PLANNER]: The inter point is in the polyhedron 19 and 20 ![0m
+[0m[INFO] [1785768642.537642820]: [SE3_PLANNER]: The inter point is in the polyhedron 22 and 23 ![0m
+[0m[INFO] [1785768642.537784395]: [SE3_PLANNER]: The inter point is in the polyhedron 25 and 26 ![0m
+[0m[INFO] [1785768642.537949779]: [SE3_PLANNER]: The inter point is in the polyhedron 28 and 29 ![0m
+[0m[INFO] [1785768642.538181854]: [SE3_PLANNER]: The inter point is in the polyhedron 31 and 32 ![0m
+[0m[INFO] [1785768642.538354400]: [SE3_PLANNER]: The inter point is in the polyhedron 34 and 35 ![0m
+[0m[INFO] [1785768642.538753982]: [SE3_PLANNER]: The inter point is in the polyhedron 37 and 38 ![0m
+[0m[INFO] [1785768642.539085295]: [SE3_PLANNER]: The inter point is in the polyhedron 40 and 41 ![0m
+[0m[INFO] [1785768642.539331283]: [SE3_PLANNER]: The inter point is in the polyhedron 43 and 44 ![0m
+[0m[INFO] [1785768642.539595687]: [SE3_PLANNER]: The inter point is in the polyhedron 46 and 47 ![0m
+[0m[INFO] [1785768642.539742527]: [SE3_PLANNER]: The inter point is in the polyhedron 49 and 50 ![0m
+[0m[INFO] [1785768642.539888023]: [SE3_PLANNER]: The inter point is in the polyhedron 52 and 53 ![0m
+[0m[INFO] [1785768642.540047662]: [SE3_PLANNER]: The inter point is in the polyhedron 55 and 56 ![0m
+[0m[INFO] [1785768642.540225225]: [SE3_PLANNER]: The inter point is in the polyhedron 58 and 59 ![0m
+[0m[INFO] [1785768642.540389925]: [SE3_PLANNER]: The inter point is in the polyhedron 61 and 62 ![0m
+[33mBegin to optimize the trajectory with MINCO...[0m
+[1;32m[SE3_PLANNER]: MINCO setup successfully![0m
+[0m[INFO] [1785768642.542465908]: [SE3GCOPTER]: set initial done[0m
+[0m[INFO] [1785768642.542537391]: [SE3GCOPTER]: backward done[0m
+[Workspace_Model_H]: Using device: cuda
+[Workspace_Model_H]: Workspace probability model successfully initialized on cuda
+[32mFinish optimization![0m
+Optimization time usage: 62658.5 ms
+Final cost: 24629.3
+Total Duration: 45.4239
+Maximum Vel: 2.56606
+Maximum Acc: 6.87126
+Arm Maximum Vel: 0.0533435
+Max Z: -0.041, Min Z: -0.096
+Max X: 0.016, Min X: -0.012
+Max Y: 0.007, Min Y: -0.011
+[MANAGE]: Published cost 24629.342 to /finish_simulation topic.
+[31m[ERROR] [1785768705.204959607]: [MANAGE]: No logs to publish![0m
+[0m[INFO] [1785768705.205298933]: [1;32m[MANAGE]: The trajectory is published![0m[0m
+... logging to /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R5/runtime/round_3_nominal/ros_home/log/ad7ad350-8f4a-11f1-b165-00155dca07d1/roslaunch-SC-202607101733-112113.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r5_official.launch
+[1mstarted roslaunch server http://SC-202607101733:42141/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /debug: False
+ * /debug_endEffector: False
+ * /dynar: 0.025
+ * /jps/allocate_num: 10000000.0
+ * /jps/lambda_heu: 1.0
+ * /jps/resolution: 0.03
+ * /loose/end_pt: [1.5, 0.0, 1.5]
+ * /loose/inter_points: [[0.0, -1.5, 1.6,...
+ * /loose/num_points: 20
+ * /loose/start_pt: [-1.5, 0.0, 1.5]
+ * /lower_arm: 0.16
+ * /map/origin_x: -4
+ * /map/origin_y: -5
+ * /map/origin_z: 0
+ * /map/resolution: 0.03
+ * /map/world_frame_id: world
+ * /map/x_size: 14
+ * /map/y_size: 10
+ * /map/z_size: 4
+ * /mass: 0.98
+ * /mode: 3
+ * /narrow/end_pt: [1.5, 0.0, 1.5]
+ * /narrow/inter_points: [[0.0, -1.5, 1.6,...
+ * /narrow/num_points: 20
+ * /narrow/start_pt: [-1.5, 0.0, 1.5]
+ * /nominal/end_pt: [1.5, 0.0, 1.5]
+ * /nominal/inter_points: [[0.0, -1.5, 1.6,...
+ * /nominal/num_points: 20
+ * /nominal/start_pt: [-1.5, 0.0, 1.5]
+ * /num_post_point: 0
+ * /num_pre_point: 0
+ * /object_height: 0.1
+ * /rate: 100.0
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /scale: 1.0
+ * /se3_node/ArmVelMax: 0.15
+ * /se3_node/BiasArmToBody: 0.04
+ * /se3_node/BodyRateMax: 1.5
+ * /se3_node/BoundArmZ: 0.06
+ * /se3_node/CollectData: False
+ * /se3_node/CoordinateNum: 10
+ * /se3_node/EEDownVel: 0.05
+ * /se3_node/EEEllipsoidVizRGBA: [0.753, 0.886, 0....
+ * /se3_node/EllipsoidPath: /misc/data/sphere...
+ * /se3_node/EndEffectorRadius: 0.025
+ * /se3_node/GraspR: 0.1
+ * /se3_node/GravAcc: 9.81
+ * /se3_node/HorizHalfLen: 0.17
+ * /se3_node/InitVel: 1.5
+ * /se3_node/LowerArm: 0.16
+ * /se3_node/MapHeight: 4.0
+ * /se3_node/MapTopic: /global_map
+ * /se3_node/MaxLengthLine: 1.5
+ * /se3_node/MultiLayerOpt: True
+ * /se3_node/ObjectHeight: 0.0
+ * /se3_node/OdomFrame: world
+ * /se3_node/OptRelTol1: 0.0001
+ * /se3_node/OptRelTol2: 1e-06
+ * /se3_node/OrientationR: 0.1
+ * /se3_node/PenaltyArm: [1000000.0, 10000...
+ * /se3_node/PenaltyGraspWeight: [100000000000.0, ...
+ * /se3_node/PenaltyPVTB: [100000000.0, 100...
+ * /se3_node/PlatformR: 1
+ * /se3_node/PolyhedronBox: [1.5, 1.5, 1.0]
+ * /se3_node/PrintCost: False
+ * /se3_node/QdIntervals: 96
+ * /se3_node/QuadEllipsoidVizRGBA: [0.682, 0.824, 0....
+ * /se3_node/QuadrotorPath: /misc/data/quadco...
+ * /se3_node/Restart: False
+ * /se3_node/Rho: 500
+ * /se3_node/S_CurvCoeff: 0.9
+ * /se3_node/SafeMargin: 0.03
+ * /se3_node/SmoothR: 3
+ * /se3_node/StaticRadius: 0.08
+ * /se3_node/TargetTopic: /move_base_simple...
+ * /se3_node/TaskArmZ: 0.22
+ * /se3_node/ThrustAccMax: 15.0
+ * /se3_node/ThrustAccMin: 3.0
+ * /se3_node/TotalT: 20
+ * /se3_node/TrajVizRGB: [0.8, 0.79, 0.0]
+ * /se3_node/TrajVizWidth: 1.0
+ * /se3_node/UpperArm: 0.1
+ * /se3_node/UseC2Diffeo: True
+ * /se3_node/VelMax: 5
+ * /se3_node/VertHalfLen: 0.12
+ * /se3_node/overlap: 5
+ * /se3_node/use_object_odom: False
+ * /se3_node/use_quadrotor_odom: False
+ * /smoke_free/end_pt: [1.5, 0.0, 1.5]
+ * /smoke_free/inter_points: [[0.0, -1.5, 1.6,...
+ * /smoke_free/num_points: 20
+ * /smoke_free/start_pt: [-1.5, 0.0, 1.5]
+ * /staticR: 0.08
+ * /task: nominal
+ * /upper_arm: 0.1
+ * /world_frame_id: world
+
+NODES
+  /
+    se3_node (plan_manage/se3_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/planner_bridge/scenes/s2_r5_official.launch http://localhost:11311
+[1mprocess[se3_node-1]: started with pid [112149][0m
+[se3_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
