@@ -24,10 +24,11 @@ R4 failure acceptance 已完成并合并 PR #8。当前 R4 只有连续 q2 下�
 - 分段边界：官方起终 arm state 在 `se3gcopter.h:934-943` 硬编码为 `[0,0,-boundArmZ]`，已写入 `PHASE_SPLIT_NOT_SUPPORTED_BY_OFFICIAL_ARM_ENDPOINT_CONTRACT`，未拼接分段轨迹。
 - Nominal 轮次：Round1/2/3 均为真实 `capture_exit=0`，均有双轨迹；B6 的 smoke/loose/nominal repeat/narrow 未执行，因为最终 nominal 未通过 joint gate。
 - 只读算法设计审计：已完成 `docs/evidence/S2-R5/algorithm_constraint_design/` 七份文件，推荐未来在官方 MINCO arm objective 的连续采样/梯度路径加入 Cartesian envelope barrier；未实现。
+- Round0–3 均有独立 `direction_validation.json`；方向合同通过，误差 `4.163336342344337e-17 m`。Round1/2/3 的 2000 Hz 全身明细覆盖 body、4 rotors、upper/lower arms、platform 和 EE。
 
 ## 门槛与边界
 
-最终 Round3：IK no-solution `0`；最大 FK residual `2.1516253669354347e-16 m`；q 范围 q1 `[-0.10644131034309923,0.49900160089863954]`、q2 `[-0.003530976075788894,0.4512970374167464]`、q3 `[-0.02516776621502337,0.4553330575531911]`；joint margin `-0.10644131034309923 rad`。100/200/400/800/2000 Hz 的 q2 min 与 FK residual 收敛证据在 `final_validation/frequency_convergence.json`。方向合同沿用已通过的 R4 P2→P3 水平 +x、P3→P4 水平 -x/+y，z direction error `4.163336342344337e-17 m`。
+最终 Round3：IK no-solution `0`；最大 FK residual `2.1516253669354347e-16 m`；q 范围 q1 `[-0.10644131034309923,0.49900160089863954]`、q2 `[-0.003530976075788894,0.4512970374167464]`、q3 `[-0.02516776621502337,0.4553330575531911]`；joint margin `-0.10644131034309923 rad`。100/200/400/800/2000 Hz 的 q2、FK 和 full-body 收敛证据在 `final_validation/frequency_convergence.json`；各档 clearance 分别为 `0.00366058/0.00115409/0.00081490/0.00081490/0.00065952 m`，均未通过 `0.010 m`。方向合同沿用已通过的 R4 P2→P3 水平 +x、P3→P4 水平 -x/+y，z direction error `4.163336342344337e-17 m`。
 
 明确保持：未裁剪或投影输出轨迹；未缩小 body/rotor/link/EE proxy 或障碍；未降低 `0.010 m` clearance gate；未修改 AM-Planner 第三方源码、IK/FK、FlatnessMap、URDF/Xacro、ROS、Conda、GPU 或 checkpoint；未进入 S3/Isaac Lab；S2-R5 PR 不合并。
 
@@ -42,5 +43,6 @@ R4 failure acceptance 已完成并合并 PR #8。当前 R4 只有连续 q2 下�
 - `docs/evidence/S2-R5/phase_split_contract.md`
 - `docs/evidence/S2-R5/algorithm_constraint_design/`
 - `docs/evidence/S2-R5/final_validation/frequency_convergence.json`
+- `docs/evidence/S2-R5/rounds/round_0..3/direction_validation.json`
 - `docs/evidence/S2-R5/visuals/manifest.json`
 - `docs/evidence/S2-R5/s2_r5_audit.json`

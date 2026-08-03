@@ -26,6 +26,9 @@ def main() -> int:
             errors.append(f"round {i} added more than 6 mode3")
         if int(d["cumulative_mode3_count"]) > 25:
             errors.append(f"round {i} exceeded 25 mode3")
+        direction_path = EV / "rounds" / f"round_{i}/direction_validation.json"
+        if not direction_path.exists() or not json.loads(direction_path.read_text(encoding="utf-8")).get("pass"):
+            errors.append(f"round {i} direction contract failed or missing")
     if len(summaries) != 4:
         errors.append("round 0..3 evidence incomplete")
     phase = (EV / "phase_split_contract.md").read_text(encoding="utf-8") if (EV / "phase_split_contract.md").exists() else ""
@@ -41,6 +44,9 @@ def main() -> int:
         errors.append("fewer than 8 PNG visuals")
     if len(gifs) < 2:
         errors.append("fewer than 2 local GIF visuals")
+    frequency = EV / "final_validation/frequency_convergence.json"
+    if not frequency.exists() or set(json.loads(frequency.read_text(encoding="utf-8")).get("rates", {})) != {"100", "200", "400", "800", "2000"}:
+        errors.append("final multi-rate validation incomplete")
     diff = subprocess.run(["git", "diff", "--", "third_party/am-planner"], cwd=ROOT, capture_output=True, text=True, check=False)
     if diff.stdout.strip():
         errors.append("third_party/am-planner has a worktree diff")

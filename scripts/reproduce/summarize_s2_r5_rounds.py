@@ -24,6 +24,7 @@ def main():
             validation = read(EV / "rounds" / f"round_{i}/validation_2000hz.json")
         else:
             validation = {}
+        direction = read(EV / "rounds" / f"round_{i}/direction_validation.json")
         summary = {
             "round": i,
             "analysis_sample_hz": violation["sample_hz"],
@@ -41,6 +42,10 @@ def main():
             "joint_gate_pass": validation.get("joint_gate_pass", False) if i else False,
             "full_body_gate_pass": validation.get("full_body_gate_pass", None),
             "min_full_body_clearance_m": validation.get("min_full_body_clearance_m", baseline["static_clearance_gate_m"]),
+            "component_min_clearance_m": validation.get("component_min_clearance_m", {}),
+            "dangerous_component": validation.get("dangerous_component"),
+            "direction_pass": direction["pass"],
+            "direction_error_m": direction["direction_error_m"],
             "max_fk_residual_m": validation.get("max_fk_residual_m"),
             "ik_no_solution_count": validation.get("ik_no_solution_count", violation["ik_no_solution_count"]),
             "arm_polynomial_max_curvature_m_s2": validation.get("arm_polynomial_max_curvature_m_s2"),

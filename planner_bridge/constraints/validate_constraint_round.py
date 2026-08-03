@@ -36,9 +36,13 @@ def validate_round(run_dir: Path, constraints_path: Path, variant: str = "nomina
     qddot = np.gradient(qdot, times, axis=0, edge_order=2)
     _, attitude = validate_attitude({**base, "time": times, "yaw": np.zeros(len(times)), "yaw_dot": np.full(len(times), 0.01)})
     clearances: list[float] = []
+    component_values: dict[str, list[float]] = {}
     tree = obstacle_tree(variant)
     for position, rotation, arm_point, q_row in zip(base["position"], attitude["rotation"], arm["position"], q):
-        clearances.append(min(component_clearances(position, rotation, arm_point, official_joint_points(arm_point, q_row), tree).values()))
+        values = component_clearances(position, rotation, arm_point, official_joint_points(arm_point, q_row), tree)
+        clearances.append(min(values.values()))
+        for name, value in values.items():
+            component_values.setdefault(name, []).append(float(value))
     constraints = json.loads(constraints_path.read_text(encoding="utf-8"))
     fixed = constraints.get("new_mode3", [])
     fixed_margins = [float(item["target_joint_margin_rad"]) for item in fixed]
@@ -65,6 +69,8 @@ def validate_round(run_dir: Path, constraints_path: Path, variant: str = "nomina
         "max_fk_residual_m": float(np.max(fk_residuals)),
         "min_full_body_clearance_m": float(np.min(clearances)),
         "full_body_gate_pass": bool(np.min(clearances) >= 0.010),
+        "component_min_clearance_m": {name: float(np.min(values)) for name, values in component_values.items()},
+        "dangerous_component": min(component_values, key=lambda name: min(component_values[name])),
         "arm_polynomial_max_curvature_m_s2": float(np.max(curvature)),
         "new_violation_intervals": violation["violating_intervals"],
         "nearest_new_fixed_point_time_s": float(times[int(np.nanargmin(nearest))]) if np.isfinite(nearest).any() else None,

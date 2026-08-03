@@ -29,6 +29,25 @@
   "max_fk_residual_m": 1.9956779834400624e-16,
   "min_full_body_clearance_m": 0.04980180933033635,
   "full_body_gate_pass": true,
+  "component_min_clearance_m": {
+    "body": 0.1967522500816431,
+    "rotor_1": 0.21123875173835255,
+    "rotor_2": 0.04980180933033635,
+    "rotor_3": 0.24000098192513286,
+    "rotor_4": 0.08382310141430636,
+    "upper_arm_1": 0.19254708051654665,
+    "upper_arm_2": 0.3744020134628197,
+    "upper_arm_3": 0.3476515745486489,
+    "lower_arm_1_left": 0.1933363649155374,
+    "lower_arm_1_right": 0.19196815063863973,
+    "lower_arm_2_left": 0.3596514097525911,
+    "lower_arm_2_right": 0.37988138399530824,
+    "lower_arm_3_left": 0.34044232192528745,
+    "lower_arm_3_right": 0.3550096328594228,
+    "moving_platform": 0.34366869980874143,
+    "end_effector": 0.34366869980874143
+  },
+  "dangerous_component": "rotor_2",
   "arm_polynomial_max_curvature_m_s2": 23.806654729014273,
   "new_violation_intervals": [
     {
