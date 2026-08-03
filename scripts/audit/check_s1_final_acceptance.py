@@ -101,7 +101,12 @@ def run(root: Path = ROOT) -> dict:
     s0 = subprocess.run([sys.executable, "scripts/audit/check_s0_structure.py"], cwd=root, capture_output=True, text=True, check=False)
     require("global_s0_audit", s0.returncode == 0, s0.stdout[-2000:])
 
-    require("state_s2_frozen", "S2：`IN_PROGRESS`" in progress_text and "S3--S8：`FROZEN`" in progress_text)
+    s2_state_preserved = "S2：`IN_PROGRESS`" in progress_text or "S2：`PASS_WITH_LIMITATIONS`" in progress_text
+    later_stages_frozen = "S3--S8：`FROZEN`" in progress_text or (
+        "S3：`NOT_STARTED`" in progress_text and "S4--S8：`FROZEN`" in progress_text
+    )
+    state_boundary_preserved = s2_state_preserved and later_stages_frozen
+    require("state_s2_boundary_preserved", state_boundary_preserved)
     result = {
         "decision": "PASS_WITH_LIMITATIONS" if not errors else "REVISION_REQUIRED_S1_FINAL_ACCEPTANCE",
         "errors": errors,

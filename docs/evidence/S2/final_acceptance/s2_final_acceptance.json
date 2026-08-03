@@ -3,6 +3,7 @@
   "errors": [],
   "unresolved_warnings": [],
   "formal_stage_progress": "3/9≈33%",
+  "s2_r6_status": "PASS_WITH_LIMITATIONS",
   "s2_status": "PASS_WITH_LIMITATIONS",
   "s3_status": "NOT_STARTED",
   "s4_to_s8_status": "FROZEN",
@@ -33,6 +34,8 @@
     "number": 10,
     "url": "https://github.com/canimiliya/risk-aware-aerial-manipulation/pull/10",
     "merge_policy": "ordinary_merge_only",
+    "merge_commit": "8df48d2b4edc0d219ad8eb3a9b211fb291daf2ab",
+    "main_head": "8df48d2b4edc0d219ad8eb3a9b211fb291daf2ab",
     "s3_authorized": false
   },
   "scope_boundary": "No S3/Isaac Lab or later research stage was started."

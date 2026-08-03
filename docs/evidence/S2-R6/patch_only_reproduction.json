@@ -4,6 +4,8 @@
   "repro_workspace": "/home/amplanner/am-planner-s2-r6-repro-ws",
   "patch": "third_party/patches/AM-Planner_S2-R6_execution_envelope.patch",
   "patch_sha256": "a0cf215cbf372c39f6d909f6507753bc4b336505d64b3b5a23fc4ea1e7f88ce4",
+  "patch_worktree_line_endings": "LF",
+  "windows_checkout_eol_protection": true,
   "patch_apply_check": true,
   "patch_apply_exit": 0,
   "patch_apply_result_exit": 0,
@@ -26,6 +28,7 @@
     "src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h": "d798e51a4ed32fcdaefca05022ac6d52f6848b183f523931713a06f2e8ec9787"
   },
   "clean_build_devel": true,
+  "clean_build_devel_scope": "targeted_packages",
   "targeted_packages": ["traj_opt", "plan_manage"],
   "targeted_build_exit": 0,
   "full_workspace_build_exit": 1,
