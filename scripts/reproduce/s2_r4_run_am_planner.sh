@@ -32,7 +32,8 @@ export PYTHONPATH="$workspace/devel/lib/python3/dist-packages:$overlay/devel/lib
 mkdir -p "$ROS_HOME"
 runtime_bin="$run_dir/runtime-bin"
 mkdir -p "$runtime_bin"
-ln -sf "$repo/scripts/reproduce/s2_r2_rosversion_wrapper.sh" "$runtime_bin/rosversion"
+tr -d '\r' < "$repo/scripts/reproduce/s2_r2_rosversion_wrapper.sh" > "$runtime_bin/rosversion"
+chmod +x "$runtime_bin/rosversion"
 export PATH="$runtime_bin:$PATH"
 
 {
