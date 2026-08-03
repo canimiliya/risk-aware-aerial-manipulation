@@ -1,0 +1,17 @@
+{
+  "png": [
+    "01_round_q_minima.png",
+    "02_constraint_insertion_timeline.png",
+    "03_arm_path_envelope.png",
+    "04_fixed_points_margin.png",
+    "05_fixed_vs_overshoot.png",
+    "06_clearance_gate.png",
+    "07_repeat_status.png",
+    "08_narrow_status.png"
+  ],
+  "local_gif": [
+    "09_round_q2_evolution.gif",
+    "10_arm_path_evolution.gif"
+  ],
+  "source": "recorded S2-R4/R5 evidence; missing B6 variants are explicitly marked NOT EXECUTED"
+}

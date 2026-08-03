@@ -1,0 +1,211 @@
+{
+  "run": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R5/runtime/round_3_nominal",
+  "adaptive_dt_s": 0.0005,
+  "rates": {
+    "100": {
+      "sample_hz": 100,
+      "sample_count": 4543,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10643474144242049,
+        -0.0035308239882061443,
+        -0.025156050490136028
+      ],
+      "q_max_rad": [
+        0.4989912080940113,
+        0.45129457753427316,
+        0.45533260569351963
+      ],
+      "joint_margin_min_rad": -0.10643474144242049,
+      "max_fk_residual_m": 1.6755031801391436e-16,
+      "qdot_max_rad_s": 1.097231805580357,
+      "qddot_max_rad_s2": 8.840668498211002,
+      "component_min_clearance_m": {
+        "body": 0.07490213696398784,
+        "rotor_1": 0.004614409205282666,
+        "rotor_2": 0.12251887325086921,
+        "rotor_3": 0.16679259134979837,
+        "rotor_4": 0.003660579302941897,
+        "upper_arm_1": 0.319354182146867,
+        "upper_arm_2": 0.3283261776353352,
+        "upper_arm_3": 0.17682702057730101,
+        "lower_arm_1_left": 0.30525199165630046,
+        "lower_arm_1_right": 0.2973053742806523,
+        "lower_arm_2_left": 0.29666135659805076,
+        "lower_arm_2_right": 0.30493768993328857,
+        "lower_arm_3_left": 0.17606218971178014,
+        "lower_arm_3_right": 0.1776605105172918,
+        "moving_platform": 0.28910154948979516,
+        "end_effector": 0.28910154948979516
+      },
+      "min_full_body_clearance_m": 0.003660579302941897,
+      "full_body_gate_pass": false,
+      "dangerous_component": "rotor_4",
+      "finite": true
+    },
+    "200": {
+      "sample_hz": 200,
+      "sample_count": 9085,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644080645956744,
+        -0.003530969711950771,
+        -0.025156050490136028
+      ],
+      "q_max_rad": [
+        0.4989943243972288,
+        0.45129700673120166,
+        0.4553328374915462
+      ],
+      "joint_margin_min_rad": -0.10644080645956744,
+      "max_fk_residual_m": 1.8931949150813484e-16,
+      "qdot_max_rad_s": 1.0978388299131936,
+      "qddot_max_rad_s2": 15.669632588087453,
+      "component_min_clearance_m": {
+        "body": 0.07490213696398784,
+        "rotor_1": 0.0011540852474109524,
+        "rotor_2": 0.12224130083119224,
+        "rotor_3": 0.1666744226957899,
+        "rotor_4": 0.0034862517531016337,
+        "upper_arm_1": 0.319354182146867,
+        "upper_arm_2": 0.3283036239968359,
+        "upper_arm_3": 0.17682702057730101,
+        "lower_arm_1_left": 0.3050231669264792,
+        "lower_arm_1_right": 0.29705307069214065,
+        "lower_arm_2_left": 0.2966507321899987,
+        "lower_arm_2_right": 0.30493768993328857,
+        "lower_arm_3_left": 0.17606218971178014,
+        "lower_arm_3_right": 0.1776605105172918,
+        "moving_platform": 0.28910154948979516,
+        "end_effector": 0.28910154948979516
+      },
+      "min_full_body_clearance_m": 0.0011540852474109524,
+      "full_body_gate_pass": false,
+      "dangerous_component": "rotor_1",
+      "finite": true
+    },
+    "400": {
+      "sample_hz": 400,
+      "sample_count": 18170,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644080645956744,
+        -0.003530969711950771,
+        -0.02516776621502337
+      ],
+      "q_max_rad": [
+        0.49900160089863954,
+        0.45129700673120166,
+        0.4553330474016728
+      ],
+      "joint_margin_min_rad": -0.10644080645956744,
+      "max_fk_residual_m": 1.8931949150813484e-16,
+      "qdot_max_rad_s": 1.0981003051832658,
+      "qddot_max_rad_s2": 26.361489921129163,
+      "component_min_clearance_m": {
+        "body": 0.07489203332017463,
+        "rotor_1": 0.0011540852474109524,
+        "rotor_2": 0.12224130083119224,
+        "rotor_3": 0.1666744226957899,
+        "rotor_4": 0.0008148950022337482,
+        "upper_arm_1": 0.31933248316738416,
+        "upper_arm_2": 0.3283008126608107,
+        "upper_arm_3": 0.17682702057730101,
+        "lower_arm_1_left": 0.3050231669264792,
+        "lower_arm_1_right": 0.29705307069214065,
+        "lower_arm_2_left": 0.29659151133800826,
+        "lower_arm_2_right": 0.30493768993328857,
+        "lower_arm_3_left": 0.17606218971178014,
+        "lower_arm_3_right": 0.1776605105172918,
+        "moving_platform": 0.28904134172634854,
+        "end_effector": 0.28904134172634854
+      },
+      "min_full_body_clearance_m": 0.0008148950022337482,
+      "full_body_gate_pass": false,
+      "dangerous_component": "rotor_4",
+      "finite": true
+    },
+    "800": {
+      "sample_hz": 800,
+      "sample_count": 36340,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644130183347,
+        -0.0035309748929124307,
+        -0.02516776621502337
+      ],
+      "q_max_rad": [
+        0.49900160089863954,
+        0.45129700673120166,
+        0.4553330474016728
+      ],
+      "joint_margin_min_rad": -0.10644130183347,
+      "max_fk_residual_m": 1.9579301413876266e-16,
+      "qdot_max_rad_s": 1.0981356726307894,
+      "qddot_max_rad_s2": 65.2998897189247,
+      "component_min_clearance_m": {
+        "body": 0.07489203332017463,
+        "rotor_1": 0.0009819280681612058,
+        "rotor_2": 0.12224130083119224,
+        "rotor_3": 0.1666618982678372,
+        "rotor_4": 0.0008148950022337482,
+        "upper_arm_1": 0.3193287697015565,
+        "upper_arm_2": 0.32829869465034633,
+        "upper_arm_3": 0.17682541058273382,
+        "lower_arm_1_left": 0.3050231669264792,
+        "lower_arm_1_right": 0.29705307069214065,
+        "lower_arm_2_left": 0.29659151133800826,
+        "lower_arm_2_right": 0.30493768993328857,
+        "lower_arm_3_left": 0.17606213542597055,
+        "lower_arm_3_right": 0.17765713958872956,
+        "moving_platform": 0.28904134172634854,
+        "end_effector": 0.28904134172634854
+      },
+      "min_full_body_clearance_m": 0.0008148950022337482,
+      "full_body_gate_pass": false,
+      "dangerous_component": "rotor_4",
+      "finite": true
+    },
+    "2000": {
+      "sample_hz": 2000,
+      "sample_count": 90848,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        -0.10644131034309923,
+        -0.003530976075788894,
+        -0.02516776621502337
+      ],
+      "q_max_rad": [
+        0.49900160089863954,
+        0.4512970374167464,
+        0.4553330575531911
+      ],
+      "joint_margin_min_rad": -0.10644131034309923,
+      "max_fk_residual_m": 2.1516253669354347e-16,
+      "qdot_max_rad_s": 1.0981455760096424,
+      "qddot_max_rad_s2": 133.53382872375482,
+      "component_min_clearance_m": {
+        "body": 0.07489129431295943,
+        "rotor_1": 0.0006595158746380083,
+        "rotor_2": 0.12224029279052666,
+        "rotor_3": 0.16666216782105223,
+        "rotor_4": 0.0007582735108518071,
+        "upper_arm_1": 0.3193271828579355,
+        "upper_arm_2": 0.3282985545581782,
+        "upper_arm_3": 0.17682474379799837,
+        "lower_arm_1_left": 0.3050231669264792,
+        "lower_arm_1_right": 0.29705307069214065,
+        "lower_arm_2_left": 0.29659151133800826,
+        "lower_arm_2_right": 0.30493768993328857,
+        "lower_arm_3_left": 0.17606068132120423,
+        "lower_arm_3_right": 0.1776568277896864,
+        "moving_platform": 0.28904134172634854,
+        "end_effector": 0.28904134172634854
+      },
+      "min_full_body_clearance_m": 0.0006595158746380083,
+      "full_body_gate_pass": false,
+      "dangerous_component": "rotor_1",
+      "finite": true
+    }
+  }
+}

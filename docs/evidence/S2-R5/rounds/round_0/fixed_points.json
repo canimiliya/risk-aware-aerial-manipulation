@@ -1,0 +1,22 @@
+{
+  "round": 0,
+  "source": "docs/evidence/S2-R4/static_feasibility/p0_p6_selected.json",
+  "baseline_mode3_count": 7,
+  "fixed_points": [
+    {"name": "P0", "q_rad": [0.18, 0.18, 0.18], "joint_margin_rad": 0.18},
+    {"name": "P1", "q_rad": [0.2, 0.2, 0.2], "joint_margin_rad": 0.2},
+    {"name": "P2", "q_rad": [0.3, 0.2, 0.2], "joint_margin_rad": 0.2},
+    {"name": "P3", "q_rad": [0.2, 0.3, 0.2], "joint_margin_rad": 0.2},
+    {"name": "P4", "q_rad": [0.2, 0.2, 0.3], "joint_margin_rad": 0.2},
+    {"name": "P5", "q_rad": [0.18, 0.22, 0.22], "joint_margin_rad": 0.18},
+    {"name": "P6", "q_rad": [0.18, 0.18, 0.2], "joint_margin_rad": 0.18}
+  ],
+  "static_min_joint_margin_rad": 0.18,
+  "static_clearance_gate_m": 0.010,
+  "direction_contract": {
+    "P2_to_P3": "horizontal +x",
+    "P3_to_P4": "horizontal -x,+y",
+    "preserved": true
+  },
+  "overshoot_judgement": "baseline fixed points are feasible; R4 q2 violations occur between fixed points"
+}

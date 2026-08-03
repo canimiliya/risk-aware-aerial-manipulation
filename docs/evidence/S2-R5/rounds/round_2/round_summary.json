@@ -1,0 +1,88 @@
+{
+  "round": 2,
+  "analysis_sample_hz": 2000,
+  "adaptive_dt_s": 0.0005,
+  "sample_count": 65217,
+  "baseline_mode3_count": 7,
+  "new_mode3_count": 3,
+  "cumulative_mode3_count": 13,
+  "q_min_rad": [
+    -0.33084106938098223,
+    0.003636644695472535,
+    -0.19522580793803668
+  ],
+  "q_max_rad": [
+    0.4829475906482934,
+    1.415526751821058,
+    1.3843052593629752
+  ],
+  "q2_min_rad": 0.003636644695472535,
+  "violating_intervals": [
+    {
+      "entry_s": 3.862,
+      "minimum_s": 5.096,
+      "exit_s": 5.9975000000000005
+    },
+    {
+      "entry_s": 6.8225,
+      "minimum_s": 7.3935,
+      "exit_s": 7.864
+    },
+    {
+      "entry_s": 11.1965,
+      "minimum_s": 11.433,
+      "exit_s": 11.655
+    },
+    {
+      "entry_s": 18.0705,
+      "minimum_s": 26.931,
+      "exit_s": 30.0685
+    }
+  ],
+  "fixed_point_margins_rad": [
+    0.18,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.18,
+    0.18,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+  ],
+  "overshoot_between_fixed_points": true,
+  "joint_gate_pass": false,
+  "full_body_gate_pass": true,
+  "min_full_body_clearance_m": 0.04980180933033635,
+  "component_min_clearance_m": {
+    "body": 0.1967522500816431,
+    "rotor_1": 0.21123875173835255,
+    "rotor_2": 0.04980180933033635,
+    "rotor_3": 0.24000098192513286,
+    "rotor_4": 0.08382310141430636,
+    "upper_arm_1": 0.19254708051654665,
+    "upper_arm_2": 0.3744020134628197,
+    "upper_arm_3": 0.3476515745486489,
+    "lower_arm_1_left": 0.1933363649155374,
+    "lower_arm_1_right": 0.19196815063863973,
+    "lower_arm_2_left": 0.3596514097525911,
+    "lower_arm_2_right": 0.37988138399530824,
+    "lower_arm_3_left": 0.34044232192528745,
+    "lower_arm_3_right": 0.3550096328594228,
+    "moving_platform": 0.34366869980874143,
+    "end_effector": 0.34366869980874143
+  },
+  "dangerous_component": "rotor_2",
+  "direction_pass": true,
+  "direction_error_m": 4.163336342344337e-17,
+  "max_fk_residual_m": 1.9956779834400624e-16,
+  "ik_no_solution_count": 0,
+  "arm_polynomial_max_curvature_m_s2": 23.806654729014273,
+  "nearest_new_fixed_point_time_s": 9.074,
+  "nearest_new_fixed_point_cartesian_distance_m": 9.070016866013023e-07,
+  "projection_is_not_output_trajectory": true
+}

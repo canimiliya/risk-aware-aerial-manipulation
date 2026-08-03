@@ -1,0 +1,25 @@
+{
+  "round": 0,
+  "source": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R4/static_feasibility/p0_p6_selected.json",
+  "P2_to_P3": {
+    "delta_A0_m": [
+      0.006371985877756186,
+      0.0,
+      0.0
+    ],
+    "horizontal": true,
+    "positive_x": true
+  },
+  "P3_to_P4": {
+    "delta_A0_m": [
+      -0.003185992938878093,
+      0.005518301642692522,
+      4.163336342344337e-17
+    ],
+    "horizontal": true,
+    "negative_x_positive_y": true
+  },
+  "direction_error_m": 4.163336342344337e-17,
+  "pass": true,
+  "task_points_unchanged": true
+}

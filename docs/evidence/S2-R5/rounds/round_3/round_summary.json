@@ -1,0 +1,99 @@
+{
+  "round": 3,
+  "analysis_sample_hz": 2000,
+  "adaptive_dt_s": 0.0005,
+  "sample_count": 90848,
+  "baseline_mode3_count": 7,
+  "new_mode3_count": 6,
+  "cumulative_mode3_count": 19,
+  "q_min_rad": [
+    -0.10644131034309923,
+    -0.003530976075788894,
+    -0.02516776621502337
+  ],
+  "q_max_rad": [
+    0.49900160089863954,
+    0.4512970374167464,
+    0.4553330575531911
+  ],
+  "q2_min_rad": -0.003530976075788894,
+  "violating_intervals": [
+    {
+      "entry_s": 14.1885,
+      "minimum_s": 14.826,
+      "exit_s": 15.4525
+    },
+    {
+      "entry_s": 27.013,
+      "minimum_s": 27.644000000000002,
+      "exit_s": 28.0965
+    },
+    {
+      "entry_s": 28.965500000000002,
+      "minimum_s": 29.054000000000002,
+      "exit_s": 29.1245
+    },
+    {
+      "entry_s": 29.5685,
+      "minimum_s": 29.6725,
+      "exit_s": 29.815
+    },
+    {
+      "entry_s": 30.141000000000002,
+      "minimum_s": 30.1785,
+      "exit_s": 30.214000000000002
+    }
+  ],
+  "fixed_point_margins_rad": [
+    0.18,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.18,
+    0.18,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02
+  ],
+  "overshoot_between_fixed_points": true,
+  "joint_gate_pass": false,
+  "full_body_gate_pass": false,
+  "min_full_body_clearance_m": 0.0006595158746380083,
+  "component_min_clearance_m": {
+    "body": 0.07489129431295943,
+    "rotor_1": 0.0006595158746380083,
+    "rotor_2": 0.12224029279052666,
+    "rotor_3": 0.16666216782105223,
+    "rotor_4": 0.0007582735108518071,
+    "upper_arm_1": 0.3193271828579355,
+    "upper_arm_2": 0.3282985545581782,
+    "upper_arm_3": 0.17682474379799837,
+    "lower_arm_1_left": 0.3050231669264792,
+    "lower_arm_1_right": 0.29705307069214065,
+    "lower_arm_2_left": 0.29659151133800826,
+    "lower_arm_2_right": 0.30493768993328857,
+    "lower_arm_3_left": 0.17606068132120423,
+    "lower_arm_3_right": 0.1776568277896864,
+    "moving_platform": 0.28904134172634854,
+    "end_effector": 0.28904134172634854
+  },
+  "dangerous_component": "rotor_1",
+  "direction_pass": true,
+  "direction_error_m": 4.163336342344337e-17,
+  "max_fk_residual_m": 2.1516253669354347e-16,
+  "ik_no_solution_count": 0,
+  "arm_polynomial_max_curvature_m_s2": 18.40839153037336,
+  "nearest_new_fixed_point_time_s": 28.6735,
+  "nearest_new_fixed_point_cartesian_distance_m": 1.7824781461001701e-06,
+  "projection_is_not_output_trajectory": true
+}
