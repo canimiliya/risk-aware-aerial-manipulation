@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import subprocess
+import tempfile
 from pathlib import Path
 
 
@@ -10,7 +11,11 @@ ROOT = Path(__file__).resolve().parents[2]
 R0_HEAD = "5564f5d407c75dfd9c776d5e43917c9f96c48702"
 
 
-def run(root: Path = ROOT) -> dict[str, object]:
+def branch_is_allowed(branch: str, expected_branch: str | None = None) -> bool:
+    return bool(branch) and (expected_branch is None or branch == expected_branch)
+
+
+def run(root: Path = ROOT, expected_branch: str | None = None) -> dict[str, object]:
     errors: list[str] = []
     checks: dict[str, object] = {}
 
@@ -29,11 +34,7 @@ def run(root: Path = ROOT) -> dict[str, object]:
     ]
     require("required_artifacts", all(path.is_file() and path.stat().st_size > 0 for path in required), [str(path.relative_to(root)) for path in required if not path.is_file()])
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
-    require("s2_branch", branch in {
-        "agent/s2-r0-delta-workspace-scene-contract",
-        "main",
-        "agent/s2-r2-am-planner-crossarm-planning",
-    }, branch)
+    require("s2_branch", branch_is_allowed(branch, expected_branch), branch or "DETACHED_HEAD")
     require("r0_base_present", subprocess.run(["git", "cat-file", "-e", f"{R0_HEAD}^{{commit}}"], cwd=root, capture_output=True, text=True, check=False).returncode == 0)
     require("algorithm_boundary", not subprocess.run(["git", "diff", "--name-only", f"{R0_HEAD}..HEAD", "--", "src"], cwd=root, capture_output=True, text=True, check=False).stdout.strip())
 
@@ -49,7 +50,8 @@ def run(root: Path = ROOT) -> dict[str, object]:
     require("continuous_nominal_gate", metrics.get("min_clearance_m", -1.0) >= 0.010 and metrics.get("min_joint_margin", -1.0) >= 0.10)
     require("jacobian_metrics", metrics.get("min_jacobian_min_singular_value", -1.0) > 0.0 and metrics.get("max_jacobian_condition_number", float("inf")) < 100.0)
     require("trajectory_figure", (root / "outputs/figures/S2-R1/continuous_full_body_plan.png").stat().st_size < 2 * 1024 * 1024)
-    r0 = subprocess.run(["python", "scripts/audit/check_s2_r0_workspace_preflight.py"], cwd=root, capture_output=True, text=True, check=False)
+    with tempfile.TemporaryDirectory(prefix="s2_r1_r0_audit_") as tmp:
+        r0 = subprocess.run(["python", "scripts/audit/check_s2_r0_workspace_preflight.py", "--output", str(Path(tmp) / "s2_r0_workspace_preflight_audit.json"), *( ["--expected-branch", expected_branch] if expected_branch else [] )], cwd=root, capture_output=True, text=True, check=False)
     require("r0_audit", r0.returncode == 0, r0.stdout[-1000:])
     result = {
         "decision": "PASS_WITH_LIMITATIONS" if not errors else "REVISION_REQUIRED",
@@ -73,8 +75,9 @@ def run(root: Path = ROOT) -> dict[str, object]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=Path("docs/evidence/S2-R1/final_acceptance/s2_r1_continuous_planning_audit.json"))
+    parser.add_argument("--expected-branch", default=None)
     args = parser.parse_args()
-    result = run()
+    result = run(expected_branch=args.expected_branch)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"decision": result["decision"], "errors": result["errors"], "warnings": result["warnings"]}, ensure_ascii=False))

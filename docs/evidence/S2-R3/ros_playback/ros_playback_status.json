@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RUN_OFFLINE_VALIDATION_ONLY",
+  "reason": "No new ROS launch/replay was started; existing S2-R2 raw trajectories and official compiled source audit were preserved.",
+  "official_source_symbols_audited": true,
+  "new_dependencies_installed": false
+}

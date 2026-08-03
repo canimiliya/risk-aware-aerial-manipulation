@@ -1,0 +1,14 @@
+{
+  "samples": 3700,
+  "quaternion_finite": true,
+  "quaternion_norm_error_max": 1.1102230246251565e-16,
+  "rotation_orthogonality_error_max": 3.342125256224421e-16,
+  "det_min": 0.9999999999999997,
+  "det_max": 1.0000000000000004,
+  "thrust_min_N": 7.1502707629092495,
+  "thrust_max_N": 14.991577322214768,
+  "omega_max_rad_s": 1.533683789700096,
+  "finite": true,
+  "rotation_pass": true,
+  "thrust_pass": true
+}

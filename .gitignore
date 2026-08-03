@@ -41,3 +41,5 @@ docs/evidence/S0-R1-R1/test.*
 !outputs/videos/.gitkeep
 !data/evaluation/.gitkeep
 !data/trajectories/.gitkeep
+# S2-R3 animations are local visual QA artifacts; the manifest is tracked.
+/docs/evidence/S2-R3/visuals/*.gif

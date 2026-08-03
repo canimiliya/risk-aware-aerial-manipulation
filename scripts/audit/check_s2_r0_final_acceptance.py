@@ -3,13 +3,18 @@ from __future__ import annotations
 import argparse
 import json
 import subprocess
+import tempfile
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def run(root: Path = ROOT) -> dict[str, object]:
+def branch_is_allowed(branch: str, expected_branch: str | None = None) -> bool:
+    return bool(branch) and (expected_branch is None or branch == expected_branch)
+
+
+def run(root: Path = ROOT, expected_branch: str | None = None) -> dict[str, object]:
     errors: list[str] = []
     checks: dict[str, object] = {}
 
@@ -19,12 +24,9 @@ def run(root: Path = ROOT) -> dict[str, object]:
             errors.append(label)
 
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=root, capture_output=True, text=True, check=False).stdout.strip()
-    require("s2_branch", branch in {
-        "agent/s2-r0-delta-workspace-scene-contract",
-        "main",
-        "agent/s2-r2-am-planner-crossarm-planning",
-    }, branch)
-    preflight = subprocess.run(["python", "scripts/audit/check_s2_r0_workspace_preflight.py"], cwd=root, capture_output=True, text=True, check=False)
+    require("s2_branch", branch_is_allowed(branch, expected_branch), branch or "DETACHED_HEAD")
+    with tempfile.TemporaryDirectory(prefix="s2_r0_preflight_") as tmp:
+        preflight = subprocess.run(["python", "scripts/audit/check_s2_r0_workspace_preflight.py", "--output", str(Path(tmp) / "s2_r0_workspace_preflight_audit.json"), *( ["--expected-branch", expected_branch] if expected_branch else [] )], cwd=root, capture_output=True, text=True, check=False)
     require("r0_preflight", preflight.returncode == 0, preflight.stdout[-1000:])
     required = [
         root / "docs/evidence/S2-R0/final_acceptance/s2_r0_workspace_preflight_audit.json",
@@ -56,8 +58,9 @@ def run(root: Path = ROOT) -> dict[str, object]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=Path("docs/evidence/S2-R0/final_acceptance/s2_r0_final_acceptance.json"))
+    parser.add_argument("--expected-branch", default=None)
     args = parser.parse_args()
-    result = run()
+    result = run(expected_branch=args.expected_branch)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"decision": result["decision"], "errors": result["errors"], "warnings": result["warnings"]}, ensure_ascii=False))

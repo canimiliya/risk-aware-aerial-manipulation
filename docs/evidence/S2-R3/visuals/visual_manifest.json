@@ -1,0 +1,17 @@
+{
+  "png": [
+    "01_nominal_whole_trajectory_3d.png",
+    "02_joint_limits_and_trajectory.png",
+    "03_rotor_sweep_3d.png",
+    "04_clearance_frequency_convergence.png",
+    "05_flatness_attitude_roll_pitch.png",
+    "06_attitude_finiteness_summary.png",
+    "07_joint_points_capsules_snapshot.png",
+    "08_nominal_repeat_joint_overlay.png"
+  ],
+  "local_video": [
+    "09_nominal_body_animation.gif",
+    "10_nominal_arm_capsule_animation.gif"
+  ],
+  "video_committed": false
+}
