@@ -1,0 +1,18 @@
+{
+  "decision": "PASS",
+  "errors": [],
+  "warnings": [],
+  "s2_r4_result": "S2_R4_JOINT_LIMIT_FAILED",
+  "preserves_gate_failure": true,
+  "required_runtime_variants": [
+    "smoke_free",
+    "loose",
+    "nominal",
+    "nominal_repeat",
+    "narrow"
+  ],
+  "algorithm_source_modified": false,
+  "obstacle_geometry_modified": false,
+  "proxy_shrunk": false,
+  "q_clipped": false
+}

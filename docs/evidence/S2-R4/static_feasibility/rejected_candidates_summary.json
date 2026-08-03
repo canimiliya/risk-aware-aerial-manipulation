@@ -1,0 +1,34 @@
+{
+  "smoke_free": {
+    "total_base_candidates_per_pose": 693,
+    "gate_m": 0.01,
+    "reasons": [
+      "q margin below requested envelope",
+      "body/rotor/link proxy clearance below gate"
+    ]
+  },
+  "loose": {
+    "total_base_candidates_per_pose": 693,
+    "gate_m": 0.01,
+    "reasons": [
+      "q margin below requested envelope",
+      "body/rotor/link proxy clearance below gate"
+    ]
+  },
+  "nominal": {
+    "total_base_candidates_per_pose": 693,
+    "gate_m": 0.01,
+    "reasons": [
+      "q margin below requested envelope",
+      "body/rotor/link proxy clearance below gate"
+    ]
+  },
+  "narrow": {
+    "total_base_candidates_per_pose": 693,
+    "gate_m": 0.01,
+    "reasons": [
+      "q margin below requested envelope",
+      "body/rotor/link proxy clearance below gate"
+    ]
+  }
+}

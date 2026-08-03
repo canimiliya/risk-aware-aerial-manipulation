@@ -1,0 +1,145 @@
+{
+  "variant": "loose",
+  "hz": 100,
+  "sample_count": 505,
+  "base": {
+    "finite": true,
+    "dynamic": true,
+    "duration_s": 5.04,
+    "position_min_m": [
+      -1.5,
+      0.0,
+      1.5
+    ],
+    "position_max_m": [
+      1.4999996120120693,
+      1.7027275931948729,
+      1.8006939477657344
+    ],
+    "max_speed_m_s": 2.257299021555078,
+    "max_acceleration_m_s2": 3.862583470555104
+  },
+  "arm_cartesian": {
+    "finite": true,
+    "dynamic": true,
+    "duration_s": 5.04,
+    "position_min_m": [
+      -0.005122298176057765,
+      -0.0023995547028089715,
+      -0.10044255471679318
+    ],
+    "position_max_m": [
+      0.030395519287203753,
+      0.01656044984151759,
+      -0.06
+    ],
+    "max_speed_m_s": 0.11288705089786431,
+    "max_acceleration_m_s2": 0.47438000312428463
+  },
+  "kinematics": {
+    "samples": 505,
+    "ik_no_solution_count": 0,
+    "fk_residual_max_m": 1.739152209603466e-16,
+    "fk_residual_p99_m": 1.2846195022248135e-16,
+    "q_min_rad": [
+      -0.05579542342242827,
+      0.06422787671849495,
+      0.15798974331375115
+    ],
+    "q_max_rad": [
+      0.32029303586819546,
+      0.6572772953258459,
+      0.6399031552524713
+    ],
+    "min_joint_margin_rad": -0.05579542342242827,
+    "qdot_max_rad_s": 1.0192949290159206,
+    "qddot_max_rad_s2": 10.216754414735767,
+    "finite": true,
+    "joint_limits_pass": false
+  },
+  "attitude": {
+    "samples": 505,
+    "quaternion_finite": true,
+    "quaternion_norm_error_max": 1.1102230246251565e-16,
+    "rotation_orthogonality_error_max": 3.353814297803071e-16,
+    "det_min": 0.9999999999999998,
+    "det_max": 1.0000000000000002,
+    "thrust_min_N": 9.351936970825447,
+    "thrust_max_N": 11.089580303818648,
+    "omega_max_rad_s": 1.3830114925779524,
+    "finite": true,
+    "rotation_pass": true,
+    "thrust_pass": true
+  },
+  "component_minima": {
+    "body": {
+      "min_clearance_m": 0.24832021741974292,
+      "time_s": 1.12
+    },
+    "rotor_1": {
+      "min_clearance_m": 0.23609797834196897,
+      "time_s": 1.02
+    },
+    "rotor_2": {
+      "min_clearance_m": 0.4617926985213252,
+      "time_s": 1.09
+    },
+    "rotor_3": {
+      "min_clearance_m": 0.2491004211671666,
+      "time_s": 1.29
+    },
+    "rotor_4": {
+      "min_clearance_m": 0.13385907635845884,
+      "time_s": 1.03
+    },
+    "upper_arm_1": {
+      "min_clearance_m": 0.5400910780889098,
+      "time_s": 1.12
+    },
+    "upper_arm_2": {
+      "min_clearance_m": 0.41621766501220864,
+      "time_s": 1.21
+    },
+    "upper_arm_3": {
+      "min_clearance_m": 0.33809008467244545,
+      "time_s": 1.08
+    },
+    "lower_arm_1_left": {
+      "min_clearance_m": 0.48592423837258863,
+      "time_s": 1.1400000000000001
+    },
+    "lower_arm_1_right": {
+      "min_clearance_m": 0.4921503272792377,
+      "time_s": 1.1500000000000001
+    },
+    "lower_arm_2_left": {
+      "min_clearance_m": 0.42821522354333397,
+      "time_s": 1.21
+    },
+    "lower_arm_2_right": {
+      "min_clearance_m": 0.4041489885169512,
+      "time_s": 1.2
+    },
+    "lower_arm_3_left": {
+      "min_clearance_m": 0.3296070294635079,
+      "time_s": 1.08
+    },
+    "lower_arm_3_right": {
+      "min_clearance_m": 0.3468094444286931,
+      "time_s": 1.08
+    },
+    "moving_platform": {
+      "min_clearance_m": 0.4532215569117696,
+      "time_s": 1.1300000000000001
+    },
+    "end_effector": {
+      "min_clearance_m": 0.4532215569117696,
+      "time_s": 1.1300000000000001
+    }
+  },
+  "min_clearance_m": 0.13385907635845884,
+  "most_dangerous_component": "rotor_4",
+  "full_body_gate_pass": true,
+  "finite": true,
+  "joint_gate_pass": false
+}

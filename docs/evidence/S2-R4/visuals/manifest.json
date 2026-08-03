@@ -1,0 +1,17 @@
+{
+  "png": [
+    "01_",
+    "02_",
+    "03_",
+    "04_",
+    "05_",
+    "06_",
+    "07_",
+    "08_"
+  ],
+  "gif": [
+    "nominal_arm_path.gif",
+    "narrow_arm_path.gif"
+  ],
+  "source": "raw S2-R4 nominal/narrow AMPlanner captures"
+}

@@ -1,0 +1,53 @@
+{
+  "seed": 20260803,
+  "random_sample_count": 500000,
+  "boundary_corner_count": 8,
+  "total_sample_count": 500008,
+  "official_joint_contract_rad": [
+    0.0,
+    1.5707963267948966
+  ],
+  "hard_envelope": {
+    "condition": "margin >= 0.00 rad",
+    "count": 500008,
+    "cartesian_min_m": [
+      -0.10531433734856858,
+      -0.11502829401390986,
+      -0.2502497920131672
+    ],
+    "cartesian_max_m": [
+      0.10540104850949515,
+      0.10497220494502948,
+      -0.03968626966596891
+    ]
+  },
+  "preferred_envelope": {
+    "condition": "margin >= 0.02 rad",
+    "count": 462901,
+    "cartesian_min_m": [
+      -0.10291722924655086,
+      -0.11136455936580707,
+      -0.24921534099028841
+    ],
+    "cartesian_max_m": [
+      0.10321657970418799,
+      0.1029538486901474,
+      -0.04331807729328202
+    ]
+  },
+  "robust_envelope": {
+    "condition": "margin >= 0.05 rad",
+    "count": 410398,
+    "cartesian_min_m": [
+      -0.09929246053310072,
+      -0.10850840276533483,
+      -0.24742576019236498
+    ],
+    "cartesian_max_m": [
+      0.09982636004387681,
+      0.09992205276113367,
+      -0.046901343590686775
+    ]
+  },
+  "point_cloud_storage": "local-only; only manifest and summaries are committed"
+}

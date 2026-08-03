@@ -1,0 +1,13 @@
+stage=S2-R4
+variant=smoke_free
+run_id=smoke_free_run_02
+timeout_s=600
+workspace=/home/amplanner/am-planner-s2-r2-ws
+3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) 
+[GCC 13.3.0]
+2.7.1+cu128
+True
+NVIDIA GeForce RTX 5060 Ti
+(12, 0)
+14cc4ce6532bd6f80b977d439e7c7e2c4d0b72013b1545bacce56161acc831a3  /home/amplanner/am-planner-s2-r2-ws/src/am-planner/src/plan/traj_opt/CMakeLists.txt
+b6446780352b9962fff8c7089326e8a26ddc565fe06f86ca8e0ed906c0e65b1b  /home/amplanner/am-planner-s2-r2-ws/src/am-planner/src/plan/plan_manage/CMakeLists.txt

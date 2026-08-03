@@ -1,0 +1,10 @@
+/usr/bin/env: ‘bash\r’: No such file or directory
+[31mRLException: Invalid <param> tag: Cannot load command parameter [rosversion]: command [['rosversion', 'roslaunch']] returned with code [127]. 
+
+Param xml is <param name="rosversion" command="rosversion roslaunch"/>[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R4/runtime/smoke_free_run_01/ros_home/log/3f9a312e-8f3f-11f1-b40a-00155dca07d1/roslaunch-SC-202607101733-106257.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
