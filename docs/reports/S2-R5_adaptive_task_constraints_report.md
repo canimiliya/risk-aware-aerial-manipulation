@@ -33,6 +33,8 @@ R4 failure acceptance 已完成并合并 PR #8。当前 R4 只有连续 q2 下�
 
 ## 关键证据
 
+- Draft PR：`https://github.com/canimiliya/risk-aware-aerial-manipulation/pull/9`，保持 Draft、未合并。
+
 - `docs/evidence/S2-R5/rounds/round_0..3/`
 - `docs/evidence/S2-R5/runtime/round_1_nominal_abi_fixed_2/`
 - `docs/evidence/S2-R5/runtime/round_2_nominal/`
