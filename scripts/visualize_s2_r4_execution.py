@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation, PillowWriter
 
+from planner_bridge.execution.official_delta_kinematics import official_fk_joint_state
+from planner_bridge.execution.playback_validator import sample_raw, validate_kinematics
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs/evidence/S2-R4/visuals"
 RUNTIME = ROOT / "docs/evidence/S2-R4/runtime"
@@ -51,18 +54,30 @@ def main() -> int:
     d = load_run("nominal_run_01")
     r = load_run("nominal_repeat_run_01")
     old = np.loadtxt(OLD_Q, delimiter=",", skiprows=1)
+    new_arm_raw = sample_raw(RUNTIME / "nominal_run_01/trajectory_arm.json", 800, arm=True)
+    new_q = validate_kinematics(new_arm_raw)[0]["q"]
+    old_arm = np.asarray([official_fk_joint_state(row[1:4]) for row in old], dtype=float)
     val = json.loads(VAL.read_text(encoding="utf-8"))
     nominal = val["variants"]["nominal"]["rates"]["800"]
 
     fig = plt.figure(figsize=(7, 5)); ax = fig.add_subplot(111, projection="3d")
+    ax.plot(old_arm[:, 0], old_arm[:, 1], old_arm[:, 2], "--", label="S2-R3 failed arm FK")
     ax.plot(d["arm"][:, 0], d["arm"][:, 1], d["arm"][:, 2], label="S2-R4 arm Cartesian")
     ax.scatter([0], [0], [-0.06], label="execution endpoint")
     ax.set(xlabel="x (m)", ylabel="y (m)", zlabel="z (m)"); ax.legend(); save(fig, "01_failure_vs_replan_3d.png")
 
-    fig, ax = plt.subplots(figsize=(7, 4)); ax.plot(d["arm"][:, 0], d["arm"][:, 2], label="replanned arm envelope path"); ax.axhline(-0.06, color="k", ls="--", lw=.7); ax.set(xlabel="x (m)", ylabel="z (m)"); ax.legend(); save(fig, "02_arm_envelope.png")
+    env = json.loads((ROOT / "docs/evidence/S2-R4/arm_envelope/envelope_summary.json").read_text(encoding="utf-8"))
+    fig, ax = plt.subplots(figsize=(7, 4));
+    ax.plot(d["arm"][:, 0], d["arm"][:, 2], label="S2-R4 path")
+    for key, style in (("hard_envelope", "k-"), ("preferred_envelope", "g--"), ("robust_envelope", "b:")):
+        box = env[key]; lo, hi = box["cartesian_min_m"], box["cartesian_max_m"]
+        ax.plot([lo[0], hi[0], hi[0], lo[0], lo[0]], [lo[2], lo[2], hi[2], hi[2], lo[2]], style, label=key.replace("_", " "))
+    ax.set(xlabel="x (m)", ylabel="z (m)"); ax.legend(fontsize=7); save(fig, "02_arm_envelope.png")
 
     fig, ax = plt.subplots(figsize=(7, 4));
-    for j in range(3): ax.plot(old[:, 0], old[:, j + 1], ls="--", label=f"R3 q{j+1}"); ax.plot(d["ta"], np.interp(d["ta"], d["ta"], d["arm"][:, j]), label=f"R4 q{j+1} proxy")
+    for j in range(3):
+        ax.plot(old[:, 0], old[:, j + 1], ls="--", label=f"R3 q{j+1}")
+        ax.plot(new_arm_raw["time"], new_q[:, j], label=f"R4 q{j+1} official IK")
     ax.axhline(0, color="k", lw=.6); ax.axhline(np.pi / 2, color="k", lw=.6); ax.set(xlabel="time (s)", ylabel="q (rad)"); ax.legend(ncol=2, fontsize=7); save(fig, "03_q_before_after.png")
 
     fig = plt.figure(figsize=(7, 5)); ax = fig.add_subplot(111, projection="3d")
