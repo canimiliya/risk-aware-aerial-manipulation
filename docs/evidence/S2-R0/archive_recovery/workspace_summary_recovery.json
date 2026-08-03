@@ -1,0 +1,38 @@
+{
+  "recovery_type": "RECOVERED_FROM_COMMITTED_ACCEPTANCE_EVIDENCE",
+  "not_recomputed": true,
+  "not_from_local_npz": true,
+  "source_ref": "c98779e9278f07c4e7f2fcd90d188a294fa65b55",
+  "source_path": "docs/evidence/S2-R0/final_acceptance/s2_r0_workspace_preflight_audit.json",
+  "source_object_path": "checks.workspace_summary",
+  "source_blob_sha": "0e84ccfb771e33206c02877bf47354470dc0e3f3",
+  "cross_checked_paths": [
+    "docs/evidence/S2-R0/g_arm_preflight.json",
+    "docs/reports/S2-R0_delta_workspace_preflight_report.md",
+    "docs/evidence/S2-R0/workspace_sampling_manifest.json"
+  ],
+  "field_comparison": {
+    "manifest_sample_count": true,
+    "manifest_random_seed": true,
+    "manifest_boundary_samples_included": true,
+    "garm_sample_count": true,
+    "garm_valid_fk_count": true,
+    "garm_invalid_fk_count": true,
+    "garm_random_seed": true,
+    "garm_boundary_samples_included": true,
+    "garm_position_min_m": true,
+    "garm_position_max_m": true,
+    "garm_jacobian_min_singular_value": true,
+    "garm_jacobian_condition_p99": true,
+    "garm_official_geometry": true,
+    "report_counts_and_seed": true,
+    "report_position_min_m": true,
+    "report_position_max_m": true,
+    "report_jacobian_metrics": true
+  },
+  "recovered_file": "outputs/workspace/S2-R0/delta_workspace_100k.json",
+  "recovered_file_sha256": "67d3b4bc9795d4473a2b98c6dbb402e9dc309d0c116933f9a1105fc80bd5fc33",
+  "recovered_bytes": 668,
+  "recovered_lines": 28,
+  "local_npz_status": "NOT_PRESENT_LOCAL_ONLY"
+}

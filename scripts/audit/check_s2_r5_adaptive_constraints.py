@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import subprocess
 from pathlib import Path
@@ -12,6 +13,10 @@ EV = ROOT / "docs/evidence/S2-R5"
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, default=None)
+    parser.add_argument("--update-record", action="store_true", help="explicitly update the historical tracked acceptance record")
+    args = parser.parse_args()
     errors: list[str] = []
     warnings: list[str] = []
     summaries = []
@@ -54,8 +59,15 @@ def main() -> int:
         if forbidden in "\n".join(str(p) for p in (EV / "rounds").rglob("*.json")):
             warnings.append(f"filename contains {forbidden}")
     result = {"decision": "PASS" if not errors and not warnings else "FAIL", "errors": errors, "warnings": warnings, "rounds": summaries, "visual_png_count": len(visuals), "visual_gif_count": len(gifs), "algorithm_source_diff": bool(diff.stdout.strip())}
-    out = EV / "s2_r5_audit.json"
-    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    out = args.output
+    if out is None and args.update_record:
+        out = EV / "s2_r5_audit.json"
+    if out is not None:
+        if out.resolve() == (EV / "s2_r5_audit.json").resolve() and not args.update_record:
+            print(json.dumps({"decision": "OUTPUT_REFUSED", "errors": ["tracked_output_requires_update_record"]}, ensure_ascii=False))
+            return 2
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"decision": result["decision"], "errors": len(errors), "warnings": len(warnings)}, ensure_ascii=False))
     return 0 if not errors and not warnings else 1
 

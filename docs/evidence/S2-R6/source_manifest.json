@@ -21,7 +21,16 @@
     "src/plan/plan_manage/CMakeLists.txt": "b6446780352b9962fff8c7089326e8a26ddc565fe06f86ca8e0ed906c0e65b1b"
   },
   "patch": "third_party/patches/AM-Planner_S2-R6_execution_envelope.patch",
-  "patch_sha256": "3461c3119a390f73bc2ba545903297692db473d09272024b1327b8e0375f3288",
+  "patch_sha256": "a0cf215cbf372c39f6d909f6507753bc4b336505d64b3b5a23fc4ea1e7f88ce4",
+  "historical_incomplete_patch_sha256": "3461c3119a390f73bc2ba545903297692db473d09272024b1327b8e0375f3288",
+  "patch_changed_paths": [
+    "src/plan/plan_manage/CMakeLists.txt",
+    "src/plan/traj_opt/CMakeLists.txt",
+    "src/plan/traj_opt/include/traj_opt/config.h",
+    "src/plan/traj_opt/include/se3gcopter/minco_arm.h",
+    "src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h"
+  ],
+  "patch_new_file_mode": "100644",
   "patch_is_external_clone_diff": true,
   "algorithm_abi_changed": false,
   "gpu_runtime_contract": ["se3_node", "CUDA", "JPS", "MINCO", "/trajectory", "/trajectory_arm"]
