@@ -1,0 +1,32 @@
+{
+  "decision": "BLOCKED_S2_R2_PLANNER_CONTRACT",
+  "errors": [],
+  "warnings": [],
+  "unresolved_warnings": [],
+  "blocking_reason": "The official task/state contract cannot express dynamic base position together with Delta three-joint q and inter-points without inventing unsupported fields.",
+  "checks": {
+    "official_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+    "contract_source_audited": true,
+    "dynamic_base_position_supported": true,
+    "delta_three_joint_input_supported": false,
+    "inter_points_supported": true,
+    "dynamic_base_plus_delta_q_plus_inter_points": false,
+    "required_clean_s2_r2_clone": false,
+    "runtime_attempted": false,
+    "ros_dual_trajectory_captured": false,
+    "algorithm_source_modified": false,
+    "system_ros_modified": false,
+    "forbidden_cpu_or_weight_conversion": false
+  },
+  "evidence": [
+    "docs/evidence/S2-R2/environment/environment_setup_attempt.md",
+    "docs/evidence/S2-R2/build/build_gate.md",
+    "docs/evidence/S2-R2/abi/abi_gate.md",
+    "docs/evidence/S2-R2/planner_contract/task_schema.md",
+    "docs/evidence/S2-R2/planner_contract/supported_waypoint_constraints.md",
+    "docs/evidence/S2-R2/planner_contract/map_contract.md",
+    "docs/evidence/S2-R2/planner_contract/state_vector_contract.md",
+    "docs/evidence/S2-R2/planner_contract/trajectory_output_contract.md",
+    "docs/evidence/S2-R2/planner_contract/unavailable_features.md"
+  ]
+}
