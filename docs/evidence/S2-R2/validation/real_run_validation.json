@@ -171,11 +171,126 @@
               -0.05999999999999994
             ]
           },
+          "end_effector_world": {
+            "sample_count": 620,
+            "finite": true,
+            "position_min_m": [
+              -1.514643403721825,
+              -0.894447725225804,
+              0.6433958202849803
+            ],
+            "position_max_m": [
+              1.5000000000000007,
+              0.18251803925352275,
+              1.6710837751226728
+            ],
+            "max_speed_m_s": 2.326405072949496,
+            "max_acceleration_m_s2": 5.724132128182837,
+            "path_length_m": 5.822667393993642,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.5000000000000007,
+              -1.1796119636642288e-16,
+              1.4400000000000013
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.1833494608638946,
-            "arm_min_clearance_m": 0.06300329250756342
+            "base_hazard": {
+              "min_clearance_m": 0.1833494608638946,
+              "time_s": 3.93,
+              "obstacle_point_m": [
+                -0.2,
+                0.02,
+                0.56
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.05853965364256452,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.05853965364256452,
+              "time_s": 3.93,
+              "obstacle_point_m": [
+                -0.14,
+                0.06,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.05853965364256452,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 3.93,
+            "dangerous_obstacle_point_m": [
+              -0.14,
+              0.06,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": true
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.1833494608638946,
+                  "time_s": 3.93,
+                  "obstacle_point_m": [
+                    -0.2,
+                    0.02,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05853965364256452,
+                  "time_s": 3.93,
+                  "obstacle_point_m": [
+                    -0.14,
+                    0.06,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": 0.06332238568905224,
+                  "time_s": 3.93,
+                  "obstacle_point_m": [
+                    -0.2,
+                    0.02,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "200Hz": {
@@ -234,11 +349,126 @@
               -0.05999999999999994
             ]
           },
+          "end_effector_world": {
+            "sample_count": 1238,
+            "finite": true,
+            "position_min_m": [
+              -1.514643403721825,
+              -0.8944655449368341,
+              0.6433928820271329
+            ],
+            "position_max_m": [
+              1.5000000000000007,
+              0.18252194586614123,
+              1.6710837751226728
+            ],
+            "max_speed_m_s": 2.326546074122735,
+            "max_acceleration_m_s2": 5.724770530151465,
+            "path_length_m": 5.82276516756705,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.5000000000000007,
+              -1.1796119636642288e-16,
+              1.4400000000000013
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.18333339277597493,
-            "arm_min_clearance_m": 0.06300329250756342
+            "base_hazard": {
+              "min_clearance_m": 0.18333339277597493,
+              "time_s": 3.935,
+              "obstacle_point_m": [
+                -0.22,
+                0.02,
+                0.56
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.05853965364256452,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.05853965364256452,
+              "time_s": 3.93,
+              "obstacle_point_m": [
+                -0.14,
+                0.06,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.05853965364256452,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 3.93,
+            "dangerous_obstacle_point_m": [
+              -0.14,
+              0.06,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": true
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.18333339277597493,
+                  "time_s": 3.935,
+                  "obstacle_point_m": [
+                    -0.22,
+                    0.02,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05853965364256452,
+                  "time_s": 3.93,
+                  "obstacle_point_m": [
+                    -0.14,
+                    0.06,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": 0.06330649781957337,
+                  "time_s": 3.935,
+                  "obstacle_point_m": [
+                    -0.22,
+                    0.02,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "400Hz": {
@@ -297,18 +527,319 @@
               -0.05999999999999994
             ]
           },
+          "end_effector_world": {
+            "sample_count": 2475,
+            "finite": true,
+            "position_min_m": [
+              -1.514643403721825,
+              -0.89446793061432,
+              0.6433891603590922
+            ],
+            "position_max_m": [
+              1.5000000000000007,
+              0.18252354922121466,
+              1.6710883390112903
+            ],
+            "max_speed_m_s": 2.326546074122735,
+            "max_acceleration_m_s2": 5.724770530151465,
+            "path_length_m": 5.822789613044954,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.5000000000000007,
+              -1.1796119636642288e-16,
+              1.4400000000000013
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.18333339277597493,
-            "arm_min_clearance_m": 0.06300329250756342
+            "base_hazard": {
+              "min_clearance_m": 0.18333339277597493,
+              "time_s": 3.935,
+              "obstacle_point_m": [
+                -0.22,
+                0.02,
+                0.56
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.05853965364256452,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.05853965364256452,
+              "time_s": 3.93,
+              "obstacle_point_m": [
+                -0.14,
+                0.06,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.05853965364256452,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 3.93,
+            "dangerous_obstacle_point_m": [
+              -0.14,
+              0.06,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": true
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.18333339277597493,
+                  "time_s": 3.935,
+                  "obstacle_point_m": [
+                    -0.22,
+                    0.02,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05853965364256452,
+                  "time_s": 3.93,
+                  "obstacle_point_m": [
+                    -0.14,
+                    0.06,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": 0.06330649781957337,
+                  "time_s": 3.935,
+                  "obstacle_point_m": [
+                    -0.22,
+                    0.02,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         }
       },
       "direction_constraint": {
-        "status": "not_encoded_in_PolynomialTrajectory",
-        "error_m": null,
-        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+        "status": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT",
+        "source": "official se3_planner JPS log plus task mode-2 axis semantics",
+        "expected_segment_count": 7,
+        "observed_segment_count": 7,
+        "jps_endpoint_error_max_m": 0.0,
+        "jps_horizontal_direction_error_max_deg": 0.0,
+        "segments": [
+          {
+            "name": "approach",
+            "expected_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "expected_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "observed_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "insertion",
+            "expected_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "pull",
+            "expected_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_1",
+            "expected_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_2",
+            "expected_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_1",
+            "expected_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_2",
+            "expected_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "expected_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "observed_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          }
+        ],
+        "continuous_polynomial_direction_error_m": null,
+        "note": "PolynomialTrajectory does not carry the original mode-2 flag/vector; this validates the equivalent horizontal JPS direction and the source-grounded +Z offset, without inventing a continuous tool-axis error."
+      },
+      "reconstruction_contract": {
+        "end_effector_world": "p_WB + R_WB * p_A0E; captured output has yaw=0 and no roll/pitch channel, so R_WB=I for this reconstruction",
+        "joint_trajectory": "not reconstructed; no official time-parameterized IK executor was found"
       }
     },
     "loose": {
@@ -481,11 +1012,126 @@
               -0.06000000000000008
             ]
           },
+          "end_effector_world": {
+            "sample_count": 764,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -0.7906456999836547,
+              0.6617131950050877
+            ],
+            "position_max_m": [
+              1.5000000000000009,
+              0.3316618764119421,
+              1.4400791864304292
+            ],
+            "max_speed_m_s": 2.017418892859164,
+            "max_acceleration_m_s2": 5.365105452554166,
+            "path_length_m": 5.894580960242508,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.5000000000000009,
+              -1.996666720849305e-15,
+              1.4399999999999995
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.02426913412292986,
-            "arm_min_clearance_m": 0.05948942881136294
+            "base_hazard": {
+              "min_clearance_m": 0.02426913412292986,
+              "time_s": 4.2,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.78
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.051047207619608244,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.051047207619608244,
+              "time_s": 4.04,
+              "obstacle_point_m": [
+                0.06,
+                0.0,
+                0.7
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.02426913412292986,
+            "dangerous_component": "base_body_proxy",
+            "dangerous_time_s": 4.2,
+            "dangerous_obstacle_point_m": [
+              0.04,
+              0.04,
+              0.78
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.02426913412292986,
+                  "time_s": 4.2,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.78
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.051047207619608244,
+                  "time_s": 4.04,
+                  "obstacle_point_m": [
+                    0.06,
+                    0.0,
+                    0.7
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.1457285200277025,
+                  "time_s": 4.2,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.82
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "200Hz": {
@@ -544,11 +1190,126 @@
               -0.06000000000000008
             ]
           },
+          "end_effector_world": {
+            "sample_count": 1527,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -0.7906577853587173,
+              0.6617131950050877
+            ],
+            "position_max_m": [
+              1.5000000000000009,
+              0.3316618764119421,
+              1.4400791864304292
+            ],
+            "max_speed_m_s": 2.017418892859164,
+            "max_acceleration_m_s2": 5.367628527731366,
+            "path_length_m": 5.894699309734268,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.5000000000000009,
+              -1.996666720849305e-15,
+              1.4399999999999995
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.02426913412292986,
-            "arm_min_clearance_m": 0.05948924557511045
+            "base_hazard": {
+              "min_clearance_m": 0.02426913412292986,
+              "time_s": 4.2,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.78
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.05102108389392707,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.05102108389392707,
+              "time_s": 4.045,
+              "obstacle_point_m": [
+                0.06,
+                0.0,
+                0.7
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.02426913412292986,
+            "dangerous_component": "base_body_proxy",
+            "dangerous_time_s": 4.2,
+            "dangerous_obstacle_point_m": [
+              0.04,
+              0.04,
+              0.78
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.02426913412292986,
+                  "time_s": 4.2,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.78
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05102108389392707,
+                  "time_s": 4.045,
+                  "obstacle_point_m": [
+                    0.06,
+                    0.0,
+                    0.7
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.145787881672223,
+                  "time_s": 4.205,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.82
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "400Hz": {
@@ -607,18 +1368,319 @@
               -0.06000000000000008
             ]
           },
+          "end_effector_world": {
+            "sample_count": 3052,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -0.7906577853587173,
+              0.6617099785242426
+            ],
+            "position_max_m": [
+              1.5000000000000009,
+              0.3316644139545477,
+              1.4400791864304292
+            ],
+            "max_speed_m_s": 2.0174748134222407,
+            "max_acceleration_m_s2": 5.367628527731366,
+            "path_length_m": 5.894728903299632,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.5000000000000009,
+              -1.996666720849305e-15,
+              1.4399999999999995
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.02426913412292986,
-            "arm_min_clearance_m": 0.05948924557511045
+            "base_hazard": {
+              "min_clearance_m": 0.02426913412292986,
+              "time_s": 4.2,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.78
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.05101484221309575,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.05101484221309575,
+              "time_s": 4.0425,
+              "obstacle_point_m": [
+                0.06,
+                0.0,
+                0.7
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.02426913412292986,
+            "dangerous_component": "base_body_proxy",
+            "dangerous_time_s": 4.2,
+            "dangerous_obstacle_point_m": [
+              0.04,
+              0.04,
+              0.78
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.02426913412292986,
+                  "time_s": 4.2,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.78
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05101484221309575,
+                  "time_s": 4.0425,
+                  "obstacle_point_m": [
+                    0.06,
+                    0.0,
+                    0.7
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.145787881672223,
+                  "time_s": 4.205,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.82
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         }
       },
       "direction_constraint": {
-        "status": "not_encoded_in_PolynomialTrajectory",
-        "error_m": null,
-        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+        "status": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT",
+        "source": "official se3_planner JPS log plus task mode-2 axis semantics",
+        "expected_segment_count": 7,
+        "observed_segment_count": 7,
+        "jps_endpoint_error_max_m": 0.0,
+        "jps_horizontal_direction_error_max_deg": 0.0,
+        "segments": [
+          {
+            "name": "approach",
+            "expected_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "expected_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "observed_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "insertion",
+            "expected_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "pull",
+            "expected_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_1",
+            "expected_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_2",
+            "expected_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_1",
+            "expected_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_2",
+            "expected_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "expected_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "observed_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          }
+        ],
+        "continuous_polynomial_direction_error_m": null,
+        "note": "PolynomialTrajectory does not carry the original mode-2 flag/vector; this validates the equivalent horizontal JPS direction and the source-grounded +Z offset, without inventing a continuous tool-axis error."
+      },
+      "reconstruction_contract": {
+        "end_effector_world": "p_WB + R_WB * p_A0E; captured output has yaw=0 and no roll/pitch channel, so R_WB=I for this reconstruction",
+        "joint_trajectory": "not reconstructed; no official time-parameterized IK executor was found"
       }
     },
     "nominal": {
@@ -792,11 +1854,126 @@
               -0.05999999999999974
             ]
           },
+          "end_effector_world": {
+            "sample_count": 961,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1507072728732677,
+              0.6180416424373022
+            ],
+            "position_max_m": [
+              1.4999999999999987,
+              0.2932642876909146,
+              1.4868037318351945
+            ],
+            "max_speed_m_s": 1.7752062984830614,
+            "max_acceleration_m_s2": 6.301329305073988,
+            "path_length_m": 7.359284927425344,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999987,
+              3.639449852599341e-15,
+              1.439999999999998
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.051524164499165484,
-            "arm_min_clearance_m": 0.04966552963774338
+            "base_hazard": {
+              "min_clearance_m": 0.051524164499165484,
+              "time_s": 5.58,
+              "obstacle_point_m": [
+                -0.04,
+                0.04,
+                0.72
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.033230710613720654,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.033230710613720654,
+              "time_s": 5.41,
+              "obstacle_point_m": [
+                -0.08,
+                0.18,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.033230710613720654,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 5.41,
+            "dangerous_obstacle_point_m": [
+              -0.08,
+              0.18,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.051524164499165484,
+                  "time_s": 5.58,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.72
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.033230710613720654,
+                  "time_s": 5.41,
+                  "obstacle_point_m": [
+                    -0.08,
+                    0.18,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.11816734720645411,
+                  "time_s": 5.58,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.76
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "200Hz": {
@@ -855,11 +2032,126 @@
               -0.05999999999999974
             ]
           },
+          "end_effector_world": {
+            "sample_count": 1921,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1507072728732677,
+              0.6180416424373022
+            ],
+            "position_max_m": [
+              1.4999999999999987,
+              0.2932642876909146,
+              1.486813449518586
+            ],
+            "max_speed_m_s": 1.7753341768998998,
+            "max_acceleration_m_s2": 6.301329305073988,
+            "path_length_m": 7.359430373794341,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999987,
+              3.639449852599341e-15,
+              1.439999999999998
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.05151758887096554,
-            "arm_min_clearance_m": 0.04966523053650752
+            "base_hazard": {
+              "min_clearance_m": 0.05151758887096554,
+              "time_s": 5.585,
+              "obstacle_point_m": [
+                -0.04,
+                0.04,
+                0.72
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.033230710613720654,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.033230710613720654,
+              "time_s": 5.41,
+              "obstacle_point_m": [
+                -0.08,
+                0.18,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.033230710613720654,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 5.41,
+            "dangerous_obstacle_point_m": [
+              -0.08,
+              0.18,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05151758887096554,
+                  "time_s": 5.585,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.72
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.033230710613720654,
+                  "time_s": 5.41,
+                  "obstacle_point_m": [
+                    -0.08,
+                    0.18,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.11817232022914778,
+                  "time_s": 5.575,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.76
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "400Hz": {
@@ -918,18 +2210,319 @@
               -0.05999999999999974
             ]
           },
+          "end_effector_world": {
+            "sample_count": 3840,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1507072728732677,
+              0.6180405644307314
+            ],
+            "position_max_m": [
+              1.4999999999999987,
+              0.2932652828238656,
+              1.486813449518586
+            ],
+            "max_speed_m_s": 1.7753341768998998,
+            "max_acceleration_m_s2": 6.30177611578391,
+            "path_length_m": 7.3594667397489815,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999987,
+              3.639449852599341e-15,
+              1.439999999999998
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.05151443673977378,
-            "arm_min_clearance_m": 0.04966520028374422
+            "base_hazard": {
+              "min_clearance_m": 0.05151443673977378,
+              "time_s": 5.5825000000000005,
+              "obstacle_point_m": [
+                -0.04,
+                0.04,
+                0.72
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.033230710613720654,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.033230710613720654,
+              "time_s": 5.41,
+              "obstacle_point_m": [
+                -0.08,
+                0.18,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.033230710613720654,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 5.41,
+            "dangerous_obstacle_point_m": [
+              -0.08,
+              0.18,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05151443673977378,
+                  "time_s": 5.5825000000000005,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.72
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.033230710613720654,
+                  "time_s": 5.41,
+                  "obstacle_point_m": [
+                    -0.08,
+                    0.18,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.11817640593928169,
+                  "time_s": 5.5775,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.76
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         }
       },
       "direction_constraint": {
-        "status": "not_encoded_in_PolynomialTrajectory",
-        "error_m": null,
-        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+        "status": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT",
+        "source": "official se3_planner JPS log plus task mode-2 axis semantics",
+        "expected_segment_count": 7,
+        "observed_segment_count": 7,
+        "jps_endpoint_error_max_m": 0.0,
+        "jps_horizontal_direction_error_max_deg": 0.0,
+        "segments": [
+          {
+            "name": "approach",
+            "expected_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "expected_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "observed_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "insertion",
+            "expected_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "pull",
+            "expected_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_1",
+            "expected_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_2",
+            "expected_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_1",
+            "expected_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_2",
+            "expected_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "expected_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "observed_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          }
+        ],
+        "continuous_polynomial_direction_error_m": null,
+        "note": "PolynomialTrajectory does not carry the original mode-2 flag/vector; this validates the equivalent horizontal JPS direction and the source-grounded +Z offset, without inventing a continuous tool-axis error."
+      },
+      "reconstruction_contract": {
+        "end_effector_world": "p_WB + R_WB * p_A0E; captured output has yaw=0 and no roll/pitch channel, so R_WB=I for this reconstruction",
+        "joint_trajectory": "not reconstructed; no official time-parameterized IK executor was found"
       }
     },
     "nominal_repeat": {
@@ -1103,11 +2696,126 @@
               -0.05999999999999974
             ]
           },
+          "end_effector_world": {
+            "sample_count": 961,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1507072728732677,
+              0.6180416424373022
+            ],
+            "position_max_m": [
+              1.4999999999999987,
+              0.2932642876909146,
+              1.4868037318351945
+            ],
+            "max_speed_m_s": 1.7752062984830614,
+            "max_acceleration_m_s2": 6.301329305073988,
+            "path_length_m": 7.359284927425344,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999987,
+              3.639449852599341e-15,
+              1.439999999999998
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.051524164499165484,
-            "arm_min_clearance_m": 0.04966552963774338
+            "base_hazard": {
+              "min_clearance_m": 0.051524164499165484,
+              "time_s": 5.58,
+              "obstacle_point_m": [
+                -0.04,
+                0.04,
+                0.72
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.033230710613720654,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.033230710613720654,
+              "time_s": 5.41,
+              "obstacle_point_m": [
+                -0.08,
+                0.18,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.033230710613720654,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 5.41,
+            "dangerous_obstacle_point_m": [
+              -0.08,
+              0.18,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.051524164499165484,
+                  "time_s": 5.58,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.72
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.033230710613720654,
+                  "time_s": 5.41,
+                  "obstacle_point_m": [
+                    -0.08,
+                    0.18,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.11816734720645411,
+                  "time_s": 5.58,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.76
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "200Hz": {
@@ -1166,11 +2874,126 @@
               -0.05999999999999974
             ]
           },
+          "end_effector_world": {
+            "sample_count": 1921,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1507072728732677,
+              0.6180416424373022
+            ],
+            "position_max_m": [
+              1.4999999999999987,
+              0.2932642876909146,
+              1.486813449518586
+            ],
+            "max_speed_m_s": 1.7753341768998998,
+            "max_acceleration_m_s2": 6.301329305073988,
+            "path_length_m": 7.359430373794341,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999987,
+              3.639449852599341e-15,
+              1.439999999999998
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.05151758887096554,
-            "arm_min_clearance_m": 0.04966523053650752
+            "base_hazard": {
+              "min_clearance_m": 0.05151758887096554,
+              "time_s": 5.585,
+              "obstacle_point_m": [
+                -0.04,
+                0.04,
+                0.72
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.033230710613720654,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.033230710613720654,
+              "time_s": 5.41,
+              "obstacle_point_m": [
+                -0.08,
+                0.18,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.033230710613720654,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 5.41,
+            "dangerous_obstacle_point_m": [
+              -0.08,
+              0.18,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05151758887096554,
+                  "time_s": 5.585,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.72
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.033230710613720654,
+                  "time_s": 5.41,
+                  "obstacle_point_m": [
+                    -0.08,
+                    0.18,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.11817232022914778,
+                  "time_s": 5.575,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.76
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "400Hz": {
@@ -1229,18 +3052,319 @@
               -0.05999999999999974
             ]
           },
+          "end_effector_world": {
+            "sample_count": 3840,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1507072728732677,
+              0.6180405644307314
+            ],
+            "position_max_m": [
+              1.4999999999999987,
+              0.2932652828238656,
+              1.486813449518586
+            ],
+            "max_speed_m_s": 1.7753341768998998,
+            "max_acceleration_m_s2": 6.30177611578391,
+            "path_length_m": 7.3594667397489815,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999987,
+              3.639449852599341e-15,
+              1.439999999999998
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.05151443673977378,
-            "arm_min_clearance_m": 0.04966520028374422
+            "base_hazard": {
+              "min_clearance_m": 0.05151443673977378,
+              "time_s": 5.5825000000000005,
+              "obstacle_point_m": [
+                -0.04,
+                0.04,
+                0.72
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.033230710613720654,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.033230710613720654,
+              "time_s": 5.41,
+              "obstacle_point_m": [
+                -0.08,
+                0.18,
+                0.56
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.033230710613720654,
+            "dangerous_component": "end_effector_world_proxy",
+            "dangerous_time_s": 5.41,
+            "dangerous_obstacle_point_m": [
+              -0.08,
+              0.18,
+              0.56
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": true
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.05151443673977378,
+                  "time_s": 5.5825000000000005,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.72
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.033230710613720654,
+                  "time_s": 5.41,
+                  "obstacle_point_m": [
+                    -0.08,
+                    0.18,
+                    0.56
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.11817640593928169,
+                  "time_s": 5.5775,
+                  "obstacle_point_m": [
+                    -0.04,
+                    0.04,
+                    0.76
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         }
       },
       "direction_constraint": {
-        "status": "not_encoded_in_PolynomialTrajectory",
-        "error_m": null,
-        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+        "status": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT",
+        "source": "official se3_planner JPS log plus task mode-2 axis semantics",
+        "expected_segment_count": 7,
+        "observed_segment_count": 7,
+        "jps_endpoint_error_max_m": 0.0,
+        "jps_horizontal_direction_error_max_deg": 0.0,
+        "segments": [
+          {
+            "name": "approach",
+            "expected_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "expected_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "observed_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "insertion",
+            "expected_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "pull",
+            "expected_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_1",
+            "expected_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_2",
+            "expected_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_1",
+            "expected_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_2",
+            "expected_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "expected_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "observed_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          }
+        ],
+        "continuous_polynomial_direction_error_m": null,
+        "note": "PolynomialTrajectory does not carry the original mode-2 flag/vector; this validates the equivalent horizontal JPS direction and the source-grounded +Z offset, without inventing a continuous tool-axis error."
+      },
+      "reconstruction_contract": {
+        "end_effector_world": "p_WB + R_WB * p_A0E; captured output has yaw=0 and no roll/pitch channel, so R_WB=I for this reconstruction",
+        "joint_trajectory": "not reconstructed; no official time-parameterized IK executor was found"
       }
     },
     "narrow": {
@@ -1413,11 +3537,126 @@
               -0.059999999999998915
             ]
           },
+          "end_effector_world": {
+            "sample_count": 926,
+            "finite": true,
+            "position_min_m": [
+              -1.5169811036255194,
+              -0.5507002792654767,
+              0.643660334120331
+            ],
+            "position_max_m": [
+              1.4999999999999978,
+              0.35646003196354276,
+              1.4511062785185131
+            ],
+            "max_speed_m_s": 1.9400977453452295,
+            "max_acceleration_m_s2": 6.464008685807444,
+            "path_length_m": 6.152510977297624,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999978,
+              -1.4710455076283324e-15,
+              1.4400000000000006
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.016622217367410014,
-            "arm_min_clearance_m": 0.0644372925642617
+            "base_hazard": {
+              "min_clearance_m": 0.016622217367410014,
+              "time_s": 4.95,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.78
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.02495518217222882,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.02495518217222882,
+              "time_s": 4.88,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.66
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.016622217367410014,
+            "dangerous_component": "base_body_proxy",
+            "dangerous_time_s": 4.95,
+            "dangerous_obstacle_point_m": [
+              0.04,
+              0.04,
+              0.78
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": false
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.016622217367410014,
+                  "time_s": 4.95,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.78
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.02495518217222882,
+                  "time_s": 4.88,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.66
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.15344248586403259,
+                  "time_s": 4.95,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.84
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "200Hz": {
@@ -1476,11 +3715,126 @@
               -0.059999999999998915
             ]
           },
+          "end_effector_world": {
+            "sample_count": 1851,
+            "finite": true,
+            "position_min_m": [
+              -1.5169811036255194,
+              -0.5507090681432342,
+              0.6436575240788134
+            ],
+            "position_max_m": [
+              1.4999999999999978,
+              0.35646003196354276,
+              1.4511062785185131
+            ],
+            "max_speed_m_s": 1.9400977453452295,
+            "max_acceleration_m_s2": 6.464008685807444,
+            "path_length_m": 6.1526541502510685,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999978,
+              -1.4710455076283324e-15,
+              1.4400000000000006
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.016622217367410014,
-            "arm_min_clearance_m": 0.0644372925642617
+            "base_hazard": {
+              "min_clearance_m": 0.016622217367410014,
+              "time_s": 4.95,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.78
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.02495518217222882,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.02495518217222882,
+              "time_s": 4.88,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.66
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.016622217367410014,
+            "dangerous_component": "base_body_proxy",
+            "dangerous_time_s": 4.95,
+            "dangerous_obstacle_point_m": [
+              0.04,
+              0.04,
+              0.78
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": false
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.016622217367410014,
+                  "time_s": 4.95,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.78
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.02495518217222882,
+                  "time_s": 4.88,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.66
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.15344248586403259,
+                  "time_s": 4.95,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.84
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         },
         "400Hz": {
@@ -1539,18 +3893,319 @@
               -0.059999999999998915
             ]
           },
+          "end_effector_world": {
+            "sample_count": 3701,
+            "finite": true,
+            "position_min_m": [
+              -1.516982857363,
+              -0.5507090681432342,
+              0.6436556724888469
+            ],
+            "position_max_m": [
+              1.4999999999999978,
+              0.35646003196354276,
+              1.4511063002696443
+            ],
+            "max_speed_m_s": 1.9400977453452295,
+            "max_acceleration_m_s2": 6.464008685807444,
+            "path_length_m": 6.152689965346814,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.44
+            ],
+            "end_position_m": [
+              1.4999999999999978,
+              -1.4710455076283324e-15,
+              1.4400000000000006
+            ]
+          },
           "proxy_clearance": {
             "base_radius_m": 0.08,
-            "arm_radius_m": 0.025,
+            "end_effector_world_radius_m": 0.025,
             "base_min_clearance_m": 0.016622217367410014,
-            "arm_min_clearance_m": 0.06443728509899152
+            "base_hazard": {
+              "min_clearance_m": 0.016622217367410014,
+              "time_s": 4.95,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.78
+              ],
+              "proxy_radius_m": 0.08
+            },
+            "end_effector_world_min_clearance_m": 0.024935103427134335,
+            "end_effector_world_hazard": {
+              "min_clearance_m": 0.024935103427134335,
+              "time_s": 4.8775,
+              "obstacle_point_m": [
+                0.04,
+                0.04,
+                0.66
+              ],
+              "proxy_radius_m": 0.025
+            },
+            "gated_min_clearance_m": 0.016622217367410014,
+            "dangerous_component": "base_body_proxy",
+            "dangerous_time_s": 4.95,
+            "dangerous_obstacle_point_m": [
+              0.04,
+              0.04,
+              0.78
+            ],
+            "threshold_sensitivity": {
+              "0.02m": {
+                "threshold_m": 0.02,
+                "pass": false
+              },
+              "0.05m": {
+                "threshold_m": 0.05,
+                "pass": false
+              },
+              "0.10m": {
+                "threshold_m": 0.1,
+                "pass": false
+              }
+            },
+            "component_checks": {
+              "base_body_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.016622217367410014,
+                  "time_s": 4.95,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.78
+                  ],
+                  "proxy_radius_m": 0.08
+                }
+              },
+              "end_effector_world_proxy": {
+                "status": "GATED",
+                "clearance": {
+                  "min_clearance_m": 0.024935103427134335,
+                  "time_s": 4.8775,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.66
+                  ],
+                  "proxy_radius_m": 0.025
+                }
+              },
+              "rotor_disk_proxy": {
+                "status": "DIAGNOSTIC_NOT_GATE_PROVISIONAL_R0",
+                "clearance": {
+                  "min_clearance_m": -0.15344248586403259,
+                  "time_s": 4.95,
+                  "obstacle_point_m": [
+                    0.04,
+                    0.04,
+                    0.84
+                  ],
+                  "proxy_radius_m": 0.25
+                },
+                "reason": "S2-R0 provisional rotor radius is not an accepted AM-Planner collision contract"
+              },
+              "arm_links": {
+                "status": "NOT_EVALUATED_NO_OFFICIAL_IK",
+                "reason": "continuous joint/link geometry cannot be reconstructed from Cartesian trajectory alone"
+              }
+            }
           }
         }
       },
       "direction_constraint": {
-        "status": "not_encoded_in_PolynomialTrajectory",
-        "error_m": null,
-        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+        "status": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT",
+        "source": "official se3_planner JPS log plus task mode-2 axis semantics",
+        "expected_segment_count": 7,
+        "observed_segment_count": 7,
+        "jps_endpoint_error_max_m": 0.0,
+        "jps_horizontal_direction_error_max_deg": 0.0,
+        "segments": [
+          {
+            "name": "approach",
+            "expected_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "expected_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "observed_end_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "insertion",
+            "expected_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              -0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "pull",
+            "expected_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_1",
+            "expected_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_start_m": [
+              0.2,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "buffer_2",
+            "expected_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "expected_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              -0.16,
+              0.81
+            ],
+            "observed_end_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_1",
+            "expected_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "expected_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_start_m": [
+              0.02,
+              0.18,
+              0.81
+            ],
+            "observed_end_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          },
+          {
+            "name": "retreat_2",
+            "expected_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "expected_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "observed_start_m": [
+              -0.2,
+              -0.2,
+              0.81
+            ],
+            "observed_end_m": [
+              1.5,
+              0.0,
+              1.5
+            ],
+            "endpoint_error_max_m": 0.0,
+            "horizontal_direction_error_deg": 0.0
+          }
+        ],
+        "continuous_polynomial_direction_error_m": null,
+        "note": "PolynomialTrajectory does not carry the original mode-2 flag/vector; this validates the equivalent horizontal JPS direction and the source-grounded +Z offset, without inventing a continuous tool-axis error."
+      },
+      "reconstruction_contract": {
+        "end_effector_world": "p_WB + R_WB * p_A0E; captured output has yaw=0 and no roll/pitch channel, so R_WB=I for this reconstruction",
+        "joint_trajectory": "not reconstructed; no official time-parameterized IK executor was found"
       }
     }
   },
@@ -1560,6 +4215,9 @@
     "base_end_abs_delta_m": 0.0,
     "arm_start_abs_delta_m": 0.0,
     "arm_end_abs_delta_m": 0.0,
+    "end_effector_start_abs_delta_m": 0.0,
+    "end_effector_end_abs_delta_m": 0.0,
+    "nominal_gated_min_clearance_abs_delta_m": 0.0,
     "contract_match": true
   }
 }

@@ -58,8 +58,8 @@ def main() -> int:
     fig, ax = plt.subplots(figsize=(7, 4.5))
     names = list(RUNS); x = np.arange(len(names)); width = .35
     base_clear = [validation["variants"][n]["frequencies"]["100Hz"]["proxy_clearance"]["base_min_clearance_m"] for n in names]
-    arm_clear = [validation["variants"][n]["frequencies"]["100Hz"]["proxy_clearance"]["arm_min_clearance_m"] for n in names]
-    ax.bar(x-width/2, base_clear, width, label="base proxy"); ax.bar(x+width/2, arm_clear, width, label="arm proxy"); ax.axhline(.01, color="red", linestyle="--", label="gate 0.010 m")
+    arm_clear = [validation["variants"][n]["frequencies"]["100Hz"]["proxy_clearance"]["end_effector_world_min_clearance_m"] for n in names]
+    ax.bar(x-width/2, base_clear, width, label="base body proxy"); ax.bar(x+width/2, arm_clear, width, label="end-effector world proxy"); ax.axhline(.01, color="red", linestyle="--", label="gate 0.010 m")
     ax.set_xticks(x, names, rotation=20); ax.set_ylabel("minimum proxy clearance [m]"); ax.set_title("Independent point-cloud proxy clearance"); ax.legend(fontsize=8)
     save(fig, "04_proxy_clearance")
 
@@ -73,6 +73,34 @@ def main() -> int:
     for name, data in sampled.items(): ax.plot(data["time"], np.linalg.norm(data["velocity"], axis=1), color=colors[name], label=name)
     ax.set_xlabel("time [s]"); ax.set_ylabel("speed [m/s]"); ax.set_title("Base speed profiles"); ax.legend(fontsize=7, ncol=3)
     save(fig, "06_base_speed_profiles")
+
+    fig, axes = plt.subplots(3, 1, figsize=(7, 6), sharex=True)
+    for axis, label in zip(axes, "xyz"):
+        index = "xyz".index(label)
+        for name, data in arms.items():
+            axis.plot(data["time"], data["position"][:, index], color=colors[name], label=name)
+        axis.set_ylabel(f"{label} [m]")
+    axes[0].legend(fontsize=7, ncol=3); axes[-1].set_xlabel("time [s]"); fig.suptitle("Cartesian arm position versus time")
+    save(fig, "07_arm_position_time")
+
+    direction = validation["variants"]["nominal"]["direction_constraint"]
+    fig, ax = plt.subplots(figsize=(7, 4.5))
+    segment_names = [segment["name"] for segment in direction["segments"]]
+    errors = [segment["horizontal_direction_error_deg"] for segment in direction["segments"]]
+    ax.plot(segment_names, errors, "o-", color="#1565c0")
+    ax.axhline(0.0, color="black", linewidth=.8)
+    ax.set_ylabel("horizontal direction error [deg]"); ax.set_xlabel("JPS segment"); ax.set_title("Equivalent direction constraint from official JPS log")
+    ax.tick_params(axis="x", rotation=25)
+    save(fig, "08_direction_error_time")
+
+    narrow_points = np.asarray(build_points("narrow"), dtype=float)
+    fig = plt.figure(figsize=(7, 5)); ax = fig.add_subplot(projection="3d")
+    ax.scatter(narrow_points[:, 0], narrow_points[:, 1], narrow_points[:, 2], s=1, alpha=.10, color="black", label="narrow point cloud")
+    ax.plot(*sampled["narrow"]["position"].T, color=colors["narrow"], label="narrow base")
+    narrow_eff = sampled["narrow"]["position"] + arms["narrow"]["position"]
+    ax.plot(*narrow_eff.T, color="#d32f2f", label="narrow reconstructed end-effector")
+    ax.set_xlabel("x [m]"); ax.set_ylabel("y [m]"); ax.set_zlabel("z [m]"); ax.set_title("Narrow boundary point-cloud diagnostic"); ax.legend(fontsize=7)
+    save(fig, "09_narrow_boundary_3d")
 
     def make_gif(name: str, arm: bool) -> None:
         data = arms["nominal"] if arm else sampled["nominal"]
@@ -88,8 +116,8 @@ def main() -> int:
         animation = FuncAnimation(fig, update, frames=len(frames), interval=40, blit=False)
         animation.save(OUT / f"{name}.gif", writer=PillowWriter(fps=20)); plt.close(fig)
 
-    make_gif("07_nominal_base_animation", False)
-    make_gif("08_nominal_arm_animation", True)
+    make_gif("10_nominal_base_animation", False)
+    make_gif("11_nominal_arm_animation", True)
     manifest = {"png": sorted(p.name for p in OUT.glob("*.png")), "gif": sorted(p.name for p in OUT.glob("*.gif")), "source": "captured ROS PolynomialTrajectory messages; no synthetic trajectory data"}
     (OUT / "visual_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False))

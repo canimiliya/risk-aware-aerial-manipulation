@@ -15,5 +15,5 @@ S2-R2 已按纠正后的官方 AM-Planner 合同完成工程验收，并提交�
 ## 边界与下一步
 
 - `/trajectory_arm` 是 Cartesian polynomial trajectory，不是 Delta joint `q(t)`；本轮不虚构 IK 轨迹或关节限位通过。
-- direction error 由于 `PolynomialTrajectory` 不携带原始 mode-2 axis flag/vector，记录为未编码指标；合同语义已由源码和 `inter_info_contract.json` 验证。
+- direction 采用官方 `se3_planner` JPS 日志与 mode-2 轴语义做等价水平约束验证：端点误差和水平段方向误差均为 0；连续 `PolynomialTrajectory` 工具轴误差仍因消息不携带原始 flag/vector 而不宣称可计算。
 - S2 保持 `IN_PROGRESS`；S3-S8 保持 `FROZEN`。等待项目负责人对 S2-R2 提交复核后再决定是否推进。

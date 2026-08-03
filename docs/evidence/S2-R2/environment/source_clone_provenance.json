@@ -1,0 +1,27 @@
+{
+  "official_remote": "https://github.com/SYSU-HILAB/am-planner.git",
+  "official_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "selected_source_clone": {
+    "path": "/home/amplanner/am-planner-ws/src/am-planner",
+    "head": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+    "tracked_sha256": "0518ef370e84a7d6a7fad4924f080616ea2753170c2a0ce380d8664d1492d528",
+    "clean_before_new_workspace": true
+  },
+  "new_workspace": {
+    "path": "/home/amplanner/am-planner-s2-r2-ws/src/am-planner",
+    "head": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+    "tracked_source_sha256_before_patch": "0518ef370e84a7d6a7fad4924f080616ea2753170c2a0ce380d8664d1492d528",
+    "clean_before_patch": true,
+    "post_patch_modified_files": [
+      "src/plan/plan_manage/CMakeLists.txt",
+      "src/plan/traj_opt/CMakeLists.txt"
+    ],
+    "build_devel_install_copied": false
+  },
+  "unselected_clone": {
+    "path": "/home/amplanner/am-planner-gpu39-ws/src/am-planner",
+    "head": "330db6ccd463a64c2c539bf1a76007895c432683",
+    "tracked_sha256": "99c1e016460505f6d2fbb20a3764b3000724de038dbf7d17f3bd211859102854",
+    "selection_reason": "not the fixed official commit"
+  }
+}
