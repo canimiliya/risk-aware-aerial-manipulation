@@ -1,4 +1,4 @@
-# S2-R0 状态：SUBMITTED_FOR_REVIEW
+# S2-R0 状态：PASS_WITH_LIMITATIONS
 
 ## 结论
 
@@ -6,7 +6,7 @@
 
 ## 状态门槛
 
-- S2-R0：`SUBMITTED_FOR_REVIEW`
+- S2-R0：`PASS_WITH_LIMITATIONS`
 - S2：`IN_PROGRESS`
 - S3–S8：`FROZEN`
 
@@ -18,6 +18,7 @@
 - 100k workspace：`docs/evidence/S2-R0/workspace_sampling_manifest.json`；NPZ 保留本地，不提交大文件
 - G-ARM 结果：`docs/evidence/S2-R0/g_arm_preflight.json`
 - 报告：`docs/reports/S2-R0_delta_workspace_preflight_report.md`
+- 最终收口审计：`docs/evidence/S2-R0/final_acceptance/s2_r0_final_acceptance.json`
 
 ## 明确限制
 

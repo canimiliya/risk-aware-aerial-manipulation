@@ -1,0 +1,19 @@
+name: s2_r1_continuous_whole_body_preplanning
+status: PROVISIONAL_S2_R1_GATE
+source: official_delta_fk_plus_explicit_fixed_vehicle_reference
+scene: configs/scene/s2_crossarm_nominal.yaml
+variant: nominal
+waypoints: [P0, P1, P2, P3, P4, P5, P6]
+interpolation: quintic_c2_zero_endpoint_velocity
+samples_per_segment: 101
+vehicle_state:
+  mode: FIXED_WB_REFERENCE_PROVISIONAL
+  pose_WB: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  note: W_to_B dynamic planning is not available from the official S2-R0 contract
+gates:
+  finite_samples: true
+  invalid_sample_count: 0
+  horizontal_tool_axis: true
+  minimum_nominal_clearance_m: 0.010
+  minimum_joint_margin: 0.10
+  note: Geometry, tool and vehicle limits remain provisional; no dynamics or mesh claim

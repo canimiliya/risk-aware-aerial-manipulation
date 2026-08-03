@@ -1,0 +1,24 @@
+{
+  "contract": "S2-R1_CONTINUOUS_WHOLE_BODY_PREPLANNING",
+  "source_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "r0_head": "5564f5d407c75dfd9c776d5e43917c9f96c48702",
+  "scene": "configs/scene/s2_crossarm_nominal.yaml",
+  "variant": "nominal",
+  "waypoints": ["P0", "P1", "P2", "P3", "P4", "P5", "P6"],
+  "interpolation": "quintic_c2_zero_endpoint_velocity",
+  "samples_per_segment": 101,
+  "sample_count": 601,
+  "vehicle_state_mode": "FIXED_WB_REFERENCE_PROVISIONAL",
+  "trajectory_sha256": "C1B1A66641C258BB61174647EEB78CC47AB10EF21EDA355319C1C3EA1C4EEABB",
+  "trajectory_bytes": 623809,
+  "figure_sha256": "5AF74DE1D6448F93148C3EA0554834F992019A91BA83A2DBA331B4F72F4FC542",
+  "figure_bytes": 238671,
+  "metrics": {
+    "invalid_sample_count": 0,
+    "min_clearance_m": 0.016270539113886984,
+    "min_joint_margin": 0.4044585987261146,
+    "min_jacobian_min_singular_value": 0.021134315299292026,
+    "max_jacobian_condition_number": 3.8633689778198717
+  },
+  "boundary": "This is continuous position/kinematic preplanning under an explicit fixed W->B placeholder; it is not dynamics, mesh collision, flight control, Isaac/PhysX, or full AM-Planner optimization evidence."
+}

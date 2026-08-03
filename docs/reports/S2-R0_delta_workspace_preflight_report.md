@@ -5,7 +5,7 @@
 - 开始总体进度：约 22%（按 S0–S8 九阶段等权的项目管理估算，S0 完成、S1 待收口前约 95%）。
 - 结束总体进度：约 22%（按原任务卡口径，S0、S1 已收口；S2-R0 预检不折算为完整 S2 阶段完成度）。
 - S1：`PASS_WITH_LIMITATIONS`。
-- S2-R0：`SUBMITTED_FOR_REVIEW`。
+- S2-R0：`PASS_WITH_LIMITATIONS`（最终收口审计通过；原始 `SUBMITTED_FOR_REVIEW` 预检证据保留）。
 
 ## G-ARM 结论
 

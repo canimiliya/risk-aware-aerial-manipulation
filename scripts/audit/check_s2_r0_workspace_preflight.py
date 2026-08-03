@@ -73,7 +73,7 @@ def run(root: Path = ROOT) -> dict:
     require("g_arm_errors", garm.get("errors") == [])
     require("state_gate", garm.get("state") == {"s2_r0": "SUBMITTED_FOR_REVIEW", "s2": "IN_PROGRESS", "s3_s8": "FROZEN"})
     status_text = (root / "docs/milestones/S2_R0_status.md").read_text(encoding="utf-8-sig")
-    require("status_document", "S2-R0：`SUBMITTED_FOR_REVIEW`" in status_text and "S2：`IN_PROGRESS`" in status_text and "S3–S8：`FROZEN`" in status_text)
+    require("status_document", ("S2-R0：`SUBMITTED_FOR_REVIEW`" in status_text or "S2-R0：`PASS_WITH_LIMITATIONS`" in status_text) and "S2：`IN_PROGRESS`" in status_text and "S3–S8：`FROZEN`" in status_text)
 
     s0 = subprocess.run([sys.executable, "scripts/audit/check_s0_structure.py"], cwd=root, capture_output=True, text=True, check=False)
     require("s0_audit", s0.returncode == 0, s0.stdout[-1000:])
