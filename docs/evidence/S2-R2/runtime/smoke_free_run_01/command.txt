@@ -1,0 +1,4 @@
+variant=smoke_free
+run_id=smoke_free_run_01
+timeout_s=600
+workspace=/home/amplanner/am-planner-s2-r2-ws

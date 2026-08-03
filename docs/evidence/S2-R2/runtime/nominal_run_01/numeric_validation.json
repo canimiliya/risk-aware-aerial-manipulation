@@ -1,0 +1,28 @@
+{
+  "received_topics": [
+    "/trajectory",
+    "/trajectory_arm"
+  ],
+  "expected_topics": [
+    "/trajectory",
+    "/trajectory_arm"
+  ],
+  "timeout_s": 1800.0,
+  "success": true,
+  "/trajectory": {
+    "numeric_fields": 390,
+    "finite_numeric_fields": 390,
+    "nan_count": 0,
+    "inf_count": 0,
+    "nonzero_numeric_fields": 379,
+    "positive_numeric_fields": 222
+  },
+  "/trajectory_arm": {
+    "numeric_fields": 390,
+    "finite_numeric_fields": 390,
+    "nan_count": 0,
+    "inf_count": 0,
+    "nonzero_numeric_fields": 377,
+    "positive_numeric_fields": 203
+  }
+}

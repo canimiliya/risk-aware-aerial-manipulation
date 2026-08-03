@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2026-08-03 15:19:53,098: init_node, name[/s2_r2_crossarm_map_publisher_99304_1785741593087], pid[99304]
+[xmlrpc][INFO] 2026-08-03 15:19:53,098: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-08-03 15:19:53,099: Started XML-RPC server [http://SC-202607101733:40923/]
+[rospy.init][INFO] 2026-08-03 15:19:53,099: ROS Slave URI: [http://SC-202607101733:40923/]
+[rospy.impl.masterslave][INFO] 2026-08-03 15:19:53,099: _ready: http://SC-202607101733:40923/
+[rospy.registration][INFO] 2026-08-03 15:19:53,100: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2026-08-03 15:19:53,100: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-08-03 15:19:53,199: registered with master
+[rospy.rosout][INFO] 2026-08-03 15:19:53,200: initializing /rosout core topic
+[rospy.registration][ERROR] 2026-08-03 15:19:53,202: [Errno 111] Connection refused
+Unable to register with master node [http://localhost:11311]: master may not be running yet. Will keep trying.
+[rospy.rosout][INFO] 2026-08-03 15:19:53,405: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-08-03 15:19:53,405: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-08-03 15:19:53,663: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][WARNING] 2026-08-03 15:19:56,686: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2026-08-03 15:19:56,688: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 334, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, BytesIO(), buff_size)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph/network.py", line 359, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+rosgraph.network.ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+

@@ -1,0 +1,22 @@
+{
+  "scene": "loose",
+  "frame_id": "world",
+  "topic": "/global_map",
+  "resolution_m": 0.02,
+  "point_count": 28713,
+  "aabb_m": {
+    "min": [
+      -0.3,
+      -1.24,
+      0.02
+    ],
+    "max": [
+      0.28,
+      1.24,
+      1.68
+    ]
+  },
+  "points_sha256": "4d5941f1dbd4146d4a5934f3daa3ec73584ceb70639b25fba54fb4996eeff229",
+  "obstacle_contract": "crossarm_main_beam_plus_pole_plus_adjacent_proxy",
+  "nominal_clearance_gate_m": 0.01
+}

@@ -1,0 +1,22 @@
+{
+  "scene": "nominal",
+  "frame_id": "world",
+  "topic": "/global_map",
+  "resolution_m": 0.02,
+  "point_count": 29984,
+  "aabb_m": {
+    "min": [
+      -0.3,
+      -1.24,
+      0.02
+    ],
+    "max": [
+      0.28,
+      1.24,
+      1.68
+    ]
+  },
+  "points_sha256": "79eab0b6a5f4aadcba6469ef3b0c1c50efb449ef58a53c1916edfc658c299145",
+  "obstacle_contract": "crossarm_main_beam_plus_pole_plus_adjacent_proxy",
+  "nominal_clearance_gate_m": 0.01
+}

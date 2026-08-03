@@ -1,11 +1,9 @@
 # S2-R2 build gate
 
-Decision: `BLOCKED_S2_R2_BUILD_OR_ABI` as an environment prerequisite, not a source-code build result.
+Decision: build gate passed in the required clean S2-R2 workspace.
 
-- The exact clean target workspace could not be populated because both official GitHub clone attempts failed.
-- No `catkin build` was run in the required S2-R2 workspace.
-- No S2-R2 `libse3_planner.so` or `se3_node` closure is claimed.
-- The existing S1 `se3_node` build was not reused as S2-R2 build evidence.
-- No AM-Planner algorithm `.cpp/.h` was modified.
-
-The runtime is additionally blocked by the independent planner-contract finding documented under `docs/evidence/S2-R2/planner_contract/`.
+- Workspace: `/home/amplanner/am-planner-s2-r2-ws`.
+- Official source commit: `7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d`.
+- Accepted ABI patch: only `src/plan/plan_manage/CMakeLists.txt` and `src/plan/traj_opt/CMakeLists.txt`; canonical LF SHA-256 `8bd9fa32c508495bd1f98f77b529205323ecbdf59c9031be2ec75790c33f7db6`.
+- Catkin result: 19 project packages succeeded, 0 failed, 0 abandoned. Upstream warning-bearing packages are retained in the raw build log and are not relabeled as zero warnings.
+- Runtime artifacts: `devel/.private/plan_manage/lib/plan_manage/se3_node` and `devel/.private/traj_opt/lib/libse3_planner.so`.

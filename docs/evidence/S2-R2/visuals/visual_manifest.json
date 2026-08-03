@@ -1,0 +1,15 @@
+{
+  "png": [
+    "01_base_trajectories_3d.png",
+    "02_base_position_time.png",
+    "03_arm_cartesian_trajectories_3d.png",
+    "04_proxy_clearance.png",
+    "05_nominal_repeat_overlay.png",
+    "06_base_speed_profiles.png"
+  ],
+  "gif": [
+    "07_nominal_base_animation.gif",
+    "08_nominal_arm_animation.gif"
+  ],
+  "source": "captured ROS PolynomialTrajectory messages; no synthetic trajectory data"
+}

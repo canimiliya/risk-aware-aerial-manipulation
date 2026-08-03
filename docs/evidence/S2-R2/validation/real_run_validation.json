@@ -1,0 +1,1565 @@
+{
+  "validator": "planner_bridge.validation.validate_s2_r2_real_runs",
+  "variants": {
+    "smoke_free": {
+      "variant": "smoke_free",
+      "run_id": "smoke_free_run_08",
+      "message_contract": {
+        "base": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.384496397279068,
+            0.20741471826196803,
+            0.06928584579426975,
+            0.10646261966888879,
+            0.47414901435007734,
+            0.1259435648221637,
+            0.1741523541402141,
+            0.1815913276761417,
+            0.1017643746211525,
+            0.1165080324660554,
+            0.11081191600216883,
+            0.16084210318885914,
+            0.23303278989127546,
+            0.21826523022151098,
+            0.13979176102698646,
+            0.18151256489049558,
+            0.18034411526286104,
+            0.3228581316081555,
+            1.6947789360772558
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 6.184005797249569
+        },
+        "arm": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.384496397279068,
+            0.20741471826196803,
+            0.06928584579426975,
+            0.10646261966888879,
+            0.47414901435007734,
+            0.1259435648221637,
+            0.1741523541402141,
+            0.1815913276761417,
+            0.1017643746211525,
+            0.1165080324660554,
+            0.11081191600216883,
+            0.16084210318885914,
+            0.23303278989127546,
+            0.21826523022151098,
+            0.13979176102698646,
+            0.18151256489049558,
+            0.18034411526286104,
+            0.3228581316081555,
+            1.6947789360772558
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 6.184005797249569
+        }
+      },
+      "frequencies": {
+        "100Hz": {
+          "sample_dt_s": 0.01,
+          "base": {
+            "sample_count": 620,
+            "finite": true,
+            "position_min_m": [
+              -1.5073514593598294,
+              -0.876037210713249,
+              0.8231797883657523
+            ],
+            "position_max_m": [
+              1.5000000000000007,
+              0.2722975614260476,
+              1.7748330031813917
+            ],
+            "max_speed_m_s": 2.2837363066259098,
+            "max_acceleration_m_s2": 5.736265501358293,
+            "path_length_m": 5.728927724283135,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.5000000000000007,
+              -2.220446049250313e-16,
+              1.5000000000000013
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 620,
+            "finite": true,
+            "position_min_m": [
+              -0.023767073127796037,
+              -0.10681629878041064,
+              -0.21866333367306073
+            ],
+            "position_max_m": [
+              0.0776036566125302,
+              0.03859720161469801,
+              -0.05999999999999994
+            ],
+            "max_speed_m_s": 0.15019294370002645,
+            "max_acceleration_m_s2": 1.8549768922621745,
+            "path_length_m": 0.649722301603437,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              0.0,
+              1.0408340855860843e-16,
+              -0.05999999999999994
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.1833494608638946,
+            "arm_min_clearance_m": 0.06300329250756342
+          }
+        },
+        "200Hz": {
+          "sample_dt_s": 0.005,
+          "base": {
+            "sample_count": 1238,
+            "finite": true,
+            "position_min_m": [
+              -1.507353838888962,
+              -0.8760491198712796,
+              0.823164858250604
+            ],
+            "position_max_m": [
+              1.5000000000000007,
+              0.2722975614260476,
+              1.774845538567904
+            ],
+            "max_speed_m_s": 2.2837363066259098,
+            "max_acceleration_m_s2": 5.737335595121289,
+            "path_length_m": 5.729016336150622,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.5000000000000007,
+              -2.220446049250313e-16,
+              1.5000000000000013
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 1238,
+            "finite": true,
+            "position_min_m": [
+              -0.023767073127796037,
+              -0.10682090065416204,
+              -0.21866677528597503
+            ],
+            "position_max_m": [
+              0.07760502776408304,
+              0.038599645449834796,
+              -0.05999999999999994
+            ],
+            "max_speed_m_s": 0.15019294370002645,
+            "max_acceleration_m_s2": 1.8549768922621745,
+            "path_length_m": 0.6497713281159567,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              0.0,
+              1.0408340855860843e-16,
+              -0.05999999999999994
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.18333339277597493,
+            "arm_min_clearance_m": 0.06300329250756342
+          }
+        },
+        "400Hz": {
+          "sample_dt_s": 0.0025,
+          "base": {
+            "sample_count": 2475,
+            "finite": true,
+            "position_min_m": [
+              -1.50735424096288,
+              -0.8760541509096305,
+              0.823164858250604
+            ],
+            "position_max_m": [
+              1.5000000000000007,
+              0.2722984548603818,
+              1.7748459441813007
+            ],
+            "max_speed_m_s": 2.2837363066259098,
+            "max_acceleration_m_s2": 5.737335595121289,
+            "path_length_m": 5.72903849063526,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.5000000000000007,
+              -2.220446049250313e-16,
+              1.5000000000000013
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 2475,
+            "finite": true,
+            "position_min_m": [
+              -0.023767073127796037,
+              -0.10682090065416204,
+              -0.21866677528597503
+            ],
+            "position_max_m": [
+              0.07760502776408304,
+              0.03860017110913398,
+              -0.05999999999999994
+            ],
+            "max_speed_m_s": 0.15021087753679196,
+            "max_acceleration_m_s2": 1.8549768922621745,
+            "path_length_m": 0.6497833636147718,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              0.0,
+              1.0408340855860843e-16,
+              -0.05999999999999994
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.18333339277597493,
+            "arm_min_clearance_m": 0.06300329250756342
+          }
+        }
+      },
+      "direction_constraint": {
+        "status": "not_encoded_in_PolynomialTrajectory",
+        "error_m": null,
+        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+      }
+    },
+    "loose": {
+      "variant": "loose",
+      "run_id": "loose_run_01",
+      "message_contract": {
+        "base": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.0981376117049744,
+            0.33687443714669696,
+            0.11371194907863501,
+            0.1295314995320501,
+            1.0787874675686149,
+            0.16372984825000844,
+            0.11987653350509174,
+            0.11680967321494053,
+            0.11202199548904944,
+            0.11730540402316426,
+            0.17084364922881037,
+            0.1102971544297572,
+            0.11911301163772162,
+            0.43788005574332023,
+            0.12007033017766164,
+            0.11276645286941178,
+            0.3682947504912021,
+            0.18007491537765286,
+            2.6195304817613208
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 7.625657221230084
+        },
+        "arm": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.0981376117049744,
+            0.33687443714669696,
+            0.11371194907863501,
+            0.1295314995320501,
+            1.0787874675686149,
+            0.16372984825000844,
+            0.11987653350509174,
+            0.11680967321494053,
+            0.11202199548904944,
+            0.11730540402316426,
+            0.17084364922881037,
+            0.1102971544297572,
+            0.11911301163772162,
+            0.43788005574332023,
+            0.12007033017766164,
+            0.11276645286941178,
+            0.3682947504912021,
+            0.18007491537765286,
+            2.6195304817613208
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 7.625657221230084
+        }
+      },
+      "frequencies": {
+        "100Hz": {
+          "sample_dt_s": 0.01,
+          "base": {
+            "sample_count": 764,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -0.8088173866051644,
+              0.7560732535486558
+            ],
+            "position_max_m": [
+              1.500000000000001,
+              0.38317830801345076,
+              1.5009627043002771
+            ],
+            "max_speed_m_s": 1.9403238845740152,
+            "max_acceleration_m_s2": 4.768794040098586,
+            "path_length_m": 6.03667305542006,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.500000000000001,
+              -1.9984014443252818e-15,
+              1.4999999999999996
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 764,
+            "finite": true,
+            "position_min_m": [
+              -0.11404274744852398,
+              -0.07765426885883799,
+              -0.16546442700956804
+            ],
+            "position_max_m": [
+              0.03980849754290183,
+              0.027268497884347563,
+              -0.05981483418967486
+            ],
+            "max_speed_m_s": 0.15057335405443145,
+            "max_acceleration_m_s2": 2.201470778883599,
+            "path_length_m": 0.6877612361158982,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -2.636779683484747e-16,
+              1.734723475976807e-18,
+              -0.06000000000000008
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.02426913412292986,
+            "arm_min_clearance_m": 0.05948942881136294
+          }
+        },
+        "200Hz": {
+          "sample_dt_s": 0.005,
+          "base": {
+            "sample_count": 1527,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -0.8088386268762429,
+              0.7560632970933591
+            ],
+            "position_max_m": [
+              1.500000000000001,
+              0.38318324123928327,
+              1.5009627043002771
+            ],
+            "max_speed_m_s": 1.9403357668099896,
+            "max_acceleration_m_s2": 4.768794040098586,
+            "path_length_m": 6.036769978448735,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.500000000000001,
+              -1.9984014443252818e-15,
+              1.4999999999999996
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 1527,
+            "finite": true,
+            "position_min_m": [
+              -0.11405083631105357,
+              -0.07765844632830907,
+              -0.16546442700956804
+            ],
+            "position_max_m": [
+              0.03981086356203077,
+              0.0272728111984187,
+              -0.05981483418967486
+            ],
+            "max_speed_m_s": 0.15059331213466298,
+            "max_acceleration_m_s2": 2.2090810974751114,
+            "path_length_m": 0.6878117728852651,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -2.636779683484747e-16,
+              1.734723475976807e-18,
+              -0.06000000000000008
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.02426913412292986,
+            "arm_min_clearance_m": 0.05948924557511045
+          }
+        },
+        "400Hz": {
+          "sample_dt_s": 0.0025,
+          "base": {
+            "sample_count": 3052,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -0.8088386268762429,
+              0.7560625345871997
+            ],
+            "position_max_m": [
+              1.500000000000001,
+              0.3831837298681789,
+              1.5009632201300296
+            ],
+            "max_speed_m_s": 1.9403872154393726,
+            "max_acceleration_m_s2": 4.769155564972626,
+            "path_length_m": 6.036794213096643,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.500000000000001,
+              -1.9984014443252818e-15,
+              1.4999999999999996
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 3052,
+            "finite": true,
+            "position_min_m": [
+              -0.11405083631105357,
+              -0.07765844632830907,
+              -0.16546498390988604
+            ],
+            "position_max_m": [
+              0.03981086356203077,
+              0.0272728111984187,
+              -0.05981483418967486
+            ],
+            "max_speed_m_s": 0.15059331213466298,
+            "max_acceleration_m_s2": 2.2090810974751114,
+            "path_length_m": 0.6878244066947143,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -2.636779683484747e-16,
+              1.734723475976807e-18,
+              -0.06000000000000008
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.02426913412292986,
+            "arm_min_clearance_m": 0.05948924557511045
+          }
+        }
+      },
+      "direction_constraint": {
+        "status": "not_encoded_in_PolynomialTrajectory",
+        "error_m": null,
+        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+      }
+    },
+    "nominal": {
+      "variant": "nominal",
+      "run_id": "nominal_run_01",
+      "message_contract": {
+        "base": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.2495710388496069,
+            0.41432944321309584,
+            0.09120460882598921,
+            0.13044661482061753,
+            1.8556505781441825,
+            0.11610186708342922,
+            0.11880409450631561,
+            0.12276449202027012,
+            0.12838905805112982,
+            0.1167317598274742,
+            0.21153785571859673,
+            0.13022474439650555,
+            0.1207570112034218,
+            0.40327999743983156,
+            0.11919762084131359,
+            0.11793306703601188,
+            0.6167662998599427,
+            0.18909484722849534,
+            3.342290858603593
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 9.595075857669823
+        },
+        "arm": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.2495710388496069,
+            0.41432944321309584,
+            0.09120460882598921,
+            0.13044661482061753,
+            1.8556505781441825,
+            0.11610186708342922,
+            0.11880409450631561,
+            0.12276449202027012,
+            0.12838905805112982,
+            0.1167317598274742,
+            0.21153785571859673,
+            0.13022474439650555,
+            0.1207570112034218,
+            0.40327999743983156,
+            0.11919762084131359,
+            0.11793306703601188,
+            0.6167662998599427,
+            0.18909484722849534,
+            3.342290858603593
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 9.595075857669823
+        }
+      },
+      "frequencies": {
+        "100Hz": {
+          "sample_dt_s": 0.01,
+          "base": {
+            "sample_count": 961,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1492370543826245,
+              0.7062806480191625
+            ],
+            "position_max_m": [
+              1.4999999999999991,
+              0.3855104638369808,
+              1.5878024524115124
+            ],
+            "max_speed_m_s": 1.7135092789467492,
+            "max_acceleration_m_s2": 6.38737601849837,
+            "path_length_m": 7.5744869877062735,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.4999999999999991,
+              3.4416913763379853e-15,
+              1.4999999999999978
+            ],
+            "message_contract_total_duration_s": 9.595075857669823
+          },
+          "arm_cartesian": {
+            "sample_count": 961,
+            "finite": true,
+            "position_min_m": [
+              -0.11707414342896896,
+              -0.09244609556356434,
+              -0.2148513232686407
+            ],
+            "position_max_m": [
+              0.06000816651217056,
+              0.00816734062522138,
+              -0.04712309770786566
+            ],
+            "max_speed_m_s": 0.15127065522250954,
+            "max_acceleration_m_s2": 1.1596609678700696,
+            "path_length_m": 0.8692038362479579,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -4.787836793695988e-16,
+              1.97758476261356e-16,
+              -0.05999999999999974
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.051524164499165484,
+            "arm_min_clearance_m": 0.04966552963774338
+          }
+        },
+        "200Hz": {
+          "sample_dt_s": 0.005,
+          "base": {
+            "sample_count": 1921,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.149257371019203,
+              0.706272112217316
+            ],
+            "position_max_m": [
+              1.4999999999999991,
+              0.3855104638369808,
+              1.5878079261011573
+            ],
+            "max_speed_m_s": 1.7135092789467492,
+            "max_acceleration_m_s2": 6.38806473422003,
+            "path_length_m": 7.574627725115084,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.4999999999999991,
+              3.4416913763379853e-15,
+              1.4999999999999978
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 1921,
+            "finite": true,
+            "position_min_m": [
+              -0.11707528474984819,
+              -0.09244610802574456,
+              -0.2148513232686407
+            ],
+            "position_max_m": [
+              0.06000816651217056,
+              0.00816734062522138,
+              -0.047122666714927666
+            ],
+            "max_speed_m_s": 0.15127587084033026,
+            "max_acceleration_m_s2": 1.1596609678700696,
+            "path_length_m": 0.8692347452192057,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -4.787836793695988e-16,
+              1.97758476261356e-16,
+              -0.05999999999999974
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.05151758887096554,
+            "arm_min_clearance_m": 0.04966523053650752
+          }
+        },
+        "400Hz": {
+          "sample_dt_s": 0.0025,
+          "base": {
+            "sample_count": 3840,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.149257371019203,
+              0.706271098588392
+            ],
+            "position_max_m": [
+              1.4999999999999991,
+              0.38551307707153437,
+              1.5878105239068268
+            ],
+            "max_speed_m_s": 1.7135146280845086,
+            "max_acceleration_m_s2": 6.388288678363284,
+            "path_length_m": 7.574662913037191,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.4999999999999991,
+              3.4416913763379853e-15,
+              1.4999999999999978
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 3840,
+            "finite": true,
+            "position_min_m": [
+              -0.11707810110499109,
+              -0.09244702596424631,
+              -0.2148513232686407
+            ],
+            "position_max_m": [
+              0.06000843718009618,
+              0.008167397474831403,
+              -0.047122666714927666
+            ],
+            "max_speed_m_s": 0.15127587084033026,
+            "max_acceleration_m_s2": 1.1596609678700696,
+            "path_length_m": 0.86924247394017,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -4.787836793695988e-16,
+              1.97758476261356e-16,
+              -0.05999999999999974
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.05151443673977378,
+            "arm_min_clearance_m": 0.04966520028374422
+          }
+        }
+      },
+      "direction_constraint": {
+        "status": "not_encoded_in_PolynomialTrajectory",
+        "error_m": null,
+        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+      }
+    },
+    "nominal_repeat": {
+      "variant": "nominal_repeat",
+      "run_id": "nominal_repeat_01",
+      "message_contract": {
+        "base": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.2495710388496069,
+            0.41432944321309584,
+            0.09120460882598921,
+            0.13044661482061753,
+            1.8556505781441825,
+            0.11610186708342922,
+            0.11880409450631561,
+            0.12276449202027012,
+            0.12838905805112982,
+            0.1167317598274742,
+            0.21153785571859673,
+            0.13022474439650555,
+            0.1207570112034218,
+            0.40327999743983156,
+            0.11919762084131359,
+            0.11793306703601188,
+            0.6167662998599427,
+            0.18909484722849534,
+            3.342290858603593
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 9.595075857669823
+        },
+        "arm": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.2495710388496069,
+            0.41432944321309584,
+            0.09120460882598921,
+            0.13044661482061753,
+            1.8556505781441825,
+            0.11610186708342922,
+            0.11880409450631561,
+            0.12276449202027012,
+            0.12838905805112982,
+            0.1167317598274742,
+            0.21153785571859673,
+            0.13022474439650555,
+            0.1207570112034218,
+            0.40327999743983156,
+            0.11919762084131359,
+            0.11793306703601188,
+            0.6167662998599427,
+            0.18909484722849534,
+            3.342290858603593
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 9.595075857669823
+        }
+      },
+      "frequencies": {
+        "100Hz": {
+          "sample_dt_s": 0.01,
+          "base": {
+            "sample_count": 961,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.1492370543826245,
+              0.7062806480191625
+            ],
+            "position_max_m": [
+              1.4999999999999991,
+              0.3855104638369808,
+              1.5878024524115124
+            ],
+            "max_speed_m_s": 1.7135092789467492,
+            "max_acceleration_m_s2": 6.38737601849837,
+            "path_length_m": 7.5744869877062735,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.4999999999999991,
+              3.4416913763379853e-15,
+              1.4999999999999978
+            ],
+            "message_contract_total_duration_s": 9.595075857669823
+          },
+          "arm_cartesian": {
+            "sample_count": 961,
+            "finite": true,
+            "position_min_m": [
+              -0.11707414342896896,
+              -0.09244609556356434,
+              -0.2148513232686407
+            ],
+            "position_max_m": [
+              0.06000816651217056,
+              0.00816734062522138,
+              -0.04712309770786566
+            ],
+            "max_speed_m_s": 0.15127065522250954,
+            "max_acceleration_m_s2": 1.1596609678700696,
+            "path_length_m": 0.8692038362479579,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -4.787836793695988e-16,
+              1.97758476261356e-16,
+              -0.05999999999999974
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.051524164499165484,
+            "arm_min_clearance_m": 0.04966552963774338
+          }
+        },
+        "200Hz": {
+          "sample_dt_s": 0.005,
+          "base": {
+            "sample_count": 1921,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.149257371019203,
+              0.706272112217316
+            ],
+            "position_max_m": [
+              1.4999999999999991,
+              0.3855104638369808,
+              1.5878079261011573
+            ],
+            "max_speed_m_s": 1.7135092789467492,
+            "max_acceleration_m_s2": 6.38806473422003,
+            "path_length_m": 7.574627725115084,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.4999999999999991,
+              3.4416913763379853e-15,
+              1.4999999999999978
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 1921,
+            "finite": true,
+            "position_min_m": [
+              -0.11707528474984819,
+              -0.09244610802574456,
+              -0.2148513232686407
+            ],
+            "position_max_m": [
+              0.06000816651217056,
+              0.00816734062522138,
+              -0.047122666714927666
+            ],
+            "max_speed_m_s": 0.15127587084033026,
+            "max_acceleration_m_s2": 1.1596609678700696,
+            "path_length_m": 0.8692347452192057,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -4.787836793695988e-16,
+              1.97758476261356e-16,
+              -0.05999999999999974
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.05151758887096554,
+            "arm_min_clearance_m": 0.04966523053650752
+          }
+        },
+        "400Hz": {
+          "sample_dt_s": 0.0025,
+          "base": {
+            "sample_count": 3840,
+            "finite": true,
+            "position_min_m": [
+              -1.5,
+              -1.149257371019203,
+              0.706271098588392
+            ],
+            "position_max_m": [
+              1.4999999999999991,
+              0.38551307707153437,
+              1.5878105239068268
+            ],
+            "max_speed_m_s": 1.7135146280845086,
+            "max_acceleration_m_s2": 6.388288678363284,
+            "path_length_m": 7.574662913037191,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.4999999999999991,
+              3.4416913763379853e-15,
+              1.4999999999999978
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 3840,
+            "finite": true,
+            "position_min_m": [
+              -0.11707810110499109,
+              -0.09244702596424631,
+              -0.2148513232686407
+            ],
+            "position_max_m": [
+              0.06000843718009618,
+              0.008167397474831403,
+              -0.047122666714927666
+            ],
+            "max_speed_m_s": 0.15127587084033026,
+            "max_acceleration_m_s2": 1.1596609678700696,
+            "path_length_m": 0.86924247394017,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -4.787836793695988e-16,
+              1.97758476261356e-16,
+              -0.05999999999999974
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.05151443673977378,
+            "arm_min_clearance_m": 0.04966520028374422
+          }
+        }
+      },
+      "direction_constraint": {
+        "status": "not_encoded_in_PolynomialTrajectory",
+        "error_m": null,
+        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+      }
+    },
+    "narrow": {
+      "variant": "narrow",
+      "run_id": "narrow_diagnostic_01",
+      "message_contract": {
+        "base": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.7818902319331413,
+            0.17434266394155934,
+            0.08507272867877824,
+            0.12704706248664904,
+            1.3187711384091885,
+            0.11675473256280178,
+            0.12393628819090241,
+            0.13024273279598947,
+            0.14617287467286696,
+            0.11280213945116703,
+            0.16865212420068354,
+            0.10954042573934218,
+            0.11773124505214749,
+            0.46577825514493776,
+            0.11871359864718803,
+            0.11469065765325119,
+            0.4504617587871535,
+            0.28346856095874934,
+            3.3023254063393783
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 9.248394625645876
+        },
+        "arm": {
+          "message_type": "quadrotor_msgs/PolynomialTrajectory",
+          "frame_id": "world",
+          "num_segment": 19,
+          "orders": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "durations": [
+            1.7818902319331413,
+            0.17434266394155934,
+            0.08507272867877824,
+            0.12704706248664904,
+            1.3187711384091885,
+            0.11675473256280178,
+            0.12393628819090241,
+            0.13024273279598947,
+            0.14617287467286696,
+            0.11280213945116703,
+            0.16865212420068354,
+            0.10954042573934218,
+            0.11773124505214749,
+            0.46577825514493776,
+            0.11871359864718803,
+            0.11469065765325119,
+            0.4504617587871535,
+            0.28346856095874934,
+            3.3023254063393783
+          ],
+          "expected_coefficients_per_axis": 114,
+          "actual_coefficients_per_axis": {
+            "x": 114,
+            "y": 114,
+            "z": 114
+          },
+          "total_duration": 9.248394625645876
+        }
+      },
+      "frequencies": {
+        "100Hz": {
+          "sample_dt_s": 0.01,
+          "base": {
+            "sample_count": 926,
+            "finite": true,
+            "position_min_m": [
+              -1.5227047521635488,
+              -0.5057352867019678,
+              0.7681491744718757
+            ],
+            "position_max_m": [
+              1.499999999999998,
+              0.4068369076156517,
+              1.5154218367809718
+            ],
+            "max_speed_m_s": 1.91679349620522,
+            "max_acceleration_m_s2": 6.456149857451168,
+            "path_length_m": 6.180249676931069,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.499999999999998,
+              -1.4432899320127035e-15,
+              1.4999999999999996
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 926,
+            "finite": true,
+            "position_min_m": [
+              -0.11652317221235942,
+              -0.08596284613786997,
+              -0.2087214219154055
+            ],
+            "position_max_m": [
+              0.07199481663334338,
+              0.015063422498777276,
+              -0.059999999999998915
+            ],
+            "max_speed_m_s": 0.1506768009610248,
+            "max_acceleration_m_s2": 1.3422698999846747,
+            "path_length_m": 0.9357113918386161,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -1.8041124150158794e-16,
+              -2.7755575615628914e-17,
+              -0.059999999999998915
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.016622217367410014,
+            "arm_min_clearance_m": 0.0644372925642617
+          }
+        },
+        "200Hz": {
+          "sample_dt_s": 0.005,
+          "base": {
+            "sample_count": 1851,
+            "finite": true,
+            "position_min_m": [
+              -1.5227051897590365,
+              -0.5057352867019678,
+              0.7681491744718757
+            ],
+            "position_max_m": [
+              1.499999999999998,
+              0.4068369076156517,
+              1.5154272821461825
+            ],
+            "max_speed_m_s": 1.91679349620522,
+            "max_acceleration_m_s2": 6.456149857451168,
+            "path_length_m": 6.180375898113426,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.499999999999998,
+              -1.4432899320127035e-15,
+              1.4999999999999996
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 1851,
+            "finite": true,
+            "position_min_m": [
+              -0.11653014519245368,
+              -0.08596725828760887,
+              -0.2087214219154055
+            ],
+            "position_max_m": [
+              0.07199554370984837,
+              0.015063697579790744,
+              -0.059999999999998915
+            ],
+            "max_speed_m_s": 0.1506768009610248,
+            "max_acceleration_m_s2": 1.3422698999846747,
+            "path_length_m": 0.9357473287879885,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -1.8041124150158794e-16,
+              -2.7755575615628914e-17,
+              -0.059999999999998915
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.016622217367410014,
+            "arm_min_clearance_m": 0.0644372925642617
+          }
+        },
+        "400Hz": {
+          "sample_dt_s": 0.0025,
+          "base": {
+            "sample_count": 3701,
+            "finite": true,
+            "position_min_m": [
+              -1.5227070951880057,
+              -0.5057352867019678,
+              0.7681471106247335
+            ],
+            "position_max_m": [
+              1.499999999999998,
+              0.4068369076156517,
+              1.5154272821461825
+            ],
+            "max_speed_m_s": 1.91679349620522,
+            "max_acceleration_m_s2": 6.456149857451168,
+            "path_length_m": 6.180407459487402,
+            "start_position_m": [
+              -1.5,
+              0.0,
+              1.5
+            ],
+            "end_position_m": [
+              1.499999999999998,
+              -1.4432899320127035e-15,
+              1.4999999999999996
+            ]
+          },
+          "arm_cartesian": {
+            "sample_count": 3701,
+            "finite": true,
+            "position_min_m": [
+              -0.11653014519245368,
+              -0.08596725828760887,
+              -0.2087214219154055
+            ],
+            "position_max_m": [
+              0.07199554370984837,
+              0.015063746862251662,
+              -0.059999999999998915
+            ],
+            "max_speed_m_s": 0.1506768009610248,
+            "max_acceleration_m_s2": 1.3426604185475461,
+            "path_length_m": 0.9357563151899598,
+            "start_position_m": [
+              0.0,
+              0.0,
+              -0.06
+            ],
+            "end_position_m": [
+              -1.8041124150158794e-16,
+              -2.7755575615628914e-17,
+              -0.059999999999998915
+            ]
+          },
+          "proxy_clearance": {
+            "base_radius_m": 0.08,
+            "arm_radius_m": 0.025,
+            "base_min_clearance_m": 0.016622217367410014,
+            "arm_min_clearance_m": 0.06443728509899152
+          }
+        }
+      },
+      "direction_constraint": {
+        "status": "not_encoded_in_PolynomialTrajectory",
+        "error_m": null,
+        "note": "Mode-2 axis semantics are validated from the official inter_info contract; the ROS polynomial message does not carry the original axis flag/vector, so no invented direction error is reported."
+      }
+    }
+  },
+  "nominal_repeat": {
+    "total_duration_abs_delta_s": 0.0,
+    "base_start_abs_delta_m": 0.0,
+    "base_end_abs_delta_m": 0.0,
+    "arm_start_abs_delta_m": 0.0,
+    "arm_end_abs_delta_m": 0.0,
+    "contract_match": true
+  }
+}

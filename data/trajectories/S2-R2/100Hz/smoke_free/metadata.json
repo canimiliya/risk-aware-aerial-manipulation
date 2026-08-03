@@ -1,0 +1,21 @@
+{
+  "task": "smoke_free",
+  "run_id": "smoke_free_run_08",
+  "git_commit": "a028f265c616be922e5ab0ccff907fcbeda06273",
+  "am_planner_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "message_type": "quadrotor_msgs/PolynomialTrajectory",
+  "source_evidence_path": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R2/runtime/smoke_free_run_08",
+  "coordinate_frame": "world",
+  "units": {
+    "time": "s (source uses ros::Duration/toSec)",
+    "position": "not encoded in PolynomialTrajectory; source convention is not re-invented here",
+    "yaw": "scalar with no unit annotation in message"
+  },
+  "sample_dt": 0.01,
+  "sample_frequency_hz": 100.0,
+  "segment_count": 19,
+  "total_duration": 6.184005797249569,
+  "export_time_utc": "2026-08-03T08:08:39.508033+00:00",
+  "exporter_version": "s1-r2-exporter-1.0",
+  "base_vs_arm": "same message type and fields; topic-specific captures are preserved separately"
+}

@@ -1,0 +1,4 @@
+{
+  "status": "pending",
+  "validator": "planner_bridge.validation.validate_exported_trajectory"
+}
