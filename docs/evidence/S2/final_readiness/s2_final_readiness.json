@@ -22,7 +22,7 @@
   },
   "audit_summary": {
     "s0_s1_s2_r0_to_r6": "all exit=0",
-    "pytest_tests_audit": "26 passed",
+    "pytest_tests_audit": "27 passed",
     "outputs": "external historical_audit_e1_final_20260804"
   },
   "evidence": [

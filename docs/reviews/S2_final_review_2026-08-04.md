@@ -7,7 +7,7 @@ S2-R0～S2-R6 的历史证据审计、无副作用回归、缺失 workspace summ
 ## 证据判定
 
 - S1、S2-R0 默认审计不再写回 tracked 历史 acceptance；S2-R0 `original` 与 `archival` 模式均有结构化缺失文件判定。
-- 历史链 S0、S1、S2-R0～S2-R6 全部 `exit=0`；`tests/audit` 为 `26 passed`。
+- 历史链 S0、S1、S2-R0～S2-R6 全部 `exit=0`；最终 `tests/audit` 为 `27 passed`。
 - S2-R6 的五路径 patch 含完整 `execution_envelope_barrier.h` 和 `new file mode 100644`；patch SHA、apply check、五文件 tree SHA、ABI 和 nominal/repeat 运行时证据均通过。
 - 100w0 候选在 100/200/400/800/2000 Hz 通过 joint、full-body proxy clearance、finite-output 和 direction；nominal repeat 轨迹逐点一致。
 

@@ -19,7 +19,7 @@
   },
   "audit": {
     "historical_chain": "S0/S1/S2-R0/S2-R1/S2-R2/S2-R3/S2-R4/S2-R5/S2-R6 all exit=0",
-    "pytest_tests_audit": "26 passed",
+    "pytest_tests_audit": "27 passed",
     "side_effect_free": true,
     "s2_r6_patch_reproducible": true
   },
@@ -35,7 +35,9 @@
     "url": "https://github.com/canimiliya/risk-aware-aerial-manipulation/pull/10",
     "merge_policy": "ordinary_merge_only",
     "merge_commit": "8df48d2b4edc0d219ad8eb3a9b211fb291daf2ab",
-    "main_head": "8df48d2b4edc0d219ad8eb3a9b211fb291daf2ab",
+    "main_head": "90ae58e6d65afc754437572eae1f3228fd522d42",
+    "status_reconciliation_pr": 11,
+    "status_reconciliation_merge_commit": "90ae58e6d65afc754437572eae1f3228fd522d42",
     "s3_authorized": false
   },
   "scope_boundary": "No S3/Isaac Lab or later research stage was started."
