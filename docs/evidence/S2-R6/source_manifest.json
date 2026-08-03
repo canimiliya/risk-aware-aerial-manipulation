@@ -1,0 +1,28 @@
+{
+  "source_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "source_clone": "/home/amplanner/am-planner-s2-r6-ws/src/am-planner",
+  "source_clone_policy": "independent WSL clone; build/devel/install/logs not copied from the validated source workspace",
+  "wsl_distribution": "AMPlanner-Ubuntu20",
+  "python": "3.9.23",
+  "torch": "2.7.1+cu128",
+  "gpu": "RTX 5060 Ti",
+  "cuda_available": true,
+  "allowed_algorithm_files": [
+    "src/plan/traj_opt/include/traj_opt/config.h",
+    "src/plan/traj_opt/include/se3gcopter/minco_arm.h",
+    "src/plan/traj_opt/include/se3gcopter/execution_envelope_barrier.h"
+  ],
+  "allowed_compatibility_files": [
+    "src/plan/traj_opt/CMakeLists.txt",
+    "src/plan/plan_manage/CMakeLists.txt"
+  ],
+  "s1_compatibility_cmake_sha256": {
+    "src/plan/traj_opt/CMakeLists.txt": "14cc4ce6532bd6f80b977d439e7c7e2c4d0b72013b1545bacce56161acc831a3",
+    "src/plan/plan_manage/CMakeLists.txt": "b6446780352b9962fff8c7089326e8a26ddc565fe06f86ca8e0ed906c0e65b1b"
+  },
+  "patch": "third_party/patches/AM-Planner_S2-R6_execution_envelope.patch",
+  "patch_sha256": "3461c3119a390f73bc2ba545903297692db473d09272024b1327b8e0375f3288",
+  "patch_is_external_clone_diff": true,
+  "algorithm_abi_changed": false,
+  "gpu_runtime_contract": ["se3_node", "CUDA", "JPS", "MINCO", "/trajectory", "/trajectory_arm"]
+}

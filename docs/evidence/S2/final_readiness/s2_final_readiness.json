@@ -1,5 +1,5 @@
 {
-  "decision": "NOT_READY_S2_R5_REQUIRES_ALGORITHM_CONSTRAINT",
+  "decision": "NOT_READY_S2_R6_SUBMITTED_FOR_REVIEW",
   "errors": [],
   "warnings": [],
   "s2_status": "IN_PROGRESS",
@@ -16,8 +16,14 @@
     "direction_contract": true,
     "algorithm_design_audit": true,
     "s2_r5_evidence_audit": true
+    ,"s2_r6_continuous_execution_envelope": true
+    ,"s2_r6_candidate_hard_gates": true
+    ,"s2_r6_multirate": true
+    ,"s2_r6_ablation": true
+    ,"s2_r6_direction": true
+    ,"s2_r6_evidence_audit": true
   },
-  "blocking_reason": "Three bounded task-level rounds retained official ABI and geometry but did not produce a continuous joint-feasible trajectory; Round3 also failed the 0.010 m full-body clearance gate.",
+  "blocking_reason": "S2-R6 method/evidence gates pass, but S2 remains IN_PROGRESS pending senior review and formal S2 closure; this record does not authorize S3-S8.",
   "evidence": [
     "docs/reports/S2-R3_execution_kinematics_collision_report.md",
     "docs/evidence/S2-R3/validation/s2_r3_execution_validation.json",
@@ -31,6 +37,12 @@
     "docs/evidence/S2-R5/rounds/round_2/round_summary.json",
     "docs/evidence/S2-R5/rounds/round_3/round_summary.json",
     "docs/evidence/S2-R5/final_validation/frequency_convergence.json",
-    "docs/evidence/S2-R5/s2_r5_audit.json"
+    "docs/evidence/S2-R5/s2_r5_audit.json",
+    "docs/reports/S2-R6_continuous_execution_envelope_report.md",
+    "docs/milestones/S2_R6_status.md",
+    "docs/evidence/S2-R6/s2_r6_audit.json",
+    "docs/evidence/S2-R6/final_validation/candidate_summary.json",
+    "docs/evidence/S2-R6/final_validation/frequency_convergence.json",
+    "docs/evidence/S2-R6/final_validation/repeatability.json"
   ]
 }

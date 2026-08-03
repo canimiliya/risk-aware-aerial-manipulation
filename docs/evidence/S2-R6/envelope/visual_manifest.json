@@ -1,0 +1,17 @@
+{
+  "png": [
+    "01_anchor_ball_envelope.png",
+    "02_arm_path_baseline_enabled.png",
+    "03_q_before_after.png",
+    "04_joint_margin_before_after.png",
+    "05_clearance_before_after.png",
+    "06_barrier_diagnostics.png",
+    "07_weight_candidates.png",
+    "08_frequency_convergence.png"
+  ],
+  "local_animation": [
+    "09_nominal_repeat_overlay.gif",
+    "10_narrow_boundary.gif"
+  ],
+  "submission_policy": "PNG and manifest are review artifacts; GIF files remain local and are not submitted."
+}

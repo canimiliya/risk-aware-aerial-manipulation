@@ -1,0 +1,86 @@
+{
+  "smoke_final_100w0": {
+    "capture_exit": 0,
+    "nominal_hard_gate_pass": true,
+    "q_min_rad_2000": [
+      0.11847523114383596,
+      0.033069790529775434,
+      0.15798985216494277
+    ],
+    "q_max_rad_2000": [
+      0.3326922341684555,
+      0.3017062354974236,
+      0.33607777111755066
+    ],
+    "clearance_m_2000": 0.0889593416550742,
+    "dangerous_component": "rotor_4",
+    "dangerous_time_s": 1.3505,
+    "direction_pass": true,
+    "final_cost": 3042.46,
+    "planning_time_ms": 157419.0,
+    "arm_jerk_cost": 0.046205848965500174
+  },
+  "loose_final_100w0": {
+    "capture_exit": 0,
+    "nominal_hard_gate_pass": true,
+    "q_min_rad_2000": [
+      0.1572472721616187,
+      0.04435747145233826,
+      0.15798985216494277
+    ],
+    "q_max_rad_2000": [
+      0.34248730313157716,
+      0.3008511731688963,
+      0.36340345152164777
+    ],
+    "clearance_m_2000": 0.11125212877542122,
+    "dangerous_component": "rotor_4",
+    "dangerous_time_s": 1.1445,
+    "direction_pass": true,
+    "final_cost": 2988.45,
+    "planning_time_ms": 143795.0,
+    "arm_jerk_cost": 0.2417514890384478
+  },
+  "nominal_repeat_final_100w0": {
+    "capture_exit": 0,
+    "nominal_hard_gate_pass": true,
+    "q_min_rad_2000": [
+      0.15798985216494277,
+      0.049664737476765364,
+      0.15798985216494277
+    ],
+    "q_max_rad_2000": [
+      0.31912040362251615,
+      0.3022411696556315,
+      0.3410338648190958
+    ],
+    "clearance_m_2000": 0.09210197487032999,
+    "dangerous_component": "rotor_4",
+    "dangerous_time_s": 1.3675,
+    "direction_pass": true,
+    "final_cost": 3061.5,
+    "planning_time_ms": 155169.0,
+    "arm_jerk_cost": 0.17043677212987784
+  },
+  "narrow_final_100w0": {
+    "capture_exit": 0,
+    "nominal_hard_gate_pass": true,
+    "q_min_rad_2000": [
+      0.15798985216494277,
+      0.042088291513720844,
+      0.15534492928348964
+    ],
+    "q_max_rad_2000": [
+      0.32885599915971553,
+      0.3019490251832615,
+      0.34345159869907294
+    ],
+    "clearance_m_2000": 0.11010463911647692,
+    "dangerous_component": "rotor_4",
+    "dangerous_time_s": 1.287,
+    "direction_pass": true,
+    "final_cost": 3077.57,
+    "planning_time_ms": 124421.0,
+    "arm_jerk_cost": 0.033972450302924215
+  }
+}

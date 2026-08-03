@@ -1,0 +1,29 @@
+{
+  "source_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "round1_baseline": true,
+  "anchor_count": 64,
+  "radius_m": 0.0015,
+  "tau0": 2.2500000000000002e-07,
+  "workspace_sampling": {
+    "fixed_seed": 20260804,
+    "random_fk_sample_count": 1000000,
+    "random_fk_valid_count": 1000000,
+    "corner_count": 8,
+    "corner_fk_valid_count": 8,
+    "boundary_layer_sample_count": 36000,
+    "boundary_fk_valid_count": 36000,
+    "branch": "[0, pi/2]",
+    "random_q_min_rad": [
+      5.598360338954799e-06,
+      1.5835469294521702e-06,
+      3.989981874681251e-06
+    ],
+    "random_q_max_rad": [
+      1.5707950722068145,
+      1.5707946108750057,
+      1.5707940135752514
+    ]
+  },
+  "local_certification": "local_certification.json",
+  "numeric_conservative_only": true
+}

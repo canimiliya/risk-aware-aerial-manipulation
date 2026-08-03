@@ -1,0 +1,15 @@
+{
+  "reference": "nominal_100w0",
+  "repeat": "nominal_repeat_final_100w0",
+  "sample_count_reference": 10447,
+  "sample_count_repeat": 10447,
+  "max_abs_arm_position_delta_m": 0.0,
+  "rms_arm_position_delta_m": 0.0,
+  "q_min_delta_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "clearance_delta_m": 0.0,
+  "gate_both_pass": true
+}

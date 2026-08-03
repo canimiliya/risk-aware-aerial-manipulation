@@ -1,0 +1,33 @@
+<launch>
+    <arg name="task" default="nominal" />
+    <arg name="resolution" default="0.03" />
+    <arg name="envelope_config" default="/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R6/configs/s2_r6_disabled.yaml" />
+    <param name="mode" type="int" value="3" />
+    <rosparam file="/mnt/d/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation/docs/evidence/S2-R5/rounds/round_1/tasks.yaml" command="load" />
+    <param name="task" type="string" value="$(arg task)" />
+    <param name="num_pre_point" type="int" value="0" />
+    <param name="num_post_point" type="int" value="0" />
+    <param name="scale" type="double" value="1.0" />
+    <param name="staticR" type="double" value="0.08" />
+    <param name="dynar" type="double" value="0.025" />
+    <param name="upper_arm" type="double" value="0.100" />
+    <param name="lower_arm" type="double" value="0.160" />
+    <param name="rate" type="double" value="100.0" />
+    <param name="mass" type="double" value="0.98" />
+    <param name="debug" type="bool" value="false" />
+    <param name="debug_endEffector" value="false" />
+    <param name="object_height" type="double" value="0.1" />
+    <node pkg="plan_manage" type="se3_node" name="se3_node" output="screen">
+        <param name="use_quadrotor_odom" value="false" />
+        <param name="use_object_odom" value="false" />
+        <param name="MapTopic" value="/global_map" />
+        <remap from="~trajectory" to="/trajectory" />
+        <remap from="~trajectory_arm" to="/trajectory_arm" />
+        <rosparam file="$(find plan_manage)/misc/grasp.yaml" command="load" />
+        <rosparam file="$(arg envelope_config)" command="load" />
+        <param name="overlap" value="5" type="int" />
+    </node>
+    <include file="$(find plan_manage)/misc/jps3d.xml">
+        <arg name="resolution" value="$(arg resolution)" />
+    </include>
+</launch>

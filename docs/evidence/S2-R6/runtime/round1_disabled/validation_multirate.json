@@ -1,0 +1,235 @@
+{
+  "run_dir": "docs/evidence/S2-R6/runtime/round1_disabled",
+  "capture_exit": 0,
+  "rates": {
+    "100": {
+      "sample_count": 528,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        -0.02747960714817954,
+        0.12889457614016964
+      ],
+      "q_max_rad": [
+        0.33562728115234775,
+        0.30207779964711334,
+        0.3397773480137354
+      ],
+      "joint_margin_min_rad": -0.02747960714817954,
+      "max_fk_residual_m": 1.684312873076166e-16,
+      "component_min_clearance_m": {
+        "body": 0.2279374787468389,
+        "rotor_1": 0.23237449691989098,
+        "rotor_2": 0.4626606776910552,
+        "rotor_3": 0.25760203621162925,
+        "rotor_4": 0.10923679796902869,
+        "upper_arm_1": 0.43228395605417835,
+        "upper_arm_2": 0.37721941406695736,
+        "upper_arm_3": 0.3504338164348582,
+        "lower_arm_1_left": 0.3603258097273337,
+        "lower_arm_1_right": 0.3582825469876105,
+        "lower_arm_2_left": 0.3531937315905586,
+        "lower_arm_2_right": 0.3516444105914139,
+        "lower_arm_3_left": 0.34191385878658,
+        "lower_arm_3_right": 0.3585152684808424,
+        "moving_platform": 0.3407323688830839,
+        "end_effector": 0.3407323688830839
+      },
+      "min_full_body_clearance_m": 0.10923679796902869,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.26,
+      "joint_gate_pass": false,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "200": {
+      "sample_count": 1056,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        -0.02748423866050076,
+        0.12888821943372264
+      ],
+      "q_max_rad": [
+        0.33562728115234775,
+        0.30216766147758944,
+        0.3397773480137354
+      ],
+      "joint_margin_min_rad": -0.02748423866050076,
+      "max_fk_residual_m": 1.684312873076166e-16,
+      "component_min_clearance_m": {
+        "body": 0.2279374787468389,
+        "rotor_1": 0.23237449691989098,
+        "rotor_2": 0.4626606776910552,
+        "rotor_3": 0.2575240276592875,
+        "rotor_4": 0.10536682251885507,
+        "upper_arm_1": 0.43228395605417835,
+        "upper_arm_2": 0.3771783844195668,
+        "upper_arm_3": 0.3504338164348582,
+        "lower_arm_1_left": 0.3603258097273337,
+        "lower_arm_1_right": 0.3582129538409862,
+        "lower_arm_2_left": 0.3531937315905586,
+        "lower_arm_2_right": 0.3516444105914139,
+        "lower_arm_3_left": 0.3418618607282019,
+        "lower_arm_3_right": 0.358503382012214,
+        "moving_platform": 0.34071456015996265,
+        "end_effector": 0.34071456015996265
+      },
+      "min_full_body_clearance_m": 0.10536682251885507,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.2550000000000001,
+      "joint_gate_pass": false,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "400": {
+      "sample_count": 2112,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        -0.02748605147052019,
+        0.128887234120598
+      ],
+      "q_max_rad": [
+        0.33562728115234775,
+        0.30216766147758944,
+        0.33978500267104783
+      ],
+      "joint_margin_min_rad": -0.02748605147052019,
+      "max_fk_residual_m": 1.684312873076166e-16,
+      "component_min_clearance_m": {
+        "body": 0.22793191450864753,
+        "rotor_1": 0.23237449691989098,
+        "rotor_2": 0.46265296994077826,
+        "rotor_3": 0.2575240276592875,
+        "rotor_4": 0.10536682251885507,
+        "upper_arm_1": 0.4322750372418081,
+        "upper_arm_2": 0.3771783844195668,
+        "upper_arm_3": 0.3504338164348582,
+        "lower_arm_1_left": 0.3603258097273337,
+        "lower_arm_1_right": 0.3582129538409862,
+        "lower_arm_2_left": 0.3531928258623957,
+        "lower_arm_2_right": 0.35162797670355006,
+        "lower_arm_3_left": 0.3418494104711362,
+        "lower_arm_3_right": 0.35849116192811886,
+        "moving_platform": 0.3407056697477124,
+        "end_effector": 0.3407056697477124
+      },
+      "min_full_body_clearance_m": 0.10536682251885507,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.2550000000000001,
+      "joint_gate_pass": false,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "800": {
+      "sample_count": 4224,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        -0.027486178605338196,
+        0.12888668037584772
+      ],
+      "q_max_rad": [
+        0.335627583841545,
+        0.30216766147758944,
+        0.33978500267104783
+      ],
+      "joint_margin_min_rad": -0.027486178605338196,
+      "max_fk_residual_m": 1.684312873076166e-16,
+      "component_min_clearance_m": {
+        "body": 0.22793099561552432,
+        "rotor_1": 0.23237449691989098,
+        "rotor_2": 0.46265296994077826,
+        "rotor_3": 0.25751487845937965,
+        "rotor_4": 0.10536682251885507,
+        "upper_arm_1": 0.4322750372418081,
+        "upper_arm_2": 0.3771783844195668,
+        "upper_arm_3": 0.35043169677359387,
+        "lower_arm_1_left": 0.3603258097273337,
+        "lower_arm_1_right": 0.3582129538409862,
+        "lower_arm_2_left": 0.35318894131172474,
+        "lower_arm_2_right": 0.35162797670355006,
+        "lower_arm_3_left": 0.3418460433214739,
+        "lower_arm_3_right": 0.35849116192811886,
+        "moving_platform": 0.3407056697477124,
+        "end_effector": 0.3407056697477124
+      },
+      "min_full_body_clearance_m": 0.10536682251885507,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.2550000000000001,
+      "joint_gate_pass": false,
+      "full_body_gate_pass": true,
+      "finite": true
+    },
+    "2000": {
+      "sample_count": 10559,
+      "ik_no_solution_count": 0,
+      "q_min_rad": [
+        0.15798985216494277,
+        -0.027486350196529452,
+        0.12888662404895923
+      ],
+      "q_max_rad": [
+        0.33562767234426083,
+        0.30216766147758944,
+        0.3397851861372114
+      ],
+      "joint_margin_min_rad": -0.027486350196529452,
+      "max_fk_residual_m": 1.8818979673740404e-16,
+      "component_min_clearance_m": {
+        "body": 0.22793058888420803,
+        "rotor_1": 0.23217829247220576,
+        "rotor_2": 0.46265235036684005,
+        "rotor_3": 0.257515172927308,
+        "rotor_4": 0.10536682251885507,
+        "upper_arm_1": 0.43227413587805485,
+        "upper_arm_2": 0.3771782152677867,
+        "upper_arm_3": 0.35043061260700437,
+        "lower_arm_1_left": 0.36032495339244763,
+        "lower_arm_1_right": 0.3582129538409862,
+        "lower_arm_2_left": 0.3531890222420178,
+        "lower_arm_2_right": 0.35162797670355006,
+        "lower_arm_3_left": 0.341845180620152,
+        "lower_arm_3_right": 0.3584906825708458,
+        "moving_platform": 0.34070461724523926,
+        "end_effector": 0.34070461724523926
+      },
+      "min_full_body_clearance_m": 0.10536682251885507,
+      "dangerous_component": "rotor_4",
+      "dangerous_time_s": 1.2550000000000001,
+      "joint_gate_pass": false,
+      "full_body_gate_pass": true,
+      "finite": true
+    }
+  },
+  "direction": {
+    "P2_to_P3_delta_A0_m": [
+      0.006371985877756186,
+      0.0,
+      0.0
+    ],
+    "P3_to_P4_delta_A0_m": [
+      -0.003185992938878093,
+      0.005518301642692522,
+      4.163336342344337e-17
+    ],
+    "direction_error_m": 4.163336342344337e-17,
+    "pass": true,
+    "task_points_unchanged": true
+  },
+  "diagnostics": {
+    "record_count": 0,
+    "min_g": null,
+    "max_active_samples": null,
+    "max_violation": null,
+    "max_barrier_cost": null,
+    "integration_samples": [],
+    "final_cost": 3038.32,
+    "planning_time_ms": 174050.0,
+    "records": []
+  },
+  "arm_jerk_cost": 0.3282412784949953,
+  "nominal_hard_gate_pass": false,
+  "algorithm_output_unmodified": true
+}

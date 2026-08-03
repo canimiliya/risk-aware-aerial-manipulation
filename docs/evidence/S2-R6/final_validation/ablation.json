@@ -1,0 +1,35 @@
+{
+  "A0_disabled": {
+    "run": "round1_disabled",
+    "q_min_rad_2000": [
+      0.15798985216494277,
+      -0.027486350196529452,
+      0.12888662404895923
+    ],
+    "clearance_m_2000": 0.10536682251885507,
+    "direction_pass": true,
+    "final_cost": 3038.32,
+    "planning_time_ms": 174050.0,
+    "arm_jerk_cost": 0.3282412784949953
+  },
+  "A1_enabled": {
+    "run": "nominal_100w0",
+    "q_min_rad_2000": [
+      0.15798985216494277,
+      0.049664737476765364,
+      0.15798985216494277
+    ],
+    "clearance_m_2000": 0.09210197487032999,
+    "direction_pass": true,
+    "final_cost": 3061.5,
+    "planning_time_ms": 150450.0,
+    "arm_jerk_cost": 0.17043677212987784,
+    "final_output_envelope": {
+      "min_g_m2": -1.4401189032693615e-05,
+      "active_samples": 4954,
+      "max_violation_m2": 1.4401189032693615e-05,
+      "integral_v3_s": 9.375363981589439e-16
+    },
+    "path_length_m": 0.08052330711160792
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "baseline_run": "docs/evidence/S2-R6/runtime/round1_disabled",
+  "baseline_final_cost_from_roslaunch": 3038.323,
+  "baseline_arm_jerk_cost_from_exported_coefficients": 0.3282412784949961,
+  "analysis_sample_hz": 2000,
+  "adaptive_dt_s": 0.0005,
+  "raw_barrier_min_g": -1.881985513658069e-05,
+  "raw_barrier_max_violation": 1.881985513658069e-05,
+  "raw_barrier_active_samples": 6802,
+  "raw_integral_v3_s": 3.808358359237889e-15,
+  "tau0": 2.2500000000000002e-07,
+  "w0": 861897036813.2117,
+  "target_initial_barrier_cost": 0.003282412784949961,
+  "target_fraction_of_baseline_arm_jerk": 0.01,
+  "weight_candidates": {
+    "w0": 861897036813.2117,
+    "10w0": 8618970368132.117,
+    "100w0": 86189703681321.17
+  },
+  "selection_rule": "first candidate passing joint, clearance, and direction hard gates; no tau sweep"
+}
