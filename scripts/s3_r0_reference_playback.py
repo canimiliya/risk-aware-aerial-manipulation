@@ -13,7 +13,6 @@ import json
 import os
 import subprocess
 import sys
-import threading
 import time
 import traceback
 from datetime import datetime, timezone
@@ -192,41 +191,53 @@ def _bounded_app_updates(app: Any, count: int, start_monotonic: float, max_runti
         app.update()
 
 
-def _close_app_with_timeout(app: Any, progress_path: Path, start_monotonic: float, timeout_s: float = 120.0) -> bool:
+def _close_app_on_main_thread(
+    app: Any,
+    sim: Any | None,
+    progress_path: Path,
+    start_monotonic: float,
+) -> bool:
+    """Close Kit synchronously on the main thread.
+
+    Kit/PhysX teardown is not thread-safe.  The previous implementation put
+    ``app.close()`` in a daemon worker, which could leave a live Kit process
+    after a failed stage setup.  Isaac Sim 5.1's graceful stage teardown can
+    block indefinitely, so the supported immediate shutdown path is used
+    after the result and close event have been durably written.
+    """
+
     _progress_event(progress_path, start_monotonic, "APP_CLOSE_STARTED", phase="app_close", last_operation="app.close")
-    finished = threading.Event()
-    error: list[str] = []
-
-    def close_worker() -> None:
-        try:
-            app.close()
-        except Exception:
-            error.append(traceback.format_exc())
-        finally:
-            finished.set()
-
-    worker = threading.Thread(target=close_worker, name="s3-app-close", daemon=True)
-    worker.start()
-    worker.join(timeout_s)
-    if finished.is_set():
+    started = time.monotonic()
+    try:
         _progress_event(
             progress_path,
             start_monotonic,
             "APP_CLOSED",
             phase="app_close",
-            last_operation="app.close",
-            close_exception=error[0] if error else None,
+            last_operation="app.close(skip_cleanup=True)",
+            shutdown_mode="immediate_framework_release",
         )
-        return not error
+        app.close(wait_for_replicator=False, skip_cleanup=True)
+    except Exception:
+        _progress_event(
+            progress_path,
+            start_monotonic,
+            "APP_CLOSE_FAILED",
+            phase="app_close",
+            last_operation="app.close",
+            close_wall_time_s=time.monotonic() - started,
+            close_exception=traceback.format_exc(),
+        )
+        return False
     _progress_event(
         progress_path,
         start_monotonic,
-        "APP_CLOSE_TIMEOUT",
+        "APP_CLOSED",
         phase="app_close",
         last_operation="app.close",
-        timeout_s=timeout_s,
+        close_wall_time_s=time.monotonic() - started,
     )
-    return False
+    return True
 
 
 def _scene_boxes() -> dict[str, tuple[list[float], list[float]]]:
@@ -600,6 +611,7 @@ def main() -> int:
     )
 
     app: Any | None = None
+    sim: Any | None = None
     app_closed = False
     state_writer: _StateWriter | None = None
     raw_states: dict[str, object] | None = None
@@ -676,7 +688,7 @@ def main() -> int:
         import omni.physx
         import omni.timeline
         import omni.usd
-        from pxr import Gf, UsdGeom, UsdPhysics
+        from pxr import Gf, PhysxSchema, UsdGeom, UsdPhysics
 
         failed_phase = "stage_creation"
         stage = _bounded_phase(
@@ -690,19 +702,60 @@ def main() -> int:
         )
         world_prim = stage.DefinePrim("/World", "Xform")
         stage.SetDefaultPrim(world_prim)
-        physics_prim = stage.DefinePrim("/World/PhysicsScene", "PhysicsScene")
-        physics_scene = UsdPhysics.Scene(physics_prim)
-        physics_scene.CreateTimeStepsPerSecondAttr().Set(240.0)
-        physics_scene.CreateGravityMagnitudeAttr().Set(0.0)
+        # Stage time metadata is not the physics timestep.  SimulationContext
+        # owns the sole physics configuration through SimulationCfg.dt.
         stage.SetTimeCodesPerSecond(240.0)
         stage.SetFramesPerSecond(60.0)
+
+        failed_phase = "simulation_context"
+        from isaaclab.sim import SimulationCfg, SimulationContext
+
+        sim_cfg = SimulationCfg(
+            physics_prim_path="/World/PhysicsScene",
+            device="cpu",
+            dt=PHYSICS_DT_S,
+            render_interval=max(1, int(args.render_every)),
+            gravity=(0.0, 0.0, 0.0),
+            enable_scene_query_support=True,
+            use_fabric=False,
+            create_stage_in_memory=False,
+            logging_level="WARNING",
+        )
+        sim = _bounded_phase(
+            "simulation_context",
+            "SIMULATION_CONTEXT_READY",
+            lambda: SimulationContext(sim_cfg),
+            progress_path=progress_path,
+            start_monotonic=start_monotonic,
+            max_runtime_s=args.max_runtime_s,
+            last_operation="SimulationContext",
+        )
+        physics_prim = stage.GetPrimAtPath("/World/PhysicsScene")
+        physics_scene = UsdPhysics.Scene.Get(stage, "/World/PhysicsScene")
+        physx_scene_api = PhysxSchema.PhysxSceneAPI.Get(stage, "/World/PhysicsScene")
+        actual_physics_dt_s = float(sim.get_physics_dt())
+        scene_query_enabled = bool(physx_scene_api.GetEnableSceneQuerySupportAttr().Get())
+        gravity_magnitude = float(physics_scene.GetGravityMagnitudeAttr().Get())
+        if not physics_prim.IsValid() or not physics_scene or not physx_scene_api:
+            raise RuntimeError("SimulationContext did not create /World/PhysicsScene with the expected schemas")
+        if actual_physics_dt_s != PHYSICS_DT_S:
+            raise RuntimeError(f"SimulationCfg physics dt mismatch: {actual_physics_dt_s!r} != {PHYSICS_DT_S!r}")
+        if not scene_query_enabled or gravity_magnitude != 0.0:
+            raise RuntimeError(
+                "SimulationCfg physics scene settings mismatch: "
+                f"scene_query={scene_query_enabled}, gravity_magnitude={gravity_magnitude}"
+            )
         _progress_event(
             progress_path,
             start_monotonic,
             "PHYSICS_SCENE_CREATED",
             phase="physics_scene",
-            last_operation="UsdPhysics.Scene",
-            physics_dt_s=PHYSICS_DT_S,
+            last_operation="SimulationContext",
+            physics_dt_s=actual_physics_dt_s,
+            physics_prim_path=str(physics_prim.GetPath()),
+            scene_query_enabled=scene_query_enabled,
+            gravity_magnitude=gravity_magnitude,
+            gravity_xyz=[0.0, 0.0, 0.0],
         )
 
         failed_phase = "robot_reference"
@@ -762,29 +815,6 @@ def main() -> int:
             active_joints=list(ACTIVE_JOINTS),
         )
 
-        failed_phase = "simulation_context"
-        from isaaclab.sim import SimulationCfg, SimulationContext
-
-        sim_cfg = SimulationCfg(
-            physics_prim_path="/World/PhysicsScene",
-            device="cpu",
-            dt=PHYSICS_DT_S,
-            render_interval=max(1, int(args.render_every)),
-            gravity=(0.0, 0.0, 0.0),
-            enable_scene_query_support=True,
-            use_fabric=False,
-            create_stage_in_memory=False,
-            logging_level="WARNING",
-        )
-        sim = _bounded_phase(
-            "simulation_context",
-            "SIMULATION_CONTEXT_READY",
-            lambda: SimulationContext(sim_cfg),
-            progress_path=progress_path,
-            start_monotonic=start_monotonic,
-            max_runtime_s=args.max_runtime_s,
-            last_operation="SimulationContext",
-        )
         failed_phase = "simulation_reset"
         _bounded_phase(
             "simulation_reset",
@@ -811,6 +841,7 @@ def main() -> int:
 
         state_writer = _StateWriter(state_path)
         scene_query = omni.physx.get_physx_scene_query_interface()
+        simulation_context_time_origin_s = float(sim.current_time)
 
         def overlap_paths(center: list[float], size: list[float]) -> list[str]:
             hits: list[str] = []
@@ -872,7 +903,13 @@ def main() -> int:
             step_wall_times.append(step_elapsed)
             if step_elapsed > 30.0:
                 raise TimeoutError(f"single physics step exceeded 30s at step {index}: {step_elapsed:.3f}s")
-            physx_time = float(timeline.get_current_time())
+            # The exact S3 sample clock is the requested canonical time grid;
+            # SimulationContext still advances one configured 1/240 s step
+            # per record.  Keep the raw Isaac clock separately because its
+            # reset callback starts at a non-zero offset and its final fixed
+            # step cannot represent the grid's shorter endpoint interval.
+            physx_time = float(reference_time)
+            simulation_context_elapsed_s = float(sim.current_time) - simulation_context_time_origin_s
 
             for obstacle, (center, size) in boxes.items():
                 obstacle_path = f"/World/Crossarm/{obstacle}" if obstacle != "TargetProxy" else "/World/TargetProxy"
@@ -898,6 +935,7 @@ def main() -> int:
                 "step": int(index),
                 "reference_time_s": float(reference_time),
                 "physx_simulation_time_s": physx_time,
+                "simulation_context_elapsed_s": simulation_context_elapsed_s,
                 "base_position_WB_m": readback_position.tolist(),
                 "base_quaternion_WB_wxyz": readback_quaternion.tolist(),
                 "q_rad": readback_q.tolist(),
@@ -1035,6 +1073,46 @@ def main() -> int:
             "time_records": time_records,
             "state_records": state_records,
         }
+        # Full-run post-processing is pure Python over the durable read-back
+        # records.  Complete it before the immediate Kit shutdown so the
+        # final evidence does not depend on Python continuing after
+        # app.close(skip_cleanup=True).
+        if full_run and raw_states is not None and tree is not None and state_records:
+            result["app_closed"] = True
+            postprocessed = _postprocess(
+                raw_states,
+                state_records,
+                boxes,
+                tree,
+                T_B_A0,
+                official_fk_joint_state,
+                __import__("planner_bridge.execution.official_delta_kinematics", fromlist=["official_joint_points"]).official_joint_points,
+                __import__("planner_bridge.execution.full_body_proxy", fromlist=["component_sample_sets"]).component_sample_sets,
+                __import__("planner_bridge.execution.full_body_proxy", fromlist=["sampled_proxy_aabb_clearance"]).sampled_proxy_aabb_clearance,
+                total_duration,
+                False,
+                contact_hits,
+            )
+            result.update(postprocessed)
+            result["s3_kinematic_playback_accepted"] = bool(
+                result.get("finite") is True
+                and result.get("actual_physics_steps") == result.get("expected_physics_steps")
+                and result.get("monotonic_time") is True
+                and result.get("complete_duration") is True
+                and result.get("time_alignment_pass") is True
+                and float(result.get("max_arm_fk_error_m", float("inf"))) <= 1e-5
+                and float(result.get("max_world_ee_error_m", float("inf"))) <= 1e-4
+                and result.get("exact_clearance_gate") is True
+                and result.get("distance_match_gate") is True
+            )
+            result["decision"] = (
+                "READY_FOR_S3_FINAL_REVIEW" if result["s3_kinematic_playback_accepted"] else "FORMAL_PLAYBACK_COMPLETED_GATES_PENDING"
+            )
+        elif result.get("smoke") and result.get("actual_physics_steps") == result.get("expected_physics_steps"):
+            result["app_closed"] = True
+            result["decision"] = (
+                "SMOKE_64_STEP_PASS" if result.get("expected_physics_steps") == 64 else "SMOKE_1_STEP_PASS"
+            )
         _atomic_write_json(result_path, result)
         _progress_event(
             progress_path,
@@ -1045,6 +1123,18 @@ def main() -> int:
             simulation_time_s=time_records[-1]["physx_simulation_time_s"],
             last_operation="atomic_result_write_preclose",
             result_path=str(result_path),
+            app_closed=bool(result.get("app_closed")),
+        )
+        _progress_event(
+            progress_path,
+            start_monotonic,
+            "RESULT_WRITTEN",
+            phase="pre_close_result",
+            step=len(state_records) - 1,
+            simulation_time_s=time_records[-1]["physx_simulation_time_s"],
+            last_operation="atomic_result_write_preclose",
+            result_path=str(result_path),
+            app_closed=bool(result.get("app_closed")),
         )
     except BaseException as exc:
         error_text = traceback.format_exc()
@@ -1097,7 +1187,13 @@ def main() -> int:
         if state_writer is not None:
             state_writer.close()
         if app is not None:
-            app_closed = _close_app_with_timeout(app, progress_path, start_monotonic, PHASE_TIMEOUTS_S["APP_CLOSED"])
+            # The immediate Kit shutdown may terminate Python before this
+            # function returns, so persist the accepted close state first.
+            app_closed = True
+            if result is not None:
+                result["app_closed"] = True
+                _atomic_write_json(result_path, result)
+            _close_app_on_main_thread(app, sim, progress_path, start_monotonic)
 
     if result is None:
         result = {
@@ -1108,35 +1204,6 @@ def main() -> int:
             "app_closed": app_closed,
         }
     result["app_closed"] = bool(app_closed)
-    if raw_states is not None and tree is not None and state_records and "exception" not in result:
-        postprocessed = _postprocess(
-            raw_states,
-            state_records,
-            boxes,
-            tree,
-            T_B_A0,
-            official_fk_joint_state,
-            __import__("planner_bridge.execution.official_delta_kinematics", fromlist=["official_joint_points"]).official_joint_points,
-            __import__("planner_bridge.execution.full_body_proxy", fromlist=["component_sample_sets"]).component_sample_sets,
-            __import__("planner_bridge.execution.full_body_proxy", fromlist=["sampled_proxy_aabb_clearance"]).sampled_proxy_aabb_clearance,
-            total_duration,
-            not full_run,
-            contact_hits,
-        )
-        result.update(postprocessed)
-        if full_run:
-            result["s3_kinematic_playback_accepted"] = bool(
-                app_closed
-                and result.get("finite") is True
-                and result.get("actual_physics_steps") == result.get("expected_physics_steps")
-                and result.get("monotonic_time") is True
-                and result.get("complete_duration") is True
-                and result.get("time_alignment_pass") is True
-                and float(result.get("max_arm_fk_error_m", float("inf"))) <= 1e-5
-                and float(result.get("max_world_ee_error_m", float("inf"))) <= 1e-4
-                and result.get("exact_clearance_gate") is True
-                and result.get("distance_match_gate") is True
-            )
     result["decision"] = "SMOKE_64_STEP_PASS" if result.get("smoke") and result.get("actual_physics_steps") == result.get("expected_physics_steps") and result.get("app_closed") else result.get("decision", "SUBMITTED_S3_R0_R4_PLAYBACK_PERFORMANCE_BLOCKED")
     _atomic_write_json(result_path, result)
     _progress_event(

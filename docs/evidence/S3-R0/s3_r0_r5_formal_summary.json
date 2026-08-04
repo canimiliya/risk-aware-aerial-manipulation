@@ -1,0 +1,24 @@
+{
+  "decision": "SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE",
+  "formal_runs": [
+    "isaac_playback_nominal_1_r5_grid.json",
+    "isaac_playback_nominal_2_r5.json",
+    "isaac_playback_nominal_3_r5.json",
+    "isaac_playback_nominal_repeat_r5.json"
+  ],
+  "expected_physics_steps": 1255,
+  "actual_physics_steps": 1255,
+  "duration_s": 5.223430863911155,
+  "max_time_alignment_error_s": 0.0,
+  "max_arm_fk_error_m": 1.642394602096e-09,
+  "max_world_ee_error_m": 1.6423945397298e-09,
+  "min_clearance_m": 0.06324289427326649,
+  "g1_vs_g2_min_clearance_delta_m": 0.02947413222950797,
+  "g2_vs_g3_min_clearance_delta_m": 0.0006150516324444633,
+  "g1_g2_delta_gate": false,
+  "g2_g3_delta_gate": true,
+  "s3_kinematic_playback_accepted": false,
+  "full_closed_chain_dynamics": false,
+  "s4_dynamic_articulation_ready": false,
+  "gui_and_visuals": "NOT_RUN_AFTER_NUMERICAL_DISTANCE_GATE_FAILURE"
+}

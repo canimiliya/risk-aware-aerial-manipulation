@@ -1,50 +1,43 @@
-# S3-R0-R4 姿态、时间轴、Playback 活性诊断与最终验证报告
+# S3-R0-R5 姿态、时间轴、PhysicsScene API 与 Playback 验证报告
 
 ## 结论
 
-本轮保留旧 pip-only/flatdict 失败现场，复用已通过的 Isaac Sim 5.1/Isaac Lab v2.3.2 环境。协议层已完成姿态、世界系和时间轴修正；R4 playback runner 已完成本地结构修正，但 64-step smoke 尚未执行，故本报告不宣称 S3 PASS。
+本轮完成 R5 PhysicsScene API 兼容修复并取得真实 Isaac 运行证据，但 S3-R0 仍不能验收通过。阻塞点是固定的 G1/G2 精确距离一致性门槛，不是 PhysicsScene API、物理步活性、时间轴、FK 或 clearance 下界。
 
-协议现在保存 `base_quaternion_WB_wxyz`、`base_body_omega_B_rad_s`、`base_thrust_N`，姿态来源为 `S2_OFFICIAL_FLATNESS_MAP_RECONSTRUCTION`，并通过 `planner_bridge.execution.playback_validator.validate_attitude` 复用 S2 实现。world EE 使用 `p_WB + R_WB @ (R_BA0 @ p_A0E + t_BA0)`；工具方向使用 `R_WB @ R_BA0 @ direction_A0`，不虚构完整末端四元数。
+正式状态：`S3=IN_PROGRESS`，`S3-R0=SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE`，`S4–S8=FROZEN`。
 
-240 Hz 时间网格使用 `simulation_time[k]=min(k*1/240,total_duration)`，并且直接从 raw base/arm polynomial 求值；本轮没有把 200 Hz bundle 帧逐帧当作 PhysX 步。R4 runner 的正式循环调用 Isaac Lab `SimulationContext.step(render=False)`，初始化阶段的 `app.update()` 仅用于有界 stage/reference warmup；`--smoke-steps`、`--max-runtime-s`、heartbeat、checkpoint、progress JSONL、partial state 和 atomic result 均已实现。由于 R4 smoke 尚未执行，expected/actual physics steps 与最大时间误差尚无新运行证据。
+## API 与环境
 
-导入 USD 没有可初始化的完整 articulation root，因此使用任务卡允许的 `S3_KINEMATIC_PLAYBACK_ARTICULATION`：三 active joints 通过 PhysicsJointStateAPI 写入/读回，关闭未建模关节物理约束，passive/trailing joints 保持锁定语义。写入值与读回值一致；原始参考到 float32 USD 存储的最大量化差为 `1.4888097199516892e-08 rad`，该数值单独保留，未隐藏。
+- 环境：`D:\i3\e`；Isaac Lab 源码：`D:\i3\L`；Robot USD：`D:\i3\a\aerial_manipulator_v2.usd`。
+- API probe：`PASS`。
+  - `UsdPhysics.Scene.CreateTimeStepsPerSecondAttr=False`
+  - `PhysxSchema.PhysxSceneAPI.CreateTimeStepsPerSecondAttr=True`
+  - `physics_dt=0.004166666666666667 s`
+  - `/World/PhysicsScene` 存在，scene query 开启，gravity=`(0,0,0)`。
+- 播放脚本已删除错误的 `UsdPhysics.Scene.CreateTimeStepsPerSecondAttr()`；`SimulationCfg.dt` 是唯一 physics 时间配置源。USD stage time metadata 不作为 physics dt 验收依据。
+- cleanup 改为主线程；当前 Isaac Sim graceful stage teardown 会阻塞，因此使用已记录的 `app.close(skip_cleanup=True)` immediate framework release。未使用 daemon thread。
 
-历史 nominal 1046 帧运行 exit 0、finite、时间单调和 overlap 下界证据继续保留，但它不是修正版合同的验收来源。修正版 nominal headless 命令已记录为中断，无结果文件；因此精确 sampled-proxy 指标必须保持未验证，不能从历史 overlap 下界推导。
+## Playback
 
-## 环境
+- 1-step smoke：`actual=1`，SimulationContext ready/reset、timeline playing、STEP_0、state/result、APP_CLOSED 均通过。
+- 64-step smoke：`expected=64, actual=64`；heartbeat 每 8 步、checkpoint 每 16 步；总 wall time 约 `10.656 s`。
+- nominal headless ×3 与 nominal repeat：均 `expected=1255, actual=1255`；每次最终时间 `5.223430863911155 s`，`max_time_alignment_error=0`，时间严格单调、finite、完整 duration 通过。
+- 记录的完整运行预测 wall time 约 `0.39–0.41 s`，实际包含启动、后处理和关闭约 `25.6–25.9 s`；step median 接近 `0`，p95 约 `0.016 s`。
 
-- 旧环境 `D:\i3\s3_isaaclab_232` 只读保留；失败现场在 `docs/evidence/S3-R0/environment/failed_pip_only/`。
-- 正式环境 `D:\i3\e`；源码 `D:\i3\L`，tag `v2.3.2`，HEAD `37ddf626871758333d6ed89cf64ad702aef127d0`。
-- `flatdict==4.0.1`：sdist SHA-256 `CD32F08FD31ED21EB09EBC76F06B6BD12046A24F77BEB1FD0281917E47F26742`；wheel SHA-256 `709AA498F998AB2AB7E63911935D0D135944EA34F3DB306837175AA7F8F828AA`。
-- Isaac Sim `5.1.0.0`、Isaac Lab `0.54.2`、Torch `2.7.0+cu128`、CUDA=True、GPU RTX 5060 Ti。
-- EULA 已真实接受；10-step empty-stage/PhysX smoke PASS。
-- `pip check` 仍有已记录的 Isaac Lab/Isaac Sim `starlette` 上游元数据冲突；未改源码。
+## FK 与距离
 
-## 资产与场景
+- 最大 arm FK residual：`1.642394602096e-09 m`，门槛 `1e-5 m`，通过。
+- 最大 world EE residual：`1.6423945397298e-09 m`，门槛 `1e-4 m`，通过。
+- 指标：`EXACT_FOR_FROZEN_S2_SAMPLED_PROXY_NOT_MESH_EXACT`。
+- 最小 G1 analytic sampled-proxy clearance：`0.06324289427326649 m`，门槛 `0.010 m`，通过；dangerous component=`rotor_4`，obstacle=`AdjacentObstacle`。
+- G2-G3：`0.0006150516324444633 m <= 0.002 m`，通过。
+- G1-G2：`0.02947413222950797 m > 0.002 m`，失败；因此 distance match 与 S3 kinematic playback acceptance 失败。
 
-- 官方 AM-Planner Delta Xacro/mesh 只读审计完成，USD 外部保存于 `D:\i3\a\aerial_manipulator_v2.usd`，未提交。
-- 9 个 revolute joints：3 active (`m1_1,m2_1,m3_1`) + 6 passive/trailing；完整闭链动力学未宣称。
-- 场景 prim：`/World/Robot`、`/World/Crossarm/MainBeam`、`/World/Crossarm/Column`、`/World/Crossarm/AdjacentObstacle`、`/World/TargetProxy`。
+## 范围与未执行项
 
-## 播放与安全
+GUI nominal、8 PNG、2 个本地 MP4/GIF、visual manifest 未执行，因为数值 distance gate 已失败。未修改 S2、Isaac Lab/Sim 上游、USD、环境；未训练、未闭环、未接 ROS/ROS2、未进入 S4；PR #13 保持 Draft、未合并。
 
-- `REFERENCE_STATE_PLAYBACK`，`physics_dt=1/240`，`rendering_dt=1/60`，`num_envs=1`。
-- nominal：1046 帧，`5.223430863911155 s`，exit 0，finite，时间单调。
-- FK：通过。
-- joint write/readback：写入 float32 值与读回一致；原始参考量化误差最大 `1.4888e-08 rad`。
-- scene-query：无非场景命中；0.010 m 扩展盒无机器人命中；penetration=0。
-- 精确指标名称应为 `EXACT_FOR_FROZEN_S2_SAMPLED_PROXY_NOT_MESH_EXACT`；当前尚无该指标的 Isaac read-back 运行结果。
-- G1/G2/G3 distance delta、nominal×3、nominal repeat、GUI、8 PNG 和 2 个本地视频尚未完成。
+## 测试与审计
 
-## 测试与范围边界
-
-- `PYTHONPATH=<repo> python -m pytest -q tests planner_bridge`：`64 passed in 80.24s`。
-- S3 audit：协议检查通过；播放、时间轴、精确距离、S2 delta、repeat、GUI、visual manifest 均明确报告为缺失，不以历史旧 bundle 代替。
-- S2 baseline：PASS。
-- 未修改 S2 轨迹/barrier/anchor/tau/100w0；未改 Isaac Lab 上游依赖；未安装 RL framework；未建 ROS/ROS2 bridge；未训练、未闭环、未加风或接触随机化；未进入 S4；未合并 PR。`full_closed_chain_dynamics=false`、`s4_dynamic_articulation_ready=false`。
-
-## R4 当前未完成项
-
-- 尚未运行 64-step physics-only smoke；因此没有可宣称的 startup/step wall-time、heartbeat、checkpoint、graceful close 或活性结论。
-- 尚未运行 nominal×3、nominal repeat、GUI、read-back FK、精确 sampled-proxy clearance、G1/G2/G3、8 PNG 和 2 个本地视频。
+- `python -m pytest -q tests planner_bridge`：`64 passed`。
+- S3 audit：`SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE`；errors=`s2_clearance_delta, gui, visual_manifest`；protocol、Isaac readiness、playback、FK、exact clearance 均有证据。
