@@ -1,0 +1,22 @@
+{
+  "decision": "SUBMITTED_S3_R0_R4_PLAYBACK_PERFORMANCE_BLOCKED",
+  "failed_phase": "stage_creation",
+  "last_operation": "argument_parse",
+  "exception": "Traceback (most recent call last):\n  File \"D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\scripts\\s3_r0_reference_playback.py\", line 695, in main\n    physics_scene.CreateTimeStepsPerSecondAttr().Set(240.0)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'Scene' object has no attribute 'CreateTimeStepsPerSecondAttr'\n",
+  "partial_state_path": "docs\\evidence\\S3-R0\\isaac_playback_smoke64.state.jsonl",
+  "progress_path": "docs\\evidence\\S3-R0\\isaac_playback_smoke64.progress.jsonl",
+  "result_path": "docs\\evidence\\S3-R0\\isaac_playback_smoke64.json",
+  "frames": 0,
+  "canonical_240hz_sample_count": 64,
+  "duration_s": 5.223430863911155,
+  "physics_dt_s": 0.004166666666666667,
+  "expected_physics_steps": 64,
+  "actual_physics_steps": 0,
+  "app_closed": false,
+  "s3_kinematic_playback_accepted": false,
+  "full_closed_chain_dynamics": false,
+  "s4_dynamic_articulation_ready": false,
+  "closed_loop": false,
+  "state_records": [],
+  "time_records": []
+}
