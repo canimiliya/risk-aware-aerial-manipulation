@@ -53,6 +53,8 @@ R7 数值合同和静态场景证据保持不变；R8 已补齐授权范围内�
 
 补充合同接口后的最新复核：视觉合同测试 `2 passed`，R7/R8 相关定向测试合计 `23 passed`；全量结果更新为 `72 passed, 6 failed`，失败 node 未变化，仍未新增失败。
 
+最终拆分统计为：视觉合同 `2 passed`、距离合同 `11 passed`、协议 `8 passed`、S2 baseline `4 passed`，定向合计 `25 passed`；全量仍为 `72 passed, 6 failed`。
+
 R8 targeted tests：`tests/test_s3_r0_visual_contract.py`、`tests/test_s3_r0_distance_representation.py`、`tests/test_s3_r0_protocol.py`=`20 passed`；`tests/audit/test_s3_s2_baseline.py`=`4 passed`；四个 R8 脚本 py_compile 通过；readiness audit `errors=[]`、`warnings=[]`。全量 `python -m pytest -q tests planner_bridge` 仍为 `70 passed, 6 failed`；6 个失败 node id 与开始 Head 相同：`tests/audit/test_audit_no_side_effects.py::test_historical_audits_leave_status_and_acceptance_bytes_unchanged`、`tests/audit/test_check_s0_structure.py::test_current_s0_audit_passes`、`tests/audit/test_s1_audit_no_side_effects.py::test_default_run_does_not_rewrite_historical_acceptance`、`tests/audit/test_s1_audit_no_side_effects.py::test_external_output_is_supported`、`tests/audit/test_s2_r0_archival_audit.py::test_archival_passes_without_local_npz`、`tests/audit/test_s2_r0_archival_audit.py::test_final_acceptance_passes_archival_mode_and_forwards_it`。根因仍是 S0 no-large-files 发现未跟踪的 formal S3 JSON 与下游 archival 依赖该结果；本轮未删除证据、未修改历史 acceptance。
 
 历史 S1/S2 acceptance SHA 与开始 Head 对照全部 unchanged：`s1_final_acceptance bf4225a1...`、S2-R0 preflight `eee5dfa2...`、S2-R0 final `b4673b62...`、S2-R1 `f86ffd96...`、S2-R4 `fb5c2869...`、S2-R5 `0e95a47d...`、S2-R6 `3cea841a...`。
