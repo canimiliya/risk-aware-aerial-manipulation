@@ -1,16 +1,11 @@
 {
-  "decision": "SUBMITTED_S3_R0_FK_FAILED",
-  "errors": [
-    "joint_mapping_error",
-    "arm_fk_error",
-    "world_ee_error",
-    "contact_query",
-    "clearance_gate"
-  ],
+  "decision": "SUBMITTED_S3_R0_PLAYBACK_FAILED",
+  "errors": ["clearance_gate_exact_distance_not_established", "repeat_gui_visual_evidence_missing"],
   "warnings": [
-    "Isaac Lab 0.54.2 metadata pins starlette==0.49.1 while Isaac Sim kernel pins fastapi==0.115.7 and starlette<0.46"
+    "Isaac Lab 0.54.2 metadata pins starlette==0.49.1 while Isaac Sim kernel pins fastapi==0.115.7 and starlette<0.46",
+    "kinematic playback uses float32 USD joint state attributes; raw-reference quantization max is 1.4888097199516892e-08 rad"
   ],
-  "s3_status": "SUBMITTED_FOR_REVIEW_WITH_FAILURE_EVIDENCE",
+  "s3_status": "SUBMITTED_FOR_REVIEW_WITH_LIMITATIONS",
   "completion_estimate": "formal 3/9 ~= 33%; engineering ~= 42%; S3-R0 ~= 80%",
   "protocol_ready": true,
   "isaac_ready": true,
@@ -30,9 +25,13 @@
     "physx_smoke": true,
     "robot_asset_import": true,
     "playback_runs": true,
-    "fk_safety_readback": false,
-    "contact_query": false,
-    "clearance_gate": false
+    "arm_fk": true,
+    "world_ee_fk": true,
+    "contact_query": true,
+    "penetration": true,
+    "clearance_exact_distance": false,
+    "s2_clearance_delta": false,
+    "repeat_gui_visuals": false
   },
   "scope_boundary": "No ROS bridge, training, closed-loop, wind/contact/randomization, or S4 work"
 }

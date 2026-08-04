@@ -46,7 +46,9 @@ def run(root: Path = ROOT) -> dict[str, object]:
         check("isaaclab_import", importlib.util.find_spec("isaaclab") is not None, hard=False)
         check("isaacsim_import", importlib.util.find_spec("isaacsim") is not None, hard=False)
         check("physx_smoke", environment.get("physx_smoke") == "PASS", hard=False)
-    playback_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_v3.json"
+    playback_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_v14.json"
+    if not playback_path.is_file():
+        playback_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_v3.json"
     playback = json.loads(playback_path.read_text(encoding="utf-8")) if playback_path.is_file() else {}
     if playback:
         check("playback_runs", playback.get("frames", 0) > 0 and playback.get("finite") is True and playback.get("monotonic_time") is True)
@@ -59,6 +61,8 @@ def run(root: Path = ROOT) -> dict[str, object]:
         decision = "SUBMITTED_S3_R0_BASIC_ENVIRONMENT_READY"
     elif playback and any(name in errors for name in ("joint_mapping_error", "arm_fk_error", "world_ee_error")):
         decision = "SUBMITTED_S3_R0_FK_FAILED"
+    elif playback and any(name in errors for name in ("contact_query", "clearance_gate")):
+        decision = "SUBMITTED_S3_R0_PLAYBACK_FAILED"
     elif not errors:
         decision = "SUBMITTED_S3_R0_PROTOCOL_READY_DEPENDENCY_INSTALL_BLOCKED"
     else:

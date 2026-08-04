@@ -3,6 +3,8 @@
   "active_joints_present": true,
   "passive_joints_present": true,
   "articulation_mode": "S3_KINEMATIC_PLAYBACK_ARTICULATION",
+  "physics_articulation_root_api": false,
+  "joint_physics_constraint_enabled": false,
   "full_closed_chain_dynamics": false,
   "mass_inertia": "body mass warning preserved; no full dynamics claim",
   "validation": "PASS_WITH_LIMITATIONS"
