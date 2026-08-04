@@ -13,9 +13,16 @@
 - corrected Isaac 64-step smoke、nominal GUI、nominal_repeat GUI 均已完成；GUI 均 `1255/1255`，FK/world EE/contact/time alignment/clearance 通过。
 - 完成 Isaac USD AABB read-back：四个 prim 每轴误差 `<=1e-9 m`；完成 8 张真实 GUI PNG、2 个本地 GIF 和 manifest。
 
+## R8 视觉证据补齐
+
+- 保留 R7 的 8 张最终状态 PNG 与 2 个旧 GIF，并在 `docs/evidence/S3-R0/visuals/r8/` 新增 nominal/repeat 各 15 张真实 Isaac GUI state-replay PNG；总 manifest PNG=`38`。
+- 新增截图由 `s3_r0_reference_playback.py` 在对应 `sim.step(render=True)` 后采集，记录真实 `source_frame/source_time_s`、PNG SHA、bytes 和 state SHA；nominal/repeat 均覆盖 frame `329±2`、time `1.3708333333333333±2/240 s` 及最终 frame `1254`。
+- 重新生成两个本地时序 GIF：每个 `13` 帧，严格覆盖 frame `0,100,200,280,327,329,331,400,600,800,1000,1150,1254`，同一 overall 相机，manifest 记录 source frame/time、state/image SHA、运动差异、物理 GIF 元数据；视频 `committed=false`。
+- audit 已增强为独立验证 PNG 文件 SHA/bytes、危险/起始/最终覆盖、视频真实帧数/时长/尺寸、严格时序、危险时刻、source image/state 差异和非静态运动；同一时间的视角幻灯片回归测试已加入。
+
 ## 约束与状态
 
 - 旧 `|G1-G2|<=0.002 m` 只保留为废止说明；`geometry_representation_conservatism_m=G2-G1` 作为诊断。
 - formal nominal headless×3 与 nominal_repeat headless×1 使用既有日志，R7 未重复运行。
-- 失败诊断证据保留；视频只在本地保存，不提交 Git。
+- 失败诊断证据保留；R7/R8 视频只在本地保存，不提交 Git，R8 PNG 提交 Git。
 - 不进入 S4，不做闭环/ROS/训练/动力学扩展，不关闭 S3；等待高级总控独立 S3 final review。

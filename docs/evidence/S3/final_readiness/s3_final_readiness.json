@@ -53,6 +53,8 @@
     "repeat_gui": true,
     "nominal_gui_contract": true,
     "repeat_gui_contract": true,
+    "visual_png_contract": true,
+    "visual_video_contract": true,
     "visual_manifest": true
   },
   "protocol_ready": true,
@@ -69,6 +71,29 @@
   "s2_points_contained_by_isaac_aabbs": true,
   "framewise_conservative_order": true,
   "geometry_representation_delta_reported": true,
+  "visual_contract": {
+    "png_ok": true,
+    "video_ok": true,
+    "manifest_ok": true,
+    "png_issues": [],
+    "video_issues": [],
+    "png_coverage": {
+      "nominal": {
+        "start": true,
+        "dangerous": true,
+        "final": true
+      },
+      "repeat": {
+        "start": true,
+        "dangerous": true,
+        "final": true
+      }
+    },
+    "video_coverage": {
+      "nominal": true,
+      "repeat": true
+    }
+  },
   "repeat_gui_visuals": true,
   "s3_kinematic_playback_accepted": true,
   "full_closed_chain_dynamics": false,

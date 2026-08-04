@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import importlib.util
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
@@ -19,6 +21,16 @@ from scripts.audit.check_s3_s2_baseline import run as run_baseline
 from planner_bridge.protocol.load_trajectory import load_bundle
 from planner_bridge.protocol.validation import validate_bundle
 from planner_bridge.protocol.frames import rotation_from_quaternion_wxyz
+from scripts.s3_r0_gui_visual_capture import (
+    CAPTURE_MODE,
+    DANGEROUS_FRAME,
+    DANGEROUS_FRAME_TOLERANCE,
+    DANGEROUS_TIME_S,
+    DANGEROUS_TIME_TOLERANCE_S,
+    FINAL_FRAME,
+    FINAL_TIME_S,
+)
+from scripts.s3_r0_visual_video_manifest import MIN_VIDEO_FRAMES, VISUAL_CONTRACT_VERSION, inspect_gif
 
 
 def _git(*args: str) -> str:
@@ -68,6 +80,303 @@ def _formal_playback_ok(payload: dict[str, object]) -> bool:
 
 def _world_ee_contract_is_complete(contract: dict[str, object]) -> bool:
     return contract.get("world_ee") == WORLD_EE_CONTRACT
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _run_kind(source_run: object) -> str | None:
+    name = str(source_run).lower()
+    if "repeat" in name:
+        return "repeat"
+    if "nominal" in name:
+        return "nominal"
+    return None
+
+
+def _evidence_path(root: Path, value: object) -> Path | None:
+    if not isinstance(value, str) or not value:
+        return None
+    path = Path(value)
+    return path if path.is_absolute() else root / path
+
+
+def _entry_frame_time(entry: dict[str, object]) -> tuple[int, float] | None:
+    frame = entry.get("frame")
+    time_s = entry.get("time_s")
+    if isinstance(frame, bool) or not isinstance(frame, (int, float)) or int(frame) != frame:
+        return None
+    if isinstance(time_s, bool) or not isinstance(time_s, (int, float)) or not math.isfinite(float(time_s)):
+        return None
+    return int(frame), float(time_s)
+
+
+def _strictly_increasing(values: list[int] | list[float]) -> bool:
+    return bool(values) and all(left < right for left, right in zip(values, values[1:]))
+
+
+def _dangerous_frame_time(frame: int, time_s: float) -> bool:
+    return (
+        abs(frame - DANGEROUS_FRAME) <= DANGEROUS_FRAME_TOLERANCE
+        and abs(time_s - DANGEROUS_TIME_S) <= DANGEROUS_TIME_TOLERANCE_S
+    )
+
+
+def _final_frame_time(frame: int, time_s: float) -> bool:
+    return frame == FINAL_FRAME and abs(time_s - FINAL_TIME_S) <= 1e-12
+
+
+def validate_visual_manifest(root: Path, manifest: dict[str, object]) -> dict[str, object]:
+    """Independently validate R8 PNG and chronological local-video evidence."""
+
+    png_issues: list[str] = []
+    video_issues: list[str] = []
+    png_coverage = {
+        "nominal": {"start": False, "dangerous": False, "final": False},
+        "repeat": {"start": False, "dangerous": False, "final": False},
+    }
+    video_coverage = {"nominal": False, "repeat": False}
+
+    png_entries = manifest.get("png")
+    if not isinstance(png_entries, list):
+        png_issues.append("png_not_a_list")
+        png_entries = []
+    if manifest.get("png_count") != len(png_entries):
+        png_issues.append("png_count_mismatch")
+    if len(png_entries) < 12:
+        png_issues.append("png_count_below_12")
+
+    for index, raw_entry in enumerate(png_entries):
+        prefix = f"png[{index}]"
+        if not isinstance(raw_entry, dict):
+            png_issues.append(f"{prefix}:not_an_object")
+            continue
+        entry = raw_entry
+        required = ("local_path", "source_run", "frame", "time_s", "view", "sha256", "bytes")
+        for field in required:
+            if field not in entry:
+                png_issues.append(f"{prefix}:missing_{field}")
+        if entry.get("committed", True) is not True:
+            png_issues.append(f"{prefix}:png_must_be_committed")
+        path = _evidence_path(root, entry.get("local_path"))
+        if path is None or not path.is_file():
+            png_issues.append(f"{prefix}:file_missing")
+        else:
+            actual_bytes = path.stat().st_size
+            if actual_bytes <= 0:
+                png_issues.append(f"{prefix}:file_empty")
+            if entry.get("bytes") != actual_bytes:
+                png_issues.append(f"{prefix}:bytes_mismatch")
+            if entry.get("sha256") != _sha256(path):
+                png_issues.append(f"{prefix}:sha256_mismatch")
+
+        kind = _run_kind(entry.get("source_run"))
+        frame_time = _entry_frame_time(entry)
+        if kind is None:
+            png_issues.append(f"{prefix}:unknown_source_run")
+            continue
+        if frame_time is None:
+            png_issues.append(f"{prefix}:invalid_frame_time")
+            continue
+        frame, time_s = frame_time
+        is_r8_entry = entry.get("capture_role") is not None or entry.get("capture_mode") is not None
+        if is_r8_entry and entry.get("capture_mode") != CAPTURE_MODE:
+            png_issues.append(f"{prefix}:invalid_capture_mode")
+        if frame == 0 and abs(time_s) <= 1e-12 and entry.get("capture_mode") == CAPTURE_MODE:
+            png_coverage[kind]["start"] = True
+        if _dangerous_frame_time(frame, time_s) and entry.get("capture_mode") == CAPTURE_MODE:
+            png_coverage[kind]["dangerous"] = True
+        if _final_frame_time(frame, time_s):
+            png_coverage[kind]["final"] = True
+
+    for kind, phases in png_coverage.items():
+        for phase, covered in phases.items():
+            if not covered:
+                png_issues.append(f"{kind}_{phase}_png_missing")
+
+    video_entries = manifest.get("video")
+    if not isinstance(video_entries, list):
+        video_issues.append("video_not_a_list")
+        video_entries = []
+    if manifest.get("video_count") != len(video_entries):
+        video_issues.append("video_count_mismatch")
+    if len(video_entries) < 2:
+        video_issues.append("video_count_below_2")
+
+    required_video_fields = (
+        "local_path",
+        "sha256",
+        "bytes",
+        "duration_s",
+        "fps",
+        "width",
+        "height",
+        "source_run",
+        "frame_count",
+        "source_frames",
+        "source_times_s",
+        "time_start_s",
+        "time_end_s",
+        "camera_view",
+        "chronological",
+        "covers_start",
+        "covers_dangerous_time",
+        "covers_final",
+        "created_at",
+        "format",
+        "committed",
+    )
+    for index, raw_entry in enumerate(video_entries):
+        prefix = f"video[{index}]"
+        if not isinstance(raw_entry, dict):
+            video_issues.append(f"{prefix}:not_an_object")
+            continue
+        entry = raw_entry
+        for field in required_video_fields:
+            if field not in entry:
+                video_issues.append(f"{prefix}:missing_{field}")
+
+        kind = _run_kind(entry.get("source_run"))
+        if kind is None:
+            video_issues.append(f"{prefix}:unknown_source_run")
+        if entry.get("committed") is not False:
+            video_issues.append(f"{prefix}:video_must_be_local_only")
+        if entry.get("format") != "GIF":
+            video_issues.append(f"{prefix}:unsupported_format")
+        if entry.get("visual_contract_version") != VISUAL_CONTRACT_VERSION:
+            video_issues.append(f"{prefix}:wrong_visual_contract_version")
+        if not isinstance(entry.get("camera_view"), str) or not entry.get("camera_view"):
+            video_issues.append(f"{prefix}:camera_view_missing")
+
+        frames = entry.get("source_frames")
+        times = entry.get("source_times_s")
+        frame_count = entry.get("frame_count")
+        valid_frames = isinstance(frames, list) and all(
+            not isinstance(value, bool) and isinstance(value, (int, float)) and int(value) == value for value in frames
+        )
+        valid_times = isinstance(times, list) and all(
+            not isinstance(value, bool) and isinstance(value, (int, float)) and math.isfinite(float(value)) for value in times
+        )
+        if not valid_frames or not valid_times:
+            video_issues.append(f"{prefix}:invalid_source_timeline")
+            parsed_frames: list[int] = []
+            parsed_times: list[float] = []
+        else:
+            parsed_frames = [int(value) for value in frames]
+            parsed_times = [float(value) for value in times]
+        if (
+            isinstance(frame_count, bool)
+            or not isinstance(frame_count, int)
+            or frame_count < MIN_VIDEO_FRAMES
+            or frame_count != len(parsed_frames)
+            or frame_count != len(parsed_times)
+        ):
+            video_issues.append(f"{prefix}:frame_count_contract")
+        chronological = _strictly_increasing(parsed_frames) and _strictly_increasing(parsed_times)
+        covers_start = bool(parsed_frames and parsed_frames[0] == 0 and abs(parsed_times[0]) <= 1e-12)
+        covers_dangerous = any(
+            _dangerous_frame_time(frame, time_s) for frame, time_s in zip(parsed_frames, parsed_times)
+        )
+        covers_final = bool(parsed_frames and _final_frame_time(parsed_frames[-1], parsed_times[-1]))
+        recomputed_flags = {
+            "chronological": chronological,
+            "covers_start": covers_start,
+            "covers_dangerous_time": covers_dangerous,
+            "covers_final": covers_final,
+        }
+        for field, recomputed in recomputed_flags.items():
+            if entry.get(field) is not True or not recomputed:
+                video_issues.append(f"{prefix}:{field}_failed")
+        if parsed_times:
+            if not isinstance(entry.get("time_start_s"), (int, float)) or abs(float(entry["time_start_s"]) - parsed_times[0]) > 1e-12:
+                video_issues.append(f"{prefix}:time_start_mismatch")
+            if not isinstance(entry.get("time_end_s"), (int, float)) or abs(float(entry["time_end_s"]) - parsed_times[-1]) > 1e-12:
+                video_issues.append(f"{prefix}:time_end_mismatch")
+
+        source_image_hashes = entry.get("source_image_sha256")
+        source_state_hashes = entry.get("source_state_sha256")
+        valid_source_image_hashes = bool(
+            isinstance(source_image_hashes, list)
+            and all(isinstance(value, str) and value for value in source_image_hashes)
+        )
+        valid_source_state_hashes = bool(
+            isinstance(source_state_hashes, list)
+            and all(isinstance(value, str) and value for value in source_state_hashes)
+        )
+        if (
+            not valid_source_image_hashes
+            or len(source_image_hashes) != len(parsed_frames)
+            or len(set(source_image_hashes)) < 2
+        ):
+            video_issues.append(f"{prefix}:source_images_do_not_prove_motion")
+        if (
+            not valid_source_state_hashes
+            or len(source_state_hashes) != len(parsed_frames)
+            or len(set(source_state_hashes)) < 2
+        ):
+            video_issues.append(f"{prefix}:source_states_do_not_prove_motion")
+        if entry.get("motion_detected") is not True:
+            video_issues.append(f"{prefix}:motion_not_detected")
+        if not isinstance(entry.get("created_at"), str) or not entry.get("created_at"):
+            video_issues.append(f"{prefix}:created_at_missing")
+
+        path = _evidence_path(root, entry.get("local_path"))
+        physical: dict[str, object] | None = None
+        if path is None or not path.is_file():
+            video_issues.append(f"{prefix}:file_missing")
+        else:
+            actual_bytes = path.stat().st_size
+            if actual_bytes <= 0:
+                video_issues.append(f"{prefix}:file_empty")
+            if entry.get("bytes") != actual_bytes:
+                video_issues.append(f"{prefix}:bytes_mismatch")
+            if entry.get("sha256") != _sha256(path):
+                video_issues.append(f"{prefix}:sha256_mismatch")
+            try:
+                physical = inspect_gif(path)
+            except Exception:
+                video_issues.append(f"{prefix}:gif_decode_failed")
+        if physical is not None:
+            for field in ("width", "height", "frame_count"):
+                if entry.get(field) != physical[field]:
+                    video_issues.append(f"{prefix}:{field}_mismatch")
+            duration_tolerance = max(1e-9, 0.001 * int(physical["frame_count"]))
+            if not isinstance(entry.get("duration_s"), (int, float)) or abs(float(entry["duration_s"]) - float(physical["duration_s"])) > duration_tolerance:
+                video_issues.append(f"{prefix}:duration_mismatch")
+            if not isinstance(entry.get("fps"), (int, float)) or abs(float(entry["fps"]) - float(physical["fps"])) > 1e-9:
+                video_issues.append(f"{prefix}:fps_mismatch")
+            if int(physical["distinct_frame_count"]) < 2:
+                video_issues.append(f"{prefix}:gif_frames_not_visually_distinct")
+
+        if kind is not None and all(recomputed_flags.values()):
+            video_coverage[kind] = True
+
+    for kind, covered in video_coverage.items():
+        if not covered:
+            video_issues.append(f"{kind}_chronological_video_missing")
+
+    png_ok = not png_issues
+    video_ok = not video_issues
+    manifest_ok = bool(
+        manifest.get("decision") == "PASS"
+        and manifest.get("visual_contract_version") == VISUAL_CONTRACT_VERSION
+        and png_ok
+        and video_ok
+    )
+    return {
+        "png_ok": png_ok,
+        "video_ok": video_ok,
+        "manifest_ok": manifest_ok,
+        "png_issues": png_issues,
+        "video_issues": video_issues,
+        "png_coverage": png_coverage,
+        "video_coverage": video_coverage,
+    }
 
 
 def run(root: Path = ROOT) -> dict[str, object]:
@@ -206,14 +515,10 @@ def run(root: Path = ROOT) -> dict[str, object]:
     check("repeat_gui_contract", _formal_playback_ok(repeat_gui))
     visuals = root / "docs/evidence/S3-R0/visuals/manifest.json"
     visual_manifest = json.loads(visuals.read_text(encoding="utf-8")) if visuals.is_file() else {}
-    check(
-        "visual_manifest",
-        visual_manifest.get("decision") == "PASS"
-        and visual_manifest.get("png_count", 0) >= 8
-        and visual_manifest.get("video_count", 0) >= 2
-        and all(entry.get("sha256") and entry.get("bytes", 0) > 0 for entry in visual_manifest.get("png", []))
-        and all(entry.get("committed") is False for entry in visual_manifest.get("video", [])),
-    )
+    visual_contract = validate_visual_manifest(root, visual_manifest)
+    check("visual_png_contract", visual_contract["png_ok"] is True)
+    check("visual_video_contract", visual_contract["video_ok"] is True)
+    check("visual_manifest", visual_contract["manifest_ok"] is True)
     if not distance_summary.get("contracts", {}).get("s2_points_contained_by_isaac_aabbs", False):
         errors.append("geometry_envelope")
     if not checks.get("visual_manifest", False):
@@ -222,6 +527,8 @@ def run(root: Path = ROOT) -> dict[str, object]:
         decision = "READY_FOR_S3_FINAL_REVIEW"
     elif "geometry_envelope" in errors:
         decision = "SUBMITTED_S3_R0_GEOMETRY_ENVELOPE_FAILED"
+    elif "visual_evidence_incomplete" in errors:
+        decision = "SUBMITTED_S3_R0_VISUAL_EVIDENCE_INCOMPLETE"
     else:
         decision = "SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE"
     protocol_checks = [name for name in checks if name.endswith("_protocol") or name.endswith("_raw_polynomials") or name.endswith("_dynamic_attitude") or name.endswith("_quaternion_wxyz") or name.endswith("_rotation_contract") or name.endswith("_world_ee_b_to_a0_contract") or name == "authoritative_s2_baseline" or name.startswith("scene_contract")]
@@ -260,6 +567,7 @@ def run(root: Path = ROOT) -> dict[str, object]:
         "s2_points_contained_by_isaac_aabbs": checks.get("s2_points_contained_by_isaac_aabbs", False),
         "framewise_conservative_order": checks.get("framewise_conservative_order", False),
         "geometry_representation_delta_reported": checks.get("geometry_representation_delta_reported", False),
+        "visual_contract": visual_contract,
         "repeat_gui_visuals": repeat_gui_ok,
         "s3_kinematic_playback_accepted": playback_ok and numeric_contract_ok and checks.get("nominal_gui_contract", False) and checks.get("repeat_gui_contract", False),
         "full_closed_chain_dynamics": False,

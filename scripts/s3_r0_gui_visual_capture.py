@@ -1,21 +1,30 @@
-"""Capture real Isaac GUI viewport PNGs from corrected exported scene USDs."""
+"""Merge and validate real Isaac GUI state-replay captures for S3-R0-R8.
+
+The Isaac process itself is ``s3_r0_reference_playback.py`` with the optional
+visual-capture arguments.  This utility only merges the two per-run manifests,
+retains R7 evidence, and rejects missing or fabricated frame/time metadata.
+"""
 
 from __future__ import annotations
 
 import argparse
-import asyncio
 import hashlib
 import json
 from datetime import datetime, timezone
 from pathlib import Path
 
 
-VIEWS = {
-    "overall": ([3.8, -5.0, 3.3], [0.0, 0.3, 1.0]),
-    "side": ([3.5, -0.1, 1.8], [0.0, 0.3, 1.0]),
-    "top": ([0.2, -0.1, 6.0], [0.0, 0.3, 0.9]),
-    "close": ([1.6, -2.0, 1.8], [0.0, 0.5, 1.0]),
-}
+DANGER_FRAME = 329
+DANGER_TIME_S = 1.3708333333333333
+DANGEROUS_FRAME = DANGER_FRAME
+DANGEROUS_TIME_S = DANGER_TIME_S
+FRAME_TOLERANCE = 2
+TIME_TOLERANCE_S = 2.0 / 240.0
+CAPTURE_MODE = "real_isaac_gui_state_replay"
+DANGEROUS_FRAME_TOLERANCE = FRAME_TOLERANCE
+DANGEROUS_TIME_TOLERANCE_S = TIME_TOLERANCE_S
+FINAL_FRAME = 1254
+FINAL_TIME_S = 5.223430863911155
 
 
 def _sha256(path: Path) -> str:
@@ -26,84 +35,93 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def _capture(app, viewport, path: Path) -> None:
-    from omni.kit.viewport.utility import capture_viewport_to_file
-
-    path.parent.mkdir(parents=True, exist_ok=True)
-    capture_viewport_to_file(viewport, file_path=str(path), is_hdr=False)
-    for _ in range(120):
-        app.update()
-        if path.is_file() and path.stat().st_size > 0:
-            return
-    raise TimeoutError(f"viewport capture did not produce {path}")
+def _path(entry: dict[str, object]) -> Path:
+    return Path(str(entry["local_path"]))
 
 
-def _open_and_capture(app, stage_path: Path, output_dir: Path, source_run: str) -> list[dict[str, object]]:
-    import omni.usd
-    from isaacsim.core.utils.viewports import set_camera_view
-    from omni.kit.viewport.utility import get_active_viewport
+def _validate_png(entry: dict[str, object]) -> None:
+    path = _path(entry)
+    if not path.is_file() or path.stat().st_size <= 0:
+        raise RuntimeError(f"missing or empty PNG: {path}")
+    actual_sha = _sha256(path)
+    if actual_sha != entry.get("sha256"):
+        raise RuntimeError(f"PNG SHA-256 mismatch: {path}")
+    if int(entry.get("bytes", -1)) != path.stat().st_size:
+        raise RuntimeError(f"PNG byte count mismatch: {path}")
+    if entry.get("capture_mode") != CAPTURE_MODE:
+        raise RuntimeError(f"PNG is not marked as real state replay: {path}")
 
-    context = omni.usd.get_context()
-    future = asyncio.ensure_future(context.open_stage_async(str(stage_path)))
-    for _ in range(600):
-        app.update()
-        if future.done():
-            break
-    if not future.done() or future.exception() is not None:
-        raise RuntimeError(f"could not open stage {stage_path}")
-    for _ in range(30):
-        app.update()
-    viewport = get_active_viewport()
-    if viewport is None:
-        raise RuntimeError("no active Isaac GUI viewport")
-    entries: list[dict[str, object]] = []
-    for view_name, (eye, target) in VIEWS.items():
-        set_camera_view(eye=eye, target=target, viewport_api=viewport)
-        for _ in range(4):
-            app.update()
-        path = output_dir / f"{source_run}_{view_name}.png"
-        _capture(app, viewport, path)
-        entries.append(
-            {
-                "local_path": str(path.resolve()),
-                "source_run": source_run,
-                "frame": 1254,
-                "time_s": 5.223430863911155,
-                "view": view_name,
-                "sha256": _sha256(path),
-                "bytes": path.stat().st_size,
-            }
-        )
-    return entries
+
+def _validate_run(entries: list[dict[str, object]], run: str) -> None:
+    if not entries:
+        raise RuntimeError(f"no new PNG entries for {run}")
+    for entry in entries:
+        _validate_png(entry)
+        if entry.get("source_run") != run:
+            raise RuntimeError(f"source_run mismatch for {run}")
+        if int(entry.get("frame", -1)) != int(entry.get("source_frame", -2)):
+            raise RuntimeError(f"frame/source_frame mismatch for {run}")
+        if float(entry.get("time_s", -1.0)) != float(entry.get("source_time_s", -2.0)):
+            raise RuntimeError(f"time/source_time_s mismatch for {run}")
+    frames = sorted({int(entry["source_frame"]) for entry in entries if entry.get("view") == "overall"})
+    times = [float(next(item["source_time_s"] for item in entries if item.get("view") == "overall" and int(item["source_frame"]) == frame)) for frame in frames]
+    if len(frames) < 12 or len(frames) != len(times):
+        raise RuntimeError(f"{run} needs at least 12 overall sequence frames")
+    if any(a >= b for a, b in zip(frames, frames[1:])) or any(a >= b for a, b in zip(times, times[1:])):
+        raise RuntimeError(f"{run} frame/time sequence is not strictly increasing")
+    if frames[0] != 0 or frames[-1] != 1254:
+        raise RuntimeError(f"{run} sequence must cover frames 0 and 1254")
+    if not any(abs(frame - DANGER_FRAME) <= FRAME_TOLERANCE and abs(time_s - DANGER_TIME_S) <= TIME_TOLERANCE_S for frame, time_s in zip(frames, times)):
+        raise RuntimeError(f"{run} sequence does not cover the dangerous frame/time")
+    for view in ("overall", "close"):
+        danger = [entry for entry in entries if entry.get("view") == view and abs(int(entry["source_frame"]) - DANGER_FRAME) <= FRAME_TOLERANCE]
+        final = [entry for entry in entries if entry.get("view") == view and int(entry["source_frame"]) == 1254]
+        if not danger or not final:
+            raise RuntimeError(f"{run} lacks {view} dangerous and final PNG coverage")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--nominal-stage", type=Path, required=True)
-    parser.add_argument("--repeat-stage", type=Path, required=True)
-    parser.add_argument("--output-dir", type=Path, required=True)
-    parser.add_argument("--manifest", type=Path, required=True)
+    parser.add_argument("--nominal-manifest", type=Path, required=True)
+    parser.add_argument("--repeat-manifest", type=Path, required=True)
+    parser.add_argument("--existing-manifest", type=Path, required=True)
+    parser.add_argument("--output-manifest", type=Path, required=True)
     args = parser.parse_args()
 
-    from isaacsim import SimulationApp
-
-    app = SimulationApp({"headless": False, "hide_ui": False, "renderer": "RayTracedLighting"})
-    try:
-        entries = _open_and_capture(app, args.nominal_stage, args.output_dir, "nominal_gui_r7_corrected_dp")
-        entries += _open_and_capture(app, args.repeat_stage, args.output_dir, "nominal_repeat_gui_r7_corrected_dp")
-        manifest = {
-            "decision": "PASS" if len(entries) >= 8 else "FAIL",
-            "source": "real Isaac GUI viewport captures from corrected exported USD scenes",
-            "created_at": datetime.now(timezone.utc).isoformat(),
-            "png_count": len(entries),
-            "png": entries,
-            "video": [],
-        }
-        args.manifest.parent.mkdir(parents=True, exist_ok=True)
-        args.manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(json.dumps(manifest, ensure_ascii=False, indent=2))
-    finally:
-        app.close(wait_for_replicator=False, skip_cleanup=True)
+    existing = json.loads(args.existing_manifest.read_text(encoding="utf-8"))
+    nominal = json.loads(args.nominal_manifest.read_text(encoding="utf-8"))
+    repeat = json.loads(args.repeat_manifest.read_text(encoding="utf-8"))
+    nominal_run = "nominal_gui_r8_real_timeline"
+    repeat_run = "nominal_repeat_gui_r8_real_timeline"
+    nominal_png = [dict(entry) for entry in nominal.get("png", [])]
+    repeat_png = [dict(entry) for entry in repeat.get("png", [])]
+    _validate_run(nominal_png, nominal_run)
+    _validate_run(repeat_png, repeat_run)
+    legacy_png = [dict(entry, evidence_revision="R7_LEGACY") for entry in existing.get("png", [])]
+    legacy_video = [dict(entry, evidence_revision="R7_LEGACY") for entry in existing.get("video", [])]
+    merged = {
+        "decision": "PASS",
+        "visual_contract_version": "S3-R0-R8-real-timeline-v1",
+        "source": "R7 retained evidence plus R8 real Isaac GUI state-replay evidence",
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "png_count": len(legacy_png) + len(nominal_png) + len(repeat_png),
+        "png": legacy_png + nominal_png + repeat_png,
+        "legacy_visual_evidence": {"png": legacy_png, "video": legacy_video},
+        "video": [],
+        "video_count": 0,
+        "r8_contract": {
+            "capture_mode": "real_isaac_gui_state_replay",
+            "dangerous_frame": DANGER_FRAME,
+            "dangerous_time_s": DANGER_TIME_S,
+            "frame_tolerance": FRAME_TOLERANCE,
+            "time_tolerance_s": TIME_TOLERANCE_S,
+            "nominal_run": nominal_run,
+            "repeat_run": repeat_run,
+        },
+    }
+    args.output_manifest.parent.mkdir(parents=True, exist_ok=True)
+    args.output_manifest.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"decision": merged["decision"], "png_count": merged["png_count"], "nominal_png": len(nominal_png), "repeat_png": len(repeat_png)}, ensure_ascii=False, indent=2))
     return 0
 
 

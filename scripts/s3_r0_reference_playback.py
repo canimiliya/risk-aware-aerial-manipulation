@@ -78,6 +78,22 @@ def _atomic_write_json(path: Path, payload: dict[str, object]) -> None:
     os.replace(temporary, path)
 
 
+def _file_sha256(path: Path) -> str:
+    import hashlib
+
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _file_sha256_bytes(value: bytes) -> str:
+    import hashlib
+
+    return hashlib.sha256(value).hexdigest()
+
+
 def _progress_event(
     progress_path: Path,
     start_monotonic: float,
@@ -579,6 +595,14 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--checkpoint-every", type=int, default=100)
     parser.add_argument("--render-every", type=int, default=15)
     parser.add_argument("--disable-joint-physics", action="store_true")
+    parser.add_argument("--visual-output-dir", type=Path)
+    parser.add_argument("--visual-manifest-output", type=Path)
+    parser.add_argument("--visual-run")
+    parser.add_argument(
+        "--visual-frames",
+        default="0,100,200,280,327,329,331,400,600,800,1000,1150,1254",
+        help="comma-separated 240 Hz reference frame indices to capture in GUI mode",
+    )
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--headless", dest="headless", action="store_true")
     mode.add_argument("--gui", dest="headless", action="store_false")
@@ -599,6 +623,15 @@ def main() -> int:
         raise SystemExit("runtime and cadence arguments must be positive")
     if args.smoke_steps is not None and args.smoke_steps <= 0:
         raise SystemExit("--smoke-steps must be positive")
+    visual_enabled = args.visual_output_dir is not None or args.visual_manifest_output is not None or args.visual_run is not None
+    if visual_enabled and (args.headless or args.visual_output_dir is None or args.visual_manifest_output is None or not args.visual_run):
+        raise SystemExit("visual capture requires --gui, --visual-output-dir, --visual-manifest-output and --visual-run")
+    try:
+        visual_frame_indices = sorted({int(value.strip()) for value in args.visual_frames.split(",") if value.strip()})
+    except ValueError as exc:
+        raise SystemExit(f"invalid --visual-frames: {args.visual_frames!r}") from exc
+    if visual_enabled and not visual_frame_indices:
+        raise SystemExit("--visual-frames must contain at least one frame")
 
     start_monotonic = time.monotonic()
     _progress_event(
@@ -630,6 +663,7 @@ def main() -> int:
     last_operation = "argument_parse"
     result: dict[str, object] | None = None
     full_run = args.smoke_steps is None
+    visual_entries: list[dict[str, object]] = []
 
     try:
         repo = Path(__file__).resolve().parents[1]
@@ -871,6 +905,66 @@ def main() -> int:
             last_operation="formal_physics_loop_ready",
         )
 
+        visual_viewport = None
+        visual_set_camera_view = None
+        visual_capture_viewport_to_file = None
+        if visual_enabled:
+            from isaacsim.core.utils.viewports import set_camera_view as _set_camera_view
+            from omni.kit.viewport.utility import capture_viewport_to_file as _capture_viewport_to_file
+            from omni.kit.viewport.utility import get_active_viewport as _get_active_viewport
+
+            visual_viewport = _get_active_viewport()
+            if visual_viewport is None:
+                raise RuntimeError("visual capture requested but no active Isaac GUI viewport exists")
+            visual_set_camera_view = _set_camera_view
+            visual_capture_viewport_to_file = _capture_viewport_to_file
+
+        def capture_visual_frame(frame_index: int, time_s: float, state_record: dict[str, object]) -> None:
+            if not visual_enabled or frame_index not in visual_frame_indices:
+                return
+            assert visual_viewport is not None
+            assert visual_set_camera_view is not None
+            assert visual_capture_viewport_to_file is not None
+            views = {
+                "overall": ([3.8, -5.0, 3.3], [0.0, 0.3, 1.0]),
+                "close": ([1.6, -2.0, 1.8], [0.0, 0.5, 1.0]),
+            }
+            requested_views = ["overall"]
+            if frame_index in {329, 1254}:
+                requested_views.append("close")
+            for view_name in requested_views:
+                eye, target = views[view_name]
+                visual_set_camera_view(eye=eye, target=target, viewport_api=visual_viewport)
+                for _ in range(4):
+                    app.update()
+                output_path = args.visual_output_dir / f"{args.visual_run}_frame_{frame_index:04d}_{view_name}.png"
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                if output_path.exists():
+                    output_path.unlink()
+                visual_capture_viewport_to_file(visual_viewport, file_path=str(output_path), is_hdr=False)
+                for _ in range(120):
+                    app.update()
+                    if output_path.is_file() and output_path.stat().st_size > 0:
+                        break
+                if not output_path.is_file() or output_path.stat().st_size <= 0:
+                    raise TimeoutError(f"viewport capture did not produce {output_path}")
+                visual_entries.append(
+                    {
+                        "local_path": str(output_path.resolve()),
+                        "source_run": args.visual_run,
+                        "source_frame": int(frame_index),
+                        "frame": int(frame_index),
+                        "source_time_s": float(time_s),
+                        "time_s": float(time_s),
+                        "view": view_name,
+                        "capture_mode": "real_isaac_gui_state_replay",
+                        "capture_role": "dangerous" if frame_index in {327, 328, 329, 330, 331} else ("final" if frame_index == 1254 else "timeline"),
+                        "source_state_sha256": _file_sha256_bytes(json.dumps(state_record, ensure_ascii=False, sort_keys=True, default=float).encode("utf-8")),
+                        "sha256": _file_sha256(output_path),
+                        "bytes": int(output_path.stat().st_size),
+                    }
+                )
+
         base = raw_states["base"]
         attitude = raw_states["attitude"]
         q_values = raw_states["q"]
@@ -950,6 +1044,7 @@ def main() -> int:
             }
             state_records.append(compact_state)
             time_records.append({"reference_time_s": float(reference_time), "physx_simulation_time_s": physx_time})
+            capture_visual_frame(index, float(reference_time), compact_state)
             should_checkpoint = (index + 1) % args.checkpoint_every == 0 or index == len(target_times) - 1
             state_writer.append(compact_state, flush=should_checkpoint)
             if should_checkpoint:
@@ -1114,6 +1209,28 @@ def main() -> int:
             result["app_closed"] = True
             result["decision"] = (
                 "SMOKE_64_STEP_PASS" if result.get("expected_physics_steps") == 64 else "SMOKE_1_STEP_PASS"
+            )
+        if visual_enabled:
+            result["visual_capture"] = {
+                "manifest_path": str(args.visual_manifest_output),
+                "source_run": args.visual_run,
+                "source_frames": [int(entry["source_frame"]) for entry in visual_entries if entry["view"] == "overall"],
+                "source_times_s": [float(entry["source_time_s"]) for entry in visual_entries if entry["view"] == "overall"],
+                "png_count": len(visual_entries),
+                "capture_mode": "real_isaac_gui_state_replay",
+            }
+            _atomic_write_json(
+                args.visual_manifest_output,
+                {
+                    "decision": "PASS" if visual_entries else "FAIL",
+                    "visual_contract_version": "S3-R0-R8-real-timeline-v1",
+                    "source": "real Isaac GUI viewport captures taken after the corresponding reference-state playback step",
+                    "created_at": _utc_now(),
+                    "png_count": len(visual_entries),
+                    "png": visual_entries,
+                    "video": [],
+                    "video_count": 0,
+                },
             )
         _atomic_write_json(result_path, result)
         _progress_event(
