@@ -39,6 +39,39 @@ def _path(entry: dict[str, object]) -> Path:
     return Path(str(entry["local_path"]))
 
 
+def record_real_gui_capture(
+    path: Path,
+    *,
+    source_run: str,
+    frame: int,
+    time_s: float,
+    view: str,
+    state_record: dict[str, object],
+) -> dict[str, object]:
+    """Build a manifest entry from one real Isaac viewport capture.
+
+    The caller supplies the frame/time immediately after the corresponding
+    reference-state playback step; this function never infers or hard-codes a
+    final-state timestamp.
+    """
+
+    state_bytes = json.dumps(state_record, ensure_ascii=False, sort_keys=True, default=float).encode("utf-8")
+    return {
+        "local_path": str(path.resolve()),
+        "source_run": source_run,
+        "source_frame": int(frame),
+        "frame": int(frame),
+        "source_time_s": float(time_s),
+        "time_s": float(time_s),
+        "view": view,
+        "capture_mode": CAPTURE_MODE,
+        "capture_role": "dangerous" if abs(int(frame) - DANGEROUS_FRAME) <= FRAME_TOLERANCE else ("final" if int(frame) == FINAL_FRAME else "timeline"),
+        "sha256": _sha256(path),
+        "bytes": int(path.stat().st_size),
+        "source_state_sha256": hashlib.sha256(state_bytes).hexdigest(),
+    }
+
+
 def _validate_png(entry: dict[str, object]) -> None:
     path = _path(entry)
     if not path.is_file() or path.stat().st_size <= 0:

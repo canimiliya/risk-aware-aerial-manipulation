@@ -922,6 +922,8 @@ def main() -> int:
         def capture_visual_frame(frame_index: int, time_s: float, state_record: dict[str, object]) -> None:
             if not visual_enabled or frame_index not in visual_frame_indices:
                 return
+            from scripts.s3_r0_gui_visual_capture import record_real_gui_capture
+
             assert visual_viewport is not None
             assert visual_set_camera_view is not None
             assert visual_capture_viewport_to_file is not None
@@ -949,20 +951,14 @@ def main() -> int:
                 if not output_path.is_file() or output_path.stat().st_size <= 0:
                     raise TimeoutError(f"viewport capture did not produce {output_path}")
                 visual_entries.append(
-                    {
-                        "local_path": str(output_path.resolve()),
-                        "source_run": args.visual_run,
-                        "source_frame": int(frame_index),
-                        "frame": int(frame_index),
-                        "source_time_s": float(time_s),
-                        "time_s": float(time_s),
-                        "view": view_name,
-                        "capture_mode": "real_isaac_gui_state_replay",
-                        "capture_role": "dangerous" if frame_index in {327, 328, 329, 330, 331} else ("final" if frame_index == 1254 else "timeline"),
-                        "source_state_sha256": _file_sha256_bytes(json.dumps(state_record, ensure_ascii=False, sort_keys=True, default=float).encode("utf-8")),
-                        "sha256": _file_sha256(output_path),
-                        "bytes": int(output_path.stat().st_size),
-                    }
+                    record_real_gui_capture(
+                        output_path,
+                        source_run=args.visual_run,
+                        frame=frame_index,
+                        time_s=time_s,
+                        view=view_name,
+                        state_record=state_record,
+                    )
                 )
 
         base = raw_states["base"]
