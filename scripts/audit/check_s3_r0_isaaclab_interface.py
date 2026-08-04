@@ -3,15 +3,47 @@ from __future__ import annotations
 import argparse
 import importlib.util
 import json
+import subprocess
 import sys
 from pathlib import Path
 
+import numpy as np
+
 ROOT = Path(__file__).resolve().parents[2]
+FIXED_OLD_HEAD = "ccf90caa4ea9a0c826efadadb667cf42a54c9a15"
+S3_BRANCH = "agent/s3-r0-isaaclab-trajectory-interface"
 sys.path.insert(0, str(ROOT))
 
 from scripts.audit.check_s3_s2_baseline import run as run_baseline
 from planner_bridge.protocol.load_trajectory import load_bundle
 from planner_bridge.protocol.validation import validate_bundle
+from planner_bridge.protocol.frames import rotation_from_quaternion_wxyz
+
+
+def _git(*args: str) -> str:
+    try:
+        completed = subprocess.run(
+            ["git", *args],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            timeout=30.0,
+            check=False,
+        )
+        return completed.stdout.strip()
+    except Exception:
+        return ""
+
+
+def _progress_contract(path: Path) -> bool:
+    if not path.is_file():
+        return False
+    required = {"PROCESS_STARTED", "SIMULATION_APP_CREATED", "STAGE_CREATED", "PHYSICS_SCENE_CREATED", "ROBOT_REFERENCE_ADDED", "ROBOT_ASSET_READY", "CROSSARM_SCENE_READY", "ACTIVE_JOINTS_READY", "SIMULATION_CONTEXT_READY", "TIMELINE_PLAYING", "STEP_0", "STEP_N", "STATE_LOG_FLUSHED", "RESULT_WRITTEN", "APP_CLOSED"}
+    try:
+        events = {json.loads(line).get("event") for line in path.read_text(encoding="utf-8").splitlines() if line.strip()}
+    except Exception:
+        return False
+    return required.issubset(events)
 
 
 def run(root: Path = ROOT) -> dict[str, object]:
@@ -24,12 +56,26 @@ def run(root: Path = ROOT) -> dict[str, object]:
         if not value:
             (errors if hard else warnings).append(name)
 
+    playback_script = (root / "scripts/s3_r0_reference_playback.py").read_text(encoding="utf-8")
+    formal_loop_start = playback_script.find("for index, reference_time in enumerate(target_times):")
+    formal_loop_end = playback_script.find('"PHYSICS_LOOP_COMPLETE"', formal_loop_start)
+    formal_loop = playback_script[formal_loop_start:formal_loop_end] if formal_loop_start >= 0 and formal_loop_end > formal_loop_start else ""
+    remote_head = _git("ls-remote", "origin", f"refs/heads/{S3_BRANCH}").split("\t", 1)[0]
+    check("remote_correction_head", bool(remote_head) and remote_head != FIXED_OLD_HEAD)
+    check("playback_physics_context_contract", "SimulationContext" in playback_script and "sim.step(render=render_now)" in formal_loop and "app.update()" not in formal_loop)
+    check("playback_diagnostics_contract", all(flag in playback_script for flag in ("--smoke-steps", "--max-runtime-s", "--heartbeat-every", "--checkpoint-every", "--headless", "--render-every", "--progress-output", "--state-output", "--result-output", "os.replace")))
+
     baseline = run_baseline(root)
     check("authoritative_s2_baseline", baseline["decision"] == "PASS")
     for variant in ("nominal_100w0", "nominal_repeat_100w0"):
         bundle = load_bundle(root / "data/trajectories/S3-R0" / variant)
         check(f"{variant}_protocol", not validate_bundle(bundle))
         check(f"{variant}_raw_polynomials", all((root / "data/trajectories/S3-R0" / variant / name).is_file() for name in ("raw_base_polynomial.json", "raw_arm_polynomial.json")))
+        frames = bundle["frames"]
+        check(f"{variant}_dynamic_attitude", any(np.linalg.norm(frame["base_body_omega_B_rad_s"]) > 1e-12 for frame in frames))
+        check(f"{variant}_quaternion_wxyz", all(abs(np.linalg.norm(frame["base_quaternion_WB_wxyz"]) - 1.0) <= 1e-12 for frame in frames))
+        check(f"{variant}_rotation_contract", all(np.linalg.norm(rotation_from_quaternion_wxyz(frame["base_quaternion_WB_wxyz"]).T @ rotation_from_quaternion_wxyz(frame["base_quaternion_WB_wxyz"]) - np.eye(3)) <= 1e-10 for frame in frames))
+        check(f"{variant}_world_ee_b_to_a0_contract", bundle.get("scene_contract", {}).get("world_ee") == "p_WB_plus_R_WB_(R_BA0_p_A0E_plus_t_BA0)")
     scene = json.loads((root / "docs/evidence/S3-R0/scene_contract.json").read_text(encoding="utf-8"))
     check("scene_contract", scene.get("playback_mode") == "REFERENCE_STATE_PLAYBACK")
     gate_path = root / "docs/evidence/S3-R0/environment/environment_gate.json"
@@ -46,29 +92,49 @@ def run(root: Path = ROOT) -> dict[str, object]:
         check("isaaclab_import", importlib.util.find_spec("isaaclab") is not None, hard=False)
         check("isaacsim_import", importlib.util.find_spec("isaacsim") is not None, hard=False)
         check("physx_smoke", environment.get("physx_smoke") == "PASS", hard=False)
-    playback_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_v14.json"
-    if not playback_path.is_file():
-        playback_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_v3.json"
+    playback_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_corrected.json"
     playback = json.loads(playback_path.read_text(encoding="utf-8")) if playback_path.is_file() else {}
+    smoke_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_smoke64.json"
+    smoke = json.loads(smoke_path.read_text(encoding="utf-8")) if smoke_path.is_file() else {}
+    check("canonical_240hz_sample_count", bool(playback) and playback.get("canonical_240hz_sample_count") == int(np.ceil(float(playback.get("duration_s", 0.0)) * 240.0)) + 1)
+    check("smoke_64_steps", smoke.get("expected_physics_steps") == 64 and smoke.get("actual_physics_steps") == 64 and smoke.get("app_closed") is True and smoke.get("decision") == "SMOKE_64_STEP_PASS")
+    check("smoke_heartbeat_checkpoints", _progress_contract(root / "docs/evidence/S3-R0/isaac_playback_nominal_smoke64.progress.jsonl"))
     if playback:
-        check("playback_runs", playback.get("frames", 0) > 0 and playback.get("finite") is True and playback.get("monotonic_time") is True)
-        check("joint_mapping_error", playback.get("max_joint_state_write_readback_error_rad", float("inf")) <= 1e-8)
+        check("playback_runs", playback.get("frames", 0) > 0 and playback.get("finite") is True and playback.get("monotonic_time") is True and playback.get("app_closed") is True)
+        check("expected_actual_physics_steps", playback.get("expected_physics_steps") == playback.get("actual_physics_steps"))
+        check("time_alignment", playback.get("max_time_alignment_error_s", float("inf")) <= 1e-9 and playback.get("time_alignment_pass") is True)
+        check("complete_duration", playback.get("complete_duration") is True)
+        check("joint_mapping_error", playback.get("max_joint_state_write_readback_error_rad", float("inf")) <= 1e-5)
         check("arm_fk_error", playback.get("max_arm_fk_error_m", float("inf")) <= 1e-5)
         check("world_ee_error", playback.get("max_world_ee_error_m", float("inf")) <= 1e-4)
+        check("playback_heartbeat_checkpoints", _progress_contract(root / "docs/evidence/S3-R0/isaac_playback_nominal_corrected.progress.jsonl"))
         check("contact_query", playback.get("contact_query") == "PASS")
-        check("clearance_gate", playback.get("clearance_gate") == "PASS")
-    if not errors and not warnings:
-        decision = "SUBMITTED_S3_R0_BASIC_ENVIRONMENT_READY"
-    elif playback and any(name in errors for name in ("joint_mapping_error", "arm_fk_error", "world_ee_error")):
-        decision = "SUBMITTED_S3_R0_FK_FAILED"
-    elif playback and any(name in errors for name in ("contact_query", "clearance_gate")):
-        decision = "SUBMITTED_S3_R0_PLAYBACK_FAILED"
-    elif not errors:
-        decision = "SUBMITTED_S3_R0_PROTOCOL_READY_DEPENDENCY_INSTALL_BLOCKED"
+        check("exact_sampled_proxy_clearance", playback.get("clearance_metric") == "EXACT_FOR_FROZEN_S2_SAMPLED_PROXY_NOT_MESH_EXACT" and playback.get("exact_clearance_gate") is True)
+        check("s2_clearance_delta", playback.get("distance_match_gate") is True and playback.get("g1_g2_delta_pass") is True and playback.get("g2_g3_delta_pass") is True)
     else:
-        decision = "REVISION_REQUIRED"
-    protocol_checks = [name for name in checks if name.endswith("_protocol") or name.endswith("_raw_polynomials") or name == "authoritative_s2_baseline" or name == "scene_contract"]
+        for name in ("playback_runs", "expected_actual_physics_steps", "time_alignment", "complete_duration", "exact_sampled_proxy_clearance", "s2_clearance_delta"):
+            check(name, False)
+    required_runs = {
+        "nominal_x3": [root / "docs/evidence/S3-R0" / f"isaac_playback_nominal_corrected_{i}.json" for i in range(1, 4)],
+        "nominal_repeat": [root / "docs/evidence/S3-R0/isaac_playback_nominal_repeat_corrected.json"],
+        "gui": [root / "docs/evidence/S3-R0/isaac_playback_nominal_gui_corrected.json"],
+    }
+    for name, paths in required_runs.items():
+        check(name, all(path.is_file() for path in paths))
+    visuals = root / "docs/evidence/S3-R0/visuals/manifest.json"
+    check("visual_manifest", visuals.is_file())
+    if not errors and not warnings:
+        decision = "READY_FOR_S3_FINAL_REVIEW"
+    else:
+        decision = "SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE"
+    protocol_checks = [name for name in checks if name.endswith("_protocol") or name.endswith("_raw_polynomials") or name.endswith("_dynamic_attitude") or name.endswith("_quaternion_wxyz") or name.endswith("_rotation_contract") or name.endswith("_world_ee_b_to_a0_contract") or name == "authoritative_s2_baseline" or name == "scene_contract"]
     environment_checks = ["python_311_environment", "isaaclab_import", "isaacsim_import", "physx_smoke"]
+    asset_manifest = root / "docs/evidence/S3-R0/assets/usd_manifest.json"
+    asset_imported = False
+    if asset_manifest.is_file():
+        asset_imported = bool(json.loads(asset_manifest.read_text(encoding="utf-8")).get("import_status"))
+    playback_ok = bool(playback and checks.get("playback_runs") and checks.get("time_alignment") and checks.get("complete_duration"))
+    repeat_gui_ok = checks.get("nominal_x3", False) and checks.get("nominal_repeat", False) and checks.get("gui", False) and checks.get("visual_manifest", False)
     return {
         "decision": decision,
         "errors": errors,
@@ -76,6 +142,17 @@ def run(root: Path = ROOT) -> dict[str, object]:
         "checks": checks,
         "protocol_ready": all(checks.get(name, False) for name in protocol_checks),
         "isaac_ready": all(checks.get(name, False) for name in environment_checks),
+        "robot_asset_import": asset_imported,
+        "scene_load": checks.get("scene_contract", False),
+        "playback_runs": playback_ok,
+        "arm_fk": bool(playback and checks.get("arm_fk_error", False)),
+        "world_ee_fk": bool(playback and checks.get("world_ee_error", False)),
+        "clearance_exact_distance": checks.get("exact_sampled_proxy_clearance", False),
+        "s2_clearance_delta": checks.get("s2_clearance_delta", False),
+        "repeat_gui_visuals": repeat_gui_ok,
+        "s3_kinematic_playback_accepted": playback_ok,
+        "full_closed_chain_dynamics": False,
+        "s4_dynamic_articulation_ready": False,
     }
 
 

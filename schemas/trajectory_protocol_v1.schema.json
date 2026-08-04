@@ -7,19 +7,47 @@
     "protocol": {"const": "S3-R0-trajectory-protocol-v1"},
     "source": {"type": "object", "required": ["raw_base_polynomial", "raw_arm_polynomial", "allowed_lineage"]},
     "sample_hz": {"const": 200},
-    "scene_contract": {"type": "object"},
+    "scene_contract": {
+      "type": "object",
+      "required": ["base_quaternion_order", "world_ee", "tool_direction_mapping"],
+      "properties": {
+        "base_quaternion_order": {"const": "wxyz"},
+        "world_ee": {"const": "p_WB_plus_R_WB_(R_BA0_p_A0E_plus_t_BA0)"}
+      }
+    },
     "frames": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["time", "base_position_m", "base_quaternion_xyzw", "base_velocity_m_s", "base_acceleration_m_s2", "base_jerk_m_s3", "body_angular_velocity_rad_s", "arm_cartesian_position_m", "arm_cartesian_velocity_m_s", "arm_cartesian_acceleration_m_s2", "q_rad", "qdot_rad_s", "qddot_rad_s2", "world_ee_position_m", "tool_direction_status", "phase_id", "phase_progress"],
+        "required": [
+          "time", "base_position_m", "base_quaternion_WB_wxyz", "base_velocity_m_s",
+          "base_acceleration_m_s2", "base_jerk_m_s3", "base_body_omega_B_rad_s", "base_thrust_N",
+          "arm_cartesian_position_m", "arm_cartesian_velocity_m_s", "arm_cartesian_acceleration_m_s2",
+          "q_rad", "qdot_rad_s", "qddot_rad_s2", "world_ee_position_m", "tool_direction_status",
+          "tool_direction_A0", "tool_direction_W", "phase_id", "phase_progress"
+        ],
         "properties": {
           "time": {"type": "number", "minimum": 0},
-          "base_quaternion_xyzw": {"type": "array", "minItems": 4, "maxItems": 4},
+          "base_position_m": {"type": "array", "minItems": 3, "maxItems": 3},
+          "base_quaternion_WB_wxyz": {"type": "array", "minItems": 4, "maxItems": 4},
+          "base_velocity_m_s": {"type": "array", "minItems": 3, "maxItems": 3},
+          "base_acceleration_m_s2": {"type": "array", "minItems": 3, "maxItems": 3},
+          "base_jerk_m_s3": {"type": "array", "minItems": 3, "maxItems": 3},
+          "base_body_omega_B_rad_s": {"type": "array", "minItems": 3, "maxItems": 3},
+          "base_thrust_N": {"type": "number", "exclusiveMinimum": 0},
+          "arm_cartesian_position_m": {"type": "array", "minItems": 3, "maxItems": 3},
+          "arm_cartesian_velocity_m_s": {"type": "array", "minItems": 3, "maxItems": 3},
+          "arm_cartesian_acceleration_m_s2": {"type": "array", "minItems": 3, "maxItems": 3},
           "q_rad": {"type": "array", "minItems": 3, "maxItems": 3},
           "qdot_rad_s": {"type": "array", "minItems": 3, "maxItems": 3},
           "qddot_rad_s2": {"type": "array", "minItems": 3, "maxItems": 3},
-          "tool_direction_status": {"const": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT"}
+          "world_ee_position_m": {"type": "array", "minItems": 3, "maxItems": 3},
+          "tool_direction_status": {"const": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT"},
+          "tool_direction_A0": {"type": "array", "minItems": 3, "maxItems": 3},
+          "tool_direction_W": {"type": "array", "minItems": 3, "maxItems": 3},
+          "phase_id": {"type": "integer"},
+          "phase_progress": {"type": "number"}
         }
       }
     }

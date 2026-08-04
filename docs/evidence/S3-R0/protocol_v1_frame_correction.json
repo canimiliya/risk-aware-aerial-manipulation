@@ -1,0 +1,58 @@
+{
+  "protocol": "S3-R0-trajectory-protocol-v1",
+  "correction": "S3-R0-R3姿态时间轴精确距离修正",
+  "legacy_identity_bundles": {
+    "nominal_100w0": {
+      "present": true,
+      "trajectory_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\data\\trajectories\\S3-R0\\nominal_100w0\\trajectory.json",
+      "trajectory_sha256": "2c3fac26181d94ff71af8a48c8d09ca3c779e44de0d0b7db6d4b3d7e56a2173b",
+      "manifest_sha256": "fe4cd5a47247040e4e695df59be2b0f8b766b21c2947ccc7d45bdbd82b8fda3b",
+      "validator_rejected": true,
+      "validator_rejection_error_count": 5233,
+      "validator_rejection_error_examples": ["quaternion_order", "world_ee_contract", "frame_0_base_quaternion_WB_wxyz"],
+      "identity_quaternion_field": "base_quaternion_xyzw",
+      "identity_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "migration": "Legacy 200 Hz identity/zero-omega bundle was replaced by S2 OfficialFlatnessMap WXYZ attitude, B->A0 world composition, and transformed tool direction. The legacy bytes are represented by these SHA-256 values; no S2 source trajectory was changed."
+    },
+    "nominal_repeat_100w0": {
+      "present": true,
+      "trajectory_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\data\\trajectories\\S3-R0\\nominal_repeat_100w0\\trajectory.json",
+      "trajectory_sha256": "526984319263ae21b66e87130d5061d3e94af82614d8ddaf01154a7bff846e3a",
+      "manifest_sha256": "0b12ec3fcc9d445138a550cf2c5b7a7561639b211b66af6b2fb6ac778990fade",
+      "validator_rejected": true,
+      "validator_rejection_error_count": 5233,
+      "validator_rejection_error_examples": ["quaternion_order", "world_ee_contract", "frame_0_base_quaternion_WB_wxyz"],
+      "identity_quaternion_field": "base_quaternion_xyzw",
+      "identity_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "migration": "Legacy 200 Hz identity/zero-omega bundle was replaced by S2 OfficialFlatnessMap WXYZ attitude, B->A0 world composition, and transformed tool direction. The legacy bytes are represented by these SHA-256 values; no S2 source trajectory was changed."
+    }
+  },
+  "new_contract": {
+    "base_quaternion": "base_quaternion_WB_wxyz",
+    "base_body_omega": "base_body_omega_B_rad_s",
+    "base_thrust": "base_thrust_N",
+    "attitude_source": "S2_OFFICIAL_FLATNESS_MAP_RECONSTRUCTION",
+    "world_ee": "p_WB + R_WB @ (R_BA0 @ p_A0E + t_BA0)",
+    "tool_direction": "R_WB @ R_BA0 @ direction_A0"
+  },
+  "variants": [
+    {
+      "variant": "nominal_100w0",
+      "trajectory_sha256": "1970a4c6b8fe64a1686aad8f40d48f73f93e5807c055b18a1e12f6a8dab9f0de"
+    },
+    {
+      "variant": "nominal_repeat_100w0",
+      "trajectory_sha256": "55501daa133380e1a61eccaed7289b47e3eac5c3045cd3a6bcebadd1341e3ee4"
+    }
+  ]
+}
