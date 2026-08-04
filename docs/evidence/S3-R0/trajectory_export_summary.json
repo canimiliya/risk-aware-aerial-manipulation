@@ -1,0 +1,13 @@
+{
+  "decision": "PASS",
+  "protocol": "S3-R0-trajectory-protocol-v1",
+  "sample_hz": 200,
+  "source_lineage": ["S2-R6 nominal_100w0", "S2-R6 nominal_repeat_final_100w0"],
+  "variants": {
+    "nominal_100w0": {"samples": 1046, "duration_s": 5.223430863911155, "trajectory_sha256": "66b4ed4f05a7471c422ca1d81c0b147ded005bccdb5cc064f3f896db8e94e991"},
+    "nominal_repeat_100w0": {"samples": 1046, "duration_s": 5.223430863911155, "trajectory_sha256": "58287bc3675ec75c3e0f85fd35b870a3954f91707f390207ee582b846f3cc15d"}
+  },
+  "q_source": "project official_ik applied to arm Cartesian reference",
+  "tool_direction_status": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT",
+  "complete_end_effector_quaternion": false
+}

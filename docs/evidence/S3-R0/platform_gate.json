@@ -1,0 +1,29 @@
+{
+  "platform_gate": "PASS_WITH_WARNINGS",
+  "os": "Windows 11 Professional Chinese",
+  "windows_version": "2009",
+  "build": 26100,
+  "cpu": "Intel(R) Core(TM) Ultra 7 270K Plus",
+  "ram_bytes": 50873458688,
+  "ram_gib": 47.38,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "vram_mib": 16311,
+  "driver": "581.29",
+  "compute_capability": "12.0",
+  "d_free_bytes": 399529447424,
+  "d_free_gib": 372.18,
+  "hard_checks": {
+    "windows": true,
+    "ram_at_least_32gb": true,
+    "vram_at_least_16gb": true,
+    "driver_at_least_580_88": true,
+    "d_free_at_least_50gb": true
+  },
+  "warnings": [
+    "NVIDIA Compatibility Checker executable was not found",
+    "LongPathsEnabled=0; short install path D:\\i3 selected and registry was not modified",
+    "VRAM is only slightly above the 16 GB hard threshold",
+    "RAM is below the 64 GB recommended value"
+  ],
+  "source": "direct Windows PowerShell/CUDA query on 2026-08-04"
+}

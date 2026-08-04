@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "S3-R0 offline trajectory protocol v1",
+  "type": "object",
+  "required": ["protocol", "source", "sample_hz", "scene_contract", "frames"],
+  "properties": {
+    "protocol": {"const": "S3-R0-trajectory-protocol-v1"},
+    "source": {"type": "object", "required": ["raw_base_polynomial", "raw_arm_polynomial", "allowed_lineage"]},
+    "sample_hz": {"const": 200},
+    "scene_contract": {"type": "object"},
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["time", "base_position_m", "base_quaternion_xyzw", "base_velocity_m_s", "base_acceleration_m_s2", "base_jerk_m_s3", "body_angular_velocity_rad_s", "arm_cartesian_position_m", "arm_cartesian_velocity_m_s", "arm_cartesian_acceleration_m_s2", "q_rad", "qdot_rad_s", "qddot_rad_s2", "world_ee_position_m", "tool_direction_status", "phase_id", "phase_progress"],
+        "properties": {
+          "time": {"type": "number", "minimum": 0},
+          "base_quaternion_xyzw": {"type": "array", "minItems": 4, "maxItems": 4},
+          "q_rad": {"type": "array", "minItems": 3, "maxItems": 3},
+          "qdot_rad_s": {"type": "array", "minItems": 3, "maxItems": 3},
+          "qddot_rad_s2": {"type": "array", "minItems": 3, "maxItems": 3},
+          "tool_direction_status": {"const": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT"}
+        }
+      }
+    }
+  }
+}

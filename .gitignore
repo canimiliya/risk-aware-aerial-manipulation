@@ -11,6 +11,8 @@ outputs/logs/*
 outputs/videos/*
 data/evaluation/*
 data/trajectories/*
+!data/trajectories/S3-R0/
+!data/trajectories/S3-R0/**
 *.pt
 *.pth
 *.ckpt

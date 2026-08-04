@@ -1,0 +1,24 @@
+{
+  "decision": "SUBMITTED_S3_R0_PROTOCOL_READY_PLATFORM_BLOCKED",
+  "errors": [],
+  "warnings": ["IsaacLab/IsaacSim import and PhysX smoke were not reached because pip installation timed out"],
+  "s3_status": "SUBMITTED_FOR_REVIEW",
+  "completion_estimate": "约40%",
+  "protocol_ready": true,
+  "isaac_ready": false,
+  "checks": {
+    "s2_authoritative_baseline": true,
+    "s2_archival_audits": true,
+    "raw_polynomial_preserved": true,
+    "canonical_200hz_full_state": true,
+    "nominal_repeat": true,
+    "pure_python_tests": true,
+    "scene_contract": true,
+    "isaac_import": false,
+    "physx_smoke": false,
+    "robot_asset_import": false,
+    "playback_runs": false,
+    "fk_safety_readback": false
+  },
+  "scope_boundary": "No ROS bridge, training, closed-loop, wind/contact/randomization, or S4 work"
+}
