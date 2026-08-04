@@ -1,11 +1,23 @@
 {
-  "decision": "SUBMITTED_S3_R0_PROTOCOL_READY_PLATFORM_BLOCKED",
-  "errors": [],
-  "warnings": ["IsaacLab/IsaacSim import and PhysX smoke were not reached because pip installation timed out"],
-  "s3_status": "SUBMITTED_FOR_REVIEW",
-  "completion_estimate": "约40%",
+  "decision": "SUBMITTED_S3_R0_FK_FAILED",
+  "errors": [
+    "joint_mapping_error",
+    "arm_fk_error",
+    "world_ee_error",
+    "contact_query",
+    "clearance_gate"
+  ],
+  "warnings": [
+    "Isaac Lab 0.54.2 metadata pins starlette==0.49.1 while Isaac Sim kernel pins fastapi==0.115.7 and starlette<0.46"
+  ],
+  "s3_status": "SUBMITTED_FOR_REVIEW_WITH_FAILURE_EVIDENCE",
+  "completion_estimate": "formal 3/9 ~= 33%; engineering ~= 42%; S3-R0 ~= 80%",
   "protocol_ready": true,
-  "isaac_ready": false,
+  "isaac_ready": true,
+  "robot_asset_import": true,
+  "scene_load": true,
+  "playback_runs": true,
+  "fk_safety_readback": false,
   "checks": {
     "s2_authoritative_baseline": true,
     "s2_archival_audits": true,
@@ -14,11 +26,13 @@
     "nominal_repeat": true,
     "pure_python_tests": true,
     "scene_contract": true,
-    "isaac_import": false,
-    "physx_smoke": false,
-    "robot_asset_import": false,
-    "playback_runs": false,
-    "fk_safety_readback": false
+    "isaac_import": true,
+    "physx_smoke": true,
+    "robot_asset_import": true,
+    "playback_runs": true,
+    "fk_safety_readback": false,
+    "contact_query": false,
+    "clearance_gate": false
   },
   "scope_boundary": "No ROS bridge, training, closed-loop, wind/contact/randomization, or S4 work"
 }

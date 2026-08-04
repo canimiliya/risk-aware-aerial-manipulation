@@ -1,9 +1,11 @@
 # S3-R0 status
 
-- S3：`SUBMITTED_S3_R0_PROTOCOL_READY_PLATFORM_BLOCKED`
+- S3：`SUBMITTED_S3_R0_FK_FAILED`
 - 轨迹协议：`PASS`
-- Isaac Lab/Isaac Sim：`BLOCKED_TIMEOUT`
-- 播放模式：`REFERENCE_STATE_PLAYBACK`
+- Isaac Sim/Isaac Lab 基础运行：`READY_WITH_LIMITATIONS`
+- 机器人导入与场景加载：`PASS_WITH_LIMITATIONS`
+- 播放：`PASS_RUNTIME / FK_FAILED`
+- 接触与 clearance：`NOT_EXECUTED`
 - S4--S8：`FROZEN`
 
-已完成 S2 authoritative baseline 修正、S2 archival 审计、S3-R0 协议、nominal/repeat 离线 bundle、schema、场景合同和纯 Python 测试。Windows 原生 Python 3.11 环境已在 `D:\i3\s3_isaaclab_232` 创建；IsaacLab pip 安装在依赖 `flatdict` 构建元数据阶段超时，未接受 EULA、未运行 Isaac/PhysX 冒烟、未导入机器人资产，也未进入 S4。
+本轮保留了旧 pip-only/flatdict 失败现场，并改用官方 Isaac Sim 5.1 pip package → Isaac Lab v2.3.2 官方源码 → `isaaclab.bat -i none`。新环境可导入并完成 Isaac Sim empty-stage/PhysX 10-step smoke，官方 AM-Planner Delta 资产也已导入 USD；名义轨迹完整播放 1046 帧，但关节回读和项目 FK 残差超过硬门槛，接触查询与 clearance 尚未执行。因此不宣称 S3 PASS，也不进入 S4。

@@ -1,0 +1,17 @@
+{
+  "source": "https://github.com/isaac-sim/IsaacLab.git",
+  "tag": "v2.3.2",
+  "head": "37ddf626871758333d6ed89cf64ad702aef127d0",
+  "path": "D:/i3/L",
+  "source_status": "clean",
+  "install_command": "isaaclab.bat -i none",
+  "installed_packages": {
+    "isaaclab": "0.54.2",
+    "isaaclab_assets": "0.2.4",
+    "isaaclab_contrib": "0.0.2",
+    "isaaclab_tasks": "0.11.12",
+    "isaaclab_rl": "0.4.7"
+  },
+  "rl_frameworks": [],
+  "upstream_source_modified": false
+}

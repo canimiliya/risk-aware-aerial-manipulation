@@ -1,0 +1,7 @@
+{
+  "physics_scene": "/World/physicsScene",
+  "steps": 10,
+  "physx_extensions_loaded": true,
+  "nan_inf": 0,
+  "result": "PASS"
+}

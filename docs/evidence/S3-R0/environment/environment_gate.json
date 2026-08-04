@@ -1,0 +1,16 @@
+{
+  "environment": "D:/i3/e",
+  "python": "3.11",
+  "isaacsim_import": true,
+  "isaaclab_import": true,
+  "physx_smoke": true,
+  "official_source_install": true,
+  "flatdict": "4.0.1",
+  "rl_frameworks": [],
+  "pip_check": {
+    "result": "KNOWN_UPSTREAM_CONFLICT",
+    "conflicts": ["isaaclab 0.54.2 requires starlette==0.49.1; Isaac Sim fastapi 0.115.7 requires starlette<0.46"],
+    "runtime_choice": "preserve Isaac Sim strict runtime pins: fastapi 0.115.7 / starlette 0.45.3"
+  },
+  "gate": "PASS_WITH_LIMITATION"
+}

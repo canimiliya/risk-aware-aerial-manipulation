@@ -1,0 +1,7 @@
+environment=D:\i3\e
+isaacsim=5.1.0.0
+isaaclab=0.54.2 source=D:\i3\L tag=v2.3.2
+torch=2.7.0+cu128
+gpu=NVIDIA GeForce RTX 5060 Ti
+driver=581.29
+python=3.11

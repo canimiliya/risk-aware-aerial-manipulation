@@ -1,0 +1,8 @@
+{
+  "script": "scripts/s3_r0_isaacsim_smoke.py",
+  "app_started": true,
+  "steps": 10,
+  "physics_scene": true,
+  "finite": true,
+  "exit": 0
+}

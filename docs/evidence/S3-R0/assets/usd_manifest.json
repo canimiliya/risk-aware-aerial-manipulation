@@ -1,0 +1,12 @@
+{
+  "path": "D:/i3/a/aerial_manipulator_v2.usd",
+  "bytes": 1518,
+  "sha256": "74CCE4B4CD8A41DA9B60829482DEBBF3A78C0548BACB9DD53089E92C5ED7BC7D",
+  "import_status": true,
+  "root": "/delta_display/body",
+  "applied_schema": ["IsaacRobotAPI"],
+  "prim_count_observed": 51,
+  "mesh_resolution_errors": 0,
+  "warnings": ["No mass specified for link body", "referenced mesh/USD inspection emitted a node_STL_BINARY_ attribute warning"],
+  "not_committed": true
+}

@@ -1,0 +1,38 @@
+{
+  "mode": "REFERENCE_STATE_PLAYBACK",
+  "variant": "nominal_100w0",
+  "frames": 1046,
+  "duration_s": 5.223430863911155,
+  "physics_dt_s": 0.004166666666666667,
+  "rendering_dt_s": 0.016666666666666666,
+  "num_envs": 1,
+  "observed_physics_steps": 1046,
+  "monotonic_time": true,
+  "finite": true,
+  "active_joints": [
+    "m1_1",
+    "m2_1",
+    "m3_1"
+  ],
+  "passive_joints": [
+    "m1_2",
+    "m1_3",
+    "m2_2",
+    "m2_3",
+    "m3_2",
+    "m3_3"
+  ],
+  "max_joint_state_write_readback_error_rad": 0.01098238426654774,
+  "max_arm_fk_error_m": 0.18227038753484998,
+  "max_world_ee_error_m": 0.18227038753484992,
+  "required_prim_paths": [
+    "/World/Robot",
+    "/World/Crossarm/MainBeam",
+    "/World/Crossarm/Column",
+    "/World/Crossarm/AdjacentObstacle",
+    "/World/TargetProxy"
+  ],
+  "contact_query": "NOT_IMPLEMENTED_IN_REFERENCE_STATE_PLAYBACK",
+  "clearance_gate": "NOT_EXECUTED",
+  "closed_loop": false
+}

@@ -1,0 +1,8 @@
+{
+  "world": "Isaac Sim world frame",
+  "base": "reference base pose written to /World/Robot",
+  "a0": "project Delta B->A0 transform: translation [0,0,-0.05], rpy [0,0,-1.5708]",
+  "ee": "project official FK mapped into world through base and A0",
+  "scene_contract": "docs/evidence/S3-R0/scene_contract.json",
+  "alignment": "scene prim creation and playback completed; numerical FK gate failed"
+}

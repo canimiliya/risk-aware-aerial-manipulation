@@ -1,0 +1,14 @@
+fastapi==0.115.7
+flatdict==4.0.1
+isaaclab==0.54.2
+isaaclab_assets==0.2.4
+isaaclab_contrib==0.0.2
+isaaclab_rl==0.4.7
+isaaclab_tasks==0.11.12
+isaacsim==5.1.0.0
+onnx==1.18.0
+setuptools==80.10.2
+starlette==0.45.3
+torch==2.7.0+cu128
+torchaudio==2.7.0+cu128
+torchvision==0.22.0+cu128

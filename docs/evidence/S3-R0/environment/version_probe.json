@@ -1,0 +1,15 @@
+{
+  "platform": "Windows native",
+  "python": "3.11",
+  "isaacsim": "5.1.0.0",
+  "isaaclab": "0.54.2 from D:/i3/L/source/isaaclab",
+  "flatdict": "4.0.1",
+  "setuptools": "80.10.2",
+  "torch": "2.7.0+cu128",
+  "torchvision": "0.22.0+cu128",
+  "torchaudio": "2.7.0+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "driver": "581.29"
+}

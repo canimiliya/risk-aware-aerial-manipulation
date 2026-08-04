@@ -1,0 +1,9 @@
+{
+  "robot_root_present": true,
+  "active_joints_present": true,
+  "passive_joints_present": true,
+  "articulation_mode": "S3_KINEMATIC_PLAYBACK_ARTICULATION",
+  "full_closed_chain_dynamics": false,
+  "mass_inertia": "body mass warning preserved; no full dynamics claim",
+  "validation": "PASS_WITH_LIMITATIONS"
+}

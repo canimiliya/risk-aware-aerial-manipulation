@@ -1,0 +1,19 @@
+{
+  "source_commit": "7ea9a0a4c5a338efee1bf97c7f7e3e638e7d0d5d",
+  "files": [
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/urdf/arm.xacro", "bytes": 16472, "sha256": "8489DA676645EDEBDE53E0AC352A48BC1A3096F5EE41BB86122AFDACA5CA6DB1"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/AA_1.STL", "bytes": 292384, "sha256": "044111FD3DAEAD47D305F972C39AA00819820C31CF5F8A7692ABB556951FBB52"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/AA_2.STL", "bytes": 292384, "sha256": "25A54EDF89D372C60434D4948A172D5617F844A54F291151C174908D39059447"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/AA_3.STL", "bytes": 292384, "sha256": "C90E194054B499FED73B3D31AE033F073A37BE4CEE801B0C18AB2D0439E6BBE4"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/drone.dae", "bytes": 24258743, "sha256": "0B73F07AE5A5B5B95B9FFE45FA7902B21BCC1F1D64A3AD6D1E276CB43B25D8B5"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/end_effector.STL", "bytes": 4053034, "sha256": "DA897C420C9B19EB4BDCE91FC16AAD6E91AE5A8673514C9227EA47B9F5CF786E"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/bottom.STL", "bytes": 20784, "sha256": "1E649937F485531D0B68C56BBA555DBF19B8B418CD6D86F2A2B38740B7D179E0"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/TA_1l.STL", "bytes": 368684, "sha256": "ED39A4785CF3FB169427AC50A7CAAE841A9E385D9BBFF986E2E7E6E58D68E0AE"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/TA_1r.STL", "bytes": 368684, "sha256": "6E083E0145DD4CB0FDF34A9382D1BA6969690EEAA0ECB34D210E8816AC604938"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/TA_2l.STL", "bytes": 368684, "sha256": "748D60BC5265C27DB52D5B3A0CE5A6FBD75AF35779D4C326D39BF84CE7858208"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/TA_2r.STL", "bytes": 368684, "sha256": "EF9B63CCA3E6266D180806CAE9C33C00D4510FB4E534DB4D66DE5232C867C1F3"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/TA_3l.STL", "bytes": 368684, "sha256": "D630881D0BF01D18D0EC98857BDE373F75D5D7E4FB9346493A33A1500746101C"},
+    {"path": "third_party/am-planner/src/uam_sim/delta-display/delta_display/meshes/TA_3r.STL", "bytes": 368684, "sha256": "BCF69B7C8BEE93B6006E4940B81EA8D49B19BFA238FA30056969C32400D873D7"}
+  ],
+  "note": "Mesh inventory is representative and does not embed third-party assets."
+}

@@ -1,0 +1,2 @@
+D:\i3\e\python.exe scripts\s3_r0_prepare_official_delta_urdf.py --output D:\i3\a\aerial_manipulator_v2.urdf
+D:\i3\e\python.exe scripts\s3_r0_import_delta_usd.py --urdf D:\i3\a\aerial_manipulator_v2.urdf --usd D:\i3\a\aerial_manipulator_v2.usd
