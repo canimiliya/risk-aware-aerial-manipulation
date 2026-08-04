@@ -13,22 +13,17 @@ from planner_bridge.execution.full_body_proxy import component_sample_sets, obst
 from planner_bridge.execution.official_delta_kinematics import official_fk_joint_state, official_joint_points
 from planner_bridge.protocol.frames import rotation_from_quaternion_wxyz
 from planner_bridge.scenes.generate_s2_r2_crossarm_map import build_point_groups, build_points, manifest
+from planner_bridge.scenes.s3_r0_scene_contract import SCENE_AABBS, scene_aabb_contract_payload
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "docs/evidence/S3-R0"
 OUT = EVIDENCE / "distance_representation"
 RUNS = ("isaac_playback_nominal_1_r5_grid", "isaac_playback_nominal_2_r5", "isaac_playback_nominal_3_r5", "isaac_playback_nominal_repeat_r5")
-GROUPS = ("TargetProxy", "MainBeam", "Column", "AdjacentObstacle")
+GROUPS = tuple(SCENE_AABBS)
 COMPONENTS = ("body", "rotor_1", "rotor_2", "rotor_3", "rotor_4", "upper_arm_1", "upper_arm_2", "upper_arm_3", "lower_arm_1_left", "lower_arm_1_right", "lower_arm_2_left", "lower_arm_2_right", "lower_arm_3_left", "lower_arm_3_right", "moving_platform", "end_effector")
 GATE_M = 0.010
 REPLAY_GATE_M = 0.002
 ORDER_TOLERANCE_M = 1e-9
-BOXES = {
-    "MainBeam": (np.array([0.0, 0.0, 1.32]), np.array([0.12, 2.52, 0.12])),
-    "Column": (np.array([0.0, 0.0, 0.735]), np.array([0.12, 0.12, 1.29])),
-    "AdjacentObstacle": (np.array([0.0, 0.62, 0.995]), np.array([0.12, 0.12, 1.41])),
-    "TargetProxy": (np.array([0.0, 0.0, 0.295]), np.array([0.60, 0.60, 0.55])),
-}
 
 
 def _ready(value: Any) -> Any:
@@ -64,7 +59,9 @@ def containment_proof() -> dict[str, Any]:
     original_sha = manifest("nominal")["points_sha256"]
     rows = {}
     for name in GROUPS:
-        center, size = BOXES[name]
+        aabb = SCENE_AABBS[name]
+        center = np.asarray(aabb.center_m, dtype=float)
+        size = np.asarray(aabb.size_m, dtype=float)
         lower, upper = center - size / 2.0, center + size / 2.0
         values = np.asarray(groups[name], dtype=float)
         outside = np.linalg.norm(np.maximum(np.maximum(lower - values, 0.0), values - upper), axis=1)
@@ -83,6 +80,9 @@ def containment_proof() -> dict[str, Any]:
         }
         rows[name]["contained"] = rows[name]["outside_count"] == 0 and rows[name]["max_outside_distance_m"] <= ORDER_TOLERANCE_M
     union_sha = _sha(union)
+    column_revision = scene_aabb_contract_payload()["column_revision"]
+    column_revision["s2_point_cloud_min_m"] = rows["Column"]["s2_point_cloud_min_m"]
+    column_revision["s2_point_cloud_max_m"] = rows["Column"]["s2_point_cloud_max_m"]
     result = {
         "decision": "PASS" if union == original and union_sha == original_sha and all(row["contained"] for row in rows.values()) else "FAIL",
         "groups": rows, "group_names": list(GROUPS), "union_point_count": len(union), "original_point_count": len(original),
@@ -91,6 +91,7 @@ def containment_proof() -> dict[str, Any]:
         "outside_count": sum(row["outside_count"] for row in rows.values()),
         "max_outside_distance_m": max(row["max_outside_distance_m"] for row in rows.values()),
         "conservative_envelope_pass": all(row["contained"] for row in rows.values()),
+        "column_revision": column_revision,
         "quantification_only": {"voxel_resolution_m": 0.02, "interpretation": "AABB fills cylinder corners, voxel gaps, and the TargetProxy central exclusion region; these are representation effects, not equivalence claims."},
     }
     return result
@@ -111,7 +112,10 @@ def distance_run(name: str) -> dict[str, Any]:
         obstacle_row, point_row = [], []
         for j, component in enumerate(COMPONENTS):
             sample_set = samples[component]
-            candidates = {obstacle: sampled_proxy_aabb_clearance(sample_set, center, size) for obstacle, (center, size) in BOXES.items()}
+            candidates = {
+                obstacle: sampled_proxy_aabb_clearance(sample_set, aabb.center_m, aabb.size_m)
+                for obstacle, aabb in SCENE_AABBS.items()
+            }
             obstacle, best = min(candidates.items(), key=lambda item: item[1]["clearance_m"])
             g1[i, j] = best["clearance_m"]; obstacle_row.append(obstacle)
             points, radius = sample_set
@@ -132,7 +136,7 @@ def distance_run(name: str) -> dict[str, Any]:
 def run(output_dir: Path = OUT) -> dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
     containment = containment_proof()
-    _write(output_dir / "obstacle_correspondence.json", {"boxes": {k: {"center_m": center, "size_m": size} for k, (center, size) in BOXES.items()}})
+    _write(output_dir / "obstacle_correspondence.json", scene_aabb_contract_payload())
     _write(output_dir / "s2_points_inside_s3_aabbs.json", containment)
     runs = [distance_run(name) for name in RUNS]
     g1 = np.stack([run["g1_m"] for run in runs]); g2 = np.stack([run["g2_m"] for run in runs]); gap = np.stack([run["gap_g1_minus_g2_m"] for run in runs]); times = np.stack([run["times_s"] for run in runs])

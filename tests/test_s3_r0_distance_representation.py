@@ -2,10 +2,15 @@ from __future__ import annotations
 
 import hashlib
 from collections.abc import Sequence
+from dataclasses import FrozenInstanceError
 
+import numpy as np
 import pytest
 
 from planner_bridge.scenes.generate_s2_r2_crossarm_map import build_point_groups, build_points, manifest
+from planner_bridge.scenes.s3_r0_scene_contract import SCENE_AABB_FRAME, SCENE_AABBS, scene_aabb_contract_payload
+from scripts import s3_r0_distance_representation_audit as distance_audit
+from scripts import s3_r0_reference_playback as reference_playback
 
 
 NOMINAL_POINT_COUNT = 29_984
@@ -31,6 +36,44 @@ def test_nominal_point_groups_are_read_only_and_complete() -> None:
     assert all(isinstance(points, tuple) and points for points in groups.values())
     with pytest.raises(TypeError):
         groups["TargetProxy"] = ()  # type: ignore[index]
+
+
+def test_canonical_scene_aabbs_are_immutable_world_frame_contract() -> None:
+    assert SCENE_AABB_FRAME == "world"
+    assert tuple(SCENE_AABBS) == POINT_GROUP_NAMES
+
+    column = SCENE_AABBS["Column"]
+    assert column.center_m == (0.0, 0.0, 0.73)
+    assert column.size_m == (0.12, 0.12, 1.30)
+    np.testing.assert_allclose(column.min_m, (-0.06, -0.06, 0.08), rtol=0.0, atol=1e-15)
+    np.testing.assert_allclose(column.max_m, (0.06, 0.06, 1.38), rtol=0.0, atol=1e-15)
+
+    with pytest.raises(TypeError):
+        SCENE_AABBS["Column"] = column  # type: ignore[index]
+    with pytest.raises(FrozenInstanceError):
+        column.center_m = (0.0, 0.0, 0.0)  # type: ignore[misc]
+
+
+@pytest.mark.parametrize("name", POINT_GROUP_NAMES)
+def test_each_s2_point_group_is_contained_by_its_canonical_aabb(name: str) -> None:
+    points = np.asarray(build_point_groups("nominal")[name], dtype=float)
+    aabb = SCENE_AABBS[name]
+    lower = np.asarray(aabb.min_m, dtype=float)
+    upper = np.asarray(aabb.max_m, dtype=float)
+    outside = np.linalg.norm(np.maximum(np.maximum(lower - points, 0.0), points - upper), axis=1)
+
+    assert int(np.count_nonzero(outside > 1e-9)) == 0
+    assert float(np.max(outside)) <= 1e-9
+
+
+def test_playback_audit_and_evidence_payload_share_canonical_aabbs() -> None:
+    assert reference_playback._scene_boxes() is SCENE_AABBS
+    assert distance_audit.SCENE_AABBS is SCENE_AABBS
+    assert distance_audit.GROUPS == tuple(SCENE_AABBS)
+
+    payload = scene_aabb_contract_payload()
+    assert payload["coordinate_frame"] == "world"
+    assert payload["boxes"] == {name: aabb.as_dict() for name, aabb in SCENE_AABBS.items()}
 
 
 def test_nominal_point_group_membership_is_frozen() -> None:

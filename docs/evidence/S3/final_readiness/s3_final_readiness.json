@@ -1,14 +1,7 @@
 {
-  "decision": "SUBMITTED_S3_R0_GEOMETRY_ENVELOPE_FAILED",
-  "errors": [
-    "s2_points_contained_by_isaac_aabbs",
-    "geometry_envelope"
-  ],
-  "warnings": [
-    "gui",
-    "visual_manifest",
-    "visual_manifest_not_run_after_geometry_failure"
-  ],
+  "decision": "READY_FOR_S3_FINAL_REVIEW",
+  "errors": [],
+  "warnings": [],
   "checks": {
     "remote_correction_head": true,
     "playback_physics_context_contract": true,
@@ -26,6 +19,9 @@
     "nominal_repeat_100w0_quaternion_wxyz": true,
     "nominal_repeat_100w0_rotation_contract": true,
     "nominal_repeat_100w0_world_ee_b_to_a0_contract": true,
+    "scene_contract_playback_mode": true,
+    "scene_contract_world_ee_b_to_a0_contract": true,
+    "scene_contract_bundle_consistency": true,
     "scene_contract": true,
     "python_311_environment": true,
     "isaaclab_import": true,
@@ -35,6 +31,7 @@
     "canonical_240hz_sample_count": true,
     "smoke_64_steps": true,
     "smoke_heartbeat_checkpoints": true,
+    "isaac_scene_aabb_readback": true,
     "playback_runs": true,
     "expected_actual_physics_steps": true,
     "time_alignment": true,
@@ -47,13 +44,16 @@
     "exact_sampled_proxy_clearance": true,
     "isaac_aabb_clearance_gate": true,
     "state_replay_s2_clearance_delta": true,
-    "s2_points_contained_by_isaac_aabbs": false,
+    "s2_points_contained_by_isaac_aabbs": true,
     "framewise_conservative_order": true,
     "geometry_representation_delta_reported": true,
     "nominal_x3": true,
     "nominal_repeat": true,
-    "gui": false,
-    "visual_manifest": false
+    "nominal_gui": true,
+    "repeat_gui": true,
+    "nominal_gui_contract": true,
+    "repeat_gui_contract": true,
+    "visual_manifest": true
   },
   "protocol_ready": true,
   "isaac_ready": true,
@@ -66,11 +66,11 @@
   "s2_clearance_delta": true,
   "isaac_aabb_clearance_gate": true,
   "state_replay_s2_clearance_delta": true,
-  "s2_points_contained_by_isaac_aabbs": false,
+  "s2_points_contained_by_isaac_aabbs": true,
   "framewise_conservative_order": true,
   "geometry_representation_delta_reported": true,
-  "repeat_gui_visuals": false,
-  "s3_kinematic_playback_accepted": false,
+  "repeat_gui_visuals": true,
+  "s3_kinematic_playback_accepted": true,
   "full_closed_chain_dynamics": false,
   "s4_dynamic_articulation_ready": false
 }

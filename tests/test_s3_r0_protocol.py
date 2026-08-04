@@ -14,8 +14,11 @@ from planner_bridge.protocol.load_trajectory import load_bundle
 from planner_bridge.protocol.polynomial import physics_time_grid, sample_message
 from planner_bridge.protocol.recorder import PlaybackRecorder
 from planner_bridge.protocol.validation import validate_bundle
+from scripts.audit.check_s3_r0_isaaclab_interface import _world_ee_contract_is_complete
 
 ROOT = Path(__file__).resolve().parents[1]
+WORLD_EE_CONTRACT = "p_WB_plus_R_WB_(R_BA0_p_A0E_plus_t_BA0)"
+LEGACY_WORLD_EE_CONTRACT = "_".join(("base", "position", "plus", "a0", "arm", "position"))
 
 
 def test_nominal_and_repeat_bundles_validate_and_have_full_state() -> None:
@@ -47,6 +50,33 @@ def test_fk_and_world_ee_contract() -> None:
             transform_tool_direction(rotation, np.asarray(frame["tool_direction_A0"])),
             frame["tool_direction_W"],
         )
+
+
+def test_scene_contracts_share_complete_world_ee_formula() -> None:
+    scene_path = ROOT / "docs/evidence/S3-R0/scene_contract.json"
+    scene = json.loads(scene_path.read_text(encoding="utf-8"))
+    shared_keys = (
+        "base_frame",
+        "arm_frame",
+        "a0_origin",
+        "T_B_A0_rotation_translation",
+        "world_ee",
+        "base_quaternion_order",
+        "tool_direction_mapping",
+        "playback_mode",
+    )
+
+    assert scene["world_ee"] == WORLD_EE_CONTRACT
+    assert _world_ee_contract_is_complete(scene)
+    assert not _world_ee_contract_is_complete({"world_ee": LEGACY_WORLD_EE_CONTRACT})
+    assert LEGACY_WORLD_EE_CONTRACT not in scene_path.read_text(encoding="utf-8")
+
+    for name in ("nominal_100w0", "nominal_repeat_100w0"):
+        trajectory_path = ROOT / "data/trajectories/S3-R0" / name / "trajectory.json"
+        bundle_contract = load_bundle(trajectory_path.parent)["scene_contract"]
+        assert bundle_contract["world_ee"] == WORLD_EE_CONTRACT
+        assert all(bundle_contract[key] == scene[key] for key in shared_keys)
+        assert LEGACY_WORLD_EE_CONTRACT not in trajectory_path.read_text(encoding="utf-8")
 
 
 def test_quaternion_and_recorder_are_deterministic(tmp_path: Path) -> None:

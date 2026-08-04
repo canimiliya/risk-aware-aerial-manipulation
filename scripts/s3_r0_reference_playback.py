@@ -17,6 +17,7 @@ import time
 import traceback
 from datetime import datetime, timezone
 from pathlib import Path
+from collections.abc import Mapping, Sequence
 from typing import Any, Callable
 
 import numpy as np
@@ -240,25 +241,24 @@ def _close_app_on_main_thread(
     return True
 
 
-def _scene_boxes() -> dict[str, tuple[list[float], list[float]]]:
-    # AABBs are the frozen S2 nominal obstacle envelopes expressed in the
-    # world frame. They are not a mesh-exact replacement for the S2 point
-    # cloud; the G1/G2 delta explicitly records that representation change.
-    return {
-        "MainBeam": ([0.0, 0.0, 1.32], [0.12, 2.52, 0.12]),
-        "Column": ([0.0, 0.0, 0.735], [0.12, 0.12, 1.29]),
-        "AdjacentObstacle": ([0.0, 0.62, 0.995], [0.12, 0.12, 1.41]),
-        "TargetProxy": ([0.0, 0.0, 0.295], [0.60, 0.60, 0.55]),
-    }
+def _scene_boxes() -> Mapping[str, Any]:
+    # Import after the repository root is placed on sys.path in main().  The
+    # returned mapping is the immutable canonical object, not a local copy.
+    from planner_bridge.scenes.s3_r0_scene_contract import SCENE_AABBS
+
+    return SCENE_AABBS
 
 
-def _cube(stage: Any, path: str, center: list[float], size: list[float], label: str, UsdGeom: Any, UsdPhysics: Any, Gf: Any) -> None:
+def _cube(stage: Any, path: str, center: Sequence[float], size: Sequence[float], label: str, UsdGeom: Any, UsdPhysics: Any, Gf: Any) -> None:
     prim = stage.DefinePrim(path, "Cube")
     cube = UsdGeom.Cube(prim)
     cube.CreateSizeAttr(1.0)
     xform = UsdGeom.Xformable(prim)
     xform.AddTranslateOp().Set(Gf.Vec3d(*center))
-    xform.AddScaleOp().Set(Gf.Vec3f(*size))
+    # Preserve the canonical metre contract through USD read-back.  Vec3f
+    # quantizes the dimensions at roughly 1e-8 m, above the S3 1e-9 m probe
+    # tolerance; the scene contract is a double-precision world-space value.
+    xform.AddScaleOp(precision=UsdGeom.XformOp.PrecisionDouble).Set(Gf.Vec3d(*size))
     UsdPhysics.CollisionAPI.Apply(prim)
     prim.SetCustomDataByKey("s3_label", label)
 
@@ -320,13 +320,15 @@ def _raw_states(bundle: dict, times: np.ndarray) -> dict[str, object]:
     }
 
 
-def _analytic_frame_clearance(sample_sets: dict, boxes: dict, sampled_proxy_aabb_clearance: Callable) -> dict[str, dict[str, dict[str, object]]]:
+def _analytic_frame_clearance(sample_sets: dict, boxes: Mapping[str, Any], sampled_proxy_aabb_clearance: Callable) -> dict[str, dict[str, dict[str, object]]]:
     by_component: dict[str, dict[str, dict[str, object]]] = {}
     for component, samples in sample_sets.items():
         by_component[component] = {}
-        for obstacle, (center, size) in boxes.items():
+        for obstacle, aabb in boxes.items():
             by_component[component][obstacle] = sampled_proxy_aabb_clearance(
-                samples, np.asarray(center, dtype=float), np.asarray(size, dtype=float)
+                samples,
+                np.asarray(aabb.center_m, dtype=float),
+                np.asarray(aabb.size_m, dtype=float),
             )
     return by_component
 
@@ -405,7 +407,7 @@ def _local_refinement(
 def _postprocess(
     raw_states: dict[str, object],
     state_records: list[dict[str, object]],
-    boxes: dict,
+    boxes: Mapping[str, Any],
     tree: Any,
     T_B_A0: np.ndarray,
     official_fk_joint_state: Callable,
@@ -618,7 +620,7 @@ def main() -> int:
     state_records: list[dict[str, object]] = []
     time_records: list[dict[str, float]] = []
     contact_hits: list[dict[str, object]] = []
-    boxes: dict = {}
+    boxes: Mapping[str, Any] = {}
     tree: Any | None = None
     total_duration = float("nan")
     target_times = np.zeros(0, dtype=float)
@@ -781,9 +783,9 @@ def main() -> int:
             max_runtime_s=args.max_runtime_s,
             last_operation="bounded_initialization_update",
         )
-        for obstacle, (center, size) in boxes.items():
+        for obstacle, aabb in boxes.items():
             path = f"/World/Crossarm/{obstacle}" if obstacle != "TargetProxy" else "/World/TargetProxy"
-            _cube(stage, path, center, size, obstacle, UsdGeom, UsdPhysics, Gf)
+            _cube(stage, path, aabb.center_m, aabb.size_m, obstacle, UsdGeom, UsdPhysics, Gf)
         _progress_event(
             progress_path,
             start_monotonic,
@@ -843,7 +845,7 @@ def main() -> int:
         scene_query = omni.physx.get_physx_scene_query_interface()
         simulation_context_time_origin_s = float(sim.current_time)
 
-        def overlap_paths(center: list[float], size: list[float]) -> list[str]:
+        def overlap_paths(center: Sequence[float], size: Sequence[float]) -> list[str]:
             hits: list[str] = []
 
             def on_hit(hit: Any) -> bool:
@@ -911,9 +913,9 @@ def main() -> int:
             physx_time = float(reference_time)
             simulation_context_elapsed_s = float(sim.current_time) - simulation_context_time_origin_s
 
-            for obstacle, (center, size) in boxes.items():
+            for obstacle, aabb in boxes.items():
                 obstacle_path = f"/World/Crossarm/{obstacle}" if obstacle != "TargetProxy" else "/World/TargetProxy"
-                for hit in overlap_paths(center, size):
+                for hit in overlap_paths(aabb.center_m, aabb.size_m):
                     if hit not in {f"/World/Crossarm/{value}" for value in boxes if value != "TargetProxy"} and hit != "/World/TargetProxy":
                         if len(contact_hits) < 100:
                             contact_hits.append({"frame": index, "time_s": float(reference_time), "obstacle": obstacle_path, "hit": hit})

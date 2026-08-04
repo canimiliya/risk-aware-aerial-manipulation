@@ -1,0 +1,109 @@
+{
+  "decision": "PASS",
+  "source": "real Isaac GUI viewport captures from corrected exported USD scenes",
+  "created_at": "2026-08-04T18:07:11.049742+00:00",
+  "png_count": 8,
+  "png": [
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_gui_r7_corrected_dp_overall.png",
+      "source_run": "nominal_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "overall",
+      "sha256": "36d581d08e92c9d4447711f7956f1bb317a3999d25ae8dd1c4eb2df05b2dc1bb",
+      "bytes": 324149
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_gui_r7_corrected_dp_side.png",
+      "source_run": "nominal_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "side",
+      "sha256": "55a1c24974b996c34f81d77747e8710cff569ac22284f5c00078404905e3692c",
+      "bytes": 271507
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_gui_r7_corrected_dp_top.png",
+      "source_run": "nominal_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "top",
+      "sha256": "08edc21123852960d38fb970c90cf873011aeb54a03332cafc6d84ce6c818cb8",
+      "bytes": 176127
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_gui_r7_corrected_dp_close.png",
+      "source_run": "nominal_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "close",
+      "sha256": "b9a74c30484db7a959d070fdc7b880b6ea70b96cc88ce86d836445002324d445",
+      "bytes": 444600
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_repeat_gui_r7_corrected_dp_overall.png",
+      "source_run": "nominal_repeat_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "overall",
+      "sha256": "4da36d5aac216a8186bdb7a9b3f75420460a3cc4238d39b9bbbf7df8ccfe2519",
+      "bytes": 324850
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_repeat_gui_r7_corrected_dp_side.png",
+      "source_run": "nominal_repeat_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "side",
+      "sha256": "6356471f49f4b83c870685ae7b7f49a1fee55f2f1317f94e2e5e9cbe7758cfde",
+      "bytes": 268644
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_repeat_gui_r7_corrected_dp_top.png",
+      "source_run": "nominal_repeat_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "top",
+      "sha256": "b75c42d50810b071c32e183b2bea5a1ba3188c8f703d3fdf15f8414c0811ed0f",
+      "bytes": 175100
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\docs\\evidence\\S3-R0\\visuals\\r7\\nominal_repeat_gui_r7_corrected_dp_close.png",
+      "source_run": "nominal_repeat_gui_r7_corrected_dp",
+      "frame": 1254,
+      "time_s": 5.223430863911155,
+      "view": "close",
+      "sha256": "b28a862c0efc8f4199e0b5d21f3168d4c1a675518c015f1bf48e3770b1cc4898",
+      "bytes": 442810
+    }
+  ],
+  "video": [
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\outputs\\local_visuals\\S3-R0-R7\\nominal_gui_r7_corrected_dp.gif",
+      "sha256": "99f720132e8e8ac8d4c2fa30ccea990f0f8f6e998eb6bc1ed2be40e0c1f5e9c2",
+      "bytes": 503729,
+      "duration_s": 1.6,
+      "fps": 2.5,
+      "width": 1280,
+      "height": 720,
+      "source_run": "nominal_gui_r7_corrected_dp",
+      "created_at": "2026-08-04T18:07:11.049742+00:00",
+      "format": "GIF",
+      "committed": false
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation\\outputs\\local_visuals\\S3-R0-R7\\nominal_repeat_gui_r7_corrected_dp.gif",
+      "sha256": "f35390951ec4ca51f91adff9a2d38bd681b9aed31500339f4b1b52c2a9239d5c",
+      "bytes": 500415,
+      "duration_s": 1.6,
+      "fps": 2.5,
+      "width": 1280,
+      "height": 720,
+      "source_run": "nominal_repeat_gui_r7_corrected_dp",
+      "created_at": "2026-08-04T18:07:11.049742+00:00",
+      "format": "GIF",
+      "committed": false
+    }
+  ],
+  "video_count": 2
+}
