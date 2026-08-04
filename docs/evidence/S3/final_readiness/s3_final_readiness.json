@@ -1,11 +1,14 @@
 {
-  "decision": "SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE",
+  "decision": "SUBMITTED_S3_R0_GEOMETRY_ENVELOPE_FAILED",
   "errors": [
-    "s2_clearance_delta",
-    "gui",
-    "visual_manifest"
+    "s2_points_contained_by_isaac_aabbs",
+    "geometry_envelope"
   ],
-  "warnings": [],
+  "warnings": [
+    "gui",
+    "visual_manifest",
+    "visual_manifest_not_run_after_geometry_failure"
+  ],
   "checks": {
     "remote_correction_head": true,
     "playback_physics_context_contract": true,
@@ -42,7 +45,11 @@
     "playback_heartbeat_checkpoints": true,
     "contact_query": true,
     "exact_sampled_proxy_clearance": true,
-    "s2_clearance_delta": false,
+    "isaac_aabb_clearance_gate": true,
+    "state_replay_s2_clearance_delta": true,
+    "s2_points_contained_by_isaac_aabbs": false,
+    "framewise_conservative_order": true,
+    "geometry_representation_delta_reported": true,
     "nominal_x3": true,
     "nominal_repeat": true,
     "gui": false,
@@ -52,11 +59,16 @@
   "isaac_ready": true,
   "robot_asset_import": true,
   "scene_load": true,
-  "playback_runs": false,
+  "playback_runs": true,
   "arm_fk": true,
   "world_ee_fk": true,
   "clearance_exact_distance": true,
-  "s2_clearance_delta": false,
+  "s2_clearance_delta": true,
+  "isaac_aabb_clearance_gate": true,
+  "state_replay_s2_clearance_delta": true,
+  "s2_points_contained_by_isaac_aabbs": false,
+  "framewise_conservative_order": true,
+  "geometry_representation_delta_reported": true,
   "repeat_gui_visuals": false,
   "s3_kinematic_playback_accepted": false,
   "full_closed_chain_dynamics": false,

@@ -513,7 +513,8 @@ def _postprocess(
             official_joint_points,
             component_sample_sets,
         )
-    g1_g2_delta = abs(float(g1_best["clearance_m"]) - float(g2_best["clearance_m"]))
+    g1_g2_signed = float(g1_best["clearance_m"]) - float(g2_best["clearance_m"])
+    geometry_representation_conservatism = -g1_g2_signed
     g2_g3_delta = abs(float(g2_best["clearance_m"]) - S2_R6_G3_MIN_CLEARANCE_M)
     exact_clearance_gate = bool(
         not smoke
@@ -549,13 +550,12 @@ def _postprocess(
             "min_clearance_m": S2_R6_G3_MIN_CLEARANCE_M,
             "dangerous_component": "rotor_4",
         },
-        "g1_vs_g2_min_clearance_delta_m": float(g1_g2_delta),
-        "g2_vs_g3_min_clearance_delta_m": float(g2_g3_delta),
-        "g1_g2_delta_gate_target_m": 0.002,
+        "geometry_representation_conservatism_m": float(geometry_representation_conservatism),
+        "g1_minus_g2_representation_diagnostic_m": float(g1_g2_signed),
+        "state_replay_s2_clearance_delta_m": float(g2_g3_delta),
         "g2_g3_delta_gate_m": 0.002,
-        "g1_g2_delta_pass": bool(not smoke and g1_g2_delta <= 0.002),
-        "g2_g3_delta_pass": bool(not smoke and g2_g3_delta <= 0.002),
-        "distance_match_gate": bool(not smoke and g1_g2_delta <= 0.002 and g2_g3_delta <= 0.002),
+        "state_replay_s2_clearance_delta_pass": bool(not smoke and g2_g3_delta <= 0.002),
+        "distance_representation_contract_note": "G1/G2 are different geometries; use the independent envelope, replay, containment, and framewise-order gates from s3_r0_distance_representation_audit.py.",
         "local_2000hz_refinement": refinement,
         "clearance_by_frame": clearance_by_frame,
         "state_records": state_records,
@@ -1103,7 +1103,7 @@ def main() -> int:
                 and float(result.get("max_arm_fk_error_m", float("inf"))) <= 1e-5
                 and float(result.get("max_world_ee_error_m", float("inf"))) <= 1e-4
                 and result.get("exact_clearance_gate") is True
-                and result.get("distance_match_gate") is True
+                and result.get("state_replay_s2_clearance_delta_pass") is True
             )
             result["decision"] = (
                 "READY_FOR_S3_FINAL_REVIEW" if result["s3_kinematic_playback_accepted"] else "FORMAL_PLAYBACK_COMPLETED_GATES_PENDING"

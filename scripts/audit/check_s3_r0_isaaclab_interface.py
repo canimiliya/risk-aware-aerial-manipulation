@@ -103,6 +103,8 @@ def run(root: Path = ROOT) -> dict[str, object]:
     )
     playback_path = root / "docs/evidence/S3-R0/isaac_playback_nominal_1_r5_grid.json"
     playback = json.loads(playback_path.read_text(encoding="utf-8")) if playback_path.is_file() else {}
+    distance_summary_path = root / "docs/evidence/S3-R0/distance_representation/formal_distance_summary.json"
+    distance_summary = json.loads(distance_summary_path.read_text(encoding="utf-8")) if distance_summary_path.is_file() else {}
     smoke_path = root / "docs/evidence/S3-R0/isaac_playback_smoke64_r5_grid_final.json"
     smoke = json.loads(smoke_path.read_text(encoding="utf-8")) if smoke_path.is_file() else {}
     check("canonical_240hz_sample_count", bool(playback) and playback.get("canonical_240hz_sample_count") == int(np.ceil(float(playback.get("duration_s", 0.0)) * 240.0)) + 1)
@@ -119,9 +121,13 @@ def run(root: Path = ROOT) -> dict[str, object]:
         check("playback_heartbeat_checkpoints", _progress_contract(root / "docs/evidence/S3-R0/isaac_playback_nominal_1_r5_grid.progress.jsonl"))
         check("contact_query", playback.get("contact_query") == "PASS")
         check("exact_sampled_proxy_clearance", playback.get("clearance_metric") == "EXACT_FOR_FROZEN_S2_SAMPLED_PROXY_NOT_MESH_EXACT" and playback.get("exact_clearance_gate") is True)
-        check("s2_clearance_delta", playback.get("distance_match_gate") is True and playback.get("g1_g2_delta_pass") is True and playback.get("g2_g3_delta_pass") is True)
+        check("isaac_aabb_clearance_gate", distance_summary.get("contracts", {}).get("isaac_aabb_clearance_gate") is True)
+        check("state_replay_s2_clearance_delta", distance_summary.get("contracts", {}).get("state_replay_s2_clearance_delta") is True)
+        check("s2_points_contained_by_isaac_aabbs", distance_summary.get("contracts", {}).get("s2_points_contained_by_isaac_aabbs") is True)
+        check("framewise_conservative_order", distance_summary.get("contracts", {}).get("framewise_conservative_order") is True)
+        check("geometry_representation_delta_reported", distance_summary.get("contracts", {}).get("geometry_representation_delta_reported") is True)
     else:
-        for name in ("playback_runs", "expected_actual_physics_steps", "time_alignment", "complete_duration", "exact_sampled_proxy_clearance", "s2_clearance_delta"):
+        for name in ("playback_runs", "expected_actual_physics_steps", "time_alignment", "complete_duration", "exact_sampled_proxy_clearance", "isaac_aabb_clearance_gate", "state_replay_s2_clearance_delta", "s2_points_contained_by_isaac_aabbs", "framewise_conservative_order"):
             check(name, False)
     required_runs = {
         "nominal_x3": [
@@ -133,11 +139,17 @@ def run(root: Path = ROOT) -> dict[str, object]:
         "gui": [root / "docs/evidence/S3-R0/isaac_playback_nominal_gui_corrected.json"],
     }
     for name, paths in required_runs.items():
-        check(name, all(path.is_file() for path in paths))
+        check(name, all(path.is_file() for path in paths), hard=name != "gui")
     visuals = root / "docs/evidence/S3-R0/visuals/manifest.json"
-    check("visual_manifest", visuals.is_file())
+    check("visual_manifest", visuals.is_file(), hard=False)
+    if not distance_summary.get("contracts", {}).get("s2_points_contained_by_isaac_aabbs", False):
+        errors.append("geometry_envelope")
+    if not visuals.is_file():
+        warnings.append("visual_manifest_not_run_after_geometry_failure")
     if not errors and not warnings:
         decision = "READY_FOR_S3_FINAL_REVIEW"
+    elif "geometry_envelope" in errors:
+        decision = "SUBMITTED_S3_R0_GEOMETRY_ENVELOPE_FAILED"
     else:
         decision = "SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE"
     protocol_checks = [name for name in checks if name.endswith("_protocol") or name.endswith("_raw_polynomials") or name.endswith("_dynamic_attitude") or name.endswith("_quaternion_wxyz") or name.endswith("_rotation_contract") or name.endswith("_world_ee_b_to_a0_contract") or name == "authoritative_s2_baseline" or name == "scene_contract"]
@@ -154,9 +166,9 @@ def run(root: Path = ROOT) -> dict[str, object]:
         and checks.get("arm_fk_error")
         and checks.get("world_ee_error")
         and checks.get("exact_sampled_proxy_clearance")
-        and checks.get("s2_clearance_delta")
     )
-    repeat_gui_ok = checks.get("nominal_x3", False) and checks.get("nominal_repeat", False) and checks.get("gui", False) and checks.get("visual_manifest", False)
+    numeric_contract_ok = all(checks.get(name, False) for name in ("isaac_aabb_clearance_gate", "state_replay_s2_clearance_delta", "s2_points_contained_by_isaac_aabbs", "framewise_conservative_order"))
+    repeat_gui_ok = numeric_contract_ok and checks.get("nominal_x3", False) and checks.get("nominal_repeat", False) and checks.get("gui", False) and checks.get("visual_manifest", False)
     return {
         "decision": decision,
         "errors": errors,
@@ -170,9 +182,14 @@ def run(root: Path = ROOT) -> dict[str, object]:
         "arm_fk": bool(playback and checks.get("arm_fk_error", False)),
         "world_ee_fk": bool(playback and checks.get("world_ee_error", False)),
         "clearance_exact_distance": checks.get("exact_sampled_proxy_clearance", False),
-        "s2_clearance_delta": checks.get("s2_clearance_delta", False),
+        "s2_clearance_delta": checks.get("state_replay_s2_clearance_delta", False),
+        "isaac_aabb_clearance_gate": checks.get("isaac_aabb_clearance_gate", False),
+        "state_replay_s2_clearance_delta": checks.get("state_replay_s2_clearance_delta", False),
+        "s2_points_contained_by_isaac_aabbs": checks.get("s2_points_contained_by_isaac_aabbs", False),
+        "framewise_conservative_order": checks.get("framewise_conservative_order", False),
+        "geometry_representation_delta_reported": checks.get("geometry_representation_delta_reported", False),
         "repeat_gui_visuals": repeat_gui_ok,
-        "s3_kinematic_playback_accepted": playback_ok,
+        "s3_kinematic_playback_accepted": playback_ok and numeric_contract_ok,
         "full_closed_chain_dynamics": False,
         "s4_dynamic_articulation_ready": False,
     }
