@@ -1,7 +1,6 @@
 {
   "decision": "SUBMITTED_S3_R0_PLAYBACK_READY_VALIDATION_INCOMPLETE",
   "errors": [
-    "remote_correction_head",
     "canonical_240hz_sample_count",
     "smoke_64_steps",
     "smoke_heartbeat_checkpoints",
@@ -18,7 +17,7 @@
   ],
   "warnings": [],
   "checks": {
-    "remote_correction_head": false,
+    "remote_correction_head": true,
     "playback_physics_context_contract": true,
     "playback_diagnostics_contract": true,
     "authoritative_s2_baseline": true,
