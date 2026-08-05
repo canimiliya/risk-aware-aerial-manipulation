@@ -1,0 +1,7 @@
+{
+  "isaacsim_import": true,
+  "isaaclab_import": true,
+  "torch_cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "exit": 0
+}

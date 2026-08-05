@@ -1,0 +1,15 @@
+{
+  "python": "3.11",
+  "environment": "D:/i3/e",
+  "setuptools": "80.10.2",
+  "pkg_resources_import": "PASS",
+  "sdist": "flatdict-4.0.1.tar.gz",
+  "sdist_bytes": 8341,
+  "sdist_sha256": "CD32F08FD31ED21EB09EBC76F06B6BD12046A24F77BEB1FD0281917E47F26742",
+  "sdist_source": "https://files.pythonhosted.org/packages/source/f/flatdict/flatdict-4.0.1.tar.gz",
+  "build": "python -m pip wheel --no-deps --no-build-isolation",
+  "wheel": "flatdict-4.0.1-py3-none-any.whl",
+  "wheel_bytes": 6994,
+  "wheel_sha256": "709AA498F998AB2AB7E63911935D0D135944EA34F3DB306837175AA7F8F828AA",
+  "version_validation": "4.0.1"
+}

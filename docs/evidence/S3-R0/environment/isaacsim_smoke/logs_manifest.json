@@ -1,0 +1,6 @@
+{
+  "script": "scripts/s3_r0_isaacsim_smoke.py",
+  "kit_log": "D:/i3/e/Lib/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim Python/5.1/kit_20260804_195846.log",
+  "result_marker": "ISAACSIM_SMOKE_RESULT {'app_started': True, 'steps': 10, 'physics_scene': True, 'finite': True}",
+  "exit": 0
+}

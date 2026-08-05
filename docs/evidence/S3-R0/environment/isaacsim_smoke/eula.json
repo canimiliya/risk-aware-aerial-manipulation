@@ -1,0 +1,6 @@
+{
+  "accepted": true,
+  "method": "echo Yes | D:/i3/e/Scripts/isaacsim.exe --help",
+  "evidence": "The EULA was accepted.",
+  "timestamp_local": "2026-08-04"
+}

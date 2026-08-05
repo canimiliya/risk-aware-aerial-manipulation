@@ -1,0 +1,22 @@
+{
+  "contract": "S3-R0-scene-contract-v1",
+  "playback_mode": "REFERENCE_STATE_PLAYBACK",
+  "base_frame": "world",
+  "arm_frame": "A0",
+  "a0_origin": "T_B_A0 from planner_bridge.execution.full_body_proxy",
+  "T_B_A0_rotation_translation": [
+    [6.123233995736766e-17, -1.0, 0.0, -0.04],
+    [1.0, 6.123233995736766e-17, 0.0, 0.0],
+    [0.0, 0.0, 1.0, 0.0],
+    [0.0, 0.0, 0.0, 1.0]
+  ],
+  "world_ee": "p_WB_plus_R_WB_(R_BA0_p_A0E_plus_t_BA0)",
+  "base_quaternion_order": "wxyz",
+  "tool_direction_mapping": "R_WB @ R_BA0 @ tool_direction_A0",
+  "tool_direction_status": "EQUIVALENT_HORIZONTAL_DIRECTION_CONSTRAINT",
+  "randomization": false,
+  "wind": false,
+  "contact_task": false,
+  "closed_loop": false,
+  "source_boundary": "S2-R6 nominal_100w0 and nominal_repeat_final_100w0 only"
+}

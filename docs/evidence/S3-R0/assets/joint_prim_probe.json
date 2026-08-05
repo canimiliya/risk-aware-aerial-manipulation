@@ -1,0 +1,321 @@
+{
+  "robot_root": "/World/Robot",
+  "joints": [
+    {
+      "path": "/World/Robot/body/joints/ini_connect",
+      "type": "PhysicsFixedJoint",
+      "applied_schemas": [
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.0",
+        "physics:localPos0": "(0, 0, -0.05)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.7071055, 0, 0, -0.7071081)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m1_1",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.00020418509666342288",
+        "physics:localPos0": "(0.05889, 0.034, 0.0195)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.68157, -0.684414, -0.17770544, 0.1883098)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": "-89.9543685913086",
+        "physics:upperLimit": "89.9543685913086",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m1_2",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.00015230999269988388",
+        "physics:localPos0": "(0.15715, 0.068789, 0.017908)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": "0.0",
+        "physics:upperLimit": "0.0",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m1_3",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.00015114554844330996",
+        "physics:localPos0": "(0.13815, 0.1017, 0.017908)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": "0.0",
+        "physics:upperLimit": "0.0",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m2_1",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.000204352181754075",
+        "physics:localPos0": "(-0.05889, 0.034, 0.0195)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.18006335, -0.18595445, -0.68221897, 0.68379486)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": "-89.9543685913086",
+        "physics:upperLimit": "89.9543685913086",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m2_2",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.0001513872412033379",
+        "physics:localPos0": "(-0.13815, 0.1017, 0.018616)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": "0.0",
+        "physics:upperLimit": "0.0",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m2_3",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.00015268154675140977",
+        "physics:localPos0": "(-0.15715, 0.068794, 0.018616)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": "0.0",
+        "physics:upperLimit": "0.0",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m3_1",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.00020392316218931228",
+        "physics:localPos0": "(0, -0.068, 0.0195)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.50066566, -0.49933165, 0.50066924, -0.49933165)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": "-89.9543685913086",
+        "physics:upperLimit": "89.9543685913086",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m3_2",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.00015000758867245167",
+        "physics:localPos0": "(-0.019, -0.1705, 0.019226)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": "0.0",
+        "physics:upperLimit": "0.0",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    },
+    {
+      "path": "/World/Robot/body/joints/m3_3",
+      "type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "attributes": {
+        "drive:angular:physics:damping": "0.0",
+        "drive:angular:physics:maxForce": "3.4028234663852886e+38",
+        "drive:angular:physics:stiffness": "625.0",
+        "drive:angular:physics:targetPosition": "0.0",
+        "drive:angular:physics:targetVelocity": "0.0",
+        "drive:angular:physics:type": "acceleration",
+        "physics:axis": "Z",
+        "physics:breakForce": "3.4028234663852886e+38",
+        "physics:breakTorque": "3.4028234663852886e+38",
+        "physics:collisionEnabled": "False",
+        "physics:excludeFromArticulation": "False",
+        "physics:jointEnabled": "True",
+        "physics:JointEquivalentInertia": "0.00014991349598858505",
+        "physics:localPos0": "(0.019, -0.1705, 0.019226)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": "0.0",
+        "physics:upperLimit": "0.0",
+        "state:angular:physics:position": "0.0",
+        "state:angular:physics:velocity": "0.0"
+      }
+    }
+  ]
+}

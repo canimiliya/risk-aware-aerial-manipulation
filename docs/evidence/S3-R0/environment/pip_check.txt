@@ -1,0 +1,3 @@
+isaaclab 0.54.2 has requirement starlette==0.49.1, but you have starlette 0.45.3.
+
+Interpretation: Isaac Sim kernel pins fastapi==0.115.7, which requires starlette<0.46. The environment preserves the Isaac Sim runtime pin and records the Isaac Lab metadata conflict without changing upstream metadata.

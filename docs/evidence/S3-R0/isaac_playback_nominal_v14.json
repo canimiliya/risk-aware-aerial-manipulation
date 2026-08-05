@@ -1,0 +1,106 @@
+{
+  "mode": "REFERENCE_STATE_PLAYBACK",
+  "variant": "nominal_100w0",
+  "frames": 1046,
+  "duration_s": 5.223430863911155,
+  "physics_dt_s": 0.004166666666666667,
+  "rendering_dt_s": 0.016666666666666666,
+  "num_envs": 1,
+  "observed_physics_steps": 1046,
+  "monotonic_time": true,
+  "finite": true,
+  "active_joints": [
+    "m1_1",
+    "m2_1",
+    "m3_1"
+  ],
+  "passive_joints": [
+    "m1_2",
+    "m1_3",
+    "m2_2",
+    "m2_3",
+    "m3_2",
+    "m3_3"
+  ],
+  "max_joint_state_write_readback_error_rad": 0.0,
+  "max_raw_reference_to_joint_readback_error_rad": 1.4888097199516892e-08,
+  "joint_state_storage_dtype": "float32 USD PhysicsJointStateAPI attribute",
+  "max_joint_readback_error_to_next_reference_rad": 0.003846806464885999,
+  "max_joint_abs_error_by_active_joint_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "first_joint_probe": {
+    "raw_target": [
+      0.15798985216494277,
+      0.15798985216494277,
+      0.15798985216494277
+    ],
+    "written_float32": [
+      0.15798985958099365,
+      0.15798985958099365,
+      0.15798985958099365
+    ],
+    "readback": [
+      0.15798985958099365,
+      0.15798985958099365,
+      0.15798985958099365
+    ],
+    "signed_error": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_signed_error": [
+      7.416050884501146e-09,
+      7.416050884501146e-09,
+      7.416050884501146e-09
+    ]
+  },
+  "last_joint_probe": {
+    "raw_target": [
+      0.15798985216494277,
+      0.15798985216494277,
+      0.15798985216494277
+    ],
+    "written_float32": [
+      0.15798985958099365,
+      0.15798985958099365,
+      0.15798985958099365
+    ],
+    "readback": [
+      0.15798985958099365,
+      0.15798985958099365,
+      0.15798985958099365
+    ],
+    "signed_error": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_signed_error": [
+      7.416050884501146e-09,
+      7.416050884501146e-09,
+      7.416050884501146e-09
+    ]
+  },
+  "max_arm_fk_error_m": 1.3877787807814457e-16,
+  "max_world_ee_error_m": 2.220446049250313e-16,
+  "required_prim_paths": [
+    "/World/Robot",
+    "/World/Crossarm/MainBeam",
+    "/World/Crossarm/Column",
+    "/World/Crossarm/AdjacentObstacle",
+    "/World/TargetProxy"
+  ],
+  "contact_query_hits": [],
+  "clearance_expanded_query_hits": [],
+  "contact_query": "PASS",
+  "penetration_m": 0.0,
+  "clearance_gate": "PASS_LOWER_BOUND_0.010M",
+  "min_clearance_m": null,
+  "clearance_lower_bound_m": 0.01,
+  "s2_clearance_delta_m": null,
+  "closed_loop": false
+}

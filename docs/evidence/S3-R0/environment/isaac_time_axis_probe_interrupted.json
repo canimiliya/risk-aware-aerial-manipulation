@@ -1,0 +1,15 @@
+{
+  "command": "D:\\i3\\e\\python.exe -c \"from isaacsim import SimulationApp; app=SimulationApp({'headless':True,'hide_ui':True}); import omni.timeline; t=omni.timeline.get_timeline_interface(); print('DIR_START', [x for x in dir(t) if 'time' in x.lower() or 'play' in x.lower() or 'tick' in x.lower()]); app.close()\"",
+  "pid": 32580,
+  "parent_pid": 29776,
+  "started_local": "2026-08-04T22:22:21+08:00",
+  "terminated_local": "2026-08-04T22:24:00+08:00",
+  "termination": "FORCE_TERMINATED_AFTER_APP_CLOSE_STALL",
+  "exit_code": null,
+  "stdout_stderr_capture": "The command pipe was interrupted before shell-level stdout/stderr returned. Isaac Kit log preserved the Python stdout and startup/shutdown diagnostics.",
+  "kit_log": "D:/i3/e/Lib/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim Python/5.1/kit_20260804_222222.log",
+  "observed_stdout": "DIR_START ['clear_tentative_time', 'get_current_tick', 'get_current_time', 'get_end_time', 'get_play_every_frame', 'get_start_time', 'get_tentative_time', 'get_ticks_per_frame', 'get_ticks_per_second', 'get_time_codes_per_second', 'get_time_codes_per_seconds', 'get_timeline_event_stream', 'get_zoom_end_time', 'get_zoom_start_time', 'is_playing', 'set_current_time', 'set_end_time', 'set_play_every_frame', 'set_start_time', 'set_tentative_time', 'set_ticks_per_frame', 'set_time_codes_per_second', 'time_code_to_time', 'time_to_time_code']",
+  "observed_error": "SimulationApp viewport wait reached timeout; app.close emitted shutdown messages but the process remained alive until the exact PID was force-terminated.",
+  "result_label": "BLOCKED_S3_R0_R3_TIME_AXIS_PROBE_INTERRUPTED",
+  "scope": "Only the isolated probe process was terminated; Isaac Sim/Isaac Lab installation and upstream source were not changed."
+}

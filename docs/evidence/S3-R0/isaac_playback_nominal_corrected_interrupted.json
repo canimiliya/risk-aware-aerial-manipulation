@@ -1,0 +1,23 @@
+{
+  "decision": "INTERRUPTED_NO_RESULT",
+  "command": "D:\\i3\\e\\python.exe scripts/s3_r0_reference_playback.py --robot-usd D:\\i3\\a\\aerial_manipulator_v2.usd --trajectory data\\trajectories\\S3-R0\\nominal_100w0 --scene-usd outputs\\s3_r0_nominal_scene.usd --output docs\\evidence\\S3-R0\\isaac_playback_nominal_corrected.json --disable-joint-physics",
+  "environment": "D:\\i3\\e",
+  "pid": 27436,
+  "started_at_local": "2026-08-04T22:42:10+08:00",
+  "interrupted_after_minutes": 10,
+  "result_file_created": false,
+  "scene_output_created": false,
+  "reason": "Isaac Sim process remained responsive but produced no result or scene output within the bounded wait; the exact diagnostic process was terminated and no playback success is claimed.",
+  "preserved_claims": [
+    "protocol tests passed separately",
+    "historical nominal playback evidence remains unchanged"
+  ],
+  "unverified": [
+    "corrected nominal headless playback",
+    "nominal repeat",
+    "GUI playback",
+    "exact sampled-proxy clearance",
+    "G1/G2/G3 clearance delta",
+    "S3 visualization manifest"
+  ]
+}

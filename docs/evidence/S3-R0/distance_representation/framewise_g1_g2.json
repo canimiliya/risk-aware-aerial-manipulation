@@ -1,0 +1,40 @@
+{
+  "runs": [
+    "isaac_playback_nominal_1_r5_grid",
+    "isaac_playback_nominal_2_r5",
+    "isaac_playback_nominal_3_r5",
+    "isaac_playback_nominal_repeat_r5"
+  ],
+  "components": [
+    "body",
+    "rotor_1",
+    "rotor_2",
+    "rotor_3",
+    "rotor_4",
+    "upper_arm_1",
+    "upper_arm_2",
+    "upper_arm_3",
+    "lower_arm_1_left",
+    "lower_arm_1_right",
+    "lower_arm_2_left",
+    "lower_arm_2_right",
+    "lower_arm_3_left",
+    "lower_arm_3_right",
+    "moving_platform",
+    "end_effector"
+  ],
+  "shape": [
+    4,
+    1255,
+    16
+  ],
+  "definitions": {
+    "G1": "Isaac AABB sampled-proxy clearance",
+    "G2": "S2 nominal point-cloud sampled-proxy clearance",
+    "G3": "historical S2-R6 nominal 2000 Hz clearance",
+    "gap": "G1-G2 representation diagnostic, not a hard gate"
+  },
+  "all_rows_pass": true,
+  "max_g1_minus_g2_m": -0.0036407503283624187,
+  "min_g2_minus_g1_m": 0.0036407503283624187
+}

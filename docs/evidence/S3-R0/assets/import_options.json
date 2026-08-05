@@ -1,0 +1,11 @@
+{
+  "importer": "Isaac Sim URDFCreateImportConfig / URDFParseAndImportFile",
+  "merge_fixed_joints": false,
+  "fix_base": false,
+  "make_default_prim": true,
+  "create_physics_scene": true,
+  "import_inertia_tensor": true,
+  "get_articulation_root": true,
+  "mesh_path_mode": "absolute_forward_slash_windows_paths",
+  "external_usd": "D:/i3/a/aerial_manipulator_v2.usd"
+}

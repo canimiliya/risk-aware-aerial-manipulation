@@ -1,0 +1,10 @@
+{
+  "active": ["m1_1", "m2_1", "m3_1"],
+  "passive": ["m1_2", "m1_3", "m2_2", "m2_3", "m3_2", "m3_3"],
+  "imported_revolute_joints": 9,
+  "joint_state_mapping": "reference targets written to imported PhysicsRevoluteJoint prims with kinematic state playback",
+  "readback_max_error_rad": 0.0,
+  "raw_reference_quantization_max_error_rad": 1.4888097199516892e-08,
+  "gate_threshold_rad": 1e-8,
+  "gate": "PASS_FOR_WRITTEN_FLOAT32_STATE_WITH_RAW_QUANTIZATION_RECORDED"
+}

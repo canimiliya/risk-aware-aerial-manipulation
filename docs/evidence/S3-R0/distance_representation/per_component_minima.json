@@ -1,0 +1,1034 @@
+{
+  "isaac_playback_nominal_1_r5_grid": {
+    "body": {
+      "g1_min_clearance_m": 0.19961321699609041,
+      "g1_frame": 400,
+      "g1_time_s": 1.6666666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.2270405350993005,
+      "g2_frame": 407,
+      "g2_time_s": 1.6958333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_1": {
+      "g1_min_clearance_m": 0.17080040225006235,
+      "g1_frame": 321,
+      "g1_time_s": 1.3375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.22678996918317407,
+      "g2_frame": 319,
+      "g2_time_s": 1.3291666666666666,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_2": {
+      "g1_min_clearance_m": 0.4128770610231604,
+      "g1_frame": 348,
+      "g1_time_s": 1.45,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.4582064050466491,
+      "g2_frame": 425,
+      "g2_time_s": 1.7708333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_3": {
+      "g1_min_clearance_m": 0.19697207308699344,
+      "g1_frame": 378,
+      "g1_time_s": 1.575,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.2538148671393916,
+      "g2_frame": 374,
+      "g2_time_s": 1.5583333333333333,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_4": {
+      "g1_min_clearance_m": 0.06324289427326649,
+      "g1_frame": 329,
+      "g1_time_s": 1.3708333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.09271702650277446,
+      "g2_frame": 328,
+      "g2_time_s": 1.3666666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_1": {
+      "g1_min_clearance_m": 0.3897301461030553,
+      "g1_frame": 406,
+      "g1_time_s": 1.6916666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.42868793486038337,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_2": {
+      "g1_min_clearance_m": 0.34262581336936804,
+      "g1_frame": 437,
+      "g1_time_s": 1.8208333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3732323689315516,
+      "g2_frame": 440,
+      "g2_time_s": 1.8333333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_3": {
+      "g1_min_clearance_m": 0.30005946442816384,
+      "g1_frame": 345,
+      "g1_time_s": 1.4375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.34913967042657595,
+      "g2_frame": 342,
+      "g2_time_s": 1.425,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_left": {
+      "g1_min_clearance_m": 0.3264820688172553,
+      "g1_frame": 408,
+      "g1_time_s": 1.7,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3577674186867,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_right": {
+      "g1_min_clearance_m": 0.32215468404498215,
+      "g1_frame": 412,
+      "g1_time_s": 1.7166666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35496048002121516,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_left": {
+      "g1_min_clearance_m": 0.3191913988426327,
+      "g1_frame": 416,
+      "g1_time_s": 1.7333333333333334,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35002052337566786,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_right": {
+      "g1_min_clearance_m": 0.32143914857662836,
+      "g1_frame": 410,
+      "g1_time_s": 1.7083333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3493566590762123,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_left": {
+      "g1_min_clearance_m": 0.2910304994850406,
+      "g1_frame": 346,
+      "g1_time_s": 1.4416666666666667,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3405300294167999,
+      "g2_frame": 343,
+      "g2_time_s": 1.4291666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_right": {
+      "g1_min_clearance_m": 0.30910855795939024,
+      "g1_frame": 344,
+      "g1_time_s": 1.4333333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3567162493951666,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "moving_platform": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "end_effector": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    }
+  },
+  "isaac_playback_nominal_2_r5": {
+    "body": {
+      "g1_min_clearance_m": 0.19961321699609041,
+      "g1_frame": 400,
+      "g1_time_s": 1.6666666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.2270405350993005,
+      "g2_frame": 407,
+      "g2_time_s": 1.6958333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_1": {
+      "g1_min_clearance_m": 0.17080040225006235,
+      "g1_frame": 321,
+      "g1_time_s": 1.3375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.22678996918317407,
+      "g2_frame": 319,
+      "g2_time_s": 1.3291666666666666,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_2": {
+      "g1_min_clearance_m": 0.4128770610231604,
+      "g1_frame": 348,
+      "g1_time_s": 1.45,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.4582064050466491,
+      "g2_frame": 425,
+      "g2_time_s": 1.7708333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_3": {
+      "g1_min_clearance_m": 0.19697207308699344,
+      "g1_frame": 378,
+      "g1_time_s": 1.575,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.2538148671393916,
+      "g2_frame": 374,
+      "g2_time_s": 1.5583333333333333,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_4": {
+      "g1_min_clearance_m": 0.06324289427326649,
+      "g1_frame": 329,
+      "g1_time_s": 1.3708333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.09271702650277446,
+      "g2_frame": 328,
+      "g2_time_s": 1.3666666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_1": {
+      "g1_min_clearance_m": 0.3897301461030553,
+      "g1_frame": 406,
+      "g1_time_s": 1.6916666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.42868793486038337,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_2": {
+      "g1_min_clearance_m": 0.34262581336936804,
+      "g1_frame": 437,
+      "g1_time_s": 1.8208333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3732323689315516,
+      "g2_frame": 440,
+      "g2_time_s": 1.8333333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_3": {
+      "g1_min_clearance_m": 0.30005946442816384,
+      "g1_frame": 345,
+      "g1_time_s": 1.4375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.34913967042657595,
+      "g2_frame": 342,
+      "g2_time_s": 1.425,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_left": {
+      "g1_min_clearance_m": 0.3264820688172553,
+      "g1_frame": 408,
+      "g1_time_s": 1.7,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3577674186867,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_right": {
+      "g1_min_clearance_m": 0.32215468404498215,
+      "g1_frame": 412,
+      "g1_time_s": 1.7166666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35496048002121516,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_left": {
+      "g1_min_clearance_m": 0.3191913988426327,
+      "g1_frame": 416,
+      "g1_time_s": 1.7333333333333334,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35002052337566786,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_right": {
+      "g1_min_clearance_m": 0.32143914857662836,
+      "g1_frame": 410,
+      "g1_time_s": 1.7083333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3493566590762123,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_left": {
+      "g1_min_clearance_m": 0.2910304994850406,
+      "g1_frame": 346,
+      "g1_time_s": 1.4416666666666667,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3405300294167999,
+      "g2_frame": 343,
+      "g2_time_s": 1.4291666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_right": {
+      "g1_min_clearance_m": 0.30910855795939024,
+      "g1_frame": 344,
+      "g1_time_s": 1.4333333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3567162493951666,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "moving_platform": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "end_effector": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    }
+  },
+  "isaac_playback_nominal_3_r5": {
+    "body": {
+      "g1_min_clearance_m": 0.19961321699609041,
+      "g1_frame": 400,
+      "g1_time_s": 1.6666666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.2270405350993005,
+      "g2_frame": 407,
+      "g2_time_s": 1.6958333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_1": {
+      "g1_min_clearance_m": 0.17080040225006235,
+      "g1_frame": 321,
+      "g1_time_s": 1.3375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.22678996918317407,
+      "g2_frame": 319,
+      "g2_time_s": 1.3291666666666666,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_2": {
+      "g1_min_clearance_m": 0.4128770610231604,
+      "g1_frame": 348,
+      "g1_time_s": 1.45,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.4582064050466491,
+      "g2_frame": 425,
+      "g2_time_s": 1.7708333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_3": {
+      "g1_min_clearance_m": 0.19697207308699344,
+      "g1_frame": 378,
+      "g1_time_s": 1.575,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.2538148671393916,
+      "g2_frame": 374,
+      "g2_time_s": 1.5583333333333333,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_4": {
+      "g1_min_clearance_m": 0.06324289427326649,
+      "g1_frame": 329,
+      "g1_time_s": 1.3708333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.09271702650277446,
+      "g2_frame": 328,
+      "g2_time_s": 1.3666666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_1": {
+      "g1_min_clearance_m": 0.3897301461030553,
+      "g1_frame": 406,
+      "g1_time_s": 1.6916666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.42868793486038337,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_2": {
+      "g1_min_clearance_m": 0.34262581336936804,
+      "g1_frame": 437,
+      "g1_time_s": 1.8208333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3732323689315516,
+      "g2_frame": 440,
+      "g2_time_s": 1.8333333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_3": {
+      "g1_min_clearance_m": 0.30005946442816384,
+      "g1_frame": 345,
+      "g1_time_s": 1.4375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.34913967042657595,
+      "g2_frame": 342,
+      "g2_time_s": 1.425,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_left": {
+      "g1_min_clearance_m": 0.3264820688172553,
+      "g1_frame": 408,
+      "g1_time_s": 1.7,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3577674186867,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_right": {
+      "g1_min_clearance_m": 0.32215468404498215,
+      "g1_frame": 412,
+      "g1_time_s": 1.7166666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35496048002121516,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_left": {
+      "g1_min_clearance_m": 0.3191913988426327,
+      "g1_frame": 416,
+      "g1_time_s": 1.7333333333333334,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35002052337566786,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_right": {
+      "g1_min_clearance_m": 0.32143914857662836,
+      "g1_frame": 410,
+      "g1_time_s": 1.7083333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3493566590762123,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_left": {
+      "g1_min_clearance_m": 0.2910304994850406,
+      "g1_frame": 346,
+      "g1_time_s": 1.4416666666666667,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3405300294167999,
+      "g2_frame": 343,
+      "g2_time_s": 1.4291666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_right": {
+      "g1_min_clearance_m": 0.30910855795939024,
+      "g1_frame": 344,
+      "g1_time_s": 1.4333333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3567162493951666,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "moving_platform": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "end_effector": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    }
+  },
+  "isaac_playback_nominal_repeat_r5": {
+    "body": {
+      "g1_min_clearance_m": 0.19961321699609041,
+      "g1_frame": 400,
+      "g1_time_s": 1.6666666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.2270405350993005,
+      "g2_frame": 407,
+      "g2_time_s": 1.6958333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_1": {
+      "g1_min_clearance_m": 0.17080040225006235,
+      "g1_frame": 321,
+      "g1_time_s": 1.3375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.22678996918317407,
+      "g2_frame": 319,
+      "g2_time_s": 1.3291666666666666,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_2": {
+      "g1_min_clearance_m": 0.4128770610231604,
+      "g1_frame": 348,
+      "g1_time_s": 1.45,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.4582064050466491,
+      "g2_frame": 425,
+      "g2_time_s": 1.7708333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_3": {
+      "g1_min_clearance_m": 0.19697207308699344,
+      "g1_frame": 378,
+      "g1_time_s": 1.575,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.2538148671393916,
+      "g2_frame": 374,
+      "g2_time_s": 1.5583333333333333,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "rotor_4": {
+      "g1_min_clearance_m": 0.06324289427326649,
+      "g1_frame": 329,
+      "g1_time_s": 1.3708333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.09271702650277446,
+      "g2_frame": 328,
+      "g2_time_s": 1.3666666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.62,
+        1.68
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_1": {
+      "g1_min_clearance_m": 0.3897301461030553,
+      "g1_frame": 406,
+      "g1_time_s": 1.6916666666666667,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.42868793486038337,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_2": {
+      "g1_min_clearance_m": 0.34262581336936804,
+      "g1_frame": 437,
+      "g1_time_s": 1.8208333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3732323689315516,
+      "g2_frame": 440,
+      "g2_time_s": 1.8333333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "upper_arm_3": {
+      "g1_min_clearance_m": 0.30005946442816384,
+      "g1_frame": 345,
+      "g1_time_s": 1.4375,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.34913967042657595,
+      "g2_frame": 342,
+      "g2_time_s": 1.425,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_left": {
+      "g1_min_clearance_m": 0.3264820688172553,
+      "g1_frame": 408,
+      "g1_time_s": 1.7,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3577674186867,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_1_right": {
+      "g1_min_clearance_m": 0.32215468404498215,
+      "g1_frame": 412,
+      "g1_time_s": 1.7166666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35496048002121516,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_left": {
+      "g1_min_clearance_m": 0.3191913988426327,
+      "g1_frame": 416,
+      "g1_time_s": 1.7333333333333334,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.35002052337566786,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_2_right": {
+      "g1_min_clearance_m": 0.32143914857662836,
+      "g1_frame": 410,
+      "g1_time_s": 1.7083333333333333,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.3493566590762123,
+      "g2_frame": 413,
+      "g2_time_s": 1.7208333333333332,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_left": {
+      "g1_min_clearance_m": 0.2910304994850406,
+      "g1_frame": 346,
+      "g1_time_s": 1.4416666666666667,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3405300294167999,
+      "g2_frame": 343,
+      "g2_time_s": 1.4291666666666667,
+      "g2_nearest_point_m": [
+        -0.04,
+        0.64,
+        1.64
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "lower_arm_3_right": {
+      "g1_min_clearance_m": 0.30910855795939024,
+      "g1_frame": 344,
+      "g1_time_s": 1.4333333333333333,
+      "g1_obstacle": "AdjacentObstacle",
+      "g2_min_clearance_m": 0.3567162493951666,
+      "g2_frame": 406,
+      "g2_time_s": 1.6916666666666667,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "moving_platform": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    },
+    "end_effector": {
+      "g1_min_clearance_m": 0.3089600350748496,
+      "g1_frame": 409,
+      "g1_time_s": 1.7041666666666666,
+      "g1_obstacle": "MainBeam",
+      "g2_min_clearance_m": 0.33830887277169863,
+      "g2_frame": 410,
+      "g2_time_s": 1.7083333333333333,
+      "g2_nearest_point_m": [
+        -0.02,
+        1.22,
+        1.36
+      ],
+      "g1_gate_pass": true,
+      "framewise_conservative_order_pass": true
+    }
+  }
+}

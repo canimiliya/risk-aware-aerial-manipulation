@@ -1,0 +1,43 @@
+{
+  "decision": "PASS_S3_WITH_LIMITATIONS",
+  "reviewed_pr": 13,
+  "reviewed_technical_head": "85bbb04ceefe5897826f6892fc9ff408b8cf0a5b",
+  "protocol_ready": true,
+  "isaac_ready": true,
+  "robot_asset_import": true,
+  "scene_load": true,
+  "playback_runs": true,
+  "arm_fk": true,
+  "world_ee_fk": true,
+  "clearance_exact_distance": true,
+  "state_replay_s2_clearance_delta": true,
+  "s2_points_contained_by_isaac_aabbs": true,
+  "framewise_conservative_order": true,
+  "isaac_scene_aabb_readback": true,
+  "visual_png_contract": true,
+  "visual_video_contract": true,
+  "s3_kinematic_playback_accepted": true,
+  "full_closed_chain_dynamics": false,
+  "s4_dynamic_articulation_ready": false,
+  "formal_progress_after_merge": "4/9≈44%",
+  "s4_status": "FROZEN",
+  "reviewed_pr_state_before_merge": "OPEN_DRAFT_MERGEABLE",
+  "merge_method": "merge",
+  "governance_commit_head": "TO_BE_FILLED_AFTER_GOVERNANCE_COMMIT",
+  "merge_commit_sha": "TO_BE_FILLED_AFTER_MERGE",
+  "final_main_sha": "TO_BE_FILLED_AFTER_MERGE",
+  "formal_close_date": "2026-08-05",
+  "accepted_limitations": [
+    "S3 使用 kinematic playback articulation。",
+    "没有完整闭链动力学；full_closed_chain_dynamics=false。",
+    "场景使用 provisional proxy / AABB envelope；距离对冻结 sampled-proxy 精确，但不是 mesh-exact 安全证明。",
+    "未做风、任务接触、闭环控制、ROS/ROS2 实时桥或训练。",
+    "本地时序视频只提交 manifest、SHA 和元数据，视频文件保持本地。",
+    "保留 6 个既有 S0/S1/S2 历史审计/归档依赖测试失败。"
+  ],
+  "evidence": {
+    "readiness": "docs/evidence/S3/final_readiness/s3_final_readiness.json",
+    "visual_manifest": "docs/evidence/S3-R0/visuals/manifest.json",
+    "report": "docs/reports/S3-R0_trajectory_protocol_and_isaaclab_environment_report.md"
+  }
+}

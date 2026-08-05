@@ -37,3 +37,4 @@
 | D0033 | 2026-08-03 | ACTIVE | S1-R2 最终审查通过，S1 收口为 PASS_WITH_LIMITATIONS，PR #4 普通合并 | 允许进入受限 S2-R0 预检 | S1 审查撤销或证据失效 |
 | D0034 | 2026-08-03 | ACTIVE | S2-R0 只读复用官方 Delta FK；横担/工具/机体代理参数单独标记 PROVISIONAL_S2_ASSUMPTION | 允许几何敏感性预检，不代表完整 S2 | 真实模型/场景合同核验 |
 | D0035 | 2026-08-04 | ACTIVE | S1/S2-R0 审计改为默认无副作用，S2-R0 缺失 summary 从已提交 acceptance 语义恢复并保留 provenance；S2-R6 patch-only 复现和最终硬门槛全部通过 | S2 形成 PASS_WITH_LIMITATIONS 最终收口候选；S3 保持 NOT_STARTED，S4-S8 保持 FROZEN | PR #10 普通合并及负责人后续授权 |
+| D0036 | 2026-08-05 | ACTIVE | 高级总控独立 final review 通过：S3 `PASS_S3_WITH_LIMITATIONS`，审查技术 Head `85bbb04ceefe5897826f6892fc9ff408b8cf0a5b`，PR #13 获准普通 merge | S3-R0 正式关闭，合并后正式进度为 `4/9≈44%`；S4–S8 继续 `FROZEN` | 负责人另行授权 S4 |

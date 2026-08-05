@@ -1,0 +1,9 @@
+{
+  "isaacsim_import": "PASS",
+  "isaacsim_path": "D:/i3/e/Lib/site-packages/isaacsim/__init__.py",
+  "isaaclab_import": "PASS",
+  "isaaclab_path": "D:/i3/L/source/isaaclab/isaaclab/__init__.py",
+  "app_launcher_startup": "PASS",
+  "official_tutorial": "STARTED_HEADLESS_THEN_STOPPED_BY_HARNESS",
+  "official_tutorial_note": "create_empty.py intentionally loops while the app is running; it was stopped after startup probe, not reported as an exit-0 test"
+}

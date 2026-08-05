@@ -50,6 +50,33 @@ def _clearance(tree: cKDTree, samples: np.ndarray, radius: float) -> float:
     return float(np.min(tree.query(samples, k=1)[0]) - radius)
 
 
+def point_to_aabb_distance(point: np.ndarray, center: np.ndarray, size: np.ndarray) -> float:
+    """Analytic Euclidean distance from a point to an axis-aligned scene AABB."""
+    point = np.asarray(point, dtype=float)
+    center = np.asarray(center, dtype=float)
+    size = np.asarray(size, dtype=float)
+    if point.shape != (3,) or center.shape != (3,) or size.shape != (3,) or np.any(size < 0.0):
+        raise ValueError("point, center and size must be finite 3-vectors with non-negative size")
+    lower = center - 0.5 * size
+    upper = center + 0.5 * size
+    delta = np.maximum(np.maximum(lower - point, 0.0), point - upper)
+    return float(np.linalg.norm(delta))
+
+
+def sampled_proxy_aabb_clearance(component: tuple[np.ndarray, float], center: np.ndarray, size: np.ndarray) -> dict[str, object]:
+    """Return exact nearest-sample data for one frozen sample set and one AABB."""
+    points, radius = component
+    distances = np.asarray([point_to_aabb_distance(point, center, size) for point in points], dtype=float)
+    index = int(np.argmin(distances))
+    return {
+        "distance_m": float(distances[index]),
+        "clearance_m": float(distances[index] - radius),
+        "nearest_sample_index": index,
+        "nearest_sample_point_m": np.asarray(points[index], dtype=float).tolist(),
+        "component_radius_m": float(radius),
+    }
+
+
 def component_sample_sets(p_wb: np.ndarray, R_wb: np.ndarray, arm_point: np.ndarray, joint_points: dict, radii_scale: float = 1.0) -> dict[str, tuple[np.ndarray, float]]:
     def world_body(point: np.ndarray) -> np.ndarray:
         return p_wb + R_wb @ point

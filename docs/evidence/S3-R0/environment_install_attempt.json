@@ -1,0 +1,21 @@
+{
+  "environment_path": "D:\\i3\\s3_isaaclab_232",
+  "python": "3.11.15",
+  "requested": {
+    "isaaclab": "2.3.2.post1",
+    "isaacsim": "5.1.0",
+    "torch": "2.7.0",
+    "torchvision": "0.22.0",
+    "cuda_wheel": "cu128",
+    "platform": "Windows native"
+  },
+  "conda_create": "PASS",
+  "pip_upgrade": "PASS",
+  "isaaclab_install": "BLOCKED_TIMEOUT",
+  "failure": "pip dependency resolution/build metadata stalled at flatdict after 304 seconds on the first attempt and 92 seconds on the bounded retry",
+  "eula": "NOT_ACCEPTED_OR_NOT_REACHED",
+  "imports": {"isaaclab": false, "isaacsim": false},
+  "physx_smoke": "NOT_RUN",
+  "registry_or_driver_modified": false,
+  "install_cache_committed": false
+}

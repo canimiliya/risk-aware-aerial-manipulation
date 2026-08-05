@@ -1,0 +1,8 @@
+{
+  "flatdict_version": "4.0.1",
+  "wheel_tag": "py3-none-any",
+  "installed_from": "D:/i3/w",
+  "pkg_resources_import": true,
+  "pip_only_isolation_probe": "FAILED_WITH_MODULE_NOT_FOUND_PKG_RESOURCES",
+  "workaround": "official PyPI sdist + setuptools 80.10.2 + no-build-isolation local wheel"
+}

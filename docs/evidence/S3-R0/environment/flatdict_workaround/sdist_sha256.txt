@@ -1,0 +1,2 @@
+flatdict-4.0.1.tar.gz  CD32F08FD31ED21EB09EBC76F06B6BD12046A24F77BEB1FD0281917E47F26742  8341 bytes
+source: https://files.pythonhosted.org/packages/source/f/flatdict/flatdict-4.0.1.tar.gz

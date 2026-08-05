@@ -1,0 +1,282 @@
+{
+  "decision": "PASS",
+  "coordinate_frame": "world",
+  "tolerance_m": 1e-09,
+  "stage_path": "outputs\\s3_r0_smoke_scene_64step_r7_corrected_dp2.usd",
+  "stage_sha256": "72cfe60a76f1295533dd0ce4651e2869713cb16d8207ad3998dc3035655c4c25",
+  "boxes": {
+    "TargetProxy": {
+      "prim_path": "/World/TargetProxy",
+      "contract_center_m": [
+        0.0,
+        0.0,
+        0.295
+      ],
+      "contract_size_m": [
+        0.6,
+        0.6,
+        0.55
+      ],
+      "contract_min_m": [
+        -0.3,
+        -0.3,
+        0.019999999999999962
+      ],
+      "contract_max_m": [
+        0.3,
+        0.3,
+        0.5700000000000001
+      ],
+      "readback_center_m": [
+        0.0,
+        0.0,
+        0.29500000000000004
+      ],
+      "readback_size_m": [
+        0.6,
+        0.6,
+        0.55
+      ],
+      "readback_min_m": [
+        -0.3,
+        -0.3,
+        0.019999999999999962
+      ],
+      "readback_max_m": [
+        0.3,
+        0.3,
+        0.5700000000000001
+      ],
+      "absolute_error_m": {
+        "center_m": [
+          0.0,
+          0.0,
+          5.551115123125783e-17
+        ],
+        "size_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "min_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "pass": true
+    },
+    "MainBeam": {
+      "prim_path": "/World/Crossarm/MainBeam",
+      "contract_center_m": [
+        0.0,
+        0.0,
+        1.32
+      ],
+      "contract_size_m": [
+        0.12,
+        2.52,
+        0.12
+      ],
+      "contract_min_m": [
+        -0.06,
+        -1.26,
+        1.26
+      ],
+      "contract_max_m": [
+        0.06,
+        1.26,
+        1.3800000000000001
+      ],
+      "readback_center_m": [
+        0.0,
+        0.0,
+        1.32
+      ],
+      "readback_size_m": [
+        0.12,
+        2.52,
+        0.1200000000000001
+      ],
+      "readback_min_m": [
+        -0.06,
+        -1.26,
+        1.26
+      ],
+      "readback_max_m": [
+        0.06,
+        1.26,
+        1.3800000000000001
+      ],
+      "absolute_error_m": {
+        "center_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_m": [
+          0.0,
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "min_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "pass": true
+    },
+    "Column": {
+      "prim_path": "/World/Crossarm/Column",
+      "contract_center_m": [
+        0.0,
+        0.0,
+        0.73
+      ],
+      "contract_size_m": [
+        0.12,
+        0.12,
+        1.3
+      ],
+      "contract_min_m": [
+        -0.06,
+        -0.06,
+        0.07999999999999996
+      ],
+      "contract_max_m": [
+        0.06,
+        0.06,
+        1.38
+      ],
+      "readback_center_m": [
+        0.0,
+        0.0,
+        0.73
+      ],
+      "readback_size_m": [
+        0.12,
+        0.12,
+        1.2999999999999998
+      ],
+      "readback_min_m": [
+        -0.06,
+        -0.06,
+        0.07999999999999996
+      ],
+      "readback_max_m": [
+        0.06,
+        0.06,
+        1.38
+      ],
+      "absolute_error_m": {
+        "center_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_m": [
+          0.0,
+          0.0,
+          2.220446049250313e-16
+        ],
+        "min_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "pass": true
+    },
+    "AdjacentObstacle": {
+      "prim_path": "/World/Crossarm/AdjacentObstacle",
+      "contract_center_m": [
+        0.0,
+        0.62,
+        0.995
+      ],
+      "contract_size_m": [
+        0.12,
+        0.12,
+        1.41
+      ],
+      "contract_min_m": [
+        -0.06,
+        0.56,
+        0.29000000000000004
+      ],
+      "contract_max_m": [
+        0.06,
+        0.6799999999999999,
+        1.7
+      ],
+      "readback_center_m": [
+        0.0,
+        0.62,
+        0.995
+      ],
+      "readback_size_m": [
+        0.12,
+        0.11999999999999988,
+        1.41
+      ],
+      "readback_min_m": [
+        -0.06,
+        0.56,
+        0.29000000000000004
+      ],
+      "readback_max_m": [
+        0.06,
+        0.6799999999999999,
+        1.7
+      ],
+      "absolute_error_m": {
+        "center_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_m": [
+          0.0,
+          1.1102230246251565e-16,
+          0.0
+        ],
+        "min_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "pass": true
+    }
+  },
+  "column_required_z_bounds_m": [
+    0.08,
+    1.38
+  ],
+  "column_readback_z_bounds_m": [
+    0.07999999999999996,
+    1.38
+  ],
+  "overall_pass": true
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "historical_failed_environment_manifest",
+  "environment_path": "D:\\i3\\s3_isaaclab_232",
+  "python": "3.11.15",
+  "packages": {
+    "packaging": "26.0",
+    "pip": "26.2",
+    "setuptools": "83.0.0",
+    "wheel": "0.47.0"
+  },
+  "pip_check": "No broken requirements found.",
+  "pip_cache": "C:\\Users\\Administrator\\AppData\\Local\\pip\\cache",
+  "isaaclab_import": false,
+  "isaacsim_import": false,
+  "physx_smoke": "NOT_RUN",
+  "status": "PRESERVED_HISTORICAL_FAILURE",
+  "collected_on": "2026-08-04"
+}

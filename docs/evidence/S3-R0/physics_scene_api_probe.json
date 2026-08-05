@@ -1,0 +1,16 @@
+{
+  "decision": "PASS",
+  "simulation_cfg_dt_s": 0.004166666666666667,
+  "usdphysics_scene_has_timestep_creator": false,
+  "physx_scene_api_has_timestep_creator": true,
+  "physics_scene_exists": true,
+  "physics_dt_s": 0.004166666666666667,
+  "physics_scene_time_steps_per_second": 240,
+  "scene_query_enabled": true,
+  "gravity_xyz": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "error": null
+}
