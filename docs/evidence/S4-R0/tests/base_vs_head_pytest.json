@@ -1,0 +1,67 @@
+{
+  "base_commit": "741dd82e823420e0d8b272c9f06ed81b0b757183",
+  "head_commit": "f268ea800a93c1e82e4bb303b3ee27fa51ab80ab",
+  "environment": "D:/i3/e/python.exe, same repository test command pytest -q",
+  "base": {
+    "log_path": "C:\\s4r0b\\base_pytest.log",
+    "log_exists": true,
+    "passed": 65,
+    "failed": 13,
+    "duration": "50.52s",
+    "failed_nodes": [
+      "planner_bridge/tests/test_export_contract.py::test_all_four_official_exports_pass",
+      "planner_bridge/tests/test_export_contract.py::test_contract_metadata_has_no_fake_semantics",
+      "tests/audit/test_audit_no_side_effects.py::test_historical_audits_leave_status_and_acceptance_bytes_unchanged",
+      "tests/audit/test_check_s0_structure.py::test_current_s0_audit_passes",
+      "tests/audit/test_s1_audit_no_side_effects.py::test_default_run_does_not_rewrite_historical_acceptance",
+      "tests/audit/test_s1_audit_no_side_effects.py::test_external_output_is_supported",
+      "tests/audit/test_s1_audit_no_side_effects.py::test_tracked_output_requires_update_record",
+      "tests/audit/test_s2_r0_archival_audit.py::test_archival_passes_without_local_npz",
+      "tests/audit/test_s2_r0_archival_audit.py::test_final_acceptance_passes_archival_mode_and_forwards_it",
+      "tests/audit/test_s2_r6_patch_reproducibility.py::test_patch_audit_external_output_passes",
+      "tests/test_s3_r0_distance_representation.py::test_nominal_point_group_membership_is_frozen",
+      "tests/test_s3_r0_distance_representation.py::test_nominal_point_cloud_count_and_sha_remain_frozen",
+      "tests/test_s3_r0_protocol.py::test_manifest_hashes_match"
+    ]
+  },
+  "head": {
+    "log_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\s4_r0_r2_head_pytest.log",
+    "log_exists": true,
+    "passed": 79,
+    "failed": 13,
+    "duration": "130.84s (0:02:10)",
+    "failed_nodes": [
+      "planner_bridge/tests/test_export_contract.py::test_all_four_official_exports_pass",
+      "planner_bridge/tests/test_export_contract.py::test_contract_metadata_has_no_fake_semantics",
+      "tests/audit/test_audit_no_side_effects.py::test_historical_audits_leave_status_and_acceptance_bytes_unchanged",
+      "tests/audit/test_check_s0_structure.py::test_current_s0_audit_passes",
+      "tests/audit/test_s1_audit_no_side_effects.py::test_default_run_does_not_rewrite_historical_acceptance",
+      "tests/audit/test_s1_audit_no_side_effects.py::test_external_output_is_supported",
+      "tests/audit/test_s1_audit_no_side_effects.py::test_tracked_output_requires_update_record",
+      "tests/audit/test_s2_r0_archival_audit.py::test_archival_passes_without_local_npz",
+      "tests/audit/test_s2_r0_archival_audit.py::test_final_acceptance_passes_archival_mode_and_forwards_it",
+      "tests/audit/test_s2_r6_patch_reproducibility.py::test_patch_audit_external_output_passes",
+      "tests/test_s3_r0_distance_representation.py::test_nominal_point_group_membership_is_frozen",
+      "tests/test_s3_r0_distance_representation.py::test_nominal_point_cloud_count_and_sha_remain_frozen",
+      "tests/test_s3_r0_protocol.py::test_manifest_hashes_match"
+    ]
+  },
+  "common_failures": [
+    "planner_bridge/tests/test_export_contract.py::test_all_four_official_exports_pass",
+    "planner_bridge/tests/test_export_contract.py::test_contract_metadata_has_no_fake_semantics",
+    "tests/audit/test_audit_no_side_effects.py::test_historical_audits_leave_status_and_acceptance_bytes_unchanged",
+    "tests/audit/test_check_s0_structure.py::test_current_s0_audit_passes",
+    "tests/audit/test_s1_audit_no_side_effects.py::test_default_run_does_not_rewrite_historical_acceptance",
+    "tests/audit/test_s1_audit_no_side_effects.py::test_external_output_is_supported",
+    "tests/audit/test_s1_audit_no_side_effects.py::test_tracked_output_requires_update_record",
+    "tests/audit/test_s2_r0_archival_audit.py::test_archival_passes_without_local_npz",
+    "tests/audit/test_s2_r0_archival_audit.py::test_final_acceptance_passes_archival_mode_and_forwards_it",
+    "tests/audit/test_s2_r6_patch_reproducibility.py::test_patch_audit_external_output_passes",
+    "tests/test_s3_r0_distance_representation.py::test_nominal_point_cloud_count_and_sha_remain_frozen",
+    "tests/test_s3_r0_distance_representation.py::test_nominal_point_group_membership_is_frozen",
+    "tests/test_s3_r0_protocol.py::test_manifest_hashes_match"
+  ],
+  "head_only_failures": [],
+  "base_only_failures": [],
+  "hard_gate_head_only_failures_zero": true
+}

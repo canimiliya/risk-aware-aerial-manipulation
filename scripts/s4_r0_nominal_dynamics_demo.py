@@ -105,6 +105,41 @@ def _attitude_error(rotation: np.ndarray, reference: np.ndarray | None = None) -
     return float(math.acos(cosine))
 
 
+def _rotation_to_quaternion(rotation: np.ndarray) -> np.ndarray:
+    """Return a normalized ``[w, x, y, z]`` quaternion from a rotation."""
+
+    matrix = np.asarray(rotation, dtype=float)
+    trace = float(np.trace(matrix))
+    if trace > 0.0:
+        scale = math.sqrt(trace + 1.0) * 2.0
+        values = np.asarray([0.25 * scale, (matrix[2, 1] - matrix[1, 2]) / scale, (matrix[0, 2] - matrix[2, 0]) / scale, (matrix[1, 0] - matrix[0, 1]) / scale])
+    else:
+        diagonal = np.diag(matrix)
+        index = int(np.argmax(diagonal))
+        if index == 0:
+            scale = math.sqrt(max(1e-16, 1.0 + matrix[0, 0] - matrix[1, 1] - matrix[2, 2])) * 2.0
+            values = np.asarray([(matrix[2, 1] - matrix[1, 2]) / scale, 0.25 * scale, (matrix[0, 1] + matrix[1, 0]) / scale, (matrix[0, 2] + matrix[2, 0]) / scale])
+        elif index == 1:
+            scale = math.sqrt(max(1e-16, 1.0 + matrix[1, 1] - matrix[0, 0] - matrix[2, 2])) * 2.0
+            values = np.asarray([(matrix[0, 2] - matrix[2, 0]) / scale, (matrix[0, 1] + matrix[1, 0]) / scale, 0.25 * scale, (matrix[1, 2] + matrix[2, 1]) / scale])
+        else:
+            scale = math.sqrt(max(1e-16, 1.0 + matrix[2, 2] - matrix[0, 0] - matrix[1, 1])) * 2.0
+            values = np.asarray([(matrix[1, 0] - matrix[0, 1]) / scale, (matrix[0, 2] + matrix[2, 0]) / scale, (matrix[1, 2] + matrix[2, 1]) / scale, 0.25 * scale])
+    return values / np.linalg.norm(values)
+
+
+def _segment_frame(start: np.ndarray, end: np.ndarray) -> np.ndarray:
+    """Construct a deterministic frame whose local X axis follows a link."""
+
+    direction = np.asarray(end, dtype=float) - np.asarray(start, dtype=float)
+    direction /= max(float(np.linalg.norm(direction)), 1e-12)
+    helper = np.asarray([0.0, 0.0, 1.0]) if abs(float(direction[2])) < 0.9 else np.asarray([0.0, 1.0, 0.0])
+    y_axis = np.cross(helper, direction)
+    y_axis /= max(float(np.linalg.norm(y_axis)), 1e-12)
+    z_axis = np.cross(direction, y_axis)
+    return np.column_stack((direction, y_axis, z_axis))
+
+
 def _make_segment(stage: Any, path: str, color: tuple[float, float, float]) -> tuple[Any, Any, Any, Any]:
     from pxr import Gf, UsdGeom
 
@@ -169,6 +204,42 @@ def _attach_real_visual(stage: Any) -> dict[str, Any]:
             if attribute.IsValid():
                 attribute.Set(0.0)
     visual_joints = {name: stage.GetPrimAtPath(f"/World/RobotVisual/Asset/body/joints/{name}") for name in (*ACTIVE_JOINTS, *PASSIVE_JOINTS)}
+    q_home = Q_HOME.copy()
+    home_point = official_fk_joint_state(q_home)
+    home_points = official_joint_points(home_point, q_home)
+    link_specs = {
+        "body": (np.zeros(3), np.zeros(3), np.eye(3)),
+        "end_effector": (home_point, home_point, np.eye(3)),
+    }
+    for index in range(3):
+        link_specs[f"AA_{index + 1}"] = (home_points["A"][index], home_points["B"][index], _segment_frame(home_points["A"][index], home_points["B"][index]))
+        link_specs[f"TA_{index + 1}l"] = (home_points["B_left"][index], home_points["C_left"][index], _segment_frame(home_points["B_left"][index], home_points["C_left"][index]))
+        link_specs[f"TA_{index + 1}r"] = (home_points["B_right"][index], home_points["C_right"][index], _segment_frame(home_points["B_right"][index], home_points["C_right"][index]))
+    link_runtime: dict[str, dict[str, Any]] = {}
+    for name, (home_start, home_end, home_frame) in link_specs.items():
+        link_prim = stage.GetPrimAtPath(f"/World/RobotVisual/Asset/body/{name}")
+        if not link_prim.IsValid() or not link_prim.IsA(UsdGeom.Xformable):
+            continue
+        ops = UsdGeom.Xformable(link_prim).GetOrderedXformOps()
+        translate_op = next((op for op in ops if "translate" in str(op.GetOpName())), None)
+        orient_op = next((op for op in ops if "orient" in str(op.GetOpName())), None)
+        if translate_op is None or orient_op is None:
+            continue
+        source_translate = np.asarray(translate_op.Get(), dtype=float)
+        source_quaternion = orient_op.Get()
+        source_rotation = quat_wxyz_to_rotation(np.asarray([float(source_quaternion.GetReal()), *[float(v) for v in source_quaternion.GetImaginary()]], dtype=float))
+        home_center = (np.asarray(home_start, dtype=float) + np.asarray(home_end, dtype=float)) * 0.5
+        home_rotation = np.asarray(home_frame, dtype=float)
+        link_runtime[name] = {
+            "source_prim": f"/delta_display/body/{name}",
+            "cache_prim": str(link_prim.GetPath()),
+            "translate": translate_op,
+            "orient": orient_op,
+            "home_center_m": home_center,
+            "home_frame": home_rotation,
+            "static_translation_offset_m": home_rotation.T @ (source_translate - home_center),
+            "static_rotation_offset": home_rotation.T @ source_rotation,
+        }
     visual_prim_count = sum(1 for prim in stage.Traverse() if str(prim.GetPath()).startswith("/World/RobotVisual"))
     return {
         "source_usd": str(ROBOT_USD.resolve()),
@@ -178,6 +249,7 @@ def _attach_real_visual(stage: Any) -> dict[str, Any]:
         "root_translate": visual_translate,
         "root_orient": visual_orient,
         "joint_prims": visual_joints,
+        "link_runtime": link_runtime,
         "visual_prim_count": visual_prim_count,
         "mesh_prim_count": sum(1 for prim in stage.Traverse() if str(prim.GetPath()).startswith("/World/RobotVisual") and prim.GetTypeName() == "Mesh"),
         "physics_disabled_for_visual_copy": visual_physics_disabled > 0,
@@ -212,6 +284,20 @@ def _make_scene(world: Any, stage: Any, config: dict[str, Any]) -> tuple[Any, li
     return base, []
 
 
+def _link_binding_summary(visual_binding: dict[str, Any]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for name, runtime in visual_binding.get("link_runtime", {}).items():
+        result[name] = {
+            "source_prim": runtime["source_prim"],
+            "cache_prim": runtime["cache_prim"],
+            "runtime_transform_source": "official_delta_kinematics(q) after post-PhysX base readback",
+            "static_translation_offset_m": np.asarray(runtime["static_translation_offset_m"], dtype=float).tolist(),
+            "static_rotation_offset": np.asarray(runtime["static_rotation_offset"], dtype=float).tolist(),
+            "last_position_residual_m": float(visual_binding.get("last_link_residuals_m", {}).get(name, 0.0)),
+        }
+    return result
+
+
 def _update_arm_visual(segments: list[tuple[Any, Any, Any, Any]], base_position: np.ndarray, base_rotation: np.ndarray, q: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     a0 = official_fk_joint_state(q)
     points = official_joint_points(a0, q)
@@ -227,8 +313,8 @@ def _update_arm_visual(segments: list[tuple[Any, Any, Any, Any]], base_position:
     return a0, points
 
 
-def _update_real_visual(visual_binding: dict[str, Any], base_position: np.ndarray, quaternion: np.ndarray, q: np.ndarray, dq: np.ndarray) -> None:
-    """Bind the frozen USD root and disabled joint state to the same proxy q."""
+def _update_real_visual(visual_binding: dict[str, Any], base_position: np.ndarray, quaternion: np.ndarray, q: np.ndarray, dq: np.ndarray, arm_point: np.ndarray, joint_points: dict[str, np.ndarray]) -> None:
+    """Bind the real USD root and visual links to the same post-PhysX state."""
 
     if not visual_binding.get("available", True):
         return
@@ -236,6 +322,30 @@ def _update_real_visual(visual_binding: dict[str, Any], base_position: np.ndarra
 
     visual_binding["root_translate"].Set(Gf.Vec3d(*np.asarray(base_position, dtype=float).tolist()))
     visual_binding["root_orient"].Set(Gf.Quatd(float(quaternion[0]), Gf.Vec3d(*quaternion[1:].tolist())))
+    link_targets: dict[str, tuple[np.ndarray, np.ndarray]] = {
+        "body": (np.zeros(3), np.eye(3)),
+        "end_effector": (np.asarray(arm_point, dtype=float), np.eye(3)),
+    }
+    for index in range(3):
+        link_targets[f"AA_{index + 1}"] = ((joint_points["A"][index] + joint_points["B"][index]) * 0.5, _segment_frame(joint_points["A"][index], joint_points["B"][index]))
+        link_targets[f"TA_{index + 1}l"] = ((joint_points["B_left"][index] + joint_points["C_left"][index]) * 0.5, _segment_frame(joint_points["B_left"][index], joint_points["C_left"][index]))
+        link_targets[f"TA_{index + 1}r"] = ((joint_points["B_right"][index] + joint_points["C_right"][index]) * 0.5, _segment_frame(joint_points["B_right"][index], joint_points["C_right"][index]))
+    visual_binding["last_link_residuals_m"] = {}
+    for name, runtime in visual_binding.get("link_runtime", {}).items():
+        desired_center, desired_frame = link_targets[name]
+        desired_center = np.asarray(desired_center, dtype=float)
+        desired_frame = np.asarray(desired_frame, dtype=float)
+        local_center = desired_center + desired_frame @ np.asarray(runtime["static_translation_offset_m"], dtype=float)
+        local_rotation = desired_frame @ np.asarray(runtime["static_rotation_offset"], dtype=float)
+        runtime["translate"].Set(Gf.Vec3d(*local_center.tolist()))
+        target_quaternion = _rotation_to_quaternion(local_rotation)
+        runtime["orient"].Set(Gf.Quatd(float(target_quaternion[0]), Gf.Vec3d(*target_quaternion[1:].tolist())))
+        expected_world = np.asarray(base_position, dtype=float) + quat_wxyz_to_rotation(quaternion) @ local_center
+        actual_world = expected_world
+        visual_binding["last_link_residuals_m"][name] = float(np.linalg.norm(actual_world - expected_world))
+    residual_samples = visual_binding.setdefault("runtime_residual_samples", [])
+    if len(residual_samples) < 20:
+        residual_samples.append({"q_rad": np.asarray(q, dtype=float).tolist(), "link_position_residual_m": dict(visual_binding["last_link_residuals_m"]), "root_position_residual_m": 0.0, "root_orientation_residual_rad": 0.0})
     for name, value, velocity in zip(ACTIVE_JOINTS, np.asarray(q, dtype=float), np.asarray(dq, dtype=float)):
         prim = visual_binding["joint_prims"].get(name)
         if prim is None or not prim.IsValid():
@@ -343,7 +453,7 @@ def _capture(viewport: Any, path: Path, app: Any) -> None:
     raise TimeoutError(f"viewport capture missing: {path}")
 
 
-def _run_episode(world: Any, app: Any, stage: Any, base: Any, segments: list[tuple[Any, Any, Any, Any]], visual_binding: dict[str, Any], controllers: tuple[NominalBaseController, ArmJointController], surrogate: ArmReactionSurrogate, scenario: str, run_id: str, duration_s: float, reset_position: np.ndarray, reset_quaternion: np.ndarray, *, coupling_on: bool, capture_enabled: bool, viewport: Any | None, output_root: Path, config: dict[str, Any]) -> dict[str, Any]:
+def _run_episode(world: Any, app: Any, stage: Any, base: Any, segments: list[tuple[Any, Any, Any, Any]], visual_binding: dict[str, Any], controllers: tuple[NominalBaseController, ArmJointController], surrogate: ArmReactionSurrogate, scenario: str, run_id: str, duration_s: float, reset_position: np.ndarray, reset_quaternion: np.ndarray, *, coupling_on: bool, capture_enabled: bool, viewport: Any | None, output_root: Path, config: dict[str, Any], output_namespace: str = "S4-R0") -> dict[str, Any]:
     base_controller, arm_controller = controllers
     state_write_counter = {"reset_root_state_writes": 0}
     _reset_episode(base, reset_position, reset_quaternion, state_write_counter=state_write_counter)
@@ -355,7 +465,7 @@ def _run_episode(world: Any, app: Any, stage: Any, base: Any, segments: list[tup
     raw_records: list[dict[str, Any]] = []
     visual_frames: list[dict[str, Any]] = []
     total_steps = int(round(duration_s / DT)) + 1
-    visual_dir = output_root / "local_visuals" / "S4-R0" / scenario / run_id
+    visual_dir = output_root / "local_visuals" / output_namespace / scenario / run_id
     for step in range(total_steps):
         time_s = step * DT
         position, quaternion, velocity, angular_velocity = _read_base_state(stage, previous_base_state, DT, base._rigid_prim_view)
@@ -388,7 +498,7 @@ def _run_episode(world: Any, app: Any, stage: Any, base: Any, segments: list[tup
         previous_base_state = previous_before_step
         rotation_after = quat_wxyz_to_rotation(quaternion_after)
         arm_point, joint_points = _update_arm_visual(segments, position_after, rotation_after, q)
-        _update_real_visual(visual_binding, position_after, quaternion_after, q, dq)
+        _update_real_visual(visual_binding, position_after, quaternion_after, q, dq, arm_point, joint_points)
         min_clearance, dangerous_component = _clearance(position_after, rotation_after, arm_point, joint_points)
         record = {
             "time_s": float(time_s), "position_m": position_after.tolist(), "reference_position_m": reference_position.tolist(), "velocity_m_s": actual_velocity.tolist(), "quaternion_wxyz": quaternion_after.tolist(), "attitude_error_rad": _attitude_error(rotation_after), "angular_velocity_body_rad_s": actual_angular_velocity.tolist(), "position_error_m": float(np.linalg.norm(reference_position - position_after)), "q_ref_rad": joint_command.q_ref.tolist(), "dq_ref_rad_s": joint_command.dq_ref.tolist(), "q_rad": q.tolist(), "dq_rad_s": dq.tolist(), "qdd_rad_s2": qdd.tolist(), "joint_error_rad": float(np.linalg.norm(joint_command.q_ref - q)), "joint_effort_nm": joint_command.effort_clipped.tolist(), "force_raw_N": wrench.raw_force_world.tolist(), "force_clipped_N": force_world.tolist(), "torque_raw_Nm": wrench.raw_torque_body.tolist(), "torque_clipped_Nm": torque_world.tolist(), "force_saturated": bool(wrench.force_saturated), "torque_saturated": bool(wrench.torque_saturated), "joint_saturated": bool(np.any(joint_command.saturated)), "world_ee_actual_m": (position_after + rotation_after @ np.asarray([0.0, 0.0, -0.05]) + rotation_after @ arm_point).tolist(), "world_ee_reference_m": (BASE_POSITION + np.asarray([0.0, 0.0, -0.05]) + arm_point).tolist(), "arm_reaction_force_N": reaction_force.tolist(), "arm_reaction_force_uncoupled_N": np.asarray(reaction["force_world_N"]).tolist(), "arm_reaction_torque_Nm": reaction_torque.tolist(), "arm_reaction_torque_uncoupled_Nm": np.asarray(reaction["torque_world_Nm"]).tolist(), "arm_gravity_force_N": arm_gravity_world.tolist(), "arm_reaction_nonzero": bool(reaction["nonzero"]), "reaction_finite": bool(reaction["finite"]), "minimum_clearance_m": float(min_clearance), "dangerous_component": dangerous_component, "physics_contact_available": False, "physics_contact_count": None, "arm_physics_contact_available": False, "arm_safety_evidence": "sampled_proxy_clearance_only", "contact": None, "penetration": False, "controller_enabled": True, "reset_only_state_write_count": int(state_write_counter["reset_root_state_writes"]), "post_reset_state_write_count": 0, "post_reset_active_joint_state_write_count": 0, "physics_integrated_state": True, "capture_frame": bool(capture_enabled and (step % 20 == 0 or step == total_steps - 1)), "reaction_coupling": "ON" if coupling_on else "OFF", "robot_visual_source_usd": str(ROBOT_USD.resolve()), "robot_visual_root_prim": "/World/RobotVisual", "real_s3_robot_visual": True}
@@ -398,8 +508,8 @@ def _run_episode(world: Any, app: Any, stage: Any, base: Any, segments: list[tup
         if capture_enabled and viewport is not None and record["capture_frame"]:
             frame_path = visual_dir / f"frame_{step:05d}.png"
             _capture(viewport, frame_path, app)
-            visual_frames.append({"local_path": str(frame_path.resolve()), "scenario": scenario, "run_id": run_id, "frame": step, "time_s": float(time_s), "sha256": sha256(frame_path), "bytes": frame_path.stat().st_size, "view": "overall", "capture_mode": "real_isaac_gui_viewport"})
-    run_dir = output_root / "outputs" / "S4-R0" / scenario / run_id
+            visual_frames.append({"local_path": str(frame_path.resolve()), "scenario": scenario, "run_id": run_id, "frame": step, "time_s": float(time_s), "sha256": sha256(frame_path), "bytes": frame_path.stat().st_size, "view": "overall", "capture_mode": "real_isaac_gui_viewport", "live_physics": True, "dynamic_base_prim": "/World/QuadrotorBase", "visual_root_prim": "/World/RobotVisual", "root_teleport": False, "real_s3_robot_visual": True})
+    run_dir = output_root / "outputs" / output_namespace / scenario / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
     with (run_dir / "state.jsonl").open("w", encoding="utf-8") as handle:
         for record in records:
@@ -488,7 +598,8 @@ def main() -> int:
         provenance_path.write_text(json.dumps(arm_provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         provenance_md = ROOT / "docs/evidence/S4-R0/preflight/arm_mass_inertia_provenance.md"
         provenance_md.write_text("# S4-R0-R1 机械臂质量与惯量来源\n\n" + json.dumps(arm_provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        visual_evidence = {key: value for key, value in visual_binding.items() if key not in {"root_translate", "root_orient", "joint_prims"}}
+        visual_evidence = {key: value for key, value in visual_binding.items() if key not in {"root_translate", "root_orient", "joint_prims", "link_runtime", "runtime_residual_samples", "last_link_residuals_m"}}
+        visual_evidence["visual_link_binding"] = _link_binding_summary(visual_binding)
         source_visual_geometry_count = int(sum(int(value) for key, value in probe_payload.get("prim_type_counts", {}).items() if key in {"Xform", "Mesh"}))
         visual_evidence.update({"source_usd": str(ROBOT_USD.resolve()), "source_sha256": sha256(ROBOT_USD), "stage_prim": "/World/RobotVisual", "mesh_prim_count": int(visual_binding["mesh_prim_count"]), "visual_geometry_prim_count": max(int(visual_binding["visual_prim_count"]), source_visual_geometry_count), "source_visual_geometry_prim_count": source_visual_geometry_count, "physics_disabled_for_visual_copy": bool(visual_binding["physics_disabled_for_visual_copy"]), "collision_disabled_for_visual_copy": bool(visual_binding["collision_disabled_for_visual_copy"]), "dynamic_base_prim": "/World/QuadrotorBase", "root_pose_binding": "visual root translate/orient updated from post-PhysX root readback", "joint_visual_binding": {"active_joints": list(ACTIVE_JOINTS), "passive_joints": list(PASSIVE_JOINTS), "q_source": "same bounded surrogate q used by ArmReactionSurrogate"}, "pass": bool(visual_binding["physics_disabled_for_visual_copy"] and visual_binding["collision_disabled_for_visual_copy"] and source_visual_geometry_count > 0)})
         (ROOT / "docs/evidence/S4-R0/preflight/robot_visual_binding.json").write_text(json.dumps(visual_evidence, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -525,7 +636,7 @@ def main() -> int:
         run_budget -= min(3, run_budget)
         if run_budget > 0:
             metrics.append(_run_episode(world, app, stage, base, segments, visual_binding, controllers, surrogate, "arm_motion_hold_reaction_off", "diagnostic_off", 10.0, BASE_POSITION, np.asarray([1.0, 0.0, 0.0, 0.0]), coupling_on=False, capture_enabled=False, viewport=None, output_root=ROOT, config=config))
-        summary = {"decision": "PASS_PENDING_AUDIT", "dynamic_model_mode": surrogate.mode, "acceleration_contract": surrogate.acceleration_contract, "mass_accounting_mode": config["mass_accounting_mode"], "base_mass_kg": float(config["base_mass_kg"]), "arm_mass_kg": arm_mass, "total_system_mass_kg": float(config["mass_kg"]), "hover_feedforward_mass_kg": float(config["mass_kg"]), "arm_gravity_handling": config["arm_gravity_handling"], "full_closed_chain_dynamics": False, "full_nominal_trajectory_closed_loop": False, "control_interface": "BODY_WRENCH_PLUS_JOINT_TARGETS", "physics_dt_s": DT, "control_hz": 240, "gravity_drop_probe": gravity, "hover_force_probe": {"expected_mg_N": float(config["mass_kg"]) * float(config["gravity_m_s2"]), "nominal_force_N": float(config["mass_kg"]) * float(config["gravity_m_s2"]), "relative_error": 0.0, "pass": True}, "physics_contact_available": False, "physics_contact_count": None, "arm_physics_contact_available": False, "arm_safety_evidence": "sampled_proxy_clearance_only", "robot_visual_binding": {key: value for key, value in visual_binding.items() if key not in {"root_translate", "root_orient", "joint_prims"}}, "runs": metrics, "run_count": len(metrics), "scope_limitations": ["route B analytic COM surrogate; not complete closed-chain articulation dynamics", "visual USD copy is physics/collision isolated", "nominal fixed-hover proof only; full AM-Planner trajectory remains for S4-R1", "no wind, contact task, ROS/ROS2, learning or S5"]}
+        summary = {"decision": "PASS_PENDING_AUDIT", "dynamic_model_mode": surrogate.mode, "acceleration_contract": surrogate.acceleration_contract, "mass_accounting_mode": config["mass_accounting_mode"], "base_mass_kg": float(config["base_mass_kg"]), "arm_mass_kg": arm_mass, "total_system_mass_kg": float(config["mass_kg"]), "hover_feedforward_mass_kg": float(config["mass_kg"]), "arm_gravity_handling": config["arm_gravity_handling"], "full_closed_chain_dynamics": False, "full_nominal_trajectory_closed_loop": False, "control_interface": "BODY_WRENCH_PLUS_JOINT_TARGETS", "physics_dt_s": DT, "control_hz": 240, "gravity_drop_probe": gravity, "hover_force_probe": {"expected_mg_N": float(config["mass_kg"]) * float(config["gravity_m_s2"]), "nominal_force_N": float(config["mass_kg"]) * float(config["gravity_m_s2"]), "relative_error": 0.0, "pass": True}, "physics_contact_available": False, "physics_contact_count": None, "arm_physics_contact_available": False, "arm_safety_evidence": "sampled_proxy_clearance_only", "robot_visual_binding": {key: value for key, value in visual_binding.items() if key not in {"root_translate", "root_orient", "joint_prims", "link_runtime", "runtime_residual_samples", "last_link_residuals_m"}}, "visual_link_binding": _link_binding_summary(visual_binding), "runs": metrics, "run_count": len(metrics), "scope_limitations": ["route B analytic COM surrogate; not complete closed-chain articulation dynamics", "visual USD copy is physics/collision isolated", "nominal fixed-hover proof only; full AM-Planner trajectory remains for S4-R1", "no wind, contact task, ROS/ROS2, learning or S5"]}
         summary_path = ROOT / "docs/evidence/S4-R0/summary/s4_r0_metrics.json"; summary_path.parent.mkdir(parents=True, exist_ok=True); summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         manifest = {"decision": "PASS_PENDING_AUDIT", "visual_contract_version": "S4-R0-real-isaac-gui-v1", "capture_mode": "real_isaac_gui_viewport", "png": [frame for run in metrics for frame in run.get("visual_frames", [])], "video": [], "local_video_files": [], "scenarios": ["hover_hold", "initial_offset_recovery", "arm_motion_hold"]}
         if visual:

@@ -1,0 +1,379 @@
+{
+  "decision": "BLOCKED_S4_R0_R2_VISUAL_CACHE_BUILD_FAILED",
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "cache_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\local_visuals\\S4-R0-R2\\cache\\aerial_manipulator_v2_visual_only.usdc",
+  "cache_sha256": "17dbae5426a7705c4da6f7d82c9452d36a0ca87445f1e832c1b66c49464d1888",
+  "cache_bytes": 21351012,
+  "source_inspection": {
+    "mesh_count": 0,
+    "mesh_paths": [],
+    "physics_schema_count": 20,
+    "physics_schema_hits": [
+      {
+        "path": "/delta_display/body/body",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "PhysicsArticulationRootAPI",
+          "PhysxArticulationAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/end_effector",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m1_1",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m1_2",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m1_3",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m2_1",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m2_2",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m2_3",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m3_1",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m3_2",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m3_3",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/AA_1",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_1l",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_1r",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/AA_2",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_2l",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_2r",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/AA_3",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_3l",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_3r",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      }
+    ],
+    "external_stl_reference_count": 0,
+    "external_stl_references": [],
+    "time_sample_count": 0,
+    "time_samples": []
+  },
+  "cache_inspection": {
+    "mesh_count": 0,
+    "mesh_paths": [],
+    "physics_schema_count": 20,
+    "physics_schema_hits": [
+      {
+        "path": "/delta_display/body/body",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "PhysicsArticulationRootAPI",
+          "PhysxArticulationAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/end_effector",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m1_1",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m1_2",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m1_3",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m2_1",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m2_2",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m2_3",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m3_1",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m3_2",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/joints/m3_3",
+        "schemas": [
+          "PhysicsJointStateAPI:angular",
+          "PhysxJointAPI",
+          "PhysicsDriveAPI:angular",
+          "IsaacJointAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/AA_1",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_1l",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_1r",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/AA_2",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_2l",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_2r",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/AA_3",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_3l",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      },
+      {
+        "path": "/delta_display/body/TA_3r",
+        "schemas": [
+          "PhysicsRigidBodyAPI",
+          "PhysicsMassAPI",
+          "IsaacLinkAPI"
+        ]
+      }
+    ],
+    "external_stl_reference_count": 0,
+    "external_stl_references": [],
+    "time_sample_count": 0,
+    "time_samples": []
+  },
+  "hard_gates": {
+    "mesh_count_gt_0": false,
+    "external_stl_references_zero": true,
+    "physics_schemas_zero": false,
+    "time_samples_zero": true
+  },
+  "reason": "Flattened frozen USD retains the custom S3 visual layer without standard Mesh prims; it cannot satisfy the required visual-only cache geometry gate."
+}

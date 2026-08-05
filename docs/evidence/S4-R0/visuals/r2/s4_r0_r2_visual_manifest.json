@@ -1,0 +1,35 @@
+{
+  "decision": "BLOCKED_S4_R0_R2_NATIVE_VISUAL_PIPELINE_UNRESOLVED",
+  "available": false,
+  "pass": false,
+  "runtime_stable": false,
+  "live_gui_dynamics_capture_pass": false,
+  "visual_evidence_pass": false,
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "dynamic_base_prim": "/World/QuadrotorBase",
+  "visual_root_prim": "/World/RobotVisual",
+  "root_teleport": false,
+  "r2_png_count": 0,
+  "r2_video_count": 0,
+  "r2_curve_count": 0,
+  "r2_png": [],
+  "r2_video": [],
+  "r2_curves": [],
+  "crash_matrix": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\r2\\visual_crash_matrix.json",
+  "visual_cache_manifest": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\r2\\visual_cache_manifest.json",
+  "visual_link_binding": {
+    "available": false,
+    "pass": false,
+    "reason": "live visual link update/capture route exits natively before an auditable R2 manifest can be produced"
+  },
+  "legacy_preserved_evidence": {
+    "manifest": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\s4_r0_visual_manifest.json",
+    "manifest_sha256": "d4aa833809330fb3bae961ad0e456e2be88875367fa20f2f10ebadd24e819be7",
+    "png_count": 12,
+    "video_count": 3,
+    "curve_count": 3,
+    "classification": "legacy_S4-R0_preserved_not_promoted_to_R2"
+  },
+  "reason": "P0-P3 independent probes do not produce a stable, auditable R2 live viewport capture; route-B flattened cache fails Mesh and physics-schema hard gates. Existing R0 visual artifacts remain historical evidence only."
+}
