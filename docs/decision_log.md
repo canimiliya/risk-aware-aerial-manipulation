@@ -39,3 +39,4 @@
 | D0035 | 2026-08-04 | ACTIVE | S1/S2-R0 审计改为默认无副作用，S2-R0 缺失 summary 从已提交 acceptance 语义恢复并保留 provenance；S2-R6 patch-only 复现和最终硬门槛全部通过 | S2 形成 PASS_WITH_LIMITATIONS 最终收口候选；S3 保持 NOT_STARTED，S4-S8 保持 FROZEN | PR #10 普通合并及负责人后续授权 |
 | D0036 | 2026-08-05 | ACTIVE | 高级总控独立 final review 通过：S3 `PASS_S3_WITH_LIMITATIONS`，审查技术 Head `85bbb04ceefe5897826f6892fc9ff408b8cf0a5b`，PR #13 获准普通 merge | S3-R0 正式关闭，合并后正式进度为 `4/9≈44%`；S4–S8 继续 `FROZEN` | 负责人另行授权 S4 |
 | D0037 | 2026-08-05 | ACTIVE | 项目负责人明确授权进入 S4；本轮限定为 S4-R0 无风名义动力学闭环、偏差恢复和机械臂运动稳定首次演示 | S4=`IN_PROGRESS`，S4-R0=`IN_PROGRESS`，正式进度仍为 `4/9≈44%`；风、接触、训练、完整横担轨迹闭环和 S5 继续冻结 | S4-R0 独立审查 |
+| D0038 | 2026-08-05 | ACTIVE | S4-R0-R1 修正完成了解析 COM 反作用、USD MassAPI 质量来源、质量记账和动力学重跑；视觉副本时间采样在当前 Isaac native runtime 原生退出 | readiness=`BLOCKED_S4_R0_VISUAL_EVIDENCE_INCOMPLETE`；不伪造新 PNG/视频/曲线，不关闭 S4，不推进 S5 | 取得稳定的 S3 自定义 STL 视觉回放运行时 |

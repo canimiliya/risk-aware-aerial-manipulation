@@ -14,4 +14,10 @@ This milestone establishes the first nominal, no-wind dynamic closed-loop demons
 
 ## Acceptance status
 
-`SUBMITTED_FOR_REVIEW`: readiness artifact, authoritative automated metrics, visual manifest, tests, and Draft PR evidence are complete. Independent S4 final review remains pending.
+`SUBMITTED_FOR_REVIEW`, with the R1 readiness gate currently blocked:
+`BLOCKED_S4_R0_VISUAL_EVIDENCE_INCOMPLETE`. The analytic reaction correction,
+MassAPI provenance, mass accounting, dynamic runs, and directed tests pass.
+However, the current Isaac native runtime exits while time-sampling the S3
+custom-STL visual layer, so the new R1 PNG/video/curve manifest has not been
+generated. The prior S4-R0 visual evidence is preserved and not overwritten;
+independent S4 final review remains pending.

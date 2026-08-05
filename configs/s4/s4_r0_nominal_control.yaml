@@ -4,7 +4,11 @@ physics:
   render_hz: 30
   gravity_m_s2: 9.81
 vehicle:
-  mass_kg: 0.98
+  base_mass_kg: 0.98
+  arm_mass_kg: 0.29135232232511
+  mass_kg: 1.27135232232511
+  mass_accounting_mode: BASE_PLUS_ARM_SEPARATE
+  arm_gravity_handling: EXPLICIT_ARM_GRAVITY_FORCE_PLUS_TOTAL_HOVER_FEEDFORWARD
   inertia_kg_m2: [0.018, 0.018, 0.032]
   max_force_n: 30.0
   max_torque_nm: [1.5, 1.5, 0.8]
@@ -21,9 +25,9 @@ arm_controller:
   upper_rad: [1.5707963267948966, 1.5707963267948966, 1.5707963267948966]
 arm_surrogate:
   com_offset_m: [0.0, 0.0, -0.14]
-  link_equivalent_inertia_kg_m2: [0.00020418509666342288, 0.000204352181754075, 0.00020392316218931228]
-  link_length_m: [0.16, 0.16, 0.16]
-  mass_derivation: "sum(USD physics:JointEquivalentInertia / official Delta lower-arm-length^2)"
+  mass_provenance: docs/evidence/S4-R0/preflight/arm_mass_inertia_provenance.json
+  acceleration_contract: ANALYTIC_COM_J_QDD_PLUS_JDOT_DQ
+  reaction_scope: COM_TRANSLATIONAL_ONLY
 scenarios:
   hover_hold_s: 10.0
   initial_offset_recovery_s: 6.0

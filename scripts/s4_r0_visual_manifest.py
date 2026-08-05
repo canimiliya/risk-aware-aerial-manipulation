@@ -14,10 +14,10 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW_MANIFEST = ROOT / "docs/evidence/S4-R0/visuals/s4_r0_raw_visual_manifest.json"
-OUT_DIR = ROOT / "docs/evidence/S4-R0/visuals"
+RAW_MANIFEST = ROOT / "docs/evidence/S4-R0/visuals/r1/s4_r0_r1_raw_visual_manifest.json"
+OUT_DIR = ROOT / "docs/evidence/S4-R0/visuals/r1"
 PNG_DIR = OUT_DIR / "png"
-VIDEO_DIR = ROOT / "outputs/local_visuals/S4-R0/videos"
+VIDEO_DIR = ROOT / "outputs/local_visuals/S4-R0-R1/videos"
 SCENARIOS = {
     "hover_hold": "run_01",
     "initial_offset_recovery": "x_plus_010",
@@ -50,11 +50,11 @@ def annotate(source: Path, target: Path, item: dict[str, object], metrics: dict[
     draw = ImageDraw.Draw(image)
     fnt = font()
     banner = (
-        f"S4-R0 | {item['scenario']} | {item['run_id']} | t={float(item['time_s']):.3f}s | "
-        "240 Hz | BODY_WRENCH_PLUS_JOINT_TARGETS | controller=ON | root_teleport=FALSE"
+        f"S4-R0-R1 | {item['scenario']} | {item['run_id']} | t={float(item['time_s']):.3f}s | "
+        "REAL_S3_ROBOT_VISUAL=TRUE | DYNAMIC_BASE=TRUE | SURROGATE_ARM_REACTION=TRUE | ROOT_TELEPORT=FALSE"
     )
     detail = (
-        f"dynamic={metrics['dynamic_model_mode']} | RMSE={float(metrics['position_rmse_m']):.4f} m | "
+        f"240 Hz | dynamic={metrics['dynamic_model_mode']} | RMSE={float(metrics['position_rmse_m']):.4f} m | "
         f"attitude_RMSE={float(metrics['attitude_rmse_deg']):.3f} deg | "
         f"post-reset writes={metrics['post_reset_state_write_count']}"
     )
@@ -122,7 +122,7 @@ def main() -> int:
         videos.append({"scenario": scenario, "run_id": run_id, "local_path": str(video_path.resolve()), "sha256": sha256(video_path), "bytes": video_path.stat().st_size, "duration_s": round((float(frames[-1]["time_s"]) - float(frames[0]["time_s"])), 6), "fps": 12.0, "width": 640, "height": 360, "frame_count": len(video_frames), "source_capture_mode": "real_isaac_gui_viewport"})
         curve = build_curve(scenario, run_id)
         curves.append({"scenario": scenario, "run_id": run_id, "local_path": str(curve.resolve()), "sha256": sha256(curve), "bytes": curve.stat().st_size})
-    manifest = {"decision": "PASS_PENDING_AUDIT", "visual_contract_version": "S4-R0-real-isaac-gui-v2", "capture_mode": "real_isaac_gui_viewport_postprocessed", "source_manifest": str(RAW_MANIFEST.resolve()), "png": selected, "video": videos, "local_video_files": [item["local_path"] for item in videos], "curves": curves, "scenarios": list(SCENARIOS), "png_count": len(selected), "video_count": len(videos), "root_teleport": False, "controller_enabled": True, "physics_dt_s": 1.0 / 240.0}
+    manifest = {"decision": "PASS_PENDING_AUDIT", "visual_contract_version": "S4-R0-R1-real-isaac-gui-v1", "capture_mode": "real_isaac_gui_viewport_postprocessed", "source_manifest": str(RAW_MANIFEST.resolve()), "robot_visual_source_usd": "D:/i3/a/aerial_manipulator_v2.usd", "robot_visual_source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d", "dynamic_base_prim": "/World/QuadrotorBase", "visual_root_prim": "/World/RobotVisual", "png": selected, "video": videos, "local_video_files": [item["local_path"] for item in videos], "curves": curves, "scenarios": list(SCENARIOS), "png_count": len(selected), "video_count": len(videos), "root_teleport": False, "controller_enabled": True, "physics_dt_s": 1.0 / 240.0, "real_s3_robot_visual": True, "surrogate_arm_reaction": True}
     (OUT_DIR / "s4_r0_visual_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"png_count": len(selected), "video_count": len(videos), "curve_count": len(curves), "videos": videos}, ensure_ascii=False, indent=2))
     return 0
