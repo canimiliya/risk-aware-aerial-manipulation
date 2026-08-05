@@ -1,7 +1,7 @@
 # S3-R0 status
 
-- 正式阶段：`3/9≈33%`；整体工程估算：约 `44%`；S3 工程完成度：`100%`（工程证据已提交复核，不代表高级总控已验收）。
-- S3：`IN_PROGRESS`；S3-R0：`SUBMITTED_S3_R0_BASIC_ENVIRONMENT_READY`；readiness：`READY_FOR_S3_FINAL_REVIEW`。
+- 正式阶段：`4/9≈44%`；S3 工程完成度：`100%`，正式验收为 `PASS_WITH_LIMITATIONS`。
+- S3：`PASS_WITH_LIMITATIONS`；S3-R0：`CLOSED`；final acceptance：`docs/evidence/S3/final_acceptance/s3_final_acceptance.json`。
 - S4–S8：`FROZEN`。
 
 ## R7 已完成
@@ -25,4 +25,5 @@
 - 旧 `|G1-G2|<=0.002 m` 只保留为废止说明；`geometry_representation_conservatism_m=G2-G1` 作为诊断。
 - formal nominal headless×3 与 nominal_repeat headless×1 使用既有日志，R7 未重复运行。
 - 失败诊断证据保留；R7/R8 视频只在本地保存，不提交 Git，R8 PNG 提交 Git。
-- 不进入 S4，不做闭环/ROS/训练/动力学扩展，不关闭 S3；等待高级总控独立 S3 final review。
+- 接受限制：使用 kinematic playback articulation，无完整闭链动力学；场景为 provisional proxy / AABB envelope，距离对冻结 sampled-proxy 精确但不是 mesh-exact 安全证明；未做风、任务接触、闭环控制、ROS/ROS2 实时桥或训练；本地视频仅提交 manifest、SHA 和元数据；保留 6 个既有 S0/S1/S2 历史审计/归档依赖测试失败。
+- 本轮已完成 S3 正式收口；不进入 S4，不做闭环/ROS/训练/动力学扩展。S4–S8 继续 `FROZEN`，等待负责人另行授权。

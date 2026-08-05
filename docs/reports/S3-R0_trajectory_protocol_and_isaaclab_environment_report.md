@@ -2,9 +2,9 @@
 
 ## 结论
 
-R7 数值合同和静态场景证据保持不变；R8 已补齐授权范围内的危险时刻真实 GUI 截图与按时间推进的视频。当前提交标签为 `SUBMITTED_S3_R0_BASIC_ENVIRONMENT_READY`，readiness 为 `READY_FOR_S3_FINAL_REVIEW`；这不等于 S3 正式 PASS 或关闭。
+R7 数值合同和静态场景证据保持不变；R8 已补齐授权范围内的危险时刻真实 GUI 截图与按时间推进的视频。高级总控独立 final review 已通过，最终 decision 为 `PASS_S3_WITH_LIMITATIONS`；PR #13 获准使用普通 merge，S3-R0 正式关闭。
 
-正式状态：`3/9≈33%`，整体工程估算约 `44%`，`S3=IN_PROGRESS`，`S4–S8=FROZEN`。PR #13 保持 Open + Draft + 未合并。
+正式状态：`4/9≈44%`，`S3=PASS_WITH_LIMITATIONS`，`S3-R0=CLOSED`，`S4–S8=FROZEN`。PR #13 已按普通 merge 合并；S4 仍未启动。
 
 ## Column 修正与单一事实源
 
@@ -49,16 +49,16 @@ R7 数值合同和静态场景证据保持不变；R8 已补齐授权范围内�
 
 ## 测试与边界
 
-本轮最新全量复核为 `python -m pytest -q tests planner_bridge`：`71 passed, 6 failed`；新增 R8 视觉合同测试通过，6 个失败均为开始 Head 已存在的 S0/S1/S2 历史审计节点，未新增失败。
+本轮最新全量复核为 `python -m pytest -q tests planner_bridge`：`72 passed, 6 failed`；6 个失败均为开始 Head 已存在的 S0/S1/S2 历史审计节点，未新增失败。
 
 补充合同接口后的最新复核：视觉合同测试 `2 passed`，R7/R8 相关定向测试合计 `23 passed`；全量结果更新为 `72 passed, 6 failed`，失败 node 未变化，仍未新增失败。
 
 最终拆分统计为：视觉合同 `2 passed`、距离合同 `11 passed`、协议 `8 passed`、S2 baseline `4 passed`，定向合计 `25 passed`；全量仍为 `72 passed, 6 failed`。
 
-R8 targeted tests：`tests/test_s3_r0_visual_contract.py`、`tests/test_s3_r0_distance_representation.py`、`tests/test_s3_r0_protocol.py`=`20 passed`；`tests/audit/test_s3_s2_baseline.py`=`4 passed`；四个 R8 脚本 py_compile 通过；readiness audit `errors=[]`、`warnings=[]`。全量 `python -m pytest -q tests planner_bridge` 仍为 `70 passed, 6 failed`；6 个失败 node id 与开始 Head 相同：`tests/audit/test_audit_no_side_effects.py::test_historical_audits_leave_status_and_acceptance_bytes_unchanged`、`tests/audit/test_check_s0_structure.py::test_current_s0_audit_passes`、`tests/audit/test_s1_audit_no_side_effects.py::test_default_run_does_not_rewrite_historical_acceptance`、`tests/audit/test_s1_audit_no_side_effects.py::test_external_output_is_supported`、`tests/audit/test_s2_r0_archival_audit.py::test_archival_passes_without_local_npz`、`tests/audit/test_s2_r0_archival_audit.py::test_final_acceptance_passes_archival_mode_and_forwards_it`。根因仍是 S0 no-large-files 发现未跟踪的 formal S3 JSON 与下游 archival 依赖该结果；本轮未删除证据、未修改历史 acceptance。
+R8 targeted tests：视觉合同 `2 passed`、距离合同 `11 passed`、协议 `8 passed`、S2 baseline `4 passed`，定向合计 `25 passed`；四个 R8 脚本 py_compile 通过；readiness audit `errors=[]`、`warnings=[]`。全量 `python -m pytest -q tests planner_bridge` 为 `72 passed, 6 failed`；6 个失败 node id 与开始 Head 相同：`tests/audit/test_audit_no_side_effects.py::test_historical_audits_leave_status_and_acceptance_bytes_unchanged`、`tests/audit/test_check_s0_structure.py::test_current_s0_audit_passes`、`tests/audit/test_s1_audit_no_side_effects.py::test_default_run_does_not_rewrite_historical_acceptance`、`tests/audit/test_s1_audit_no_side_effects.py::test_external_output_is_supported`、`tests/audit/test_s2_r0_archival_audit.py::test_archival_passes_without_local_npz`、`tests/audit/test_s2_r0_archival_audit.py::test_final_acceptance_passes_archival_mode_and_forwards_it`。根因仍是 S0 no-large-files 发现未跟踪的 formal S3 JSON 与下游 archival 依赖该结果；本轮未删除证据、未修改历史 acceptance。
 
 历史 S1/S2 acceptance SHA 与开始 Head 对照全部 unchanged：`s1_final_acceptance bf4225a1...`、S2-R0 preflight `eee5dfa2...`、S2-R0 final `b4673b62...`、S2-R1 `f86ffd96...`、S2-R4 `fb5c2869...`、S2-R5 `0e95a47d...`、S2-R6 `3cea841a...`。
 
-未修改 S2 点云、轨迹、barrier、anchor、tau、100w0、Isaac Lab/Sim 上游或环境；未训练、未闭环、未接 ROS/ROS2、未进入 S4、未关闭 S3、未将 PR 标记 Ready、未合并 PR。
+接受限制：S3 使用 kinematic playback articulation，无完整闭链动力学；场景使用 provisional proxy / AABB envelope，距离对冻结 sampled-proxy 精确但不是 mesh-exact 安全证明；未做风、任务接触、闭环控制、ROS/ROS2 实时桥或训练；本地时序视频只提交 manifest、SHA 和元数据；保留 6 个既有 S0/S1/S2 历史审计/归档依赖测试失败。未修改 S2 点云、轨迹、barrier、anchor、tau、100w0、Isaac Lab/Sim 上游或环境；未进入 S4。
 
 最终证据目录：`docs/evidence/S3-R0/distance_representation/`；最终 readiness：`docs/evidence/S3/final_readiness/s3_final_readiness.json`。
