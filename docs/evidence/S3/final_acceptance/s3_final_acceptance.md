@@ -3,10 +3,10 @@
 - decision：`PASS_S3_WITH_LIMITATIONS`
 - reviewed PR：`#13`
 - reviewed technical Head：`85bbb04ceefe5897826f6892fc9ff408b8cf0a5b`
-- merge method：普通 `merge`；治理 commit、merge commit 和最终 `main` SHA 在对应动作完成后回填。
+- merge method：普通 `merge`；治理 commit：`43c78eb62801d3068750055bb23650178264beb9`；merge commit 与最终 `main` SHA：`741dd82e823420e0d8b272c9f06ed81b0b757183`。
 - formal progress after merge：`4/9≈44%`
 - formal close date：`2026-08-05`
-- S4 status：`FROZEN`；S4–S8 均未启动。
+- S4 status：开始本轮前为 `FROZEN`；S4–S8 均未启动。
 
 ## Accepted evidence
 

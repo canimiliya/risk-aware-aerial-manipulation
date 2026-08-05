@@ -1,0 +1,36 @@
+{
+  "dynamic_model_mode": "BASE_DYNAMIC_ARM_REACTION_SURROGATE_V1",
+  "physics_dt_s": 0.004166666666666667,
+  "control_hz": 240,
+  "isaacsim_version": "5.1.0.0",
+  "isaaclab_version": "2.3.2",
+  "robot_usd_path": "D:/i3/a/aerial_manipulator_v2.usd",
+  "robot_usd_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "base_mass_source": "planner_bridge/scenes/s2_r6_official.launch: mass=0.98 kg",
+  "arm_inertia_source": "USD physics:JointEquivalentInertia values from existing_joint_probe.json",
+  "arm_mass_kg_derived": 0.02392423596120352,
+  "arm_mass_derivation": "sum(J_eq / lower_arm_length^2), lower_arm_length=0.16 m from official DeltaGeometry",
+  "root_dynamic_body": "/World/QuadrotorBase",
+  "root_articulation_api": false,
+  "joint_physics_constraint": false,
+  "floating_base": true,
+  "closed_chain": false,
+  "control_interface": "BODY_WRENCH_PLUS_JOINT_TARGETS",
+  "dynamic_surrogate": true,
+  "full_closed_chain_dynamics": false,
+  "active_joints": [
+    "m1_1",
+    "m2_1",
+    "m3_1"
+  ],
+  "passive_joints": [
+    "m1_2",
+    "m1_3",
+    "m2_2",
+    "m2_3",
+    "m3_2",
+    "m3_3"
+  ],
+  "post_reset_root_state_write_count": 0,
+  "post_reset_active_joint_state_write_count": 0
+}

@@ -1,0 +1,219 @@
+{
+  "decision": "PASS_PENDING_AUDIT",
+  "visual_contract_version": "S4-R0-real-isaac-gui-v2",
+  "capture_mode": "real_isaac_gui_viewport_postprocessed",
+  "source_manifest": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\s4_r0_raw_visual_manifest.json",
+  "png": [
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\hover_hold_run_01_01_t000.000.png",
+      "scenario": "hover_hold",
+      "run_id": "run_01",
+      "frame": 0,
+      "time_s": 0.0,
+      "sha256": "1dced1661a6850ad6fdfef261f96b4d3b52344cec73fae57744ab31e633f4117",
+      "bytes": 551092,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\hover_hold_run_01_02_t003.333.png",
+      "scenario": "hover_hold",
+      "run_id": "run_01",
+      "frame": 800,
+      "time_s": 3.3333333333333335,
+      "sha256": "6fd4cf6e3a879156b1166ff940593dc9aae9af569039d8c146cf5dcbc59650f3",
+      "bytes": 548168,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\hover_hold_run_01_03_t006.667.png",
+      "scenario": "hover_hold",
+      "run_id": "run_01",
+      "frame": 1600,
+      "time_s": 6.666666666666667,
+      "sha256": "8f4cdc32341c286aac42cfc4acd87bc1f767864ca5ab04b2e462bbd2b2cf3ea5",
+      "bytes": 557303,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\hover_hold_run_01_04_t010.000.png",
+      "scenario": "hover_hold",
+      "run_id": "run_01",
+      "frame": 2400,
+      "time_s": 10.0,
+      "sha256": "001a178077f1c5cf2658058bddf1ce5926a6a35b06f68de3ee835a2447162b54",
+      "bytes": 561876,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\initial_offset_recovery_x_plus_010_01_t000.000.png",
+      "scenario": "initial_offset_recovery",
+      "run_id": "x_plus_010",
+      "frame": 0,
+      "time_s": 0.0,
+      "sha256": "b48f54c4523823f7fc4bacecffe66a23e4eea580ed55868b6fd86500c9ee8ace",
+      "bytes": 562600,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\initial_offset_recovery_x_plus_010_02_t002.000.png",
+      "scenario": "initial_offset_recovery",
+      "run_id": "x_plus_010",
+      "frame": 480,
+      "time_s": 2.0,
+      "sha256": "6f2774b195a3fe72e1366c0d9c70730d1e31f0e1d6ca134aec348a4227bc6f6c",
+      "bytes": 558434,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\initial_offset_recovery_x_plus_010_03_t004.000.png",
+      "scenario": "initial_offset_recovery",
+      "run_id": "x_plus_010",
+      "frame": 960,
+      "time_s": 4.0,
+      "sha256": "53899d0fe1df8cf5ecd2075bacb1274c32104d1e7d24903e77809c8611a0f2ce",
+      "bytes": 561019,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\initial_offset_recovery_x_plus_010_04_t006.000.png",
+      "scenario": "initial_offset_recovery",
+      "run_id": "x_plus_010",
+      "frame": 1440,
+      "time_s": 6.0,
+      "sha256": "bff0a58ffb33ae9fe01ef2c64a393215b756a3b357a1d6731f56d6dd3d3d2520",
+      "bytes": 563167,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\arm_motion_hold_run_01_01_t000.000.png",
+      "scenario": "arm_motion_hold",
+      "run_id": "run_01",
+      "frame": 0,
+      "time_s": 0.0,
+      "sha256": "daadf9a17a0ef3b7d2aaabf3ec57fb4317a467b19d8419c3bbf38b464f508724",
+      "bytes": 563637,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\arm_motion_hold_run_01_02_t003.333.png",
+      "scenario": "arm_motion_hold",
+      "run_id": "run_01",
+      "frame": 800,
+      "time_s": 3.3333333333333335,
+      "sha256": "92f7e8d17ca0ab9f9cedd965a386117abdf63511e7a37ef778c4c40953b35cdc",
+      "bytes": 560570,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\arm_motion_hold_run_01_03_t006.667.png",
+      "scenario": "arm_motion_hold",
+      "run_id": "run_01",
+      "frame": 1600,
+      "time_s": 6.666666666666667,
+      "sha256": "c4256ac773b9e2ae3d8626c5f3b8a7dfc6086a3db81752822f2fc1741cde8e3e",
+      "bytes": 563607,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    },
+    {
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\png\\arm_motion_hold_run_01_04_t010.000.png",
+      "scenario": "arm_motion_hold",
+      "run_id": "run_01",
+      "frame": 2400,
+      "time_s": 10.0,
+      "sha256": "e1f4f43638800fbd048f92c2d46690d81ef9b52cb3a492ce19fd1389264405c6",
+      "bytes": 580143,
+      "view": "overall",
+      "capture_mode": "real_isaac_gui_viewport_with_evidence_overlay"
+    }
+  ],
+  "video": [
+    {
+      "scenario": "hover_hold",
+      "run_id": "run_01",
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\local_visuals\\S4-R0\\videos\\hover_hold_real_isaac_temporal.gif",
+      "sha256": "e0e936a3e8755adfbd0b755fbf2e0e9762b63227bfa465630ee5067e7f3f386f",
+      "bytes": 2986445,
+      "duration_s": 10.0,
+      "fps": 12.0,
+      "width": 640,
+      "height": 360,
+      "frame_count": 31,
+      "source_capture_mode": "real_isaac_gui_viewport"
+    },
+    {
+      "scenario": "initial_offset_recovery",
+      "run_id": "x_plus_010",
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\local_visuals\\S4-R0\\videos\\initial_offset_recovery_real_isaac_temporal.gif",
+      "sha256": "43f53907ffdfbb1200b997f675c7075ee376160747672582877fad37e204b5a6",
+      "bytes": 1859726,
+      "duration_s": 6.0,
+      "fps": 12.0,
+      "width": 640,
+      "height": 360,
+      "frame_count": 19,
+      "source_capture_mode": "real_isaac_gui_viewport"
+    },
+    {
+      "scenario": "arm_motion_hold",
+      "run_id": "run_01",
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\local_visuals\\S4-R0\\videos\\arm_motion_hold_real_isaac_temporal.gif",
+      "sha256": "b4a7fdd1e47a960cc3673a8f2f3d3a084cb1e3fa61ad89b79bbf9ae6c4a2d65b",
+      "bytes": 2894967,
+      "duration_s": 10.0,
+      "fps": 12.0,
+      "width": 640,
+      "height": 360,
+      "frame_count": 31,
+      "source_capture_mode": "real_isaac_gui_viewport"
+    }
+  ],
+  "local_video_files": [
+    "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\local_visuals\\S4-R0\\videos\\hover_hold_real_isaac_temporal.gif",
+    "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\local_visuals\\S4-R0\\videos\\initial_offset_recovery_real_isaac_temporal.gif",
+    "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\local_visuals\\S4-R0\\videos\\arm_motion_hold_real_isaac_temporal.gif"
+  ],
+  "curves": [
+    {
+      "scenario": "hover_hold",
+      "run_id": "run_01",
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\curves\\hover_hold_run_01_curves.png",
+      "sha256": "149e33c98bd852fd60fdd154561d827e78038cb2444c9ae11fee2d48259dd565",
+      "bytes": 89032
+    },
+    {
+      "scenario": "initial_offset_recovery",
+      "run_id": "x_plus_010",
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\curves\\initial_offset_recovery_x_plus_010_curves.png",
+      "sha256": "b183f7480181ca459cc450c4974539af534bd620fc77e244b6af449568ff74ea",
+      "bytes": 89563
+    },
+    {
+      "scenario": "arm_motion_hold",
+      "run_id": "run_01",
+      "local_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\curves\\arm_motion_hold_run_01_curves.png",
+      "sha256": "fa068292cb722b2bf71c571ac0d636372c747e133c3754f71bf89b4a3f09dc45",
+      "bytes": 120223
+    }
+  ],
+  "scenarios": [
+    "hover_hold",
+    "initial_offset_recovery",
+    "arm_motion_hold"
+  ],
+  "png_count": 12,
+  "video_count": 3,
+  "root_teleport": false,
+  "controller_enabled": true,
+  "physics_dt_s": 0.004166666666666667
+}

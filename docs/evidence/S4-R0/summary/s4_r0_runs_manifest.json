@@ -1,0 +1,10 @@
+{
+  "run_count": 11,
+  "scenarios": {"hover_hold": 3, "initial_offset_recovery": 4, "arm_motion_hold": 3, "arm_motion_hold_reaction_off": 1},
+  "authoritative_metrics": "docs/evidence/S4-R0/summary/s4_r0_metrics.json",
+  "visual_manifest": "docs/evidence/S4-R0/visuals/s4_r0_visual_manifest.json",
+  "headless_command": "D:/i3/e/python.exe scripts/s4_r0_nominal_dynamics_demo.py --headless --no-visual",
+  "physics_dt_s": 0.004166666666666667,
+  "control_hz": 240,
+  "root_state_writes_in_control_loop": 0
+}

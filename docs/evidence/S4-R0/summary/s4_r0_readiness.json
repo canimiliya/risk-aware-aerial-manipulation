@@ -1,0 +1,14 @@
+{
+  "decision": "SUBMITTED_FOR_REVIEW",
+  "label": "SUBMITTED_S4_R0_SURROGATE_NOMINAL_CONTROL_READY",
+  "dynamic_model_mode": "BASE_DYNAMIC_ARM_REACTION_SURROGATE_V1",
+  "automated_metrics_pass": true,
+  "visual_evidence_pass": true,
+  "no_state_teleport_audit_pass": true,
+  "full_closed_chain_dynamics": false,
+  "full_nominal_trajectory_closed_loop": false,
+  "physics_dt_s": 0.004166666666666667,
+  "control_hz": 240,
+  "scope": ["S4-R0 nominal hover", "S4-R0 initial offset recovery", "S4-R0 arm motion hold"],
+  "frozen": ["wind", "contact task", "training", "S5"]
+}
