@@ -1,0 +1,36 @@
+{
+  "decision": "BLOCKED_S4_R0_R2_NATIVE_VISUAL_PIPELINE_UNRESOLVED",
+  "errors": [
+    "native_visual_pipeline_unresolved",
+    "visual_cache_build_failed",
+    "visual_evidence_incomplete"
+  ],
+  "warnings": [
+    "route-B analytic COM surrogate; no full closed-chain articulation dynamics",
+    "full nominal AM-Planner trajectory closed loop is not in scope",
+    "physics contact unavailable because dynamic proxy collision is intentionally disabled; sampled-proxy clearance is the safety evidence",
+    "R2 does not change the accepted S4-R0 dynamics/control results",
+    "S5-S8 remain frozen"
+  ],
+  "dynamic_model_mode": "BASE_DYNAMIC_ARM_REACTION_SURROGATE_V1",
+  "physics_integrated_root": true,
+  "reaction_acceleration_contract_pass": true,
+  "arm_mass_provenance_pass": true,
+  "real_robot_visual_binding_pass": false,
+  "visual_runtime_stable": false,
+  "live_gui_dynamics_capture_pass": false,
+  "hover_hold_pass": true,
+  "initial_offset_recovery_pass": true,
+  "arm_motion_hold_pass": true,
+  "visual_evidence_pass": false,
+  "automated_metrics_pass": true,
+  "full_closed_chain_dynamics": false,
+  "full_nominal_trajectory_closed_loop": false,
+  "s4_final_ready": false,
+  "s5_ready": false,
+  "formal_progress": "4/9≈44%",
+  "s4_status": "IN_PROGRESS",
+  "s4_r0_status": "SUBMITTED_FOR_REVIEW",
+  "s5_s8_status": "FROZEN",
+  "r2_visual_manifest": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R0\\visuals\\r2\\s4_r0_r2_visual_manifest.json"
+}

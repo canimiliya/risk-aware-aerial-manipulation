@@ -1,0 +1,535 @@
+{
+  "usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "rows": [
+    {
+      "path": "/World/RobotVisual/Asset/body/body",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "PhysicsArticulationRootAPI",
+        "PhysxArticulationAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/body/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/body/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0, 0, 0)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(1, 0, 0, 0)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/end_effector",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/end_effector/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/end_effector/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0, 0, -0.05000000074505806)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.7071055173873901, 0, 0, -0.7071080803871155)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/AA_1",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/AA_1/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/AA_1/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0.033999793231487274, -0.05889012664556503, -0.03049999661743641)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.6150972843170166, -0.6096099019050598, 0.3582981824874878, -0.3487887382507324)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/TA_1l",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_1l/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_1l/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0.06878844648599625, -0.1571502536535263, -0.03209199756383896)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(-0.21633757650852203, 0.4743059277534485, 0.5242211222648621, -0.6733678579330444)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/TA_1r",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_1r/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_1r/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0.10169951617717743, -0.13815036416053772, -0.03209199756383896)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(-0.21633757650852203, 0.4743059277534485, 0.5242211222648621, -0.6733678579330444)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/AA_2",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/AA_2/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/AA_2/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0.0340002179145813, 0.058889880776405334, -0.03049999661743641)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.6108406782150269, -0.6138919591903687, -0.35091090202331543, 0.35619086027145386)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/TA_2l",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_2l/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_2l/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0.10170049965381622, 0.13814964890480042, -0.031383998692035675)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.47517046332359314, -0.21436536312103271, 0.6741689443588257, -0.5232177972793579)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/TA_2r",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_2r/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_2r/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(0.06879456341266632, 0.15714974701404572, -0.031383998692035675)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.47517046332359314, -0.21436536312103271, 0.6741689443588257, -0.5232177972793579)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/AA_3",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/AA_3/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/AA_3/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(-0.06800001114606857, 2.4318697455782967e-7, -0.03049999661743641)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.0009420216083526611, 0.000947117805480957, 0.707107424736023, -0.7071049213409424)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/TA_3l",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_3l/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_3l/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(-0.17049993574619293, 0.01900060847401619, -0.03077399916946888)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.6906578540802002, -0.690443754196167, 0.1517130434513092, 0.152520090341568)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    },
+    {
+      "path": "/World/RobotVisual/Asset/body/TA_3r",
+      "type": "Xform",
+      "schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "children": [
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_3r/visuals",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        },
+        {
+          "path": "/World/RobotVisual/Asset/body/TA_3r/collisions",
+          "type": "Xform",
+          "schemas": [],
+          "properties": [
+            "proxyPrim",
+            "purpose",
+            "visibility",
+            "xformOpOrder"
+          ]
+        }
+      ],
+      "xform_ops": [
+        {
+          "name": "xformOp:translate",
+          "value": "(-0.17050008475780487, -0.018999390304088593, -0.03077399916946888)"
+        },
+        {
+          "name": "xformOp:orient",
+          "value": "(0.6906578540802002, -0.690443754196167, 0.1517130434513092, 0.152520090341568)"
+        },
+        {
+          "name": "xformOp:scale",
+          "value": "(1, 1, 1)"
+        }
+      ],
+      "local_matrix_error": "TypeError(\"'float' object is not iterable\")"
+    }
+  ]
+}

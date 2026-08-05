@@ -1,0 +1,34 @@
+physics:
+  physics_dt_s: 0.004166666666666667
+  control_hz: 240
+  render_hz: 30
+  gravity_m_s2: 9.81
+vehicle:
+  base_mass_kg: 0.98
+  arm_mass_kg: 0.29135232232511
+  mass_kg: 1.27135232232511
+  mass_accounting_mode: BASE_PLUS_ARM_SEPARATE
+  arm_gravity_handling: EXPLICIT_ARM_GRAVITY_FORCE_PLUS_TOTAL_HOVER_FEEDFORWARD
+  inertia_kg_m2: [0.018, 0.018, 0.032]
+  max_force_n: 30.0
+  max_torque_nm: [1.5, 1.5, 0.8]
+base_controller:
+  kp_pos: [4.0, 4.0, 8.0]
+  kd_pos: [3.2, 3.2, 4.8]
+  kp_att: [2.8, 2.8, 1.2]
+  kd_att: [0.22, 0.22, 0.16]
+arm_controller:
+  kp: [3.0, 3.0, 3.0]
+  kd: [0.12, 0.12, 0.12]
+  max_effort_nm: [0.8, 0.8, 0.8]
+  lower_rad: [0.0, 0.0, 0.0]
+  upper_rad: [1.5707963267948966, 1.5707963267948966, 1.5707963267948966]
+arm_surrogate:
+  com_offset_m: [0.0, 0.0, -0.14]
+  mass_provenance: docs/evidence/S4-R0/preflight/arm_mass_inertia_provenance.json
+  acceleration_contract: ANALYTIC_COM_J_QDD_PLUS_JDOT_DQ
+  reaction_scope: COM_TRANSLATIONAL_ONLY
+scenarios:
+  hover_hold_s: 10.0
+  initial_offset_recovery_s: 6.0
+  arm_motion_hold_s: 10.0

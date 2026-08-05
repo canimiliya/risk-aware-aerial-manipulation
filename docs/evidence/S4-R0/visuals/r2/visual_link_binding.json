@@ -1,0 +1,22 @@
+{
+  "available": false,
+  "pass": false,
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "stage_prim": "/World/RobotVisual",
+  "dynamic_base_prim": "/World/QuadrotorBase",
+  "required_links": [
+    "body",
+    "end_effector",
+    "AA_1",
+    "AA_2",
+    "AA_3",
+    "TA_1l",
+    "TA_1r",
+    "TA_2l",
+    "TA_2r",
+    "TA_3l",
+    "TA_3r"
+  ],
+  "reason": "P0-P3 native capture/link-update failure prevented a stable runtime binding audit; no residuals are promoted."
+}

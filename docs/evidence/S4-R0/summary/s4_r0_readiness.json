@@ -1,0 +1,43 @@
+{
+  "decision": "BLOCKED_S4_R0_VISUAL_EVIDENCE_INCOMPLETE",
+  "errors": [
+    "visual_evidence_incomplete"
+  ],
+  "warnings": [
+    "route-B analytic COM surrogate; no full closed-chain articulation dynamics",
+    "full nominal AM-Planner trajectory closed loop is not in scope",
+    "physics contact unavailable because dynamic proxy collision is intentionally disabled; sampled-proxy clearance is the safety evidence",
+    "custom S3 STL visual layer cannot be time-sampled in the current Isaac native runtime; state-replay snapshots remain pending"
+  ],
+  "main_start_head": "741dd82e823420e0d8b272c9f06ed81b0b757183",
+  "dynamic_model_mode": "BASE_DYNAMIC_ARM_REACTION_SURROGATE_V1",
+  "mass_accounting_mode": "BASE_PLUS_ARM_SEPARATE",
+  "base_mass_kg": 0.98,
+  "arm_mass_kg": 0.29135232232511,
+  "total_system_mass_kg": 1.27135232232511,
+  "hover_feedforward_mass_kg": 1.27135232232511,
+  "arm_gravity_handling": "EXPLICIT_ARM_GRAVITY_FORCE_PLUS_TOTAL_HOVER_FEEDFORWARD",
+  "physics_integrated_root": true,
+  "gravity_drop_probe": true,
+  "hover_force_probe": true,
+  "root_teleport_after_reset": false,
+  "active_joint_state_teleport_after_reset": false,
+  "reaction_acceleration_contract_pass": true,
+  "arm_mass_provenance_pass": true,
+  "real_robot_visual_binding_pass": true,
+  "hover_hold_pass": true,
+  "initial_offset_recovery_pass": true,
+  "arm_motion_hold_pass": true,
+  "arm_reaction_coupling_nonzero": true,
+  "clearance_gate_pass": true,
+  "visual_evidence_pass": false,
+  "automated_metrics_pass": true,
+  "physics_contact_available": false,
+  "physics_contact_count": null,
+  "arm_physics_contact_available": false,
+  "arm_safety_evidence": "sampled_proxy_clearance_only",
+  "full_closed_chain_dynamics": false,
+  "full_nominal_trajectory_closed_loop": false,
+  "s4_final_ready": false,
+  "s5_ready": false
+}

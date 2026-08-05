@@ -23,9 +23,9 @@
   "s4_status": "FROZEN",
   "reviewed_pr_state_before_merge": "OPEN_DRAFT_MERGEABLE",
   "merge_method": "merge",
-  "governance_commit_head": "TO_BE_FILLED_AFTER_GOVERNANCE_COMMIT",
-  "merge_commit_sha": "TO_BE_FILLED_AFTER_MERGE",
-  "final_main_sha": "TO_BE_FILLED_AFTER_MERGE",
+  "governance_commit_head": "43c78eb62801d3068750055bb23650178264beb9",
+  "merge_commit_sha": "741dd82e823420e0d8b272c9f06ed81b0b757183",
+  "final_main_sha": "741dd82e823420e0d8b272c9f06ed81b0b757183",
   "formal_close_date": "2026-08-05",
   "accepted_limitations": [
     "S3 使用 kinematic playback articulation。",

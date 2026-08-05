@@ -1,0 +1,188 @@
+{
+  "decision": "PASS_PENDING_AUDIT",
+  "comparison": [
+    {
+      "scenario": "arm_motion_hold",
+      "run_id": "run_01",
+      "old_formula": "velocity=(com_k-com_k-1)/dt; acceleration=velocity/dt",
+      "new_formula": "a_com=J(q)qdd+Jdot(q,dq)dq",
+      "old_rejected_first_difference": {
+        "force_peak_N": 6.619747646584394,
+        "force_rms_N": 0.5572967058550273,
+        "torque_peak_Nm": 1.0763454752243151,
+        "torque_rms_Nm": 0.09057731631103305
+      },
+      "new_analytic": {
+        "force_peak_N": 2.9186725219944676,
+        "force_rms_N": 0.07934990810964929,
+        "torque_peak_Nm": 0.475649602050753,
+        "torque_rms_Nm": 0.01292139075189994,
+        "base_position_rmse_m": 0.0011721720244444985,
+        "joint_rmse_rad": 0.010040123293169969,
+        "settling_time_position_s": 0.0
+      },
+      "old_headline_metrics": {
+        "scenario": "arm_motion_hold",
+        "run_id": "run_01",
+        "duration_s": 10.0,
+        "steps": 2401,
+        "position_rmse_m": 0.006647004683055415,
+        "position_max_error_m": 0.009374020413470813,
+        "attitude_rmse_deg": 0.1337496296519808,
+        "attitude_max_error_deg": 0.7821152401169355,
+        "final_2s_mean_speed_m_s": 0.004798495077638859,
+        "final_2s_mean_angular_speed_rad_s": 0.0010950513283419538,
+        "joint_rmse_rad": 0.010040123293169969,
+        "joint_max_error_rad": 0.17324539679644751,
+        "ee_fk_rmse_m": 0.0069129302780951765,
+        "settling_time_position_s": 0.0,
+        "position_overshoot_m": 0.009036896542621204,
+        "force_saturation": {
+          "ratio": 0.0,
+          "longest_duration_s": 0.0,
+          "continuous_over_0_5s": false
+        },
+        "torque_saturation": {
+          "ratio": 0.0,
+          "longest_duration_s": 0.0,
+          "continuous_over_0_5s": false
+        },
+        "joint_saturation_ratio": 0.0,
+        "minimum_clearance_m": 0.7726738122709578,
+        "dangerous_component": "body->AdjacentObstacle",
+        "contact_count": 0,
+        "penetration": false,
+        "arm_reaction_nonzero": true,
+        "post_reset_state_write_count": 0,
+        "post_reset_active_joint_state_write_count": 0,
+        "physics_integrated_state": true,
+        "dynamic_model_mode": "BASE_DYNAMIC_ARM_REACTION_SURROGATE_V1",
+        "control_interface": "BODY_WRENCH_PLUS_JOINT_TARGETS",
+        "visual_frames": []
+      }
+    },
+    {
+      "scenario": "arm_motion_hold",
+      "run_id": "run_02",
+      "old_formula": "velocity=(com_k-com_k-1)/dt; acceleration=velocity/dt",
+      "new_formula": "a_com=J(q)qdd+Jdot(q,dq)dq",
+      "old_rejected_first_difference": {
+        "force_peak_N": 6.619747646584394,
+        "force_rms_N": 0.5572967058550273,
+        "torque_peak_Nm": 1.0763454752243151,
+        "torque_rms_Nm": 0.09057731631103305
+      },
+      "new_analytic": {
+        "force_peak_N": 2.9186725219944676,
+        "force_rms_N": 0.07934990810964929,
+        "torque_peak_Nm": 0.475649602050753,
+        "torque_rms_Nm": 0.01292139075189994,
+        "base_position_rmse_m": 0.0011721720244444985,
+        "joint_rmse_rad": 0.010040123293169969,
+        "settling_time_position_s": 0.0
+      },
+      "old_headline_metrics": {
+        "scenario": "arm_motion_hold",
+        "run_id": "run_02",
+        "duration_s": 10.0,
+        "steps": 2401,
+        "position_rmse_m": 0.006647004683055415,
+        "position_max_error_m": 0.009374020413470813,
+        "attitude_rmse_deg": 0.1337496296519808,
+        "attitude_max_error_deg": 0.7821152401169355,
+        "final_2s_mean_speed_m_s": 0.004798495077638859,
+        "final_2s_mean_angular_speed_rad_s": 0.0010950513283419538,
+        "joint_rmse_rad": 0.010040123293169969,
+        "joint_max_error_rad": 0.17324539679644751,
+        "ee_fk_rmse_m": 0.0069129302780951765,
+        "settling_time_position_s": 0.0,
+        "position_overshoot_m": 0.009036896542621204,
+        "force_saturation": {
+          "ratio": 0.0,
+          "longest_duration_s": 0.0,
+          "continuous_over_0_5s": false
+        },
+        "torque_saturation": {
+          "ratio": 0.0,
+          "longest_duration_s": 0.0,
+          "continuous_over_0_5s": false
+        },
+        "joint_saturation_ratio": 0.0,
+        "minimum_clearance_m": 0.7726738122709578,
+        "dangerous_component": "body->AdjacentObstacle",
+        "contact_count": 0,
+        "penetration": false,
+        "arm_reaction_nonzero": true,
+        "post_reset_state_write_count": 0,
+        "post_reset_active_joint_state_write_count": 0,
+        "physics_integrated_state": true,
+        "dynamic_model_mode": "BASE_DYNAMIC_ARM_REACTION_SURROGATE_V1",
+        "control_interface": "BODY_WRENCH_PLUS_JOINT_TARGETS",
+        "visual_frames": []
+      }
+    },
+    {
+      "scenario": "arm_motion_hold",
+      "run_id": "run_03",
+      "old_formula": "velocity=(com_k-com_k-1)/dt; acceleration=velocity/dt",
+      "new_formula": "a_com=J(q)qdd+Jdot(q,dq)dq",
+      "old_rejected_first_difference": {
+        "force_peak_N": 6.619747646584394,
+        "force_rms_N": 0.5572967058550273,
+        "torque_peak_Nm": 1.0763454752243151,
+        "torque_rms_Nm": 0.09057731631103305
+      },
+      "new_analytic": {
+        "force_peak_N": 2.9186725219944676,
+        "force_rms_N": 0.07934990810964929,
+        "torque_peak_Nm": 0.475649602050753,
+        "torque_rms_Nm": 0.01292139075189994,
+        "base_position_rmse_m": 0.0011721720244444985,
+        "joint_rmse_rad": 0.010040123293169969,
+        "settling_time_position_s": 0.0
+      },
+      "old_headline_metrics": {
+        "scenario": "arm_motion_hold",
+        "run_id": "run_03",
+        "duration_s": 10.0,
+        "steps": 2401,
+        "position_rmse_m": 0.006647004683055415,
+        "position_max_error_m": 0.009374020413470813,
+        "attitude_rmse_deg": 0.1337496296519808,
+        "attitude_max_error_deg": 0.7821152401169355,
+        "final_2s_mean_speed_m_s": 0.004798495077638859,
+        "final_2s_mean_angular_speed_rad_s": 0.0010950513283419538,
+        "joint_rmse_rad": 0.010040123293169969,
+        "joint_max_error_rad": 0.17324539679644751,
+        "ee_fk_rmse_m": 0.0069129302780951765,
+        "settling_time_position_s": 0.0,
+        "position_overshoot_m": 0.009036896542621204,
+        "force_saturation": {
+          "ratio": 0.0,
+          "longest_duration_s": 0.0,
+          "continuous_over_0_5s": false
+        },
+        "torque_saturation": {
+          "ratio": 0.0,
+          "longest_duration_s": 0.0,
+          "continuous_over_0_5s": false
+        },
+        "joint_saturation_ratio": 0.0,
+        "minimum_clearance_m": 0.7726738122709578,
+        "dangerous_component": "body->AdjacentObstacle",
+        "contact_count": 0,
+        "penetration": false,
+        "arm_reaction_nonzero": true,
+        "post_reset_state_write_count": 0,
+        "post_reset_active_joint_state_write_count": 0,
+        "physics_integrated_state": true,
+        "dynamic_model_mode": "BASE_DYNAMIC_ARM_REACTION_SURROGATE_V1",
+        "control_interface": "BODY_WRENCH_PLUS_JOINT_TARGETS",
+        "visual_frames": []
+      }
+    }
+  ],
+  "static_arm_reaction_new_force_N": 0.0,
+  "static_arm_reaction_new_torque_Nm": 0.0,
+  "first_frame_pulse_new": false
+}

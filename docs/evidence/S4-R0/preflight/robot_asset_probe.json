@@ -1,0 +1,655 @@
+{
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "stage_root_prims": [
+    "/delta_display",
+    "/Render",
+    "/OmniverseKit_Persp",
+    "/OmniverseKit_Front",
+    "/OmniverseKit_Top",
+    "/OmniverseKit_Right"
+  ],
+  "root_layer_sublayers": [],
+  "root_layer_external_references": [
+    "configuration/aerial_manipulator_v2_base.usd",
+    "configuration/aerial_manipulator_v2_physics.usd",
+    "configuration/aerial_manipulator_v2_robot.usd",
+    "configuration/aerial_manipulator_v2_sensor.usd"
+  ],
+  "mesh_prim_count": 0,
+  "mesh_prims": [],
+  "prim_type_counts": {
+    "<untyped>": 4,
+    "Camera": 4,
+    "Material": 2,
+    "PhysicsFixedJoint": 1,
+    "PhysicsRevoluteJoint": 9,
+    "RenderProduct": 1,
+    "RenderSettings": 1,
+    "RenderVar": 1,
+    "Scope": 2,
+    "Shader": 2,
+    "Xform": 35
+  },
+  "prim_paths": [
+    "/delta_display",
+    "/delta_display/body",
+    "/delta_display/body/body",
+    "/delta_display/body/body/visuals",
+    "/delta_display/body/body/collisions",
+    "/delta_display/body/end_effector",
+    "/delta_display/body/end_effector/visuals",
+    "/delta_display/body/end_effector/collisions",
+    "/delta_display/body/joints",
+    "/delta_display/body/joints/ini_connect",
+    "/delta_display/body/joints/m1_1",
+    "/delta_display/body/joints/m1_2",
+    "/delta_display/body/joints/m1_3",
+    "/delta_display/body/joints/m2_1",
+    "/delta_display/body/joints/m2_2",
+    "/delta_display/body/joints/m2_3",
+    "/delta_display/body/joints/m3_1",
+    "/delta_display/body/joints/m3_2",
+    "/delta_display/body/joints/m3_3",
+    "/delta_display/body/AA_1",
+    "/delta_display/body/AA_1/visuals",
+    "/delta_display/body/AA_1/collisions",
+    "/delta_display/body/TA_1l",
+    "/delta_display/body/TA_1l/visuals",
+    "/delta_display/body/TA_1l/collisions",
+    "/delta_display/body/TA_1r",
+    "/delta_display/body/TA_1r/visuals",
+    "/delta_display/body/TA_1r/collisions",
+    "/delta_display/body/AA_2",
+    "/delta_display/body/AA_2/visuals",
+    "/delta_display/body/AA_2/collisions",
+    "/delta_display/body/TA_2l",
+    "/delta_display/body/TA_2l/visuals",
+    "/delta_display/body/TA_2l/collisions",
+    "/delta_display/body/TA_2r",
+    "/delta_display/body/TA_2r/visuals",
+    "/delta_display/body/TA_2r/collisions",
+    "/delta_display/body/AA_3",
+    "/delta_display/body/AA_3/visuals",
+    "/delta_display/body/AA_3/collisions",
+    "/delta_display/body/TA_3l",
+    "/delta_display/body/TA_3l/visuals",
+    "/delta_display/body/TA_3l/collisions",
+    "/delta_display/body/TA_3r",
+    "/delta_display/body/TA_3r/visuals",
+    "/delta_display/body/TA_3r/collisions",
+    "/delta_display/body/Looks",
+    "/delta_display/body/Looks/material_E5EAED",
+    "/delta_display/body/Looks/material_E5EAED/Shader",
+    "/delta_display/body/Looks/material_000",
+    "/delta_display/body/Looks/material_000/Shader",
+    "/Render",
+    "/Render/OmniverseKit",
+    "/Render/OmniverseKit/HydraTextures",
+    "/Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0",
+    "/Render/OmniverseGlobalRenderSettings",
+    "/Render/Vars",
+    "/Render/Vars/LdrColor",
+    "/OmniverseKit_Persp",
+    "/OmniverseKit_Front",
+    "/OmniverseKit_Top",
+    "/OmniverseKit_Right"
+  ],
+  "visual_prim_properties": {
+    "/delta_display/body/body/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/end_effector/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/AA_1/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/TA_1l/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/TA_1r/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/AA_2/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/TA_2l/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/TA_2r/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/AA_3/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/TA_3l/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    "/delta_display/body/TA_3r/visuals": {
+      "properties": [
+        "proxyPrim",
+        "purpose",
+        "visibility",
+        "xformOpOrder"
+      ],
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": "None"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    }
+  },
+  "rigid_body_or_mass_records": [
+    {
+      "prim_path": "/delta_display/body/body",
+      "type_name": "Xform",
+      "mass_kg": 0.0,
+      "center_of_mass_m": [
+        -Infinity,
+        -Infinity,
+        -Infinity
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "principal_axes": "(0, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/end_effector",
+      "type_name": "Xform",
+      "mass_kg": 0.1908990740776062,
+      "center_of_mass_m": [
+        1.0502237968168515e-11,
+        1.0434815521875862e-05,
+        0.01341414824128151
+      ],
+      "diagonal_inertia_kg_m2": [
+        5.4805175750516355e-05,
+        5.477299782796763e-05,
+        9.315318311564624e-05
+      ],
+      "principal_axes": "(1, -8.191532e-7, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/AA_1",
+      "type_name": "Xform",
+      "mass_kg": 0.012937617488205433,
+      "center_of_mass_m": [
+        0.03809911012649536,
+        -2.6846130873892093e-10,
+        -7.2939543294126e-10
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.54377437158837e-06,
+        3.8532666621904355e-06,
+        2.232492533948971e-06
+      ],
+      "principal_axes": "(1, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1l",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        8.324275990734264e-11,
+        -1.4621553967586465e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.1952528211622848e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(1, -0.000060986353, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1r",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        8.324438360851616e-11,
+        -1.4621984179008507e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.1952528211622848e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(1, -0.000060986345, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/AA_2",
+      "type_name": "Xform",
+      "mass_kg": 0.012937621213495731,
+      "center_of_mass_m": [
+        0.038099128752946854,
+        7.424369452557755e-11,
+        1.5743735481965615e-10
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.54377437158837e-06,
+        3.8532666621904355e-06,
+        2.232492533948971e-06
+      ],
+      "principal_axes": "(1, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2l",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -3.975028639580103e-12,
+        -2.101626511707977e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.195255805441775e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(0.99965054, 0.026438866, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2r",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -8.641989901470026e-12,
+        -2.0595761207609087e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.1952556633332279e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(1, 0.00018928264, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/AA_3",
+      "type_name": "Xform",
+      "mass_kg": 0.012937616556882858,
+      "center_of_mass_m": [
+        0.03809910640120506,
+        1.9875176504591252e-10,
+        5.538434155738514e-10
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.54377437158837e-06,
+        3.8532666621904355e-06,
+        2.232492533948971e-06
+      ],
+      "principal_axes": "(1, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3l",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -9.196780836884244e-11,
+        -8.991529742985449e-12
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.195253105379379e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(0.9999998, 0.0005853837, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3r",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -9.187259286669303e-11,
+        -8.794132089207096e-12
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.195253105379379e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(0.99999994, -0.00036529137, 0, 0)",
+      "has_rigid_body_api": true
+    }
+  ],
+  "mass_records": [
+    {
+      "prim_path": "/delta_display/body/body",
+      "type_name": "Xform",
+      "mass_kg": 0.0,
+      "center_of_mass_m": [
+        -Infinity,
+        -Infinity,
+        -Infinity
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "principal_axes": "(0, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/end_effector",
+      "type_name": "Xform",
+      "mass_kg": 0.1908990740776062,
+      "center_of_mass_m": [
+        1.0502237968168515e-11,
+        1.0434815521875862e-05,
+        0.01341414824128151
+      ],
+      "diagonal_inertia_kg_m2": [
+        5.4805175750516355e-05,
+        5.477299782796763e-05,
+        9.315318311564624e-05
+      ],
+      "principal_axes": "(1, -8.191532e-7, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/AA_1",
+      "type_name": "Xform",
+      "mass_kg": 0.012937617488205433,
+      "center_of_mass_m": [
+        0.03809911012649536,
+        -2.6846130873892093e-10,
+        -7.2939543294126e-10
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.54377437158837e-06,
+        3.8532666621904355e-06,
+        2.232492533948971e-06
+      ],
+      "principal_axes": "(1, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1l",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        8.324275990734264e-11,
+        -1.4621553967586465e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.1952528211622848e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(1, -0.000060986353, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1r",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        8.324438360851616e-11,
+        -1.4621984179008507e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.1952528211622848e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(1, -0.000060986345, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/AA_2",
+      "type_name": "Xform",
+      "mass_kg": 0.012937621213495731,
+      "center_of_mass_m": [
+        0.038099128752946854,
+        7.424369452557755e-11,
+        1.5743735481965615e-10
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.54377437158837e-06,
+        3.8532666621904355e-06,
+        2.232492533948971e-06
+      ],
+      "principal_axes": "(1, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2l",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -3.975028639580103e-12,
+        -2.101626511707977e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.195255805441775e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(0.99965054, 0.026438866, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2r",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -8.641989901470026e-12,
+        -2.0595761207609087e-11
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.1952556633332279e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(1, 0.00018928264, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/AA_3",
+      "type_name": "Xform",
+      "mass_kg": 0.012937616556882858,
+      "center_of_mass_m": [
+        0.03809910640120506,
+        1.9875176504591252e-10,
+        5.538434155738514e-10
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.54377437158837e-06,
+        3.8532666621904355e-06,
+        2.232492533948971e-06
+      ],
+      "principal_axes": "(1, 0, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3l",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -9.196780836884244e-11,
+        -8.991529742985449e-12
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.195253105379379e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(0.9999998, 0.0005853837, 0, 0)",
+      "has_rigid_body_api": true
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3r",
+      "type_name": "Xform",
+      "mass_kg": 0.010273398831486702,
+      "center_of_mass_m": [
+        0.07999999821186066,
+        -9.187259286669303e-11,
+        -8.794132089207096e-12
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.195253105379379e-07,
+        5.313502697390504e-06,
+        5.366706318454817e-06
+      ],
+      "principal_axes": "(0.99999994, -0.00036529137, 0, 0)",
+      "has_rigid_body_api": true
+    }
+  ],
+  "mass_property_count": 11
+}

@@ -1,0 +1,77 @@
+{
+  "decision": "MATRIX_COMPLETE",
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "probes": [
+    {
+      "probe_id": "P0",
+      "command": "D:\\i3\\e\\python.exe D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\scripts\\s4_r0_r2_visual_crash_matrix.py --probe-id P0",
+      "exit_code": 0,
+      "native_crash": true,
+      "last_phase_marker": "PHASE_STATIC_CAPTURE",
+      "kit_log_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\S4-R0-R2\\crash_matrix\\P0.log",
+      "wall_time_s": 12.171999999998661,
+      "png_path": null,
+      "png_sha256": null,
+      "png_bytes": null,
+      "prim_count": null,
+      "visual_geometry_count": null,
+      "result": "FAIL_NATIVE_EXIT"
+    },
+    {
+      "probe_id": "P1",
+      "command": "D:\\i3\\e\\python.exe D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\scripts\\s4_r0_r2_visual_crash_matrix.py --probe-id P1",
+      "exit_code": 0,
+      "native_crash": true,
+      "last_phase_marker": "PHASE_ROOT_DEFAULT_UPDATE_COMPLETE",
+      "kit_log_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\S4-R0-R2\\crash_matrix\\P1.log",
+      "wall_time_s": 12.281000000002678,
+      "png_path": null,
+      "png_sha256": null,
+      "png_bytes": null,
+      "prim_count": null,
+      "visual_geometry_count": null,
+      "result": "FAIL_NATIVE_EXIT"
+    },
+    {
+      "probe_id": "P2",
+      "command": "D:\\i3\\e\\python.exe D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\scripts\\s4_r0_r2_visual_crash_matrix.py --probe-id P2",
+      "exit_code": 0,
+      "native_crash": true,
+      "last_phase_marker": "PHASE_LINK_DEFAULT_UPDATE_COMPLETE",
+      "kit_log_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\S4-R0-R2\\crash_matrix\\P2.log",
+      "wall_time_s": 12.264999999999418,
+      "png_path": null,
+      "png_sha256": null,
+      "png_bytes": null,
+      "prim_count": null,
+      "visual_geometry_count": null,
+      "result": "FAIL_NATIVE_EXIT"
+    },
+    {
+      "probe_id": "P3",
+      "command": "D:\\i3\\e\\python.exe D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\scripts\\s4_r0_r2_visual_crash_matrix.py --probe-id P3",
+      "exit_code": 0,
+      "native_crash": true,
+      "last_phase_marker": "PHASE_LIVE_LOOP_COMPLETE",
+      "kit_log_path": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\outputs\\S4-R0-R2\\crash_matrix\\P3.log",
+      "wall_time_s": 12.203999999997905,
+      "png_path": null,
+      "png_sha256": null,
+      "png_bytes": null,
+      "prim_count": null,
+      "visual_geometry_count": null,
+      "result": "FAIL_NATIVE_EXIT"
+    }
+  ],
+  "minimum_trigger_combination": "P0: capture_viewport_to_file after the real USD has loaded; P1 reaches 20 default-time root updates before the same capture failure; P2 reaches 20 direct AA_1 link updates before capture failure; P3 reaches 20 live PhysX visual updates before capture failure",
+  "forbidden_routes_verified_absent": [
+    "Usd.TimeCode authored animation",
+    "stage.SetTimeCode",
+    "pre-authored timeline before reference"
+  ],
+  "P4": {
+    "status": "NOT_RUN",
+    "reason": "P0 loads and P2/P3 isolate the direct real-link update failure; cache build is recorded separately"
+  }
+}

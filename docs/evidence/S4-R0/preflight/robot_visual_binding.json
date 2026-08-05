@@ -1,0 +1,33 @@
+{
+  "available": false,
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "stage_prim": "/World/RobotVisual",
+  "dynamic_base_prim": "/World/QuadrotorBase",
+  "visual_prim_count": 35,
+  "mesh_prim_count": 0,
+  "physics_disabled_for_visual_copy": true,
+  "collision_disabled_for_visual_copy": true,
+  "visual_reference_layer": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "visual_only_state_replay": true,
+  "visual_geometry_prim_count": 35,
+  "source_visual_geometry_prim_count": 35,
+  "root_pose_binding": "visual root translate/orient updated from post-PhysX root readback",
+  "joint_visual_binding": {
+    "active_joints": [
+      "m1_1",
+      "m2_1",
+      "m3_1"
+    ],
+    "passive_joints": [
+      "m1_2",
+      "m1_3",
+      "m2_2",
+      "m2_3",
+      "m3_2",
+      "m3_3"
+    ],
+    "q_source": "same bounded surrogate q used by ArmReactionSurrogate"
+  },
+  "pass": true
+}

@@ -1,0 +1,28 @@
+{
+  "pass": true,
+  "state_write_calls": [
+    [
+      "set_world_pose",
+      302
+    ],
+    [
+      "set_linear_velocity",
+      303
+    ],
+    [
+      "set_angular_velocity",
+      304
+    ],
+    [
+      "set_world_poses",
+      307
+    ],
+    [
+      "set_velocities",
+      308
+    ]
+  ],
+  "records": 22571,
+  "max_post_reset_root_writes": 0,
+  "max_post_reset_joint_writes": 0
+}

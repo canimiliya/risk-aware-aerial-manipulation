@@ -1,0 +1,11 @@
+{
+  "probe": "gravity_drop",
+  "duration_s": 0.5,
+  "z_start_m": 2.4998297691345215,
+  "z_end_m": 1.2429238557815552,
+  "z_decreased": true,
+  "vertical_velocity_end_m_s": -4.945871353149414,
+  "vertical_velocity_negative": true,
+  "physics_integrated_state": true,
+  "post_reset_root_state_write_count": 0
+}
