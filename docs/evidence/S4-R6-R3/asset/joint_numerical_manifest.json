@@ -1,0 +1,767 @@
+{
+  "task": "S4-R6-R3-REVOLUTE-DYNAMICS-ISOLATION-R1",
+  "diagnostic_only": true,
+  "source_usd": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\robot_assets\\rrrp\\rrrp_arm.usd",
+  "source_usd_read_only": true,
+  "joint_numerical_manifest": {
+    "joints": {
+      "q1": {
+        "name": "q1",
+        "path": "/World/FloatingBaseArm/joints/q1",
+        "joint_type": "PhysicsRevoluteJoint",
+        "axis": "Y",
+        "parent": "/World/FloatingBaseArm/arm_mount",
+        "child": "/World/FloatingBaseArm/link1",
+        "body_relationships": {
+          "physics:body0": [
+            "/World/FloatingBaseArm/arm_mount"
+          ],
+          "physics:body1": [
+            "/World/FloatingBaseArm/link1"
+          ],
+          "proxyPrim": []
+        },
+        "lower_limit": -2.6179938316345215,
+        "upper_limit": 2.6179938316345215,
+        "max_joint_velocity": null,
+        "max_effort": null,
+        "stiffness": null,
+        "damping": null,
+        "drive_type": null,
+        "drive_target_position": null,
+        "drive_target_velocity": null,
+        "joint_friction": null,
+        "armature": null,
+        "parent_joint_frame": {
+          "physics:localPos0": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)"
+        },
+        "child_joint_frame": {
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot1": "(1, 0, 0, 0)"
+        },
+        "all_attributes": {
+          "physics:axis": "Y",
+          "physics:breakForce": Infinity,
+          "physics:breakTorque": Infinity,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -2.6179938316345215,
+          "physics:upperLimit": 2.6179938316345215,
+          "purpose": "default",
+          "visibility": "inherited"
+        },
+        "drive_attributes": {},
+        "Q1_LIMIT_ACTIVE_DURING_TEST": false,
+        "Q1_VELOCITY_CLAMP_ACTIVE": false,
+        "Q1_DRIVE_ACTIVE": false,
+        "Q1_FRICTION_ACTIVE": false,
+        "Q1_ARMATURE_NONZERO": false
+      },
+      "q2": {
+        "name": "q2",
+        "path": "/World/FloatingBaseArm/joints/q2",
+        "joint_type": "PhysicsRevoluteJoint",
+        "axis": "Y",
+        "parent": "/World/FloatingBaseArm/link1",
+        "child": "/World/FloatingBaseArm/link2",
+        "body_relationships": {
+          "physics:body0": [
+            "/World/FloatingBaseArm/link1"
+          ],
+          "physics:body1": [
+            "/World/FloatingBaseArm/link2"
+          ],
+          "proxyPrim": []
+        },
+        "lower_limit": -2.356194496154785,
+        "upper_limit": 2.356194496154785,
+        "max_joint_velocity": null,
+        "max_effort": null,
+        "stiffness": null,
+        "damping": null,
+        "drive_type": null,
+        "drive_target_position": null,
+        "drive_target_velocity": null,
+        "joint_friction": null,
+        "armature": null,
+        "parent_joint_frame": {
+          "physics:localPos0": [
+            0.1599999964237213,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)"
+        },
+        "child_joint_frame": {
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot1": "(1, 0, 0, 0)"
+        },
+        "all_attributes": {
+          "physics:axis": "Y",
+          "physics:breakForce": Infinity,
+          "physics:breakTorque": Infinity,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.1599999964237213,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -2.356194496154785,
+          "physics:upperLimit": 2.356194496154785,
+          "purpose": "default",
+          "visibility": "inherited"
+        },
+        "drive_attributes": {},
+        "Q1_LIMIT_ACTIVE_DURING_TEST": false,
+        "Q1_VELOCITY_CLAMP_ACTIVE": false,
+        "Q1_DRIVE_ACTIVE": false,
+        "Q1_FRICTION_ACTIVE": false,
+        "Q1_ARMATURE_NONZERO": false
+      },
+      "q3": {
+        "name": "q3",
+        "path": "/World/FloatingBaseArm/joints/q3",
+        "joint_type": "PhysicsRevoluteJoint",
+        "axis": "Y",
+        "parent": "/World/FloatingBaseArm/link2",
+        "child": "/World/FloatingBaseArm/link3",
+        "body_relationships": {
+          "physics:body0": [
+            "/World/FloatingBaseArm/link2"
+          ],
+          "physics:body1": [
+            "/World/FloatingBaseArm/link3"
+          ],
+          "proxyPrim": []
+        },
+        "lower_limit": -2.6179938316345215,
+        "upper_limit": 2.6179938316345215,
+        "max_joint_velocity": null,
+        "max_effort": null,
+        "stiffness": null,
+        "damping": null,
+        "drive_type": null,
+        "drive_target_position": null,
+        "drive_target_velocity": null,
+        "joint_friction": null,
+        "armature": null,
+        "parent_joint_frame": {
+          "physics:localPos0": [
+            0.12999999523162842,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)"
+        },
+        "child_joint_frame": {
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot1": "(1, 0, 0, 0)"
+        },
+        "all_attributes": {
+          "physics:axis": "Y",
+          "physics:breakForce": Infinity,
+          "physics:breakTorque": Infinity,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.12999999523162842,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -2.6179938316345215,
+          "physics:upperLimit": 2.6179938316345215,
+          "purpose": "default",
+          "visibility": "inherited"
+        },
+        "drive_attributes": {},
+        "Q1_LIMIT_ACTIVE_DURING_TEST": false,
+        "Q1_VELOCITY_CLAMP_ACTIVE": false,
+        "Q1_DRIVE_ACTIVE": false,
+        "Q1_FRICTION_ACTIVE": false,
+        "Q1_ARMATURE_NONZERO": false
+      },
+      "P": {
+        "name": "P",
+        "path": "/World/FloatingBaseArm/joints/d",
+        "joint_type": "PhysicsPrismaticJoint",
+        "axis": "X",
+        "parent": "/World/FloatingBaseArm/link3",
+        "child": "/World/FloatingBaseArm/slider",
+        "body_relationships": {
+          "physics:body0": [
+            "/World/FloatingBaseArm/link3"
+          ],
+          "physics:body1": [
+            "/World/FloatingBaseArm/slider"
+          ],
+          "proxyPrim": []
+        },
+        "lower_limit": 0.0,
+        "upper_limit": 0.07999999821186066,
+        "max_joint_velocity": null,
+        "max_effort": null,
+        "stiffness": null,
+        "damping": null,
+        "drive_type": null,
+        "drive_target_position": null,
+        "drive_target_velocity": null,
+        "joint_friction": null,
+        "armature": null,
+        "parent_joint_frame": {
+          "physics:localPos0": [
+            0.10000000149011612,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)"
+        },
+        "child_joint_frame": {
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot1": "(1, 0, 0, 0)"
+        },
+        "all_attributes": {
+          "physics:axis": "X",
+          "physics:breakForce": Infinity,
+          "physics:breakTorque": Infinity,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.10000000149011612,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(1, 0, 0, 0)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": 0.0,
+          "physics:upperLimit": 0.07999999821186066,
+          "purpose": "default",
+          "visibility": "inherited"
+        },
+        "drive_attributes": {},
+        "Q1_LIMIT_ACTIVE_DURING_TEST": false,
+        "Q1_VELOCITY_CLAMP_ACTIVE": false,
+        "Q1_DRIVE_ACTIVE": false,
+        "Q1_FRICTION_ACTIVE": false,
+        "Q1_ARMATURE_NONZERO": false
+      }
+    },
+    "bodies": {
+      "arm_mount": {
+        "path": "/World/FloatingBaseArm/arm_mount",
+        "parent_path": "/World/FloatingBaseArm",
+        "mass_kg": 0.03999999910593033,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diagonal_inertia": [
+          9.999999747378752e-05,
+          9.999999747378752e-05,
+          9.999999747378752e-05
+        ],
+        "principal_axes": "(0, 0, 0, 0)",
+        "linear_damping": {},
+        "angular_damping": {},
+        "sleep_threshold": {
+          "physics:startsAsleep": false
+        },
+        "stabilization_threshold": {},
+        "all_attributes": {
+          "physics:angularVelocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:centerOfMass": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:density": 0.0,
+          "physics:diagonalInertia": [
+            9.999999747378752e-05,
+            9.999999747378752e-05,
+            9.999999747378752e-05
+          ],
+          "physics:kinematicEnabled": false,
+          "physics:mass": 0.03999999910593033,
+          "physics:principalAxes": "(0, 0, 0, 0)",
+          "physics:rigidBodyEnabled": true,
+          "physics:startsAsleep": false,
+          "physics:velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "purpose": "default",
+          "visibility": "inherited",
+          "xformOp:translate": [
+            0.0,
+            0.0,
+            0.6
+          ],
+          "xformOpOrder": [
+            "xformOp:translate"
+          ]
+        }
+      },
+      "link1": {
+        "path": "/World/FloatingBaseArm/link1",
+        "parent_path": "/World/FloatingBaseArm",
+        "mass_kg": 0.2199999988079071,
+        "center_of_mass": [
+          0.07999999821186066,
+          0.0,
+          0.0
+        ],
+        "diagonal_inertia": [
+          4.4916665501659736e-05,
+          0.0004917916376143694,
+          0.0004917916376143694
+        ],
+        "principal_axes": "(0, 0, 0, 0)",
+        "linear_damping": {},
+        "angular_damping": {},
+        "sleep_threshold": {
+          "physics:startsAsleep": false
+        },
+        "stabilization_threshold": {},
+        "all_attributes": {
+          "physics:angularVelocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:centerOfMass": [
+            0.07999999821186066,
+            0.0,
+            0.0
+          ],
+          "physics:density": 0.0,
+          "physics:diagonalInertia": [
+            4.4916665501659736e-05,
+            0.0004917916376143694,
+            0.0004917916376143694
+          ],
+          "physics:kinematicEnabled": false,
+          "physics:mass": 0.2199999988079071,
+          "physics:principalAxes": "(0, 0, 0, 0)",
+          "physics:rigidBodyEnabled": true,
+          "physics:startsAsleep": false,
+          "physics:velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "purpose": "default",
+          "visibility": "inherited",
+          "xformOp:translate": [
+            0.0,
+            0.0,
+            0.6
+          ],
+          "xformOpOrder": [
+            "xformOp:translate"
+          ]
+        }
+      },
+      "link2": {
+        "path": "/World/FloatingBaseArm/link2",
+        "parent_path": "/World/FloatingBaseArm",
+        "mass_kg": 0.17000000178813934,
+        "center_of_mass": [
+          0.06499999761581421,
+          0.0,
+          0.0
+        ],
+        "diagonal_inertia": [
+          3.470833325991407e-05,
+          0.0002567708434071392,
+          0.0002567708434071392
+        ],
+        "principal_axes": "(0, 0, 0, 0)",
+        "linear_damping": {},
+        "angular_damping": {},
+        "sleep_threshold": {
+          "physics:startsAsleep": false
+        },
+        "stabilization_threshold": {},
+        "all_attributes": {
+          "physics:angularVelocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:centerOfMass": [
+            0.06499999761581421,
+            0.0,
+            0.0
+          ],
+          "physics:density": 0.0,
+          "physics:diagonalInertia": [
+            3.470833325991407e-05,
+            0.0002567708434071392,
+            0.0002567708434071392
+          ],
+          "physics:kinematicEnabled": false,
+          "physics:mass": 0.17000000178813934,
+          "physics:principalAxes": "(0, 0, 0, 0)",
+          "physics:rigidBodyEnabled": true,
+          "physics:startsAsleep": false,
+          "physics:velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "purpose": "default",
+          "visibility": "inherited",
+          "xformOp:translate": [
+            0.16,
+            0.0,
+            0.6
+          ],
+          "xformOpOrder": [
+            "xformOp:translate"
+          ]
+        }
+      },
+      "link3": {
+        "path": "/World/FloatingBaseArm/link3",
+        "parent_path": "/World/FloatingBaseArm",
+        "mass_kg": 0.11999999731779099,
+        "center_of_mass": [
+          0.05000000074505806,
+          0.0,
+          0.0
+        ],
+        "diagonal_inertia": [
+          2.4499999199179e-05,
+          0.00011225000343983993,
+          0.00011225000343983993
+        ],
+        "principal_axes": "(0, 0, 0, 0)",
+        "linear_damping": {},
+        "angular_damping": {},
+        "sleep_threshold": {
+          "physics:startsAsleep": false
+        },
+        "stabilization_threshold": {},
+        "all_attributes": {
+          "physics:angularVelocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:centerOfMass": [
+            0.05000000074505806,
+            0.0,
+            0.0
+          ],
+          "physics:density": 0.0,
+          "physics:diagonalInertia": [
+            2.4499999199179e-05,
+            0.00011225000343983993,
+            0.00011225000343983993
+          ],
+          "physics:kinematicEnabled": false,
+          "physics:mass": 0.11999999731779099,
+          "physics:principalAxes": "(0, 0, 0, 0)",
+          "physics:rigidBodyEnabled": true,
+          "physics:startsAsleep": false,
+          "physics:velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "purpose": "default",
+          "visibility": "inherited",
+          "xformOp:translate": [
+            0.29000000000000004,
+            0.0,
+            0.6
+          ],
+          "xformOpOrder": [
+            "xformOp:translate"
+          ]
+        }
+      },
+      "slider": {
+        "path": "/World/FloatingBaseArm/slider",
+        "parent_path": "/World/FloatingBaseArm",
+        "mass_kg": 0.05999999865889549,
+        "center_of_mass": [
+          0.03999999910593033,
+          0.0,
+          0.0
+        ],
+        "diagonal_inertia": [
+          7.839999852876645e-06,
+          3.5919998481404036e-05,
+          3.5919998481404036e-05
+        ],
+        "principal_axes": "(0, 0, 0, 0)",
+        "linear_damping": {},
+        "angular_damping": {},
+        "sleep_threshold": {
+          "physics:startsAsleep": false
+        },
+        "stabilization_threshold": {},
+        "all_attributes": {
+          "physics:angularVelocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:centerOfMass": [
+            0.03999999910593033,
+            0.0,
+            0.0
+          ],
+          "physics:density": 0.0,
+          "physics:diagonalInertia": [
+            7.839999852876645e-06,
+            3.5919998481404036e-05,
+            3.5919998481404036e-05
+          ],
+          "physics:kinematicEnabled": false,
+          "physics:mass": 0.05999999865889549,
+          "physics:principalAxes": "(0, 0, 0, 0)",
+          "physics:rigidBodyEnabled": true,
+          "physics:startsAsleep": false,
+          "physics:velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "purpose": "default",
+          "visibility": "inherited",
+          "xformOp:translate": [
+            0.39,
+            0.0,
+            0.6
+          ],
+          "xformOpOrder": [
+            "xformOp:translate"
+          ]
+        }
+      }
+    }
+  },
+  "production_design_values": {
+    "schema_version": 1,
+    "asset_name": "rrrp_arm",
+    "architecture": "RRRP_serial_manipulator",
+    "parameter_provenance": "ENGINEERING_NOMINAL",
+    "provisional": true,
+    "units": {
+      "length": "m",
+      "mass": "kg",
+      "angle": "rad",
+      "effort_revolute": "N*m",
+      "effort_prismatic": "N",
+      "inertia": "kg*m^2"
+    },
+    "geometry": {
+      "L1": 0.16,
+      "L2": 0.13,
+      "L3": 0.1,
+      "link_cross_section": 0.035,
+      "p_stroke": 0.08,
+      "gripper_mount_length": 0.06,
+      "gripper_mount_width": 0.05,
+      "gripper_mount_height": 0.05
+    },
+    "joints": {
+      "q1": {
+        "type": "revolute",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "lower": -2.617993878,
+        "upper": 2.617993878,
+        "max_velocity": 4.0,
+        "max_effort": 8.0,
+        "damping": 0.04,
+        "friction": 0.0
+      },
+      "q2": {
+        "type": "revolute",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "lower": -2.35619449,
+        "upper": 2.35619449,
+        "max_velocity": 4.0,
+        "max_effort": 6.0,
+        "damping": 0.04,
+        "friction": 0.0
+      },
+      "q3": {
+        "type": "revolute",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "lower": -2.617993878,
+        "upper": 2.617993878,
+        "max_velocity": 5.0,
+        "max_effort": 4.0,
+        "damping": 0.03,
+        "friction": 0.0
+      },
+      "d": {
+        "type": "prismatic",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "lower": 0.0,
+        "upper": 0.08,
+        "max_velocity": 0.25,
+        "max_effort": 6.0,
+        "damping": 0.08,
+        "friction": 0.0
+      }
+    },
+    "mass_properties": {
+      "links": {
+        "link1": {
+          "structural_mass": 0.18,
+          "motor_lumped_mass": 0.04,
+          "shape": "box_along_x"
+        },
+        "link2": {
+          "structural_mass": 0.14,
+          "motor_lumped_mass": 0.03,
+          "shape": "box_along_x"
+        },
+        "link3": {
+          "structural_mass": 0.09,
+          "motor_lumped_mass": 0.03,
+          "shape": "box_along_x"
+        },
+        "slider": {
+          "structural_mass": 0.06,
+          "motor_lumped_mass": 0.0,
+          "shape": "box_along_x"
+        },
+        "gripper_mount": {
+          "structural_mass": 0.06,
+          "motor_lumped_mass": 0.0,
+          "shape": "box"
+        }
+      },
+      "floating_uav_base": {
+        "mass": 0.98,
+        "center_of_mass": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diagonal_inertia": [
+          0.018,
+          0.018,
+          0.032
+        ],
+        "provenance": "PROVISIONAL_LEGACY",
+        "hardware_parameter_validated": false
+      },
+      "arm_mount": {
+        "mass": 0.04,
+        "shape": "box"
+      }
+    },
+    "simulation": {
+      "physics_dt": 0.004166666666666667,
+      "gravity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_base_steps": 2000,
+      "floating_base_steps": 2000,
+      "pulse_steps": 30,
+      "pulse_efforts": [
+        0.002,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_pulse_efforts": [
+        0.0,
+        0.0,
+        0.0,
+        0.03
+      ]
+    }
+  },
+  "property_semantics": {
+    "usd_readback_missing_means": "attribute not authored on the native USD joint; it is not silently filled from design YAML",
+    "drive_active_rule": "nonzero authored stiffness or damping",
+    "velocity_clamp_suspected_rule": "dq >= 0.999 * authored max velocity when max velocity is present"
+  }
+}

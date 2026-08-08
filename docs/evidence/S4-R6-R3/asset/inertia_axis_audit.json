@@ -1,0 +1,67 @@
+{
+  "task": "S4-R6-R3-REVOLUTE-DYNAMICS-ISOLATION-R1",
+  "source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\robot_assets\\rrrp\\rrrp_arm.usd",
+  "asset_bug_found": false,
+  "physical_inertia_suspect": false,
+  "q1_effective_inertia": 0.0004368799492713341,
+  "link1_readback": {
+    "path": "/World/FloatingBaseArm/link1",
+    "parent_path": "/World/FloatingBaseArm",
+    "mass_kg": 0.2199999988079071,
+    "center_of_mass": [
+      0.07999999821186066,
+      0.0,
+      0.0
+    ],
+    "diagonal_inertia": [
+      4.4916665501659736e-05,
+      0.0004917916376143694,
+      0.0004917916376143694
+    ],
+    "principal_axes": "(0, 0, 0, 0)",
+    "linear_damping": {},
+    "angular_damping": {},
+    "sleep_threshold": {
+      "physics:startsAsleep": false
+    },
+    "stabilization_threshold": {},
+    "all_attributes": {
+      "physics:angularVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physics:centerOfMass": [
+        0.07999999821186066,
+        0.0,
+        0.0
+      ],
+      "physics:density": 0.0,
+      "physics:diagonalInertia": [
+        4.4916665501659736e-05,
+        0.0004917916376143694,
+        0.0004917916376143694
+      ],
+      "physics:kinematicEnabled": false,
+      "physics:mass": 0.2199999988079071,
+      "physics:principalAxes": "(0, 0, 0, 0)",
+      "physics:rigidBodyEnabled": true,
+      "physics:startsAsleep": false,
+      "physics:velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "purpose": "default",
+      "visibility": "inherited",
+      "xformOp:translate": [
+        0.0,
+        0.0,
+        0.6
+      ],
+      "xformOpOrder": [
+        "xformOp:translate"
+      ]
+    }
+  }
+}
