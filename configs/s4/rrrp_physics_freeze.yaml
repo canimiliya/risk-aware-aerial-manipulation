@@ -1,0 +1,27 @@
+schema_version: 1
+task: S4-R6-PHYSICS-MODEL-FREEZE-R1
+source_design: configs/s4/rrrp_quadrotor_design.yaml
+stowed_configuration: [0.0, 1.5707963267948966, 0.0, 0.0]
+approach_configuration: [0.0, 0.0, 0.0, 0.0]
+approach_p_values: [0.0, 0.04, 0.08]
+workspace_sample_values:
+  q1: [-2.617993878, 0.0, 2.617993878]
+  q2: [-2.35619449, 0.0, 2.35619449]
+  q3: [-2.617993878, 0.0, 2.617993878]
+  d: [0.0, 0.04, 0.08]
+thresholds:
+  stowed_max_rotor_utilization: 0.80
+  approach_max_rotor_utilization: 0.90
+  timestep_240_to_480_relative_change: 0.02
+  timestep_480_to_960_relative_change: 0.01
+  momentum_relative_drift: 0.001
+  energy_relative_drift: 0.005
+  joint_limit_tolerance: 0.00001
+  non_adjacent_aabb_clearance_m: 0.0
+simulation:
+  physics_rate_hz: 240
+  stability_steps: 10000
+  momentum_steps: 240
+  energy_steps: 240
+  pulse_duration_s: 0.125
+  convergence_duration_s: 0.25

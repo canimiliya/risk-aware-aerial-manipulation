@@ -1,0 +1,36 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "base_commit": "1b207c572c89da21a60ad7d919efcebc8aefc757",
+  "head_commit": "1b207c572c89da21a60ad7d919efcebc8aefc757",
+  "targeted_regression": {
+    "command": [
+      "D:\\i3\\e\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_s4_r4_rrrp_native_dynamics.py",
+      "tests/test_s4_r5_quadrotor_rotor_actuation.py",
+      "tests/test_s4_r6_physics_model_freeze.py"
+    ],
+    "returncode": 0,
+    "stdout_tail": "............................                                             [100%]\n28 passed in 0.04s\n",
+    "passed": true,
+    "targeted_test_count": 28
+  },
+  "historical_r5_head_only_failures": 0,
+  "head_only_failures": 0,
+  "full_pytest_attempt": {
+    "command": [
+      "D:\\i3\\e\\python.exe",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "status": "TIMEOUT",
+    "returncode": 124,
+    "timeout_s": 120,
+    "stdout_tail": ".....FF...........F....FFFF.F.......F"
+  },
+  "comparison_pass": true,
+  "historical_failures_unchanged": true
+}

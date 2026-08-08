@@ -1,0 +1,94 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "rates_hz": [
+    240,
+    480,
+    960
+  ],
+  "metrics": [
+    {
+      "metric": "R1_q1_torque_pulse.peak_base_linear_velocity_m_s",
+      "value_240": 0.01649764583514053,
+      "value_480": 0.02063776742944666,
+      "value_960": 0.022700501409513386,
+      "relative_change_240_to_480": 0.20060898585371517,
+      "relative_change_480_to_960": 0.09086733120363016
+    },
+    {
+      "metric": "R1_q1_torque_pulse.peak_base_angular_velocity_rad_s",
+      "value_240": 6.636193576478617e-05,
+      "value_480": 8.441620596288595e-05,
+      "value_960": 6.218861386278601e-05,
+      "relative_change_240_to_480": 0.21387208761831153,
+      "relative_change_480_to_960": 0.3574222147665691
+    },
+    {
+      "metric": "R1_q1_torque_pulse.peak_joint_velocity",
+      "value_240": 5.703558244618537,
+      "value_480": 7.124964993140632,
+      "value_960": 7.833212793070831,
+      "relative_change_240_to_480": 0.19949666417877368,
+      "relative_change_480_to_960": 0.09041600408924245
+    },
+    {
+      "metric": "R1_q1_torque_pulse.joint_displacement",
+      "value_240": 0.05648274113203171,
+      "value_480": 0.056494028789890044,
+      "value_960": 0.05651022627255643,
+      "relative_change_240_to_480": 0.00019980267118701155,
+      "relative_change_480_to_960": 0.0002866292304027575
+    },
+    {
+      "metric": "R2_P_force_pulse.peak_base_linear_velocity_m_s",
+      "value_240": 0.0032679736614227295,
+      "value_480": 0.0032679711002856493,
+      "value_960": 0.0032679711002856493,
+      "relative_change_240_to_480": 7.837086074502617e-07,
+      "relative_change_480_to_960": 0.0
+    },
+    {
+      "metric": "R2_P_force_pulse.peak_base_angular_velocity_rad_s",
+      "value_240": 1.0550219933317122e-15,
+      "value_480": 8.57445417395779e-16,
+      "value_960": 2.469268753769842e-15,
+      "relative_change_240_to_480": 0.00019757657593593315,
+      "relative_change_480_to_960": 0.0016118233363740628
+    },
+    {
+      "metric": "R2_P_force_pulse.peak_joint_velocity",
+      "value_240": 0.04493463411927223,
+      "value_480": 0.04493461921811104,
+      "value_960": 0.04493461176753044,
+      "relative_change_240_to_480": 3.3161872634366725e-07,
+      "relative_change_480_to_960": 1.658093906645831e-07
+    },
+    {
+      "metric": "R2_P_force_pulse.joint_displacement",
+      "value_240": 0.008518926799297333,
+      "value_480": 0.008471852168440819,
+      "value_960": 0.00844856258481741,
+      "relative_change_240_to_480": 0.005556592575101285,
+      "relative_change_480_to_960": 0.0027566326685277915
+    },
+    {
+      "metric": "R3_motor_step_response.final_omega_rad_s[0]",
+      "value_240": 299.762852903064,
+      "value_480": 299.762852903064,
+      "value_960": 299.76285290306396,
+      "relative_change_240_to_480": 0.0,
+      "relative_change_480_to_960": 1.8962796193826525e-16
+    },
+    {
+      "metric": "R3_motor_step_response.records[-1].thrust_n[0]",
+      "value_240": 1.3478665197087598,
+      "value_480": 1.3478665197087598,
+      "value_960": 1.3478665197087594,
+      "relative_change_240_to_480": 0.0,
+      "relative_change_480_to_960": 3.2947565901853493e-16
+    }
+  ],
+  "threshold_240_to_480": 0.02,
+  "threshold_480_to_960": 0.01,
+  "timestep_convergence_valid": false,
+  "selected_physics_rate_hz": 480
+}

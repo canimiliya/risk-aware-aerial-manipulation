@@ -1,0 +1,10 @@
+{
+  "uav_gravity": "PhysX",
+  "link1_gravity": "PhysX",
+  "link2_gravity": "PhysX",
+  "link3_gravity": "PhysX",
+  "slider_gravity": "PhysX",
+  "gripper_mount_gravity": "PhysX",
+  "manual_arm_gravity": false,
+  "audit_pass": true
+}

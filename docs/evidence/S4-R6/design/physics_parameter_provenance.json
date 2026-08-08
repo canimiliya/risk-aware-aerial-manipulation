@@ -1,0 +1,49 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "classifications": {
+    "DERIVED_FROM_GEOMETRY": [
+      "system_mass_com",
+      "system_com_for_each_RRRP_configuration",
+      "rotor_allocation_matrix",
+      "hover_trim_envelope",
+      "joint_limit_and_AABB_checks"
+    ],
+    "ENGINEERING_NOMINAL": [
+      "rotor thrust coefficient kf",
+      "rotor reaction coefficient km",
+      "motor time constant",
+      "rotor arm radius",
+      "RRRP link masses and dimensions",
+      "UAV mass and diagonal inertia as authored nominal values"
+    ],
+    "LEGACY_PROVISIONAL": [
+      "floating_uav_base inertia provenance",
+      "neutral configuration hover trim as an R5 historical diagnostic"
+    ],
+    "HARDWARE_MEASURED": []
+  },
+  "hardware_parameter_validated": false,
+  "parameter_statement": "结构和动力学链真实，参数采用工程标称值，尚未经过实物标定。",
+  "mass_properties": {
+    "arm_mass_kg": 0.63,
+    "max_geometric_reach_m": 0.47,
+    "p_stroke_m": 0.08,
+    "system_mass_neutral_kg": 1.65
+  },
+  "sources": {
+    "rrrp_design_yaml": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\robot_assets\\rrrp\\rrrp_design.yaml",
+    "quadrotor_design_yaml": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\configs\\s4\\rrrp_quadrotor_design.yaml",
+    "geometry": {
+      "L1": 0.16,
+      "L2": 0.13,
+      "L3": 0.1,
+      "link_cross_section": 0.035,
+      "p_stroke": 0.08,
+      "gripper_mount_length": 0.06,
+      "gripper_mount_width": 0.05,
+      "gripper_mount_height": 0.05
+    },
+    "provisional": true,
+    "parameter_provenance": "ENGINEERING_NOMINAL"
+  }
+}

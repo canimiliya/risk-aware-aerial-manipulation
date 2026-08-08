@@ -1,0 +1,140 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "gravity": false,
+  "rotor": false,
+  "external_wrench": false,
+  "joint_damping": false,
+  "friction": false,
+  "diagnostic_configuration": {
+    "joint_damping_disabled": true,
+    "friction_disabled": false,
+    "changed_attributes": [
+      {
+        "path": "/World/FloatingBaseArm/uav_base",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/uav_base",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/arm_mount",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/arm_mount",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link1",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link1",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link2",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link2",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link3",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link3",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/slider",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/slider",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/gripper_mount",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/gripper_mount",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      }
+    ],
+    "production_asset_unchanged": true
+  },
+  "steps": 240,
+  "energy_samples": [
+    {
+      "step": 1,
+      "total_kinetic_energy_j": 4.8673136300328256e-08
+    },
+    {
+      "step": 31,
+      "total_kinetic_energy_j": 4.379902950534178e-05
+    },
+    {
+      "step": 61,
+      "total_kinetic_energy_j": 7.848120169971812e-12
+    },
+    {
+      "step": 91,
+      "total_kinetic_energy_j": 7.848103357100901e-12
+    },
+    {
+      "step": 121,
+      "total_kinetic_energy_j": 7.848091194910586e-12
+    },
+    {
+      "step": 151,
+      "total_kinetic_energy_j": 7.848078575987772e-12
+    },
+    {
+      "step": 181,
+      "total_kinetic_energy_j": 7.848067779501393e-12
+    },
+    {
+      "step": 211,
+      "total_kinetic_energy_j": 7.848050997442506e-12
+    }
+  ],
+  "total_kinetic_energy_initial_post_pulse_j": 4.379871081567086e-05,
+  "total_kinetic_energy_max_post_pulse_j": 4.380035680050831e-05,
+  "total_kinetic_energy_min_post_pulse_j": 7.848037589279531e-12,
+  "relative_energy_drift": 1.0000374014844124,
+  "energy_diagnostic_completed": true,
+  "energy_pass": false
+}

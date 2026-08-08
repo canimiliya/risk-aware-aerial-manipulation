@@ -1,0 +1,226 @@
+{
+  "required_steps": 10000,
+  "cases": [
+    {
+      "label": "A_gravity_off_rotor_off",
+      "steps": 10000,
+      "gravity_m_s2": 0.0,
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_base": {
+        "position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "angular_velocity_world_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite": true
+      },
+      "max_base_linear_velocity_m_s": 0.0,
+      "max_base_angular_velocity_rad_s": 0.0,
+      "max_joint_velocity": 0.0,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "physics_explosion": false,
+      "stable": true,
+      "open_loop_free_flight_expected": false
+    },
+    {
+      "label": "B_gravity_on_STOWED_trim",
+      "steps": 10000,
+      "gravity_m_s2": 9.81,
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "final_base": {
+        "position_world_m": [
+          -39.183143615722656,
+          -230.21070861816406,
+          8625.556640625
+        ],
+        "orientation_world_wxyz": [
+          0.9052239060401917,
+          -0.3003869950771332,
+          0.1738956868648529,
+          0.24514852464199066
+        ],
+        "linear_velocity_world_m_s": [
+          0.1375729888677597,
+          -12.208919525146484,
+          412.0604553222656
+        ],
+        "angular_velocity_world_rad_s": [
+          4.883991718292236,
+          11.59135913848877,
+          -4.009861469268799
+        ],
+        "finite": true
+      },
+      "max_base_linear_velocity_m_s": 412.24130734642745,
+      "max_base_angular_velocity_rad_s": 30.363573856797135,
+      "max_joint_velocity": 53.66109483051786,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "physics_explosion": false,
+      "stable": true,
+      "open_loop_free_flight_expected": true
+    },
+    {
+      "label": "C_gravity_on_APPROACH_P0_trim",
+      "steps": 10000,
+      "gravity_m_s2": 9.81,
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_base": {
+        "position_world_m": [
+          255.9290008544922,
+          86.52458190917969,
+          8980.7138671875
+        ],
+        "orientation_world_wxyz": [
+          -0.10395654290914536,
+          0.4491174519062042,
+          0.31222522258758545,
+          0.8306635618209839
+        ],
+        "linear_velocity_world_m_s": [
+          8.602835655212402,
+          7.006894588470459,
+          420.6407775878906
+        ],
+        "angular_velocity_world_rad_s": [
+          -0.8837102651596069,
+          2.579373836517334,
+          1.681688666343689
+        ],
+        "finite": true
+      },
+      "max_base_linear_velocity_m_s": 420.78708288495477,
+      "max_base_angular_velocity_rad_s": 9.933036838841211,
+      "max_joint_velocity": 6.512577218208459,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "physics_explosion": false,
+      "stable": true,
+      "open_loop_free_flight_expected": true
+    },
+    {
+      "label": "D_gravity_on_APPROACH_Pmax_trim",
+      "steps": 10000,
+      "gravity_m_s2": 9.81,
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.07999999821186066
+      ],
+      "final_base": {
+        "position_world_m": [
+          -1152.037353515625,
+          -870.310791015625,
+          9601.4306640625
+        ],
+        "orientation_world_wxyz": [
+          -0.2556726038455963,
+          -0.907028317451477,
+          0.0030622920021414757,
+          -0.33454713225364685
+        ],
+        "linear_velocity_world_m_s": [
+          -25.577890396118164,
+          -99.28520202636719,
+          420.3533630371094
+        ],
+        "angular_velocity_world_rad_s": [
+          -0.09270716458559036,
+          -1.0083941221237183,
+          -0.24178928136825562
+        ],
+        "finite": true
+      },
+      "max_base_linear_velocity_m_s": 432.67624112624935,
+      "max_base_angular_velocity_rad_s": 2.11584583773444,
+      "max_joint_velocity": 6.547630065473048,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "physics_explosion": false,
+      "stable": true,
+      "open_loop_free_flight_expected": true
+    },
+    {
+      "label": "E_APPROACH_Pmax_small_RRRP_pulse",
+      "steps": 10000,
+      "gravity_m_s2": 9.81,
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.07999999821186066
+      ],
+      "final_base": {
+        "position_world_m": [
+          -1325.051025390625,
+          952.4194946289062,
+          9634.1552734375
+        ],
+        "orientation_world_wxyz": [
+          -0.28632333874702454,
+          0.8238073587417603,
+          -0.20185008645057678,
+          -0.44566455483436584
+        ],
+        "linear_velocity_world_m_s": [
+          -45.782447814941406,
+          105.21454620361328,
+          436.1268310546875
+        ],
+        "angular_velocity_world_rad_s": [
+          0.07909902185201645,
+          -0.8046361207962036,
+          -0.2023746520280838
+        ],
+        "finite": true
+      },
+      "max_base_linear_velocity_m_s": 450.9686752165432,
+      "max_base_angular_velocity_rad_s": 2.0557511984839136,
+      "max_joint_velocity": 4.808285698414785,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "physics_explosion": false,
+      "stable": true,
+      "open_loop_free_flight_expected": true
+    }
+  ],
+  "headless_10000_step_pass": true
+}

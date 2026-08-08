@@ -1,0 +1,64 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "start_head": "1b207c572c89da21a60ad7d919efcebc8aefc757",
+  "end_head_at_evidence_generation": "1b207c572c89da21a60ad7d919efcebc8aefc757",
+  "final_label": "BLOCKED_S4_R6_TIMESTEP_CONVERGENCE",
+  "physics_model_frozen": false,
+  "freeze_tag": null,
+  "rrrp_native": true,
+  "floating_quadrotor": true,
+  "four_rotor_actuation": true,
+  "motor_dynamics": true,
+  "runtime_state_write": false,
+  "manual_reaction": false,
+  "stowed_trim_margin_valid": true,
+  "approach_trim_margin_valid": true,
+  "timestep_convergence_valid": false,
+  "linear_momentum_validated": true,
+  "linear_momentum_relative_drift": 2.642050708996445e-07,
+  "angular_momentum_validated": false,
+  "energy_diagnostic_completed": true,
+  "energy_diagnostic_pass": false,
+  "numerical_stability_validated": true,
+  "physics_structure_validated": false,
+  "hardware_parameter_validated": false,
+  "aerodynamic_model_validated": false,
+  "wind_model_validated": false,
+  "contact_dynamics_validated": false,
+  "gripper_contact_validated": false,
+  "closed_loop_control_validated": false,
+  "s4_ready": false,
+  "head_only_failures": 0,
+  "targeted_regression": {
+    "command": [
+      "D:\\i3\\e\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_s4_r4_rrrp_native_dynamics.py",
+      "tests/test_s4_r5_quadrotor_rotor_actuation.py",
+      "tests/test_s4_r6_physics_model_freeze.py"
+    ],
+    "returncode": 0,
+    "stdout_tail": "............................                                             [100%]\n28 passed in 0.04s\n",
+    "passed": true,
+    "targeted_test_count": 28
+  },
+  "full_pytest_attempt": {
+    "command": [
+      "D:\\i3\\e\\python.exe",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "status": "TIMEOUT",
+    "returncode": 124,
+    "timeout_s": 120,
+    "stdout_tail": ".....FF...........F....FFFF.F.......F"
+  },
+  "historical_r5_readiness": "S4_R5_QUADROTOR_ROTOR_ACTUATION_READY",
+  "block_reasons": [
+    "BLOCKED_S4_R6_TIMESTEP_CONVERGENCE"
+  ],
+  "note": "R6 is an audit-only freeze attempt. No model parameter was increased or rewritten to pass a gate. Full pytest timed out if status is TIMEOUT; targeted R4/R5/R6 contracts remain separately classified."
+}

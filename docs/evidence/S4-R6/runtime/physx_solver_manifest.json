@@ -1,0 +1,61 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "physics_dt_s": 0.004166666666666667,
+  "physics_rate_hz": 240.0,
+  "physics_scene_prims": [
+    {
+      "path": "/World/PhysicsScene",
+      "type": "PhysicsScene",
+      "attributes": {
+        "physics:gravityDirection": "(0, 0, -1)",
+        "physics:gravityMagnitude": 0.0,
+        "physxScene:bounceThreshold": 0.0,
+        "physxScene:broadphaseType": "MBP",
+        "physxScene:collisionSystem": "PCM",
+        "physxScene:enableCCD": false,
+        "physxScene:enableEnhancedDeterminism": false,
+        "physxScene:enableExternalForcesEveryIteration": false,
+        "physxScene:enableGPUDynamics": false,
+        "physxScene:enableResidualReporting": false,
+        "physxScene:enableSceneQuerySupport": true,
+        "physxScene:enableStabilization": false,
+        "physxScene:frictionCorrelationDistance": 0.02500000037252903,
+        "physxScene:frictionOffsetThreshold": 0.03999999910593033,
+        "physxScene:frictionType": "patch",
+        "physxScene:gpuCollisionStackSize": 67108864,
+        "physxScene:gpuFoundLostAggregatePairsCapacity": 1024,
+        "physxScene:gpuFoundLostPairsCapacity": 262144,
+        "physxScene:gpuHeapCapacity": 67108864,
+        "physxScene:gpuMaxDeformableSurfaceContacts": 1048576,
+        "physxScene:gpuMaxNumPartitions": 8,
+        "physxScene:gpuMaxParticleContacts": 1048576,
+        "physxScene:gpuMaxRigidContactCount": 524288,
+        "physxScene:gpuMaxRigidPatchCount": 81920,
+        "physxScene:gpuMaxSoftBodyContacts": 1048576,
+        "physxScene:gpuTempBufferCapacity": 16777216,
+        "physxScene:gpuTotalAggregatePairsCapacity": 1024,
+        "physxScene:invertCollisionGroupFilter": false,
+        "physxScene:maxBiasCoefficient": Infinity,
+        "physxScene:maxPositionIterationCount": 255,
+        "physxScene:maxVelocityIterationCount": 255,
+        "physxScene:minPositionIterationCount": 1,
+        "physxScene:minVelocityIterationCount": 0,
+        "physxScene:reportKinematicKinematicPairs": false,
+        "physxScene:reportKinematicStaticPairs": false,
+        "physxScene:solverType": "TGS",
+        "physxScene:timeStepsPerSecond": 240,
+        "physxScene:updateType": "Synchronous"
+      }
+    }
+  ],
+  "solver_type": "TGS",
+  "position_iterations": 1,
+  "velocity_iterations": 0,
+  "stabilization": false,
+  "sleep_settings": {
+    "enabled": null,
+    "threshold": null
+  },
+  "context_type": "PhysicsContext",
+  "source": "authored stage PhysicsScene attributes plus World physics_dt"
+}

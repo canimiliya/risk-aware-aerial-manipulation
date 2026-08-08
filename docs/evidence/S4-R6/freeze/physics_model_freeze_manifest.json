@@ -1,0 +1,221 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "model_source_commit": "1b207c572c89da21a60ad7d919efcebc8aefc757",
+  "expected_start_head": "1b207c572c89da21a60ad7d919efcebc8aefc757",
+  "asset_hashes": {
+    "rrrp_asset_usd_sha256": "069ec8f03304ba04bf4fcddb74ea42c4016e5074b0bb44271f14662438173994",
+    "rrrp_design_yaml_sha256": "c810792a2147eb34c20573b333d4ae117c9046090ed10b6ef29ca8f0117e921f",
+    "quadrotor_design_yaml_sha256": "62ca685d816652aea15f626c247a8bfe50bae8ee27405afe9a77297cbd2cf47a",
+    "freeze_config_yaml_sha256": "1596b14f8bf3ae783f76098925615403631bc4e9bef078aefcb5bcd974a13fc3",
+    "rrrp_urdf_sha256": "f02f0b16dda79859d10a15e0fc2130fca8191780c114688c33ed24ed24e893b4"
+  },
+  "active_manipulator": "RRRP",
+  "dof": 4,
+  "revolute_dof": 3,
+  "prismatic_dof": 1,
+  "arm_mass_kg": 0.63,
+  "max_geometric_reach_m": 0.47,
+  "p_stroke_m": 0.08,
+  "rotor_configuration": "X",
+  "rotor_count": 4,
+  "rotor_arm_radius_m": 0.22,
+  "max_thrust_per_rotor_n": 7.3500000000000005,
+  "motor_time_constant_s": 0.035,
+  "physics_dt_s": 0.004166666666666667,
+  "physics_rate_hz": 240,
+  "solver_manifest": {
+    "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+    "physics_dt_s": 0.004166666666666667,
+    "physics_rate_hz": 240.0,
+    "physics_scene_prims": [
+      {
+        "path": "/World/PhysicsScene",
+        "type": "PhysicsScene",
+        "attributes": {
+          "physics:gravityDirection": "(0, 0, -1)",
+          "physics:gravityMagnitude": 0.0,
+          "physxScene:bounceThreshold": 0.0,
+          "physxScene:broadphaseType": "MBP",
+          "physxScene:collisionSystem": "PCM",
+          "physxScene:enableCCD": false,
+          "physxScene:enableEnhancedDeterminism": false,
+          "physxScene:enableExternalForcesEveryIteration": false,
+          "physxScene:enableGPUDynamics": false,
+          "physxScene:enableResidualReporting": false,
+          "physxScene:enableSceneQuerySupport": true,
+          "physxScene:enableStabilization": false,
+          "physxScene:frictionCorrelationDistance": 0.02500000037252903,
+          "physxScene:frictionOffsetThreshold": 0.03999999910593033,
+          "physxScene:frictionType": "patch",
+          "physxScene:gpuCollisionStackSize": 67108864,
+          "physxScene:gpuFoundLostAggregatePairsCapacity": 1024,
+          "physxScene:gpuFoundLostPairsCapacity": 262144,
+          "physxScene:gpuHeapCapacity": 67108864,
+          "physxScene:gpuMaxDeformableSurfaceContacts": 1048576,
+          "physxScene:gpuMaxNumPartitions": 8,
+          "physxScene:gpuMaxParticleContacts": 1048576,
+          "physxScene:gpuMaxRigidContactCount": 524288,
+          "physxScene:gpuMaxRigidPatchCount": 81920,
+          "physxScene:gpuMaxSoftBodyContacts": 1048576,
+          "physxScene:gpuTempBufferCapacity": 16777216,
+          "physxScene:gpuTotalAggregatePairsCapacity": 1024,
+          "physxScene:invertCollisionGroupFilter": false,
+          "physxScene:maxBiasCoefficient": Infinity,
+          "physxScene:maxPositionIterationCount": 255,
+          "physxScene:maxVelocityIterationCount": 255,
+          "physxScene:minPositionIterationCount": 1,
+          "physxScene:minVelocityIterationCount": 0,
+          "physxScene:reportKinematicKinematicPairs": false,
+          "physxScene:reportKinematicStaticPairs": false,
+          "physxScene:solverType": "TGS",
+          "physxScene:timeStepsPerSecond": 240,
+          "physxScene:updateType": "Synchronous"
+        }
+      }
+    ],
+    "solver_type": "TGS",
+    "position_iterations": 1,
+    "velocity_iterations": 0,
+    "stabilization": false,
+    "sleep_settings": {
+      "enabled": null,
+      "threshold": null
+    },
+    "context_type": "PhysicsContext",
+    "source": "authored stage PhysicsScene attributes plus World physics_dt"
+  },
+  "system_mass_kg": 1.6499999985098839,
+  "stowed_com_m": [
+    0.050424257111536176,
+    5.003177505501864e-09,
+    -0.04196971228714405
+  ],
+  "approach_com_m": [
+    0.09239392992980042,
+    0.0,
+    0.0
+  ],
+  "approach_p_max_com_m": [
+    0.09821211329934483,
+    0.0,
+    0.0
+  ],
+  "stowed_configuration": [
+    0.0,
+    1.5707963705062866,
+    0.0,
+    0.0
+  ],
+  "approach_configuration": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rotor_parameters": [
+    {
+      "id": "R1",
+      "position_body_m": [
+        0.1555634919,
+        0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": 1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R2",
+      "position_body_m": [
+        0.1555634919,
+        -0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": -1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R3",
+      "position_body_m": [
+        -0.1555634919,
+        -0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": 1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R4",
+      "position_body_m": [
+        -0.1555634919,
+        0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": -1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    }
+  ],
+  "joint_limits": {
+    "q1": [
+      -2.617993878,
+      2.617993878
+    ],
+    "q2": [
+      -2.35619449,
+      2.35619449
+    ],
+    "q3": [
+      -2.617993878,
+      2.617993878
+    ],
+    "d": [
+      0.0,
+      0.08
+    ]
+  },
+  "mass_inertia_summary": {
+    "body_names": [
+      "uav_base",
+      "arm_mount",
+      "link1",
+      "link2",
+      "link3",
+      "slider",
+      "gripper_mount"
+    ],
+    "body_masses_kg": [
+      0.9800000190734863,
+      0.03999999910593033,
+      0.2199999988079071,
+      0.17000000178813934,
+      0.11999998986721039,
+      0.059999994933605194,
+      0.059999994933605194
+    ],
+    "mass_readback_source": "PhysX RigidPrim.get_masses() and world poses"
+  },
+  "freeze_claim": "Engineering-nominal parameters; hardware, aerodynamic, contact, and closed-loop control behavior remain unvalidated."
+}

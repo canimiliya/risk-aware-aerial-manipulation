@@ -1,0 +1,1046 @@
+{
+  "stowed": {
+    "label": "STOWED",
+    "requested_configuration_q1_q2_q3_d": [
+      0.0,
+      1.5707963267948966,
+      0.0,
+      0.0
+    ],
+    "configuration_q1_q2_q3_d": [
+      0.0,
+      1.5707963705062866,
+      0.0,
+      0.0
+    ],
+    "p_value_m": 0.0,
+    "mass_com": {
+      "body_names": [
+        "uav_base",
+        "arm_mount",
+        "link1",
+        "link2",
+        "link3",
+        "slider",
+        "gripper_mount"
+      ],
+      "body_masses_kg": [
+        0.9800000190734863,
+        0.03999999910593033,
+        0.2199999988079071,
+        0.17000000178813934,
+        0.11999998986721039,
+        0.059999994933605194,
+        0.059999994933605194
+      ],
+      "total_system_mass_kg": 1.6499999985098839,
+      "system_com_world_m": [
+        0.20196965159343552,
+        -1.3062452048475666e-08,
+        0.4904242237890828
+      ],
+      "system_com_body_m": [
+        0.050424257111536176,
+        5.003177505501864e-09,
+        -0.04196971228714405
+      ],
+      "system_com_neutral_m": [
+        0.050424257111536176,
+        5.003177505501864e-09,
+        -0.04196971228714405
+      ],
+      "base_position_world_m": [
+        0.15999995172023773,
+        -1.9073491230869877e-08,
+        0.4399999678134918
+      ],
+      "base_orientation_world_wxyz": [
+        0.7071068286895752,
+        -8.429369557916289e-08,
+        -0.7071068286895752,
+        0.0
+      ],
+      "mass_readback_source": "PhysX RigidPrim.get_masses() and world poses",
+      "finite": true
+    },
+    "geometry": {
+      "requested_configuration_q1_q2_q3_d": [
+        0.0,
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "readback_configuration_q1_q2_q3_d": [
+        0.0,
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "joint_limits_valid": true,
+      "aabb_pair_checks": [
+        {
+          "pair": [
+            "link1",
+            "link2"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.06250004084221472,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link1",
+            "link3"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.06250004084221472,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link1",
+            "slider"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.17250001878849636,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link1",
+            "gripper_mount"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.2625000020991958,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link2",
+            "link3"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.01499996542930604,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link2",
+            "slider"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.12499998927116396,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link2",
+            "gripper_mount"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.21499997258186337,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link3",
+            "slider"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.010000023841857941,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link3",
+            "gripper_mount"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.10000000715255736,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "slider",
+            "gripper_mount"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.009999983310699456,
+          "non_adjacent_clear": true
+        }
+      ],
+      "non_adjacent_self_clear": true,
+      "geometry_clearance_valid": true,
+      "valid_for_trim": true
+    },
+    "hover_trim": {
+      "target_wrench_fz_taux_tauy_tauz": [
+        16.18649998538196,
+        8.098393261966928e-08,
+        -0.8161922369987765,
+        -0.0
+      ],
+      "gravity_force_body_n": [
+        0.0,
+        0.0,
+        -16.18649998538196
+      ],
+      "gravity_torque_body_nm": [
+        -8.098393261966928e-08,
+        0.8161922369987765,
+        0.0
+      ],
+      "trim_thrusts_n": [
+        5.358295729648676,
+        5.3582954693564595,
+        2.734954263042304,
+        2.7349545233345207
+      ],
+      "max_rotor_utilization": 0.7290198271630851,
+      "force_residual_n": 0.0,
+      "torque_residual_nm": 3.550924796427566e-16,
+      "all_nonnegative": true,
+      "all_below_max": true,
+      "solve_error": null,
+      "hover_trim_feasible": true
+    },
+    "valid_for_trim": true,
+    "max_rotor_utilization": 0.7290198271630851
+  },
+  "approach_cases": [
+    {
+      "label": "APPROACH_P_0.00",
+      "requested_configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_value_m": 0.0,
+      "mass_com": {
+        "body_names": [
+          "uav_base",
+          "arm_mount",
+          "link1",
+          "link2",
+          "link3",
+          "slider",
+          "gripper_mount"
+        ],
+        "body_masses_kg": [
+          0.9800000190734863,
+          0.03999999910593033,
+          0.2199999988079071,
+          0.17000000178813934,
+          0.11999998986721039,
+          0.059999994933605194,
+          0.059999994933605194
+        ],
+        "total_system_mass_kg": 1.6499999985098839,
+        "system_com_world_m": [
+          0.09239392992980042,
+          0.0,
+          0.6000000238418579
+        ],
+        "system_com_body_m": [
+          0.09239392992980042,
+          0.0,
+          0.0
+        ],
+        "system_com_neutral_m": [
+          0.09239392992980042,
+          0.0,
+          0.0
+        ],
+        "base_position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "base_orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mass_readback_source": "PhysX RigidPrim.get_masses() and world poses",
+        "finite": true
+      },
+      "geometry": {
+        "requested_configuration_q1_q2_q3_d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "readback_configuration_q1_q2_q3_d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_limits_valid": true,
+        "aabb_pair_checks": [
+          {
+            "pair": [
+              "link1",
+              "link2"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499999642372131,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "link3"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.15999996185302734,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.26999998569488526,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.3599999690055847,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "link3"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499996542930604,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.12499998927116396,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.21499997258186337,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "slider"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.010000023841857941,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.10000000715255736,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "slider",
+              "gripper_mount"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.009999983310699456,
+            "non_adjacent_clear": true
+          }
+        ],
+        "non_adjacent_self_clear": true,
+        "geometry_clearance_valid": true,
+        "valid_for_trim": true
+      },
+      "hover_trim": {
+        "target_wrench_fz_taux_tauy_tauz": [
+          16.18649998538196,
+          0.0,
+          -1.4955343454580963,
+          -0.0
+        ],
+        "gravity_force_body_n": [
+          0.0,
+          0.0,
+          -16.18649998538196
+        ],
+        "gravity_torque_body_nm": [
+          -0.0,
+          1.4955343454580963,
+          0.0
+        ],
+        "trim_thrusts_n": [
+          6.450039716586313,
+          6.450039716586313,
+          1.6432102761046672,
+          1.6432102761046665
+        ],
+        "max_rotor_utilization": 0.8775564240253487,
+        "force_residual_n": 0.0,
+        "torque_residual_nm": 2.4835037038225095e-16,
+        "all_nonnegative": true,
+        "all_below_max": true,
+        "solve_error": null,
+        "hover_trim_feasible": true
+      },
+      "valid_for_trim": true,
+      "max_rotor_utilization": 0.8775564240253487
+    },
+    {
+      "label": "APPROACH_P_0.04",
+      "requested_configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.04
+      ],
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.03999999910593033
+      ],
+      "p_value_m": 0.04,
+      "mass_com": {
+        "body_names": [
+          "uav_base",
+          "arm_mount",
+          "link1",
+          "link2",
+          "link3",
+          "slider",
+          "gripper_mount"
+        ],
+        "body_masses_kg": [
+          0.9800000190734863,
+          0.03999999910593033,
+          0.2199999988079071,
+          0.17000000178813934,
+          0.11999998986721039,
+          0.059999994933605194,
+          0.059999994933605194
+        ],
+        "total_system_mass_kg": 1.6499999985098839,
+        "system_com_world_m": [
+          0.09530302107271225,
+          0.0,
+          0.6000000238418579
+        ],
+        "system_com_body_m": [
+          0.09530302107271225,
+          0.0,
+          0.0
+        ],
+        "system_com_neutral_m": [
+          0.09530302107271225,
+          0.0,
+          0.0
+        ],
+        "base_position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "base_orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mass_readback_source": "PhysX RigidPrim.get_masses() and world poses",
+        "finite": true
+      },
+      "geometry": {
+        "requested_configuration_q1_q2_q3_d": [
+          0.0,
+          0.0,
+          0.0,
+          0.03999999910593033
+        ],
+        "readback_configuration_q1_q2_q3_d": [
+          0.0,
+          0.0,
+          0.0,
+          0.03999999910593033
+        ],
+        "joint_limits_valid": true,
+        "aabb_pair_checks": [
+          {
+            "pair": [
+              "link1",
+              "link2"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499999642372131,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "link3"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.15999996185302734,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.309999977350235,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.3999999904632568,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "link3"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499996542930604,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.1649999809265137,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.2549999940395355,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "slider"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.05000001549720767,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.14000002861022948,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "slider",
+              "gripper_mount"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.010000013113021844,
+            "non_adjacent_clear": true
+          }
+        ],
+        "non_adjacent_self_clear": true,
+        "geometry_clearance_valid": true,
+        "valid_for_trim": true
+      },
+      "hover_trim": {
+        "target_wrench_fz_taux_tauy_tauz": [
+          16.18649998538196,
+          0.0,
+          -1.5426223492003135,
+          -0.0
+        ],
+        "gravity_force_body_n": [
+          0.0,
+          0.0,
+          -16.18649998538196
+        ],
+        "gravity_torque_body_nm": [
+          -0.0,
+          1.5426223492003135,
+          0.0
+        ],
+        "trim_thrusts_n": [
+          6.5257130046552225,
+          6.525713004655224,
+          1.5675369880357564,
+          1.5675369880357566
+        ],
+        "max_rotor_utilization": 0.8878521094769012,
+        "force_residual_n": 0.0,
+        "torque_residual_nm": 2.9537201370600734e-16,
+        "all_nonnegative": true,
+        "all_below_max": true,
+        "solve_error": null,
+        "hover_trim_feasible": true
+      },
+      "valid_for_trim": true,
+      "max_rotor_utilization": 0.8878521094769012
+    },
+    {
+      "label": "APPROACH_P_0.08",
+      "requested_configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.08
+      ],
+      "configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.07999999821186066
+      ],
+      "p_value_m": 0.08,
+      "mass_com": {
+        "body_names": [
+          "uav_base",
+          "arm_mount",
+          "link1",
+          "link2",
+          "link3",
+          "slider",
+          "gripper_mount"
+        ],
+        "body_masses_kg": [
+          0.9800000190734863,
+          0.03999999910593033,
+          0.2199999988079071,
+          0.17000000178813934,
+          0.11999998986721039,
+          0.059999994933605194,
+          0.059999994933605194
+        ],
+        "total_system_mass_kg": 1.6499999985098839,
+        "system_com_world_m": [
+          0.09821211329934483,
+          0.0,
+          0.6000000238418579
+        ],
+        "system_com_body_m": [
+          0.09821211329934483,
+          0.0,
+          0.0
+        ],
+        "system_com_neutral_m": [
+          0.09821211329934483,
+          0.0,
+          0.0
+        ],
+        "base_position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "base_orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mass_readback_source": "PhysX RigidPrim.get_masses() and world poses",
+        "finite": true
+      },
+      "geometry": {
+        "requested_configuration_q1_q2_q3_d": [
+          0.0,
+          0.0,
+          0.0,
+          0.07999999821186066
+        ],
+        "readback_configuration_q1_q2_q3_d": [
+          0.0,
+          0.0,
+          0.0,
+          0.07999999821186066
+        ],
+        "joint_limits_valid": true,
+        "aabb_pair_checks": [
+          {
+            "pair": [
+              "link1",
+              "link2"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499999642372131,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "link3"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.15999996185302734,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.3499999988079071,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.4400000119209289,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "link3"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499996542930604,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.2050000023841858,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.2950000154972076,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "slider"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.09000003695487979,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.1800000500679016,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "slider",
+              "gripper_mount"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.010000013113021788,
+            "non_adjacent_clear": true
+          }
+        ],
+        "non_adjacent_self_clear": true,
+        "geometry_clearance_valid": true,
+        "valid_for_trim": true
+      },
+      "hover_trim": {
+        "target_wrench_fz_taux_tauy_tauz": [
+          16.18649998538196,
+          0.0,
+          -1.5897103704841766,
+          -0.0
+        ],
+        "gravity_force_body_n": [
+          0.0,
+          0.0,
+          -16.18649998538196
+        ],
+        "gravity_torque_body_nm": [
+          -0.0,
+          1.5897103704841766,
+          0.0
+        ],
+        "trim_thrusts_n": [
+          6.601386320914625,
+          6.601386320914627,
+          1.4918636717763534,
+          1.4918636717763534
+        ],
+        "max_rotor_utilization": 0.8981477987638947,
+        "force_residual_n": 0.0,
+        "torque_residual_nm": 3.1432500083045447e-16,
+        "all_nonnegative": true,
+        "all_below_max": true,
+        "solve_error": null,
+        "hover_trim_feasible": true
+      },
+      "valid_for_trim": true,
+      "max_rotor_utilization": 0.8981477987638947
+    }
+  ],
+  "legacy_neutral": {
+    "label": "LEGACY_NEUTRAL",
+    "requested_configuration_q1_q2_q3_d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "configuration_q1_q2_q3_d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "p_value_m": 0.0,
+    "mass_com": {
+      "body_names": [
+        "uav_base",
+        "arm_mount",
+        "link1",
+        "link2",
+        "link3",
+        "slider",
+        "gripper_mount"
+      ],
+      "body_masses_kg": [
+        0.9800000190734863,
+        0.03999999910593033,
+        0.2199999988079071,
+        0.17000000178813934,
+        0.11999998986721039,
+        0.059999994933605194,
+        0.059999994933605194
+      ],
+      "total_system_mass_kg": 1.6499999985098839,
+      "system_com_world_m": [
+        0.09239392992980042,
+        0.0,
+        0.6000000238418579
+      ],
+      "system_com_body_m": [
+        0.09239392992980042,
+        0.0,
+        0.0
+      ],
+      "system_com_neutral_m": [
+        0.09239392992980042,
+        0.0,
+        0.0
+      ],
+      "base_position_world_m": [
+        0.0,
+        0.0,
+        0.6000000238418579
+      ],
+      "base_orientation_world_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_readback_source": "PhysX RigidPrim.get_masses() and world poses",
+      "finite": true
+    },
+    "geometry": {
+      "requested_configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_configuration_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_limits_valid": true,
+      "aabb_pair_checks": [
+        {
+          "pair": [
+            "link1",
+            "link2"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.01499999642372131,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link1",
+            "link3"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.15999996185302734,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link1",
+            "slider"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.26999998569488526,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link1",
+            "gripper_mount"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.3599999690055847,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link2",
+            "link3"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.01499996542930604,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link2",
+            "slider"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.12499998927116396,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link2",
+            "gripper_mount"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.21499997258186337,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link3",
+            "slider"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.010000023841857941,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "link3",
+            "gripper_mount"
+          ],
+          "adjacent": false,
+          "aabb_gap_m": 0.10000000715255736,
+          "non_adjacent_clear": true
+        },
+        {
+          "pair": [
+            "slider",
+            "gripper_mount"
+          ],
+          "adjacent": true,
+          "aabb_gap_m": 0.009999983310699456,
+          "non_adjacent_clear": true
+        }
+      ],
+      "non_adjacent_self_clear": true,
+      "geometry_clearance_valid": true,
+      "valid_for_trim": true
+    },
+    "hover_trim": {
+      "target_wrench_fz_taux_tauy_tauz": [
+        16.18649998538196,
+        0.0,
+        -1.4955343454580963,
+        -0.0
+      ],
+      "gravity_force_body_n": [
+        0.0,
+        0.0,
+        -16.18649998538196
+      ],
+      "gravity_torque_body_nm": [
+        -0.0,
+        1.4955343454580963,
+        0.0
+      ],
+      "trim_thrusts_n": [
+        6.450039716586313,
+        6.450039716586313,
+        1.6432102761046672,
+        1.6432102761046665
+      ],
+      "max_rotor_utilization": 0.8775564240253487,
+      "force_residual_n": 0.0,
+      "torque_residual_nm": 2.4835037038225095e-16,
+      "all_nonnegative": true,
+      "all_below_max": true,
+      "solve_error": null,
+      "hover_trim_feasible": true
+    },
+    "valid_for_trim": true,
+    "max_rotor_utilization": 0.8775564240253487
+  },
+  "stowed_trim_margin_valid": true,
+  "approach_trim_margin_valid": true
+}

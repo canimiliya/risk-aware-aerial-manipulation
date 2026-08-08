@@ -1,0 +1,12 @@
+{
+  "command": [
+    "D:\\i3\\e\\python.exe",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "status": "TIMEOUT",
+  "returncode": 124,
+  "timeout_s": 120,
+  "stdout_tail": ".....FF...........F....FFFF.F.......F"
+}
