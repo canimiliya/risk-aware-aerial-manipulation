@@ -1,0 +1,9 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "status": "NOT_RUN_BLOCKED_BY_SOLVER_CONVERGENCE",
+  "required_physical_duration_s": 41.666666666666664,
+  "selected_physics_rate_hz": null,
+  "source_r6_stability": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R6\\runtime\\headless_10000_step_stability.json",
+  "r6_inherited_pass": true,
+  "r2_long_duration_stability": false
+}

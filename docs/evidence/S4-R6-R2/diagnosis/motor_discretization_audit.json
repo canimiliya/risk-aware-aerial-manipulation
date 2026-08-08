@@ -1,0 +1,41 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "continuous_model": "omega_dot=(omega_cmd-omega)/tau_motor",
+  "discrete_model": "omega_next=omega_cmd+(omega-omega_cmd)*exp(-dt/tau_motor)",
+  "source_audit": {
+    "source": "scripts/s4_r6_physics_model_freeze.py::motor_update",
+    "motor_time_constant_s": 0.035,
+    "analytic_discrete_form_present": true,
+    "explicit_euler_form_present": false,
+    "parameter_modified": false
+  },
+  "rates": [
+    {
+      "rate_hz": 240,
+      "physical_duration_s": 0.25,
+      "tau_motor_s": 0.035,
+      "max_abs_error_rad_s": 0.0,
+      "matches_analytic_solution": true
+    },
+    {
+      "rate_hz": 480,
+      "physical_duration_s": 0.25,
+      "tau_motor_s": 0.035,
+      "max_abs_error_rad_s": 0.0,
+      "matches_analytic_solution": true
+    },
+    {
+      "rate_hz": 960,
+      "physical_duration_s": 0.25,
+      "tau_motor_s": 0.035,
+      "max_abs_error_rad_s": 0.0,
+      "matches_analytic_solution": true
+    }
+  ],
+  "motor_discretization_valid": true,
+  "parameter_preservation": {
+    "tau_motor_s_before": 0.035,
+    "tau_motor_s_after": 0.035,
+    "unchanged": true
+  }
+}

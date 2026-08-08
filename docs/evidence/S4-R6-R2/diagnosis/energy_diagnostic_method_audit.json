@@ -1,0 +1,26 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "method": "finite initial root and joint velocities, then zero-actuation free motion",
+  "gravity": false,
+  "rotors": false,
+  "joint_efforts": false,
+  "external_force": false,
+  "joint_damping": false,
+  "friction": false,
+  "initial_energy_required_positive": true,
+  "initial_state_away_from_limits": true,
+  "contact_or_self_contact": false,
+  "energy_formula": "sum_i(0.5*m_i*||v_COM_i||^2 + 0.5*w_i^T*I_world_i*w_i)",
+  "com_velocity_formula": "v_origin_i + cross(w_i, R_i*local_com_i)",
+  "inertia_frame": "world-frame R_i*I_body_i*R_i^T",
+  "included_bodies": [
+    "uav_base",
+    "arm_mount",
+    "link1",
+    "link2",
+    "link3",
+    "slider",
+    "gripper_mount"
+  ],
+  "method_contract_valid": true
+}

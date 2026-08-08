@@ -1,0 +1,160 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "physics_rate_hz": 240,
+  "gravity": false,
+  "rotors": false,
+  "joint_efforts": false,
+  "external_force": false,
+  "joint_damping": false,
+  "friction": false,
+  "diagnostic_configuration": {
+    "joint_damping_disabled": true,
+    "friction_disabled": false,
+    "changed_attributes": [
+      {
+        "path": "/World/FloatingBaseArm/uav_base",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/uav_base",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/arm_mount",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/arm_mount",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link1",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link1",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link2",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link2",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link3",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/link3",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/slider",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/slider",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/gripper_mount",
+        "attribute": "physxRigidBody:angularDamping",
+        "previous": "0.05000000074505806",
+        "diagnostic_value": 0.0
+      },
+      {
+        "path": "/World/FloatingBaseArm/gripper_mount",
+        "attribute": "physxRigidBody:linearDamping",
+        "previous": "0.0",
+        "diagnostic_value": 0.0
+      }
+    ],
+    "production_asset_unchanged": true
+  },
+  "initial_configuration_q1_q2_q3_d": [
+    0.0,
+    1.0,
+    0.0,
+    0.04
+  ],
+  "initial_energy_j": 0.003074349561843165,
+  "energy_samples": [
+    {
+      "step": 0,
+      "time_s": 0.0,
+      "total_energy_j": 0.003074349561843165
+    },
+    {
+      "step": 1,
+      "time_s": 0.004166666666666667,
+      "total_energy_j": 14.346144215253943
+    },
+    {
+      "step": 30,
+      "time_s": 0.125,
+      "total_energy_j": 0.016034293998346105
+    },
+    {
+      "step": 60,
+      "time_s": 0.25,
+      "total_energy_j": 0.003157292295171976
+    },
+    {
+      "step": 120,
+      "time_s": 0.5,
+      "total_energy_j": 0.003146012067303096
+    },
+    {
+      "step": 180,
+      "time_s": 0.75,
+      "total_energy_j": 0.0031240567807623385
+    },
+    {
+      "step": 240,
+      "time_s": 1.0,
+      "total_energy_j": 0.0031143771437180416
+    }
+  ],
+  "relative_energy_drift": 4665.399811299597,
+  "energy_diagnostic_method_valid": true,
+  "energy_pass": false,
+  "energy_diagnostic": "WARNING",
+  "true_com_formula_used": true,
+  "world_frame_inertia_used": true,
+  "included_bodies": [
+    "uav_base",
+    "arm_mount",
+    "link1",
+    "link2",
+    "link3",
+    "slider",
+    "gripper_mount"
+  ]
+}

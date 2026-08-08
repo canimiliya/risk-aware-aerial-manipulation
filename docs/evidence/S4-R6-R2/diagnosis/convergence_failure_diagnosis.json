@@ -1,0 +1,170 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "source_r6_evidence": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R6\\runtime\\timestep_convergence.json",
+  "original_r6_convergence_valid": false,
+  "failed_metric_count": 3,
+  "failed_metrics": [
+    "R1_q1_torque_pulse.peak_base_linear_velocity_m_s",
+    "R1_q1_torque_pulse.peak_base_angular_velocity_rad_s",
+    "R1_q1_torque_pulse.peak_joint_velocity"
+  ],
+  "metric_diagnosis": [
+    {
+      "TEST": "R1_q1_torque_pulse",
+      "METRIC": "R1_q1_torque_pulse.peak_base_linear_velocity_m_s",
+      "240_VALUE": 0.01649764583514053,
+      "480_VALUE": 0.02063776742944666,
+      "960_VALUE": 0.022700501409513386,
+      "240_TO_480_REL_CHANGE": 0.20060898585371517,
+      "480_TO_960_REL_CHANGE": 0.09086733120363016,
+      "FAILED_THRESHOLD": {
+        "240_to_480": 0.02,
+        "480_to_960": 0.01
+      },
+      "FAILURE_CATEGORY": "PHYSX_SOLVER",
+      "INITIAL_R6_COMPARISON_CATEGORY": "TEST_PROTOCOL",
+      "failure_reason": "R6 compared per-rate sampled peaks/displacements without common physical-time interpolation",
+      "post_correction_finding": "same failure remains after common physical-time interpolation; classified as PHYSX_SOLVER"
+    },
+    {
+      "TEST": "R1_q1_torque_pulse",
+      "METRIC": "R1_q1_torque_pulse.peak_base_angular_velocity_rad_s",
+      "240_VALUE": 6.636193576478617e-05,
+      "480_VALUE": 8.441620596288595e-05,
+      "960_VALUE": 6.218861386278601e-05,
+      "240_TO_480_REL_CHANGE": 0.21387208761831153,
+      "480_TO_960_REL_CHANGE": 0.3574222147665691,
+      "FAILED_THRESHOLD": {
+        "240_to_480": 0.02,
+        "480_to_960": 0.01
+      },
+      "FAILURE_CATEGORY": "PHYSX_SOLVER",
+      "INITIAL_R6_COMPARISON_CATEGORY": "TEST_PROTOCOL",
+      "failure_reason": "R6 compared per-rate sampled peaks/displacements without common physical-time interpolation",
+      "post_correction_finding": "same failure remains after common physical-time interpolation; classified as PHYSX_SOLVER"
+    },
+    {
+      "TEST": "R1_q1_torque_pulse",
+      "METRIC": "R1_q1_torque_pulse.peak_joint_velocity",
+      "240_VALUE": 5.703558244618537,
+      "480_VALUE": 7.124964993140632,
+      "960_VALUE": 7.833212793070831,
+      "240_TO_480_REL_CHANGE": 0.19949666417877368,
+      "480_TO_960_REL_CHANGE": 0.09041600408924245,
+      "FAILED_THRESHOLD": {
+        "240_to_480": 0.02,
+        "480_to_960": 0.01
+      },
+      "FAILURE_CATEGORY": "PHYSX_SOLVER",
+      "INITIAL_R6_COMPARISON_CATEGORY": "TEST_PROTOCOL",
+      "failure_reason": "R6 compared per-rate sampled peaks/displacements without common physical-time interpolation",
+      "post_correction_finding": "same failure remains after common physical-time interpolation; classified as PHYSX_SOLVER"
+    },
+    {
+      "TEST": "R1_q1_torque_pulse",
+      "METRIC": "R1_q1_torque_pulse.joint_displacement",
+      "240_VALUE": 0.05648274113203171,
+      "480_VALUE": 0.056494028789890044,
+      "960_VALUE": 0.05651022627255643,
+      "240_TO_480_REL_CHANGE": 0.00019980267118701155,
+      "480_TO_960_REL_CHANGE": 0.0002866292304027575,
+      "FAILED_THRESHOLD": null,
+      "FAILURE_CATEGORY": "PASS",
+      "INITIAL_R6_COMPARISON_CATEGORY": "PASS",
+      "failure_reason": null,
+      "post_correction_finding": null
+    },
+    {
+      "TEST": "R2_P_force_pulse",
+      "METRIC": "R2_P_force_pulse.peak_base_linear_velocity_m_s",
+      "240_VALUE": 0.0032679736614227295,
+      "480_VALUE": 0.0032679711002856493,
+      "960_VALUE": 0.0032679711002856493,
+      "240_TO_480_REL_CHANGE": 7.837086074502617e-07,
+      "480_TO_960_REL_CHANGE": 0.0,
+      "FAILED_THRESHOLD": null,
+      "FAILURE_CATEGORY": "PASS",
+      "INITIAL_R6_COMPARISON_CATEGORY": "PASS",
+      "failure_reason": null,
+      "post_correction_finding": null
+    },
+    {
+      "TEST": "R2_P_force_pulse",
+      "METRIC": "R2_P_force_pulse.peak_base_angular_velocity_rad_s",
+      "240_VALUE": 1.0550219933317122e-15,
+      "480_VALUE": 8.57445417395779e-16,
+      "960_VALUE": 2.469268753769842e-15,
+      "240_TO_480_REL_CHANGE": 0.00019757657593593315,
+      "480_TO_960_REL_CHANGE": 0.0016118233363740628,
+      "FAILED_THRESHOLD": null,
+      "FAILURE_CATEGORY": "PASS",
+      "INITIAL_R6_COMPARISON_CATEGORY": "PASS",
+      "failure_reason": null,
+      "post_correction_finding": null
+    },
+    {
+      "TEST": "R2_P_force_pulse",
+      "METRIC": "R2_P_force_pulse.peak_joint_velocity",
+      "240_VALUE": 0.04493463411927223,
+      "480_VALUE": 0.04493461921811104,
+      "960_VALUE": 0.04493461176753044,
+      "240_TO_480_REL_CHANGE": 3.3161872634366725e-07,
+      "480_TO_960_REL_CHANGE": 1.658093906645831e-07,
+      "FAILED_THRESHOLD": null,
+      "FAILURE_CATEGORY": "PASS",
+      "INITIAL_R6_COMPARISON_CATEGORY": "PASS",
+      "failure_reason": null,
+      "post_correction_finding": null
+    },
+    {
+      "TEST": "R2_P_force_pulse",
+      "METRIC": "R2_P_force_pulse.joint_displacement",
+      "240_VALUE": 0.008518926799297333,
+      "480_VALUE": 0.008471852168440819,
+      "960_VALUE": 0.00844856258481741,
+      "240_TO_480_REL_CHANGE": 0.005556592575101285,
+      "480_TO_960_REL_CHANGE": 0.0027566326685277915,
+      "FAILED_THRESHOLD": null,
+      "FAILURE_CATEGORY": "PASS",
+      "INITIAL_R6_COMPARISON_CATEGORY": "PASS",
+      "failure_reason": null,
+      "post_correction_finding": null
+    },
+    {
+      "TEST": "R3_motor_step_response",
+      "METRIC": "R3_motor_step_response.final_omega_rad_s[0]",
+      "240_VALUE": 299.762852903064,
+      "480_VALUE": 299.762852903064,
+      "960_VALUE": 299.76285290306396,
+      "240_TO_480_REL_CHANGE": 0.0,
+      "480_TO_960_REL_CHANGE": 1.8962796193826525e-16,
+      "FAILED_THRESHOLD": null,
+      "FAILURE_CATEGORY": "PASS",
+      "INITIAL_R6_COMPARISON_CATEGORY": "PASS",
+      "failure_reason": null,
+      "post_correction_finding": null
+    },
+    {
+      "TEST": "R3_motor_step_response",
+      "METRIC": "R3_motor_step_response.records[-1].thrust_n[0]",
+      "240_VALUE": 1.3478665197087598,
+      "480_VALUE": 1.3478665197087598,
+      "960_VALUE": 1.3478665197087594,
+      "240_TO_480_REL_CHANGE": 0.0,
+      "480_TO_960_REL_CHANGE": 3.2947565901853493e-16,
+      "FAILED_THRESHOLD": null,
+      "FAILURE_CATEGORY": "PASS",
+      "INITIAL_R6_COMPARISON_CATEGORY": "PASS",
+      "failure_reason": null,
+      "post_correction_finding": null
+    }
+  ],
+  "original_failure_cause": "R6 had a comparison-protocol limitation (native-rate peak extraction without a common time grid), but the pulse duration was already physical-time equivalent. After protocol correction the same q1/P failures remain, so the actual blocker is PHYSX_SOLVER numerical response.",
+  "not_supported_by_evidence": [
+    "RRRP parameter error",
+    "rotor parameter error",
+    "motor time-constant error",
+    "native PhysX crash"
+  ],
+  "required_correction": "record trajectories with physical timestamps, interpolate to one common time grid, then compare RMS/peak/final/peak-time metrics"
+}

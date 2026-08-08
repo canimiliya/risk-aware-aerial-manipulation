@@ -1,0 +1,17 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "start_head": "0bf149ff085e73a9fbb72ddd6b9148ae387d03b2",
+  "end_head_at_generation": "0bf149ff085e73a9fbb72ddd6b9148ae387d03b2",
+  "physics_model_frozen": false,
+  "freeze_tag": null,
+  "final_label": "BLOCKED_S4_R6_R2_SOLVER_CONVERGENCE",
+  "selected_solver": null,
+  "selected_position_iterations": null,
+  "selected_velocity_iterations": null,
+  "selected_physics_rate_hz": null,
+  "solver_convergence_sweep": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\docs\\evidence\\S4-R6-R2\\runtime\\solver_convergence_sweep.json",
+  "engineering_nominal_parameters_unchanged": true,
+  "rrrp_usd_modified": false,
+  "rotor_parameters_modified": false,
+  "freeze_claim": "Not frozen: protocol is valid, but no tested TGS position-iteration configuration satisfies the fixed timestep thresholds."
+}

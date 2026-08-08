@@ -1,0 +1,57 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "physical_time_grid_definition": "t_s=k*dt for recorded state after each step; common comparison grid is 1/960 s from 0 to 0.25 s",
+  "pulse_definition": {
+    "pulse_start_s": 0.0,
+    "pulse_duration_s": 0.125,
+    "q1_torque_Nm": 0.2,
+    "P_force_N": 0.04
+  },
+  "rate_records": [
+    {
+      "rate_hz": 240,
+      "dt_s": 0.004166666666666667,
+      "step_count": 60,
+      "pulse_step_count": 30,
+      "physical_duration_s": 0.25,
+      "pulse_duration_s": 0.125,
+      "time_start_s": 0.0,
+      "time_end_s": 0.25,
+      "same_initial_state": true,
+      "same_pulse_amplitude": true,
+      "same_pulse_duration": true
+    },
+    {
+      "rate_hz": 480,
+      "dt_s": 0.0020833333333333333,
+      "step_count": 120,
+      "pulse_step_count": 60,
+      "physical_duration_s": 0.25,
+      "pulse_duration_s": 0.125,
+      "time_start_s": 0.0,
+      "time_end_s": 0.25,
+      "same_initial_state": true,
+      "same_pulse_amplitude": true,
+      "same_pulse_duration": true
+    },
+    {
+      "rate_hz": 960,
+      "dt_s": 0.0010416666666666667,
+      "step_count": 240,
+      "pulse_step_count": 120,
+      "physical_duration_s": 0.25,
+      "pulse_duration_s": 0.125,
+      "time_start_s": 0.0,
+      "time_end_s": 0.25,
+      "same_initial_state": true,
+      "same_pulse_amplitude": true,
+      "same_pulse_duration": true
+    }
+  ],
+  "PHYSICAL_TIME_EQUIVALENT": true,
+  "PULSE_DURATION_EQUIVALENT": true,
+  "PULSE_IMPULSE_EQUIVALENT": true,
+  "INITIAL_STATE_EQUIVALENT": true,
+  "comparison_interpolation_required": true,
+  "comparison_interpolation_method": "linear interpolation onto common 960-Hz physical-time grid"
+}

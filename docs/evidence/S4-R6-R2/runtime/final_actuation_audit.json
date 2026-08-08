@@ -1,0 +1,17 @@
+{
+  "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
+  "direct_world_force_command": false,
+  "direct_world_torque_command": false,
+  "root_runtime_state_write": false,
+  "joint_runtime_position_write": false,
+  "joint_runtime_velocity_write": false,
+  "python_arm_integrator": false,
+  "manual_reaction": false,
+  "manual_arm_gravity": false,
+  "reset_only_joint_default_write": true,
+  "forbidden_calls": [],
+  "active_path_audit_pass": true,
+  "notes": "set_joints_default_state is used only before world.reset for diagnostic configuration selection; no runtime pose, velocity, or root-state write is used.",
+  "r2_revalidated": false,
+  "source": "S4-R6 inherited audit; R2 final re-audit not run because timestep/solver hard gate failed"
+}

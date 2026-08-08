@@ -1,0 +1,7 @@
+{
+  "task": "S4-R6-R2-NUMERICAL-CONVERGENCE-CLOSURE-R1",
+  "command": "D:\\i3\\e\\python.exe -m pytest -q tests/test_s4_r4_rrrp_native_dynamics.py tests/test_s4_r5_quadrotor_rotor_actuation.py tests/test_s4_r6_physics_model_freeze.py tests/test_s4_r6_r2_numerical_convergence.py",
+  "status": "PASS",
+  "passed": 32,
+  "failed": 0
+}
