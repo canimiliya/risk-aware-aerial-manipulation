@@ -1,0 +1,22 @@
+{
+  "task": "S4-R6-R4-JOINT-EFFORT-PATH-AUDIT-R1",
+  "M11_fixed_base_motion_inertia_kg_m2": 0.0018997916486114264,
+  "q1_effective_inertia_r3_schur_complement_kg_m2": 0.0004368799492713341,
+  "qdd_sim_rad_s2": 105.27466535568237,
+  "tau_implied_from_sim_Nm": 0.19999993005308803,
+  "qdd_oracle_old_using_requested_effort_rad_s2": 457.7916664144857,
+  "qdd_oracle_using_requested_effort_rad_s2": 105.27470217388401,
+  "qdd_oracle_using_applied_effort_rad_s2": 105.27470374259931,
+  "qdd_oracle_using_measured_effort_rad_s2": 105.27458608895131,
+  "tau_requested_Nm": 0.2,
+  "tau_applied_api_Nm": 0.20000000298023224,
+  "tau_measured_Nm": 0.19999977946281433,
+  "sim_over_old_oracle": 0.22996195230073593,
+  "reconciliation": {
+    "requested_effort_matches_motion": true,
+    "applied_effort_matches_motion": true,
+    "measured_effort_matches_motion": true
+  },
+  "r3_oracle_bug": "R3 inverted the full 7x7 generalized mass matrix. The fixed-base single-1R response uses the q1 diagonal M[6,6]; the full inverse included free-base coupling that is constrained out by the fixed-base anchor.",
+  "interpretation": "actual effort readbacks and motion are compared against M^-1*tau; no force value is inferred from qdd alone when the API readback is available"
+}

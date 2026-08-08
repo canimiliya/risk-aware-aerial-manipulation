@@ -1,0 +1,155 @@
+{
+  "task": "S4-R6-R4-JOINT-EFFORT-PATH-AUDIT-R1",
+  "comparison": {
+    "set_joint_efforts": {
+      "tau_cmd_Nm": 0.2,
+      "path": "set_joint_efforts",
+      "q0_rad": 0.0,
+      "dq0_rad_s": 0.0,
+      "q1_rad": 0.0018276877235621214,
+      "dq1_rad_s": 0.4386444389820099,
+      "derived_qdd_rad_s2": 105.27466535568237,
+      "tau_implied_from_motion_Nm": 0.19999993005308803,
+      "effort_readback_before_step": {
+        "applied_all": [
+          0.20000000298023224
+        ],
+        "measured_all": [
+          0.0
+        ],
+        "applied_q1": 0.20000000298023224,
+        "measured_q1": 0.0
+      },
+      "effort_readback_after_step": {
+        "applied_all": [
+          0.20000000298023224
+        ],
+        "measured_all": [
+          0.19999977946281433
+        ],
+        "applied_q1": 0.20000000298023224,
+        "measured_q1": 0.19999977946281433
+      },
+      "max_effort": {
+        "articulation_metadata": {
+          "joint_names": [
+            "q1"
+          ],
+          "body_names": [],
+          "num_dof": 1,
+          "num_bodies": 2
+        },
+        "q1_native_index": 0,
+        "runtime_max_efforts_articulation_controller": [
+          3.4028234663852886e+38
+        ],
+        "runtime_effort_modes_articulation_controller": [
+          "force"
+        ],
+        "runtime_gains_articulation_controller": {
+          "stiffness": [
+            0.0
+          ],
+          "damping": [
+            0.0
+          ]
+        },
+        "runtime_max_efforts_view": [
+          3.4028234663852886e+38
+        ],
+        "runtime_effort_modes_view": [
+          [
+            "force"
+          ]
+        ],
+        "runtime_gains_view": {
+          "stiffness": [
+            0.0
+          ],
+          "damping": [
+            0.0
+          ]
+        },
+        "q1_runtime_max_effort_Nm": 3.4028234663852886e+38,
+        "q1_runtime_effort_mode": "force",
+        "q1_runtime_stiffness": 0.0,
+        "q1_runtime_damping": 0.0
+      }
+    },
+    "apply_action": {
+      "tau_cmd_Nm": 0.2,
+      "path": "apply_action",
+      "q0_rad": 0.0,
+      "dq0_rad_s": 0.0,
+      "q1_rad": 0.0018276877235621214,
+      "dq1_rad_s": 0.4386444389820099,
+      "derived_qdd_rad_s2": 105.27466535568237,
+      "tau_implied_from_motion_Nm": 0.19999993005308803,
+      "effort_readback_before_step": {
+        "applied_all": [
+          0.20000000298023224
+        ],
+        "measured_all": [
+          0.0
+        ],
+        "applied_q1": 0.20000000298023224,
+        "measured_q1": 0.0
+      },
+      "effort_readback_after_step": {
+        "applied_all": [
+          0.20000000298023224
+        ],
+        "measured_all": [
+          0.19999977946281433
+        ],
+        "applied_q1": 0.20000000298023224,
+        "measured_q1": 0.19999977946281433
+      },
+      "max_effort": {
+        "articulation_metadata": {
+          "joint_names": [
+            "q1"
+          ],
+          "body_names": [],
+          "num_dof": 1,
+          "num_bodies": 2
+        },
+        "q1_native_index": 0,
+        "runtime_max_efforts_articulation_controller": [
+          3.4028234663852886e+38
+        ],
+        "runtime_effort_modes_articulation_controller": [
+          "force"
+        ],
+        "runtime_gains_articulation_controller": {
+          "stiffness": [
+            0.0
+          ],
+          "damping": [
+            0.0
+          ]
+        },
+        "runtime_max_efforts_view": [
+          3.4028234663852886e+38
+        ],
+        "runtime_effort_modes_view": [
+          [
+            "force"
+          ]
+        ],
+        "runtime_gains_view": {
+          "stiffness": [
+            0.0
+          ],
+          "damping": [
+            0.0
+          ]
+        },
+        "q1_runtime_max_effort_Nm": 3.4028234663852886e+38,
+        "q1_runtime_effort_mode": "force",
+        "q1_runtime_stiffness": 0.0,
+        "q1_runtime_damping": 0.0
+      }
+    }
+  }
+}

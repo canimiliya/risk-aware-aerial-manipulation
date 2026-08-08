@@ -1,0 +1,71 @@
+{
+  "task": "S4-R6-R4-JOINT-EFFORT-PATH-AUDIT-R1",
+  "command_test_torque_Nm": 0.2,
+  "design_max_effort_Nm": 8.0,
+  "design_max_efforts_all": {
+    "q1": 8.0,
+    "q2": 6.0,
+    "q3": 4.0,
+    "P": 6.0
+  },
+  "usd_max_effort_Nm": null,
+  "usd_max_effort_raw_candidates": {
+    "physics:breakForce": "inf"
+  },
+  "runtime_max_effort_Nm": 3.4028234663852886e+38,
+  "runtime_max_effort_pre_command_Nm": 0.0,
+  "runtime_effort_mode": "force",
+  "runtime_stiffness": 0.0,
+  "runtime_damping": 0.0,
+  "runtime_readback": {
+    "articulation_metadata": {
+      "joint_names": [
+        "q1"
+      ],
+      "body_names": [],
+      "num_dof": 1,
+      "num_bodies": 2
+    },
+    "q1_native_index": 0,
+    "runtime_max_efforts_articulation_controller": [
+      0.0
+    ],
+    "runtime_effort_modes_articulation_controller": [
+      "force"
+    ],
+    "runtime_gains_articulation_controller": {
+      "stiffness": [
+        0.0
+      ],
+      "damping": [
+        0.0
+      ]
+    },
+    "runtime_max_efforts_view": [
+      0.0
+    ],
+    "runtime_effort_modes_view": [
+      [
+        "force"
+      ]
+    ],
+    "runtime_gains_view": {
+      "stiffness": [
+        0.0
+      ],
+      "damping": [
+        0.0
+      ]
+    },
+    "q1_runtime_max_effort_Nm": 0.0,
+    "q1_runtime_effort_mode": "force",
+    "q1_runtime_stiffness": 0.0,
+    "q1_runtime_damping": 0.0
+  },
+  "command_exceeds_any_limit": false,
+  "possible_cap_values_near_observed": [],
+  "effective_torque_from_r3_Nm": 0.04599239,
+  "effort_cap_matches_observed_dynamics": false,
+  "usd_readback_does_not_modify_source": true,
+  "runtime_max_effort_post_initialization_Nm": 3.4028234663852886e+38
+}
