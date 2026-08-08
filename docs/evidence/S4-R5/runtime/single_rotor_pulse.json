@@ -1,0 +1,2112 @@
+{
+  "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+  "rotor_count": 4,
+  "cases": [
+    {
+      "rotor": "R1",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          180.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            -9.275972843170166e-06,
+            -0.00010277968976879492,
+            0.6032200455665588
+          ],
+          "orientation_world_wxyz": [
+            0.9997562766075134,
+            0.01601235195994377,
+            -0.015198443084955215,
+            7.786495552863926e-05
+          ],
+          "linear_velocity_world_m_s": [
+            -0.0005326520185917616,
+            -0.0017903659027069807,
+            0.0365179106593132
+          ],
+          "angular_velocity_world_rad_s": [
+            0.482499897480011,
+            -0.36821097135543823,
+            -0.0022137509658932686
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              180.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": 6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -1.42453715490376e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                4.532118396127771e-07,
+                -4.566411462292308e-07,
+                7.70867103483397e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                -3.4189983466603735e-07,
+                2.353030322410632e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                0.00021754160115960985,
+                -0.00021918772836215794,
+                3.700091156133567e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              180.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": 0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0023537447215772117
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -3.725290298461914e-08,
+                -9.873652970782132e-07,
+                0.6000664830207825
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                0.00030661470373161137,
+                -0.00030893617076799273,
+                5.1444808377709705e-06
+              ],
+              "linear_velocity_world_m_s": [
+                2.184935681270872e-07,
+                -6.724542618030682e-05,
+                0.0044204723089933395
+              ],
+              "angular_velocity_world_rad_s": [
+                0.04084625840187073,
+                -0.04115566983819008,
+                0.0006758876843377948
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              180.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": 0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.004777255932623387
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -9.275972843170166e-06,
+                -0.00010277968976879492,
+                0.6032200455665588
+              ],
+              "orientation_world_wxyz": [
+                0.9997562766075134,
+                0.01601235195994377,
+                -0.015198443084955215,
+                7.786495552863926e-05
+              ],
+              "linear_velocity_world_m_s": [
+                -0.0005326520185917616,
+                -0.0017903659027069807,
+                0.0365179106593132
+              ],
+              "angular_velocity_world_rad_s": [
+                0.482499897480011,
+                -0.36821097135543823,
+                -0.0022137509658932686
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": 0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.004777255932623387
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.606951704164405,
+        "max_acceleration_proxy": 0.2964842250059638,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        0.07431666145788852,
+        -0.07431666145788852,
+        0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        2.894999384880066,
+        -2.2092658281326294,
+        -0.013282505795359612
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": false,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    },
+    {
+      "rotor": "R2",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          0.0,
+          180.0,
+          0.0,
+          0.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            -9.275972843170166e-06,
+            0.00010277963883709162,
+            0.6032200455665588
+          ],
+          "orientation_world_wxyz": [
+            0.9997562766075134,
+            -0.016012350097298622,
+            -0.015198441222310066,
+            -7.78648245614022e-05
+          ],
+          "linear_velocity_world_m_s": [
+            -0.0005326521350070834,
+            0.0017903655534610152,
+            0.03651789203286171
+          ],
+          "angular_velocity_world_rad_s": [
+            -0.4824995994567871,
+            -0.36821120977401733,
+            0.0022137665655463934
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              0.0,
+              180.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": -6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                1.424537376948365e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -4.5321149855226395e-07,
+                -4.566411462292308e-07,
+                -7.708671923012389e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                3.418998062443279e-07,
+                2.353030322410632e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.00021754154295194894,
+                -0.0002191877574659884,
+                -3.700090701386216e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              0.0,
+              180.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": -0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0023537447215772117
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -3.725290298461914e-08,
+                9.873651833913755e-07,
+                0.6000664830207825
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                -0.0003066147619392723,
+                -0.00030893622897565365,
+                -5.1444808377709705e-06
+              ],
+              "linear_velocity_world_m_s": [
+                2.1849349707281362e-07,
+                6.724541890434921e-05,
+                0.0044204723089933395
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.040846262127161026,
+                -0.04115567356348038,
+                -0.000675887567922473
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              0.0,
+              180.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": -0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.004777255932623387
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -9.275972843170166e-06,
+                0.00010277963883709162,
+                0.6032200455665588
+              ],
+              "orientation_world_wxyz": [
+                0.9997562766075134,
+                -0.016012350097298622,
+                -0.015198441222310066,
+                -7.78648245614022e-05
+              ],
+              "linear_velocity_world_m_s": [
+                -0.0005326521350070834,
+                0.0017903655534610152,
+                0.03651789203286171
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.4824995994567871,
+                -0.36821120977401733,
+                0.0022137665655463934
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": -0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.004777255932623387
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.6069516119441583,
+        "max_acceleration_proxy": 0.296484122843734,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        -0.07431666145788852,
+        -0.07431666145788852,
+        -0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        -2.8949975967407227,
+        -2.209267258644104,
+        0.01328259939327836
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": false,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    },
+    {
+      "rotor": "R3",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          0.0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            3.1538307666778564e-05,
+            -3.131230914732441e-05,
+            0.6034727096557617
+          ],
+          "orientation_world_wxyz": [
+            0.9997414946556091,
+            -0.016018124297261238,
+            0.016138603910803795,
+            0.00018963380716741085
+          ],
+          "linear_velocity_world_m_s": [
+            0.0009350429172627628,
+            -0.00017320792539976537,
+            0.05235897749662399
+          ],
+          "angular_velocity_world_rad_s": [
+            -0.48263758420944214,
+            0.4861767590045929,
+            0.0028964870143681765
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              180.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": 6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -1.4244545543107279e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -4.532118396127771e-07,
+                4.566412314943591e-07,
+                7.708553795282569e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                -3.4185842423539725e-07,
+                2.3530305043095723e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.00021754158660769463,
+                0.00021918772836215794,
+                3.6999781514168717e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              180.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": 0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0023537447215772117
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -2.2351741790771484e-08,
+                -9.538591712043853e-07,
+                0.6000663638114929
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                -0.0003066178469453007,
+                0.0003089370729867369,
+                5.1712204367504455e-06
+              ],
+              "linear_velocity_world_m_s": [
+                1.5339194305852288e-06,
+                -6.275049963733181e-05,
+                0.004420533310621977
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.04084714129567146,
+                0.041155893355607986,
+                0.0006806010496802628
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              180.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": 0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.004777255932623387
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                3.1538307666778564e-05,
+                -3.131230914732441e-05,
+                0.6034727096557617
+              ],
+              "orientation_world_wxyz": [
+                0.9997414946556091,
+                -0.016018124297261238,
+                0.016138603910803795,
+                0.00018963380716741085
+              ],
+              "linear_velocity_world_m_s": [
+                0.0009350429172627628,
+                -0.00017320792539976537,
+                0.05235897749662399
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.48263758420944214,
+                0.4861767590045929,
+                0.0028964870143681765
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": 0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.004777255932623387
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.6850658861195474,
+        "max_acceleration_proxy": 0.3142056745293484,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        -0.07431666145788852,
+        0.07431666145788852,
+        0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        -2.895825505256653,
+        2.9170605540275574,
+        0.01737892208620906
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": true,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    },
+    {
+      "rotor": "R4",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          180.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            3.1538307666778564e-05,
+            3.131229823338799e-05,
+            0.6034731268882751
+          ],
+          "orientation_world_wxyz": [
+            0.9997414946556091,
+            0.016018129885196686,
+            0.01613861322402954,
+            -0.0001896339817903936
+          ],
+          "linear_velocity_world_m_s": [
+            0.000935043441131711,
+            0.00017320887127425522,
+            0.052358999848365784
+          ],
+          "angular_velocity_world_rad_s": [
+            0.48263779282569885,
+            0.48617690801620483,
+            -0.0028965016826987267
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              0.0,
+              180.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": -6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                1.4244548873776353e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                4.5321149855226395e-07,
+                4.566412314943591e-07,
+                -7.708554683460989e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                3.4185842423539725e-07,
+                2.353030322410632e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                0.00021754158660769463,
+                0.0002191877574659884,
+                -3.6999781514168717e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              0.0,
+              180.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": -0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0023537447215772117
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -2.2351741790771484e-08,
+                9.538591712043853e-07,
+                0.6000663638114929
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                0.0003066179051529616,
+                0.0003089370729867369,
+                -5.1712204367504455e-06
+              ],
+              "linear_velocity_world_m_s": [
+                1.533919771645742e-06,
+                6.275052146520466e-05,
+                0.0044205342419445515
+              ],
+              "angular_velocity_world_rad_s": [
+                0.04084714502096176,
+                0.041155893355607986,
+                -0.0006806012243032455
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              0.0,
+              180.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": -0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.004777255932623387
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                3.1538307666778564e-05,
+                3.131229823338799e-05,
+                0.6034731268882751
+              ],
+              "orientation_world_wxyz": [
+                0.9997414946556091,
+                0.016018129885196686,
+                0.01613861322402954,
+                -0.0001896339817903936
+              ],
+              "linear_velocity_world_m_s": [
+                0.000935043441131711,
+                0.00017320887127425522,
+                0.052358999848365784
+              ],
+              "angular_velocity_world_rad_s": [
+                0.48263779282569885,
+                0.48617690801620483,
+                -0.0028965016826987267
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": -0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.004777255932623387
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.6850661389047464,
+        "max_acceleration_proxy": 0.31420580869257997,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        0.07431666145788852,
+        0.07431666145788852,
+        -0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        2.895826756954193,
+        2.917061448097229,
+        -0.01737901009619236
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": true,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    }
+  ],
+  "all_force_directions_valid": true,
+  "all_individual_signs_valid": true
+}

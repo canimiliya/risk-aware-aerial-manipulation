@@ -1,0 +1,5947 @@
+{
+  "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+  "decision": "PASS_PENDING_AUDIT",
+  "error": null,
+  "system_mass_com": {
+    "body_names": [
+      "uav_base",
+      "arm_mount",
+      "link1",
+      "link2",
+      "link3",
+      "slider",
+      "gripper_mount"
+    ],
+    "body_masses_kg": [
+      0.9800000190734863,
+      0.03999999910593033,
+      0.2199999988079071,
+      0.17000000178813934,
+      0.11999998986721039,
+      0.059999994933605194,
+      0.059999994933605194
+    ],
+    "total_system_mass_kg": 1.6499999985098839,
+    "body_com_world_m": {
+      "uav_base": [
+        0.0,
+        0.0,
+        0.6000000238418579
+      ],
+      "arm_mount": [
+        0.0,
+        0.0,
+        0.6000000238418579
+      ],
+      "link1": [
+        0.08,
+        0.0,
+        0.6000000238418579
+      ],
+      "link2": [
+        0.22499999642372132,
+        0.0,
+        0.6000000238418579
+      ],
+      "link3": [
+        0.33999996185302733,
+        0.0,
+        0.6000000238418579
+      ],
+      "slider": [
+        0.42999998569488523,
+        0.0,
+        0.6000000238418579
+      ],
+      "gripper_mount": [
+        0.49999996900558474,
+        0.0,
+        0.6000000238418579
+      ]
+    },
+    "system_com_world_m": [
+      0.09239392992980042,
+      0.0,
+      0.6000000238418579
+    ],
+    "system_com_neutral_m": [
+      0.09239392992980042,
+      0.0,
+      0.0
+    ],
+    "base_position_world_m": [
+      0.0,
+      0.0,
+      0.6000000238418579
+    ],
+    "base_orientation_world_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mass_readback_source": "PhysX RigidPrim.get_masses() and world poses",
+    "finite": true
+  },
+  "hover_trim": {
+    "target_wrench_fz_taux_tauy_tauz": [
+      16.18649998538196,
+      0.0,
+      -1.4955343454580963,
+      -0.0
+    ],
+    "gravity_force_body_n": [
+      0.0,
+      0.0,
+      -16.18649998538196
+    ],
+    "gravity_torque_body_nm": [
+      -0.0,
+      1.4955343454580963,
+      0.0
+    ],
+    "trim_thrusts_n": [
+      6.450039716586313,
+      6.450039716586313,
+      1.6432102761046672,
+      1.6432102761046665
+    ],
+    "force_residual_n": 0.0,
+    "torque_residual_nm": 2.486410087150353e-16,
+    "all_nonnegative": true,
+    "all_below_max": true,
+    "residual_vector": [
+      0.0,
+      -1.1102230246251565e-16,
+      2.220446049250313e-16,
+      1.3877787807814457e-17
+    ],
+    "hover_trim_feasible": true
+  },
+  "trim_speeds_rad_s": [
+    655.7458713346359,
+    655.7458713346359,
+    330.979382651414,
+    330.97938265141397
+  ],
+  "max_thrust_per_rotor_n": 7.3500000000000005,
+  "rotor_specs": [
+    {
+      "id": "R1",
+      "position_body_m": [
+        0.1555634919,
+        0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": 1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R2",
+      "position_body_m": [
+        0.1555634919,
+        -0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": -1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R3",
+      "position_body_m": [
+        -0.1555634919,
+        -0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": 1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R4",
+      "position_body_m": [
+        -0.1555634919,
+        0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": -1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    }
+  ],
+  "allocation_rank": 4,
+  "single_rotor": [
+    {
+      "rotor": "R1",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          180.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            -9.275972843170166e-06,
+            -0.00010277968976879492,
+            0.6032200455665588
+          ],
+          "orientation_world_wxyz": [
+            0.9997562766075134,
+            0.01601235195994377,
+            -0.015198443084955215,
+            7.786495552863926e-05
+          ],
+          "linear_velocity_world_m_s": [
+            -0.0005326520185917616,
+            -0.0017903659027069807,
+            0.0365179106593132
+          ],
+          "angular_velocity_world_rad_s": [
+            0.482499897480011,
+            -0.36821097135543823,
+            -0.0022137509658932686
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              180.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": 6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -1.42453715490376e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                4.532118396127771e-07,
+                -4.566411462292308e-07,
+                7.70867103483397e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                -3.4189983466603735e-07,
+                2.353030322410632e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                0.00021754160115960985,
+                -0.00021918772836215794,
+                3.700091156133567e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              180.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": 0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0023537447215772117
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -3.725290298461914e-08,
+                -9.873652970782132e-07,
+                0.6000664830207825
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                0.00030661470373161137,
+                -0.00030893617076799273,
+                5.1444808377709705e-06
+              ],
+              "linear_velocity_world_m_s": [
+                2.184935681270872e-07,
+                -6.724542618030682e-05,
+                0.0044204723089933395
+              ],
+              "angular_velocity_world_rad_s": [
+                0.04084625840187073,
+                -0.04115566983819008,
+                0.0006758876843377948
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              180.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": 0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.004777255932623387
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -9.275972843170166e-06,
+                -0.00010277968976879492,
+                0.6032200455665588
+              ],
+              "orientation_world_wxyz": [
+                0.9997562766075134,
+                0.01601235195994377,
+                -0.015198443084955215,
+                7.786495552863926e-05
+              ],
+              "linear_velocity_world_m_s": [
+                -0.0005326520185917616,
+                -0.0017903659027069807,
+                0.0365179106593132
+              ],
+              "angular_velocity_world_rad_s": [
+                0.482499897480011,
+                -0.36821097135543823,
+                -0.0022137509658932686
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": 0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.004777255932623387
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.606951704164405,
+        "max_acceleration_proxy": 0.2964842250059638,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        0.07431666145788852,
+        -0.07431666145788852,
+        0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        2.894999384880066,
+        -2.2092658281326294,
+        -0.013282505795359612
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": false,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    },
+    {
+      "rotor": "R2",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          0.0,
+          180.0,
+          0.0,
+          0.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            -9.275972843170166e-06,
+            0.00010277963883709162,
+            0.6032200455665588
+          ],
+          "orientation_world_wxyz": [
+            0.9997562766075134,
+            -0.016012350097298622,
+            -0.015198441222310066,
+            -7.78648245614022e-05
+          ],
+          "linear_velocity_world_m_s": [
+            -0.0005326521350070834,
+            0.0017903655534610152,
+            0.03651789203286171
+          ],
+          "angular_velocity_world_rad_s": [
+            -0.4824995994567871,
+            -0.36821120977401733,
+            0.0022137665655463934
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              0.0,
+              180.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": -6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                1.424537376948365e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -4.5321149855226395e-07,
+                -4.566411462292308e-07,
+                -7.708671923012389e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                3.418998062443279e-07,
+                2.353030322410632e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.00021754154295194894,
+                -0.0002191877574659884,
+                -3.700090701386216e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              0.0,
+              180.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": -0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0023537447215772117
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -3.725290298461914e-08,
+                9.873651833913755e-07,
+                0.6000664830207825
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                -0.0003066147619392723,
+                -0.00030893622897565365,
+                -5.1444808377709705e-06
+              ],
+              "linear_velocity_world_m_s": [
+                2.1849349707281362e-07,
+                6.724541890434921e-05,
+                0.0044204723089933395
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.040846262127161026,
+                -0.04115567356348038,
+                -0.000675887567922473
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              0.0,
+              180.0,
+              0.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": -0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.004777255932623387
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -9.275972843170166e-06,
+                0.00010277963883709162,
+                0.6032200455665588
+              ],
+              "orientation_world_wxyz": [
+                0.9997562766075134,
+                -0.016012350097298622,
+                -0.015198441222310066,
+                -7.78648245614022e-05
+              ],
+              "linear_velocity_world_m_s": [
+                -0.0005326521350070834,
+                0.0017903655534610152,
+                0.03651789203286171
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.4824995994567871,
+                -0.36821120977401733,
+                0.0022137665655463934
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": -0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.004777255932623387
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.6069516119441583,
+        "max_acceleration_proxy": 0.296484122843734,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        -0.07431666145788852,
+        -0.07431666145788852,
+        -0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        -2.8949975967407227,
+        -2.209267258644104,
+        0.01328259939327836
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": false,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    },
+    {
+      "rotor": "R3",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          0.0,
+          0.0,
+          180.0,
+          0.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            3.1538307666778564e-05,
+            -3.131230914732441e-05,
+            0.6034727096557617
+          ],
+          "orientation_world_wxyz": [
+            0.9997414946556091,
+            -0.016018124297261238,
+            0.016138603910803795,
+            0.00018963380716741085
+          ],
+          "linear_velocity_world_m_s": [
+            0.0009350429172627628,
+            -0.00017320792539976537,
+            0.05235897749662399
+          ],
+          "angular_velocity_world_rad_s": [
+            -0.48263758420944214,
+            0.4861767590045929,
+            0.0028964870143681765
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              180.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": 6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -1.4244545543107279e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -4.532118396127771e-07,
+                4.566412314943591e-07,
+                7.708553795282569e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                -3.4185842423539725e-07,
+                2.3530305043095723e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.00021754158660769463,
+                0.00021918772836215794,
+                3.6999781514168717e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              180.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": 0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0023537447215772117
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -2.2351741790771484e-08,
+                -9.538591712043853e-07,
+                0.6000663638114929
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                -0.0003066178469453007,
+                0.0003089370729867369,
+                5.1712204367504455e-06
+              ],
+              "linear_velocity_world_m_s": [
+                1.5339194305852288e-06,
+                -6.275049963733181e-05,
+                0.004420533310621977
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.04084714129567146,
+                0.041155893355607986,
+                0.0006806010496802628
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              180.0,
+              0.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": 0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.004777255932623387
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                3.1538307666778564e-05,
+                -3.131230914732441e-05,
+                0.6034727096557617
+              ],
+              "orientation_world_wxyz": [
+                0.9997414946556091,
+                -0.016018124297261238,
+                0.016138603910803795,
+                0.00018963380716741085
+              ],
+              "linear_velocity_world_m_s": [
+                0.0009350429172627628,
+                -0.00017320792539976537,
+                0.05235897749662399
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.48263758420944214,
+                0.4861767590045929,
+                0.0028964870143681765
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": 0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.004777255932623387
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.6850658861195474,
+        "max_acceleration_proxy": 0.3142056745293484,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        -0.07431666145788852,
+        0.07431666145788852,
+        0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        -2.895825505256653,
+        2.9170605540275574,
+        0.01737892208620906
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": true,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    },
+    {
+      "rotor": "R4",
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          180.0
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            3.1538307666778564e-05,
+            3.131229823338799e-05,
+            0.6034731268882751
+          ],
+          "orientation_world_wxyz": [
+            0.9997414946556091,
+            0.016018129885196686,
+            0.01613861322402954,
+            -0.0001896339817903936
+          ],
+          "linear_velocity_world_m_s": [
+            0.000935043441131711,
+            0.00017320887127425522,
+            0.052358999848365784
+          ],
+          "angular_velocity_world_rad_s": [
+            0.48263779282569885,
+            0.48617690801620483,
+            -0.0028965016826987267
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              0.0,
+              180.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 20.202205462815993,
+                "thrust_n": 0.006121936583427486,
+                "reaction_torque_nm": -6.121936583427485e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.006121936583427486
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -6.121936583427485e-05
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                1.4244548873776353e-09,
+                0.6000001430511475
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                4.5321149855226395e-07,
+                4.566412314943591e-07,
+                -7.708554683460989e-09
+              ],
+              "linear_velocity_world_m_s": [
+                7.325773668243052e-12,
+                3.4185842423539725e-07,
+                2.353030322410632e-05
+              ],
+              "angular_velocity_world_rad_s": [
+                0.00021754158660769463,
+                0.0002191877574659884,
+                -3.6999781514168717e-06
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              0.0,
+              180.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 125.26624236873002,
+                "thrust_n": 0.2353744721577212,
+                "reaction_torque_nm": -0.0023537447215772117,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.2353744721577212
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0023537447215772117
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                -2.2351741790771484e-08,
+                9.538591712043853e-07,
+                0.6000663638114929
+              ],
+              "orientation_world_wxyz": [
+                0.9999998807907104,
+                0.0003066179051529616,
+                0.0003089370729867369,
+                -5.1712204367504455e-06
+              ],
+              "linear_velocity_world_m_s": [
+                1.533919771645742e-06,
+                6.275052146520466e-05,
+                0.0044205342419445515
+              ],
+              "angular_velocity_world_rad_s": [
+                0.04084714502096176,
+                0.041155893355607986,
+                -0.0006806012243032455
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              0.0,
+              0.0,
+              0.0,
+              180.0
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": -0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 0.0,
+                "thrust_n": 0.0,
+                "reaction_torque_nm": 0.0,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 178.4611242936565,
+                "thrust_n": 0.47772559326233877,
+                "reaction_torque_nm": -0.004777255932623387,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.47772559326233877
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.004777255932623387
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                3.1538307666778564e-05,
+                3.131229823338799e-05,
+                0.6034731268882751
+              ],
+              "orientation_world_wxyz": [
+                0.9997414946556091,
+                0.016018129885196686,
+                0.01613861322402954,
+                -0.0001896339817903936
+              ],
+              "linear_velocity_world_m_s": [
+                0.000935043441131711,
+                0.00017320887127425522,
+                0.052358999848365784
+              ],
+              "angular_velocity_world_rad_s": [
+                0.48263779282569885,
+                0.48617690801620483,
+                -0.0028965016826987267
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": -0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 0.0,
+            "thrust_n": 0.0,
+            "reaction_torque_nm": 0.0,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 178.4611242936565,
+            "thrust_n": 0.47772559326233877,
+            "reaction_torque_nm": -0.004777255932623387,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.47772559326233877
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.004777255932623387
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.6850661389047464,
+        "max_acceleration_proxy": 0.31420580869257997,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "expected_body_moment_nm": [
+        0.07431666145788852,
+        0.07431666145788852,
+        -0.004777255932623387
+      ],
+      "actual_angular_acceleration_proxy_rad_s2": [
+        2.895826756954193,
+        2.917061448097229,
+        -0.01737901009619236
+      ],
+      "force_direction_local_axis_valid": true,
+      "roll_sign_valid": true,
+      "pitch_sign_valid": true,
+      "yaw_sign_valid": true,
+      "measured_base_yaw_sign": true,
+      "yaw_sign_validation_basis": "local reaction torque sign; isolated yaw differential is validated by allocation_sign_validation.json"
+    }
+  ],
+  "allocation_runs": {
+    "collective": {
+      "target_wrench": [
+        3.2,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thrusts_n": [
+        0.8000000000000003,
+        0.8,
+        0.8,
+        0.7999999999999999
+      ],
+      "speed_commands_rad_s": [
+        230.94010767585036,
+        230.9401076758503,
+        230.9401076758503,
+        230.9401076758503
+      ],
+      "geometry_wrench": [
+        3.2,
+        2.7755575615628914e-17,
+        -5.551115123125783e-17,
+        3.469446951953614e-18
+      ],
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          230.94010767585036,
+          230.9401076758503,
+          230.9401076758503,
+          230.9401076758503
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            0.00013323873281478882,
+            -3.986242325809686e-12,
+            0.620307207107544
+          ],
+          "orientation_world_wxyz": [
+            0.9999670386314392,
+            -1.2280386429974754e-10,
+            0.008116510696709156,
+            -2.8018889292047433e-11
+          ],
+          "linear_velocity_world_m_s": [
+            0.0030223550274968147,
+            -1.8708068948158907e-12,
+            0.28841060400009155
+          ],
+          "angular_velocity_world_rad_s": [
+            -3.7715026657281214e-09,
+            0.401720255613327,
+            -6.746740943697205e-10
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              230.94010767585036,
+              230.9401076758503,
+              230.9401076758503,
+              230.9401076758503
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 25.919441693735433,
+                "thrust_n": 0.01007726186572426,
+                "reaction_torque_nm": 0.00010077261865724261,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.01007726186572426
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.00010077261865724261
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 25.919441693735426,
+                "thrust_n": 0.010077261865724257,
+                "reaction_torque_nm": -0.00010077261865724254,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.010077261865724257
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.00010077261865724254
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 25.919441693735426,
+                "thrust_n": 0.010077261865724257,
+                "reaction_torque_nm": 0.00010077261865724254,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.010077261865724257
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.00010077261865724254
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 25.919441693735426,
+                "thrust_n": 0.010077261865724257,
+                "reaction_torque_nm": -0.00010077261865724254,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.010077261865724257
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.00010077261865724254
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -8.479529271918242e-20,
+                0.6000007390975952
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -6.123573870198129e-16,
+                2.2737367544323206e-13,
+                -5.234502313812128e-22
+              ],
+              "linear_velocity_world_m_s": [
+                3.458757169561011e-10,
+                -4.1056580308477495e-17,
+                0.0001549320440972224
+              ],
+              "angular_velocity_world_rad_s": [
+                -2.93945423557318e-13,
+                6.73640657145036e-11,
+                -5.024944894415827e-19
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              230.94010767585036,
+              230.9401076758503,
+              230.9401076758503,
+              230.9401076758503
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 160.71666389324267,
+                "thrust_n": 0.387447690794603,
+                "reaction_torque_nm": 0.0038744769079460295,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.387447690794603
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0038744769079460295
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 160.71666389324264,
+                "thrust_n": 0.38744769079460284,
+                "reaction_torque_nm": -0.0038744769079460282,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.38744769079460284
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0038744769079460282
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 160.71666389324264,
+                "thrust_n": 0.38744769079460284,
+                "reaction_torque_nm": 0.0038744769079460282,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.38744769079460284
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0038744769079460282
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 160.71666389324264,
+                "thrust_n": 0.38744769079460284,
+                "reaction_torque_nm": -0.0038744769079460282,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.38744769079460284
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0038744769079460282
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                2.7567148208618164e-07,
+                -2.5218579801462512e-14,
+                0.6004371047019958
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -4.151317690211792e-13,
+                5.820766091346741e-10,
+                -7.366999263229423e-14
+              ],
+              "linear_velocity_world_m_s": [
+                3.796379314735532e-05,
+                -3.5693318960194897e-12,
+                0.029106052592396736
+              ],
+              "angular_velocity_world_rad_s": [
+                -5.6767035516713804e-11,
+                8.042334798119555e-08,
+                -1.7368589205757345e-11
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              230.94010767585036,
+              230.9401076758503,
+              230.9401076758503,
+              230.9401076758503
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 228.9657292240575,
+                "thrust_n": 0.7863795773865663,
+                "reaction_torque_nm": 0.007863795773865662,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.7863795773865663
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.007863795773865662
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 228.96572922405744,
+                "thrust_n": 0.7863795773865659,
+                "reaction_torque_nm": -0.007863795773865659,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.7863795773865659
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.007863795773865659
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 228.96572922405744,
+                "thrust_n": 0.7863795773865659,
+                "reaction_torque_nm": 0.007863795773865659,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.7863795773865659
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.007863795773865659
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 228.96572922405744,
+                "thrust_n": 0.7863795773865659,
+                "reaction_torque_nm": -0.007863795773865659,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.7863795773865659
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.007863795773865659
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.00013323873281478882,
+                -3.986242325809686e-12,
+                0.620307207107544
+              ],
+              "orientation_world_wxyz": [
+                0.9999670386314392,
+                -1.2280386429974754e-10,
+                0.008116510696709156,
+                -2.8018889292047433e-11
+              ],
+              "linear_velocity_world_m_s": [
+                0.0030223550274968147,
+                -1.8708068948158907e-12,
+                0.28841060400009155
+              ],
+              "angular_velocity_world_rad_s": [
+                -3.7715026657281214e-09,
+                0.401720255613327,
+                -6.746740943697205e-10
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 228.9657292240575,
+            "thrust_n": 0.7863795773865663,
+            "reaction_torque_nm": 0.007863795773865662,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.7863795773865663
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.007863795773865662
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 228.96572922405744,
+            "thrust_n": 0.7863795773865659,
+            "reaction_torque_nm": -0.007863795773865659,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.7863795773865659
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.007863795773865659
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 228.96572922405744,
+            "thrust_n": 0.7863795773865659,
+            "reaction_torque_nm": 0.007863795773865659,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.7863795773865659
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.007863795773865659
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 228.96572922405744,
+            "thrust_n": 0.7863795773865659,
+            "reaction_torque_nm": -0.007863795773865659,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.7863795773865659
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.007863795773865659
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.4017202556133271,
+        "max_acceleration_proxy": 1.7305586383205729,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "linear_acceleration_proxy_m_s2": [
+        0.01813413016498089,
+        -1.1224841368895344e-11,
+        1.7304636240005493
+      ],
+      "angular_acceleration_proxy_rad_s2": [
+        -2.262901599436873e-08,
+        2.410321533679962,
+        -4.048044566218323e-09
+      ],
+      "expected_sign": 1,
+      "actual_sign": 1,
+      "sign_valid": true,
+      "non_target_angular_norm": 2.410321533679962
+    },
+    "roll": {
+      "target_wrench": [
+        3.2,
+        0.06,
+        0.0,
+        0.0
+      ],
+      "thrusts_n": [
+        0.8964236519558352,
+        0.7035763480441649,
+        0.7035763480441646,
+        0.8964236519558353
+      ],
+      "speed_commands_rad_s": [
+        244.4618105084221,
+        216.57582937532754,
+        216.57582937532752,
+        244.46181050842213
+      ],
+      "geometry_wrench": [
+        3.1999999999999997,
+        0.06,
+        -2.7755575615628914e-17,
+        -6.938893903907228e-18
+      ],
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          244.4618105084221,
+          216.57582937532754,
+          216.57582937532752,
+          244.46181050842213
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            0.00013308972120285034,
+            -0.0001399682369083166,
+            0.6203057169914246
+          ],
+          "orientation_world_wxyz": [
+            0.9998863935470581,
+            0.01270412839949131,
+            0.00811634212732315,
+            -0.0002435145142953843
+          ],
+          "linear_velocity_world_m_s": [
+            0.003021441400051117,
+            -0.0036678542383015156,
+            0.28837060928344727
+          ],
+          "angular_velocity_world_rad_s": [
+            0.38243818283081055,
+            0.40178292989730835,
+            -0.01068713329732418
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              244.4618105084221,
+              216.57582937532754,
+              216.57582937532752,
+              244.46181050842213
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 27.43704290946185,
+                "thrust_n": 0.011291869854234762,
+                "reaction_torque_nm": 0.00011291869854234763,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.011291869854234762
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.00011291869854234763
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 24.307274462889705,
+                "thrust_n": 0.00886265387721375,
+                "reaction_torque_nm": -8.86265387721375e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.00886265387721375
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -8.86265387721375e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 24.3072744628897,
+                "thrust_n": 0.008862653877213748,
+                "reaction_torque_nm": 8.862653877213746e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.008862653877213748
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  8.862653877213746e-05
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 27.437042909461855,
+                "thrust_n": 0.011291869854234766,
+                "reaction_torque_nm": -0.00011291869854234764,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.011291869854234766
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.00011291869854234764
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -2.1609875889595787e-13,
+                0.6000007390975952
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                3.596733790800499e-07,
+                -4.547473508864641e-13,
+                3.074809829493874e-13
+              ],
+              "linear_velocity_world_m_s": [
+                3.458756059337986e-10,
+                -1.0279489759401628e-10,
+                0.00015493207320105284
+              ],
+              "angular_velocity_world_rad_s": [
+                0.00017264320922549814,
+                1.1641532182693481e-10,
+                2.9518187893984305e-10
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              244.4618105084221,
+              216.57582937532754,
+              216.57582937532752,
+              244.46181050842213
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 170.12673558359197,
+                "thrust_n": 0.43414659240494125,
+                "reaction_torque_nm": 0.004341465924049412,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.43414659240494125
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.004341465924049412
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 150.72022407632497,
+                "thrust_n": 0.3407487891842641,
+                "reaction_torque_nm": -0.0034074878918426412,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.3407487891842641
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0034074878918426412
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 150.72022407632494,
+                "thrust_n": 0.340748789184264,
+                "reaction_torque_nm": 0.0034074878918426395,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.340748789184264
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0034074878918426395
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 170.12673558359197,
+                "thrust_n": 0.43414659240494125,
+                "reaction_torque_nm": -0.004341465924049412,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.43414659240494125
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.004341465924049412
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                2.3096799850463867e-07,
+                -8.755291958095768e-08,
+                0.6004371047019958
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                0.0002433344052406028,
+                -1.513399294772455e-09,
+                -6.980411626500427e-08
+              ],
+              "linear_velocity_world_m_s": [
+                3.796369128394872e-05,
+                -1.1745803021767642e-05,
+                0.02910604327917099
+              ],
+              "angular_velocity_world_rad_s": [
+                0.032416388392448425,
+                7.001399637829309e-08,
+                -1.2290977792872582e-05
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              244.4618105084221,
+              216.57582937532754,
+              216.57582937532752,
+              244.46181050842213
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 242.37183083442125,
+                "thrust_n": 0.8811615657304397,
+                "reaction_torque_nm": 0.008811615657304397,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.8811615657304397
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.008811615657304397
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 214.7242555841782,
+                "thrust_n": 0.6915975890426922,
+                "reaction_torque_nm": -0.006915975890426922,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.6915975890426922
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.006915975890426922
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 214.72425558417817,
+                "thrust_n": 0.6915975890426921,
+                "reaction_torque_nm": 0.006915975890426919,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.6915975890426921
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.006915975890426919
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 242.37183083442127,
+                "thrust_n": 0.8811615657304399,
+                "reaction_torque_nm": -0.008811615657304397,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.8811615657304399
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.008811615657304397
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.00013308972120285034,
+                -0.0001399682369083166,
+                0.6203057169914246
+              ],
+              "orientation_world_wxyz": [
+                0.9998863935470581,
+                0.01270412839949131,
+                0.00811634212732315,
+                -0.0002435145142953843
+              ],
+              "linear_velocity_world_m_s": [
+                0.003021441400051117,
+                -0.0036678542383015156,
+                0.28837060928344727
+              ],
+              "angular_velocity_world_rad_s": [
+                0.38243818283081055,
+                0.40178292989730835,
+                -0.01068713329732418
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 242.37183083442125,
+            "thrust_n": 0.8811615657304397,
+            "reaction_torque_nm": 0.008811615657304397,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.8811615657304397
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.008811615657304397
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 214.7242555841782,
+            "thrust_n": 0.6915975890426922,
+            "reaction_torque_nm": -0.006915975890426922,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.6915975890426922
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.006915975890426922
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 214.72425558417817,
+            "thrust_n": 0.6915975890426921,
+            "reaction_torque_nm": 0.006915975890426919,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.6915975890426921
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.006915975890426919
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 242.37183083442127,
+            "thrust_n": 0.8811615657304399,
+            "reaction_torque_nm": -0.008811615657304397,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.8811615657304399
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.008811615657304397
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.5547996947204573,
+        "max_acceleration_proxy": 1.730458569341879,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "linear_acceleration_proxy_m_s2": [
+        0.0181286484003067,
+        -0.022007125429809093,
+        1.7302236557006836
+      ],
+      "angular_acceleration_proxy_rad_s2": [
+        2.2946290969848633,
+        2.41069757938385,
+        -0.06412279978394508
+      ],
+      "expected_sign": 1,
+      "actual_sign": 1,
+      "sign_valid": true,
+      "non_target_angular_norm": null
+    },
+    "pitch": {
+      "target_wrench": [
+        3.2,
+        0.0,
+        0.06,
+        0.0
+      ],
+      "thrusts_n": [
+        0.7035763480441646,
+        0.7035763480441646,
+        0.8964236519558354,
+        0.8964236519558353
+      ],
+      "speed_commands_rad_s": [
+        216.57582937532752,
+        216.57582937532752,
+        244.46181050842213,
+        244.46181050842213
+      ],
+      "geometry_wrench": [
+        3.2,
+        0.0,
+        0.06000000000000008,
+        0.0
+      ],
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          216.57582937532752,
+          216.57582937532752,
+          244.46181050842213,
+          244.46181050842213
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            0.00025178492069244385,
+            -4.359305017659354e-12,
+            0.6208791136741638
+          ],
+          "orientation_world_wxyz": [
+            0.9998317360877991,
+            3.791282218723602e-11,
+            0.018348464742302895,
+            -2.2421807466255217e-11
+          ],
+          "linear_velocity_world_m_s": [
+            0.00586759764701128,
+            -9.454827329044568e-13,
+            0.29702284932136536
+          ],
+          "angular_velocity_world_rad_s": [
+            -1.681754735471941e-10,
+            0.7087681889533997,
+            -1.4998061126370033e-10
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              216.57582937532752,
+              216.57582937532752,
+              244.46181050842213,
+              244.46181050842213
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 24.3072744628897,
+                "thrust_n": 0.008862653877213748,
+                "reaction_torque_nm": 8.862653877213746e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.008862653877213748
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  8.862653877213746e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 24.3072744628897,
+                "thrust_n": 0.008862653877213748,
+                "reaction_torque_nm": -8.862653877213746e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.008862653877213748
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -8.862653877213746e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 27.437042909461855,
+                "thrust_n": 0.011291869854234766,
+                "reaction_torque_nm": 0.00011291869854234764,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.011291869854234766
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.00011291869854234764
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 27.437042909461855,
+                "thrust_n": 0.011291869854234766,
+                "reaction_torque_nm": -0.00011291869854234764,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.011291869854234766
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.00011291869854234764
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -5.903410963441084e-20,
+                0.6000007390975952
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -2.8785567679490143e-16,
+                3.623958946263883e-07,
+                -5.293805993853352e-20
+              ],
+              "linear_velocity_world_m_s": [
+                3.458750508222863e-10,
+                -2.880240907676172e-17,
+                0.0001549320004414767
+              ],
+              "angular_velocity_world_rad_s": [
+                -1.38222766565832e-13,
+                0.00017394947644788772,
+                -5.0820481292710524e-17
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              216.57582937532752,
+              216.57582937532752,
+              244.46181050842213,
+              244.46181050842213
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 150.72022407632494,
+                "thrust_n": 0.340748789184264,
+                "reaction_torque_nm": 0.0034074878918426395,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.340748789184264
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0034074878918426395
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 150.72022407632494,
+                "thrust_n": 0.340748789184264,
+                "reaction_torque_nm": -0.0034074878918426395,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.340748789184264
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0034074878918426395
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 170.12673558359197,
+                "thrust_n": 0.43414659240494125,
+                "reaction_torque_nm": 0.004341465924049412,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.43414659240494125
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.004341465924049412
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 170.12673558359197,
+                "thrust_n": 0.43414659240494125,
+                "reaction_torque_nm": -0.004341465924049412,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.43414659240494125
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.004341465924049412
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                2.905726432800293e-07,
+                -2.0734206113647534e-14,
+                0.6004371047019958
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                4.6214937259037026e-12,
+                0.0002451754407957196,
+                -6.683122479901604e-14
+              ],
+              "linear_velocity_world_m_s": [
+                4.140289456699975e-05,
+                -2.923040932564791e-12,
+                0.029106058180332184
+              ],
+              "angular_velocity_world_rad_s": [
+                7.881880703664024e-10,
+                0.03266175091266632,
+                -1.6379168854552262e-11
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              216.57582937532752,
+              216.57582937532752,
+              244.46181050842213,
+              244.46181050842213
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 214.72425558417817,
+                "thrust_n": 0.6915975890426921,
+                "reaction_torque_nm": 0.006915975890426919,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.6915975890426921
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.006915975890426919
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 214.72425558417817,
+                "thrust_n": 0.6915975890426921,
+                "reaction_torque_nm": -0.006915975890426919,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.6915975890426921
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.006915975890426919
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 242.37183083442127,
+                "thrust_n": 0.8811615657304399,
+                "reaction_torque_nm": 0.008811615657304397,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.8811615657304399
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.008811615657304397
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 242.37183083442127,
+                "thrust_n": 0.8811615657304399,
+                "reaction_torque_nm": -0.008811615657304397,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.8811615657304399
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.008811615657304397
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.00025178492069244385,
+                -4.359305017659354e-12,
+                0.6208791136741638
+              ],
+              "orientation_world_wxyz": [
+                0.9998317360877991,
+                3.791282218723602e-11,
+                0.018348464742302895,
+                -2.2421807466255217e-11
+              ],
+              "linear_velocity_world_m_s": [
+                0.00586759764701128,
+                -9.454827329044568e-13,
+                0.29702284932136536
+              ],
+              "angular_velocity_world_rad_s": [
+                -1.681754735471941e-10,
+                0.7087681889533997,
+                -1.4998061126370033e-10
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 214.72425558417817,
+            "thrust_n": 0.6915975890426921,
+            "reaction_torque_nm": 0.006915975890426919,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.6915975890426921
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.006915975890426919
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 214.72425558417817,
+            "thrust_n": 0.6915975890426921,
+            "reaction_torque_nm": -0.006915975890426919,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.6915975890426921
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.006915975890426919
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 242.37183083442127,
+            "thrust_n": 0.8811615657304399,
+            "reaction_torque_nm": 0.008811615657304397,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.8811615657304399
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.008811615657304397
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 242.37183083442127,
+            "thrust_n": 0.8811615657304399,
+            "reaction_torque_nm": -0.008811615657304397,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.8811615657304399
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.008811615657304397
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.7087681889533997,
+        "max_acceleration_proxy": 1.7824847999241593,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "linear_acceleration_proxy_m_s2": [
+        0.03520558588206768,
+        -5.672896397426741e-12,
+        1.7821370959281921
+      ],
+      "angular_acceleration_proxy_rad_s2": [
+        -1.0090528412831645e-09,
+        4.252609133720398,
+        -8.99883667582202e-10
+      ],
+      "expected_sign": 1,
+      "actual_sign": 1,
+      "sign_valid": true,
+      "non_target_angular_norm": null
+    },
+    "yaw": {
+      "target_wrench": [
+        3.2,
+        0.0,
+        0.0,
+        0.02
+      ],
+      "thrusts_n": [
+        1.3000000000000003,
+        0.29999999999999993,
+        1.3,
+        0.2999999999999999
+      ],
+      "speed_commands_rad_s": [
+        294.39202887759495,
+        141.42135623730948,
+        294.3920288775949,
+        141.42135623730948
+      ],
+      "geometry_wrench": [
+        3.2,
+        1.3877787807814457e-17,
+        -4.163336342344337e-17,
+        0.020000000000000004
+      ],
+      "run": {
+        "steps": 40,
+        "command_rad_s": [
+          294.39202887759495,
+          141.42135623730948,
+          294.3920288775949,
+          141.42135623730948
+        ],
+        "initial": {
+          "position_world_m": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "orientation_world_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linear_velocity_world_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "angular_velocity_world_rad_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "finite": true
+        },
+        "final": {
+          "position_world_m": [
+            0.00013340264558792114,
+            -0.0002071228955173865,
+            0.6203070878982544
+          ],
+          "orientation_world_wxyz": [
+            0.9999665021896362,
+            -2.805205986078363e-05,
+            0.008116450160741806,
+            0.001123598194681108
+          ],
+          "linear_velocity_world_m_s": [
+            0.0030280272476375103,
+            -0.0031143324449658394,
+            0.2884106934070587
+          ],
+          "angular_velocity_world_rad_s": [
+            -0.0017344189109280705,
+            0.40171748399734497,
+            0.033899903297424316
+          ],
+          "finite": true
+        },
+        "samples": [
+          {
+            "step": 1,
+            "motor_command_rad_s": [
+              294.39202887759495,
+              141.42135623730948,
+              294.3920288775949,
+              141.42135623730948
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 33.04093474444685,
+                "thrust_n": 0.016375550531801925,
+                "reaction_torque_nm": 0.00016375550531801927,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.016375550531801925
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.00016375550531801927
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 15.87235164186789,
+                "thrust_n": 0.003778973199646595,
+                "reaction_torque_nm": -3.7789731996465944e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.003778973199646595
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -3.7789731996465944e-05
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 33.040934744446844,
+                "thrust_n": 0.016375550531801918,
+                "reaction_torque_nm": 0.0001637555053180192,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.016375550531801918
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0001637555053180192
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 15.87235164186789,
+                "thrust_n": 0.003778973199646595,
+                "reaction_torque_nm": -3.7789731996465944e-05,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.003778973199646595
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -3.7789731996465944e-05
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.0,
+                -5.862123231281657e-09,
+                0.6000007390975952
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                4.178467738914088e-15,
+                1.3642420526593924e-12,
+                3.172353046920762e-08
+              ],
+              "linear_velocity_world_m_s": [
+                3.459643127534662e-10,
+                -1.406909859724692e-06,
+                0.0001549320004414767
+              ],
+              "angular_velocity_world_rad_s": [
+                -1.1011965644902588e-11,
+                -1.5009735121473966e-10,
+                1.5227295989461709e-05
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 10,
+            "motor_command_rad_s": [
+              294.39202887759495,
+              141.42135623730948,
+              294.3920288775949,
+              141.42135623730948
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 204.87435133779434,
+                "thrust_n": 0.6296024975412299,
+                "reaction_torque_nm": 0.0062960249754122986,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.6296024975412299
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.0062960249754122986
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 98.41845492520733,
+                "thrust_n": 0.145292884047976,
+                "reaction_torque_nm": -0.0014529288404797598,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.145292884047976
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0014529288404797598
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 204.87435133779428,
+                "thrust_n": 0.6296024975412295,
+                "reaction_torque_nm": 0.006296024975412295,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.6296024975412295
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.006296024975412295
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 98.41845492520733,
+                "thrust_n": 0.145292884047976,
+                "reaction_torque_nm": -0.0014529288404797598,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.145292884047976
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0014529288404797598
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                2.7567148208618164e-07,
+                -3.966807980759768e-06,
+                0.6004371047019958
+              ],
+              "orientation_world_wxyz": [
+                1.0,
+                -1.2358754020169727e-08,
+                2.095471351992728e-09,
+                2.1466901671374217e-05
+              ],
+              "linear_velocity_world_m_s": [
+                3.7973753933329135e-05,
+                -0.0002642410108819604,
+                0.029106050729751587
+              ],
+              "angular_velocity_world_rad_s": [
+                -3.2367454423365416e-06,
+                8.899689163399671e-08,
+                0.002859973581507802
+              ],
+              "finite": true
+            }
+          },
+          {
+            "step": 40,
+            "motor_command_rad_s": [
+              294.39202887759495,
+              141.42135623730948,
+              294.3920288775949,
+              141.42135623730948
+            ],
+            "rotors": [
+              {
+                "id": "R1",
+                "omega_actual_rad_s": 291.8751803143677,
+                "thrust_n": 1.2778668132531699,
+                "reaction_torque_nm": 0.012778668132531699,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  1.2778668132531699
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.012778668132531699
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R2",
+                "omega_actual_rad_s": 140.2123012957998,
+                "thrust_n": 0.29489234151996213,
+                "reaction_torque_nm": -0.0029489234151996208,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.29489234151996213
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0029489234151996208
+                ],
+                "position_body_m": [
+                  0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R3",
+                "omega_actual_rad_s": 291.87518031436764,
+                "thrust_n": 1.2778668132531694,
+                "reaction_torque_nm": 0.012778668132531692,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  1.2778668132531694
+                ],
+                "torque_local_nm": [
+                  0.0,
+                  0.0,
+                  0.012778668132531692
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  -0.1555634919,
+                  0.0
+                ]
+              },
+              {
+                "id": "R4",
+                "omega_actual_rad_s": 140.2123012957998,
+                "thrust_n": 0.29489234151996213,
+                "reaction_torque_nm": -0.0029489234151996208,
+                "force_local_n": [
+                  0.0,
+                  0.0,
+                  0.29489234151996213
+                ],
+                "torque_local_nm": [
+                  -0.0,
+                  -0.0,
+                  -0.0029489234151996208
+                ],
+                "position_body_m": [
+                  -0.1555634919,
+                  0.1555634919,
+                  0.0
+                ]
+              }
+            ],
+            "base": {
+              "position_world_m": [
+                0.00013340264558792114,
+                -0.0002071228955173865,
+                0.6203070878982544
+              ],
+              "orientation_world_wxyz": [
+                0.9999665021896362,
+                -2.805205986078363e-05,
+                0.008116450160741806,
+                0.001123598194681108
+              ],
+              "linear_velocity_world_m_s": [
+                0.0030280272476375103,
+                -0.0031143324449658394,
+                0.2884106934070587
+              ],
+              "angular_velocity_world_rad_s": [
+                -0.0017344189109280705,
+                0.40171748399734497,
+                0.033899903297424316
+              ],
+              "finite": true
+            }
+          }
+        ],
+        "rotors_final": [
+          {
+            "id": "R1",
+            "omega_actual_rad_s": 291.8751803143677,
+            "thrust_n": 1.2778668132531699,
+            "reaction_torque_nm": 0.012778668132531699,
+            "force_local_n": [
+              0.0,
+              0.0,
+              1.2778668132531699
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.012778668132531699
+            ],
+            "position_body_m": [
+              0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R2",
+            "omega_actual_rad_s": 140.2123012957998,
+            "thrust_n": 0.29489234151996213,
+            "reaction_torque_nm": -0.0029489234151996208,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.29489234151996213
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0029489234151996208
+            ],
+            "position_body_m": [
+              0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R3",
+            "omega_actual_rad_s": 291.87518031436764,
+            "thrust_n": 1.2778668132531694,
+            "reaction_torque_nm": 0.012778668132531692,
+            "force_local_n": [
+              0.0,
+              0.0,
+              1.2778668132531694
+            ],
+            "torque_local_nm": [
+              0.0,
+              0.0,
+              0.012778668132531692
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              -0.1555634919,
+              0.0
+            ]
+          },
+          {
+            "id": "R4",
+            "omega_actual_rad_s": 140.2123012957998,
+            "thrust_n": 0.29489234151996213,
+            "reaction_torque_nm": -0.0029489234151996208,
+            "force_local_n": [
+              0.0,
+              0.0,
+              0.29489234151996213
+            ],
+            "torque_local_nm": [
+              -0.0,
+              -0.0,
+              -0.0029489234151996208
+            ],
+            "position_body_m": [
+              -0.1555634919,
+              0.1555634919,
+              0.0
+            ]
+          }
+        ],
+        "max_speed_proxy": 0.4031490401845084,
+        "max_acceleration_proxy": 1.7306604112698432,
+        "nan_count": 0,
+        "inf_count": 0,
+        "native_exit": false
+      },
+      "linear_acceleration_proxy_m_s2": [
+        0.018168163485825062,
+        -0.018685994669795036,
+        1.7304641604423523
+      ],
+      "angular_acceleration_proxy_rad_s2": [
+        -0.010406513465568423,
+        2.41030490398407,
+        0.2033994197845459
+      ],
+      "expected_sign": 1,
+      "actual_sign": 1,
+      "sign_valid": true,
+      "non_target_angular_norm": null
+    }
+  },
+  "motor": {
+    "motor_time_constant_s": 0.035,
+    "command_rad_s": 500.0,
+    "records": [
+      {
+        "step": 0,
+        "time_s": 0.0,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 0.0,
+        "thrust_actual_n": 0.0
+      },
+      {
+        "step": 1,
+        "time_s": 0.004166666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 56.1172373967111,
+        "thrust_actual_n": 0.04723716499558246
+      },
+      {
+        "step": 2,
+        "time_s": 0.008333333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 105.93618612734453,
+        "thrust_actual_n": 0.16833713296811076
+      },
+      {
+        "step": 3,
+        "time_s": 0.0125,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 150.1637313124349,
+        "thrust_actual_n": 0.3382371930250971
+      },
+      {
+        "step": 4,
+        "time_s": 0.016666666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 189.4274211922743,
+        "thrust_actual_n": 0.5382412184933293
+      },
+      {
+        "step": 5,
+        "time_s": 0.020833333333333332,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 224.2843714599981,
+        "thrust_actual_n": 0.7545521892180963
+      },
+      {
+        "step": 6,
+        "time_s": 0.025,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 255.2291702215235,
+        "thrust_actual_n": 0.9771289399795112
+      },
+      {
+        "step": 7,
+        "time_s": 0.029166666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 282.70089574646096,
+        "thrust_actual_n": 1.1987969468377708
+      },
+      {
+        "step": 8,
+        "time_s": 0.03333333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 307.089346585438,
+        "thrust_actual_n": 1.4145580017940693
+      },
+      {
+        "step": 9,
+        "time_s": 0.0375,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 328.7405724534773,
+        "thrust_actual_n": 1.621055459655599
+      },
+      {
+        "step": 10,
+        "time_s": 0.041666666666666664,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 347.9617843575834,
+        "thrust_actual_n": 1.8161610505997003
+      },
+      {
+        "step": 11,
+        "time_s": 0.04583333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 365.0257136387391,
+        "thrust_actual_n": 1.9986565742620612
+      },
+      {
+        "step": 12,
+        "time_s": 0.05,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 380.17448177911217,
+        "thrust_actual_n": 2.1679895489402474
+      },
+      {
+        "step": 13,
+        "time_s": 0.05416666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 393.62303588348317,
+        "thrust_actual_n": 2.3240864156719483
+      },
+      {
+        "step": 14,
+        "time_s": 0.058333333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 405.56219858121915,
+        "thrust_actual_n": 2.4672104537704835
+      },
+      {
+        "step": 15,
+        "time_s": 0.0625,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 416.16137562410154,
+        "thrust_actual_n": 2.597854358420168
+      },
+      {
+        "step": 16,
+        "time_s": 0.06666666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 425.5709595983335,
+        "thrust_actual_n": 2.716659624801696
+      },
+      {
+        "step": 17,
+        "time_s": 0.07083333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 433.92446385719296,
+        "thrust_actual_n": 2.824356605006286
+      },
+      {
+        "step": 18,
+        "time_s": 0.075,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 441.3404169528747,
+        "thrust_actual_n": 2.9217204545420596
+      },
+      {
+        "step": 19,
+        "time_s": 0.07916666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 447.9240444477699,
+        "thrust_actual_n": 3.009539243916717
+      },
+      {
+        "step": 20,
+        "time_s": 0.08333333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 453.76876196854005,
+        "thrust_actual_n": 3.0885913400769236
+      },
+      {
+        "step": 21,
+        "time_s": 0.0875,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 458.95750068805063,
+        "thrust_actual_n": 3.15962981156733
+      },
+      {
+        "step": 22,
+        "time_s": 0.09166666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 463.56388404253664,
+        "thrust_actual_n": 3.223372118829036
+      },
+      {
+        "step": 23,
+        "time_s": 0.09583333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 467.65327238053476,
+        "thrust_actual_n": 3.2804937475233396
+      },
+      {
+        "step": 24,
+        "time_s": 0.1,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 471.2836903661913,
+        "thrust_actual_n": 3.331624752077641
+      },
+      {
+        "step": 25,
+        "time_s": 0.10416666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 474.5066502959471,
+        "thrust_actual_n": 3.377348417626204
+      },
+      {
+        "step": 26,
+        "time_s": 0.10833333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 477.3678830107065,
+        "thrust_actual_n": 3.418201435951854
+      },
+      {
+        "step": 27,
+        "time_s": 0.1125,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 479.90798677446315,
+        "thrust_actual_n": 3.4546751365487745
+      },
+      {
+        "step": 28,
+        "time_s": 0.11666666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 482.16300332637377,
+        "thrust_actual_n": 3.4872174266506306
+      },
+      {
+        "step": 29,
+        "time_s": 0.12083333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 484.1649292799302,
+        "thrust_actual_n": 3.5162351811695975
+      },
+      {
+        "step": 30,
+        "time_s": 0.125,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 485.94217012551394,
+        "thrust_actual_n": 3.542096890594409
+      },
+      {
+        "step": 31,
+        "time_s": 0.12916666666666665,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 487.51994327821217,
+        "thrust_actual_n": 3.565135426409868
+      },
+      {
+        "step": 32,
+        "time_s": 0.13333333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 488.92063588977413,
+        "thrust_actual_n": 3.5856508229829167
+      },
+      {
+        "step": 33,
+        "time_s": 0.1375,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 490.16412250173045,
+        "thrust_actual_n": 3.6039130048183714
+      },
+      {
+        "step": 34,
+        "time_s": 0.14166666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 491.2680470468812,
+        "thrust_actual_n": 3.62016441073885
+      },
+      {
+        "step": 35,
+        "time_s": 0.14583333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 492.24807320049536,
+        "thrust_actual_n": 3.6346224835440037
+      },
+      {
+        "step": 36,
+        "time_s": 0.15,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 493.11810663347484,
+        "thrust_actual_n": 3.647482006346746
+      },
+      {
+        "step": 37,
+        "time_s": 0.15416666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 493.8904923210511,
+        "thrust_actual_n": 3.658917276076954
+      },
+      {
+        "step": 38,
+        "time_s": 0.15833333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 494.5761897066443,
+        "thrust_actual_n": 3.669084111371139
+      },
+      {
+        "step": 39,
+        "time_s": 0.1625,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 495.18492820629825,
+        "thrust_actual_n": 3.6781216968401513
+      },
+      {
+        "step": 40,
+        "time_s": 0.16666666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 495.725345260157,
+        "thrust_actual_n": 3.686154268999528
+      },
+      {
+        "step": 41,
+        "time_s": 0.17083333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 496.20510888980647,
+        "thrust_actual_n": 3.6932926513251703
+      },
+      {
+        "step": 42,
+        "time_s": 0.175,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 496.63102650045727,
+        "thrust_actual_n": 3.699635647243469
+      },
+      {
+        "step": 43,
+        "time_s": 0.17916666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 497.0091414717714,
+        "thrust_actual_n": 3.705271300597609
+      },
+      {
+        "step": 44,
+        "time_s": 0.18333333333333332,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 497.34481890786856,
+        "thrust_actual_n": 3.7102780334175085
+      },
+      {
+        "step": 45,
+        "time_s": 0.1875,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 497.64282176322536,
+        "thrust_actual_n": 3.714725670786979
+      },
+      {
+        "step": 46,
+        "time_s": 0.19166666666666665,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 497.90737842462426,
+        "thrust_actual_n": 3.7186763623452297
+      },
+      {
+        "step": 47,
+        "time_s": 0.19583333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 498.14224270807796,
+        "thrust_actual_n": 3.722185409553505
+      },
+      {
+        "step": 48,
+        "time_s": 0.2,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 498.3507471220305,
+        "thrust_actual_n": 3.72530200735629
+      },
+      {
+        "step": 49,
+        "time_s": 0.20416666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 498.53585015259097,
+        "thrust_actual_n": 3.7280699083105
+      },
+      {
+        "step": 50,
+        "time_s": 0.20833333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 498.7001782417338,
+        "thrust_actual_n": 3.730528016675056
+      },
+      {
+        "step": 51,
+        "time_s": 0.2125,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 498.84606305409784,
+        "thrust_actual_n": 3.732710919368594
+      },
+      {
+        "step": 52,
+        "time_s": 0.21666666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 498.9755745611659,
+        "thrust_actual_n": 3.7346493601296844
+      },
+      {
+        "step": 53,
+        "time_s": 0.22083333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.09055041225844,
+        "thrust_actual_n": 3.736370662662166
+      },
+      {
+        "step": 54,
+        "time_s": 0.225,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.1926220090897,
+        "thrust_actual_n": 3.7378991080246484
+      },
+      {
+        "step": 55,
+        "time_s": 0.22916666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.28323765385926,
+        "thrust_actual_n": 3.7392562710318016
+      },
+      {
+        "step": 56,
+        "time_s": 0.23333333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.36368309933005,
+        "thrust_actual_n": 3.7404613199779218
+      },
+      {
+        "step": 57,
+        "time_s": 0.2375,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.4350997924789,
+        "thrust_actual_n": 3.741531283570851
+      },
+      {
+        "step": 58,
+        "time_s": 0.24166666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.49850107058074,
+        "thrust_actual_n": 3.7424812885763545
+      },
+      {
+        "step": 59,
+        "time_s": 0.24583333333333332,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.55478653953355,
+        "thrust_actual_n": 3.743324771318384
+      },
+      {
+        "step": 60,
+        "time_s": 0.25,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.60475483844,
+        "thrust_actual_n": 3.7440736658576657
+      },
+      {
+        "step": 61,
+        "time_s": 0.25416666666666665,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.6491149715623,
+        "thrust_actual_n": 3.7447385713779826
+      },
+      {
+        "step": 62,
+        "time_s": 0.2583333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.6884963684419,
+        "thrust_actual_n": 3.745328901044316
+      },
+      {
+        "step": 63,
+        "time_s": 0.2625,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.72345781492606,
+        "thrust_actual_n": 3.7458530143575928
+      },
+      {
+        "step": 64,
+        "time_s": 0.26666666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.7544953818261,
+        "thrust_actual_n": 3.7463183348151543
+      },
+      {
+        "step": 65,
+        "time_s": 0.2708333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.7820494637062,
+        "thrust_actual_n": 3.7467314544921373
+      },
+      {
+        "step": 66,
+        "time_s": 0.275,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.8065110276781,
+        "thrust_actual_n": 3.7470982269849076
+      },
+      {
+        "step": 67,
+        "time_s": 0.2791666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.82822716086497,
+        "thrust_actual_n": 3.7474238500015984
+      },
+      {
+        "step": 68,
+        "time_s": 0.2833333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.84750599524904,
+        "thrust_actual_n": 3.7477129387450576
+      },
+      {
+        "step": 69,
+        "time_s": 0.2875,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.8646210797814,
+        "thrust_actual_n": 3.7479695911085016
+      },
+      {
+        "step": 70,
+        "time_s": 0.2916666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.8798152617902,
+        "thrust_actual_n": 3.7481974455924227
+      },
+      {
+        "step": 71,
+        "time_s": 0.29583333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.8933041327614,
+        "thrust_actual_n": 3.748399732751542
+      },
+      {
+        "step": 72,
+        "time_s": 0.3,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9052790873835,
+        "thrust_actual_n": 3.748579320891522
+      },
+      {
+        "step": 73,
+        "time_s": 0.30416666666666664,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.915910039263,
+        "thrust_actual_n": 3.7487387566557673
+      },
+      {
+        "step": 74,
+        "time_s": 0.30833333333333335,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9253478318417,
+        "thrust_actual_n": 3.748880301071819
+      },
+      {
+        "step": 75,
+        "time_s": 0.3125,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9337263787271,
+        "thrust_actual_n": 3.7490059615637996
+      },
+      {
+        "step": 76,
+        "time_s": 0.31666666666666665,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.94116456380334,
+        "thrust_actual_n": 3.7491175203811786
+      },
+      {
+        "step": 77,
+        "time_s": 0.3208333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9477679280841,
+        "thrust_actual_n": 3.7492165598441014
+      },
+      {
+        "step": 78,
+        "time_s": 0.325,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9536301672429,
+        "thrust_actual_n": 3.749304484761065
+      },
+      {
+        "step": 79,
+        "time_s": 0.32916666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.95883446106865,
+        "thrust_actual_n": 3.7493825423350535
+      },
+      {
+        "step": 80,
+        "time_s": 0.3333333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9634546537102,
+        "thrust_actual_n": 3.7494518398390877
+      },
+      {
+        "step": 81,
+        "time_s": 0.3375,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9675563014572,
+        "thrust_actual_n": 3.7495133603107615
+      },
+      {
+        "step": 82,
+        "time_s": 0.3416666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9711976029235,
+        "thrust_actual_n": 3.749567976487524
+      },
+      {
+        "step": 83,
+        "time_s": 0.3458333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9744302248322,
+        "thrust_actual_n": 3.749616463179684
+      },
+      {
+        "step": 84,
+        "time_s": 0.35,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.97730003511873,
+        "thrust_actual_n": 3.7496595082561073
+      },
+      {
+        "step": 85,
+        "time_s": 0.3541666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.979847753755,
+        "thrust_actual_n": 3.749697722398021
+      },
+      {
+        "step": 86,
+        "time_s": 0.35833333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9821095305282,
+        "thrust_actual_n": 3.7497316477589564
+      },
+      {
+        "step": 87,
+        "time_s": 0.3625,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9841174579732,
+        "thrust_actual_n": 3.7497617656534246
+      },
+      {
+        "step": 88,
+        "time_s": 0.36666666666666664,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.985900026736,
+        "thrust_actual_n": 3.7497885033831784
+      },
+      {
+        "step": 89,
+        "time_s": 0.37083333333333335,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9874825298299,
+        "thrust_actual_n": 3.7498122402977545
+      },
+      {
+        "step": 90,
+        "time_s": 0.375,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9888874215202,
+        "thrust_actual_n": 3.749833313175144
+      },
+      {
+        "step": 91,
+        "time_s": 0.37916666666666665,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.99013463592945,
+        "thrust_actual_n": 3.749852020998823
+      },
+      {
+        "step": 92,
+        "time_s": 0.3833333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.99124186988456,
+        "thrust_actual_n": 3.7498686291988412
+      },
+      {
+        "step": 93,
+        "time_s": 0.3875,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.99222483401826,
+        "thrust_actual_n": 3.749883373417072
+      },
+      {
+        "step": 94,
+        "time_s": 0.39166666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.99309747568867,
+        "thrust_actual_n": 3.749896462850003
+      },
+      {
+        "step": 95,
+        "time_s": 0.3958333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9938721768795,
+        "thrust_actual_n": 3.749908083216446
+      },
+      {
+        "step": 96,
+        "time_s": 0.4,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9945599298891,
+        "thrust_actual_n": 3.749918399392252
+      },
+      {
+        "step": 97,
+        "time_s": 0.4041666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9951704933008,
+        "thrust_actual_n": 3.7499275577493743
+      },
+      {
+        "step": 98,
+        "time_s": 0.4083333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9957125304487,
+        "thrust_actual_n": 3.749935688232467
+      },
+      {
+        "step": 99,
+        "time_s": 0.4125,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.996193732342,
+        "thrust_actual_n": 3.7499429062024454
+      },
+      {
+        "step": 100,
+        "time_s": 0.4166666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9966209267935,
+        "thrust_actual_n": 3.749949314073175
+      },
+      {
+        "step": 101,
+        "time_s": 0.42083333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9970001753001,
+        "thrust_actual_n": 3.749955002764486
+      },
+      {
+        "step": 102,
+        "time_s": 0.425,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.99733685904977,
+        "thrust_actual_n": 3.7499600529921313
+      },
+      {
+        "step": 103,
+        "time_s": 0.42916666666666664,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9976357552756,
+        "thrust_actual_n": 3.749964536412979
+      },
+      {
+        "step": 104,
+        "time_s": 0.43333333333333335,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9979011050405,
+        "thrust_actual_n": 3.749968516641688
+      },
+      {
+        "step": 105,
+        "time_s": 0.4375,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9981366734139,
+        "thrust_actual_n": 3.7499720501532883
+      },
+      {
+        "step": 106,
+        "time_s": 0.44166666666666665,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9983458028947,
+        "thrust_actual_n": 3.7499751870844658
+      },
+      {
+        "step": 107,
+        "time_s": 0.4458333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.998531460838,
+        "thrust_actual_n": 3.7499779719449196
+      },
+      {
+        "step": 108,
+        "time_s": 0.45,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9986962815596,
+        "thrust_actual_n": 3.749980444248889
+      },
+      {
+        "step": 109,
+        "time_s": 0.45416666666666666,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.998842603714,
+        "thrust_actual_n": 3.749982639075804
+      },
+      {
+        "step": 110,
+        "time_s": 0.4583333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9989725034783,
+        "thrust_actual_n": 3.7499845875680107
+      },
+      {
+        "step": 111,
+        "time_s": 0.46249999999999997,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.99908782401076,
+        "thrust_actual_n": 3.7499863173726427
+      },
+      {
+        "step": 112,
+        "time_s": 0.4666666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9991902016038,
+        "thrust_actual_n": 3.7499878530338937
+      },
+      {
+        "step": 113,
+        "time_s": 0.4708333333333333,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9992810889015,
+        "thrust_actual_n": 3.749989216341275
+      },
+      {
+        "step": 114,
+        "time_s": 0.475,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9993617755111,
+        "thrust_actual_n": 3.7499904266387762
+      },
+      {
+        "step": 115,
+        "time_s": 0.4791666666666667,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9994334063014,
+        "thrust_actual_n": 3.749991501099337
+      },
+      {
+        "step": 116,
+        "time_s": 0.48333333333333334,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9994969976476,
+        "thrust_actual_n": 3.7499924549685093
+      },
+      {
+        "step": 117,
+        "time_s": 0.4875,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9995534518525,
+        "thrust_actual_n": 3.7499933017807785
+      },
+      {
+        "step": 118,
+        "time_s": 0.49166666666666664,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9996035699493,
+        "thrust_actual_n": 3.7499940535515965
+      },
+      {
+        "step": 119,
+        "time_s": 0.49583333333333335,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.9996480630678,
+        "thrust_actual_n": 3.7499947209478752
+      },
+      {
+        "step": 120,
+        "time_s": 0.5,
+        "omega_cmd_rad_s": 500.0,
+        "omega_actual_rad_s": 499.99968756252457,
+        "thrust_actual_n": 3.749995313439333
+      }
+    ],
+    "discrete_vs_analytic_max_error_rad_s": 1.1368683772161603e-13,
+    "first_step_actual_rad_s": 56.1172373967111,
+    "instantaneous_jump": false,
+    "response_matches_first_order": true,
+    "thrust_monotonic": true
+  },
+  "saturation": {
+    "requested_command_rad_s": [
+      -100.0,
+      800.0,
+      701.0,
+      -1.0
+    ],
+    "clipped_command_rad_s": [
+      0.0,
+      700.0,
+      700.0,
+      0.0
+    ],
+    "actual_speed_rad_s": [
+      0.0,
+      700.0,
+      700.0,
+      0.0
+    ],
+    "min_speed_rad_s": 0.0,
+    "max_speed_rad_s": 700.0,
+    "max_thrust_per_rotor_n": 7.3500000000000005,
+    "actual_thrust_n": [
+      0.0,
+      7.3500000000000005,
+      7.3500000000000005,
+      0.0
+    ],
+    "speed_within_limits": true,
+    "thrust_within_limits": true,
+    "saturation_pass": true
+  },
+  "coupling": [
+    {
+      "label": "q1_effort_with_rotors_off",
+      "effort_canonical_q1_q2_q3_d": [
+        0.08,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "native_joint_names": [
+        "q2",
+        "q3",
+        "q1",
+        "d",
+        "uav_to_mount",
+        "gripper_mount_fixed"
+      ],
+      "initial_q_native": [
+        -0.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "final_q_native": [
+        0.038493573665618896,
+        0.04569261148571968,
+        0.04569261521100998,
+        0.0017099055694416165
+      ],
+      "joint_response_norm": 0.07523502389056029,
+      "initial_base": {
+        "position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "angular_velocity_world_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite": true
+      },
+      "final_base": {
+        "position_world_m": [
+          -6.224960088729858e-05,
+          1.5389170840429678e-11,
+          0.6016773581504822
+        ],
+        "orientation_world_wxyz": [
+          0.9996462464332581,
+          -5.3302515179431964e-11,
+          -0.026599600911140442,
+          -2.6297644617478966e-10
+        ],
+        "linear_velocity_world_m_s": [
+          -0.0004971498274244368,
+          6.449167588851168e-11,
+          -0.00018487033958081156
+        ],
+        "angular_velocity_world_rad_s": [
+          3.504174034274499e-11,
+          0.01721172221004963,
+          -4.636208639219319e-10
+        ],
+        "finite": true
+      },
+      "base_linear_response_m": 0.0016784890216199444,
+      "base_angular_response_rad": 0.02660195312788003,
+      "rotor_command_all_zero": true,
+      "python_arm_integrator_disabled": true,
+      "manual_reaction_disabled": true
+    },
+    {
+      "label": "p_effort_with_rotors_off",
+      "effort_canonical_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.03
+      ],
+      "native_joint_names": [
+        "q2",
+        "q3",
+        "q1",
+        "d",
+        "uav_to_mount",
+        "gripper_mount_fixed"
+      ],
+      "initial_q_native": [
+        -0.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "final_q_native": [
+        -4.98006701678286e-17,
+        2.592031197579098e-16,
+        -4.511014994897217e-18,
+        0.0339818000793457
+      ],
+      "joint_response_norm": 0.0339818000793457,
+      "initial_base": {
+        "position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "angular_velocity_world_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite": true
+      },
+      "final_base": {
+        "position_world_m": [
+          -0.002471432089805603,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          3.237228380802383e-24,
+          2.7155843201748367e-17,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          -0.009803942404687405,
+          -2.5785965665303835e-38,
+          -5.806771901221996e-16
+        ],
+        "angular_velocity_world_rad_s": [
+          -6.092207110231778e-25,
+          -6.379144462691959e-15,
+          0.0
+        ],
+        "finite": true
+      },
+      "base_linear_response_m": 0.002471432089805603,
+      "base_angular_response_rad": 2.715584320174856e-17,
+      "rotor_command_all_zero": true,
+      "python_arm_integrator_disabled": true,
+      "manual_reaction_disabled": true
+    }
+  ],
+  "stability": [
+    {
+      "label": "rotors_off_gravity_off",
+      "steps": 5000,
+      "gravity_m_s2": 0.0,
+      "command_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pulse_steps": 0,
+      "final": {
+        "position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "angular_velocity_world_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite": true
+      },
+      "max_linear_speed_m_s": 0.0,
+      "max_angular_speed_rad_s": 0.0,
+      "max_position_norm_m": 0.6000000238418579,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "open_loop_free_flight_expected": false,
+      "physics_explosion": false,
+      "stable": true
+    },
+    {
+      "label": "hover_trim_gravity_on",
+      "steps": 5000,
+      "gravity_m_s2": 9.81,
+      "command_rad_s": [
+        655.7458713346359,
+        655.7458713346359,
+        330.979382651414,
+        330.97938265141397
+      ],
+      "pulse_steps": 0,
+      "final": {
+        "position_world_m": [
+          161.38023376464844,
+          -40.48938751220703,
+          2340.117431640625
+        ],
+        "orientation_world_wxyz": [
+          -0.19910818338394165,
+          -0.862760066986084,
+          -0.14998415112495422,
+          0.4398929178714752
+        ],
+        "linear_velocity_world_m_s": [
+          9.123665809631348,
+          -5.354725360870361,
+          214.35826110839844
+        ],
+        "angular_velocity_world_rad_s": [
+          1.3491778373718262,
+          6.485393524169922,
+          -2.3990139961242676
+        ],
+        "finite": true
+      },
+      "max_linear_speed_m_s": 214.61914748435777,
+      "max_angular_speed_rad_s": 10.326502611474977,
+      "max_position_norm_m": 2346.024843052469,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "open_loop_free_flight_expected": true,
+      "physics_explosion": false,
+      "stable": true
+    },
+    {
+      "label": "rrrp_neutral_rotor_trim",
+      "steps": 5000,
+      "gravity_m_s2": 9.81,
+      "command_rad_s": [
+        655.7458713346359,
+        655.7458713346359,
+        330.979382651414,
+        330.97938265141397
+      ],
+      "pulse_steps": 0,
+      "final": {
+        "position_world_m": [
+          161.38023376464844,
+          -40.48938751220703,
+          2340.117431640625
+        ],
+        "orientation_world_wxyz": [
+          -0.19910818338394165,
+          -0.862760066986084,
+          -0.14998415112495422,
+          0.4398929178714752
+        ],
+        "linear_velocity_world_m_s": [
+          9.123665809631348,
+          -5.354725360870361,
+          214.35826110839844
+        ],
+        "angular_velocity_world_rad_s": [
+          1.3491778373718262,
+          6.485393524169922,
+          -2.3990139961242676
+        ],
+        "finite": true
+      },
+      "max_linear_speed_m_s": 214.61914748435777,
+      "max_angular_speed_rad_s": 10.326502611474977,
+      "max_position_norm_m": 2346.024843052469,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "open_loop_free_flight_expected": true,
+      "physics_explosion": false,
+      "stable": true
+    },
+    {
+      "label": "small_rotor_pulses",
+      "steps": 5000,
+      "gravity_m_s2": 0.0,
+      "command_rad_s": [
+        180.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pulse_steps": 60,
+      "final": {
+        "position_world_m": [
+          -0.0010230056941509247,
+          0.03330853581428528,
+          1.9248260259628296
+        ],
+        "orientation_world_wxyz": [
+          0.8357007503509521,
+          -0.25407248735427856,
+          0.2602582275867462,
+          -0.41148141026496887
+        ],
+        "linear_velocity_world_m_s": [
+          -0.0011468154843896627,
+          -0.0029737462755292654,
+          0.06913405656814575
+        ],
+        "angular_velocity_world_rad_s": [
+          0.23137447237968445,
+          -0.2189997136592865,
+          -0.05459979921579361
+        ],
+        "finite": true
+      },
+      "max_linear_speed_m_s": 0.0700971789326191,
+      "max_angular_speed_rad_s": 0.9362491522844056,
+      "max_position_norm_m": 1.925114473303497,
+      "nan_count": 0,
+      "inf_count": 0,
+      "native_exit": false,
+      "open_loop_free_flight_expected": false,
+      "physics_explosion": false,
+      "stable": true
+    }
+  ],
+  "audit": {
+    "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+    "direct_world_force_command": false,
+    "direct_world_torque_command": false,
+    "legacy_direct_wrench_path_present": false,
+    "legacy_direct_wrench_active_in_r5": false,
+    "rotor_local_force_api": "apply_forces_and_torques_at_pos(..., positions=position_body, is_global=False)",
+    "rotor_local_axis_force": true,
+    "rotor_position_force_application": true,
+    "python_arm_integrator_present": false,
+    "manual_reaction_present": false,
+    "manual_arm_gravity_present": false,
+    "root_runtime_state_write": false,
+    "joint_runtime_position_write": false,
+    "joint_runtime_velocity_write": false,
+    "active_path_audit_pass": true
+  },
+  "design_manifest": {
+    "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+    "source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\configs\\s4\\rrrp_quadrotor_design.yaml",
+    "configuration": "X",
+    "rotor_count": 4,
+    "rotors": [
+      {
+        "id": "R1",
+        "position_body_m": [
+          0.1555634919,
+          0.1555634919,
+          0.0
+        ],
+        "axis_body": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "spin_direction": 1,
+        "kf": 1.5e-05,
+        "km": 1.5e-07
+      },
+      {
+        "id": "R2",
+        "position_body_m": [
+          0.1555634919,
+          -0.1555634919,
+          0.0
+        ],
+        "axis_body": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "spin_direction": -1,
+        "kf": 1.5e-05,
+        "km": 1.5e-07
+      },
+      {
+        "id": "R3",
+        "position_body_m": [
+          -0.1555634919,
+          -0.1555634919,
+          0.0
+        ],
+        "axis_body": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "spin_direction": 1,
+        "kf": 1.5e-05,
+        "km": 1.5e-07
+      },
+      {
+        "id": "R4",
+        "position_body_m": [
+          -0.1555634919,
+          0.1555634919,
+          0.0
+        ],
+        "axis_body": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "spin_direction": -1,
+        "kf": 1.5e-05,
+        "km": 1.5e-07
+      }
+    ],
+    "active_manipulator": "RRRP",
+    "rrrp_dof": 4,
+    "rrrp_revolute_dof": 3,
+    "rrrp_prismatic_dof": 1,
+    "rrrp_arm_mass_kg": 0.63,
+    "rrrp_max_reach_m": 0.47,
+    "rrrp_p_stroke_m": 0.08,
+    "parameter_provenance": "ENGINEERING_NOMINAL",
+    "provisional": true,
+    "rotor_point_thrust_model": true,
+    "motor_dynamics": true,
+    "rotor_reaction_torque": true,
+    "propeller_blade_rigid_dynamics": false,
+    "wake_model": false,
+    "ground_effect": false,
+    "aerodynamic_interference": false,
+    "r4_asset_untouched": true
+  },
+  "rotor_manifest": {
+    "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+    "source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\configs\\s4\\rrrp_quadrotor_design.yaml",
+    "kf_n_per_rad_s2": 1.5e-05,
+    "km_nm_per_rad_s2": 1.5e-07,
+    "min_speed_rad_s": 0.0,
+    "max_speed_rad_s": 700.0,
+    "motor_time_constant_s": 0.035,
+    "parameter_provenance": "ENGINEERING_NOMINAL",
+    "hardware_parameter_validated": false,
+    "provisional": true,
+    "hover_speed_range_rad_s": [
+      655.7458713346359,
+      655.7458713346359,
+      330.979382651414,
+      330.97938265141397
+    ],
+    "max_thrust_per_rotor_n": 7.3500000000000005,
+    "thrust_to_weight_max": 1.8163284234733366
+  },
+  "allocation_manifest": {
+    "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+    "configuration": "X",
+    "row_order": [
+      "Fz",
+      "tau_x",
+      "tau_y",
+      "tau_z"
+    ],
+    "column_order": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "wrench_matrix_6x4": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.1555634919,
+        -0.1555634919,
+        -0.1555634919,
+        0.1555634919
+      ],
+      [
+        -0.1555634919,
+        -0.1555634919,
+        0.1555634919,
+        0.1555634919
+      ],
+      [
+        0.009999999999999998,
+        -0.009999999999999998,
+        0.009999999999999998,
+        -0.009999999999999998
+      ]
+    ],
+    "allocation_matrix_4x4": [
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.1555634919,
+        -0.1555634919,
+        -0.1555634919,
+        0.1555634919
+      ],
+      [
+        -0.1555634919,
+        -0.1555634919,
+        0.1555634919,
+        0.1555634919
+      ],
+      [
+        0.009999999999999998,
+        -0.009999999999999998,
+        0.009999999999999998,
+        -0.009999999999999998
+      ]
+    ],
+    "rank": 4,
+    "rank_pass": true,
+    "derivation": "cross(position_body, axis_body) plus spin_direction*km/kf*axis_body"
+  },
+  "signs": {
+    "collective": true,
+    "roll": true,
+    "pitch": true,
+    "yaw": true
+  },
+  "hard_pass": true
+}

@@ -1,0 +1,89 @@
+{
+  "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+  "source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\configs\\s4\\rrrp_quadrotor_design.yaml",
+  "configuration": "X",
+  "rotor_count": 4,
+  "rotors": [
+    {
+      "id": "R1",
+      "position_body_m": [
+        0.1555634919,
+        0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": 1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R2",
+      "position_body_m": [
+        0.1555634919,
+        -0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": -1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R3",
+      "position_body_m": [
+        -0.1555634919,
+        -0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": 1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    },
+    {
+      "id": "R4",
+      "position_body_m": [
+        -0.1555634919,
+        0.1555634919,
+        0.0
+      ],
+      "axis_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spin_direction": -1,
+      "kf": 1.5e-05,
+      "km": 1.5e-07
+    }
+  ],
+  "active_manipulator": "RRRP",
+  "rrrp_dof": 4,
+  "rrrp_revolute_dof": 3,
+  "rrrp_prismatic_dof": 1,
+  "rrrp_arm_mass_kg": 0.63,
+  "rrrp_max_reach_m": 0.47,
+  "rrrp_p_stroke_m": 0.08,
+  "parameter_provenance": "ENGINEERING_NOMINAL",
+  "provisional": true,
+  "rotor_point_thrust_model": true,
+  "motor_dynamics": true,
+  "rotor_reaction_torque": true,
+  "propeller_blade_rigid_dynamics": false,
+  "wake_model": false,
+  "ground_effect": false,
+  "aerodynamic_interference": false,
+  "r4_asset_untouched": true
+}

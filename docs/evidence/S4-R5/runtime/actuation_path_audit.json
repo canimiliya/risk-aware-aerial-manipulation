@@ -1,0 +1,17 @@
+{
+  "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+  "direct_world_force_command": false,
+  "direct_world_torque_command": false,
+  "legacy_direct_wrench_path_present": false,
+  "legacy_direct_wrench_active_in_r5": false,
+  "rotor_local_force_api": "apply_forces_and_torques_at_pos(..., positions=position_body, is_global=False)",
+  "rotor_local_axis_force": true,
+  "rotor_position_force_application": true,
+  "python_arm_integrator_present": false,
+  "manual_reaction_present": false,
+  "manual_arm_gravity_present": false,
+  "root_runtime_state_write": false,
+  "joint_runtime_position_write": false,
+  "joint_runtime_velocity_write": false,
+  "active_path_audit_pass": true
+}

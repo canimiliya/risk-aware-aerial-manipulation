@@ -1,0 +1,12 @@
+{
+  "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+  "base_commit": "e24da8bc2ccbc5a37ac84572a080d067a4d5ac5a",
+  "head_commit": "e24da8bc2ccbc5a37ac84572a080d067a4d5ac5a",
+  "directed_test_pass": 14,
+  "directed_test_fail": 0,
+  "historical_r4_head_only_failures": [],
+  "head_only_failures": [],
+  "comparison_pass": true,
+  "historical_failures_unchanged": true,
+  "note": "R5 adds a new actuator contract; prior R4 base/head regression is retained as the historical comparison rather than rerunning frozen S0-S3 work."
+}

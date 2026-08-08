@@ -1,0 +1,20 @@
+{
+  "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+  "source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\configs\\s4\\rrrp_quadrotor_design.yaml",
+  "kf_n_per_rad_s2": 1.5e-05,
+  "km_nm_per_rad_s2": 1.5e-07,
+  "min_speed_rad_s": 0.0,
+  "max_speed_rad_s": 700.0,
+  "motor_time_constant_s": 0.035,
+  "parameter_provenance": "ENGINEERING_NOMINAL",
+  "hardware_parameter_validated": false,
+  "provisional": true,
+  "hover_speed_range_rad_s": [
+    655.7458713346359,
+    655.7458713346359,
+    330.979382651414,
+    330.97938265141397
+  ],
+  "max_thrust_per_rotor_n": 7.3500000000000005,
+  "thrust_to_weight_max": 1.8163284234733366
+}

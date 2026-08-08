@@ -1,0 +1,54 @@
+schema_version: 1
+task: S4-R5-QUADROTOR-ROTOR-ACTUATION-R1
+active_manipulator: RRRP
+rrrp_design_source: robot_assets/rrrp/rrrp_design.yaml
+parameter_provenance: ENGINEERING_NOMINAL
+provisional: true
+units:
+  length: m
+  mass: kg
+  speed: rad/s
+  thrust: N
+  torque: N*m
+  thrust_coefficient: N/(rad/s)^2
+  moment_coefficient: N*m/(rad/s)^2
+  time: s
+quadrotor:
+  configuration: X
+  arm_radius: 0.22
+  rotor_axis_body: [0.0, 0.0, 1.0]
+  max_speed: 700.0
+  min_speed: 0.0
+  thrust_coefficient_kf: 0.000015
+  moment_coefficient_km: 0.00000015
+  motor_time_constant: 0.035
+  spin_direction_convention: "+1=CCW reaction torque about +axis; -1=CW"
+  rotors:
+    - id: R1
+      position_body: [0.1555634919, 0.1555634919, 0.0]
+      axis_body: [0.0, 0.0, 1.0]
+      spin_direction: 1
+    - id: R2
+      position_body: [0.1555634919, -0.1555634919, 0.0]
+      axis_body: [0.0, 0.0, 1.0]
+      spin_direction: -1
+    - id: R3
+      position_body: [-0.1555634919, -0.1555634919, 0.0]
+      axis_body: [0.0, 0.0, 1.0]
+      spin_direction: 1
+    - id: R4
+      position_body: [-0.1555634919, 0.1555634919, 0.0]
+      axis_body: [0.0, 0.0, 1.0]
+      spin_direction: -1
+simulation:
+  physics_dt: 0.004166666666666667
+  gravity_m_s2: 9.81
+  pulse_speed_rad_s: 180.0
+  unit_test_steps: 40
+  single_rotor_pulse_steps: 40
+  coupling_steps: 120
+  stability_steps: 5000
+  collective_thrust_per_rotor_n: 0.80
+  roll_pitch_yaw_test_torque: [0.06, 0.06, 0.02]
+  q1_coupling_effort_nm: 0.08
+  p_coupling_effort_n: 0.03

@@ -1,0 +1,173 @@
+{
+  "task": "S4-R5-QUADROTOR-ROTOR-ACTUATION-R1",
+  "cases": [
+    {
+      "label": "q1_effort_with_rotors_off",
+      "effort_canonical_q1_q2_q3_d": [
+        0.08,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "native_joint_names": [
+        "q2",
+        "q3",
+        "q1",
+        "d",
+        "uav_to_mount",
+        "gripper_mount_fixed"
+      ],
+      "initial_q_native": [
+        -0.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "final_q_native": [
+        0.038493573665618896,
+        0.04569261148571968,
+        0.04569261521100998,
+        0.0017099055694416165
+      ],
+      "joint_response_norm": 0.07523502389056029,
+      "initial_base": {
+        "position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "angular_velocity_world_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite": true
+      },
+      "final_base": {
+        "position_world_m": [
+          -6.224960088729858e-05,
+          1.5389170840429678e-11,
+          0.6016773581504822
+        ],
+        "orientation_world_wxyz": [
+          0.9996462464332581,
+          -5.3302515179431964e-11,
+          -0.026599600911140442,
+          -2.6297644617478966e-10
+        ],
+        "linear_velocity_world_m_s": [
+          -0.0004971498274244368,
+          6.449167588851168e-11,
+          -0.00018487033958081156
+        ],
+        "angular_velocity_world_rad_s": [
+          3.504174034274499e-11,
+          0.01721172221004963,
+          -4.636208639219319e-10
+        ],
+        "finite": true
+      },
+      "base_linear_response_m": 0.0016784890216199444,
+      "base_angular_response_rad": 0.02660195312788003,
+      "rotor_command_all_zero": true,
+      "python_arm_integrator_disabled": true,
+      "manual_reaction_disabled": true
+    },
+    {
+      "label": "p_effort_with_rotors_off",
+      "effort_canonical_q1_q2_q3_d": [
+        0.0,
+        0.0,
+        0.0,
+        0.03
+      ],
+      "native_joint_names": [
+        "q2",
+        "q3",
+        "q1",
+        "d",
+        "uav_to_mount",
+        "gripper_mount_fixed"
+      ],
+      "initial_q_native": [
+        -0.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "final_q_native": [
+        -4.98006701678286e-17,
+        2.592031197579098e-16,
+        -4.511014994897217e-18,
+        0.0339818000793457
+      ],
+      "joint_response_norm": 0.0339818000793457,
+      "initial_base": {
+        "position_world_m": [
+          0.0,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "angular_velocity_world_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite": true
+      },
+      "final_base": {
+        "position_world_m": [
+          -0.002471432089805603,
+          0.0,
+          0.6000000238418579
+        ],
+        "orientation_world_wxyz": [
+          1.0,
+          3.237228380802383e-24,
+          2.7155843201748367e-17,
+          0.0
+        ],
+        "linear_velocity_world_m_s": [
+          -0.009803942404687405,
+          -2.5785965665303835e-38,
+          -5.806771901221996e-16
+        ],
+        "angular_velocity_world_rad_s": [
+          -6.092207110231778e-25,
+          -6.379144462691959e-15,
+          0.0
+        ],
+        "finite": true
+      },
+      "base_linear_response_m": 0.002471432089805603,
+      "base_angular_response_rad": 2.715584320174856e-17,
+      "rotor_command_all_zero": true,
+      "python_arm_integrator_disabled": true,
+      "manual_reaction_disabled": true
+    }
+  ],
+  "rrrp_rotor_coupling_valid": true,
+  "rotor_controller_present": false
+}
