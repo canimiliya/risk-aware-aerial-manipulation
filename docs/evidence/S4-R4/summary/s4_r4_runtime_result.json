@@ -6768,8 +6768,171 @@
       "readback_d_m": 0.0,
       "finite": true,
       "within_limit": true,
-      "self_collision_check": "not_run_contact_dynamics_out_of_scope",
-      "mass_com_readback": "not separately exposed; USD mass manifest is authoritative",
+      "mass_com_readback": {
+        "requested_d_m": 0.0,
+        "body_names_from_view_expression": [
+          "uav_base",
+          "arm_mount",
+          "link1",
+          "link2",
+          "link3",
+          "slider",
+          "gripper_mount"
+        ],
+        "body_masses_kg": [
+          0.9800000190734863,
+          0.03999999910593033,
+          0.2199999988079071,
+          0.17000000178813934,
+          0.11999998986721039,
+          0.059999994933605194,
+          0.059999994933605194
+        ],
+        "slider_mass_kg": 0.059999994933605194,
+        "slider_mass_expected_kg": 0.06,
+        "slider_mass_correct": true,
+        "slider_com_world_m": [
+          0.42999998569488523,
+          0.0,
+          0.6000000238418579
+        ],
+        "system_com_world_m": [
+          0.09239392992980042,
+          0.0,
+          0.6000000238418579
+        ],
+        "body_com_world_m": {
+          "uav_base": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "arm_mount": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "link1": [
+            0.08,
+            0.0,
+            0.6000000238418579
+          ],
+          "link2": [
+            0.22499999642372132,
+            0.0,
+            0.6000000238418579
+          ],
+          "link3": [
+            0.33999996185302733,
+            0.0,
+            0.6000000238418579
+          ],
+          "slider": [
+            0.42999998569488523,
+            0.0,
+            0.6000000238418579
+          ],
+          "gripper_mount": [
+            0.49999996900558474,
+            0.0,
+            0.6000000238418579
+          ]
+        },
+        "aabb_pair_checks": [
+          {
+            "pair": [
+              "link1",
+              "link2"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499999642372131,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "link3"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.15999996185302734,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.26999998569488526,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.3599999690055847,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "link3"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499996542930604,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.12499998927116396,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.21499997258186337,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "slider"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.010000023841857941,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.10000000715255736,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "slider",
+              "gripper_mount"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.009999983310699456,
+            "non_adjacent_clear": true
+          }
+        ],
+        "non_adjacent_self_clear": true,
+        "contact_dynamics_validated": false
+      },
       "steps": 60
     },
     {
@@ -6783,8 +6946,171 @@
       "readback_d_m": 0.03999999910593033,
       "finite": true,
       "within_limit": true,
-      "self_collision_check": "not_run_contact_dynamics_out_of_scope",
-      "mass_com_readback": "not separately exposed; USD mass manifest is authoritative",
+      "mass_com_readback": {
+        "requested_d_m": 0.04,
+        "body_names_from_view_expression": [
+          "uav_base",
+          "arm_mount",
+          "link1",
+          "link2",
+          "link3",
+          "slider",
+          "gripper_mount"
+        ],
+        "body_masses_kg": [
+          0.9800000190734863,
+          0.03999999910593033,
+          0.2199999988079071,
+          0.17000000178813934,
+          0.11999998986721039,
+          0.059999994933605194,
+          0.059999994933605194
+        ],
+        "slider_mass_kg": 0.059999994933605194,
+        "slider_mass_expected_kg": 0.06,
+        "slider_mass_correct": true,
+        "slider_com_world_m": [
+          0.46999997735023497,
+          0.0,
+          0.6000000238418579
+        ],
+        "system_com_world_m": [
+          0.09530302107271225,
+          0.0,
+          0.6000000238418579
+        ],
+        "body_com_world_m": {
+          "uav_base": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "arm_mount": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "link1": [
+            0.08,
+            0.0,
+            0.6000000238418579
+          ],
+          "link2": [
+            0.22499999642372132,
+            0.0,
+            0.6000000238418579
+          ],
+          "link3": [
+            0.33999996185302733,
+            0.0,
+            0.6000000238418579
+          ],
+          "slider": [
+            0.46999997735023497,
+            0.0,
+            0.6000000238418579
+          ],
+          "gripper_mount": [
+            0.5399999904632569,
+            0.0,
+            0.6000000238418579
+          ]
+        },
+        "aabb_pair_checks": [
+          {
+            "pair": [
+              "link1",
+              "link2"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499999642372131,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "link3"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.15999996185302734,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.309999977350235,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.3999999904632568,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "link3"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499996542930604,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.1649999809265137,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.2549999940395355,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "slider"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.05000001549720767,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.14000002861022948,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "slider",
+              "gripper_mount"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.010000013113021844,
+            "non_adjacent_clear": true
+          }
+        ],
+        "non_adjacent_self_clear": true,
+        "contact_dynamics_validated": false
+      },
       "steps": 60
     },
     {
@@ -6798,8 +7124,171 @@
       "readback_d_m": 0.07999999821186066,
       "finite": true,
       "within_limit": true,
-      "self_collision_check": "not_run_contact_dynamics_out_of_scope",
-      "mass_com_readback": "not separately exposed; USD mass manifest is authoritative",
+      "mass_com_readback": {
+        "requested_d_m": 0.08,
+        "body_names_from_view_expression": [
+          "uav_base",
+          "arm_mount",
+          "link1",
+          "link2",
+          "link3",
+          "slider",
+          "gripper_mount"
+        ],
+        "body_masses_kg": [
+          0.9800000190734863,
+          0.03999999910593033,
+          0.2199999988079071,
+          0.17000000178813934,
+          0.11999998986721039,
+          0.059999994933605194,
+          0.059999994933605194
+        ],
+        "slider_mass_kg": 0.059999994933605194,
+        "slider_mass_expected_kg": 0.06,
+        "slider_mass_correct": true,
+        "slider_com_world_m": [
+          0.5099999988079071,
+          0.0,
+          0.6000000238418579
+        ],
+        "system_com_world_m": [
+          0.09821211329934483,
+          0.0,
+          0.6000000238418579
+        ],
+        "body_com_world_m": {
+          "uav_base": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "arm_mount": [
+            0.0,
+            0.0,
+            0.6000000238418579
+          ],
+          "link1": [
+            0.08,
+            0.0,
+            0.6000000238418579
+          ],
+          "link2": [
+            0.22499999642372132,
+            0.0,
+            0.6000000238418579
+          ],
+          "link3": [
+            0.33999996185302733,
+            0.0,
+            0.6000000238418579
+          ],
+          "slider": [
+            0.5099999988079071,
+            0.0,
+            0.6000000238418579
+          ],
+          "gripper_mount": [
+            0.580000011920929,
+            0.0,
+            0.6000000238418579
+          ]
+        },
+        "aabb_pair_checks": [
+          {
+            "pair": [
+              "link1",
+              "link2"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499999642372131,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "link3"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.15999996185302734,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.3499999988079071,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link1",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.4400000119209289,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "link3"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.01499996542930604,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "slider"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.2050000023841858,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link2",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.2950000154972076,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "slider"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.09000003695487979,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "link3",
+              "gripper_mount"
+            ],
+            "adjacent": false,
+            "aabb_gap_m": 0.1800000500679016,
+            "non_adjacent_clear": true
+          },
+          {
+            "pair": [
+              "slider",
+              "gripper_mount"
+            ],
+            "adjacent": true,
+            "aabb_gap_m": 0.010000013113021788,
+            "non_adjacent_clear": true
+          }
+        ],
+        "non_adjacent_self_clear": true,
+        "contact_dynamics_validated": false
+      },
       "steps": 60
     }
   ],

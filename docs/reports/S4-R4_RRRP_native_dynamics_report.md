@@ -19,7 +19,7 @@ R3 的 Delta 权威 USD 不再修复。本轮建立了独立 RRRP 开链物理�
 - q1/q2/q3/P：仅通过 `ArticulationAction(joint_efforts=...)` 输入；状态由 PhysX readback 获得。
 - Python arm integrator、manual reaction、manual arm gravity、reset 后 root/joint pose/velocity 写入：均为 false。
 - floating base 在 q1 与 P effort pulse 下均发生自然位姿响应；代码没有人工 reaction call。
-- P=0、middle、max 三个 reset-only default/readback case 均在行程内；接触动力学仍未验证。
+- P=0、middle、max 三个 reset-only default/readback case 均在行程内；PhysX 质量 readback 显示 slider 为 `0.06 kg`，slider/system COM 均随 d 移动，非相邻盒体 AABB 无自穿透；接触动力学仍未验证。
 - 零重力、零外力、逐刚体线速度/质量审计的最大相对线动量漂移：`2.2777646545515437e-06`。
 
 ## 回归与边界
@@ -121,7 +121,7 @@ false
 
 ## 现在真正解决了什么？
 
-解决了：独立 RRRP 物理资产、PhysX 原生 4-DOF articulation、effort-only 输入、solver readback、浮动基座耦合、P 行程验证和运行时防作弊证据。
+解决了：独立 RRRP 物理资产、PhysX 原生 4-DOF articulation、effort-only 输入、solver readback、浮动基座耦合、P 行程/质量/质心/几何净空验证和运行时防作弊证据。
 
 ## 还有什么？
 

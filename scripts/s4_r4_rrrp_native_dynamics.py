@@ -126,6 +126,89 @@ def _joint_index(art: Any, name: str) -> int:
     raise RuntimeError(f"joint {name} is absent from native metadata")
 
 
+def _quat_rotate_wxyz(quaternion: Any, vector: Any) -> np.ndarray:
+    """Rotate a local vector using Isaac Sim's wxyz quaternion readback."""
+    w, x, y, z = np.asarray(quaternion, dtype=float).reshape(4)
+    qv = np.asarray(vector, dtype=float).reshape(3)
+    q_xyz = np.asarray([x, y, z], dtype=float)
+    return qv + 2.0 * np.cross(q_xyz, np.cross(q_xyz, qv) + w * qv)
+
+
+def _prismatic_geometry_contract(design: dict[str, Any], state: dict[str, Any], masses: np.ndarray, requested_d: float) -> dict[str, Any]:
+    """Validate slider mass/COM motion and non-adjacent box clearance from PhysX poses."""
+    g = design["geometry"]
+    names = ["uav_base", "arm_mount", "link1", "link2", "link3", "slider", "gripper_mount"]
+    dimensions = {
+        "link1": [float(g["L1"]), float(g["link_cross_section"]), float(g["link_cross_section"])],
+        "link2": [float(g["L2"]), float(g["link_cross_section"]), float(g["link_cross_section"])],
+        "link3": [float(g["L3"]), float(g["link_cross_section"]), float(g["link_cross_section"])],
+        "slider": [float(g["p_stroke"]), float(g["link_cross_section"]) * 0.8, float(g["link_cross_section"]) * 0.8],
+        "gripper_mount": [float(g["gripper_mount_length"]), float(g["gripper_mount_width"]), float(g["gripper_mount_height"])],
+    }
+    local_com = {
+        "uav_base": [0.0, 0.0, 0.0],
+        "arm_mount": [0.0, 0.0, 0.0],
+        "link1": [float(g["L1"]) / 2.0, 0.0, 0.0],
+        "link2": [float(g["L2"]) / 2.0, 0.0, 0.0],
+        "link3": [float(g["L3"]) / 2.0, 0.0, 0.0],
+        "slider": [float(g["p_stroke"]) / 2.0, 0.0, 0.0],
+        "gripper_mount": [float(g["gripper_mount_length"]) / 2.0, 0.0, 0.0],
+    }
+    positions = np.asarray(state["link_pose_positions"], dtype=float)
+    orientations = np.asarray(state["link_pose_orientations_wxyz"], dtype=float)
+    body_count = min(len(names), len(masses), len(positions), len(orientations))
+    body_coms = []
+    for index in range(body_count):
+        name = names[index]
+        body_coms.append(positions[index] + _quat_rotate_wxyz(orientations[index], local_com.get(name, [0.0, 0.0, 0.0])))
+    body_coms_array = np.asarray(body_coms, dtype=float)
+    mass_sum = float(np.sum(masses[:body_count]))
+    system_com = np.sum(masses[:body_count, None] * body_coms_array, axis=0) / mass_sum
+    slider_index = names.index("slider")
+    slider_mass = float(masses[slider_index])
+    slider_com = body_coms_array[slider_index]
+
+    # Geometry is intentionally non-colliding in R4.  This is a kinematic
+    # AABB audit of the authored boxes, not a contact-dynamics claim.
+    aabbs = {}
+    for index, name in enumerate(names[2:]):
+        body_index = index + 2
+        dims = np.asarray(dimensions[name], dtype=float)
+        rotation = np.asarray(orientations[body_index], dtype=float)
+        half_extent = 0.5 * (np.abs(np.array([
+            [1.0 - 2.0 * (rotation[2] ** 2 + rotation[3] ** 2), 2.0 * (rotation[1] * rotation[2] - rotation[0] * rotation[3]), 2.0 * (rotation[1] * rotation[3] + rotation[0] * rotation[2])],
+            [2.0 * (rotation[1] * rotation[2] + rotation[0] * rotation[3]), 1.0 - 2.0 * (rotation[1] ** 2 + rotation[3] ** 2), 2.0 * (rotation[2] * rotation[3] - rotation[0] * rotation[1])],
+            [2.0 * (rotation[1] * rotation[3] - rotation[0] * rotation[2]), 2.0 * (rotation[2] * rotation[3] + rotation[0] * rotation[1]), 1.0 - 2.0 * (rotation[1] ** 2 + rotation[2] ** 2)],
+        ], dtype=float)) @ dims)
+        center = positions[body_index]
+        aabbs[name] = (center - half_extent, center + half_extent)
+    pairs = []
+    arm_names = ["link1", "link2", "link3", "slider", "gripper_mount"]
+    for left_index, left in enumerate(arm_names):
+        for right in arm_names[left_index + 1:]:
+            left_min, left_max = aabbs[left]
+            right_min, right_max = aabbs[right]
+            gaps = np.maximum(left_min - right_max, right_min - left_max)
+            gap = float(np.max(gaps)) if np.any(gaps > 0.0) else 0.0
+            adjacent = abs(arm_names.index(left) - arm_names.index(right)) == 1
+            pairs.append({"pair": [left, right], "adjacent": adjacent, "aabb_gap_m": gap, "non_adjacent_clear": bool(adjacent or gap > 0.0)})
+    non_adjacent = [item for item in pairs if not item["adjacent"]]
+    return {
+        "requested_d_m": float(requested_d),
+        "body_names_from_view_expression": names,
+        "body_masses_kg": masses[:body_count].tolist(),
+        "slider_mass_kg": slider_mass,
+        "slider_mass_expected_kg": float(design["mass_properties"]["links"]["slider"]["structural_mass"]),
+        "slider_mass_correct": bool(abs(slider_mass - float(design["mass_properties"]["links"]["slider"]["structural_mass"])) < 1.0e-5),
+        "slider_com_world_m": slider_com.tolist(),
+        "system_com_world_m": system_com.tolist(),
+        "body_com_world_m": {name: body_coms_array[index].tolist() for index, name in enumerate(names[:body_count])},
+        "aabb_pair_checks": pairs,
+        "non_adjacent_self_clear": bool(non_adjacent and all(item["non_adjacent_clear"] for item in non_adjacent)),
+        "contact_dynamics_validated": False,
+    }
+
+
 def _run_pulse(world: Any, art: Any, body_view: Any, label: str, effort: list[float], steps: int, pulse_steps: int, *, record_momentum: bool, root_response: bool) -> dict[str, Any]:
     world.reset()
     for _ in range(4):
@@ -162,7 +245,7 @@ def _run_pulse(world: Any, art: Any, body_view: Any, label: str, effort: list[fl
     return {"label": label, "steps": steps, "pulse_steps": pulse_steps, "effort_command_canonical_q1_q2_q3_d": effort, "native_joint_names": _metadata(art)["joint_names"], "target_joint": target_name, "target_native_index": target_index, "initial": initial, "final": final, "samples": samples, "momentum_samples": momenta, "momentum_initial": initial_momentum, "linear_momentum_max_drift_kg_m_s": drift, "linear_momentum_relative_drift": relative, "native_exit": False, "nan_count": 0 if all(item["finite"] for item in samples) else 1, "inf_count": 0 if all(item["finite"] for item in samples) else 1, "q_response_norm": abs(float(final["q"][target_index]) - float(initial["q"][target_index])), "dq_response_norm": abs(float(final["dq"][target_index])), "root_displacement_m": _norm(np.asarray(final.get("root_position_m", [0.0, 0.0, 0.0])) - np.asarray(initial.get("root_position_m", [0.0, 0.0, 0.0]))), "root_rotation_readback_delta": _norm(np.asarray(final.get("root_orientation_wxyz", [1.0, 0.0, 0.0, 0.0])) - np.asarray(initial.get("root_orientation_wxyz", [1.0, 0.0, 0.0, 0.0]))) if root_response else None}
 
 
-def _run_prismatic_default(world: Any, art: Any, body_view: Any, value: float, index: int, steps: int) -> dict[str, Any]:
+def _run_prismatic_default(world: Any, art: Any, body_view: Any, design: dict[str, Any], value: float, index: int, steps: int) -> dict[str, Any]:
     # This is a reset-only default state write. No joint setter is used and
     # no state is written after world.reset().
     default = np.zeros(4, dtype=np.float32)
@@ -173,7 +256,9 @@ def _run_prismatic_default(world: Any, art: Any, body_view: Any, value: float, i
         art.apply_action(_make_effort_action(_canonical_to_native(art, [0.0, 0.0, 0.0, 0.0]).tolist()))
         world.step(render=False)
     state = _state(art, body_view=body_view)
-    return {"requested_d_m": value, "readback_q": state["q"], "readback_d_m": float(state["q"][index]), "finite": state["finite"], "within_limit": bool(-1.0e-6 <= float(state["q"][index]) <= 0.080001), "self_collision_check": "not_run_contact_dynamics_out_of_scope", "mass_com_readback": "not separately exposed; USD mass manifest is authoritative", "steps": steps}
+    masses = np.asarray(body_view.get_masses(), dtype=float).reshape(-1)
+    geometry = _prismatic_geometry_contract(design, state, masses, value)
+    return {"requested_d_m": value, "readback_q": state["q"], "readback_d_m": float(state["q"][index]), "finite": state["finite"], "within_limit": bool(-1.0e-6 <= float(state["q"][index]) <= 0.080001), "mass_com_readback": geometry, "steps": steps}
 
 
 def _static_state_write_audit(source_text: str, reset_default_state_writes: int) -> dict[str, Any]:
@@ -227,7 +312,7 @@ def main() -> int:
         floating_runs = []
         for label, effort in (("q1", [float(x) for x in design["simulation"]["pulse_efforts"]]), ("P", [float(x) for x in design["simulation"]["p_pulse_efforts"]])):
             floating_runs.append(_run_pulse(world, floating, floating_bodies, f"floating_{label}", effort, int(design["simulation"]["floating_base_steps"]), pulse_steps, record_momentum=True, root_response=True))
-        prismatic = [_run_prismatic_default(world, floating, floating_bodies, value, 3, 60) for value in (0.0, float(design["geometry"]["p_stroke"]) / 2.0, float(design["geometry"]["p_stroke"]))]
+        prismatic = [_run_prismatic_default(world, floating, floating_bodies, design, value, 3, 60) for value in (0.0, float(design["geometry"]["p_stroke"]) / 2.0, float(design["geometry"]["p_stroke"]))]
         fixed_response = {run["label"].split("fixed_", 1)[-1]: bool(run["q_response_norm"] > 1.0e-7 and run["dq_response_norm"] > 1.0e-7 and run["nan_count"] == 0) for run in fixed_runs}
         floating_response = {run["label"].split("floating_", 1)[-1]: bool(run["q_response_norm"] > 1.0e-7 and run["root_displacement_m"] + run["root_rotation_readback_delta"] > 1.0e-9 and run["nan_count"] == 0) for run in floating_runs}
         momentum = {run["label"]: {"max_drift_kg_m_s": run["linear_momentum_max_drift_kg_m_s"], "relative_drift": run["linear_momentum_relative_drift"], "pass": bool(run["linear_momentum_relative_drift"] is not None and run["linear_momentum_relative_drift"] < 0.01)} for run in floating_runs}
@@ -236,7 +321,11 @@ def main() -> int:
         _write(EVIDENCE / "runtime/fixed_base_runtime.json", {"task": result["task"], "articulation_present": result["fixed_articulation_present"], "metadata": fixed_meta, "stable_2000_steps": result["fixed_base_2000_step_stable"], "runs": fixed_runs})
         _write(EVIDENCE / "runtime/floating_base_runtime.json", {"task": result["task"], "articulation_present": result["floating_articulation_present"], "metadata": floating_meta, "stable_2000_steps": result["floating_base_2000_step_stable"], "runs": floating_runs})
         _write(EVIDENCE / "runtime/joint_pulse_metrics.json", {"task": result["task"], "fixed_response": fixed_response, "floating_response": floating_response, "q1_native_response": result["q1_native_response"], "q2_native_response": result["q2_native_response"], "q3_native_response": result["q3_native_response"], "p_native_response": result["p_native_response"], "base_dynamic_response_from_arm": result["base_dynamic_response_from_arm"]})
-        _write(EVIDENCE / "runtime/prismatic_validation.json", {"task": result["task"], "p_stroke_m": float(design["geometry"]["p_stroke"]), "cases": prismatic, "all_cases_within_limit": all(item["within_limit"] for item in prismatic), "contact_dynamics_validated": False})
+        slider_coms = [np.asarray(item["mass_com_readback"]["slider_com_world_m"], dtype=float) for item in prismatic]
+        system_coms = [np.asarray(item["mass_com_readback"]["system_com_world_m"], dtype=float) for item in prismatic]
+        slider_shifts = [_norm(slider_coms[index + 1] - slider_coms[index]) for index in range(len(slider_coms) - 1)]
+        system_shifts = [_norm(system_coms[index + 1] - system_coms[index]) for index in range(len(system_coms) - 1)]
+        _write(EVIDENCE / "runtime/prismatic_validation.json", {"task": result["task"], "p_stroke_m": float(design["geometry"]["p_stroke"]), "cases": prismatic, "all_cases_within_limit": all(item["within_limit"] for item in prismatic), "slider_mass_constant_and_correct": all(item["mass_com_readback"]["slider_mass_correct"] for item in prismatic), "slider_com_moves_with_d": bool(all(shift > 1.0e-5 for shift in slider_shifts)), "system_com_moves_with_d": bool(all(shift > 1.0e-6 for shift in system_shifts)), "slider_com_shift_m": slider_shifts, "system_com_shift_m": system_shifts, "non_adjacent_self_clear": bool(all(item["mass_com_readback"]["non_adjacent_self_clear"] for item in prismatic)), "contact_dynamics_validated": False})
         _write(EVIDENCE / "runtime/momentum_validation.json", {"task": result["task"], "gravity_xyz": design["simulation"]["gravity"], "external_wrench": False, "runs": momentum, "linear_momentum_relative_drift": result["linear_momentum_relative_drift"], "pass_threshold": 0.01, "pass": bool(result["linear_momentum_relative_drift"] is not None and result["linear_momentum_relative_drift"] < 0.01), "angular_momentum_validated": False})
         source_text = Path(__file__).read_text(encoding="utf-8")
         audit = _static_state_write_audit(source_text, reset_default_state_writes=len(prismatic))

@@ -61,6 +61,11 @@ def test_prismatic_limit_cases() -> None:
     assert len(validation["cases"]) == 3
     assert validation["all_cases_within_limit"] is True
     assert [round(float(item["requested_d_m"]), 3) for item in validation["cases"]] == [0.0, 0.04, 0.08]
+    assert validation["slider_mass_constant_and_correct"] is True
+    assert validation["slider_com_moves_with_d"] is True
+    assert validation["system_com_moves_with_d"] is True
+    assert validation["non_adjacent_self_clear"] is True
+    assert validation["contact_dynamics_validated"] is False
 
 
 def test_state_write_audit_disables_python_state_playback() -> None:
