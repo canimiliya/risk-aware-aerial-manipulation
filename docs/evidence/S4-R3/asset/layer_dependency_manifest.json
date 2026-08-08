@@ -1,0 +1,80 @@
+{
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "root_layer": {
+    "identifier": "D:/i3/a/aerial_manipulator_v2.usd",
+    "real_path": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+    "resolved_path": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+    "anonymous": false,
+    "sub_layers": [],
+    "external_references": [
+      "configuration/aerial_manipulator_v2_base.usd",
+      "configuration/aerial_manipulator_v2_physics.usd",
+      "configuration/aerial_manipulator_v2_robot.usd",
+      "configuration/aerial_manipulator_v2_sensor.usd"
+    ]
+  },
+  "used_layers": [
+    {
+      "identifier": "D:/i3/a/aerial_manipulator_v2.usd",
+      "real_path": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+      "resolved_path": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+      "anonymous": false,
+      "sub_layers": [],
+      "external_references": [
+        "configuration/aerial_manipulator_v2_base.usd",
+        "configuration/aerial_manipulator_v2_physics.usd",
+        "configuration/aerial_manipulator_v2_robot.usd",
+        "configuration/aerial_manipulator_v2_sensor.usd"
+      ]
+    },
+    {
+      "identifier": "anon:00000217BB293B80:aerial_manipulator_v2-session.usda",
+      "real_path": "",
+      "resolved_path": null,
+      "anonymous": true,
+      "sub_layers": [],
+      "external_references": []
+    },
+    {
+      "identifier": "D:/i3/a/configuration/aerial_manipulator_v2_physics.usd",
+      "real_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_physics.usd",
+      "resolved_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_physics.usd",
+      "anonymous": false,
+      "sub_layers": [
+        "aerial_manipulator_v2_base.usd"
+      ],
+      "external_references": [
+        "",
+        "aerial_manipulator_v2_base.usd"
+      ]
+    },
+    {
+      "identifier": "D:/i3/a/configuration/aerial_manipulator_v2_sensor.usd",
+      "real_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_sensor.usd",
+      "resolved_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_sensor.usd",
+      "anonymous": false,
+      "sub_layers": [],
+      "external_references": []
+    },
+    {
+      "identifier": "D:/i3/a/configuration/aerial_manipulator_v2_robot.usd",
+      "real_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_robot.usd",
+      "resolved_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_robot.usd",
+      "anonymous": false,
+      "sub_layers": [],
+      "external_references": []
+    },
+    {
+      "identifier": "D:/i3/a/configuration/aerial_manipulator_v2_base.usd",
+      "real_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_base.usd",
+      "resolved_path": "D:\\i3\\a\\configuration\\aerial_manipulator_v2_base.usd",
+      "anonymous": false,
+      "sub_layers": [],
+      "external_references": [
+        ""
+      ]
+    }
+  ],
+  "dependency_count": 6
+}

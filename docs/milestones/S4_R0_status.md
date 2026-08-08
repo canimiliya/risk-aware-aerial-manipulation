@@ -29,3 +29,11 @@ legacy. S4 stays open and independent final review remains pending.
 - cache audit: `docs/evidence/S4-R0/visuals/r2/visual_cache_manifest.json`
 - honest visual manifest: `docs/evidence/S4-R0/visuals/r2/s4_r0_r2_visual_manifest.json`
 - base/head pytest comparison: `docs/evidence/S4-R0/tests/base_vs_head_pytest.json`
+
+## S4-R3 asset gate
+
+S4-R3 is blocked at the authoritative USD topology gate:
+`BLOCKED_S4_R3_DELTA_TOPOLOGY_UNRESOLVED`. The source has 10 positive-mass
+arm links, 3 active-joint candidates and 6 passive-joint candidates, but zero
+existing loop joints and no floating UAV base. No native runtime, viewport,
+video, rotor, wind, contact, full trajectory or S5 work was started.

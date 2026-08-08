@@ -1,0 +1,27 @@
+{
+  "task": "S4-R3-NATIVE-MULTIBODY-SKELETON-R1",
+  "status": "NOT_RUN_ASSET_BLOCKER",
+  "final_label": "BLOCKED_S4_R3_DELTA_TOPOLOGY_UNRESOLVED",
+  "position": {
+    "mean_m": null,
+    "rms_m": null,
+    "max_m": null,
+    "p95_m": null
+  },
+  "orientation": {
+    "mean_deg": null,
+    "rms_deg": null,
+    "max_deg": null,
+    "p95_deg": null
+  },
+  "skeleton_thresholds": {
+    "max_position_m_lt": 0.001,
+    "max_orientation_deg_lt": 1.0
+  },
+  "high_fidelity_targets": {
+    "position_m_lt": 0.0001,
+    "orientation_deg_lt": 0.1
+  },
+  "pass": false,
+  "reason": "source USD exposes only a star/tree: the end-effector is connected to each branch link, but no distal branch-to-end-effector closure edges or floating UAV base are present"
+}

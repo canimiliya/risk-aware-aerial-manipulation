@@ -1,0 +1,11 @@
+{
+  "task": "S4-R3-NATIVE-MULTIBODY-SKELETON-R1",
+  "status": "NOT_RUN_ASSET_BLOCKER",
+  "final_label": "BLOCKED_S4_R3_DELTA_TOPOLOGY_UNRESOLVED",
+  "manual_reaction_force_calls": null,
+  "manual_reaction_torque_calls": null,
+  "manual_arm_gravity_calls": null,
+  "base_dynamic_response_present": null,
+  "native_solver_generated_coupling": false,
+  "reason": "source USD exposes only a star/tree: the end-effector is connected to each branch link, but no distal branch-to-end-effector closure edges or floating UAV base are present"
+}

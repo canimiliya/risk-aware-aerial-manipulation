@@ -1,0 +1,23 @@
+{
+  "task": "S4-R3-NATIVE-MULTIBODY-SKELETON-R1",
+  "status": "STATIC_GUARD_ONLY",
+  "native_execution_path_present": false,
+  "root_state_written_after_reset": false,
+  "joint_position_written_during_simulation": false,
+  "joint_velocity_written_during_simulation": false,
+  "active_joint_effort_targets_used": false,
+  "legacy_python_joint_integrator_present": true,
+  "legacy_manual_reaction_present": true,
+  "legacy_mode_required": true,
+  "forbidden_native_runtime_writes": [
+    "set_world_pose",
+    "set_world_transform",
+    "set_root_state",
+    "set_joint_position",
+    "set_joint_state",
+    "teleport",
+    "Usd.TimeCode",
+    "stage.SetTimeCode"
+  ],
+  "reason": "No native execution path was promoted because the source asset cannot reconstruct the Delta closure."
+}

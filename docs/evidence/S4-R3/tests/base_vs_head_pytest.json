@@ -1,0 +1,24 @@
+{
+  "task": "S4-R3-NATIVE-MULTIBODY-SKELETON-R1",
+  "base_head": {
+    "base_commit": "9aacfdafe8fdee00b3da45234f9acb81079abb78",
+    "head_commit": "pending_submission_commit",
+    "base_log": "C:/s4r3b/base_pytest.log",
+    "head_log": "D:/Desktop/my_project/Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0/outputs/s4_r3_head_pytest.log",
+    "base_pass": 84,
+    "base_fail": 13,
+    "head_pass": 93,
+    "head_fail": 13,
+    "common_failures": 13,
+    "head_only_failures": [],
+    "head_only_failure_count": 0,
+    "comparison_pass": true,
+    "note": "The nine additional head passes are the new S4-R3 fail-safe contract tests. The thirteen failures are unchanged historical S0/S1/S2/S3 audit or frozen-evidence failures; no R3 test is head-only failing."
+  },
+  "directed_tests": {
+    "command": "D:/i3/e/python.exe -m pytest -q tests/test_s4_r3_native_multibody_contract.py tests/test_s4_r0_r2_visual_contract.py tests/test_s4_r0_r1_physics.py tests/test_s4_r0_r1_provenance.py tests/test_s4_r0_r1_contact_semantics.py tests/test_s4_r0_dynamic_contract.py tests/test_s4_r0_metrics.py tests/audit/test_s3_s2_baseline.py",
+    "passed": 27,
+    "failed": 0,
+    "head_only_failures": 0
+  }
+}

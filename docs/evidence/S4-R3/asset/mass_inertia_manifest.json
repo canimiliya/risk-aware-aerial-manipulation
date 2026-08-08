@@ -1,0 +1,448 @@
+{
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "mass_records": [
+    {
+      "prim_path": "/delta_display/body/end_effector",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.1908990740776062,
+      "COM": "(1.0502238e-11, 0.0000104348155, 0.013414148)",
+      "diagonal_inertia": "(0.000054805176, 0.000054772998, 0.00009315318)",
+      "principal_axes": "(1, -8.191532e-7, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(1.0502238e-11, 0.0000104348155, 0.013414148)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.000054805176, 0.000054772998, 0.00009315318)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.1908990740776062,
+        "physics:principalAxes": "(1, -8.191532e-7, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.7071055173873901, 0, 0, -0.7071080803871155)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0, 0, -0.05000000074505806)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_1",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.012937617488205433,
+      "COM": "(0.03809911, -2.684613e-10, -7.2939543e-10)",
+      "diagonal_inertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+      "principal_axes": "(1, 0, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.03809911, -2.684613e-10, -7.2939543e-10)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.012937617488205433,
+        "physics:principalAxes": "(1, 0, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6150972843170166, -0.6096099019050598, 0.3582981824874878, -0.3487887382507324)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.033999793231487274, -0.05889012664556503, -0.03049999661743641)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1l",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, 8.324276e-11, -1.4621554e-11)",
+      "diagonal_inertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(1, -0.000060986353, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, 8.324276e-11, -1.4621554e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(1, -0.000060986353, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(-0.21633757650852203, 0.4743059277534485, 0.5242211222648621, -0.6733678579330444)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.06878844648599625, -0.1571502536535263, -0.03209199756383896)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1r",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, 8.3244384e-11, -1.4621984e-11)",
+      "diagonal_inertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(1, -0.000060986345, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, 8.3244384e-11, -1.4621984e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(1, -0.000060986345, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(-0.21633757650852203, 0.4743059277534485, 0.5242211222648621, -0.6733678579330444)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.10169951617717743, -0.13815036416053772, -0.03209199756383896)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_2",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.012937621213495731,
+      "COM": "(0.03809913, 7.4243695e-11, 1.5743735e-10)",
+      "diagonal_inertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+      "principal_axes": "(1, 0, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.03809913, 7.4243695e-11, 1.5743735e-10)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.012937621213495731,
+        "physics:principalAxes": "(1, 0, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6108406782150269, -0.6138919591903687, -0.35091090202331543, 0.35619086027145386)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.0340002179145813, 0.058889880776405334, -0.03049999661743641)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2l",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -3.9750286e-12, -2.1016265e-11)",
+      "diagonal_inertia": "(1.1952558e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(0.99965054, 0.026438866, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -3.9750286e-12, -2.1016265e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952558e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(0.99965054, 0.026438866, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.47517046332359314, -0.21436536312103271, 0.6741689443588257, -0.5232177972793579)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.10170049965381622, 0.13814964890480042, -0.031383998692035675)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2r",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -8.64199e-12, -2.0595761e-11)",
+      "diagonal_inertia": "(1.1952557e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(1, 0.00018928264, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -8.64199e-12, -2.0595761e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952557e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(1, 0.00018928264, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.47517046332359314, -0.21436536312103271, 0.6741689443588257, -0.5232177972793579)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.06879456341266632, 0.15714974701404572, -0.031383998692035675)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_3",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.012937616556882858,
+      "COM": "(0.038099106, 1.9875177e-10, 5.538434e-10)",
+      "diagonal_inertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+      "principal_axes": "(1, 0, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.038099106, 1.9875177e-10, 5.538434e-10)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.012937616556882858,
+        "physics:principalAxes": "(1, 0, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.0009420216083526611, 0.000947117805480957, 0.707107424736023, -0.7071049213409424)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(-0.06800001114606857, 2.4318697455782967e-7, -0.03049999661743641)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3l",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -9.196781e-11, -8.99153e-12)",
+      "diagonal_inertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(0.9999998, 0.0005853837, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -9.196781e-11, -8.99153e-12)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(0.9999998, 0.0005853837, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6906578540802002, -0.690443754196167, 0.1517130434513092, 0.152520090341568)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(-0.17049993574619293, 0.01900060847401619, -0.03077399916946888)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3r",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -9.187259e-11, -8.794132e-12)",
+      "diagonal_inertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(0.99999994, -0.00036529137, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -9.187259e-11, -8.794132e-12)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(0.99999994, -0.00036529137, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6906578540802002, -0.690443754196167, 0.1517130434513092, 0.152520090341568)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(-0.17050008475780487, -0.018999390304088593, -0.03077399916946888)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    }
+  ],
+  "uav_mass_provenance_validated": false,
+  "uav_inertia_provenance_validated": false,
+  "provisional_uav_inertial_used": true
+}

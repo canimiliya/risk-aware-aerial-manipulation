@@ -1,0 +1,2445 @@
+{
+  "task": "S4-R3-NATIVE-MULTIBODY-SKELETON-R1",
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "source_sha256": "74cce4b4cd8a41da9b60829482debbf3a78c0548bacb9dd53089e92c5ed7bc7d",
+  "stage_default_prim": "/delta_display",
+  "prim_count": 51,
+  "prim_type_counts": {
+    "Material": 2,
+    "PhysicsFixedJoint": 1,
+    "PhysicsRevoluteJoint": 9,
+    "Scope": 2,
+    "Shader": 2,
+    "Xform": 35
+  },
+  "prim_records": [
+    {
+      "prim_path": "/delta_display",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "IsaacRobotAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "isaac:changelog": [],
+        "isaac:description": "",
+        "isaac:license": "Other",
+        "isaac:namespace": "",
+        "isaac:robotType": "Default",
+        "isaac:source": "",
+        "isaac:version": "",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(1, 0, 0, 0)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0, 0, 0)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "isaac:physics:robotJoints": [
+          "/delta_display/body/joints/ini_connect",
+          "/delta_display/body/joints/m1_1",
+          "/delta_display/body/joints/m1_2",
+          "/delta_display/body/joints/m1_3",
+          "/delta_display/body/joints/m2_1",
+          "/delta_display/body/joints/m2_2",
+          "/delta_display/body/joints/m2_3",
+          "/delta_display/body/joints/m3_1",
+          "/delta_display/body/joints/m3_2",
+          "/delta_display/body/joints/m3_3"
+        ],
+        "isaac:physics:robotLinks": [
+          "/delta_display/body/body",
+          "/delta_display/body/end_effector",
+          "/delta_display/body/AA_1",
+          "/delta_display/body/TA_1l",
+          "/delta_display/body/TA_1r",
+          "/delta_display/body/AA_2",
+          "/delta_display/body/TA_2l",
+          "/delta_display/body/TA_2r",
+          "/delta_display/body/AA_3",
+          "/delta_display/body/TA_3l",
+          "/delta_display/body/TA_3r"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/body",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "PhysicsArticulationRootAPI",
+        "PhysxArticulationAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": true,
+      "CollisionAPI": false,
+      "mass_kg": 0.0,
+      "COM": "(-inf, -inf, -inf)",
+      "diagonal_inertia": "(0, 0, 0)",
+      "principal_axes": "(0, 0, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(-inf, -inf, -inf)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0, 0, 0)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.0,
+        "physics:principalAxes": "(0, 0, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "physxArticulation:articulationEnabled": true,
+        "physxArticulation:enabledSelfCollisions": false,
+        "physxArticulation:sleepThreshold": 4.999999873689376e-05,
+        "physxArticulation:solverPositionIterationCount": 32,
+        "physxArticulation:solverVelocityIterationCount": 1,
+        "physxArticulation:stabilizationThreshold": 9.999999747378752e-06,
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(1, 0, 0, 0)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0, 0, 0)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/body/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/body/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/end_effector",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.1908990740776062,
+      "COM": "(1.0502238e-11, 0.0000104348155, 0.013414148)",
+      "diagonal_inertia": "(0.000054805176, 0.000054772998, 0.00009315318)",
+      "principal_axes": "(1, -8.191532e-7, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(1.0502238e-11, 0.0000104348155, 0.013414148)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.000054805176, 0.000054772998, 0.00009315318)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.1908990740776062,
+        "physics:principalAxes": "(1, -8.191532e-7, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.7071055173873901, 0, 0, -0.7071080803871155)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0, 0, -0.05000000074505806)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/end_effector/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/end_effector/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints",
+      "prim_type": "Scope",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/ini_connect",
+      "prim_type": "PhysicsFixedJoint",
+      "applied_schemas": [
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.0,
+        "physics:localPos0": "(0, 0, -0.05)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.7071055, 0, 0, -0.7071081)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/body"
+        ],
+        "physics:body1": [
+          "/delta_display/body/end_effector"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.00020418509666342288,
+        "physics:localPos0": "(0.05889, 0.034, 0.0195)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.68157, -0.684414, -0.17770544, 0.1883098)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": -89.9543685913086,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/AA_1"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.00015230999269988388,
+        "physics:localPos0": "(0.15715, 0.068789, 0.017908)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": 0.0,
+        "physics:upperLimit": 0.0,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/TA_1l"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.00015114554844330996,
+        "physics:localPos0": "(0.13815, 0.1017, 0.017908)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": 0.0,
+        "physics:upperLimit": 0.0,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/TA_1r"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.000204352181754075,
+        "physics:localPos0": "(-0.05889, 0.034, 0.0195)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.18006335, -0.18595445, -0.68221897, 0.68379486)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": -89.9543685913086,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/AA_2"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.0001513872412033379,
+        "physics:localPos0": "(-0.13815, 0.1017, 0.018616)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": 0.0,
+        "physics:upperLimit": 0.0,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/TA_2l"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.00015268154675140977,
+        "physics:localPos0": "(-0.15715, 0.068794, 0.018616)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": 0.0,
+        "physics:upperLimit": 0.0,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/TA_2r"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.00020392316218931228,
+        "physics:localPos0": "(0, -0.068, 0.0195)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.50066566, -0.49933165, 0.50066924, -0.49933165)",
+        "physics:localRot1": "(1, 0, 0, 0)",
+        "physics:lowerLimit": -89.9543685913086,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/AA_3"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.00015000758867245167,
+        "physics:localPos0": "(-0.019, -0.1705, 0.019226)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": 0.0,
+        "physics:upperLimit": 0.0,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/TA_3l"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "drive:angular:physics:damping": 0.0,
+        "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+        "drive:angular:physics:stiffness": 625.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "acceleration",
+        "isaac:actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "isaac:NameOverride": "",
+        "isaac:nameOverride__duplicate_2": null,
+        "isaac:physics:AccelerationLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:index": null,
+        "isaac:physics:JerkLimit": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "isaac:physics:Rot_X:DoFOffset": 0,
+        "isaac:physics:Rot_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Y:DoFOffset": 1,
+        "isaac:physics:Rot_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Rot_Z:DoFOffset": 2,
+        "isaac:physics:Rot_Z:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_X:DoFOffset": 3,
+        "isaac:physics:Tr_X:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Y:DoFOffset": 4,
+        "isaac:physics:Tr_Y:DofOffset__duplicate_2": null,
+        "isaac:physics:Tr_Z:DoFOffset": 5,
+        "isaac:physics:Tr_Z:DofOffset__duplicate_2": null,
+        "physics:axis": "Z",
+        "physics:breakForce": 3.4028234663852886e+38,
+        "physics:breakTorque": 3.4028234663852886e+38,
+        "physics:collisionEnabled": false,
+        "physics:excludeFromArticulation": false,
+        "physics:jointEnabled": true,
+        "physics:JointEquivalentInertia": 0.00014991349598858505,
+        "physics:localPos0": "(0.019, -0.1705, 0.019226)",
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)",
+        "physics:localRot1": "(0, 0, 1, 0)",
+        "physics:lowerLimit": 0.0,
+        "physics:upperLimit": 0.0,
+        "physxJoint:armature": 0.0,
+        "physxJoint:jointFriction": 0.0,
+        "physxJoint:maxJointVelocity": 3.4028234663852886e+38,
+        "purpose": "default",
+        "state:angular:physics:position": 0.0,
+        "state:angular:physics:velocity": 0.0,
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "physics:body0": [
+          "/delta_display/body/end_effector"
+        ],
+        "physics:body1": [
+          "/delta_display/body/TA_3r"
+        ],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_1",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.012937617488205433,
+      "COM": "(0.03809911, -2.684613e-10, -7.2939543e-10)",
+      "diagonal_inertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+      "principal_axes": "(1, 0, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.03809911, -2.684613e-10, -7.2939543e-10)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.012937617488205433,
+        "physics:principalAxes": "(1, 0, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6150972843170166, -0.6096099019050598, 0.3582981824874878, -0.3487887382507324)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.033999793231487274, -0.05889012664556503, -0.03049999661743641)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_1/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_1/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1l",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, 8.324276e-11, -1.4621554e-11)",
+      "diagonal_inertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(1, -0.000060986353, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, 8.324276e-11, -1.4621554e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(1, -0.000060986353, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(-0.21633757650852203, 0.4743059277534485, 0.5242211222648621, -0.6733678579330444)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.06878844648599625, -0.1571502536535263, -0.03209199756383896)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1l/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1l/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1r",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, 8.3244384e-11, -1.4621984e-11)",
+      "diagonal_inertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(1, -0.000060986345, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, 8.3244384e-11, -1.4621984e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952528e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(1, -0.000060986345, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(-0.21633757650852203, 0.4743059277534485, 0.5242211222648621, -0.6733678579330444)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.10169951617717743, -0.13815036416053772, -0.03209199756383896)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1r/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_1r/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_2",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.012937621213495731,
+      "COM": "(0.03809913, 7.4243695e-11, 1.5743735e-10)",
+      "diagonal_inertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+      "principal_axes": "(1, 0, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.03809913, 7.4243695e-11, 1.5743735e-10)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.012937621213495731,
+        "physics:principalAxes": "(1, 0, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6108406782150269, -0.6138919591903687, -0.35091090202331543, 0.35619086027145386)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.0340002179145813, 0.058889880776405334, -0.03049999661743641)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_2/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_2/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2l",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -3.9750286e-12, -2.1016265e-11)",
+      "diagonal_inertia": "(1.1952558e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(0.99965054, 0.026438866, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -3.9750286e-12, -2.1016265e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952558e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(0.99965054, 0.026438866, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.47517046332359314, -0.21436536312103271, 0.6741689443588257, -0.5232177972793579)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.10170049965381622, 0.13814964890480042, -0.031383998692035675)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2l/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2l/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2r",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -8.64199e-12, -2.0595761e-11)",
+      "diagonal_inertia": "(1.1952557e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(1, 0.00018928264, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -8.64199e-12, -2.0595761e-11)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952557e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(1, 0.00018928264, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.47517046332359314, -0.21436536312103271, 0.6741689443588257, -0.5232177972793579)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(0.06879456341266632, 0.15714974701404572, -0.031383998692035675)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2r/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_2r/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_3",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.012937616556882858,
+      "COM": "(0.038099106, 1.9875177e-10, 5.538434e-10)",
+      "diagonal_inertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+      "principal_axes": "(1, 0, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.038099106, 1.9875177e-10, 5.538434e-10)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(0.0000025437744, 0.0000038532667, 0.0000022324925)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.012937616556882858,
+        "physics:principalAxes": "(1, 0, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.0009420216083526611, 0.000947117805480957, 0.707107424736023, -0.7071049213409424)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(-0.06800001114606857, 2.4318697455782967e-7, -0.03049999661743641)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_3/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/AA_3/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3l",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -9.196781e-11, -8.99153e-12)",
+      "diagonal_inertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(0.9999998, 0.0005853837, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -9.196781e-11, -8.99153e-12)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(0.9999998, 0.0005853837, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6906578540802002, -0.690443754196167, 0.1517130434513092, 0.152520090341568)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(-0.17049993574619293, 0.01900060847401619, -0.03077399916946888)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3l/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3l/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3r",
+      "prim_type": "Xform",
+      "applied_schemas": [
+        "PhysicsRigidBodyAPI",
+        "PhysicsMassAPI",
+        "IsaacLinkAPI"
+      ],
+      "RigidBodyAPI": true,
+      "MassAPI": true,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": 0.010273398831486702,
+      "COM": "(0.08, -9.187259e-11, -8.794132e-12)",
+      "diagonal_inertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+      "principal_axes": "(0.99999994, -0.00036529137, 0, 0)",
+      "attributes": {
+        "isaac:nameOverride": "",
+        "physics:angularVelocity": "(0, 0, 0)",
+        "physics:centerOfMass": "(0.08, -9.187259e-11, -8.794132e-12)",
+        "physics:density": 0.0,
+        "physics:diagonalInertia": "(1.1952531e-7, 0.0000053135027, 0.0000053667063)",
+        "physics:kinematicEnabled": false,
+        "physics:mass": 0.010273398831486702,
+        "physics:principalAxes": "(0.99999994, -0.00036529137, 0, 0)",
+        "physics:rigidBodyEnabled": true,
+        "physics:startsAsleep": false,
+        "physics:velocity": "(0, 0, 0)",
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOp:orient": "(0.6906578540802002, -0.690443754196167, 0.1517130434513092, 0.152520090341568)",
+        "xformOp:scale": "(1, 1, 1)",
+        "xformOp:translate": "(-0.17050008475780487, -0.018999390304088593, -0.03077399916946888)",
+        "xformOpOrder": [
+          "xformOp:translate",
+          "xformOp:orient",
+          "xformOp:scale"
+        ]
+      },
+      "relationships": {
+        "physics:simulationOwner": [],
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3r/visuals",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/TA_3r/collisions",
+      "prim_type": "Xform",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited",
+        "xformOpOrder": null
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/Looks",
+      "prim_type": "Scope",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "purpose": "default",
+        "visibility": "inherited"
+      },
+      "relationships": {
+        "proxyPrim": []
+      }
+    },
+    {
+      "prim_path": "/delta_display/body/Looks/material_E5EAED",
+      "prim_type": "Material",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "outputs:displacement": null,
+        "outputs:mdl:displacement": null,
+        "outputs:mdl:surface": null,
+        "outputs:mdl:volume": null,
+        "outputs:surface": null,
+        "outputs:volume": null
+      },
+      "relationships": {}
+    },
+    {
+      "prim_path": "/delta_display/body/Looks/material_E5EAED/Shader",
+      "prim_type": "Shader",
+      "applied_schemas": [
+        "NodeDefAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "info:id": null,
+        "info:implementationSource": "sourceAsset",
+        "info:mdl:sourceAsset": "@OmniPBR.mdl@",
+        "info:mdl:sourceAsset:subIdentifier": "OmniPBR",
+        "inputs:diffuse_color_constant": "(0.8980392, 0.91764706, 0.92941177)",
+        "outputs:out": null
+      },
+      "relationships": {}
+    },
+    {
+      "prim_path": "/delta_display/body/Looks/material_000",
+      "prim_type": "Material",
+      "applied_schemas": [],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "outputs:displacement": null,
+        "outputs:mdl:displacement": null,
+        "outputs:mdl:surface": null,
+        "outputs:mdl:volume": null,
+        "outputs:surface": null,
+        "outputs:volume": null
+      },
+      "relationships": {}
+    },
+    {
+      "prim_path": "/delta_display/body/Looks/material_000/Shader",
+      "prim_type": "Shader",
+      "applied_schemas": [
+        "NodeDefAPI"
+      ],
+      "RigidBodyAPI": false,
+      "MassAPI": false,
+      "ArticulationRootAPI": false,
+      "CollisionAPI": false,
+      "mass_kg": null,
+      "COM": null,
+      "diagonal_inertia": null,
+      "principal_axes": null,
+      "attributes": {
+        "info:id": null,
+        "info:implementationSource": "sourceAsset",
+        "info:mdl:sourceAsset": "@OmniPBR.mdl@",
+        "info:mdl:sourceAsset:subIdentifier": "OmniPBR",
+        "inputs:diffuse_color_constant": "(0, 0, 0)",
+        "outputs:out": null
+      },
+      "relationships": {}
+    }
+  ],
+  "joint_count": 10,
+  "joint_records": [
+    {
+      "prim_path": "/delta_display/body/joints/ini_connect",
+      "prim_type": "PhysicsFixedJoint",
+      "applied_schemas": [
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/body"
+      ],
+      "body1": [
+        "/delta_display/body/end_effector"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0, 0, -0.05)",
+        "physics:localRot0": "(0.7071055, 0, 0, -0.7071081)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": null,
+      "upper_limit": null,
+      "drive_type": null,
+      "drive_stiffness": null,
+      "drive_damping": null,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/AA_1"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.05889, 0.034, 0.0195)",
+        "physics:localRot0": "(0.68157, -0.684414, -0.17770544, 0.1883098)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": -89.9543685913086,
+      "upper_limit": 89.9543685913086,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_1l"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.15715, 0.068789, 0.017908)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_1r"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.13815, 0.1017, 0.017908)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/AA_2"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.05889, 0.034, 0.0195)",
+        "physics:localRot0": "(0.18006335, -0.18595445, -0.68221897, 0.68379486)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": -89.9543685913086,
+      "upper_limit": 89.9543685913086,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_2l"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.13815, 0.1017, 0.018616)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_2r"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.15715, 0.068794, 0.018616)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/AA_3"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0, -0.068, 0.0195)",
+        "physics:localRot0": "(0.50066566, -0.49933165, 0.50066924, -0.49933165)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": -89.9543685913086,
+      "upper_limit": 89.9543685913086,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_3l"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.019, -0.1705, 0.019226)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_3r"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.019, -0.1705, 0.019226)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    }
+  ],
+  "uav_base_rigid_body_found": false,
+  "arm_base_rigid_body_found": true,
+  "arm_positive_mass_link_count": 10,
+  "active_joint_count_candidate": 3,
+  "passive_joint_count_candidate": 6,
+  "existing_loop_joint_count": 0,
+  "articulation_root_present": true,
+  "articulation_root_paths": [
+    "/delta_display/body/body"
+  ],
+  "arm_articulation_root_paths": [
+    "/delta_display/body/body"
+  ],
+  "floating_base_articulation_candidate": false,
+  "body_relationships_present": true,
+  "delta_loop_reconstructable": false
+}

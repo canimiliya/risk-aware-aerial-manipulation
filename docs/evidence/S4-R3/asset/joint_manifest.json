@@ -1,0 +1,312 @@
+{
+  "source_usd": "D:\\i3\\a\\aerial_manipulator_v2.usd",
+  "joints": [
+    {
+      "prim_path": "/delta_display/body/joints/ini_connect",
+      "prim_type": "PhysicsFixedJoint",
+      "applied_schemas": [
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/body"
+      ],
+      "body1": [
+        "/delta_display/body/end_effector"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0, 0, -0.05)",
+        "physics:localRot0": "(0.7071055, 0, 0, -0.7071081)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": null,
+      "upper_limit": null,
+      "drive_type": null,
+      "drive_stiffness": null,
+      "drive_damping": null,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/AA_1"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.05889, 0.034, 0.0195)",
+        "physics:localRot0": "(0.68157, -0.684414, -0.17770544, 0.1883098)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": -89.9543685913086,
+      "upper_limit": 89.9543685913086,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_1l"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.15715, 0.068789, 0.017908)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m1_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_1r"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.13815, 0.1017, 0.017908)",
+        "physics:localRot0": "(0.32317033, -0.03529668, 0.7060652, -0.6291161)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/AA_2"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.05889, 0.034, 0.0195)",
+        "physics:localRot0": "(0.18006335, -0.18595445, -0.68221897, 0.68379486)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": -89.9543685913086,
+      "upper_limit": 89.9543685913086,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_2l"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.13815, 0.1017, 0.018616)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m2_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_2r"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.15715, 0.068794, 0.018616)",
+        "physics:localRot0": "(-0.3251291, 0.03397329, 0.7059671, -0.6282892)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_1",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/AA_3"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0, -0.068, 0.0195)",
+        "physics:localRot0": "(0.50066566, -0.49933165, 0.50066924, -0.49933165)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(1, 0, 0, 0)"
+      },
+      "lower_limit": -89.9543685913086,
+      "upper_limit": 89.9543685913086,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_2",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_3l"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(-0.019, -0.1705, 0.019226)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    },
+    {
+      "prim_path": "/delta_display/body/joints/m3_3",
+      "prim_type": "PhysicsRevoluteJoint",
+      "applied_schemas": [
+        "PhysicsJointStateAPI:angular",
+        "PhysxJointAPI",
+        "PhysicsDriveAPI:angular",
+        "IsaacJointAPI"
+      ],
+      "body0": [
+        "/delta_display/body/end_effector"
+      ],
+      "body1": [
+        "/delta_display/body/TA_3r"
+      ],
+      "local_frame0": {
+        "physics:localPos0": "(0.019, -0.1705, 0.019226)",
+        "physics:localRot0": "(0.3809412, -0.5962175, 0.38051975, -0.5954941)"
+      },
+      "local_frame1": {
+        "physics:localPos1": "(0, 0, 0)",
+        "physics:localRot1": "(0, 0, 1, 0)"
+      },
+      "lower_limit": 0.0,
+      "upper_limit": 0.0,
+      "drive_type": "acceleration",
+      "drive_stiffness": 625.0,
+      "drive_damping": 0.0,
+      "joint_enabled": true,
+      "exclude_from_articulation": false
+    }
+  ]
+}
