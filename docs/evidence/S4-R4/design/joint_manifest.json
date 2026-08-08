@@ -1,0 +1,69 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\robot_assets\\rrrp\\rrrp_design.yaml",
+  "joints": [
+    {
+      "name": "q1",
+      "type": "revolute",
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "lower": -2.617993878,
+      "upper": 2.617993878,
+      "max_velocity": 4.0,
+      "max_effort": 8.0
+    },
+    {
+      "name": "q2",
+      "type": "revolute",
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "lower": -2.35619449,
+      "upper": 2.35619449,
+      "max_velocity": 4.0,
+      "max_effort": 6.0
+    },
+    {
+      "name": "q3",
+      "type": "revolute",
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "lower": -2.617993878,
+      "upper": 2.617993878,
+      "max_velocity": 5.0,
+      "max_effort": 4.0
+    },
+    {
+      "name": "d",
+      "type": "prismatic",
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lower": 0.0,
+      "upper": 0.08,
+      "max_velocity": 0.25,
+      "max_effort": 6.0
+    },
+    {
+      "name": "gripper_mount_fixed",
+      "type": "fixed"
+    }
+  ],
+  "articulation_roots": [
+    "/World/FixedBaseArm",
+    "/World/FloatingBaseArm"
+  ],
+  "physics_joint_count_per_articulation": 5,
+  "native_dof_count_per_articulation": 4,
+  "tree_structure": true
+}

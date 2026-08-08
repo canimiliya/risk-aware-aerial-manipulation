@@ -1,0 +1,18 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "fixed_response": {
+    "q1": true,
+    "q2": true,
+    "q3": true,
+    "P": true
+  },
+  "floating_response": {
+    "q1": true,
+    "P": true
+  },
+  "q1_native_response": true,
+  "q2_native_response": true,
+  "q3_native_response": true,
+  "p_native_response": true,
+  "base_dynamic_response_from_arm": true
+}

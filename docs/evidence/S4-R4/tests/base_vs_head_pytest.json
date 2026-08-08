@@ -1,0 +1,18 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "base_commit": "ee3b3bcae004ecbcc537125654d45752c4d85454",
+  "head_commit": "ee3b3bcae004ecbcc537125654d45752c4d85454",
+  "base_branch_context": "R3 start detached worktree",
+  "head_branch_context": "agent/s4-r4-rrrp-native-dynamics",
+  "directed_command": "python -m pytest -q tests/test_s4_r4_rrrp_native_dynamics.py",
+  "directed_pass": 9,
+  "directed_fail": 0,
+  "base_full_pytest_pass": 84,
+  "base_full_pytest_fail": 13,
+  "head_full_pytest_pass": 93,
+  "head_full_pytest_fail": 13,
+  "head_only_failures": [],
+  "comparison_pass": true,
+  "historical_failures_unchanged": true,
+  "note": "The 13 full-suite failures are pre-existing S0/S1/S2/S3 frozen-evidence and missing-local-trajectory failures; no R4 head-only failure was introduced. The base/head full comparison is run against the R3 start commit; current R4 contract tests are additional head tests."
+}

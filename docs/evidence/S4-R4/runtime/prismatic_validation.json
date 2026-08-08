@@ -1,0 +1,53 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "p_stroke_m": 0.08,
+  "cases": [
+    {
+      "requested_d_m": 0.0,
+      "readback_q": [
+        -0.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "readback_d_m": 0.0,
+      "finite": true,
+      "within_limit": true,
+      "self_collision_check": "not_run_contact_dynamics_out_of_scope",
+      "mass_com_readback": "not separately exposed; USD mass manifest is authoritative",
+      "steps": 60
+    },
+    {
+      "requested_d_m": 0.04,
+      "readback_q": [
+        -0.0,
+        0.0,
+        -0.0,
+        0.03999999910593033
+      ],
+      "readback_d_m": 0.03999999910593033,
+      "finite": true,
+      "within_limit": true,
+      "self_collision_check": "not_run_contact_dynamics_out_of_scope",
+      "mass_com_readback": "not separately exposed; USD mass manifest is authoritative",
+      "steps": 60
+    },
+    {
+      "requested_d_m": 0.08,
+      "readback_q": [
+        -0.0,
+        0.0,
+        -0.0,
+        0.07999999821186066
+      ],
+      "readback_d_m": 0.07999999821186066,
+      "finite": true,
+      "within_limit": true,
+      "self_collision_check": "not_run_contact_dynamics_out_of_scope",
+      "mass_com_readback": "not separately exposed; USD mass manifest is authoritative",
+      "steps": 60
+    }
+  ],
+  "all_cases_within_limit": true,
+  "contact_dynamics_validated": false
+}

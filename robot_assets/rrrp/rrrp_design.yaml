@@ -1,0 +1,97 @@
+schema_version: 1
+asset_name: rrrp_arm
+architecture: RRRP_serial_manipulator
+parameter_provenance: ENGINEERING_NOMINAL
+provisional: true
+units:
+  length: m
+  mass: kg
+  angle: rad
+  effort_revolute: N*m
+  effort_prismatic: N
+  inertia: kg*m^2
+geometry:
+  L1: 0.16
+  L2: 0.13
+  L3: 0.10
+  link_cross_section: 0.035
+  p_stroke: 0.08
+  gripper_mount_length: 0.06
+  gripper_mount_width: 0.05
+  gripper_mount_height: 0.05
+joints:
+  q1:
+    type: revolute
+    axis: [0.0, 1.0, 0.0]
+    lower: -2.617993878
+    upper: 2.617993878
+    max_velocity: 4.0
+    max_effort: 8.0
+    damping: 0.04
+    friction: 0.0
+  q2:
+    type: revolute
+    axis: [0.0, 1.0, 0.0]
+    lower: -2.356194490
+    upper: 2.356194490
+    max_velocity: 4.0
+    max_effort: 6.0
+    damping: 0.04
+    friction: 0.0
+  q3:
+    type: revolute
+    axis: [0.0, 1.0, 0.0]
+    lower: -2.617993878
+    upper: 2.617993878
+    max_velocity: 5.0
+    max_effort: 4.0
+    damping: 0.03
+    friction: 0.0
+  d:
+    type: prismatic
+    axis: [1.0, 0.0, 0.0]
+    lower: 0.0
+    upper: 0.08
+    max_velocity: 0.25
+    max_effort: 6.0
+    damping: 0.08
+    friction: 0.0
+mass_properties:
+  links:
+    link1:
+      structural_mass: 0.18
+      motor_lumped_mass: 0.04
+      shape: box_along_x
+    link2:
+      structural_mass: 0.14
+      motor_lumped_mass: 0.03
+      shape: box_along_x
+    link3:
+      structural_mass: 0.09
+      motor_lumped_mass: 0.03
+      shape: box_along_x
+    slider:
+      structural_mass: 0.06
+      motor_lumped_mass: 0.0
+      shape: box_along_x
+    gripper_mount:
+      structural_mass: 0.06
+      motor_lumped_mass: 0.0
+      shape: box
+  floating_uav_base:
+    mass: 0.98
+    center_of_mass: [0.0, 0.0, 0.0]
+    diagonal_inertia: [0.018, 0.018, 0.032]
+    provenance: PROVISIONAL_LEGACY
+    hardware_parameter_validated: false
+  arm_mount:
+    mass: 0.04
+    shape: box
+simulation:
+  physics_dt: 0.004166666666666667
+  gravity: [0.0, 0.0, 0.0]
+  fixed_base_steps: 2000
+  floating_base_steps: 2000
+  pulse_steps: 30
+  pulse_efforts: [0.002, 0.0, 0.0, 0.0]
+  p_pulse_efforts: [0.0, 0.0, 0.0, 0.03]

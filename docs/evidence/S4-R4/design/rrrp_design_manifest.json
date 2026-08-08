@@ -1,0 +1,48 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "design_source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\robot_assets\\rrrp\\rrrp_design.yaml",
+  "architecture": "RRRP_serial_manipulator",
+  "parameter_provenance": "ENGINEERING_NOMINAL",
+  "provisional": true,
+  "total_arm_mass_kg": 0.6300000000000001,
+  "max_geometric_reach_m": 0.47000000000000003,
+  "p_stroke_m": 0.08,
+  "dof_count": 4,
+  "revolute_count": 3,
+  "prismatic_count": 1,
+  "all_dynamic_links_positive_mass": true,
+  "all_inertias_physically_valid": true,
+  "asset_paths": {
+    "fixed": {
+      "root": "/World/FixedBaseArm",
+      "base": "/World/FixedBaseArm/fixed_arm_base",
+      "q1": "/World/FixedBaseArm/joints/q1",
+      "link1": "/World/FixedBaseArm/link1",
+      "q2": "/World/FixedBaseArm/joints/q2",
+      "link2": "/World/FixedBaseArm/link2",
+      "q3": "/World/FixedBaseArm/joints/q3",
+      "link3": "/World/FixedBaseArm/link3",
+      "d": "/World/FixedBaseArm/joints/d",
+      "slider": "/World/FixedBaseArm/slider",
+      "gripper_mount": "/World/FixedBaseArm/gripper_mount",
+      "gripper_mount_fixed": "/World/FixedBaseArm/joints/gripper_mount_fixed",
+      "floating": false
+    },
+    "floating": {
+      "root": "/World/FloatingBaseArm",
+      "base": "/World/FloatingBaseArm/uav_base",
+      "q1": "/World/FloatingBaseArm/joints/q1",
+      "link1": "/World/FloatingBaseArm/link1",
+      "q2": "/World/FloatingBaseArm/joints/q2",
+      "link2": "/World/FloatingBaseArm/link2",
+      "q3": "/World/FloatingBaseArm/joints/q3",
+      "link3": "/World/FloatingBaseArm/link3",
+      "d": "/World/FloatingBaseArm/joints/d",
+      "slider": "/World/FloatingBaseArm/slider",
+      "gripper_mount": "/World/FloatingBaseArm/gripper_mount",
+      "gripper_mount_fixed": "/World/FloatingBaseArm/joints/gripper_mount_fixed",
+      "floating": true
+    }
+  },
+  "stage_prim_count": 46
+}

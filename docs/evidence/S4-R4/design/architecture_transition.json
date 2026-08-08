@@ -1,0 +1,12 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "legacy_delta_asset": true,
+  "active_manipulator_architecture": "RRRP",
+  "active_manipulator_is_delta": false,
+  "delta_source_usd_untouched": true,
+  "new_asset": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\robot_assets\\rrrp\\rrrp_arm.usd",
+  "parameter_source": "D:\\Desktop\\my_project\\Simulation_Research_on_Aerial_Manipulator_for_Power_Line_Bird_Diverter_Operation_S4R0\\robot_assets\\rrrp\\rrrp_design.yaml",
+  "parameter_provenance": "ENGINEERING_NOMINAL",
+  "provisional": true,
+  "rationale": "R3 proved the legacy Delta source does not uniquely reconstruct a closed chain; RRRP is an independent tree articulation."
+}

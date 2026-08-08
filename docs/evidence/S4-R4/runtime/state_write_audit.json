@@ -1,0 +1,29 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "native_rrrp_script": "scripts/s4_r4_rrrp_native_dynamics.py",
+  "python_arm_integrator_present": false,
+  "manual_reaction_present": false,
+  "manual_arm_gravity_present": false,
+  "root_runtime_state_write": false,
+  "joint_runtime_position_write": false,
+  "joint_runtime_velocity_write": false,
+  "forbidden_after_reset_calls": {
+    "set_world_pose": 0,
+    "set_world_transform": 0,
+    "set_root_state": 0,
+    "set_joint_position": 0,
+    "set_joint_velocity": 0,
+    "teleport": 0
+  },
+  "reset_default_state_writes": 3,
+  "post_reset_effort_actions_only": true,
+  "native_input_interface": "ArticulationAction(joint_efforts=...)",
+  "solver_state_readback": [
+    "articulation_view.get_world_poses",
+    "get_joint_positions",
+    "get_joint_velocities",
+    "articulation_view.get_linear_velocities",
+    "articulation_view.get_angular_velocities"
+  ],
+  "audit_pass": true
+}

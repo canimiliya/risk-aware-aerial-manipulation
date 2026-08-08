@@ -1,0 +1,25 @@
+{
+  "task": "S4-R4-RRRP-NATIVE-DYNAMICS-R1",
+  "gravity_xyz": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "external_wrench": false,
+  "runs": {
+    "floating_q1": {
+      "max_drift_kg_m_s": 2.0768159267543895e-08,
+      "relative_drift": 2.2777646545515437e-06,
+      "pass": true
+    },
+    "floating_P": {
+      "max_drift_kg_m_s": 8.705582279361357e-10,
+      "relative_drift": 1.6883547488709137e-08,
+      "pass": true
+    }
+  },
+  "linear_momentum_relative_drift": 2.2777646545515437e-06,
+  "pass_threshold": 0.01,
+  "pass": true,
+  "angular_momentum_validated": false
+}
