@@ -1,0 +1,55 @@
+{
+  "task": "S4-R6-R5-CORRECTED-CONVERGENCE-AND-FREEZE-R1",
+  "fixed_base": {
+    "root_dof_count": 6,
+    "q1": {
+      "articulation_dof_index": 0,
+      "mass_matrix_index": 6,
+      "mass_matrix_row": 6,
+      "mass_matrix_column": 6
+    },
+    "q2": {},
+    "q3": {},
+    "P": {},
+    "q1_effective_inertia_fixed_kg_m2": 0.0018997916486114264,
+    "source": "R4 single-1R fixed-base runtime mass matrix M[6,6]"
+  },
+  "floating_base": {
+    "root_dof_count": 6,
+    "joint_names": [
+      "q2",
+      "q3",
+      "q1",
+      "d",
+      "uav_to_mount",
+      "gripper_mount_fixed"
+    ],
+    "q1": {
+      "articulation_dof_index": 2,
+      "mass_matrix_row": 8,
+      "mass_matrix_column": 8
+    },
+    "q2": {
+      "articulation_dof_index": 0,
+      "mass_matrix_row": 6,
+      "mass_matrix_column": 6
+    },
+    "q3": {
+      "articulation_dof_index": 1,
+      "mass_matrix_row": 7,
+      "mass_matrix_column": 7
+    },
+    "P": {
+      "articulation_dof_index": 3,
+      "mass_matrix_row": 9,
+      "mass_matrix_column": 9
+    }
+  },
+  "runtime_q1_motion_inertia_floating_kg_m2": 0.01809999905526638,
+  "mapping_valid": true,
+  "q1_fixed_oracle_contract": {
+    "inertia_kg_m2": 0.0018997916486114264,
+    "reference_qdd_at_0p2_rad_s2": 105.27470217388401,
+    "reference_torque_check": 0.2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "task": "S4-R6-R5-CORRECTED-CONVERGENCE-AND-FREEZE-R1",
+  "source": "S4-R6 runtime trim evidence revalidated against unchanged source hashes",
+  "stowed_configuration": [
+    0.0,
+    1.5707963267948966,
+    0.0,
+    0.0
+  ],
+  "stowed_max_rotor_utilization": 0.7290198271630851,
+  "stowed_limit": 0.8,
+  "approach_max_rotor_utilization_by_p": [
+    0.8775564240253487,
+    0.8878521094769012,
+    0.8981477987638947
+  ],
+  "approach_max_rotor_utilization": 0.8981477987638947,
+  "approach_limit": 0.9,
+  "approach_static_thrust_margin_narrow": true,
+  "stowed_trim_valid": true,
+  "approach_trim_valid": true,
+  "source_hashes": {
+    "robot_assets\\rrrp\\rrrp_arm.usd": "069ec8f03304ba04bf4fcddb74ea42c4016e5074b0bb44271f14662438173994",
+    "robot_assets\\rrrp\\rrrp_design.yaml": "c810792a2147eb34c20573b333d4ae117c9046090ed10b6ef29ca8f0117e921f",
+    "configs\\s4\\rrrp_quadrotor_design.yaml": "62ca685d816652aea15f626c247a8bfe50bae8ee27405afe9a77297cbd2cf47a",
+    "configs\\s4\\rrrp_physics_freeze.yaml": "1596b14f8bf3ae783f76098925615403631bc4e9bef078aefcb5bcd974a13fc3"
+  },
+  "model_parameters_modified": false
+}

@@ -1,0 +1,10 @@
+{
+  "task": "S4-R6-R5-CORRECTED-CONVERGENCE-AND-FREEZE-R1",
+  "superseded_label": "BLOCKED_S4_R6_R3_PHYSX_REVOLUTE_SOLVER",
+  "superseded_claim": "PhysX revolute solver/native integration caused the Q1 mismatch",
+  "superseded_by": "S4_R6_R4_ORACLE_INTERPRETATION_ROOT_CAUSE_CONFIRMED",
+  "actual_root_cause": "incorrect mass-matrix / DOF interpretation",
+  "physx_solver_limitation_confirmed": false,
+  "historical_evidence_preserved": true,
+  "current_blocker_name_must_not_be_physx_revolute_solver": true
+}

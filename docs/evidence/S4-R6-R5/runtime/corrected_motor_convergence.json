@@ -1,0 +1,49 @@
+{
+  "task": "S4-R6-R5-CORRECTED-CONVERGENCE-AND-FREEZE-R1",
+  "motor_pairs": {
+    "240_to_480": {
+      "omega": {
+        "value_left": 299.762852903064,
+        "value_right": 299.762852903064,
+        "relative_change": 0.0,
+        "rms_difference": 0.08228232725735732
+      },
+      "thrust": {
+        "value_left": 1.34786651970876,
+        "value_right": 1.34786651970876,
+        "relative_change": 0.0,
+        "rms_difference": 0.00042428446437830554
+      }
+    },
+    "480_to_960": {
+      "omega": {
+        "value_left": 299.762852903064,
+        "value_right": 299.76285290306396,
+        "relative_change": 1.8962796193826525e-16,
+        "rms_difference": 0.021499538938937725
+      },
+      "thrust": {
+        "value_left": 1.34786651970876,
+        "value_right": 1.3478665197087596,
+        "relative_change": 3.294756590185349e-16,
+        "rms_difference": 0.00011150066390565132
+      }
+    },
+    "960_to_1920": {
+      "omega": {
+        "value_left": 299.76285290306396,
+        "value_right": 299.7628529030641,
+        "relative_change": 3.7925592387653035e-16,
+        "rms_difference": 0.006207412951482522
+      },
+      "thrust": {
+        "value_left": 1.3478665197087596,
+        "value_right": 1.3478665197087605,
+        "relative_change": 6.589513180370694e-16,
+        "rms_difference": 3.223917274358846e-05
+      }
+    }
+  },
+  "metric_source": "analytic motor state generated at common physical time",
+  "motor_timestep_convergence": false
+}

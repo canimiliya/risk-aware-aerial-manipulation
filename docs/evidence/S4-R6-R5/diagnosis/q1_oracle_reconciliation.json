@@ -1,0 +1,43 @@
+{
+  "task": "S4-R6-R5-CORRECTED-CONVERGENCE-AND-FREEZE-R1",
+  "fixed_base_q1_effective_inertia_kg_m2": 0.0018997916486114264,
+  "fixed_base_q1_reference_qdd_at_0p2_rad_s2": 105.27470217388401,
+  "floating_base_mass_matrix_q1_motion_inertia_kg_m2": 0.01809999905526638,
+  "first_step_by_rate": {
+    "240": {
+      "qdd_sim_rad_s2": 84.88939762115479,
+      "qdd_oracle_floating_base_rad_s2": 84.88952409288316,
+      "qdd_error_rad_s2": 0.0001264717283788741,
+      "measured_effort_Nm": 0.20000028610229492,
+      "applied_effort_Nm": 0.20000000298023224,
+      "pass": true
+    },
+    "480": {
+      "qdd_sim_rad_s2": 84.88939762115479,
+      "qdd_oracle_floating_base_rad_s2": 84.88949246911633,
+      "qdd_error_rad_s2": 9.484796154879405e-05,
+      "measured_effort_Nm": 0.20000021159648895,
+      "applied_effort_Nm": 0.20000000298023224,
+      "pass": true
+    },
+    "960": {
+      "qdd_sim_rad_s2": 84.88939762115479,
+      "qdd_oracle_floating_base_rad_s2": 84.88948614436299,
+      "qdd_error_rad_s2": 8.85232082055154e-05,
+      "measured_effort_Nm": 0.20000019669532776,
+      "applied_effort_Nm": 0.20000000298023224,
+      "pass": true
+    },
+    "1920": {
+      "qdd_sim_rad_s2": 84.88939762115479,
+      "qdd_oracle_floating_base_rad_s2": 84.88948614436299,
+      "qdd_error_rad_s2": 8.85232082055154e-05,
+      "measured_effort_Nm": 0.20000019669532776,
+      "applied_effort_Nm": 0.20000000298023224,
+      "pass": true
+    }
+  },
+  "oracle_uses_name_resolved_indices": true,
+  "r3_solver_finding_superseded": true,
+  "reconciled": true
+}

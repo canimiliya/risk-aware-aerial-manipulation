@@ -1,0 +1,5 @@
+{
+  "task": "S4-R6-R5-CORRECTED-CONVERGENCE-AND-FREEZE-R1",
+  "status": "NOT_RUN_BLOCKED_UPSTREAM_Q1_CONVERGENCE",
+  "reason": "No selected physics rate exists because corrected Q1 timestep convergence failed."
+}
