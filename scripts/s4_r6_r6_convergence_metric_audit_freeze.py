@@ -190,19 +190,32 @@ def metric_attribution(raw: dict[int, dict[str, Any]], grid: np.ndarray) -> dict
     }
 
 
-def state_convergence(raw: dict[int, dict[str, Any]], grid: np.ndarray) -> dict[str, Any]:
+def vector_state_metrics(left: dict[str, Any], right: dict[str, Any], grid: np.ndarray, field: str, dimension: int) -> dict[str, Any]:
+    components = {str(index): trace_metrics(left, right, grid, field, index) for index in range(dimension)}
+    return {
+        "components": components,
+        "max_normalized_rms_difference": max(item["normalized_rms_difference"] for item in components.values()),
+        "max_normalized_max_error": max(item["normalized_max_error"] for item in components.values()),
+        "peak_norm": trace_metrics(left, right, grid, field, None),
+    }
+
+
+def state_convergence(raw: dict[int, dict[str, Any]], grid: np.ndarray, pose_raw: dict[int, dict[str, Any]] | None = None) -> dict[str, Any]:
+    state_source = pose_raw or raw
     pairs: dict[str, Any] = {}
     for left_rate, right_rate in PAIRS:
         key = f"{left_rate}_{right_rate}"
-        left, right = raw[left_rate]["q1"], raw[right_rate]["q1"]
+        left, right = state_source[left_rate]["q1"] if "q1" in state_source[left_rate] else state_source[left_rate], state_source[right_rate]["q1"] if "q1" in state_source[right_rate] else state_source[right_rate]
         metrics = {
             "q": trace_metrics(left, right, grid, "q", "q1"),
             "dq": trace_metrics(left, right, grid, "dq", "q1"),
             "base_linear_velocity": trace_metrics(left, right, grid, "base_linear_velocity_m_s", None),
             "base_angular_velocity": trace_metrics(left, right, grid, "base_angular_velocity_rad_s", None),
+            "base_position": vector_state_metrics(left, right, grid, "base_position_world_m", 3),
+            "base_orientation_wxyz": vector_state_metrics(left, right, grid, "base_orientation_world_wxyz", 4),
         }
         threshold = THRESHOLDS[f"{left_rate}_to_{right_rate}"]
-        metric_pass = {name: bool(item["normalized_rms_difference"] < threshold and item["normalized_max_error"] < threshold) for name, item in metrics.items()}
+        metric_pass = {name: bool((item["normalized_rms_difference"] < threshold and item["normalized_max_error"] < threshold) if name not in ("base_position", "base_orientation_wxyz") else (item["max_normalized_rms_difference"] < threshold and item["max_normalized_max_error"] < threshold)) for name, item in metrics.items()}
         pairs[key] = {"threshold": threshold, "metrics": metrics, "metric_pass": metric_pass, "pair_pass": bool(all(metric_pass.values()))}
     selected = None
     if all(pairs[f"{a}_{b}"]["pair_pass"] for a, b in PAIRS):
@@ -213,7 +226,7 @@ def state_convergence(raw: dict[int, dict[str, Any]], grid: np.ndarray) -> dict[
         selected = 960
     return {
         "task": TASK,
-        "source": "PhysX readback q(t), dq(t), base linear/angular velocity on common physical-time grid",
+        "source": "PhysX readback q(t), dq(t), floating-base position/orientation/linear/angular velocity on common physical-time grid",
         "normalization": "RMS and max error divided by range of finer-rate reference trajectory",
         "pairs": pairs,
         "q_state_timestep_convergence": bool(selected is not None),
@@ -266,7 +279,8 @@ def finalize() -> int:
     grid = np.arange(0.0, TOTAL_TIME + 1.0 / 1920.0 * 0.5, 1.0 / 1920.0)
     attribution = metric_attribution(raw, grid)
     events = event_alignment(raw)
-    states = state_convergence(raw, grid)
+    pose_raw = {rate: {"q1": read_json(DIAGNOSIS / f"state_rate_{rate}hz.json")} for rate in RATES}
+    states = state_convergence(raw, grid, pose_raw)
     impulse = impulse_response(raw)
     write_json(DIAGNOSIS / "q1_metric_attribution.json", attribution)
     write_json(DIAGNOSIS / "event_alignment_audit.json", events)

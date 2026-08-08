@@ -25,11 +25,22 @@ def test_true_state_gate_blocks_freeze_without_relaxed_thresholds():
     manifest = load("freeze/physics_model_freeze_manifest.json")
     assert state["q1_true_state_nonconvergence"] is True
     assert state["selected_physics_rate_hz"] is None
+    for pair in state["pairs"].values():
+        assert "base_position" in pair["metrics"]
+        assert "base_orientation_wxyz" in pair["metrics"]
     assert readiness["final_label"] == "BLOCKED_S4_R6_R6_TRUE_STATE_TIMESTEP_NONCONVERGENCE"
     assert readiness["physics_model_frozen"] is False
     assert readiness["cleanup_audit_allowed"] is False
     assert manifest["physics_model_frozen"] is False
     assert manifest["freeze_tag"] is None
+
+
+def test_supplemental_pose_readback_exists_for_all_rates():
+    for rate in (240, 480, 960, 1920):
+        payload = json.loads((EVIDENCE / f"diagnosis/state_rate_{rate}hz.json").read_text(encoding="utf-8"))
+        assert payload["finite"] is True
+        assert "base_position_world_m" in payload["records"][0]
+        assert "base_orientation_world_wxyz" in payload["records"][0]
 
 
 def test_isolation_does_not_use_edge_qdd_or_oracle():

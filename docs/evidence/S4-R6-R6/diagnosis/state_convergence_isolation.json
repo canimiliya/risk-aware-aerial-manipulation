@@ -1,6 +1,6 @@
 {
   "task": "S4-R6-R6-CONVERGENCE-METRIC-AUDIT-AND-FREEZE-R1",
-  "source": "pre-existing R3 three-layer runtime traces, re-evaluated with R6 common-time q/dq protocol",
+  "source": "new R6 three-layer runtime traces, re-evaluated with R6 common-time q/dq protocol",
   "models": {
     "single_1r": {
       "rows": [

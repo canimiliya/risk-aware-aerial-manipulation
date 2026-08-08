@@ -4,7 +4,7 @@ TASK: S4-R6-R6-CONVERGENCE-METRIC-AUDIT-AND-FREEZE-R1
 
 START_HEAD: ae0b6e26942312c0f87984582389cb889571503b
 
-END_HEAD: ae0b6e26942312c0f87984582389cb889571503b
+END_HEAD: 7c21f3b904f5c55ed9e1343c2b597d757c261aaf
 
 FINAL_LABEL: BLOCKED_S4_R6_R6_TRUE_STATE_TIMESTEP_NONCONVERGENCE
 
@@ -62,4 +62,4 @@ S4_READY: false
 
 ## Conclusion
 
-The R5 50% source is `peak_qdd`, a derived finite-difference metric. However, its peak occurs near 0.05 s rather than at the commanded pulse boundaries, and the independent q/dq/base-state comparison also fails the original state gates. Therefore this is not a pure torque-edge metric artifact and the physics model is not frozen. No energy or long-duration run was started because the freeze gate has no selected physics rate.
+The R5 50% source is `peak_qdd`, a derived finite-difference metric. Its peak occurs near 0.05 s rather than at the commanded pulse boundaries, so the event-edge diagnostic is separated from the hard gate. Supplemental PhysX readback now includes floating-base position and orientation, and the independent q/dq/base-state comparison still fails the original state gates. Therefore this is not a pure torque-edge metric artifact and the physics model is not frozen. No energy or long-duration run was started because the freeze gate has no selected physics rate.
