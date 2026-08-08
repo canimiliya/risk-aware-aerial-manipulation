@@ -1,0 +1,6 @@
+{
+  "task": "S4-R6-R6-CONVERGENCE-METRIC-AUDIT-AND-FREEZE-R1",
+  "status": "NOT_RUN_BLOCKED_UPSTREAM_Q1_STATE_CONVERGENCE",
+  "energy_diagnostic": "NOT_RUN",
+  "reason": "No selected rate because q/dq/base PhysX state convergence failed."
+}

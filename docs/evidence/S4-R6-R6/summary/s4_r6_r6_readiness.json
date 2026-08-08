@@ -1,0 +1,28 @@
+{
+  "task": "S4-R6-R6-CONVERGENCE-METRIC-AUDIT-AND-FREEZE-R1",
+  "start_head": "ae0b6e26942312c0f87984582389cb889571503b",
+  "end_head_at_evidence_generation": "ae0b6e26942312c0f87984582389cb889571503b",
+  "final_label": "BLOCKED_S4_R6_R6_TRUE_STATE_TIMESTEP_NONCONVERGENCE",
+  "r5_max_change_source_metric": "peak_qdd",
+  "q1_state_timestep_convergence": false,
+  "selected_physics_rate_hz": null,
+  "torque_impulse_equivalent": true,
+  "event_alignment_valid": true,
+  "p_timestep_convergence": true,
+  "motor_timestep_convergence": true,
+  "energy_diagnostic": "NOT_RUN_BLOCKED_UPSTREAM_Q1_STATE_CONVERGENCE",
+  "long_duration_stability": "NOT_RUN_BLOCKED_UPSTREAM_Q1_STATE_CONVERGENCE",
+  "stowed_max_rotor_utilization": 0.7290198271630851,
+  "approach_max_rotor_utilization": 0.8981477987638947,
+  "approach_static_thrust_margin_narrow": true,
+  "final_actuation_audit": "PASS",
+  "head_only_failures": 0,
+  "physics_model_frozen": false,
+  "freeze_tag": null,
+  "cleanup_audit_allowed": false,
+  "s4_ready": false,
+  "state_convergence_isolation": "COMPLETED_FROM_NEW_R6_THREE_LAYER_RUNTIME_TRACES",
+  "preserved_blockers": [
+    "BLOCKED_S4_R6_R6_TRUE_STATE_TIMESTEP_NONCONVERGENCE"
+  ]
+}

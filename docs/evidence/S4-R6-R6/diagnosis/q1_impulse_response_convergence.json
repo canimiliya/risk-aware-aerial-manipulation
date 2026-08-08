@@ -1,0 +1,106 @@
+{
+  "task": "S4-R6-R6-CONVERGENCE-METRIC-AUDIT-AND-FREEZE-R1",
+  "rates": {
+    "240": {
+      "pulse_start_sample_time_s": 0.0,
+      "pulse_end_sample_time_s": 0.125,
+      "delta_dq_rad_s": 1.0937377226127865e-08,
+      "peak_abs_dq_rad_s": 1.4141650199890137,
+      "final_q_rad": 0.04568975418806076,
+      "measured_torque_impulse_Nms": 0.02500000037252904
+    },
+    "480": {
+      "pulse_start_sample_time_s": 0.0,
+      "pulse_end_sample_time_s": 0.125,
+      "delta_dq_rad_s": -2.7166620952812082e-08,
+      "peak_abs_dq_rad_s": 1.7664141654968262,
+      "final_q_rad": 0.04569020867347717,
+      "measured_torque_impulse_Nms": 0.02500000037252904
+    },
+    "960": {
+      "pulse_start_sample_time_s": 0.0,
+      "pulse_end_sample_time_s": 0.125,
+      "delta_dq_rad_s": -4.133138276074533e-08,
+      "peak_abs_dq_rad_s": 1.7662992477416992,
+      "final_q_rad": 0.045689988881349564,
+      "measured_torque_impulse_Nms": 0.025000000372528964
+    },
+    "1920": {
+      "pulse_start_sample_time_s": 0.0,
+      "pulse_end_sample_time_s": 0.125,
+      "delta_dq_rad_s": -2.7658444423650508e-09,
+      "peak_abs_dq_rad_s": 1.8101866245269775,
+      "final_q_rad": 0.0439729169011116,
+      "measured_torque_impulse_Nms": 0.025000000372529058
+    }
+  },
+  "pairs": {
+    "240_480": {
+      "delta_dq_rad_s": {
+        "left": 1.0937377226127865e-08,
+        "right": -2.7166620952812082e-08,
+        "relative_change": 1.4026035201479745
+      },
+      "peak_abs_dq_rad_s": {
+        "left": 1.4141650199890137,
+        "right": 1.7664141654968262,
+        "relative_change": 0.1994148101777354
+      },
+      "final_q_rad": {
+        "left": 0.04568975418806076,
+        "right": 0.04569020867347717,
+        "relative_change": 9.947107478985513e-06
+      },
+      "measured_torque_impulse_Nms": {
+        "left": 0.02500000037252904,
+        "right": 0.02500000037252904,
+        "relative_change": 0.0
+      }
+    },
+    "480_960": {
+      "delta_dq_rad_s": {
+        "left": -2.7166620952812082e-08,
+        "right": -4.133138276074533e-08,
+        "relative_change": 0.3427120232083378
+      },
+      "peak_abs_dq_rad_s": {
+        "left": 1.7664141654968262,
+        "right": 1.7662992477416992,
+        "relative_change": 6.50613169166443e-05
+      },
+      "final_q_rad": {
+        "left": 0.04569020867347717,
+        "right": 0.045689988881349564,
+        "relative_change": 4.810509544662442e-06
+      },
+      "measured_torque_impulse_Nms": {
+        "left": 0.02500000037252904,
+        "right": 0.025000000372528964,
+        "relative_change": 3.0531132722242555e-15
+      }
+    },
+    "960_1920": {
+      "delta_dq_rad_s": {
+        "left": -4.133138276074533e-08,
+        "right": -2.7658444423650508e-09,
+        "relative_change": 13.943495059831783
+      },
+      "peak_abs_dq_rad_s": {
+        "left": 1.7662992477416992,
+        "right": 1.8101866245269775,
+        "relative_change": 0.024244669687992305
+      },
+      "final_q_rad": {
+        "left": 0.045689988881349564,
+        "right": 0.0439729169011116,
+        "relative_change": 0.03904839845169686
+      },
+      "measured_torque_impulse_Nms": {
+        "left": 0.025000000372528964,
+        "right": 0.025000000372529058,
+        "relative_change": 3.747002652275209e-15
+      }
+    }
+  },
+  "interpretation": "delta-dq and impulse are retained diagnostics; they do not replace q/dq state gates"
+}

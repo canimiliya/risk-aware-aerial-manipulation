@@ -1,0 +1,104 @@
+{
+  "task": "S4-R6-R6-CONVERGENCE-METRIC-AUDIT-AND-FREEZE-R1",
+  "source": "pre-existing R3 three-layer runtime traces, re-evaluated with R6 common-time q/dq protocol",
+  "models": {
+    "single_1r": {
+      "rows": [
+        {
+          "pair": "240_480",
+          "q_normalized_rms": 0.012506545570910814,
+          "q_normalized_max": 0.06000016142817298,
+          "dq_normalized_rms": 0.03952684441284324,
+          "dq_normalized_max": 0.5213284946589628,
+          "threshold": 0.02,
+          "pass": false
+        },
+        {
+          "pair": "480_960",
+          "q_normalized_rms": 0.007530403640686932,
+          "q_normalized_max": 0.03250322591270277,
+          "dq_normalized_rms": 0.038334483090131106,
+          "dq_normalized_max": 0.585610053977472,
+          "threshold": 0.01,
+          "pass": false
+        },
+        {
+          "pair": "960_1920",
+          "q_normalized_rms": 0.003392027732903371,
+          "q_normalized_max": 0.016878334602609752,
+          "dq_normalized_rms": 0.054781942058128974,
+          "dq_normalized_max": 1.0728020573057138,
+          "threshold": 0.01,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "fixed_rrrp": {
+      "rows": [
+        {
+          "pair": "240_480",
+          "q_normalized_rms": 0.00792140261363523,
+          "q_normalized_max": 0.02936803387311462,
+          "dq_normalized_rms": 0.03896542470728301,
+          "dq_normalized_max": 0.38162662298401145,
+          "threshold": 0.02,
+          "pass": false
+        },
+        {
+          "pair": "480_960",
+          "q_normalized_rms": 0.008475545010472041,
+          "q_normalized_max": 0.02890854385278212,
+          "dq_normalized_rms": 0.04789142567247587,
+          "dq_normalized_max": 0.45767598044296326,
+          "threshold": 0.01,
+          "pass": false
+        },
+        {
+          "pair": "960_1920",
+          "q_normalized_rms": 0.007711634982988756,
+          "q_normalized_max": 0.033919309257226006,
+          "dq_normalized_rms": 0.06289632779854165,
+          "dq_normalized_max": 0.9999330218014715,
+          "threshold": 0.01,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "floating_rrrp": {
+      "rows": [
+        {
+          "pair": "240_480",
+          "q_normalized_rms": 0.009375595681631656,
+          "q_normalized_max": 0.03222959297533135,
+          "dq_normalized_rms": 0.062157622593235026,
+          "dq_normalized_max": 0.6208230860095518,
+          "threshold": 0.02,
+          "pass": false
+        },
+        {
+          "pair": "480_960",
+          "q_normalized_rms": 0.00498170655182716,
+          "q_normalized_max": 0.020145676020599478,
+          "dq_normalized_rms": 0.047989626735865154,
+          "dq_normalized_max": 0.668368722018108,
+          "threshold": 0.01,
+          "pass": false
+        },
+        {
+          "pair": "960_1920",
+          "q_normalized_rms": 0.004810126747679024,
+          "q_normalized_max": 0.037578754298329436,
+          "dq_normalized_rms": 0.02832305529049624,
+          "dq_normalized_max": 0.3167149837373966,
+          "threshold": 0.01,
+          "pass": false
+        }
+      ],
+      "pass": false
+    }
+  },
+  "first_failure_layer": "single_1r",
+  "solver_oracle_or_edge_qdd_used": false
+}

@@ -1,0 +1,240 @@
+{
+  "task": "S4-R6-R6-CONVERGENCE-METRIC-AUDIT-AND-FREEZE-R1",
+  "source": "PhysX readback q(t), dq(t), base linear/angular velocity on common physical-time grid",
+  "normalization": "RMS and max error divided by range of finer-rate reference trajectory",
+  "pairs": {
+    "240_480": {
+      "threshold": 0.02,
+      "metrics": {
+        "q": {
+          "peak_abs_left": 0.0456937812268734,
+          "peak_abs_right": 0.045722100883722305,
+          "peak_relative_change": 0.0006193866051983989,
+          "final_left": 0.04568975418806076,
+          "final_right": 0.04569020867347717,
+          "final_relative_change": 9.947107478985513e-06,
+          "rms_difference": 0.0004286719316005538,
+          "normalized_rms_difference": 0.009375595681631656,
+          "normalized_max_error": 0.03222959297533135,
+          "gate_peak_abs_left": 0.0456937812268734,
+          "gate_peak_abs_right": 0.045722100883722305,
+          "gate_peak_relative_change": 0.0006193866051983989,
+          "gate_normalized_rms_difference": 0.009375595681631656,
+          "gate_normalized_max_error": 0.03222959297533135
+        },
+        "dq": {
+          "peak_abs_left": 1.4141650199890137,
+          "peak_abs_right": 1.7664141654968262,
+          "peak_relative_change": 0.1994148101777354,
+          "final_left": -0.00010512283915886655,
+          "final_right": -0.0001113921171054244,
+          "final_relative_change": 0.05628116342042805,
+          "rms_difference": 0.12111955017861603,
+          "normalized_rms_difference": 0.062157622593235026,
+          "normalized_max_error": 0.6208230860095518,
+          "gate_peak_abs_left": 1.4141650199890137,
+          "gate_peak_abs_right": 1.7664141654968262,
+          "gate_peak_relative_change": 0.1994148101777354,
+          "gate_normalized_rms_difference": 0.062157622593235026,
+          "gate_normalized_max_error": 0.6208230860095518
+        },
+        "base_linear_velocity": {
+          "peak_abs_left": 0.03702063414414435,
+          "peak_abs_right": 0.03702580827395442,
+          "peak_relative_change": 0.00013974387194428393,
+          "final_left": 0.00018341230712521693,
+          "final_right": 0.00013511842610494952,
+          "final_relative_change": 0.35741891326321745,
+          "rms_difference": 0.0018732590134554203,
+          "normalized_rms_difference": 0.05059333207786183,
+          "normalized_max_error": 0.3797192199562562,
+          "gate_peak_abs_left": 0.03702063414414435,
+          "gate_peak_abs_right": 0.03702580827395442,
+          "gate_peak_relative_change": 0.00013974387194428393,
+          "gate_normalized_rms_difference": 0.05059333207786183,
+          "gate_normalized_max_error": 0.3797192199562562
+        },
+        "base_angular_velocity": {
+          "peak_abs_left": 0.50591641664505,
+          "peak_abs_right": 0.5058731436729431,
+          "peak_relative_change": 8.554115324791864e-05,
+          "final_left": 0.1384598016738892,
+          "final_right": 0.1458898335695267,
+          "final_relative_change": 0.05092905868657793,
+          "rms_difference": 0.025937565956511113,
+          "normalized_rms_difference": 0.05127286609482526,
+          "normalized_max_error": 0.15797857417979194,
+          "gate_peak_abs_left": 0.50591641664505,
+          "gate_peak_abs_right": 0.5058731436729431,
+          "gate_peak_relative_change": 8.554115324791864e-05,
+          "gate_normalized_rms_difference": 0.05127286609482526,
+          "gate_normalized_max_error": 0.15797857417979194
+        }
+      },
+      "metric_pass": {
+        "q": false,
+        "dq": false,
+        "base_linear_velocity": false,
+        "base_angular_velocity": false
+      },
+      "pair_pass": false
+    },
+    "480_960": {
+      "threshold": 0.01,
+      "metrics": {
+        "q": {
+          "peak_abs_left": 0.045722100883722305,
+          "peak_abs_right": 0.04569998383522034,
+          "peak_relative_change": 0.0004839618451882927,
+          "final_left": 0.04569020867347717,
+          "final_right": 0.045689988881349564,
+          "final_relative_change": 4.810509544662442e-06,
+          "rms_difference": 0.00022766390889031245,
+          "normalized_rms_difference": 0.00498170655182716,
+          "normalized_max_error": 0.020145676020599478,
+          "gate_peak_abs_left": 0.045722100883722305,
+          "gate_peak_abs_right": 0.04569998383522034,
+          "gate_peak_relative_change": 0.0004839618451882927,
+          "gate_normalized_rms_difference": 0.00498170655182716,
+          "gate_normalized_max_error": 0.020145676020599478
+        },
+        "dq": {
+          "peak_abs_left": 1.7664141654968262,
+          "peak_abs_right": 1.7662992477416992,
+          "peak_relative_change": 6.50613169166443e-05,
+          "final_left": -0.0001113921171054244,
+          "final_right": -0.00012367144518066198,
+          "final_relative_change": 0.09928992143093063,
+          "rms_difference": 0.0919030209470215,
+          "normalized_rms_difference": 0.047989626735865154,
+          "normalized_max_error": 0.668368722018108,
+          "gate_peak_abs_left": 1.7664141654968262,
+          "gate_peak_abs_right": 1.7662992477416992,
+          "gate_peak_relative_change": 6.50613169166443e-05,
+          "gate_normalized_rms_difference": 0.047989626735865154,
+          "gate_normalized_max_error": 0.668368722018108
+        },
+        "base_linear_velocity": {
+          "peak_abs_left": 0.03702580827395442,
+          "peak_abs_right": 0.038707819843859965,
+          "peak_relative_change": 0.043454050801374516,
+          "final_left": 0.00013511842610494952,
+          "final_right": 0.0002068719629881788,
+          "final_relative_change": 0.34684998318176863,
+          "rms_difference": 0.0017679630893624328,
+          "normalized_rms_difference": 0.04567457161095773,
+          "normalized_max_error": 0.5948254917709087,
+          "gate_peak_abs_left": 0.03702580827395442,
+          "gate_peak_abs_right": 0.038707819843859965,
+          "gate_peak_relative_change": 0.043454050801374516,
+          "gate_normalized_rms_difference": 0.04567457161095773,
+          "gate_normalized_max_error": 0.5948254917709087
+        },
+        "base_angular_velocity": {
+          "peak_abs_left": 0.5058731436729431,
+          "peak_abs_right": 0.5288282632827759,
+          "peak_relative_change": 0.04340751280450789,
+          "final_left": 0.1458898335695267,
+          "final_right": 0.1528044492006302,
+          "final_relative_change": 0.045251402477323746,
+          "rms_difference": 0.02048944825421981,
+          "normalized_rms_difference": 0.0387449946926601,
+          "normalized_max_error": 0.3454313137139937,
+          "gate_peak_abs_left": 0.5058731436729431,
+          "gate_peak_abs_right": 0.5288282632827759,
+          "gate_peak_relative_change": 0.04340751280450789,
+          "gate_normalized_rms_difference": 0.0387449946926601,
+          "gate_normalized_max_error": 0.3454313137139937
+        }
+      },
+      "metric_pass": {
+        "q": false,
+        "dq": false,
+        "base_linear_velocity": false,
+        "base_angular_velocity": false
+      },
+      "pair_pass": false
+    },
+    "960_1920": {
+      "threshold": 0.01,
+      "metrics": {
+        "q": {
+          "peak_abs_left": 0.04569998383522034,
+          "peak_abs_right": 0.045692626386880875,
+          "peak_relative_change": 0.00016102047356977335,
+          "final_left": 0.045689988881349564,
+          "final_right": 0.0439729169011116,
+          "final_relative_change": 0.03904839845169686,
+          "rms_difference": 0.00021978732435524008,
+          "normalized_rms_difference": 0.004810126747679024,
+          "normalized_max_error": 0.037578754298329436,
+          "gate_peak_abs_left": 0.04569998383522034,
+          "gate_peak_abs_right": 0.045692626386880875,
+          "gate_peak_relative_change": 0.00016102047356977335,
+          "gate_normalized_rms_difference": 0.004810126747679024,
+          "gate_normalized_max_error": 0.037578754298329436
+        },
+        "dq": {
+          "peak_abs_left": 1.7662992477416992,
+          "peak_abs_right": 1.8101866245269775,
+          "peak_relative_change": 0.024244669687992305,
+          "final_left": -0.00012367144518066198,
+          "final_right": -0.21031834185123444,
+          "final_relative_change": 0.9994119797441721,
+          "rms_difference": 0.0572285827433761,
+          "normalized_rms_difference": 0.02832305529049624,
+          "normalized_max_error": 0.3167149837373966,
+          "gate_peak_abs_left": 1.7662992477416992,
+          "gate_peak_abs_right": 1.8101866245269775,
+          "gate_peak_relative_change": 0.024244669687992305,
+          "gate_normalized_rms_difference": 0.02832305529049624,
+          "gate_normalized_max_error": 0.3167149837373966
+        },
+        "base_linear_velocity": {
+          "peak_abs_left": 0.038707819843859965,
+          "peak_abs_right": 0.03870770642899855,
+          "peak_relative_change": 2.930033109043112e-06,
+          "final_left": 0.0002068719629881788,
+          "final_right": 0.001742929906516761,
+          "final_relative_change": 0.8813079274073553,
+          "rms_difference": 0.0013559605826301087,
+          "normalized_rms_difference": 0.03503076538821394,
+          "normalized_max_error": 0.39801026062262757,
+          "gate_peak_abs_left": 0.038707819843859965,
+          "gate_peak_abs_right": 0.03870770642899855,
+          "gate_peak_relative_change": 2.930033109043112e-06,
+          "gate_normalized_rms_difference": 0.03503076538821394,
+          "gate_normalized_max_error": 0.39801026062262757
+        },
+        "base_angular_velocity": {
+          "peak_abs_left": 0.5288282632827759,
+          "peak_abs_right": 0.5288334488868713,
+          "peak_relative_change": 9.805741498337588e-06,
+          "final_left": 0.1528044492006302,
+          "final_right": 0.12563976645469666,
+          "final_relative_change": 0.21621086629231048,
+          "rms_difference": 0.033117717334909993,
+          "normalized_rms_difference": 0.06262409725522973,
+          "normalized_max_error": 0.29631217896763123,
+          "gate_peak_abs_left": 0.5288282632827759,
+          "gate_peak_abs_right": 0.5288334488868713,
+          "gate_peak_relative_change": 9.805741498337588e-06,
+          "gate_normalized_rms_difference": 0.06262409725522973,
+          "gate_normalized_max_error": 0.29631217896763123
+        }
+      },
+      "metric_pass": {
+        "q": false,
+        "dq": false,
+        "base_linear_velocity": false,
+        "base_angular_velocity": false
+      },
+      "pair_pass": false
+    }
+  },
+  "q_state_timestep_convergence": false,
+  "q1_state_timestep_convergence": false,
+  "selected_physics_rate_hz": null,
+  "qdd_excluded_from_hard_state_gate": true,
+  "q1_true_state_nonconvergence": true
+}
