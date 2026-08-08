@@ -1,7 +1,7 @@
 {
   "task": "S4-R6-PHYSICS-MODEL-FREEZE-R1",
   "base_commit": "1b207c572c89da21a60ad7d919efcebc8aefc757",
-  "head_commit": "561ceac6081bafce15138d3b0a0b26fc7e9c2586",
+  "head_commit": "9c4f251240a71fc9b9a4925ecf46b4670ec45041",
   "targeted_regression": {
     "command": [
       "D:\\i3\\e\\python.exe",
